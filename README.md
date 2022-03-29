@@ -1,4 +1,4 @@
-# My Website
+# Atharva
 
 Welcome to my website!
 
