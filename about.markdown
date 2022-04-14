@@ -6,4 +6,4 @@ permalink: /mojito/
 
 
 
-
+cool! i have this device
