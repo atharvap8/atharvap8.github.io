@@ -8,28 +8,28 @@ categories: about me
 
 ---
 
-# Atharva
 
-Welcome to my website!
 
-About Me:
+#Welcome to my website!
 
-1. Learning
 
-2. Studying
 
-3. Tinkering
+• Learning
 
-4. Desperate about learning new things
+• Studying
 
-5. How can you contact me? Telegram @atharvap8
+• Tinkering
 
-6. Age - 16 years
+• Desperate about learning new things
 
-7. Gender - Male
+• How can you contact me? Telegram @atharvap8
 
-8. Living in Pune
+• Age - 16 years
 
-9. Indian, my hometown is Roha, Raigad
+• Gender - Male
+
+• Living in Pune
+
+• Indian, my hometown is Roha, Raigad
 
 
