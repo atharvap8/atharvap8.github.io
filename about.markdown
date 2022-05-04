@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About This Webite
+title: About This Website
 description: Information about this and how to contact me.
 permalink: /about/
 ---
