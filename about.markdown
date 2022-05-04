@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: page
 title: About This Site
 description: Information about this and how to contact me.
+permalink: /about/
 ---
 
   <div class="about">
