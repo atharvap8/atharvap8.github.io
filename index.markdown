@@ -2,17 +2,13 @@
 
 layout: home
 
-title:  "About Me"
+title:  "My Bio"
 
-categories: about me
+categories: Bio
 
 ---
 
-
-
-#Welcome to my website!
-
-
+Welcome!
 
 • Learning
 
@@ -22,7 +18,7 @@ categories: about me
 
 • Desperate about learning new things
 
-• How can you contact me? Telegram @atharvap8
+• How to contact me Telegram
 
 • Age - 16 years
 
@@ -30,6 +26,6 @@ categories: about me
 
 • Living in Pune
 
-• Indian, my hometown is Roha, Raigad
+• Indian
 
 
