@@ -7,6 +7,7 @@ permalink: /mojito/
  <ul>
   <li>This device is my daily driver(mojito).</li>
   <li>Devices I own:</li>
+  <li>Redmi Note 10(mojito)</li>
   <li>Lenovo K8 Note(manning) (Was using)</li>
   <li>Lenovo Vibe K5(a6020) (Archived)</li>
  </ul>
