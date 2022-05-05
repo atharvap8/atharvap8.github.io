@@ -15,7 +15,7 @@ permalink: /about/
         <li>A work in progress</li>        
       </ul> 
      <ul> 
-      <li>I am mostly active on Telegram. Contact <a href="http://t.me/atharvap8/" title="@atharvap8">@atharvap8</a></li>
+      <li>I am mostly active on Telegram. Contact <a href="http://t.me/atharvap8/" title="@atharvap8">@atharvap8.</a></li>
      </ul>
   
    <ul>
@@ -24,7 +24,7 @@ permalink: /about/
      <li>For teaching me how to build roms and git stuff - <a href="http://t.me/dsashwin/" title=Ashwin DS>Ashwin DS</a>
      <li>For teaching me android stuff - <a href="http://t.me/TejasKamat/" title=Tejas Kamat>Tejas Kamat</a>
      <li>For clearing my doubts anytime - <a href="http://t.me/venom_stark/" title=Sachidanand>Sachidanand</a>
-     <li>For motivating me-<a href="http://t.me/ThatSilentKid/" title=Arya Sarkar>Arya Sarkar</a>
+     <li>For guiding me - <a href="http://t.me/ThatSilentKid/" title=Arya Sarkar>Arya Sarkar</a>
   </ul>
   
 </div>
