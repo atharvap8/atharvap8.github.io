@@ -20,7 +20,7 @@ permalink: /about/
   
    <ul>
      <li>My Friends who teached me all of this stuff :)</li>
-     <li>Subhan_Ahmed <a href="http://t.me/subhan_ahmed/" title=Subhan_Ahmed>Subhan_ahmed</a></li>
+     <li><a href="http://t.me/subhan_ahmed/" title=Subhan_Ahmed>Subhan_Ahmed</a></li>
   
   </div>
 
