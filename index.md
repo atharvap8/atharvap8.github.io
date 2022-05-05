@@ -8,7 +8,7 @@ categories: Bio
 
 ---
 
-<tag style="background-image:https://cf.ltkcdn.net/web-design/images/orig/204538-2261x1326-HTML.jpg)"> 
+![my image](https://cf.ltkcdn.net/web-design/images/orig/204538-2261x1326-HTML.jpg) 
 
 Welcome!
 
