@@ -7,62 +7,23 @@ title:  "My Bio"
 categories: Bio
 
 ---
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Full Screen background image</title>
 
-	<style type="text/css">
-		
-		body{
-			background-image:url(https://web-design.lovetoknow.com/image/204538~HTML.jpg);
-			background-size: cover;
-			background-attachment: fixed;
-		}
+Welcome!
 
-		.content{
-			background: white;
-			width: 50%;
-			padding: 40px;
-			margin: 100px auto;
-			font-family: calibri;
-			border-radius: 10px;
-		}
+• Learning
 
-		p{
-			font-size: 25px;
-			color: black;
-		}
+• Studying
 
-	</style>
-</head>
-<body>
+• Tinkering
 
-   <div class="content">
-   	  
-   	  <p>
-		  Welcome!
+• Desperate about learning new things
 
-                  • Learning
-
-                  • Studying
-
-                  • Tinkering
-
-                  • Desperate about learning new things
-
-                  • How do you contact me? <a href="http://t.me/atharvap8/" title="me">me</a>   
+• How do you contact me? <a href="http://t.me/atharvap8/" title="me">me</a>   
   
-                  • Age - 16
+• Age - 16 Years
 
-                  • Indian, living in Pune
-	   </p>
-		  
-   </div>
-  
-</body>
-</html>
-
+• Indian, living in Pune
+	
 
 
 
