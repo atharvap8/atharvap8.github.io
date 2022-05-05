@@ -5,8 +5,7 @@ description: Information about my website and how to contact me.
 permalink: /about/
 ---
 
-  <div class="about">
-    
+  
     <p>atharvap8.github.io is:</p>
     
       <ul class="list-unstyled">
@@ -20,9 +19,11 @@ permalink: /about/
   
    <ul>
      <li>My Friends who teached me all of this stuff :)</li>
-     <li><a href="http://t.me/subhan_ahmed/" title=Subhan_Ahmed>Subhan_Ahmed</a></li> <li>For teaching me android stuff!</li> 
+     <li>For teaching me android stuff-<a href="http://t.me/subhan_ahmed/" title=Subhan Ahmed>Subhan Ahmed</a>
+     <li>For teaching me how to build roms and git stuff-<a href="http://t.me/dsashwin/" title=Ashwin DS>Ashwin DS</a>
+     <li>For teahing me android stuff-<a href="http://t.me/TejasKamat/" title=Tejas Kamat>Tejas Kamat</a>
+  </ul>
   
-  </div>
 
 
 
