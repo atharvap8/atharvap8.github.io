@@ -20,7 +20,7 @@ permalink: /about/
   
    <ul>
      <li>My Friends who teached me all of this stuff :)</li>
-     <li><a href="http://t.me/subhan_ahmed/" title=Subhan_Ahmed>Subhan_Ahmed</a></li>
+     <li><a href="http://t.me/subhan_ahmed/" title=Subhan_Ahmed>Subhan_Ahmed</a></li> <li>For teaching me android stuff!</li> 
   
   </div>
 
