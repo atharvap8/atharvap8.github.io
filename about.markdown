@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About This Website
-description: Information about this and how to contact me.
+description: Information about my website and how to contact me.
 permalink: /about/
 ---
 
@@ -15,8 +15,13 @@ permalink: /about/
         <li>A work in progress</li>        
       </ul> 
      <ul> 
-      <li>i am mostly active on Telegram. Contact <a href="http://t.me/atharvap8/" title="@atharvap8">@atharvap8</a></li>
+      <li>I am mostly active on Telegram. Contact <a href="http://t.me/atharvap8/" title="@atharvap8">@atharvap8</a></li>
      </ul>
+  
+   <ul>
+     <li>My Friends who teached me all of this stuff :)</li>
+     <li>Subhan_Ahmed <a href="http://t.me/subhan_ahmed/" title=Subhan_Ahmed>Subhan_ahmed</a></li>
+  
   </div>
 
 
