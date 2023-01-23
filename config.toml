@@ -17,7 +17,7 @@ paginate = 5
   showMenuItems = 2
 
   # Show reading time in minutes for posts
-  showReadingTime = yes
+  showReadingTime = true
 
   # Show table of contents at the top of your posts (defaults to false)
   # Alternatively, add this param to post front matter for specific posts
