@@ -26,18 +26,6 @@
                 href="https://example.com/fr/"
                 />
   </url><url>
-    <loc>https://example.com/fr/series/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://example.com/fr/series/"
-                />
-  </url><url>
     <loc>https://example.com/fr/tags/</loc>
     <xhtml:link
                 rel="alternate"
