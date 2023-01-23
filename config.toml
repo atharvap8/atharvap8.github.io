@@ -29,8 +29,8 @@ paginate = 5
 
 [languages]
   [languages.en]
-    title = "atharvap8"
-    subtitle = "Atharva Phadke"
+    title = "Atharva P."
+    subtitle = "Personal Website"
     keywords = ""
     copyright = ""
     menuMore = "Show more"
@@ -46,7 +46,7 @@ paginate = 5
     # lastModDisplay = ""
 
     [languages.en.params.logo]
-      logoText = "hello friend"
+      logoText = "atharvap8"
       logoHomeLink = "/"
     # or
     #
