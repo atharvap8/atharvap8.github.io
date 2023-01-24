@@ -1,6 +1,6 @@
 baseurl = "atharvap8.github.io"
 languageCode = "en-us"
-theme = "hugo-theme-hello-friend"
+theme = "hello-friend"
 paginate = 5
 
 [params]
