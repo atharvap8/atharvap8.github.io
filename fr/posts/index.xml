@@ -1,5 +1,23 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on My Personal Website</title><link>https://atharvap8.github.io/fr/posts/</link><description>Recent content in Posts on My Personal Website</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://atharvap8.github.io/fr/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Création d'un nouveau thème</title><link>https://atharvap8.github.io/fr/posts/2014/09/cr%C3%A9ation-dun-nouveau-th%C3%A8me/</link><pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate><guid>https://atharvap8.github.io/fr/posts/2014/09/cr%C3%A9ation-dun-nouveau-th%C3%A8me/</guid><description>Introduction Ce tutoriel vous montrera comment créer un thème simple pour Hugo. Je suppose que vous êtes familier avec HTML, la ligne de commande bash, et que vous êtes à l&amp;rsquo;aise avec Markdown pour formater le contenu. Je vais expliquer comment Hugo utilise des modèles et comment vous pouvez organiser vos modèles pour créer un thème. Je ne couvrirai pas l&amp;rsquo;utilisation de CSS pour styliser votre thème.
-Nous allons commencer par créer un nouveau site avec un modèle très basique.</description><content type="html"><![CDATA[<h2 id="introduction">Introduction</h2>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on My Personal Website</title>
+        <link>https://atharvap8.github.io/fr/posts/</link>
+        <description>Recent content in Posts on My Personal Website</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
+        <atom:link href="https://atharvap8.github.io/fr/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Création d&#39;un nouveau thème</title>
+            <link>https://atharvap8.github.io/fr/posts/2014/09/cr%C3%A9ation-dun-nouveau-th%C3%A8me/</link>
+            <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+            
+            <guid>https://atharvap8.github.io/fr/posts/2014/09/cr%C3%A9ation-dun-nouveau-th%C3%A8me/</guid>
+            <description>Introduction Ce tutoriel vous montrera comment créer un thème simple pour Hugo. Je suppose que vous êtes familier avec HTML, la ligne de commande bash, et que vous êtes à l&amp;rsquo;aise avec Markdown pour formater le contenu. Je vais expliquer comment Hugo utilise des modèles et comment vous pouvez organiser vos modèles pour créer un thème. Je ne couvrirai pas l&amp;rsquo;utilisation de CSS pour styliser votre thème.
+Nous allons commencer par créer un nouveau site avec un modèle très basique.</description>
+            <content type="html"><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>Ce tutoriel vous montrera comment créer un thème simple pour Hugo. Je suppose que vous êtes familier avec HTML, la ligne de commande bash, et que vous êtes à l&rsquo;aise avec Markdown pour formater le contenu. Je vais expliquer comment Hugo utilise des modèles et comment vous pouvez organiser vos modèles pour créer un thème. Je ne couvrirai pas l&rsquo;utilisation de CSS pour styliser votre thème.</p>
 <p>Nous allons commencer par créer un nouveau site avec un modèle très basique. Ensuite, nous ajouterons quelques pages et des publications. Avec de petites variations, vous pourrez créer de nombreux types de sites web.</p>
 <p>Dans ce tutoriel, les commandes que vous entrez commenceront par l&rsquo;invite &ldquo;$&rdquo;. La sortie suivra. Les lignes qui commencent par &ldquo;#&rdquo; sont des commentaires que j&rsquo;ai ajoutés pour expliquer un point. Lorsque je montre les mises à jour d&rsquo;un fichier, le &ldquo;:wq&rdquo; sur la dernière ligne signifie qu&rsquo;il faut sauvegarder le fichier.</p>
@@ -847,14 +865,24 @@ $ vi themes/zafta/layouts/_default/single.html
 </code></pre><p>Notez que nous retirons la logique de la date dans le modèle par défaut et que nous la plaçons dans le modèle des articles. Générez le site web et vérifiez le résultat. Les articles ont leur dates et la page &ldquo;a propos&rdquo; non.</p>
 <h3 id="ne-répètez-pas-cela-vous-même">Ne répètez pas cela vous-même</h3>
 <p>DRY (Don&rsquo;t Repeat Yourself) est un bon objectif de conception et Hugo fait du bon boulot pour supporter cette idée. Une partie de l&rsquo;art du bon modèle est de savoir quand il faut ajouter un nouveau modèle ou quand il faut modifier un existant. Avant de saisir complétement ce principe, faites vous à l&rsquo;idée que vous allez devoir faire de la refactorisation. Hugo rend cela facile et rapide, il est donc préférable de diviser un modèle.</p>
-]]></content></item><item><title>Débuter avec Hugo</title><link>https://atharvap8.github.io/fr/posts/2014/04/d%C3%A9buter-avec-hugo/</link><pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate><guid>https://atharvap8.github.io/fr/posts/2014/04/d%C3%A9buter-avec-hugo/</guid><description>&lt;h2 id="étape-1-installer-hugo">Étape 1. Installer Hugo&lt;/h2>
-&lt;p>Allez sur la page de téléchargements de
-&lt;a href="https://github.com/spf13/hugo/releases">hugo&lt;/a> et téléchargez la version
-appropriée à votre système d&amp;rsquo;exploitation et votre architecture.&lt;/p>
-&lt;p>Sauvegardez le fichier téléchargé à un endroit précis, afin de l&amp;rsquo;utiliser dans
-l&amp;rsquo;étape suivante.&lt;/p>
-&lt;p>Des informations plus complètes sont disponibles sur la page
-&lt;a href="https://atharvap8.github.io/overview/installing/">installing hugo&lt;/a>&lt;/p></description><content type="html"><![CDATA[<h2 id="étape-1-installer-hugo">Étape 1. Installer Hugo</h2>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Débuter avec Hugo</title>
+            <link>https://atharvap8.github.io/fr/posts/2014/04/d%C3%A9buter-avec-hugo/</link>
+            <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+            
+            <guid>https://atharvap8.github.io/fr/posts/2014/04/d%C3%A9buter-avec-hugo/</guid>
+            <description>&lt;h2 id=&#34;étape-1-installer-hugo&#34;&gt;Étape 1. Installer Hugo&lt;/h2&gt;
+&lt;p&gt;Allez sur la page de téléchargements de
+&lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;hugo&lt;/a&gt; et téléchargez la version
+appropriée à votre système d&amp;rsquo;exploitation et votre architecture.&lt;/p&gt;
+&lt;p&gt;Sauvegardez le fichier téléchargé à un endroit précis, afin de l&amp;rsquo;utiliser dans
+l&amp;rsquo;étape suivante.&lt;/p&gt;
+&lt;p&gt;Des informations plus complètes sont disponibles sur la page
+&lt;a href=&#34;https://atharvap8.github.io/overview/installing/&#34;&gt;installing hugo&lt;/a&gt;&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<h2 id="étape-1-installer-hugo">Étape 1. Installer Hugo</h2>
 <p>Allez sur la page de téléchargements de
 <a href="https://github.com/spf13/hugo/releases">hugo</a> et téléchargez la version
 appropriée à votre système d&rsquo;exploitation et votre architecture.</p>
@@ -919,8 +947,18 @@ building. Je paris que vous n&rsquo;y arrivez pas.
 Le fait d&rsquo;avoir des réactions presque instantanées vous permet d&rsquo;avoir votre
 créativité fluide sans avoir à attendre de longues compilations.</p>
 <h2 id="step-4-amusez-vous">Step 4. Amusez-vous</h2>
-<p>Le meilleur moyen d&rsquo;apprendre quelque chose est de s&rsquo;amuser avec.</p>]]></content></item><item><title>Introduction aux modèles (Hu)go</title><link>https://atharvap8.github.io/fr/posts/2014/04/introduction-aux-mod%C3%A8les-hugo/</link><pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate><guid>https://atharvap8.github.io/fr/posts/2014/04/introduction-aux-mod%C3%A8les-hugo/</guid><description>Hugo utilise l&amp;rsquo;excellente librairie go html/template pour son moteur de modèles. c&amp;rsquo;est un moteur extrêmement léger qui offre un très petit nombre de fonctions logiques. À notre expérience, c&amp;rsquo;est juste ce qu&amp;rsquo;il faut pour créer un bon site web statique. Si vous avez déjà utilisé d&amp;rsquo;autre moteurs de modèles pour différents langages ou frameworks, vous allez retrouver beaucoup de similitudes avec les modèles go.
-Ce document est une introduction sur l&amp;rsquo;utilisation de Go templates.</description><content type="html"><![CDATA[<p>Hugo utilise l&rsquo;excellente librairie <a href="http://golang.org/">go</a> <a href="http://golang.org/pkg/html/template/">html/template</a> pour
+<p>Le meilleur moyen d&rsquo;apprendre quelque chose est de s&rsquo;amuser avec.</p>]]></content>
+        </item>
+        
+        <item>
+            <title>Introduction aux modèles (Hu)go</title>
+            <link>https://atharvap8.github.io/fr/posts/2014/04/introduction-aux-mod%C3%A8les-hugo/</link>
+            <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+            
+            <guid>https://atharvap8.github.io/fr/posts/2014/04/introduction-aux-mod%C3%A8les-hugo/</guid>
+            <description>Hugo utilise l&amp;rsquo;excellente librairie go html/template pour son moteur de modèles. c&amp;rsquo;est un moteur extrêmement léger qui offre un très petit nombre de fonctions logiques. À notre expérience, c&amp;rsquo;est juste ce qu&amp;rsquo;il faut pour créer un bon site web statique. Si vous avez déjà utilisé d&amp;rsquo;autre moteurs de modèles pour différents langages ou frameworks, vous allez retrouver beaucoup de similitudes avec les modèles go.
+Ce document est une introduction sur l&amp;rsquo;utilisation de Go templates.</description>
+            <content type="html"><![CDATA[<p>Hugo utilise l&rsquo;excellente librairie <a href="http://golang.org/">go</a> <a href="http://golang.org/pkg/html/template/">html/template</a> pour
 son moteur de modèles. c&rsquo;est un moteur extrêmement léger qui offre un très petit
 nombre de fonctions logiques. À notre expérience, c&rsquo;est juste ce qu&rsquo;il faut pour
 créer un bon site web statique. Si vous avez déjà utilisé d&rsquo;autre moteurs de
@@ -1157,4 +1195,8 @@ page, vous pouvez le faire comme dans l&rsquo;exemple suivant :</p>
     &lt;li&gt;&lt;a href=&#34;{{.RelPermalink}}&#34;&gt;{{.Title}}&lt;/a&gt;&lt;/li&gt;
   {{end}}&lt;/ul&gt;
 &lt;/nav&gt;
-</code></pre>]]></content></item></channel></rss>
+</code></pre>]]></content>
+        </item>
+        
+    </channel>
+</rss>
