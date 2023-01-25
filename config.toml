@@ -1,5 +1,5 @@
 baseURL = "https://atharvap8.github.io"
-title   = "My Personal Website"
+title   = "Atharva Phadke"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 
@@ -8,7 +8,7 @@ PygmentsStyle = "monokai"
 
 paginate  = 10
 rssLimit  = 10  # Maximum number of items in the RSS feed.
-copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+copyright = "CC BY-NC 4.0"
 
 # googleAnalytics = ""
 # disqusShortname = ""
@@ -38,12 +38,11 @@ disableHugoGeneratorInject = true
 
 [permalinks]
   posts = "/posts/:year/:month/:title/"
+  about = "/:filename/"
 
 [author]
   name = "Atharva P."
 
-[blackfriday]
-  hrefTargetBlank = true
 
 [taxonomies]
   tag      = "tags"
@@ -55,15 +54,9 @@ disableHugoGeneratorInject = true
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04"
 
-  # Metadata mostly used in document's head
-  # 
-  description = "Nice theme for homepages and blogs"
-  keywords = ""
-  images = [""]
-
   # Home subtitle of the index page.
   #
-  homeSubtitle = "Hello Friend NG"
+  homeSubtitle = "I'm a Class 12th student, who loves tinkering mostly with Electrical & Electronics Stuff."
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -115,11 +108,10 @@ disableHugoGeneratorInject = true
     trademark = true
     rss = true
     copyright = true
-    author = true
+    author = false
 
     topText = []
     bottomText = [
-      "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
       "Made with &#10084; by <a href=\"https://github.com/atharvap8\">Atharva Phadke</a>"
     ]
 
@@ -131,8 +123,8 @@ disableHugoGeneratorInject = true
     theme = "#1b1c1d"
 
   [params.logo]
-    logoMark     = "atharvap8@"
-    logoText     = "github.io"
+    logoMark     = "su:"
+    logoText     = "atharvap8"
     logoHomeLink = "/"
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
@@ -161,8 +153,8 @@ disableHugoGeneratorInject = true
 
   # Social icons
   [[params.social]]
-    name = "twitter"
-    url  = "https://twitter.com/"
+    name = "youtube"
+    url  = "https://youtube.com/@asp08"
 
   [[params.social]]
     name = "email"
@@ -184,23 +176,18 @@ disableHugoGeneratorInject = true
     name = "telegram"
     url  = "https://t.me/atharvap8"  
 
-[languages]
-  [languages.en]
-    subtitle  = "Hello Friend NG Theme"
-    weight    = 1
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-
-  [languages.fr]
-    subtitle  = "Hello Friend NG Theme"
-    weight    = 2
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-
 [menu]
   [[menu.main]]
     identifier = "about"
     name       = "About"
     url        = "about/"
+  
+  [[menu.main]]
+    identifier = "yt-projects"
+    name       = "Youtube Projects"
+    url        = "yt-projects/"
+
   [[menu.main]]
     identifier = "posts"
     name       = "Posts"
-    url        = "posts/"
+    url        = "posts/"  

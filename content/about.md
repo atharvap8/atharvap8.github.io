@@ -1,19 +1,12 @@
 +++
-title = "About"
+title = "About me, and this website"
 date = "2014-04-09"
 aliases = ["about-us","about-hugo","contact"]
+show_social_links = true
 [ author ]
-  name = "Hugo Authors"
+  name = "Atharva P."  
 +++
 
-Hugo is the **world’s fastest framework for building websites**. It is written in Go.
+I'm **Atharva Phadke**, trying to understand how basic and complicated systems/machines/objects work in real life. Always likes to dissect everything, and get to the root. 
 
-It makes use of a variety of open source projects including:
-
-* https://github.com/russross/blackfriday
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+I know quite about Electronics,you can ask related doubts on:  {{< social-icons >}}
