@@ -89,7 +89,7 @@ disableHugoGeneratorInject = true
   #
   # Enables the global language menu.
   #
-  enableGlobalLanguageMenu = true
+  enableGlobalLanguageMenu = false
 
   # Integrate Javascript files or stylesheets by adding the url to the external assets or by
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
@@ -132,24 +132,12 @@ disableHugoGeneratorInject = true
     # logoCursorColor    = "#ffffff"
     # Set to a valid CSS time value to change the animation duration, "0s" to disable.
     # logoCursorAnimate  = "1s"
-
-  # Commento is more than just a comments widget you can embed — 
-  # it’s a return to the roots of the internet. 
-  # An internet without the tracking and invasions of privacy. 
-  # An internet that is simple and lightweight. 
-  # An internet that is focused on interesting discussions, not ads. 
-  # A better internet.
-  # Uncomment this to enable Commento.
-  #
-  # [params.commento]
-  #   url = ""
-
   # Uncomment this if you want a portrait on your start page
   #
    [params.portrait]
       path     = "/img/image.png"
       alt      = "Avatar"
-      maxWidth = "200px"
+      maxWidth = "150px"
 
   # Social icons
   [[params.social]]
@@ -165,12 +153,12 @@ disableHugoGeneratorInject = true
     url  = "https://github.com/atharvap8"
 
   [[params.social]]
-    name = "linkedin"
-    url  = "https://www.linkedin.com/"
+    name = "xda"
+    url  = "https://forum.xda-developers.com/m/atharva-phadke.11446365/"
 
   [[params.social]]
-    name = "stackoverflow"
-    url  = "https://www.stackoverflow.com/"
+    name = "instagram"
+    url  = "https://www.instagram.com/atharvap08"
 
   [[params.social]]
     name = "telegram"
