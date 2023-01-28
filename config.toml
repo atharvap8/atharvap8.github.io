@@ -36,6 +36,9 @@ disableHugoGeneratorInject = true
 [minify]
   minifyOutput = true
 
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
 [author]
   name = "Atharva P."
 
@@ -72,12 +75,6 @@ disableHugoGeneratorInject = true
   # With this option on, the page user is able to set the scheme he wants. 
   enableThemeToggle = true
 
-  # Sharing buttons
-  #
-  # There are a lot of buttons preconfigured. If you want to change them,
-  # generate the buttons here: https://sharingbuttons.io
-  # and add them into your own `layouts/partials/sharing-buttons.html`
-  #
   enableSharingButtons = true
 
   # Global language menu
@@ -116,6 +113,10 @@ disableHugoGeneratorInject = true
     mask = "#1b1c1d"
     msapplication = "#1b1c1d"
     theme = "#1b1c1d"
+  
+utterancesRepo = "atharvap8/hugo-theme-hello-friend-ng"
+
+utterancesTheme = "github-dark"
 
   [params.logo]
     logoMark     = "su:"
@@ -132,7 +133,7 @@ disableHugoGeneratorInject = true
    [params.portrait]
       path     = "/img/image.png"
       alt      = "Avatar"
-      maxWidth = "150px"
+      maxWidth = "150px"      
 
   # Social icons
   [[params.social]]
@@ -168,10 +169,10 @@ disableHugoGeneratorInject = true
   [[menu.main]]
     identifier = "yt-projects"
     name       = "Youtube Projects"
-    url        = "yt-projects/"
+    url        = "posts/yt-projects/"
 
   [[menu.main]]
     identifier = "electronics"
     name       = "Electronics"
-    url        = "electronics/" 
+    url        = "posts/electronics/" 
   
