@@ -36,13 +36,8 @@ disableHugoGeneratorInject = true
 [minify]
   minifyOutput = true
 
-[permalinks]
-  posts = "/posts/:year/:month/:title/"
-  about = "/:filename/"
-
 [author]
   name = "Atharva P."
-
 
 [taxonomies]
   tag      = "tags"
@@ -176,6 +171,7 @@ disableHugoGeneratorInject = true
     url        = "yt-projects/"
 
   [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "posts/"  
+    identifier = "electronics"
+    name       = "Electronics"
+    url        = "electronics/" 
+  
