@@ -119,7 +119,7 @@ utterancesRepo = "atharvap8/hugo-theme-hello-friend-ng"
 utterancesTheme = "github-dark"
 
   [params.logo]
-    logoMark     = "su:"
+    logoMark     = "~$"
     logoText     = "atharvap8"
     logoHomeLink = "/"
     # Set true to remove the logo cursor entirely.
