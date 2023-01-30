@@ -74,5 +74,8 @@ Vout = (4kΩ/6kΩ) * 10V
 Vout = (2/3) * 10V
 Vout = 6.67V
 
+For Notes, and practical images, refer this:
+[![GDrive Folder](https://img.shields.io/badge/Drive-Folder-green)](https://drive.google.com/drive/folders/11ARyTZphPKpo9fPhy97rB0HLTRN2Exp5?usp=sharing)
+
 ### Conclusion
 In this study, we have covered the basics of resistors, including their components, types, and the potential divider arrangement. Understanding resistors and their behavior is crucial in many electrical and electronics applications.
