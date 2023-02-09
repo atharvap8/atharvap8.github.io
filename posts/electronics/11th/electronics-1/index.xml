@@ -219,4 +219,71 @@ Aluminum electrolytic capacitors: These capacitors have a high capacitance and a
 <p>In this video, we can see how a capacitor behaves when charging and discharging.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>Capacitors are essential components in many electrical circuits, and they play an important role in many applications. Understanding how capacitors work and how they are used can help you to design and build more efficient and reliable circuits.</p>
-]]></content></item><item><title>Study of Dmm</title><link>https://atharvap8.github.io/posts/2023/01/study-of-dmm/</link><pubDate>Sun, 29 Jan 2023 00:26:51 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-dmm/</guid><description/><content type="html"></content></item></channel></rss>
+]]></content></item><item><title>Study of Digital Multimeter</title><link>https://atharvap8.github.io/posts/2023/01/study-of-digital-multimeter/</link><pubDate>Sun, 29 Jan 2023 00:26:51 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-digital-multimeter/</guid><description>Summary This topic aims to provide an in-depth understanding of digital multimeters, including its construction, components, and various applications.
+Diagram Parts and Specifications Part Specification Display LCD or LED Range Selection Manual or Auto Ranging Input Impedance &amp;gt;10 MΩ Maximum Voltage 600V AC/DC Maximum Current 10A AC/DC Resistance 200Ω to 200MΩ Continuity Test Built-in Buzzer Diode Test Built-in Tools and Instruments Digital multimeter Lead set 9V battery Circuit under test Procedure The procedure for using a digital multimeter is quite straightforward.</description><content type="html"><![CDATA[<h2 id="summary">Summary</h2>
+<p>This topic aims to provide an in-depth understanding of digital multimeters, including its construction, components, and various applications.</p>
+<h2 id="diagram">Diagram</h2>
+<p><img src="https://www.electronics-tutorials.ws/wp-content/uploads/2018/02/digital-multimeter.png" alt="Basic Digital Multimeter"></p>
+<h2 id="parts-and-specifications">Parts and Specifications</h2>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Display</td>
+<td>LCD or LED</td>
+</tr>
+<tr>
+<td>Range Selection</td>
+<td>Manual or Auto Ranging</td>
+</tr>
+<tr>
+<td>Input Impedance</td>
+<td>&gt;10 MΩ</td>
+</tr>
+<tr>
+<td>Maximum Voltage</td>
+<td>600V AC/DC</td>
+</tr>
+<tr>
+<td>Maximum Current</td>
+<td>10A AC/DC</td>
+</tr>
+<tr>
+<td>Resistance</td>
+<td>200Ω to 200MΩ</td>
+</tr>
+<tr>
+<td>Continuity Test</td>
+<td>Built-in Buzzer</td>
+</tr>
+<tr>
+<td>Diode Test</td>
+<td>Built-in</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tools-and-instruments">Tools and Instruments</h2>
+<ul>
+<li>Digital multimeter</li>
+<li>Lead set</li>
+<li>9V battery</li>
+<li>Circuit under test</li>
+</ul>
+<h2 id="procedure">Procedure</h2>
+<p>The procedure for using a digital multimeter is quite straightforward. First, select the appropriate range for the measurement to be taken. Then, connect the leads to the multimeter and to the circuit under test. Finally, observe the reading on the display. It is important to note that the polarity of the leads should be observed, as some measurements require the leads to be connected in a specific way.</p>
+<h2 id="theory">Theory</h2>
+<p>A digital multimeter is an electronic measuring instrument that can measure several electrical parameters such as voltage, current, resistance, and continuity. Digital multimeters use an ADC (Analog-to-Digital Converter) to convert the analog signals into digital signals for display on a screen.</p>
+<p>The input impedance of a digital multimeter is high, typically above 10 MΩ, which means that it has very little effect on the circuit being measured. This is important because it allows accurate measurements to be taken without disturbing the circuit under test.</p>
+<h2 id="types-of-digital-multimeters">Types of Digital Multimeters</h2>
+<p>There are two main types of digital multimeters: manual ranging and auto ranging. Manual ranging multimeters require the user to select the appropriate range for the measurement, while auto-ranging multimeters automatically select the correct range.</p>
+<p>Another type of digital multimeter is handheld multimeters, which are compact and portable, and can be easily carried to the work site. Benchtop multimeters, on the other hand, are larger in size and are designed to be used in a laboratory or workshop setting.</p>
+<h2 id="applications">Applications</h2>
+<p>Digital multimeters are widely used in a variety of industries, including electronics, electrical, and automotive. They can be used for troubleshooting and repairing electronic circuits, as well as for testing and measuring various electrical parameters in a circuit. Digital multimeters are also commonly used in educational settings for teaching electronics and electrical principles.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>In conclusion, digital multimeters are an essential tool for anyone involved in the field of electronics and electrical work. They are versatile, accurate, and provide quick and reliable measurements, making them an indispensable tool for professionals and hobbyists alike.</p>
+]]></content></item></channel></rss>
