@@ -125,7 +125,68 @@ Parts and Specifications Parts Specifications Electromagnet Consists of a coil o
 <p>Relays find applications in a wide range of fields, including automotive electronics, communication systems, industrial control systems, and home appliances. Some common applications of relays include controlling the operation of motors, switching on and off lights, and providing over-current protection to sensitive electronic circuits.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>In conclusion, relays are an essential component in electrical and electronic circuits. They provide a simple and effective way to control and protect high-power circuits with low-power signals. Understanding the construction, working principle, and applications of relays is essential for anyone working in the field of electrical and electronics engineering.</p>
-]]></content></item><item><title>Study of Switches</title><link>https://atharvap8.github.io/posts/2023/01/study-of-switches/</link><pubDate>Sun, 29 Jan 2023 00:27:19 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-switches/</guid><description/><content type="html"></content></item><item><title>Study of Inductors</title><link>https://atharvap8.github.io/posts/2023/01/study-of-inductors/</link><pubDate>Sun, 29 Jan 2023 00:27:08 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-inductors/</guid><description>An inductor is a passive electrical component that stores energy in a magnetic field when electric current flows through it. Inductors play a crucial role in many electrical circuits, from filtering to energy storage to regulation. In this study, we will delve into the construction, theory, and uses of inductors.
+]]></content></item><item><title>Study of Switches</title><link>https://atharvap8.github.io/posts/2023/01/study-of-switches/</link><pubDate>Sun, 29 Jan 2023 00:27:19 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-switches/</guid><description>Summary A switch is a crucial component in electrical circuits as it can control the flow of electricity by making or breaking a connection. In this topic, we will study the basic construction, different types of switches, the function and purpose of switches, the tools and equipment required to demonstrate a basic switch, and more.
+Parts and Specifications Parts Specifications Switch SPST, SPDT, DPST, DPDT Wires 20-22 gauge Breadboard Half-sized breadboard Tools and Equipment Breadboard Jumper Wires Power Supply Multimeter Procedure To demonstrate a basic switch, follow these steps:</description><content type="html"><![CDATA[<h2 id="summary">Summary</h2>
+<p>A switch is a crucial component in electrical circuits as it can control the flow of electricity by making or breaking a connection. In this topic, we will study the basic construction, different types of switches, the function and purpose of switches, the tools and equipment required to demonstrate a basic switch, and more.</p>
+<p><img src="https://i.imgur.com/ixQ9gkb.png" alt="Basic Switch Diagram"></p>
+<h2 id="parts-and-specifications">Parts and Specifications</h2>
+<table>
+<thead>
+<tr>
+<th>Parts</th>
+<th>Specifications</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Switch</td>
+<td>SPST, SPDT, DPST, DPDT</td>
+</tr>
+<tr>
+<td>Wires</td>
+<td>20-22 gauge</td>
+</tr>
+<tr>
+<td>Breadboard</td>
+<td>Half-sized breadboard</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tools-and-equipment">Tools and Equipment</h2>
+<ul>
+<li>Breadboard</li>
+<li>Jumper Wires</li>
+<li>Power Supply</li>
+<li>Multimeter</li>
+</ul>
+<h2 id="procedure">Procedure</h2>
+<p>To demonstrate a basic switch, follow these steps:</p>
+<ol>
+<li>Gather all the required parts and tools mentioned above.</li>
+<li>Connect the power supply to the breadboard.</li>
+<li>Connect one end of the switch to the power supply on the breadboard and the other end to the load (e.g., LED or buzzer).</li>
+<li>Use the multimeter to measure the resistance and verify that the switch is open.</li>
+<li>Close the switch by pressing the button and verify that the resistance is zero.</li>
+<li>Observe that the load is now powered on, indicating that the switch has made a connection.</li>
+</ol>
+<h2 id="theory">Theory</h2>
+<p>A switch is an electrical component that can make or break an electrical connection. It is designed to control the flow of electricity in a circuit. There are several types of switches, including SPST (Single Pole Single Throw), SPDT (Single Pole Double Throw), DPST (Double Pole Single Throw), and DPDT (Double Pole Double Throw).</p>
+<p><img src="https://i.imgur.com/vowmTgT.png" alt="SPST Switch Diagram">
+<img src="https://i.imgur.com/cwWZVvG.png" alt="SPDT Switch Diagram">
+<img src="https://i.imgur.com/UhVzCgB.png" alt="DPST Switch Diagram">
+<img src="https://i.imgur.com/C9YU097.png" alt="DPDT Switch Diagram"></p>
+<h2 id="types-of-switches">Types of Switches</h2>
+<ol>
+<li>SPST (Single Pole Single Throw) switches have a single contact that can either be connected or disconnected. It is the simplest type of switch.</li>
+<li>SPDT (Single Pole Double Throw) switches have two contacts and can switch between two separate circuits. It is commonly used for switch-selector applications.</li>
+<li>DPST (Double Pole Single Throw) switches have two separate contacts that can either be connected or disconnected simultaneously. This type of switch is used for applications where two separate circuits need to be controlled by a single switch.</li>
+<li>DPDT (Double Pole Double Throw) switches have two separate sets of contacts that can switch between two separate circuits. It is commonly used for reversing switch applications.</li>
+</ol>
+<h2 id="uses-of-switches">Uses of Switches</h2>
+<p>Switches play a crucial role in electrical circuits as they are used to control the flow of electricity. They are used in various applications such as turning on/off lights, controlling appliances, and in complex circuit designs such as computer motherboards, digital circuits, and more.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>In conclusion, switches are essential components in electrical circuits as they control the flow of electricity. Understanding the basic construction, different types, functions, and uses of switches is important in electrical engineering. By demonstrating a basic switch, one can have a better</p>
+]]></content></item><item><title>Study of Inductors</title><link>https://atharvap8.github.io/posts/2023/01/study-of-inductors/</link><pubDate>Sun, 29 Jan 2023 00:27:08 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-inductors/</guid><description>An inductor is a passive electrical component that stores energy in a magnetic field when electric current flows through it. Inductors play a crucial role in many electrical circuits, from filtering to energy storage to regulation. In this study, we will delve into the construction, theory, and uses of inductors.
 Construction of a Basic Air-Core Inductor The basic air-core inductor can be constructed by wrapping a wire around a non-conductive core, such as air, plastic, or fiberglass.</description><content type="html"><![CDATA[<p>An inductor is a passive electrical component that stores energy in a magnetic field when electric current flows through it. Inductors play a crucial role in many electrical circuits, from filtering to energy storage to regulation. In this study, we will delve into the construction, theory, and uses of inductors.</p>
 <h2 id="construction-of-a-basic-air-core-inductor">Construction of a Basic Air-Core Inductor</h2>
 <p>The basic air-core inductor can be constructed by wrapping a wire around a non-conductive core, such as air, plastic, or fiberglass. The number of turns, or coils, of wire used, along with the diameter and material of the wire, will determine the inductance of the inductor. To calculate the inductance, the formula <code>L = N^2 * Μ_o * A / l</code> can be used, where <code>N</code> is the number of turns, <code>Μ_o</code> is the permeability of free space, <code>A</code> is the cross-sectional area of the coil, and <code>l</code> is the length of the coil.</p>
