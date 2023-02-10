@@ -36,7 +36,7 @@ Fixed resistors are electrical components that have a fixed value of resistance,
 3. Wire Wound Resistor: These resistors are made by winding a wire, typically made of nickel-chromium alloy, around a cylindrical form. They offer high power handling capabilities and precise resistance values, making them suitable for use in high-power applications.
 
 ### Resistor Colour Coding
-![Resistor Colour Coding](https://www.te.com/content/dam/te-com/images/corporate/marketing/global/infographics/resistor-color-code-bands-3-4-1024.png)
+{{< figure src="/img/rcc.jpg" title="Resistor Colour Coding" >}}
 
 ### Information about Variable Resistors
 Variable resistors, also known as potentiometers, allow the resistance value to be adjusted. They are commonly used in applications where the resistance value needs to be changed, such as volume control in a stereo system.
