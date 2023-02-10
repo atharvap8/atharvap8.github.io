@@ -40,23 +40,36 @@ To demonstrate a basic switch, follow these steps:
 ## Theory
 A switch is an electrical component that can make or break an electrical connection. It is designed to control the flow of electricity in a circuit. There are several types of switches, including SPST (Single Pole Single Throw), SPDT (Single Pole Double Throw), DPST (Double Pole Single Throw), and DPDT (Double Pole Double Throw).
 
-## Types of Switches
+## Types of Switches:
+
 {{< figure src="/img/spst.jpg" title="SPST Switch" >}}
 
-### SPST (Single Pole Single Throw) switches have a single contact that can either be connected or disconnected. It is the simplest type of switch.
+### SPST (Single Pole Single Throw):
+These switches have a single contact that can either be connected or disconnected. It is the simplest type of switch.
+{{< figure src="/img/spst.gif" title="Working of SPST" >}}
 
+---
 {{< figure src="/img/spdt.jpg" title="SPDT Switch" >}}
 
-### SPDT (Single Pole Double Throw) switches have two contacts and can switch between two separate circuits. It is commonly used for switch-selector applications.
+### SPDT (Single Pole Double Throw):
+These switches have two contacts and can switch between two separate circuits. It is commonly used for switch-selector applications.
+{{< figure src="/img/spdt.gif" title="Working of SPDT" >}}
 
+--- 
 {{< figure src="/img/dpst.jpg" title="DPST Switch" >}}
 
-### DPST (Double Pole Single Throw) switches have two separate contacts that can either be connected or disconnected simultaneously. This type of switch is used for applications where two separate circuits need to be controlled by a single switch.
+### DPST (Double Pole Single Throw):
+These switches have two separate contacts that can either be connected or disconnected simultaneously. This type of switch is used for applications where two separate circuits need to be controlled by a single switch.
+{{< figure src="/img/dpst.gif" title="Working of DPST" >}}
 
+---
 {{< figure src="/img/dpdt.jpg" title="DPDT Switch" >}}
 
-### DPDT (Double Pole Double Throw) switches have two separate sets of contacts that can switch between two separate circuits. It is commonly used for reversing switch applications.
+### DPDT (Double Pole Double Throw):
+These switches have two separate sets of contacts that can switch between two separate circuits. It is commonly used for reversing switch applications.
+{{< figure src="/img/dpdt.gif" title="Working of DPDT" >}}
 
+---
 ## Uses of Switches
 Switches play a crucial role in electrical circuits as they are used to control the flow of electricity. They are used in various applications such as turning on/off lights, controlling appliances, and in complex circuit designs such as computer motherboards, digital circuits, and more.
 

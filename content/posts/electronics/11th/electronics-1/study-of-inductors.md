@@ -48,6 +48,7 @@ The procedure for constructing a basic air-core inductor involves wrapping a wir
 6. Test the inductance using a multimeter.
 
 ## Theory
+{{< figure src="/img/inductor.gif" title="Working of Inductor" >}}
 
 An inductor is a passive electrical component that stores energy in a magnetic field when electric current flows through it. The basic principle behind an inductor is Faraday's Law of Electromagnetic Induction, which states that a changing magnetic field induces an electromotive force (EMF) in a conductor. The amount of energy stored in an inductor is proportional to the number of turns in the wire and the current flowing through it.
 

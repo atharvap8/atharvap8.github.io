@@ -12,6 +12,8 @@ draft: false
 ### Diagram: A basic resistor.
 ## Part 1: Study of Resistors
 
+{{< figure src="/img/resistor.gif" title="Working of Resistor" >}}
+
 ### Aim
 The aim of this section is to provide a comprehensive understanding of resistors, their components, equipments, and types.
 
@@ -58,7 +60,7 @@ The aim of this section is to study the potential divider arrangement in detail 
 1. Breadboard
 2. Multimeter
 
-### Explain theory in deep
+### Theory
 In a potential divider arrangement, two resistors are connected in series to a voltage source. The voltage across each resistor is proportional to its resistance, with the voltage across the first resistor (R1) being Vout and the voltage across the second resistor (R2) being (Vin - Vout). By knowing the voltage across the resistors, the resistance values can be calculated using Ohm's law, which states that the current in a circuit is equal to the voltage divided by the resistance.
 
 ### Diagram

@@ -38,6 +38,7 @@ This topic aims to provide an in-depth understanding of digital multimeters, inc
 The procedure for using a digital multimeter is quite straightforward. First, select the appropriate range for the measurement to be taken. Then, connect the leads to the multimeter and to the circuit under test. Finally, observe the reading on the display. It is important to note that the polarity of the leads should be observed, as some measurements require the leads to be connected in a specific way.
 
 ## Theory
+{{< figure src="/img/dmm.gif" title="Working of DMM" >}}
 
 A digital multimeter is an electronic measuring instrument that can measure several electrical parameters such as voltage, current, resistance, and continuity. Digital multimeters use an ADC (Analog-to-Digital Converter) to convert the analog signals into digital signals for display on a screen. 
 

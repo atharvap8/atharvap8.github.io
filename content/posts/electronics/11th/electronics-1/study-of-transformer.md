@@ -39,6 +39,7 @@ The procedure to make a simple transformer is as follows:
 
 ## Theory
 The basic theory behind a transformer is electromagnetic induction. When an alternating current flows through one coil, it generates a magnetic field that induces a voltage in the other coil. The voltage is proportional to the number of turns in each coil, the frequency of the alternating current, and the magnetic permeability of the core. 
+{{< figure src="/img/transformer.gif" title="Working of Transformer" >}}
 
 ## Types of Transformers
 There are several types of transformers, including:

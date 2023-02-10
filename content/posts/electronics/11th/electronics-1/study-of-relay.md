@@ -43,6 +43,8 @@ Diagram:
 
 ## Theory
 
+{{< figure src="/img/relay.gif" title="Working of Relay" >}}
+
 Relays are electrical switches that use an electromagnet to operate. When a voltage is applied to the coil of the electromagnet, it creates a magnetic field that attracts the armature, causing it to close the contacts. This closing of contacts completes the electrical circuit and allows current to flow. When the voltage is removed from the coil, the magnetic field collapses, and the spring returns the armature to its original position, opening the contacts and breaking the circuit. 
 
 Relays are useful in controlling high-power circuits with low-power signals, as well as in protecting sensitive electronic circuits from damage due to overloading.

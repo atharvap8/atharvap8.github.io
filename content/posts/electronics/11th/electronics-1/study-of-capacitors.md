@@ -15,6 +15,11 @@ A capacitor is an electronic component that stores electrical energy in an elect
 
 Diagram: Diagram of a basic capacitor
 
+## Theory
+{{< figure src="/img/capacitor.gif" title="Working of Capacitor" >}}
+
+A capacitor is a two-terminal electronic component that stores electrical energy in an electric field. The theory of working of a capacitor is based on the principle of electrostatics, which states that opposite charges attract and like charges repel. When a voltage is applied across the terminals of a capacitor, it causes an electric field to develop between two conductive plates, separated by an insulating material known as a dielectric. The strength of the electric field is proportional to the voltage across the capacitor and the capacitance, which is a measure of the amount of electrical charge that can be stored per unit of voltage. When the voltage is removed, the electric field collapses and the energy stored in the electric field is released, making capacitors useful in a variety of applications such as power supplies, filters, and energy storage.
+
 ## Types of Capacitors
 
 There are many different types of capacitors available, each with its own unique characteristics. Some common types include:
