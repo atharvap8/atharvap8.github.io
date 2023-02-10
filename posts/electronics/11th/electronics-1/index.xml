@@ -33,7 +33,11 @@ Components List Resistor Multimeter Equipments Power Supply Breadboard Types Of 
 <li>Wire Wound Resistor: These resistors are made by winding a wire, typically made of nickel-chromium alloy, around a cylindrical form. They offer high power handling capabilities and precise resistance values, making them suitable for use in high-power applications.</li>
 </ol>
 <h3 id="resistor-colour-coding">Resistor Colour Coding</h3>
-<p><img src="https://www.te.com/content/dam/te-com/images/corporate/marketing/global/infographics/resistor-color-code-bands-3-4-1024.png" alt="Resistor Colour Coding"></p>
+<figure><img src="/img/rcc.jpg"/><figcaption>
+            <h4>Resistor Colour Coding</h4>
+        </figcaption>
+</figure>
+
 <h3 id="information-about-variable-resistors">Information about Variable Resistors</h3>
 <p>Variable resistors, also known as potentiometers, allow the resistance value to be adjusted. They are commonly used in applications where the resistance value needs to be changed, such as volume control in a stereo system.</p>
 <h3 id="information-about-different-types-of-variable-resistors">Information about different types of Variable Resistors</h3>
