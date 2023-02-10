@@ -1,10 +1,9 @@
 ---
-title: "Study of Digital Multimeter"
+title: "Study of Dmm"
 date: 2023-01-29T00:26:51+05:30
+toc: true
 draft: false
 ---
-
-
 
 ## Summary 
 
@@ -12,7 +11,7 @@ This topic aims to provide an in-depth understanding of digital multimeters, inc
 
 ## Diagram
 
-![Basic Digital Multimeter](https://www.electronics-tutorials.ws/wp-content/uploads/2018/02/digital-multimeter.png)
+{{< figure src="/static/img/dmm.jpg" title="Basic DMM" >}}
 
 ## Parts and Specifications 
 

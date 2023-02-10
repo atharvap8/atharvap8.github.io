@@ -2,6 +2,7 @@
 title: "Study of Inductors"
 date: 2023-01-29T00:27:08+05:30
 draft: false
+toc: true
 author: Atharva P.
 ---
 
@@ -11,7 +12,7 @@ An inductor is a passive electrical component that stores energy in a magnetic f
 
 The basic air-core inductor can be constructed by wrapping a wire around a non-conductive core, such as air, plastic, or fiberglass. The number of turns, or coils, of wire used, along with the diameter and material of the wire, will determine the inductance of the inductor. To calculate the inductance, the formula `L = N^2 * Μ_o * A / l` can be used, where `N` is the number of turns, `Μ_o` is the permeability of free space, `A` is the cross-sectional area of the coil, and `l` is the length of the coil.
 
-![Diagram](https://circuitdigest.com/sites/default/files/inlineimages/u1/Passive-Inductor.png)
+{{< figure src="/static/img/inductor.jpg" title="Basic Inductor" >}}
 
 Diagram: A simple representation of an air-core inductor
 
