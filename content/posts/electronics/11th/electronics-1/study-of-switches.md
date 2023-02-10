@@ -10,7 +10,7 @@ A switch is a crucial component in electrical circuits as it can control the flo
 
 ## Diagram
 
-{{< figure src="/static/img/switch.jpg" title="Basic Switch" >}}
+{{< figure src="/img/switch.jpg" title="Basic Switch" >}}
 
 **Diagram: A figure showing a Basic Switch & its states**
 
@@ -41,19 +41,19 @@ To demonstrate a basic switch, follow these steps:
 A switch is an electrical component that can make or break an electrical connection. It is designed to control the flow of electricity in a circuit. There are several types of switches, including SPST (Single Pole Single Throw), SPDT (Single Pole Double Throw), DPST (Double Pole Single Throw), and DPDT (Double Pole Double Throw).
 
 ## Types of Switches
-{{< figure src="/static/img/spst.jpg" title="SPST Switch" >}}
+{{< figure src="/img/spst.jpg" title="SPST Switch" >}}
 
 ### SPST (Single Pole Single Throw) switches have a single contact that can either be connected or disconnected. It is the simplest type of switch.
 
-{{< figure src="/static/img/spdt.jpg" title="SPDT Switch" >}}
+{{< figure src="/img/spdt.jpg" title="SPDT Switch" >}}
 
 ### SPDT (Single Pole Double Throw) switches have two contacts and can switch between two separate circuits. It is commonly used for switch-selector applications.
 
-{{< figure src="/static/img/dpst.jpg" title="DPST Switch" >}}
+{{< figure src="/img/dpst.jpg" title="DPST Switch" >}}
 
 ### DPST (Double Pole Single Throw) switches have two separate contacts that can either be connected or disconnected simultaneously. This type of switch is used for applications where two separate circuits need to be controlled by a single switch.
 
-{{< figure src="/static/img/dpdt.jpg" title="DPDT Switch" >}}
+{{< figure src="/img/dpdt.jpg" title="DPDT Switch" >}}
 
 ### DPDT (Double Pole Double Throw) switches have two separate sets of contacts that can switch between two separate circuits. It is commonly used for reversing switch applications.
 

@@ -14,7 +14,7 @@ A basic relay consists of an electromagnet, a set of contacts, and a spring. Whe
 
 Diagram:
 
-{{< figure src="/static/img/relay.jpg" title="Basic Relay" >}}
+{{< figure src="/img/relay.jpg" title="Basic Relay" >}}
 
 ## Parts and Specifications 
 

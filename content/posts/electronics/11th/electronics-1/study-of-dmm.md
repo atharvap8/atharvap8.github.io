@@ -11,7 +11,7 @@ This topic aims to provide an in-depth understanding of digital multimeters, inc
 
 ## Diagram
 
-{{< figure src="/static/img/dmm.jpg" title="Basic DMM" >}}
+{{< figure src="/img/dmm.jpg" title="Basic DMM" >}}
 
 ## Parts and Specifications 
 

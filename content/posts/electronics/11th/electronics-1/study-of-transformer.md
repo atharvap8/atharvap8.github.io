@@ -8,7 +8,7 @@ draft: false
 ## Summary
 A transformer is a passive electrical component that transfers electrical energy from one circuit to another through electromagnetic induction. In this study, we will learn about the construction and working of a basic transformer, different types of transformers, and their applications. We will also learn about the parts required to make a basic transformer and the instruments and equipment needed to perform this activity. 
 
-{{< figure src="/static/img/transformer.jpg" title="Basic Transformer" >}}
+{{< figure src="/img/transformer.jpg" title="Basic Transformer" >}}
 
 ## Parts and Specifications
 A basic transformer consists of the following parts:

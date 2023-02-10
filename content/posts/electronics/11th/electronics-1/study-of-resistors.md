@@ -7,6 +7,9 @@ draft: false
 
 # Study Of Resistors
 
+{{< figure src="/img/resistor.jpg" title="Basic Resistor" >}}
+
+### Diagram: A basic resistor.
 ## Part 1: Study of Resistors
 
 ### Aim

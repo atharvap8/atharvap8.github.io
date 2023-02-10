@@ -9,6 +9,12 @@ draft: false
 
 A capacitor is an electronic component that stores electrical energy in an electric field. Capacitors are widely used in electrical circuits for a variety of purposes, including filtering, coupling, and energy storage.
 
+## Diagram
+
+{{< figure src="/img/capacitor.jpg" title="Basic Capacitor" >}}
+
+Diagram: Diagram of a basic capacitor
+
 ## Types of Capacitors
 
 There are many different types of capacitors available, each with its own unique characteristics. Some common types include:
