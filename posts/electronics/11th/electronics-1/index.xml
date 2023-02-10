@@ -1,5 +1,11 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Electronics-1 on Atharva Phadke</title><link>https://atharvap8.github.io/posts/electronics/11th/electronics-1/</link><description>Recent content in Electronics-1 on Atharva Phadke</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Fri, 27 Jan 2023 22:44:41 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/posts/electronics/11th/electronics-1/index.xml" rel="self" type="application/rss+xml"/><item><title>Study of Resistors</title><link>https://atharvap8.github.io/posts/2023/01/study-of-resistors/</link><pubDate>Sun, 29 Jan 2023 05:13:36 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-resistors/</guid><description>Study Of Resistors Part 1: Study of Resistors Aim The aim of this section is to provide a comprehensive understanding of resistors, their components, equipments, and types.
-Components List Resistor Multimeter Equipments Power Supply Breadboard Types Of Resistors Fixed Resistors Variable Resistors Information about Fixed Resistors Fixed resistors are electrical components that have a fixed value of resistance, meaning that their resistance does not change. This type of resistor is commonly used to limit the current flow in a circuit and to divide voltage.</description><content type="html"><![CDATA[<h1 id="study-of-resistors">Study Of Resistors</h1>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Electronics-1 on Atharva Phadke</title><link>https://atharvap8.github.io/posts/electronics/11th/electronics-1/</link><description>Recent content in Electronics-1 on Atharva Phadke</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Fri, 27 Jan 2023 22:44:41 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/posts/electronics/11th/electronics-1/index.xml" rel="self" type="application/rss+xml"/><item><title>Study of Resistors</title><link>https://atharvap8.github.io/posts/2023/01/study-of-resistors/</link><pubDate>Sun, 29 Jan 2023 05:13:36 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-resistors/</guid><description>Study Of Resistors Basic Resistor Diagram: A basic resistor. Part 1: Study of Resistors Aim The aim of this section is to provide a comprehensive understanding of resistors, their components, equipments, and types.
+Components List Resistor Multimeter Equipments Power Supply Breadboard Types Of Resistors Fixed Resistors Variable Resistors Information about Fixed Resistors Fixed resistors are electrical components that have a fixed value of resistance, meaning that their resistance does not change.</description><content type="html"><![CDATA[<h1 id="study-of-resistors">Study Of Resistors</h1>
+<figure><img src="/img/resistor.jpg"/><figcaption>
+            <h4>Basic Resistor</h4>
+        </figcaption>
+</figure>
+
+<h3 id="diagram-a-basic-resistor">Diagram: A basic resistor.</h3>
 <h2 id="part-1-study-of-resistors">Part 1: Study of Resistors</h2>
 <h3 id="aim">Aim</h3>
 <p>The aim of this section is to provide a comprehensive understanding of resistors, their components, equipments, and types.</p>
@@ -68,7 +74,7 @@ Vout = 6.67V</p>
 ]]></content></item><item><title>Construction of Ce Amp on Breadboard</title><link>https://atharvap8.github.io/posts/2023/01/construction-of-ce-amp-on-breadboard/</link><pubDate>Sun, 29 Jan 2023 00:31:48 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/construction-of-ce-amp-on-breadboard/</guid><description/><content type="html"></content></item><item><title>Construction of Multivibrator Ckt on Pcb</title><link>https://atharvap8.github.io/posts/2023/01/construction-of-multivibrator-ckt-on-pcb/</link><pubDate>Sun, 29 Jan 2023 00:31:25 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/construction-of-multivibrator-ckt-on-pcb/</guid><description/><content type="html"></content></item><item><title>Construction of Fbr With Filter</title><link>https://atharvap8.github.io/posts/2023/01/construction-of-fbr-with-filter/</link><pubDate>Sun, 29 Jan 2023 00:30:59 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/construction-of-fbr-with-filter/</guid><description/><content type="html"></content></item><item><title>Loading Effect of Voltmeter</title><link>https://atharvap8.github.io/posts/2023/01/loading-effect-of-voltmeter/</link><pubDate>Sun, 29 Jan 2023 00:29:52 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/loading-effect-of-voltmeter/</guid><description/><content type="html"></content></item><item><title>Construction of Multirange Ammeter</title><link>https://atharvap8.github.io/posts/2023/01/construction-of-multirange-ammeter/</link><pubDate>Sun, 29 Jan 2023 00:29:33 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/construction-of-multirange-ammeter/</guid><description/><content type="html"></content></item><item><title>Construction of Multirange Voltmeter</title><link>https://atharvap8.github.io/posts/2023/01/construction-of-multirange-voltmeter/</link><pubDate>Sun, 29 Jan 2023 00:29:22 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/construction-of-multirange-voltmeter/</guid><description/><content type="html"></content></item><item><title>Study of Sinusoidal Non Sinusoidal Waveforms on Cro</title><link>https://atharvap8.github.io/posts/2023/01/study-of-sinusoidal-non-sinusoidal-waveforms-on-cro/</link><pubDate>Sun, 29 Jan 2023 00:28:58 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-sinusoidal-non-sinusoidal-waveforms-on-cro/</guid><description/><content type="html"></content></item><item><title>Mpt Theorem</title><link>https://atharvap8.github.io/posts/2023/01/mpt-theorem/</link><pubDate>Sun, 29 Jan 2023 00:28:20 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/mpt-theorem/</guid><description/><content type="html"></content></item><item><title>Study of Thevenin's Theorem</title><link>https://atharvap8.github.io/posts/2023/01/study-of-thevenins-theorem/</link><pubDate>Sun, 29 Jan 2023 00:27:54 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-thevenins-theorem/</guid><description/><content type="html"></content></item><item><title>Study of Transformer</title><link>https://atharvap8.github.io/posts/2023/01/study-of-transformer/</link><pubDate>Sun, 29 Jan 2023 00:27:35 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-transformer/</guid><description>Summary A transformer is a passive electrical component that transfers electrical energy from one circuit to another through electromagnetic induction. In this study, we will learn about the construction and working of a basic transformer, different types of transformers, and their applications. We will also learn about the parts required to make a basic transformer and the instruments and equipment needed to perform this activity.
 Basic Transformer Parts and Specifications A basic transformer consists of the following parts:</description><content type="html"><![CDATA[<h2 id="summary">Summary</h2>
 <p>A transformer is a passive electrical component that transfers electrical energy from one circuit to another through electromagnetic induction. In this study, we will learn about the construction and working of a basic transformer, different types of transformers, and their applications. We will also learn about the parts required to make a basic transformer and the instruments and equipment needed to perform this activity.</p>
-<figure><img src="/static/img/transformer.jpg"/><figcaption>
+<figure><img src="/img/transformer.jpg"/><figcaption>
             <h4>Basic Transformer</h4>
         </figcaption>
 </figure>
@@ -137,7 +143,7 @@ Basic Relay Parts and Specifications Parts Specifications Electromagnet Consists
 <h2 id="construction-of-a-basic-relay">Construction of a Basic Relay</h2>
 <p>A basic relay consists of an electromagnet, a set of contacts, and a spring. When the electromagnet is energized, it attracts the armature, which then moves and closes the contacts.</p>
 <p>Diagram:</p>
-<figure><img src="/static/img/relay.jpg"/><figcaption>
+<figure><img src="/img/relay.jpg"/><figcaption>
             <h4>Basic Relay</h4>
         </figcaption>
 </figure>
@@ -198,7 +204,7 @@ Diagram Basic Switch Diagram: A figure showing a Basic Switch &amp;amp; its stat
 Parts and Specifications Parts Specifications Switch SPST, SPDT, DPST, DPDT Wires 20-22 gauge Breadboard Half-sized breadboard Tools and Equipment Breadboard Jumper Wires Power Supply Multimeter Procedure To demonstrate a basic switch, follow these steps:</description><content type="html"><![CDATA[<h2 id="summary">Summary</h2>
 <p>A switch is a crucial component in electrical circuits as it can control the flow of electricity by making or breaking a connection. In this topic, we will study the basic construction, different types of switches, the function and purpose of switches, the tools and equipment required to demonstrate a basic switch, and more.</p>
 <h2 id="diagram">Diagram</h2>
-<figure><img src="/static/img/switch.jpg"/><figcaption>
+<figure><img src="/img/switch.jpg"/><figcaption>
             <h4>Basic Switch</h4>
         </figcaption>
 </figure>
@@ -247,25 +253,25 @@ Parts and Specifications Parts Specifications Switch SPST, SPDT, DPST, DPDT Wire
 <h2 id="theory">Theory</h2>
 <p>A switch is an electrical component that can make or break an electrical connection. It is designed to control the flow of electricity in a circuit. There are several types of switches, including SPST (Single Pole Single Throw), SPDT (Single Pole Double Throw), DPST (Double Pole Single Throw), and DPDT (Double Pole Double Throw).</p>
 <h2 id="types-of-switches">Types of Switches</h2>
-<figure><img src="/static/img/spst.jpg"/><figcaption>
+<figure><img src="/img/spst.jpg"/><figcaption>
             <h4>SPST Switch</h4>
         </figcaption>
 </figure>
 
 <h3 id="spst-single-pole-single-throw-switches-have-a-single-contact-that-can-either-be-connected-or-disconnected-it-is-the-simplest-type-of-switch">SPST (Single Pole Single Throw) switches have a single contact that can either be connected or disconnected. It is the simplest type of switch.</h3>
-<figure><img src="/static/img/spdt.jpg"/><figcaption>
+<figure><img src="/img/spdt.jpg"/><figcaption>
             <h4>SPDT Switch</h4>
         </figcaption>
 </figure>
 
 <h3 id="spdt-single-pole-double-throw-switches-have-two-contacts-and-can-switch-between-two-separate-circuits-it-is-commonly-used-for-switch-selector-applications">SPDT (Single Pole Double Throw) switches have two contacts and can switch between two separate circuits. It is commonly used for switch-selector applications.</h3>
-<figure><img src="/static/img/dpst.jpg"/><figcaption>
+<figure><img src="/img/dpst.jpg"/><figcaption>
             <h4>DPST Switch</h4>
         </figcaption>
 </figure>
 
 <h3 id="dpst-double-pole-single-throw-switches-have-two-separate-contacts-that-can-either-be-connected-or-disconnected-simultaneously-this-type-of-switch-is-used-for-applications-where-two-separate-circuits-need-to-be-controlled-by-a-single-switch">DPST (Double Pole Single Throw) switches have two separate contacts that can either be connected or disconnected simultaneously. This type of switch is used for applications where two separate circuits need to be controlled by a single switch.</h3>
-<figure><img src="/static/img/dpdt.jpg"/><figcaption>
+<figure><img src="/img/dpdt.jpg"/><figcaption>
             <h4>DPDT Switch</h4>
         </figcaption>
 </figure>
@@ -279,7 +285,7 @@ Parts and Specifications Parts Specifications Switch SPST, SPDT, DPST, DPDT Wire
 Construction of a Basic Air-Core Inductor The basic air-core inductor can be constructed by wrapping a wire around a non-conductive core, such as air, plastic, or fiberglass.</description><content type="html"><![CDATA[<p>An inductor is a passive electrical component that stores energy in a magnetic field when electric current flows through it. Inductors play a crucial role in many electrical circuits, from filtering to energy storage to regulation. In this study, we will delve into the construction, theory, and uses of inductors.</p>
 <h2 id="construction-of-a-basic-air-core-inductor">Construction of a Basic Air-Core Inductor</h2>
 <p>The basic air-core inductor can be constructed by wrapping a wire around a non-conductive core, such as air, plastic, or fiberglass. The number of turns, or coils, of wire used, along with the diameter and material of the wire, will determine the inductance of the inductor. To calculate the inductance, the formula <code>L = N^2 * Μ_o * A / l</code> can be used, where <code>N</code> is the number of turns, <code>Μ_o</code> is the permeability of free space, <code>A</code> is the cross-sectional area of the coil, and <code>l</code> is the length of the coil.</p>
-<figure><img src="/static/img/inductor.jpg"/><figcaption>
+<figure><img src="/img/inductor.jpg"/><figcaption>
             <h4>Basic Inductor</h4>
         </figcaption>
 </figure>
@@ -342,9 +348,17 @@ Construction of a Basic Air-Core Inductor The basic air-core inductor can be con
 <h3 id="conclusion">Conclusion</h3>
 <p>In conclusion, Inductors are important components in electrical circuits, and understanding their construction, parts, instruments, procedure, theory, types of cores, and uses is crucial. With this knowledge, one can effectively design and implement inductors in various electrical circuits.</p>
 ]]></content></item><item><title>Study of Capacitors</title><link>https://atharvap8.github.io/posts/2023/01/study-of-capacitors/</link><pubDate>Sun, 29 Jan 2023 00:27:01 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-capacitors/</guid><description>Understanding Capacitors: A Study A capacitor is an electronic component that stores electrical energy in an electric field. Capacitors are widely used in electrical circuits for a variety of purposes, including filtering, coupling, and energy storage.
+Diagram Basic Capacitor Diagram: Diagram of a basic capacitor
 Types of Capacitors There are many different types of capacitors available, each with its own unique characteristics. Some common types include:
 Aluminum electrolytic capacitors: These capacitors have a high capacitance and are commonly used in power supplies and audio equipment.</description><content type="html"><![CDATA[<h1 id="understanding-capacitors-a-study">Understanding Capacitors: A Study</h1>
 <p>A capacitor is an electronic component that stores electrical energy in an electric field. Capacitors are widely used in electrical circuits for a variety of purposes, including filtering, coupling, and energy storage.</p>
+<h2 id="diagram">Diagram</h2>
+<figure><img src="/img/capacitor.jpg"/><figcaption>
+            <h4>Basic Capacitor</h4>
+        </figcaption>
+</figure>
+
+<p>Diagram: Diagram of a basic capacitor</p>
 <h2 id="types-of-capacitors">Types of Capacitors</h2>
 <p>There are many different types of capacitors available, each with its own unique characteristics. Some common types include:</p>
 <ul>
@@ -377,7 +391,7 @@ Aluminum electrolytic capacitors: These capacitors have a high capacitance and a
 Diagram Basic DMM Parts and Specifications Part Specification Display LCD or LED Range Selection Manual or Auto Ranging Input Impedance &amp;gt;10 MΩ Maximum Voltage 600V AC/DC Maximum Current 10A AC/DC Resistance 200Ω to 200MΩ Continuity Test Built-in Buzzer Diode Test Built-in Tools and Instruments Digital multimeter Lead set 9V battery Circuit under test Procedure The procedure for using a digital multimeter is quite straightforward.</description><content type="html"><![CDATA[<h2 id="summary">Summary</h2>
 <p>This topic aims to provide an in-depth understanding of digital multimeters, including its construction, components, and various applications.</p>
 <h2 id="diagram">Diagram</h2>
-<figure><img src="/static/img/dmm.jpg"/><figcaption>
+<figure><img src="/img/dmm.jpg"/><figcaption>
             <h4>Basic DMM</h4>
         </figcaption>
 </figure>
