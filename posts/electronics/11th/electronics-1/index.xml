@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Electronics-1 on Atharva Phadke</title><link>https://atharvap8.github.io/posts/electronics/11th/electronics-1/</link><description>Recent content in Electronics-1 on Atharva Phadke</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Fri, 27 Jan 2023 22:44:41 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/posts/electronics/11th/electronics-1/index.xml" rel="self" type="application/rss+xml"/><item><title>Study of Resistors</title><link>https://atharvap8.github.io/posts/2023/01/study-of-resistors/</link><pubDate>Sun, 29 Jan 2023 05:13:36 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-resistors/</guid><description>Study Of Resistors Basic Resistor Diagram: A basic resistor. Part 1: Study of Resistors Aim The aim of this section is to provide a comprehensive understanding of resistors, their components, equipments, and types.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Electronics-1 on Atharva Phadke</title><link>https://atharvap8.github.io/posts/electronics/11th/electronics-1/</link><description>Recent content in Electronics-1 on Atharva Phadke</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Fri, 27 Jan 2023 22:44:41 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/posts/electronics/11th/electronics-1/index.xml" rel="self" type="application/rss+xml"/><item><title>Study of Resistors</title><link>https://atharvap8.github.io/posts/2023/01/study-of-resistors/</link><pubDate>Sun, 29 Jan 2023 05:13:36 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-resistors/</guid><description>Study Of Resistors Basic Resistor Diagram: A basic resistor. Part 1: Study of Resistors Working of Resistor Aim The aim of this section is to provide a comprehensive understanding of resistors, their components, equipments, and types.
 Components List Resistor Multimeter Equipments Power Supply Breadboard Types Of Resistors Fixed Resistors Variable Resistors Information about Fixed Resistors Fixed resistors are electrical components that have a fixed value of resistance, meaning that their resistance does not change.</description><content type="html"><![CDATA[<h1 id="study-of-resistors">Study Of Resistors</h1>
 <figure><img src="/img/resistor.jpg"/><figcaption>
             <h4>Basic Resistor</h4>
@@ -7,6 +7,11 @@ Components List Resistor Multimeter Equipments Power Supply Breadboard Types Of 
 
 <h3 id="diagram-a-basic-resistor">Diagram: A basic resistor.</h3>
 <h2 id="part-1-study-of-resistors">Part 1: Study of Resistors</h2>
+<figure><img src="/img/resistor.gif"/><figcaption>
+            <h4>Working of Resistor</h4>
+        </figcaption>
+</figure>
+
 <h3 id="aim">Aim</h3>
 <p>The aim of this section is to provide a comprehensive understanding of resistors, their components, equipments, and types.</p>
 <h3 id="components-list">Components List</h3>
@@ -58,7 +63,7 @@ Components List Resistor Multimeter Equipments Power Supply Breadboard Types Of 
 <li>Breadboard</li>
 <li>Multimeter</li>
 </ol>
-<h3 id="explain-theory-in-deep">Explain theory in deep</h3>
+<h3 id="theory">Theory</h3>
 <p>In a potential divider arrangement, two resistors are connected in series to a voltage source. The voltage across each resistor is proportional to its resistance, with the voltage across the first resistor (R1) being Vout and the voltage across the second resistor (R2) being (Vin - Vout). By knowing the voltage across the resistors, the resistance values can be calculated using Ohm&rsquo;s law, which states that the current in a circuit is equal to the voltage divided by the resistance.</p>
 <h3 id="diagram">Diagram</h3>
 <p><img src="https://qph.cf2.quoracdn.net/main-qimg-3ada7a203f51881e291de1e7d67daa99" alt="Potential divider arrangement diagram"></p>
@@ -126,7 +131,12 @@ Basic Transformer Parts and Specifications A basic transformer consists of the f
 <li>Test the transformer using a multimeter to measure the voltage and current ratings.</li>
 </ol>
 <h2 id="theory">Theory</h2>
-<p>The basic theory behind a transformer is electromagnetic induction. When an alternating current flows through one coil, it generates a magnetic field that induces a voltage in the other coil. The voltage is proportional to the number of turns in each coil, the frequency of the alternating current, and the magnetic permeability of the core.</p>
+<p>The basic theory behind a transformer is electromagnetic induction. When an alternating current flows through one coil, it generates a magnetic field that induces a voltage in the other coil. The voltage is proportional to the number of turns in each coil, the frequency of the alternating current, and the magnetic permeability of the core.
+<figure><img src="/img/transformer.gif"/><figcaption>
+            <h4>Working of Transformer</h4>
+        </figcaption>
+</figure>
+</p>
 <h2 id="types-of-transformers">Types of Transformers</h2>
 <p>There are several types of transformers, including:</p>
 <ul>
@@ -197,6 +207,11 @@ Basic Relay Parts and Specifications Parts Specifications Electromagnet Consists
 <li>Finally, connect the relay to a circuit and test it under normal operating conditions.</li>
 </ol>
 <h2 id="theory">Theory</h2>
+<figure><img src="/img/relay.gif"/><figcaption>
+            <h4>Working of Relay</h4>
+        </figcaption>
+</figure>
+
 <p>Relays are electrical switches that use an electromagnet to operate. When a voltage is applied to the coil of the electromagnet, it creates a magnetic field that attracts the armature, causing it to close the contacts. This closing of contacts completes the electrical circuit and allows current to flow. When the voltage is removed from the coil, the magnetic field collapses, and the spring returns the armature to its original position, opening the contacts and breaking the circuit.</p>
 <p>Relays are useful in controlling high-power circuits with low-power signals, as well as in protecting sensitive electronic circuits from damage due to overloading.</p>
 <h2 id="applications">Applications</h2>
@@ -256,31 +271,59 @@ Parts and Specifications Parts Specifications Switch SPST, SPDT, DPST, DPDT Wire
 </ol>
 <h2 id="theory">Theory</h2>
 <p>A switch is an electrical component that can make or break an electrical connection. It is designed to control the flow of electricity in a circuit. There are several types of switches, including SPST (Single Pole Single Throw), SPDT (Single Pole Double Throw), DPST (Double Pole Single Throw), and DPDT (Double Pole Double Throw).</p>
-<h2 id="types-of-switches">Types of Switches</h2>
+<h2 id="types-of-switches">Types of Switches:</h2>
 <figure><img src="/img/spst.jpg"/><figcaption>
             <h4>SPST Switch</h4>
         </figcaption>
 </figure>
 
-<h3 id="spst-single-pole-single-throw-switches-have-a-single-contact-that-can-either-be-connected-or-disconnected-it-is-the-simplest-type-of-switch">SPST (Single Pole Single Throw) switches have a single contact that can either be connected or disconnected. It is the simplest type of switch.</h3>
+<h3 id="spst-single-pole-single-throw">SPST (Single Pole Single Throw):</h3>
+<p>These switches have a single contact that can either be connected or disconnected. It is the simplest type of switch.
+<figure><img src="/img/spst.gif"/><figcaption>
+            <h4>Working of SPST</h4>
+        </figcaption>
+</figure>
+</p>
+<hr>
 <figure><img src="/img/spdt.jpg"/><figcaption>
             <h4>SPDT Switch</h4>
         </figcaption>
 </figure>
 
-<h3 id="spdt-single-pole-double-throw-switches-have-two-contacts-and-can-switch-between-two-separate-circuits-it-is-commonly-used-for-switch-selector-applications">SPDT (Single Pole Double Throw) switches have two contacts and can switch between two separate circuits. It is commonly used for switch-selector applications.</h3>
+<h3 id="spdt-single-pole-double-throw">SPDT (Single Pole Double Throw):</h3>
+<p>These switches have two contacts and can switch between two separate circuits. It is commonly used for switch-selector applications.
+<figure><img src="/img/spdt.gif"/><figcaption>
+            <h4>Working of SPDT</h4>
+        </figcaption>
+</figure>
+</p>
+<hr>
 <figure><img src="/img/dpst.jpg"/><figcaption>
             <h4>DPST Switch</h4>
         </figcaption>
 </figure>
 
-<h3 id="dpst-double-pole-single-throw-switches-have-two-separate-contacts-that-can-either-be-connected-or-disconnected-simultaneously-this-type-of-switch-is-used-for-applications-where-two-separate-circuits-need-to-be-controlled-by-a-single-switch">DPST (Double Pole Single Throw) switches have two separate contacts that can either be connected or disconnected simultaneously. This type of switch is used for applications where two separate circuits need to be controlled by a single switch.</h3>
+<h3 id="dpst-double-pole-single-throw">DPST (Double Pole Single Throw):</h3>
+<p>These switches have two separate contacts that can either be connected or disconnected simultaneously. This type of switch is used for applications where two separate circuits need to be controlled by a single switch.
+<figure><img src="/img/dpst.gif"/><figcaption>
+            <h4>Working of DPST</h4>
+        </figcaption>
+</figure>
+</p>
+<hr>
 <figure><img src="/img/dpdt.jpg"/><figcaption>
             <h4>DPDT Switch</h4>
         </figcaption>
 </figure>
 
-<h3 id="dpdt-double-pole-double-throw-switches-have-two-separate-sets-of-contacts-that-can-switch-between-two-separate-circuits-it-is-commonly-used-for-reversing-switch-applications">DPDT (Double Pole Double Throw) switches have two separate sets of contacts that can switch between two separate circuits. It is commonly used for reversing switch applications.</h3>
+<h3 id="dpdt-double-pole-double-throw">DPDT (Double Pole Double Throw):</h3>
+<p>These switches have two separate sets of contacts that can switch between two separate circuits. It is commonly used for reversing switch applications.
+<figure><img src="/img/dpdt.gif"/><figcaption>
+            <h4>Working of DPDT</h4>
+        </figcaption>
+</figure>
+</p>
+<hr>
 <h2 id="uses-of-switches">Uses of Switches</h2>
 <p>Switches play a crucial role in electrical circuits as they are used to control the flow of electricity. They are used in various applications such as turning on/off lights, controlling appliances, and in complex circuit designs such as computer motherboards, digital circuits, and more.</p>
 <h2 id="conclusion">Conclusion</h2>
@@ -340,6 +383,11 @@ Construction of a Basic Air-Core Inductor The basic air-core inductor can be con
 <li>Test the inductance using a multimeter.</li>
 </ol>
 <h2 id="theory">Theory</h2>
+<figure><img src="/img/inductor.gif"/><figcaption>
+            <h4>Working of Inductor</h4>
+        </figcaption>
+</figure>
+
 <p>An inductor is a passive electrical component that stores energy in a magnetic field when electric current flows through it. The basic principle behind an inductor is Faraday&rsquo;s Law of Electromagnetic Induction, which states that a changing magnetic field induces an electromotive force (EMF) in a conductor. The amount of energy stored in an inductor is proportional to the number of turns in the wire and the current flowing through it.</p>
 <h2 id="types-of-cores">Types of Cores</h2>
 <p>There are several different types of cores that can be used in inductors, including air cores, iron cores, ferrite cores, and more. Each type of core has its own unique properties and advantages, making it ideal for specific applications.</p>
@@ -353,8 +401,7 @@ Construction of a Basic Air-Core Inductor The basic air-core inductor can be con
 <p>In conclusion, Inductors are important components in electrical circuits, and understanding their construction, parts, instruments, procedure, theory, types of cores, and uses is crucial. With this knowledge, one can effectively design and implement inductors in various electrical circuits.</p>
 ]]></content></item><item><title>Study of Capacitors</title><link>https://atharvap8.github.io/posts/2023/01/study-of-capacitors/</link><pubDate>Sun, 29 Jan 2023 00:27:01 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-capacitors/</guid><description>Understanding Capacitors: A Study A capacitor is an electronic component that stores electrical energy in an electric field. Capacitors are widely used in electrical circuits for a variety of purposes, including filtering, coupling, and energy storage.
 Diagram Basic Capacitor Diagram: Diagram of a basic capacitor
-Types of Capacitors There are many different types of capacitors available, each with its own unique characteristics. Some common types include:
-Aluminum electrolytic capacitors: These capacitors have a high capacitance and are commonly used in power supplies and audio equipment.</description><content type="html"><![CDATA[<h1 id="understanding-capacitors-a-study">Understanding Capacitors: A Study</h1>
+Theory Working of Capacitor A capacitor is a two-terminal electronic component that stores electrical energy in an electric field. The theory of working of a capacitor is based on the principle of electrostatics, which states that opposite charges attract and like charges repel.</description><content type="html"><![CDATA[<h1 id="understanding-capacitors-a-study">Understanding Capacitors: A Study</h1>
 <p>A capacitor is an electronic component that stores electrical energy in an electric field. Capacitors are widely used in electrical circuits for a variety of purposes, including filtering, coupling, and energy storage.</p>
 <h2 id="diagram">Diagram</h2>
 <figure><img src="/img/capacitor.jpg"/><figcaption>
@@ -363,6 +410,13 @@ Aluminum electrolytic capacitors: These capacitors have a high capacitance and a
 </figure>
 
 <p>Diagram: Diagram of a basic capacitor</p>
+<h2 id="theory">Theory</h2>
+<figure><img src="/img/capacitor.gif"/><figcaption>
+            <h4>Working of Capacitor</h4>
+        </figcaption>
+</figure>
+
+<p>A capacitor is a two-terminal electronic component that stores electrical energy in an electric field. The theory of working of a capacitor is based on the principle of electrostatics, which states that opposite charges attract and like charges repel. When a voltage is applied across the terminals of a capacitor, it causes an electric field to develop between two conductive plates, separated by an insulating material known as a dielectric. The strength of the electric field is proportional to the voltage across the capacitor and the capacitance, which is a measure of the amount of electrical charge that can be stored per unit of voltage. When the voltage is removed, the electric field collapses and the energy stored in the electric field is released, making capacitors useful in a variety of applications such as power supplies, filters, and energy storage.</p>
 <h2 id="types-of-capacitors">Types of Capacitors</h2>
 <p>There are many different types of capacitors available, each with its own unique characteristics. Some common types include:</p>
 <ul>
@@ -453,6 +507,11 @@ Diagram Basic DMM Parts and Specifications Part Specification Display LCD or LED
 <h2 id="procedure">Procedure</h2>
 <p>The procedure for using a digital multimeter is quite straightforward. First, select the appropriate range for the measurement to be taken. Then, connect the leads to the multimeter and to the circuit under test. Finally, observe the reading on the display. It is important to note that the polarity of the leads should be observed, as some measurements require the leads to be connected in a specific way.</p>
 <h2 id="theory">Theory</h2>
+<figure><img src="/img/dmm.gif"/><figcaption>
+            <h4>Working of DMM</h4>
+        </figcaption>
+</figure>
+
 <p>A digital multimeter is an electronic measuring instrument that can measure several electrical parameters such as voltage, current, resistance, and continuity. Digital multimeters use an ADC (Analog-to-Digital Converter) to convert the analog signals into digital signals for display on a screen.</p>
 <p>The input impedance of a digital multimeter is high, typically above 10 MΩ, which means that it has very little effect on the circuit being measured. This is important because it allows accurate measurements to be taken without disturbing the circuit under test.</p>
 <h2 id="types-of-digital-multimeters">Types of Digital Multimeters</h2>
