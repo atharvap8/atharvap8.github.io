@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Electronics-2 on Atharva Phadke</title><link>https://atharvap8.github.io/posts/electronics/11th/electronics-2/</link><description>Recent content in Electronics-2 on Atharva Phadke</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Sat, 28 Jan 2023 22:44:41 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/posts/electronics/11th/electronics-2/index.xml" rel="self" type="application/rss+xml"/><item><title>Testing of Diodes and Transistors</title><link>https://atharvap8.github.io/posts/2023/01/testing-of-diodes-and-transistors/</link><pubDate>Sun, 29 Jan 2023 00:39:28 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/testing-of-diodes-and-transistors/</guid><description/><content type="html"></content></item><item><title>Measurement of Ip Op Resistance of Ce Amp</title><link>https://atharvap8.github.io/posts/2023/01/measurement-of-ip-op-resistance-of-ce-amp/</link><pubDate>Sun, 29 Jan 2023 00:39:03 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/measurement-of-ip-op-resistance-of-ce-amp/</guid><description/><content type="html"></content></item><item><title>Study of HWR and FWR Using CT Transformer</title><link>https://atharvap8.github.io/posts/2023/01/study-of-hwr-and-fwr-using-ct-transformer/</link><pubDate>Sun, 29 Jan 2023 00:38:33 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-hwr-and-fwr-using-ct-transformer/</guid><description>Part-1: Study of Half-Wave Rectifier Aim To study the half-wave rectifier and its input and output waveform.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Electronics-2 on Atharva Phadke</title><link>https://atharvap8.github.io/posts/electronics/11th/electronics-2/</link><description>Recent content in Electronics-2 on Atharva Phadke</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Sat, 28 Jan 2023 22:44:41 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/posts/electronics/11th/electronics-2/index.xml" rel="self" type="application/rss+xml"/><item><title>Testing of Diodes and Transistors</title><link>https://atharvap8.github.io/posts/2023/01/testing-of-diodes-and-transistors/</link><pubDate>Sun, 29 Jan 2023 00:39:28 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/testing-of-diodes-and-transistors/</guid><description/><content type="html"></content></item><item><title>Study of HWR and FWR Using CT Transformer</title><link>https://atharvap8.github.io/posts/2023/01/study-of-hwr-and-fwr-using-ct-transformer/</link><pubDate>Sun, 29 Jan 2023 00:38:33 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-hwr-and-fwr-using-ct-transformer/</guid><description>Part-1: Study of Half-Wave Rectifier Aim To study the half-wave rectifier and its input and output waveform.
 Components Required Component Quantity Diode 1 Resistor 1 Capacitor 1 Transformer 1 Power Supply 1 Equipment Required Oscilloscope Function Generator Breadboard Connecting Wires Circuit Diagram 👇🏻 Theory The half-wave rectifier is a simple circuit that converts AC voltage into a pulsating DC voltage. It consists of a diode that is connected in series with the load resistor and an AC source.</description><content type="html"><![CDATA[<h2 id="part-1-study-of-half-wave-rectifier">Part-1: Study of Half-Wave Rectifier</h2>
 <hr>
 <h3 id="aim">Aim</h3>
@@ -295,7 +295,255 @@ Components Required Component Quantity Diode 1 Resistor 1 Capacitor 1 Transforme
 <hr>
 <h3 id="conclusion-3">Conclusion</h3>
 <p>The full wave rectifier using center tapped transformer is an important circuit used in power supplies. The experiment was performed to study the effect of changing load resistance and input AC voltage on the rectified output voltage. The ripple factor and peak inverse voltage of the full wave rectifier circuit were also studied. The results obtained in this experiment provide a clear understanding of the full wave rectifier circuit and its behavior under different conditions.</p>
-]]></content></item><item><title>Study of Ip Op Chars of Transistor in Ce Config</title><link>https://atharvap8.github.io/posts/2023/01/study-of-ip-op-chars-of-transistor-in-ce-config/</link><pubDate>Sun, 29 Jan 2023 00:37:48 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-ip-op-chars-of-transistor-in-ce-config/</guid><description/><content type="html"></content></item><item><title>Study of Photodiode Phototransistor</title><link>https://atharvap8.github.io/posts/2023/01/study-of-photodiode-phototransistor/</link><pubDate>Sun, 29 Jan 2023 00:37:19 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-photodiode-phototransistor/</guid><description/><content type="html"></content></item><item><title>Frequency Response of Af Amplifier</title><link>https://atharvap8.github.io/posts/2023/01/frequency-response-of-af-amplifier/</link><pubDate>Sun, 29 Jan 2023 00:36:52 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/frequency-response-of-af-amplifier/</guid><description/><content type="html"></content></item><item><title>Study of Ujt Characteristics</title><link>https://atharvap8.github.io/posts/2023/01/study-of-ujt-characteristics/</link><pubDate>Sun, 29 Jan 2023 00:36:32 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-ujt-characteristics/</guid><description/><content type="html"></content></item><item><title>Study of Fet Characteristics</title><link>https://atharvap8.github.io/posts/2023/01/study-of-fet-characteristics/</link><pubDate>Sun, 29 Jan 2023 00:36:24 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-fet-characteristics/</guid><description/><content type="html"></content></item><item><title>Transistor as a Switch</title><link>https://atharvap8.github.io/posts/2023/01/transistor-as-a-switch/</link><pubDate>Sun, 29 Jan 2023 00:35:08 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/transistor-as-a-switch/</guid><description/><content type="html"></content></item><item><title>Study of Amplification Using Simple Amplifier</title><link>https://atharvap8.github.io/posts/2023/01/study-of-amplification-using-simple-amplifier/</link><pubDate>Sun, 29 Jan 2023 00:34:52 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-amplification-using-simple-amplifier/</guid><description/><content type="html"></content></item><item><title>Study of Equaliser Ckt in a Amp</title><link>https://atharvap8.github.io/posts/2023/01/study-of-equaliser-ckt-in-a-amp/</link><pubDate>Sun, 29 Jan 2023 00:34:29 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-equaliser-ckt-in-a-amp/</guid><description/><content type="html"></content></item><item><title>Neg and Pos Feedback</title><link>https://atharvap8.github.io/posts/2023/01/neg-and-pos-feedback/</link><pubDate>Sun, 29 Jan 2023 00:34:07 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/neg-and-pos-feedback/</guid><description/><content type="html"></content></item><item><title>Burglar Alarm Using Scr Ldr</title><link>https://atharvap8.github.io/posts/2023/01/burglar-alarm-using-scr-ldr/</link><pubDate>Sun, 29 Jan 2023 00:33:43 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/burglar-alarm-using-scr-ldr/</guid><description/><content type="html"></content></item><item><title>Study of Sinusoidal Oscillator</title><link>https://atharvap8.github.io/posts/2023/01/study-of-sinusoidal-oscillator/</link><pubDate>Sun, 29 Jan 2023 00:33:21 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-sinusoidal-oscillator/</guid><description/><content type="html"></content></item><item><title>Study of Bridge Rectifier</title><link>https://atharvap8.github.io/posts/2023/01/study-of-bridge-rectifier/</link><pubDate>Sun, 29 Jan 2023 00:33:03 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-bridge-rectifier/</guid><description/><content type="html"></content></item><item><title>Study of Resistive Chars of Pn Type Semiconductors</title><link>https://atharvap8.github.io/posts/2023/01/study-of-resistive-chars-of-pn-type-semiconductors/</link><pubDate>Sun, 29 Jan 2023 00:32:46 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-resistive-chars-of-pn-type-semiconductors/</guid><description/><content type="html"></content></item><item><title>P-N Junction Diode Characteristics(Forward &amp; Reverse)</title><link>https://atharvap8.github.io/posts/2023/01/p-n-junction-diode-characteristicsforward-reverse/</link><pubDate>Sat, 28 Jan 2023 21:34:36 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/p-n-junction-diode-characteristicsforward-reverse/</guid><description>Aim The aim of this experiment is to study the forward and reverse characteristics of a P-N junction diode and to determine its cut-in voltage and resistance.
+]]></content></item><item><title>Transistor as a Switch</title><link>https://atharvap8.github.io/posts/2023/01/transistor-as-a-switch/</link><pubDate>Sun, 29 Jan 2023 00:35:08 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/transistor-as-a-switch/</guid><description>Aim The aim of this study is to understand the working of a transistor as a switch and how it can be used to control the flow of current in a circuit.
+Components Required Component Description Transistor Any NPN or PNP transistor Resistor Any value between 1kΩ to 10kΩ LED Any standard LED Power Supply Any DC power supply with voltage between 5V to 12V Equipments Needed Breadboard Jumper Wires Multimeter Theory A transistor can be used as a switch to control the flow of current in a circuit.</description><content type="html"><![CDATA[<hr>
+<h2 id="aim">Aim</h2>
+<p>The aim of this study is to understand the working of a transistor as a switch and how it can be used to control the flow of current in a circuit.</p>
+<hr>
+<h2 id="components-required">Components Required</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Transistor</td>
+<td>Any NPN or PNP transistor</td>
+</tr>
+<tr>
+<td>Resistor</td>
+<td>Any value between 1kΩ to 10kΩ</td>
+</tr>
+<tr>
+<td>LED</td>
+<td>Any standard LED</td>
+</tr>
+<tr>
+<td>Power Supply</td>
+<td>Any DC power supply with voltage between 5V to 12V</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="equipments-needed">Equipments Needed</h2>
+<ol>
+<li>Breadboard</li>
+<li>Jumper Wires</li>
+<li>Multimeter</li>
+</ol>
+<hr>
+<h2 id="theory">Theory</h2>
+<p>A transistor can be used as a switch to control the flow of current in a circuit. The transistor operates in two modes: cut-off and saturation. In the cut-off mode, the transistor acts as an open switch, and no current flows through the circuit. In saturation, the transistor acts as a closed switch, and maximum current flows through the circuit. By adjusting the current applied to the base terminal of the transistor, we can control the flow of current in the circuit.</p>
+<hr>
+<h2 id="procedure">Procedure</h2>
+<ol>
+<li>
+<p>Connect the transistor to the breadboard as per the circuit diagram.</p>
+</li>
+<li>
+<p>Connect the power supply to the circuit.</p>
+</li>
+<li>
+<p>Apply a small current to the base terminal of the transistor to observe the flow of current through the circuit.</p>
+</li>
+<li>
+<p>Increase the current applied to the base terminal and observe the effect on the flow of current through the circuit.</p>
+</li>
+<li>
+<p>Observe the effect of the resistance value on the flow of current through the circuit.</p>
+</li>
+</ol>
+<hr>
+<h2 id="circuit-diagram">Circuit Diagram</h2>
+<figure><img src="/img/taas.jpg"/>
+</figure>
+
+<hr>
+<h2 id="precautions">Precautions</h2>
+<ul>
+<li>Use a transistor with a suitable voltage and current rating for the circuit.</li>
+<li>Avoid applying excessive current to the base terminal of the transistor to prevent damage.</li>
+<li>Observe proper wiring and connectivity in the circuit.</li>
+<li>Use a suitable power supply with proper grounding to avoid any electrical shock.</li>
+<li>Avoid exposing the circuit to high temperature or moisture.</li>
+</ul>
+<hr>
+<h2 id="summary">Summary</h2>
+<p>In this study, we learned about the working of a transistor as a switch and how it can be used to control the flow of current in a circuit. By adjusting the base current, we can control the flow of current through the circuit.</p>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p>The transistor is a versatile device that can be used as a switch in various electronic circuits. By understanding the basic principles of its operation, we can use it to design efficient and effective electronic circuits.</p>
+]]></content></item><item><title>Study of Bridge Rectifier</title><link>https://atharvap8.github.io/posts/2023/01/study-of-bridge-rectifier/</link><pubDate>Sun, 29 Jan 2023 00:33:03 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-bridge-rectifier/</guid><description>Aim The aim of this study is to understand the working of a bridge rectifier and to observe its input and output waveforms.
+Components Required Component Quantity Diode 4 Resistor 4 Capacitor 1 Transformer 1 Equipments Needed Digital multimeter Function generator Oscilloscope Connecting wires Theory A bridge rectifier is an electronic circuit that converts an alternating current (AC) input into a direct current (DC) output. The rectifier circuit consists of four diodes arranged in a bridge configuration.</description><content type="html"><![CDATA[<hr>
+<h2 id="aim">Aim</h2>
+<p>The aim of this study is to understand the working of a bridge rectifier and to observe its input and output waveforms.</p>
+<hr>
+<h2 id="components-required">Components Required</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Quantity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Diode</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Resistor</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Capacitor</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Transformer</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="equipments-needed">Equipments Needed</h2>
+<ul>
+<li>Digital multimeter</li>
+<li>Function generator</li>
+<li>Oscilloscope</li>
+<li>Connecting wires</li>
+</ul>
+<hr>
+<h2 id="theory">Theory</h2>
+<ul>
+<li>A bridge rectifier is an electronic circuit that converts an alternating current (AC) input into a direct current (DC) output.</li>
+<li>The rectifier circuit consists of four diodes arranged in a bridge configuration. The AC input is applied to the diagonals of the bridge, and the DC output is taken from the center of the bridge.</li>
+<li>During the positive half cycle of the AC input, diodes D1 and D2 conduct and provide a positive output.</li>
+<li>During the negative half cycle of the AC input, diodes D3 and D4 conduct and provide a negative output.</li>
+<li>The DC output is a pulsed signal, which can be smoothed using a filter capacitor to obtain a pure DC signal.</li>
+<li>The bridge rectifier is a simple, efficient, and cost-effective solution for converting AC to DC.</li>
+<li>The bridge rectifier circuit is commonly used in power supplies, chargers, and other applications where a DC output is required. T The bridge rectifier is a versatile circuit that can be used in many applications, making it an important component in the field of electronics.</li>
+</ul>
+<hr>
+<h3 id="advantages">Advantages</h3>
+<ul>
+<li>The main advantage of a bridge rectifier over a half-wave rectifier is that it utilizes both positive and negative cycles of the AC input, resulting in a higher efficiency and a more regulated DC output.</li>
+<li>The use of four diodes provides full-wave rectification, which results in a higher DC output compared to a half-wave rectifier.</li>
+<li>The bridge rectifier circuit can also be used to isolate the DC output from the AC input, providing electrical isolation and protection to the load.</li>
+</ul>
+<hr>
+<h3 id="during-positive-half-cycle-">During Positive Half-Cycle 👇🏻</h3>
+<figure><img src="/img/fbr&#43;.gif"/>
+ </figure>
+
+<hr>
+<h3 id="during-negative-half-cycle-">During Negative Half-Cycle 👇🏻</h3>
+<figure><img src="/img/fbr-.gif"/>
+ </figure>
+
+<hr>
+<h2 id="procedure">Procedure</h2>
+<ol>
+<li>
+<p>Assemble the circuit of a bridge rectifier using the components listed above.</p>
+</li>
+<li>
+<p>Connect the digital multimeter to measure the voltage and current levels.</p>
+</li>
+<li>
+<p>Connect the function generator to the AC input of the rectifier and the oscilloscope to the DC output.</p>
+</li>
+<li>
+<p>Set the function generator to produce a sinusoidal waveform of desired frequency and amplitude.</p>
+</li>
+<li>
+<p>Turn on the oscilloscope and adjust its settings to observe the input and output waveforms.</p>
+</li>
+<li>
+<p>Observe the voltage and current levels using the digital multimeter.</p>
+</li>
+<li>
+<p>Vary the frequency and amplitude of the input waveform and observe the changes in the output waveform.</p>
+</li>
+<li>
+<p>Repeat the above steps for different values of load resistance.</p>
+</li>
+<li>
+<p>Plot the input and output waveforms on a graph paper.</p>
+</li>
+<li>
+<p>Calculate the rectification efficiency of the circuit.</p>
+</li>
+<li>
+<p>Observe the effect of adding a filter capacitor on the output waveform.</p>
+</li>
+<li>
+<p>Vary the value of the filter capacitor and observe the changes in the output waveform.</p>
+</li>
+<li>
+<p>Plot the effect of the filter capacitor on the output waveform.</p>
+</li>
+<li>
+<p>Study the effect of load resistance on the output waveform.</p>
+</li>
+<li>
+<p>Calculate the peak inverse voltage (PIV) of the circuit.</p>
+</li>
+<li>
+<p>Study the effect of PIV on the diodes.</p>
+</li>
+<li>
+<p>Observe the effect of reverse biasing the diodes.</p>
+</li>
+<li>
+<p>Study the effect of using different types of diodes on the output waveform.</p>
+</li>
+<li>
+<p>Observe the effect of using different values of resistors on the output waveform.</p>
+</li>
+<li>
+<p>Plot the effect of all the above parameters on the output waveform.</p>
+</li>
+</ol>
+<hr>
+<h2 id="circuit-diagram">Circuit Diagram</h2>
+<figure><img src="/img/fbr.jpg"/>
+</figure>
+
+<hr>
+<h2 id="input-and-output-waveforms">Input and Output Waveforms</h2>
+<figure><img src="/img/fbr-waveform.jpg"/>
+</figure>
+
+<hr>
+<h2 id="precautions">Precautions</h2>
+<ul>
+<li>Use diodes with a high PIV rating to prevent damage.</li>
+<li>Use a filter capacitor with a suitable value to reduce the ripples in the output waveform.</li>
+<li>Use a transformer with a high voltage rating to prevent damage.</li>
+<li>Connect the diodes in the correct polarity to avoid damage.</li>
+<li>Use a load resistance with a suitable value to avoid overloading the circuit.</li>
+<li>Observe proper safety measures when working with high voltage and current levels.</li>
+<li>Avoid short circuits in the circuit.</li>
+<li>Avoid reverse biasing the diodes.</li>
+<li>Use a function generator with a stable output to obtain accurate results.</li>
+<li>Use an oscilloscope with a high input impedance to avoid loading the circuit.</li>
+<li>Observe proper grounding techniques to avoid any electrical shock.</li>
+<li>Avoid touching the circuit components when power is applied.</li>
+<li>Avoid exposing the circuit to moisture or high temperature.</li>
+<li>Regularly check the circuit components for any signs of damage.</li>
+<li>Store the circuit components in a safe and dry place when not in use.</li>
+</ul>
+<hr>
+<h2 id="summary">Summary</h2>
+<p>In this study, we learned about the working of a bridge rectifier and observed its input and output waveforms. We also studied the effect of various parameters such as frequency, amplitude, load resistance, filter capacitor, PIV, and diodes on the output waveform.</p>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p>The bridge rectifier is a useful device for converting AC input into a DC output. With proper design and use of components, it can provide a regulated DC output with reduced ripples. The study of a bridge rectifier helps in understanding the principles of rectification and filtering in electronics.</p>
+]]></content></item><item><title>P-N Junction Diode Characteristics(Forward &amp; Reverse)</title><link>https://atharvap8.github.io/posts/2023/01/p-n-junction-diode-characteristicsforward-reverse/</link><pubDate>Sat, 28 Jan 2023 21:34:36 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/p-n-junction-diode-characteristicsforward-reverse/</guid><description>Aim The aim of this experiment is to study the forward and reverse characteristics of a P-N junction diode and to determine its cut-in voltage and resistance.
 Components Required Component Name Quantity P-N Junction Diode 1 Resistor 1 Power Supply 1 Multimeter 1 Crocodile Clips 2 Equipments Required Oscilloscope Connecting wires Theory P-N Junction Diode A P-N junction diode is a two-terminal device made of a p-type semiconductor material and an n-type semiconductor material joined together.</description><content type="html"><![CDATA[<h2 id="aim">Aim</h2>
 <p>The aim of this experiment is to study the forward and reverse characteristics of a P-N junction diode and to determine its cut-in voltage and resistance.</p>
 <hr>
