@@ -138,7 +138,7 @@ utterancesTheme = "github-dark"
   # Social icons
   [[params.social]]
     name = "youtube"
-    url  = "https://youtube.com/@asp08"
+    url  = "https://www.youtube.com/channel/UCHDgYG-P6Fct9-CwAqteHYA"
 
   [[params.social]]
     name = "email"
