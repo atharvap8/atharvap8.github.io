@@ -104,7 +104,7 @@ disableHugoGeneratorInject = true
 
     topText = []
     bottomText = [
-      "Made with &#10084; by <a href=\"https://github.com/atharvap8\">Atharva Phadke</a>"
+      "Made by <a href=\"https://github.com/atharvap8\">Atharva Phadke</a>"
     ]
 
   # Colors for favicons
@@ -168,11 +168,11 @@ utterancesTheme = "github-dark"
   
   [[menu.main]]
     identifier = "yt-projects"
-    name       = "Youtube Projects"
-    url        = "posts/yt-projects/"
+    name       = "Electronics Projects"
+    url        = "posts/ee-projects/"
 
   [[menu.main]]
     identifier = "electronics"
-    name       = "Electronics"
+    name       = "Electronics Practicals"
     url        = "posts/electronics/" 
   
