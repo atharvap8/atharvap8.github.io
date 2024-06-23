@@ -47,7 +47,7 @@ Components Required Component Description Diodes Any standard diode Transistors 
 <li>In the case of a diode, the multimeter measures the forward and reverse resistance of the diode to determine its working status. The forward resistance of a diode should be low, while the reverse resistance should be infinite.</li>
 </ul>
 <h3 id="example-of-diode-test">Example Of Diode Test</h3>
-<figure class="center"><img src="/img/ref-dt.jpg" width="1600px" height="400px"/>
+<figure class="center"><img src="/img/ref-dt.jpg" width="1600px" height="400px">
   </figure>
 
 <hr>
@@ -61,7 +61,7 @@ Components Required Component Description Diodes Any standard diode Transistors 
 <li>In the case of a transistor, the multimeter measures the current gain of the transistor, which is defined as the ratio of collector current to base current. The current gain of a transistor should be high, typically in the range of 100 to 1000.</li>
 </ul>
 <h3 id="example-of-transistor-test">Example Of Transistor Test</h3>
-<figure class="center"><img src="/img/ref-tt.jpg" width="1600px" height="400px"/>
+<figure class="center"><img src="/img/ref-tt.jpg" width="1600px" height="400px">
   </figure>
 
 <hr>
@@ -164,7 +164,7 @@ Components Required Component Quantity Diode 1 Resistor 1 Capacitor 1 Transforme
 </ul>
 <hr>
 <h3 id="circuit-diagram-">Circuit Diagram 👇🏻</h3>
-<figure><img src="/img/hwr.jpg"/>
+<figure><img src="/img/hwr.jpg">
 </figure>
 
 <hr>
@@ -174,7 +174,7 @@ Components Required Component Quantity Diode 1 Resistor 1 Capacitor 1 Transforme
 <li>During the positive half-cycle of the AC voltage, the diode is forward-biased, and it conducts current. This results in the flow of current through the load resistor and the production of a positive voltage across it.</li>
 <li>During the negative half-cycle of the AC voltage, the diode is reverse-biased, and it does not conduct current. This results in the absence of current flow through the load resistor and the production of a zero voltage across it.</li>
 </ul>
-<figure><img src="/img/hwr.gif"/>
+<figure><img src="/img/hwr.gif">
  </figure>
 
 <ul>
@@ -249,7 +249,7 @@ Components Required Component Quantity Diode 1 Resistor 1 Capacitor 1 Transforme
 </ol>
 <hr>
 <h3 id="input-and-output-waveforms-">Input and Output Waveforms 👇🏻</h3>
-<figure><img src="/img/hwr-waveforms.jpg"/>
+<figure><img src="/img/hwr-waveforms.jpg">
 </figure>
 
 <hr>
@@ -313,7 +313,7 @@ Components Required Component Quantity Diode 1 Resistor 1 Capacitor 1 Transforme
 </ul>
 <hr>
 <h3 id="circuit-diagram--1">Circuit Diagram 👇🏻</h3>
-<figure><img src="/img/fwr.jpg"/>
+<figure><img src="/img/fwr.jpg">
 </figure>
 
 <hr>
@@ -328,12 +328,12 @@ Components Required Component Quantity Diode 1 Resistor 1 Capacitor 1 Transforme
 </ul>
 <hr>
 <h4 id="during-positive-half-cycle-">During Positive Half-Cycle 👇🏻</h4>
-<figure><img src="/img/fwr&#43;.gif"/>
+<figure><img src="/img/fwr&#43;.gif">
 </figure>
 
 <hr>
 <h4 id="during-negative-half-cycle-">During Negative Half-Cycle 👇🏻</h4>
-<figure><img src="/img/fwr-.gif"/>
+<figure><img src="/img/fwr-.gif">
 </figure>
 
 <hr>
@@ -391,7 +391,7 @@ Components Required Component Quantity Diode 1 Resistor 1 Capacitor 1 Transforme
 </ol>
 <hr>
 <h3 id="input-and-output-waveforms">Input and Output Waveforms</h3>
-<figure><img src="/img/fwr-waveform.jpg"/>
+<figure><img src="/img/fwr-waveform.jpg">
 </figure>
 
 <hr>
@@ -477,7 +477,7 @@ Components Required Component Description Transistor Any NPN or PNP transistor R
 </ol>
 <hr>
 <h2 id="circuit-diagram">Circuit Diagram</h2>
-<figure><img src="/img/taas.jpg"/>
+<figure><img src="/img/taas.jpg">
 </figure>
 
 <hr>
@@ -555,12 +555,12 @@ Components Required Component Quantity Diode 4 Resistor 4 Capacitor 1 Transforme
 </ul>
 <hr>
 <h3 id="during-positive-half-cycle-">During Positive Half-Cycle 👇🏻</h3>
-<figure><img src="/img/fbr&#43;.gif"/>
+<figure><img src="/img/fbr&#43;.gif">
  </figure>
 
 <hr>
 <h3 id="during-negative-half-cycle-">During Negative Half-Cycle 👇🏻</h3>
-<figure><img src="/img/fbr-.gif"/>
+<figure><img src="/img/fbr-.gif">
  </figure>
 
 <hr>
@@ -629,12 +629,12 @@ Components Required Component Quantity Diode 4 Resistor 4 Capacitor 1 Transforme
 </ol>
 <hr>
 <h2 id="circuit-diagram">Circuit Diagram</h2>
-<figure><img src="/img/fbr.jpg"/>
+<figure><img src="/img/fbr.jpg">
 </figure>
 
 <hr>
 <h2 id="input-and-output-waveforms">Input and Output Waveforms</h2>
-<figure><img src="/img/fbr-waveform.jpg"/>
+<figure><img src="/img/fbr-waveform.jpg">
 </figure>
 
 <hr>
@@ -793,12 +793,12 @@ Components Required Component Name Quantity P-N Junction Diode 1 Resistor 1 Powe
 </ol>
 <hr>
 <h2 id="circuit-diagram-">Circuit Diagram 👇🏻</h2>
-<figure><img src="/img/fw-rv-char.jpg"/>
+<figure><img src="/img/fw-rv-char.jpg">
 </figure>
 
 <hr>
 <h2 id="forward--reverse-characteristics-graph-">Forward &amp; Reverse Characteristics Graph 👇🏻</h2>
-<figure><img src="/img/fwd-rvs-graph.jpg"/>
+<figure><img src="/img/fwd-rvs-graph.jpg">
 </figure>
 
 <hr>

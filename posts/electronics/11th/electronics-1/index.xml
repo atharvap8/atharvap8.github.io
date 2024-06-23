@@ -1,15 +1,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Electronics-1 on Atharva Phadke</title><link>https://atharvap8.github.io/posts/electronics/11th/electronics-1/</link><description>Recent content in Electronics-1 on Atharva Phadke</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Fri, 27 Jan 2023 22:44:41 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/posts/electronics/11th/electronics-1/index.xml" rel="self" type="application/rss+xml"/><item><title>Study of Resistors</title><link>https://atharvap8.github.io/posts/2023/01/study-of-resistors/</link><pubDate>Sun, 29 Jan 2023 05:13:36 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-resistors/</guid><description>Study Of Resistors Basic Resistor Diagram: A basic resistor. Part 1: Study of Resistors Working of Resistor Aim The aim of this section is to provide a comprehensive understanding of resistors, their components, equipments, and types.
 Components List Resistor Multimeter Equipments Power Supply Breadboard Types Of Resistors Fixed Resistors Variable Resistors Information about Fixed Resistors Fixed resistors are electrical components that have a fixed value of resistance, meaning that their resistance does not change.</description><content type="html"><![CDATA[<h1 id="study-of-resistors">Study Of Resistors</h1>
-<figure><img src="/img/resistor.jpg"/><figcaption>
-            <h4>Basic Resistor</h4>
-        </figcaption>
+<figure><img src="/img/resistor.jpg"><figcaption>
+      <h4>Basic Resistor</h4>
+    </figcaption>
 </figure>
 
 <h3 id="diagram-a-basic-resistor">Diagram: A basic resistor.</h3>
 <h2 id="part-1-study-of-resistors">Part 1: Study of Resistors</h2>
-<figure><img src="/img/resistor.gif"/><figcaption>
-            <h4>Working of Resistor</h4>
-        </figcaption>
+<figure><img src="/img/resistor.gif"><figcaption>
+      <h4>Working of Resistor</h4>
+    </figcaption>
 </figure>
 
 <h3 id="aim">Aim</h3>
@@ -38,9 +38,9 @@ Components List Resistor Multimeter Equipments Power Supply Breadboard Types Of 
 <li>Wire Wound Resistor: These resistors are made by winding a wire, typically made of nickel-chromium alloy, around a cylindrical form. They offer high power handling capabilities and precise resistance values, making them suitable for use in high-power applications.</li>
 </ol>
 <h3 id="resistor-colour-coding">Resistor Colour Coding</h3>
-<figure><img src="/img/rcc.jpg"/><figcaption>
-            <h4>Resistor Colour Coding</h4>
-        </figcaption>
+<figure><img src="/img/rcc.jpg"><figcaption>
+      <h4>Resistor Colour Coding</h4>
+    </figcaption>
 </figure>
 
 <h3 id="information-about-variable-resistors">Information about Variable Resistors</h3>
@@ -83,9 +83,9 @@ Vout = 6.67V</p>
 ]]></content></item><item><title>Study of Transformer</title><link>https://atharvap8.github.io/posts/2023/01/study-of-transformer/</link><pubDate>Sun, 29 Jan 2023 00:27:35 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-transformer/</guid><description>Summary A transformer is a passive electrical component that transfers electrical energy from one circuit to another through electromagnetic induction. In this study, we will learn about the construction and working of a basic transformer, different types of transformers, and their applications. We will also learn about the parts required to make a basic transformer and the instruments and equipment needed to perform this activity.
 Basic Transformer Parts and Specifications A basic transformer consists of the following parts:</description><content type="html"><![CDATA[<h2 id="summary">Summary</h2>
 <p>A transformer is a passive electrical component that transfers electrical energy from one circuit to another through electromagnetic induction. In this study, we will learn about the construction and working of a basic transformer, different types of transformers, and their applications. We will also learn about the parts required to make a basic transformer and the instruments and equipment needed to perform this activity.</p>
-<figure><img src="/img/transformer.jpg"/><figcaption>
-            <h4>Basic Transformer</h4>
-        </figcaption>
+<figure><img src="/img/transformer.jpg"><figcaption>
+      <h4>Basic Transformer</h4>
+    </figcaption>
 </figure>
 
 <h2 id="parts-and-specifications">Parts and Specifications</h2>
@@ -132,9 +132,9 @@ Basic Transformer Parts and Specifications A basic transformer consists of the f
 </ol>
 <h2 id="theory">Theory</h2>
 <p>The basic theory behind a transformer is electromagnetic induction. When an alternating current flows through one coil, it generates a magnetic field that induces a voltage in the other coil. The voltage is proportional to the number of turns in each coil, the frequency of the alternating current, and the magnetic permeability of the core.
-<figure><img src="/img/transformer.gif"/><figcaption>
-            <h4>Working of Transformer</h4>
-        </figcaption>
+<figure><img src="/img/transformer.gif"><figcaption>
+      <h4>Working of Transformer</h4>
+    </figcaption>
 </figure>
 </p>
 <h2 id="types-of-transformers">Types of Transformers</h2>
@@ -157,9 +157,9 @@ Basic Relay Parts and Specifications Parts Specifications Electromagnet Consists
 <h2 id="construction-of-a-basic-relay">Construction of a Basic Relay</h2>
 <p>A basic relay consists of an electromagnet, a set of contacts, and a spring. When the electromagnet is energized, it attracts the armature, which then moves and closes the contacts.</p>
 <p>Diagram:</p>
-<figure><img src="/img/relay.jpg"/><figcaption>
-            <h4>Basic Relay</h4>
-        </figcaption>
+<figure><img src="/img/relay.jpg"><figcaption>
+      <h4>Basic Relay</h4>
+    </figcaption>
 </figure>
 
 <h2 id="parts-and-specifications">Parts and Specifications</h2>
@@ -207,9 +207,9 @@ Basic Relay Parts and Specifications Parts Specifications Electromagnet Consists
 <li>Finally, connect the relay to a circuit and test it under normal operating conditions.</li>
 </ol>
 <h2 id="theory">Theory</h2>
-<figure><img src="/img/relay.gif"/><figcaption>
-            <h4>Working of Relay</h4>
-        </figcaption>
+<figure><img src="/img/relay.gif"><figcaption>
+      <h4>Working of Relay</h4>
+    </figcaption>
 </figure>
 
 <p>Relays are electrical switches that use an electromagnet to operate. When a voltage is applied to the coil of the electromagnet, it creates a magnetic field that attracts the armature, causing it to close the contacts. This closing of contacts completes the electrical circuit and allows current to flow. When the voltage is removed from the coil, the magnetic field collapses, and the spring returns the armature to its original position, opening the contacts and breaking the circuit.</p>
@@ -223,9 +223,9 @@ Diagram Basic Switch Diagram: A figure showing a Basic Switch &amp;amp; its stat
 Parts and Specifications Parts Specifications Switch SPST, SPDT, DPST, DPDT Wires 20-22 gauge Breadboard Half-sized breadboard Tools and Equipment Breadboard Jumper Wires Power Supply Multimeter Procedure To demonstrate a basic switch, follow these steps:</description><content type="html"><![CDATA[<h2 id="summary">Summary</h2>
 <p>A switch is a crucial component in electrical circuits as it can control the flow of electricity by making or breaking a connection. In this topic, we will study the basic construction, different types of switches, the function and purpose of switches, the tools and equipment required to demonstrate a basic switch, and more.</p>
 <h2 id="diagram">Diagram</h2>
-<figure><img src="/img/switch.jpg"/><figcaption>
-            <h4>Basic Switch</h4>
-        </figcaption>
+<figure><img src="/img/switch.jpg"><figcaption>
+      <h4>Basic Switch</h4>
+    </figcaption>
 </figure>
 
 <p><strong>Diagram: A figure showing a Basic Switch &amp; its states</strong></p>
@@ -272,55 +272,55 @@ Parts and Specifications Parts Specifications Switch SPST, SPDT, DPST, DPDT Wire
 <h2 id="theory">Theory</h2>
 <p>A switch is an electrical component that can make or break an electrical connection. It is designed to control the flow of electricity in a circuit. There are several types of switches, including SPST (Single Pole Single Throw), SPDT (Single Pole Double Throw), DPST (Double Pole Single Throw), and DPDT (Double Pole Double Throw).</p>
 <h2 id="types-of-switches">Types of Switches:</h2>
-<figure><img src="/img/spst.jpg"/><figcaption>
-            <h4>SPST Switch</h4>
-        </figcaption>
+<figure><img src="/img/spst.jpg"><figcaption>
+      <h4>SPST Switch</h4>
+    </figcaption>
 </figure>
 
 <h3 id="spst-single-pole-single-throw">SPST (Single Pole Single Throw):</h3>
 <p>These switches have a single contact that can either be connected or disconnected. It is the simplest type of switch.
-<figure><img src="/img/spst.gif"/><figcaption>
-            <h4>Working of SPST</h4>
-        </figcaption>
+<figure><img src="/img/spst.gif"><figcaption>
+      <h4>Working of SPST</h4>
+    </figcaption>
 </figure>
 </p>
 <hr>
-<figure><img src="/img/spdt.jpg"/><figcaption>
-            <h4>SPDT Switch</h4>
-        </figcaption>
+<figure><img src="/img/spdt.jpg"><figcaption>
+      <h4>SPDT Switch</h4>
+    </figcaption>
 </figure>
 
 <h3 id="spdt-single-pole-double-throw">SPDT (Single Pole Double Throw):</h3>
 <p>These switches have two contacts and can switch between two separate circuits. It is commonly used for switch-selector applications.
-<figure><img src="/img/spdt.gif"/><figcaption>
-            <h4>Working of SPDT</h4>
-        </figcaption>
+<figure><img src="/img/spdt.gif"><figcaption>
+      <h4>Working of SPDT</h4>
+    </figcaption>
 </figure>
 </p>
 <hr>
-<figure><img src="/img/dpst.jpg"/><figcaption>
-            <h4>DPST Switch</h4>
-        </figcaption>
+<figure><img src="/img/dpst.jpg"><figcaption>
+      <h4>DPST Switch</h4>
+    </figcaption>
 </figure>
 
 <h3 id="dpst-double-pole-single-throw">DPST (Double Pole Single Throw):</h3>
 <p>These switches have two separate contacts that can either be connected or disconnected simultaneously. This type of switch is used for applications where two separate circuits need to be controlled by a single switch.
-<figure><img src="/img/dpst.gif"/><figcaption>
-            <h4>Working of DPST</h4>
-        </figcaption>
+<figure><img src="/img/dpst.gif"><figcaption>
+      <h4>Working of DPST</h4>
+    </figcaption>
 </figure>
 </p>
 <hr>
-<figure><img src="/img/dpdt.jpg"/><figcaption>
-            <h4>DPDT Switch</h4>
-        </figcaption>
+<figure><img src="/img/dpdt.jpg"><figcaption>
+      <h4>DPDT Switch</h4>
+    </figcaption>
 </figure>
 
 <h3 id="dpdt-double-pole-double-throw">DPDT (Double Pole Double Throw):</h3>
 <p>These switches have two separate sets of contacts that can switch between two separate circuits. It is commonly used for reversing switch applications.
-<figure><img src="/img/dpdt.gif"/><figcaption>
-            <h4>Working of DPDT</h4>
-        </figcaption>
+<figure><img src="/img/dpdt.gif"><figcaption>
+      <h4>Working of DPDT</h4>
+    </figcaption>
 </figure>
 </p>
 <hr>
@@ -332,9 +332,9 @@ Parts and Specifications Parts Specifications Switch SPST, SPDT, DPST, DPDT Wire
 Construction of a Basic Air-Core Inductor The basic air-core inductor can be constructed by wrapping a wire around a non-conductive core, such as air, plastic, or fiberglass.</description><content type="html"><![CDATA[<p>An inductor is a passive electrical component that stores energy in a magnetic field when electric current flows through it. Inductors play a crucial role in many electrical circuits, from filtering to energy storage to regulation. In this study, we will delve into the construction, theory, and uses of inductors.</p>
 <h2 id="construction-of-a-basic-air-core-inductor">Construction of a Basic Air-Core Inductor</h2>
 <p>The basic air-core inductor can be constructed by wrapping a wire around a non-conductive core, such as air, plastic, or fiberglass. The number of turns, or coils, of wire used, along with the diameter and material of the wire, will determine the inductance of the inductor. To calculate the inductance, the formula <code>L = N^2 * Μ_o * A / l</code> can be used, where <code>N</code> is the number of turns, <code>Μ_o</code> is the permeability of free space, <code>A</code> is the cross-sectional area of the coil, and <code>l</code> is the length of the coil.</p>
-<figure><img src="/img/inductor.jpg"/><figcaption>
-            <h4>Basic Inductor</h4>
-        </figcaption>
+<figure><img src="/img/inductor.jpg"><figcaption>
+      <h4>Basic Inductor</h4>
+    </figcaption>
 </figure>
 
 <p>Diagram: A simple representation of an air-core inductor</p>
@@ -383,9 +383,9 @@ Construction of a Basic Air-Core Inductor The basic air-core inductor can be con
 <li>Test the inductance using a multimeter.</li>
 </ol>
 <h2 id="theory">Theory</h2>
-<figure><img src="/img/inductor.gif"/><figcaption>
-            <h4>Working of Inductor</h4>
-        </figcaption>
+<figure><img src="/img/inductor.gif"><figcaption>
+      <h4>Working of Inductor</h4>
+    </figcaption>
 </figure>
 
 <p>An inductor is a passive electrical component that stores energy in a magnetic field when electric current flows through it. The basic principle behind an inductor is Faraday&rsquo;s Law of Electromagnetic Induction, which states that a changing magnetic field induces an electromotive force (EMF) in a conductor. The amount of energy stored in an inductor is proportional to the number of turns in the wire and the current flowing through it.</p>
@@ -404,16 +404,16 @@ Diagram Basic Capacitor Diagram: Diagram of a basic capacitor
 Theory Working of Capacitor A capacitor is a two-terminal electronic component that stores electrical energy in an electric field. The theory of working of a capacitor is based on the principle of electrostatics, which states that opposite charges attract and like charges repel.</description><content type="html"><![CDATA[<h1 id="understanding-capacitors-a-study">Understanding Capacitors: A Study</h1>
 <p>A capacitor is an electronic component that stores electrical energy in an electric field. Capacitors are widely used in electrical circuits for a variety of purposes, including filtering, coupling, and energy storage.</p>
 <h2 id="diagram">Diagram</h2>
-<figure><img src="/img/capacitor.jpg"/><figcaption>
-            <h4>Basic Capacitor</h4>
-        </figcaption>
+<figure><img src="/img/capacitor.jpg"><figcaption>
+      <h4>Basic Capacitor</h4>
+    </figcaption>
 </figure>
 
 <p>Diagram: Diagram of a basic capacitor</p>
 <h2 id="theory">Theory</h2>
-<figure><img src="/img/capacitor.gif"/><figcaption>
-            <h4>Working of Capacitor</h4>
-        </figcaption>
+<figure><img src="/img/capacitor.gif"><figcaption>
+      <h4>Working of Capacitor</h4>
+    </figcaption>
 </figure>
 
 <p>A capacitor is a two-terminal electronic component that stores electrical energy in an electric field. The theory of working of a capacitor is based on the principle of electrostatics, which states that opposite charges attract and like charges repel. When a voltage is applied across the terminals of a capacitor, it causes an electric field to develop between two conductive plates, separated by an insulating material known as a dielectric. The strength of the electric field is proportional to the voltage across the capacitor and the capacitance, which is a measure of the amount of electrical charge that can be stored per unit of voltage. When the voltage is removed, the electric field collapses and the energy stored in the electric field is released, making capacitors useful in a variety of applications such as power supplies, filters, and energy storage.</p>
@@ -438,9 +438,12 @@ Theory Working of Capacitor A capacitor is a two-terminal electronic component t
 <p>The rate at which a capacitor charges depends on the capacitance and the resistance in the circuit. The capacitance of the capacitor determines how much charge it can store for a given voltage, and the resistance in the circuit determines how quickly the charges can flow to the capacitor.</p>
 <p>When a capacitor is disconnected from a voltage source, the charges on the plates will begin to flow back to the circuit, and the voltage across the capacitor will decrease. This process is known as discharging the capacitor. The rate of discharging also depends on the capacitance and the resistance in the circuit. A capacitor can be charged and discharged many times and it will not lose its capacitance.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/UMHSMJmYJdY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/UMHSMJmYJdY?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>In this video, we can see how a capacitor behaves when charging and discharging.</p>
 <h2 id="conclusion">Conclusion</h2>
@@ -449,9 +452,9 @@ Theory Working of Capacitor A capacitor is a two-terminal electronic component t
 Diagram Basic DMM Parts and Specifications Part Specification Display LCD or LED Range Selection Manual or Auto Ranging Input Impedance &amp;gt;10 MΩ Maximum Voltage 600V AC/DC Maximum Current 10A AC/DC Resistance 200Ω to 200MΩ Continuity Test Built-in Buzzer Diode Test Built-in Tools and Instruments Digital multimeter Lead set 9V battery Circuit under test Procedure The procedure for using a digital multimeter is quite straightforward.</description><content type="html"><![CDATA[<h2 id="summary">Summary</h2>
 <p>This topic aims to provide an in-depth understanding of digital multimeters, including its construction, components, and various applications.</p>
 <h2 id="diagram">Diagram</h2>
-<figure><img src="/img/dmm.jpg"/><figcaption>
-            <h4>Basic DMM</h4>
-        </figcaption>
+<figure><img src="/img/dmm.jpg"><figcaption>
+      <h4>Basic DMM</h4>
+    </figcaption>
 </figure>
 
 <h2 id="parts-and-specifications">Parts and Specifications</h2>
@@ -507,9 +510,9 @@ Diagram Basic DMM Parts and Specifications Part Specification Display LCD or LED
 <h2 id="procedure">Procedure</h2>
 <p>The procedure for using a digital multimeter is quite straightforward. First, select the appropriate range for the measurement to be taken. Then, connect the leads to the multimeter and to the circuit under test. Finally, observe the reading on the display. It is important to note that the polarity of the leads should be observed, as some measurements require the leads to be connected in a specific way.</p>
 <h2 id="theory">Theory</h2>
-<figure><img src="/img/dmm.gif"/><figcaption>
-            <h4>Working of DMM</h4>
-        </figcaption>
+<figure><img src="/img/dmm.gif"><figcaption>
+      <h4>Working of DMM</h4>
+    </figcaption>
 </figure>
 
 <p>A digital multimeter is an electronic measuring instrument that can measure several electrical parameters such as voltage, current, resistance, and continuity. Digital multimeters use an ADC (Analog-to-Digital Converter) to convert the analog signals into digital signals for display on a screen.</p>
