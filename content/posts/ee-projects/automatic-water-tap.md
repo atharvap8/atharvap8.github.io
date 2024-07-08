@@ -11,6 +11,11 @@ tags:
 
 In this project, I have built an IR Sensor-based automatic water tap. This system allows water to flow when it detects an object in front of the sensor, making it a convenient and hygienic solution for home or public restrooms. The IR sensor is mounted on the tap head to detect any objects near the water tap.
 
+## YouTube Video
+
+Here's the project's youtube video link:
+{{< youtube RHL07T6kZwI >}}
+
 ## Components Required
 
 - IR Sensor Module
