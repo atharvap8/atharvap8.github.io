@@ -40,7 +40,7 @@ disableHugoGeneratorInject = true
   posts = "/posts/:year/:month/:title/"
 
 [author]
-  name = "Atharva P."
+  name = "Atharva Phadke"
 
 [taxonomies]
   tag      = "tags"
@@ -54,7 +54,7 @@ disableHugoGeneratorInject = true
 
   # Home subtitle of the index page.
   #
-  homeSubtitle = "I'm a FY Engineering student (B. Voc.(IOT)), with a keen learning attitude about everything Electronics, Electrical, Automation, IoT, etc."
+  homeSubtitle = "I'm an B. Voc. IoT Engineering Student at PCCoE, with a keen learning attitude about everything Electronics, Electrical, Automation, IoT, etc."
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -131,9 +131,9 @@ utterancesTheme = "github-dark"
   # Uncomment this if you want a portrait on your start page
   #
    [params.portrait]
-      path     = "/img/image.png"
+      path     = "/img/myphoto.png"
       alt      = "Avatar"
-      maxWidth = "150px"      
+      maxWidth = "200px"      
 
   # Social icons
   [[params.social]]

@@ -1,11 +1,11 @@
-+++
-title = "Alexa Smart Home Project"
-description = "Alexa Based Home Automation Project"
-type = ["posts","post"]
-date = "2023-01-26"
-series = ["Electronics & IOT Projects"]
-[ author ]
-  name = "**Atharva P.**"
-+++
+---
+title: "Alexa Smart Home "
+date: 2024-06-23T17:57:12+05:30
+draft: true
+toc: false
+images:
+tags:
+  - untagged
+---
 
 # **Coming SOON!**
