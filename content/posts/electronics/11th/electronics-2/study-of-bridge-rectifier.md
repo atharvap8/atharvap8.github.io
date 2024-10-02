@@ -3,7 +3,6 @@ title: "Study of Bridge Rectifier"
 date: 2023-01-29T00:33:03+05:30
 draft: false
 ---
----
 ## Aim
 The aim of this study is to understand the working of a bridge rectifier and to observe its input and output waveforms.
 

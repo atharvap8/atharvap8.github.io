@@ -3,7 +3,6 @@ title: "Study of Inductors"
 date: 2023-01-29T00:27:08+05:30
 draft: false
 toc: true
-author: Atharva P.
 ---
 
 An inductor is a passive electrical component that stores energy in a magnetic field when electric current flows through it. Inductors play a crucial role in many electrical circuits, from filtering to energy storage to regulation. In this study, we will delve into the construction, theory, and uses of inductors.

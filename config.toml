@@ -6,12 +6,16 @@ theme = "hello-friend-ng"
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
 
-paginate  = 10
+pagination = { pagerSize = 10 }
 rssLimit  = 10  # Maximum number of items in the RSS feed.
 copyright = "CC BY-NC 4.0"
 
-# googleAnalytics = ""
-# disqusShortname = ""
+[services]
+  [services.googleAnalytics]
+    id = 'YOUR_GA_ID'
+  [services.disqus]
+    shortname = "YOUR_SHORTNAME"
+
 
 archetypeDir = "archetypes"
 contentDir   = "content"
