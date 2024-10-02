@@ -11,10 +11,10 @@ rssLimit  = 10  # Maximum number of items in the RSS feed.
 copyright = "CC BY-NC 4.0"
 
 [services]
-  [services.googleAnalytics]
-    id = 'YOUR_GA_ID'
   [services.disqus]
-    shortname = "YOUR_SHORTNAME"
+    shortname = ''
+  [services.googleAnalytics]
+    id = ''
 
 
 archetypeDir = "archetypes"
