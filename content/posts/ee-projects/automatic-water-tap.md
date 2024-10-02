@@ -1,7 +1,7 @@
 ---
 title: "Automatic Water Tap V2"
 date: 2024-06-23T12:57:02+05:30
-draft: true
+draft: false
 toc: true
 images:
 tags:
