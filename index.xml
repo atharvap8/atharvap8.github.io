@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Atharva Phadke</title><link>https://atharvap8.github.io/</link><description>Recent content on Atharva Phadke</description><generator>Hugo</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Wed, 02 Oct 2024 17:07:33 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Ble Car Security Controller</title><link>https://atharvap8.github.io/posts/2024/10/ble-car-security-controller/</link><pubDate>Wed, 02 Oct 2024 17:07:33 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/10/ble-car-security-controller/</guid><description>&lt;h1 id="ble-based-car-security-controller-with-remote">BLE Based Car Security Controller with Remote&lt;/h1></description></item><item><title>chatper-name</title><link>https://atharvap8.github.io/posts/2024/02/chatper-name/</link><pubDate>Sat, 10 Feb 2024 16:30:30 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/02/chatper-name/</guid><description/></item><item><title>About me, and this website</title><link>https://atharvap8.github.io/about/</link><pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate><guid>https://atharvap8.github.io/about/</guid><description>&lt;p>I&amp;rsquo;m &lt;strong>Atharva Phadke&lt;/strong>, trying to understand how basic and complicated systems/machines/objects work in real life. I always like to take everything apart, and learn practically, how each component works in conjunction to each other, to fullfil a specific task or function.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Atharva Phadke</title><link>https://atharvap8.github.io/</link><description>Recent content on Atharva Phadke</description><generator>Hugo</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Wed, 02 Oct 2024 17:07:33 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Ble Car Security Controller</title><link>https://atharvap8.github.io/posts/2024/10/ble-car-security-controller/</link><pubDate>Wed, 02 Oct 2024 17:07:33 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/10/ble-car-security-controller/</guid><description>&lt;h1 id="ble-based-car-security-controller-with-remote">BLE Based Car Security Controller with Remote&lt;/h1></description></item><item><title>Esp32 Washing Machine</title><link>https://atharvap8.github.io/posts/2024/06/esp32-washing-machine/</link><pubDate>Sun, 23 Jun 2024 18:00:32 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/06/esp32-washing-machine/</guid><description>&lt;h1 id="coming-soon">&lt;strong>Coming SOON!&lt;/strong>&lt;/h1></description></item><item><title>Alexa Smart Home</title><link>https://atharvap8.github.io/posts/2024/06/alexa-smart-home/</link><pubDate>Sun, 23 Jun 2024 17:57:12 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/06/alexa-smart-home/</guid><description>&lt;h1 id="coming-soon">&lt;strong>Coming SOON!&lt;/strong>&lt;/h1></description></item><item><title>Alexa Washing Machine</title><link>https://atharvap8.github.io/posts/2024/06/alexa-washing-machine/</link><pubDate>Sun, 23 Jun 2024 17:57:12 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/06/alexa-washing-machine/</guid><description>&lt;h1 id="coming-soon">&lt;strong>Coming SOON!&lt;/strong>&lt;/h1></description></item><item><title>Automatic Water Tap V2</title><link>https://atharvap8.github.io/posts/2024/06/automatic-water-tap-v2/</link><pubDate>Sun, 23 Jun 2024 12:57:02 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/06/automatic-water-tap-v2/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>In this project, I have built an IR Sensor-based automatic water tap. This system allows water to flow when it detects an object in front of the sensor, making it a convenient and hygienic solution for home or public restrooms. The IR sensor is mounted on the tap head to detect any objects near the water tap.&lt;/p>
+&lt;h2 id="youtube-video">YouTube Video&lt;/h2>
+&lt;p>Here&amp;rsquo;s the project&amp;rsquo;s youtube video link:
+
+
+ 
+ &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/RHL07T6kZwI?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+ >&lt;/iframe>
+ &lt;/div>
+&lt;/p></description></item><item><title>chatper-name</title><link>https://atharvap8.github.io/posts/2024/02/chatper-name/</link><pubDate>Sat, 10 Feb 2024 16:30:30 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/02/chatper-name/</guid><description/></item><item><title>About me, and this website</title><link>https://atharvap8.github.io/about/</link><pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate><guid>https://atharvap8.github.io/about/</guid><description>&lt;p>I&amp;rsquo;m &lt;strong>Atharva Phadke&lt;/strong>, trying to understand how basic and complicated systems/machines/objects work in real life. I always like to take everything apart, and learn practically, how each component works in conjunction to each other, to fullfil a specific task or function.&lt;/p>
 &lt;p>I know quite about Electronics, you can ask related doubts on: 
  &lt;div>
  &amp;nbsp; &lt;a href="https://www.youtube.com/channel/UCHDgYG-P6Fct9-CwAqteHYA" target="_blank" rel="noopener" title="Youtube">&lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">&lt;path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">&lt;/path>&lt;polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02">&lt;/polygon>&lt;/svg>&lt;/a> &amp;nbsp;&amp;nbsp; &lt;a href="mailto:atharvaphadke8@gmail.com" target="_blank" rel="noopener" title="Email">&lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">&lt;path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">&lt;/path>&lt;polyline points="22,6 12,13 2,6">&lt;/polyline>&lt;/svg>&lt;/a> &amp;nbsp;&amp;nbsp; &lt;a href="https://github.com/atharvap8" target="_blank" rel="noopener" title="Github">&lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">&lt;path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">&lt;/path>&lt;/svg>&lt;/a> &amp;nbsp;&amp;nbsp; &lt;a href="https://forum.xda-developers.com/m/atharva-phadke.11446365/" target="_blank" rel="noopener" title="Xda">&lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none">&lt;path d="M13.84 3.052V0h7.843v17.583H13.84v-3.024h4.591V3.052zM5.569 14.53V3.024h4.592V0H2.318v17.583H6.98L10.16 24v-9.483z"/>&lt;/svg>&lt;/a> &amp;nbsp;&amp;nbsp; &lt;a href="https://www.instagram.com/atharva.p8" target="_blank" rel="noopener" title="Instagram">&lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">&lt;rect x="2" y="2" width="20" height="20" rx="5" ry="5">&lt;/rect>&lt;path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z">&lt;/path>&lt;line x1="17.5" y1="6.5" x2="17.5" y2="6.5">&lt;/line>&lt;/svg>&lt;/a> &amp;nbsp;&amp;nbsp; &lt;a href="https://t.me/atharvap8" target="_blank" rel="noopener" title="Telegram">&lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">&lt;line x1="22" y1="2" x2="11" y2="13">&lt;/line>&lt;polygon points="22 2 15 22 11 13 2 9 22 2">&lt;/polygon>&lt;/svg>&lt;/a> &amp;nbsp;
@@ -176,182 +187,4 @@
 
 &lt;ul>
 &lt;li>
-&lt;p>The output of the half-wave rectifier is a pulsating DC voltage that has a lower DC component compared to the full-wave rectifier. The pulsating DC voltage can be smoothened using a filter circuit, such as a capacitor filter, to obtain a nearly constant DC voltage. The efficiency of the half-wave rectifier is lower compared to the full-wave rectifier due to the absence of current flow during the negative half-cycle of the AC voltage.&lt;/p></description></item><item><title>Transistor as a Switch</title><link>https://atharvap8.github.io/posts/2023/01/transistor-as-a-switch/</link><pubDate>Sun, 29 Jan 2023 00:35:08 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/transistor-as-a-switch/</guid><description>&lt;hr>
-&lt;h2 id="aim">Aim&lt;/h2>
-&lt;p>The aim of this study is to understand the working of a transistor as a switch and how it can be used to control the flow of current in a circuit.&lt;/p>
-&lt;hr>
-&lt;h2 id="components-required">Components Required&lt;/h2>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th style="text-align: left">Component&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td style="text-align: left">Transistor&lt;/td>
- &lt;td style="text-align: left">Any NPN or PNP transistor&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Resistor&lt;/td>
- &lt;td style="text-align: left">Any value between 1kΩ to 10kΩ&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">LED&lt;/td>
- &lt;td style="text-align: left">Any standard LED&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Power Supply&lt;/td>
- &lt;td style="text-align: left">Any DC power supply with voltage between 5V to 12V&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;hr>
-&lt;h2 id="equipments-needed">Equipments Needed&lt;/h2>
-&lt;ol>
-&lt;li>Breadboard&lt;/li>
-&lt;li>Jumper Wires&lt;/li>
-&lt;li>Multimeter&lt;/li>
-&lt;/ol>
-&lt;hr>
-&lt;h2 id="theory">Theory&lt;/h2>
-&lt;p>A transistor can be used as a switch to control the flow of current in a circuit. The transistor operates in two modes: cut-off and saturation. In the cut-off mode, the transistor acts as an open switch, and no current flows through the circuit. In saturation, the transistor acts as a closed switch, and maximum current flows through the circuit. By adjusting the current applied to the base terminal of the transistor, we can control the flow of current in the circuit.&lt;/p></description></item><item><title>Study of Bridge Rectifier</title><link>https://atharvap8.github.io/posts/2023/01/study-of-bridge-rectifier/</link><pubDate>Sun, 29 Jan 2023 00:33:03 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-bridge-rectifier/</guid><description>&lt;h2 id="aim">Aim&lt;/h2>
-&lt;p>The aim of this study is to understand the working of a bridge rectifier and to observe its input and output waveforms.&lt;/p>
-&lt;hr>
-&lt;h2 id="components-required">Components Required&lt;/h2>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th style="text-align: left">Component&lt;/th>
- &lt;th style="text-align: left">Quantity&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td style="text-align: left">Diode&lt;/td>
- &lt;td style="text-align: left">4&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Resistor&lt;/td>
- &lt;td style="text-align: left">4&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Capacitor&lt;/td>
- &lt;td style="text-align: left">1&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Transformer&lt;/td>
- &lt;td style="text-align: left">1&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;hr>
-&lt;h2 id="equipments-needed">Equipments Needed&lt;/h2>
-&lt;ul>
-&lt;li>Digital multimeter&lt;/li>
-&lt;li>Function generator&lt;/li>
-&lt;li>Oscilloscope&lt;/li>
-&lt;li>Connecting wires&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h2 id="theory">Theory&lt;/h2>
-&lt;ul>
-&lt;li>A bridge rectifier is an electronic circuit that converts an alternating current (AC) input into a direct current (DC) output.&lt;/li>
-&lt;li>The rectifier circuit consists of four diodes arranged in a bridge configuration. The AC input is applied to the diagonals of the bridge, and the DC output is taken from the center of the bridge.&lt;/li>
-&lt;li>During the positive half cycle of the AC input, diodes D1 and D2 conduct and provide a positive output.&lt;/li>
-&lt;li>During the negative half cycle of the AC input, diodes D3 and D4 conduct and provide a negative output.&lt;/li>
-&lt;li>The DC output is a pulsed signal, which can be smoothed using a filter capacitor to obtain a pure DC signal.&lt;/li>
-&lt;li>The bridge rectifier is a simple, efficient, and cost-effective solution for converting AC to DC.&lt;/li>
-&lt;li>The bridge rectifier circuit is commonly used in power supplies, chargers, and other applications where a DC output is required. T The bridge rectifier is a versatile circuit that can be used in many applications, making it an important component in the field of electronics.&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h3 id="advantages">Advantages&lt;/h3>
-&lt;ul>
-&lt;li>The main advantage of a bridge rectifier over a half-wave rectifier is that it utilizes both positive and negative cycles of the AC input, resulting in a higher efficiency and a more regulated DC output.&lt;/li>
-&lt;li>The use of four diodes provides full-wave rectification, which results in a higher DC output compared to a half-wave rectifier.&lt;/li>
-&lt;li>The bridge rectifier circuit can also be used to isolate the DC output from the AC input, providing electrical isolation and protection to the load.&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h3 id="during-positive-half-cycle-">During Positive Half-Cycle 👇🏻&lt;/h3>
-&lt;figure>&lt;img src="https://atharvap8.github.io/img/fbr&amp;#43;.gif">
- &lt;/figure>
-
-&lt;hr>
-&lt;h3 id="during-negative-half-cycle-">During Negative Half-Cycle 👇🏻&lt;/h3>
-&lt;figure>&lt;img src="https://atharvap8.github.io/img/fbr-.gif">
- &lt;/figure>
-
-&lt;hr>
-&lt;h2 id="procedure">Procedure&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>Assemble the circuit of a bridge rectifier using the components listed above.&lt;/p></description></item><item><title>Study of Transformer</title><link>https://atharvap8.github.io/posts/2023/01/study-of-transformer/</link><pubDate>Sun, 29 Jan 2023 00:27:35 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-transformer/</guid><description>&lt;h2 id="summary">Summary&lt;/h2>
-&lt;p>A transformer is a passive electrical component that transfers electrical energy from one circuit to another through electromagnetic induction. In this study, we will learn about the construction and working of a basic transformer, different types of transformers, and their applications. We will also learn about the parts required to make a basic transformer and the instruments and equipment needed to perform this activity.&lt;/p>
-&lt;figure>&lt;img src="https://atharvap8.github.io/img/transformer.jpg">&lt;figcaption>
- &lt;h4>Basic Transformer&lt;/h4>
- &lt;/figcaption>
-&lt;/figure>
-
-&lt;h2 id="parts-and-specifications">Parts and Specifications&lt;/h2>
-&lt;p>A basic transformer consists of the following parts:&lt;/p></description></item><item><title>Study of Relay</title><link>https://atharvap8.github.io/posts/2023/01/study-of-relay/</link><pubDate>Sun, 29 Jan 2023 00:27:27 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-relay/</guid><description>&lt;h2 id="summary">Summary&lt;/h2>
-&lt;p>This topic aims to provide an in-depth understanding of relays, including their construction, working principle, and various applications.&lt;/p>
-&lt;h2 id="construction-of-a-basic-relay">Construction of a Basic Relay&lt;/h2>
-&lt;p>A basic relay consists of an electromagnet, a set of contacts, and a spring. When the electromagnet is energized, it attracts the armature, which then moves and closes the contacts.&lt;/p>
-&lt;p>Diagram:&lt;/p>
-&lt;figure>&lt;img src="https://atharvap8.github.io/img/relay.jpg">&lt;figcaption>
- &lt;h4>Basic Relay&lt;/h4>
- &lt;/figcaption>
-&lt;/figure>
-
-&lt;h2 id="parts-and-specifications">Parts and Specifications&lt;/h2>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th style="text-align: left">Parts&lt;/th>
- &lt;th style="text-align: left">Specifications&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td style="text-align: left">Electromagnet&lt;/td>
- &lt;td style="text-align: left">Consists of a coil of wire, core, and a switch&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Contacts&lt;/td>
- &lt;td style="text-align: left">Typically made of metal and used to complete or break an electrical circuit&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Armature&lt;/td>
- &lt;td style="text-align: left">A movable piece of metal that is attracted by the electromagnet and responsible for closing the contacts&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Spring&lt;/td>
- &lt;td style="text-align: left">Used to return the armature to its original position when the electromagnet is de-energized&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;h2 id="instruments-and-tools-needed">Instruments and Tools Needed&lt;/h2>
-&lt;ul>
-&lt;li>Multimeter&lt;/li>
-&lt;li>Oscilloscope&lt;/li>
-&lt;li>Soldering iron&lt;/li>
-&lt;li>Wire stripper&lt;/li>
-&lt;li>Pliers&lt;/li>
-&lt;/ul>
-&lt;h2 id="procedure">Procedure&lt;/h2>
-&lt;ol>
-&lt;li>Start by gathering all the necessary parts and tools.&lt;/li>
-&lt;li>Assemble the electromagnet by winding the coil of wire around the core and soldering the leads to the switch.&lt;/li>
-&lt;li>Mount the armature, contacts, and spring in their respective positions.&lt;/li>
-&lt;li>Test the relay using a multimeter to verify that the contacts are opening and closing correctly when the electromagnet is energized and de-energized.&lt;/li>
-&lt;li>Measure the voltage and current required to operate the relay using an oscilloscope.&lt;/li>
-&lt;li>Finally, connect the relay to a circuit and test it under normal operating conditions.&lt;/li>
-&lt;/ol>
-&lt;h2 id="theory">Theory&lt;/h2>
-&lt;figure>&lt;img src="https://atharvap8.github.io/img/relay.gif">&lt;figcaption>
- &lt;h4>Working of Relay&lt;/h4>
- &lt;/figcaption>
-&lt;/figure>
-
-&lt;p>Relays are electrical switches that use an electromagnet to operate. When a voltage is applied to the coil of the electromagnet, it creates a magnetic field that attracts the armature, causing it to close the contacts. This closing of contacts completes the electrical circuit and allows current to flow. When the voltage is removed from the coil, the magnetic field collapses, and the spring returns the armature to its original position, opening the contacts and breaking the circuit.&lt;/p></description></item></channel></rss>
+&lt;p>The output of the half-wave rectifier is a pulsating DC voltage that has a lower DC component compared to the full-wave rectifier. The pulsating DC voltage can be smoothened using a filter circuit, such as a capacitor filter, to obtain a nearly constant DC voltage. The efficiency of the half-wave rectifier is lower compared to the full-wave rectifier due to the absence of current flow during the negative half-cycle of the AC voltage.&lt;/p></description></item></channel></rss>
