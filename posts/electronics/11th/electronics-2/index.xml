@@ -1,33 +1,112 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Electronics-2 on Atharva Phadke</title><link>https://atharvap8.github.io/posts/electronics/11th/electronics-2/</link><description>Recent content in Electronics-2 on Atharva Phadke</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Sat, 28 Jan 2023 22:44:41 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/posts/electronics/11th/electronics-2/index.xml" rel="self" type="application/rss+xml"/><item><title>Testing of Diodes and Transistors</title><link>https://atharvap8.github.io/posts/2023/01/testing-of-diodes-and-transistors/</link><pubDate>Sun, 29 Jan 2023 00:39:28 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/testing-of-diodes-and-transistors/</guid><description>Aim The aim of this study is to understand the methods of testing diodes and transistors and to identify the working and faulty components.
-Components Required Component Description Diodes Any standard diode Transistors Any NPN or PNP transistor Resistor Any value between 1kΩ to 10kΩ Multimeter Digital multimeter with diode and transistor testing function Equipments Needed Breadboard Jumper Wires Theory Diode Testing A diode is a two-terminal electronic component that allows current to flow in only one direction.</description><content type="html"><![CDATA[<h2 id="aim">Aim</h2>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Electronics-2 on Atharva Phadke</title><link>https://atharvap8.github.io/posts/electronics/11th/electronics-2/</link><description>Recent content in Electronics-2 on Atharva Phadke</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Sat, 28 Jan 2023 22:44:41 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/posts/electronics/11th/electronics-2/index.xml" rel="self" type="application/rss+xml"/><item><title>Testing of Diodes and Transistors</title><link>https://atharvap8.github.io/posts/2023/01/testing-of-diodes-and-transistors/</link><pubDate>Sun, 29 Jan 2023 00:39:28 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/testing-of-diodes-and-transistors/</guid><description>&lt;h2 id="aim">Aim&lt;/h2>
+&lt;p>The aim of this study is to understand the methods of testing diodes and transistors and to identify the working and faulty components.&lt;/p>
+&lt;hr>
+&lt;h2 id="components-required">Components Required&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Component&lt;/th>
+&lt;th style="text-align: left">Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">Diodes&lt;/td>
+&lt;td style="text-align: left">Any standard diode&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Transistors&lt;/td>
+&lt;td style="text-align: left">Any NPN or PNP transistor&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Resistor&lt;/td>
+&lt;td style="text-align: left">Any value between 1kΩ to 10kΩ&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Multimeter&lt;/td>
+&lt;td style="text-align: left">Digital multimeter with diode and transistor testing function&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="equipments-needed">Equipments Needed&lt;/h2>
+&lt;ul>
+&lt;li>Breadboard&lt;/li>
+&lt;li>Jumper Wires&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="theory">Theory&lt;/h2>
+&lt;hr>
+&lt;h3 id="diode-testing">Diode Testing&lt;/h3>
+&lt;ul>
+&lt;li>A diode is a two-terminal electronic component that allows current to flow in only one direction.&lt;/li>
+&lt;li>The basic principle behind the functioning of a diode is based on the difference in the concentration of electrons in the p-type and n-type semiconductor material.&lt;/li>
+&lt;li>The p-type material has a shortage of electrons and the n-type material has an excess of electrons.&lt;/li>
+&lt;li>When a voltage is applied to the diode, it creates a potential difference between the p-type and n-type material, resulting in the flow of electrons from the n-type material to the p-type material.&lt;/li>
+&lt;li>In the case of a diode, the multimeter measures the forward and reverse resistance of the diode to determine its working status. The forward resistance of a diode should be low, while the reverse resistance should be infinite.&lt;/li>
+&lt;/ul>
+&lt;h3 id="example-of-diode-test">Example Of Diode Test&lt;/h3>
+&lt;figure class="center">&lt;img src="https://atharvap8.github.io/img/ref-dt.jpg" width="1600px" height="400px">
+&lt;/figure>
+&lt;hr>
+&lt;h3 id="transistor-testing">Transistor Testing&lt;/h3>
+&lt;ul>
+&lt;li>A transistor is a three-terminal electronic component that can be used as a switch or amplifier.&lt;/li>
+&lt;li>The most common type of transistor is the bipolar junction transistor (BJT), which has two p-n junctions.&lt;/li>
+&lt;li>The base-emitter junction is forward-biased, and the base-collector junction is reverse-biased.&lt;/li>
+&lt;li>In the switching operation, the base current controls the flow of collector current, allowing the transistor to act as an on-off switch.&lt;/li>
+&lt;li>In the amplification operation, the transistor amplifies the input signal applied to the base and produces a corresponding output signal at the collector.&lt;/li>
+&lt;li>In the case of a transistor, the multimeter measures the current gain of the transistor, which is defined as the ratio of collector current to base current. The current gain of a transistor should be high, typically in the range of 100 to 1000.&lt;/li>
+&lt;/ul>
+&lt;h3 id="example-of-transistor-test">Example Of Transistor Test&lt;/h3>
+&lt;figure class="center">&lt;img src="https://atharvap8.github.io/img/ref-tt.jpg" width="1600px" height="400px">
+&lt;/figure>
+&lt;hr>
+&lt;ul>
+&lt;li>The testing of diodes and transistors is important in the design and maintenance of electronic circuits.&lt;/li>
+&lt;li>A digital multimeter is a versatile tool that can be used to test both diodes and transistors.&lt;/li>
+&lt;li>The procedure for testing diodes and transistors involves setting up the circuit on a breadboard, connecting the multimeter, and measuring the forward and reverse resistance of the diode and the current gain of the transistor.&lt;/li>
+&lt;li>It is important to observe proper wiring and connectivity in the circuit and to set the multimeter to the correct testing mode before measuring.&lt;/li>
+&lt;li>Additionally, it is important to use a suitable diode and transistor for testing and to avoid exposing the circuit to high temperature or moisture.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="conclusion">Conclusion&lt;/h3>
+&lt;ul>
+&lt;li>In conclusion, the testing of diodes and transistors is an important step in the design and maintenance of electronic circuits. By understanding the basic principles and procedures of testing, we can ensure the proper functioning of the components and improve the reliability of the circuit.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="procedure">Procedure&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Connect the diode to the breadboard as per the circuit diagram.&lt;/p></description><content type="html"><![CDATA[<h2 id="aim">Aim</h2>
 <p>The aim of this study is to understand the methods of testing diodes and transistors and to identify the working and faulty components.</p>
 <hr>
 <h2 id="components-required">Components Required</h2>
 <table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Diodes</td>
-<td>Any standard diode</td>
-</tr>
-<tr>
-<td>Transistors</td>
-<td>Any NPN or PNP transistor</td>
-</tr>
-<tr>
-<td>Resistor</td>
-<td>Any value between 1kΩ to 10kΩ</td>
-</tr>
-<tr>
-<td>Multimeter</td>
-<td>Digital multimeter with diode and transistor testing function</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Component</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Diodes</td>
+          <td style="text-align: left">Any standard diode</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Transistors</td>
+          <td style="text-align: left">Any NPN or PNP transistor</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Resistor</td>
+          <td style="text-align: left">Any value between 1kΩ to 10kΩ</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Multimeter</td>
+          <td style="text-align: left">Digital multimeter with diode and transistor testing function</td>
+      </tr>
+  </tbody>
 </table>
 <hr>
 <h2 id="equipments-needed">Equipments Needed</h2>
@@ -117,42 +196,100 @@ Components Required Component Description Diodes Any standard diode Transistors 
 <hr>
 <h2 id="conclusion-1">Conclusion</h2>
 <p>Testing diodes and transistors is an important step in the design and maintenance of electronic circuits. By understanding the basic principles and procedures of testing, we can ensure the proper functioning of the components and improve the reliability of the circuit.</p>
-]]></content></item><item><title>Study of HWR and FWR Using CT Transformer</title><link>https://atharvap8.github.io/posts/2023/01/study-of-hwr-and-fwr-using-ct-transformer/</link><pubDate>Sun, 29 Jan 2023 00:38:33 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-hwr-and-fwr-using-ct-transformer/</guid><description>Part-1: Study of Half-Wave Rectifier Aim To study the half-wave rectifier and its input and output waveform.
-Components Required Component Quantity Diode 1 Resistor 1 Capacitor 1 Transformer 1 Power Supply 1 Equipment Required Oscilloscope Function Generator Breadboard Connecting Wires Circuit Diagram 👇🏻 Theory The half-wave rectifier is a simple circuit that converts AC voltage into a pulsating DC voltage. It consists of a diode that is connected in series with the load resistor and an AC source.</description><content type="html"><![CDATA[<h2 id="part-1-study-of-half-wave-rectifier">Part-1: Study of Half-Wave Rectifier</h2>
+]]></content></item><item><title>Study of HWR and FWR Using CT Transformer</title><link>https://atharvap8.github.io/posts/2023/01/study-of-hwr-and-fwr-using-ct-transformer/</link><pubDate>Sun, 29 Jan 2023 00:38:33 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-hwr-and-fwr-using-ct-transformer/</guid><description>&lt;h2 id="part-1-study-of-half-wave-rectifier">Part-1: Study of Half-Wave Rectifier&lt;/h2>
+&lt;hr>
+&lt;h3 id="aim">Aim&lt;/h3>
+&lt;p>To study the half-wave rectifier and its input and output waveform.&lt;/p>
+&lt;hr>
+&lt;h3 id="components-required">Components Required&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Component&lt;/th>
+&lt;th style="text-align: left">Quantity&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">Diode&lt;/td>
+&lt;td style="text-align: left">1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Resistor&lt;/td>
+&lt;td style="text-align: left">1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Capacitor&lt;/td>
+&lt;td style="text-align: left">1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Transformer&lt;/td>
+&lt;td style="text-align: left">1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Power Supply&lt;/td>
+&lt;td style="text-align: left">1&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="equipment-required">Equipment Required&lt;/h3>
+&lt;ul>
+&lt;li>Oscilloscope&lt;/li>
+&lt;li>Function Generator&lt;/li>
+&lt;li>Breadboard&lt;/li>
+&lt;li>Connecting Wires&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="circuit-diagram-">Circuit Diagram 👇🏻&lt;/h3>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/hwr.jpg">
+&lt;/figure>
+&lt;hr>
+&lt;h3 id="theory">Theory&lt;/h3>
+&lt;ul>
+&lt;li>The half-wave rectifier is a simple circuit that converts AC voltage into a pulsating DC voltage. It consists of a diode that is connected in series with the load resistor and an AC source. The diode only allows current to flow in one direction, i.e., from the anode to cathode.&lt;/li>
+&lt;li>During the positive half-cycle of the AC voltage, the diode is forward-biased, and it conducts current. This results in the flow of current through the load resistor and the production of a positive voltage across it.&lt;/li>
+&lt;li>During the negative half-cycle of the AC voltage, the diode is reverse-biased, and it does not conduct current. This results in the absence of current flow through the load resistor and the production of a zero voltage across it.&lt;/li>
+&lt;/ul>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/hwr.gif">
+&lt;/figure>
+&lt;ul>
+&lt;li>
+&lt;p>The output of the half-wave rectifier is a pulsating DC voltage that has a lower DC component compared to the full-wave rectifier. The pulsating DC voltage can be smoothened using a filter circuit, such as a capacitor filter, to obtain a nearly constant DC voltage. The efficiency of the half-wave rectifier is lower compared to the full-wave rectifier due to the absence of current flow during the negative half-cycle of the AC voltage.&lt;/p></description><content type="html"><![CDATA[<h2 id="part-1-study-of-half-wave-rectifier">Part-1: Study of Half-Wave Rectifier</h2>
 <hr>
 <h3 id="aim">Aim</h3>
 <p>To study the half-wave rectifier and its input and output waveform.</p>
 <hr>
 <h3 id="components-required">Components Required</h3>
 <table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Quantity</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Diode</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Resistor</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Capacitor</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Transformer</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Power Supply</td>
-<td>1</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Component</th>
+          <th style="text-align: left">Quantity</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Diode</td>
+          <td style="text-align: left">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Resistor</td>
+          <td style="text-align: left">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Capacitor</td>
+          <td style="text-align: left">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Transformer</td>
+          <td style="text-align: left">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Power Supply</td>
+          <td style="text-align: left">1</td>
+      </tr>
+  </tbody>
 </table>
 <hr>
 <h3 id="equipment-required">Equipment Required</h3>
@@ -282,26 +419,26 @@ Components Required Component Quantity Diode 1 Resistor 1 Capacitor 1 Transforme
 <h3 id="components-required-1">Components Required</h3>
 <p>The following components are required to perform this experiment:</p>
 <table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Center-tapped transformer</td>
-<td>A center-tapped transformer is used to step-down the incoming AC voltage.</td>
-</tr>
-<tr>
-<td>Diodes</td>
-<td>Diodes are used to convert AC voltage into a unidirectional DC voltage.</td>
-</tr>
-<tr>
-<td>Resistor</td>
-<td>A resistor is used to load the rectifier circuit.</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Component</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Center-tapped transformer</td>
+          <td style="text-align: left">A center-tapped transformer is used to step-down the incoming AC voltage.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Diodes</td>
+          <td style="text-align: left">Diodes are used to convert AC voltage into a unidirectional DC voltage.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Resistor</td>
+          <td style="text-align: left">A resistor is used to load the rectifier circuit.</td>
+      </tr>
+  </tbody>
 </table>
 <hr>
 <h3 id="equipments-required">Equipments Required</h3>
@@ -414,37 +551,76 @@ Components Required Component Quantity Diode 1 Resistor 1 Capacitor 1 Transforme
 <hr>
 <h3 id="conclusion-3">Conclusion</h3>
 <p>The full wave rectifier using center tapped transformer is an important circuit used in power supplies. The experiment was performed to study the effect of changing load resistance and input AC voltage on the rectified output voltage. The ripple factor and peak inverse voltage of the full wave rectifier circuit were also studied. The results obtained in this experiment provide a clear understanding of the full wave rectifier circuit and its behavior under different conditions.</p>
-]]></content></item><item><title>Transistor as a Switch</title><link>https://atharvap8.github.io/posts/2023/01/transistor-as-a-switch/</link><pubDate>Sun, 29 Jan 2023 00:35:08 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/transistor-as-a-switch/</guid><description>Aim The aim of this study is to understand the working of a transistor as a switch and how it can be used to control the flow of current in a circuit.
-Components Required Component Description Transistor Any NPN or PNP transistor Resistor Any value between 1kΩ to 10kΩ LED Any standard LED Power Supply Any DC power supply with voltage between 5V to 12V Equipments Needed Breadboard Jumper Wires Multimeter Theory A transistor can be used as a switch to control the flow of current in a circuit.</description><content type="html"><![CDATA[<hr>
+]]></content></item><item><title>Transistor as a Switch</title><link>https://atharvap8.github.io/posts/2023/01/transistor-as-a-switch/</link><pubDate>Sun, 29 Jan 2023 00:35:08 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/transistor-as-a-switch/</guid><description>&lt;hr>
+&lt;h2 id="aim">Aim&lt;/h2>
+&lt;p>The aim of this study is to understand the working of a transistor as a switch and how it can be used to control the flow of current in a circuit.&lt;/p>
+&lt;hr>
+&lt;h2 id="components-required">Components Required&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Component&lt;/th>
+&lt;th style="text-align: left">Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">Transistor&lt;/td>
+&lt;td style="text-align: left">Any NPN or PNP transistor&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Resistor&lt;/td>
+&lt;td style="text-align: left">Any value between 1kΩ to 10kΩ&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">LED&lt;/td>
+&lt;td style="text-align: left">Any standard LED&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Power Supply&lt;/td>
+&lt;td style="text-align: left">Any DC power supply with voltage between 5V to 12V&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="equipments-needed">Equipments Needed&lt;/h2>
+&lt;ol>
+&lt;li>Breadboard&lt;/li>
+&lt;li>Jumper Wires&lt;/li>
+&lt;li>Multimeter&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="theory">Theory&lt;/h2>
+&lt;p>A transistor can be used as a switch to control the flow of current in a circuit. The transistor operates in two modes: cut-off and saturation. In the cut-off mode, the transistor acts as an open switch, and no current flows through the circuit. In saturation, the transistor acts as a closed switch, and maximum current flows through the circuit. By adjusting the current applied to the base terminal of the transistor, we can control the flow of current in the circuit.&lt;/p></description><content type="html"><![CDATA[<hr>
 <h2 id="aim">Aim</h2>
 <p>The aim of this study is to understand the working of a transistor as a switch and how it can be used to control the flow of current in a circuit.</p>
 <hr>
 <h2 id="components-required">Components Required</h2>
 <table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Transistor</td>
-<td>Any NPN or PNP transistor</td>
-</tr>
-<tr>
-<td>Resistor</td>
-<td>Any value between 1kΩ to 10kΩ</td>
-</tr>
-<tr>
-<td>LED</td>
-<td>Any standard LED</td>
-</tr>
-<tr>
-<td>Power Supply</td>
-<td>Any DC power supply with voltage between 5V to 12V</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Component</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Transistor</td>
+          <td style="text-align: left">Any NPN or PNP transistor</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Resistor</td>
+          <td style="text-align: left">Any value between 1kΩ to 10kΩ</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">LED</td>
+          <td style="text-align: left">Any standard LED</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Power Supply</td>
+          <td style="text-align: left">Any DC power supply with voltage between 5V to 12V</td>
+      </tr>
+  </tbody>
 </table>
 <hr>
 <h2 id="equipments-needed">Equipments Needed</h2>
@@ -495,37 +671,103 @@ Components Required Component Description Transistor Any NPN or PNP transistor R
 <hr>
 <h2 id="conclusion">Conclusion</h2>
 <p>The transistor is a versatile device that can be used as a switch in various electronic circuits. By understanding the basic principles of its operation, we can use it to design efficient and effective electronic circuits.</p>
-]]></content></item><item><title>Study of Bridge Rectifier</title><link>https://atharvap8.github.io/posts/2023/01/study-of-bridge-rectifier/</link><pubDate>Sun, 29 Jan 2023 00:33:03 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-bridge-rectifier/</guid><description>Aim The aim of this study is to understand the working of a bridge rectifier and to observe its input and output waveforms.
-Components Required Component Quantity Diode 4 Resistor 4 Capacitor 1 Transformer 1 Equipments Needed Digital multimeter Function generator Oscilloscope Connecting wires Theory A bridge rectifier is an electronic circuit that converts an alternating current (AC) input into a direct current (DC) output. The rectifier circuit consists of four diodes arranged in a bridge configuration.</description><content type="html"><![CDATA[<hr>
-<h2 id="aim">Aim</h2>
+]]></content></item><item><title>Study of Bridge Rectifier</title><link>https://atharvap8.github.io/posts/2023/01/study-of-bridge-rectifier/</link><pubDate>Sun, 29 Jan 2023 00:33:03 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-bridge-rectifier/</guid><description>&lt;h2 id="aim">Aim&lt;/h2>
+&lt;p>The aim of this study is to understand the working of a bridge rectifier and to observe its input and output waveforms.&lt;/p>
+&lt;hr>
+&lt;h2 id="components-required">Components Required&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Component&lt;/th>
+&lt;th style="text-align: left">Quantity&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">Diode&lt;/td>
+&lt;td style="text-align: left">4&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Resistor&lt;/td>
+&lt;td style="text-align: left">4&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Capacitor&lt;/td>
+&lt;td style="text-align: left">1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Transformer&lt;/td>
+&lt;td style="text-align: left">1&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="equipments-needed">Equipments Needed&lt;/h2>
+&lt;ul>
+&lt;li>Digital multimeter&lt;/li>
+&lt;li>Function generator&lt;/li>
+&lt;li>Oscilloscope&lt;/li>
+&lt;li>Connecting wires&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="theory">Theory&lt;/h2>
+&lt;ul>
+&lt;li>A bridge rectifier is an electronic circuit that converts an alternating current (AC) input into a direct current (DC) output.&lt;/li>
+&lt;li>The rectifier circuit consists of four diodes arranged in a bridge configuration. The AC input is applied to the diagonals of the bridge, and the DC output is taken from the center of the bridge.&lt;/li>
+&lt;li>During the positive half cycle of the AC input, diodes D1 and D2 conduct and provide a positive output.&lt;/li>
+&lt;li>During the negative half cycle of the AC input, diodes D3 and D4 conduct and provide a negative output.&lt;/li>
+&lt;li>The DC output is a pulsed signal, which can be smoothed using a filter capacitor to obtain a pure DC signal.&lt;/li>
+&lt;li>The bridge rectifier is a simple, efficient, and cost-effective solution for converting AC to DC.&lt;/li>
+&lt;li>The bridge rectifier circuit is commonly used in power supplies, chargers, and other applications where a DC output is required. T The bridge rectifier is a versatile circuit that can be used in many applications, making it an important component in the field of electronics.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="advantages">Advantages&lt;/h3>
+&lt;ul>
+&lt;li>The main advantage of a bridge rectifier over a half-wave rectifier is that it utilizes both positive and negative cycles of the AC input, resulting in a higher efficiency and a more regulated DC output.&lt;/li>
+&lt;li>The use of four diodes provides full-wave rectification, which results in a higher DC output compared to a half-wave rectifier.&lt;/li>
+&lt;li>The bridge rectifier circuit can also be used to isolate the DC output from the AC input, providing electrical isolation and protection to the load.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="during-positive-half-cycle-">During Positive Half-Cycle 👇🏻&lt;/h3>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/fbr&amp;#43;.gif">
+&lt;/figure>
+&lt;hr>
+&lt;h3 id="during-negative-half-cycle-">During Negative Half-Cycle 👇🏻&lt;/h3>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/fbr-.gif">
+&lt;/figure>
+&lt;hr>
+&lt;h2 id="procedure">Procedure&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Assemble the circuit of a bridge rectifier using the components listed above.&lt;/p></description><content type="html"><![CDATA[<h2 id="aim">Aim</h2>
 <p>The aim of this study is to understand the working of a bridge rectifier and to observe its input and output waveforms.</p>
 <hr>
 <h2 id="components-required">Components Required</h2>
 <table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Quantity</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Diode</td>
-<td>4</td>
-</tr>
-<tr>
-<td>Resistor</td>
-<td>4</td>
-</tr>
-<tr>
-<td>Capacitor</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Transformer</td>
-<td>1</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Component</th>
+          <th style="text-align: left">Quantity</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Diode</td>
+          <td style="text-align: left">4</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Resistor</td>
+          <td style="text-align: left">4</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Capacitor</td>
+          <td style="text-align: left">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Transformer</td>
+          <td style="text-align: left">1</td>
+      </tr>
+  </tbody>
 </table>
 <hr>
 <h2 id="equipments-needed">Equipments Needed</h2>
@@ -662,40 +904,119 @@ Components Required Component Quantity Diode 4 Resistor 4 Capacitor 1 Transforme
 <hr>
 <h2 id="conclusion">Conclusion</h2>
 <p>The bridge rectifier is a useful device for converting AC input into a DC output. With proper design and use of components, it can provide a regulated DC output with reduced ripples. The study of a bridge rectifier helps in understanding the principles of rectification and filtering in electronics.</p>
-]]></content></item><item><title>P-N Junction Diode Characteristics(Forward &amp; Reverse)</title><link>https://atharvap8.github.io/posts/2023/01/p-n-junction-diode-characteristicsforward-reverse/</link><pubDate>Sat, 28 Jan 2023 21:34:36 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/p-n-junction-diode-characteristicsforward-reverse/</guid><description>Aim The aim of this experiment is to study the forward and reverse characteristics of a P-N junction diode and to determine its cut-in voltage and resistance.
-Components Required Component Name Quantity P-N Junction Diode 1 Resistor 1 Power Supply 1 Multimeter 1 Crocodile Clips 2 Equipments Required Oscilloscope Connecting wires Theory P-N Junction Diode A P-N junction diode is a two-terminal device made of a p-type semiconductor material and an n-type semiconductor material joined together.</description><content type="html"><![CDATA[<h2 id="aim">Aim</h2>
+]]></content></item><item><title>P-N Junction Diode Characteristics(Forward &amp; Reverse)</title><link>https://atharvap8.github.io/posts/2023/01/p-n-junction-diode-characteristicsforward-reverse/</link><pubDate>Sat, 28 Jan 2023 21:34:36 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/p-n-junction-diode-characteristicsforward-reverse/</guid><description>&lt;h2 id="aim">Aim&lt;/h2>
+&lt;p>The aim of this experiment is to study the forward and reverse characteristics of a P-N junction diode and to determine its cut-in voltage and resistance.&lt;/p>
+&lt;hr>
+&lt;h2 id="components-required">Components Required&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Component Name&lt;/th>
+&lt;th style="text-align: left">Quantity&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">P-N Junction Diode&lt;/td>
+&lt;td style="text-align: left">1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Resistor&lt;/td>
+&lt;td style="text-align: left">1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Power Supply&lt;/td>
+&lt;td style="text-align: left">1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Multimeter&lt;/td>
+&lt;td style="text-align: left">1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Crocodile Clips&lt;/td>
+&lt;td style="text-align: left">2&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="equipments-required">Equipments Required&lt;/h2>
+&lt;ul>
+&lt;li>Oscilloscope&lt;/li>
+&lt;li>Connecting wires&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="theory">Theory&lt;/h2>
+&lt;h3 id="p-n-junction-diode">P-N Junction Diode&lt;/h3>
+&lt;ul>
+&lt;li>A P-N junction diode is a two-terminal device made of a p-type semiconductor material and an n-type semiconductor material joined together. The p-type material has a surplus of holes (positive charge carriers) and the n-type material has a surplus of electrons (negative charge carriers).&lt;/li>
+&lt;li>The P-N junction diode is made up of a semiconductor material, such as silicon, that is doped with impurities to create the P and N regions.&lt;/li>
+&lt;li>The P region is doped with a material that has an excess of holes, while the N region is doped with a material that has an excess of electrons. This creates a depletion region called as &lt;strong>&lt;code>Barrier Potential&lt;/code>&lt;/strong> in the middle of the P-N junction, where there is a lack of charge carriers.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="forward-bias">Forward Bias&lt;/h3>
+&lt;ul>
+&lt;li>When a positive voltage is applied to the p-type material, and a negative voltage to the n-type material, the diode is said to be in a forward-biased state.&lt;/li>
+&lt;li>In this state, the electric field generated by the applied voltage pushes the holes towards the n-type material and the electrons towards the p-type material. This creates a neutral region at the junction, known as the depletion region, where the concentration of charge carriers is very low. The depletion region acts as a barrier to the flow of current, but the electric field generated by the applied voltage overcomes this barrier and allows current to flow.&lt;/li>
+&lt;li>The &lt;strong>&lt;code>cut-in voltage&lt;/code>&lt;/strong> of a diode is the minimum voltage required to forward-bias the diode and make it conduct.&lt;/li>
+&lt;li>The forward voltage required to bring the P-N junction diode into the forward-biased state is called the forward voltage drop or the forward voltage threshold.&lt;/li>
+&lt;li>This value is around &lt;strong>&lt;code>0.7 V&lt;/code>&lt;/strong> for &lt;em>&lt;code>Si(Silicon)&lt;/code>&lt;/em> diodes and &lt;strong>&lt;code>0.3 V&lt;/code>&lt;/strong> for &lt;em>&lt;code>Ge(Germanium)&lt;/code>&lt;/em> diodes.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="reverse-bias">Reverse Bias&lt;/h3>
+&lt;ul>
+&lt;li>On the other hand, when a negative voltage is applied to the p-type material, and a positive voltage to the n-type material, the diode is said to be in a reverse-biased state.&lt;/li>
+&lt;li>In this state, the electric field generated by the applied voltage pushes the holes away from the n-type material and the electrons away from the p-type material. This increases the width of the depletion region and makes it more difficult for current to flow. The reverse-biased voltage must be high enough to overcome the built-in potential of the junction and push the majority carriers to the other side of the depletion region.&lt;/li>
+&lt;li>The reverse &lt;strong>&lt;code>breakdown voltage&lt;/code>&lt;/strong> is the minimum reverse voltage required to cause breakdown of the diode.&lt;/li>
+&lt;li>The reverse saturation current is the minimum current that flows through the diode when it is reverse-biased. It is due to the thermal generation of carriers within the depletion region.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="ideality-factor">Ideality Factor&lt;/h3>
+&lt;ul>
+&lt;li>The ideality factor, also known as the quality factor, is a parameter that describes the non-ideal behavior of a P-N junction diode. It is the ratio of the actual voltage across the diode to the thermal voltage.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="conclusion">Conclusion&lt;/h3>
+&lt;ul>
+&lt;li>In conclusion, the forward and reverse characteristics of a P-N junction diode are dependent on the doping levels and the voltage applied across it.&lt;/li>
+&lt;li>By understanding these characteristics, we can use P-N junction diodes to build electronic circuits that perform a variety of functions, such as &lt;strong>&lt;code>rectification&lt;/code>&lt;/strong>, &lt;strong>&lt;code>voltage regulation&lt;/code>&lt;/strong>, and &lt;strong>&lt;code>overvoltage protection&lt;/code>&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="procedure">Procedure&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Set up the circuit as shown in the circuit diagram, connecting the P-N junction diode, resistor, power supply, and multimeter as indicated.&lt;/p></description><content type="html"><![CDATA[<h2 id="aim">Aim</h2>
 <p>The aim of this experiment is to study the forward and reverse characteristics of a P-N junction diode and to determine its cut-in voltage and resistance.</p>
 <hr>
 <h2 id="components-required">Components Required</h2>
 <table>
-<thead>
-<tr>
-<th>Component Name</th>
-<th>Quantity</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>P-N Junction Diode</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Resistor</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Power Supply</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Multimeter</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Crocodile Clips</td>
-<td>2</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Component Name</th>
+          <th style="text-align: left">Quantity</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">P-N Junction Diode</td>
+          <td style="text-align: left">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Resistor</td>
+          <td style="text-align: left">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Power Supply</td>
+          <td style="text-align: left">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Multimeter</td>
+          <td style="text-align: left">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Crocodile Clips</td>
+          <td style="text-align: left">2</td>
+      </tr>
+  </tbody>
 </table>
 <hr>
 <h2 id="equipments-required">Equipments Required</h2>

@@ -1,5 +1,33 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Electronics-1 on Atharva Phadke</title><link>https://atharvap8.github.io/posts/electronics/11th/electronics-1/</link><description>Recent content in Electronics-1 on Atharva Phadke</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Fri, 27 Jan 2023 22:44:41 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/posts/electronics/11th/electronics-1/index.xml" rel="self" type="application/rss+xml"/><item><title>Study of Resistors</title><link>https://atharvap8.github.io/posts/2023/01/study-of-resistors/</link><pubDate>Sun, 29 Jan 2023 05:13:36 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-resistors/</guid><description>Study Of Resistors Basic Resistor Diagram: A basic resistor. Part 1: Study of Resistors Working of Resistor Aim The aim of this section is to provide a comprehensive understanding of resistors, their components, equipments, and types.
-Components List Resistor Multimeter Equipments Power Supply Breadboard Types Of Resistors Fixed Resistors Variable Resistors Information about Fixed Resistors Fixed resistors are electrical components that have a fixed value of resistance, meaning that their resistance does not change.</description><content type="html"><![CDATA[<h1 id="study-of-resistors">Study Of Resistors</h1>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Electronics-1 on Atharva Phadke</title><link>https://atharvap8.github.io/posts/electronics/11th/electronics-1/</link><description>Recent content in Electronics-1 on Atharva Phadke</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Fri, 27 Jan 2023 22:44:41 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/posts/electronics/11th/electronics-1/index.xml" rel="self" type="application/rss+xml"/><item><title>Study of Resistors</title><link>https://atharvap8.github.io/posts/2023/01/study-of-resistors/</link><pubDate>Sun, 29 Jan 2023 05:13:36 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-resistors/</guid><description>&lt;h1 id="study-of-resistors">Study Of Resistors&lt;/h1>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/resistor.jpg">&lt;figcaption>
+&lt;h4>Basic Resistor&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h3 id="diagram-a-basic-resistor">Diagram: A basic resistor.&lt;/h3>
+&lt;h2 id="part-1-study-of-resistors">Part 1: Study of Resistors&lt;/h2>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/resistor.gif">&lt;figcaption>
+&lt;h4>Working of Resistor&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h3 id="aim">Aim&lt;/h3>
+&lt;p>The aim of this section is to provide a comprehensive understanding of resistors, their components, equipments, and types.&lt;/p>
+&lt;h3 id="components-list">Components List&lt;/h3>
+&lt;ol>
+&lt;li>Resistor&lt;/li>
+&lt;li>Multimeter&lt;/li>
+&lt;/ol>
+&lt;h3 id="equipments">Equipments&lt;/h3>
+&lt;ol>
+&lt;li>Power Supply&lt;/li>
+&lt;li>Breadboard&lt;/li>
+&lt;/ol>
+&lt;h3 id="types-of-resistors">Types Of Resistors&lt;/h3>
+&lt;ol>
+&lt;li>Fixed Resistors&lt;/li>
+&lt;li>Variable Resistors&lt;/li>
+&lt;/ol>
+&lt;h3 id="information-about-fixed-resistors">Information about Fixed Resistors&lt;/h3>
+&lt;p>Fixed resistors are electrical components that have a fixed value of resistance, meaning that their resistance does not change. This type of resistor is commonly used to limit the current flow in a circuit and to divide voltage.&lt;/p></description><content type="html"><![CDATA[<h1 id="study-of-resistors">Study Of Resistors</h1>
 <figure><img src="/img/resistor.jpg"><figcaption>
       <h4>Basic Resistor</h4>
     </figcaption>
@@ -80,8 +108,14 @@ Vout = 6.67V</p>
 <a href="https://drive.google.com/drive/folders/11ARyTZphPKpo9fPhy97rB0HLTRN2Exp5?usp=sharing"><img src="https://img.shields.io/badge/Drive-Folder-green" alt="GDrive Folder"></a></p>
 <h3 id="conclusion">Conclusion</h3>
 <p>In this study, we have covered the basics of resistors, including their components, types, and the potential divider arrangement. Understanding resistors and their behavior is crucial in many electrical and electronics applications.</p>
-]]></content></item><item><title>Study of Transformer</title><link>https://atharvap8.github.io/posts/2023/01/study-of-transformer/</link><pubDate>Sun, 29 Jan 2023 00:27:35 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-transformer/</guid><description>Summary A transformer is a passive electrical component that transfers electrical energy from one circuit to another through electromagnetic induction. In this study, we will learn about the construction and working of a basic transformer, different types of transformers, and their applications. We will also learn about the parts required to make a basic transformer and the instruments and equipment needed to perform this activity.
-Basic Transformer Parts and Specifications A basic transformer consists of the following parts:</description><content type="html"><![CDATA[<h2 id="summary">Summary</h2>
+]]></content></item><item><title>Study of Transformer</title><link>https://atharvap8.github.io/posts/2023/01/study-of-transformer/</link><pubDate>Sun, 29 Jan 2023 00:27:35 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-transformer/</guid><description>&lt;h2 id="summary">Summary&lt;/h2>
+&lt;p>A transformer is a passive electrical component that transfers electrical energy from one circuit to another through electromagnetic induction. In this study, we will learn about the construction and working of a basic transformer, different types of transformers, and their applications. We will also learn about the parts required to make a basic transformer and the instruments and equipment needed to perform this activity.&lt;/p>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/transformer.jpg">&lt;figcaption>
+&lt;h4>Basic Transformer&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="parts-and-specifications">Parts and Specifications&lt;/h2>
+&lt;p>A basic transformer consists of the following parts:&lt;/p></description><content type="html"><![CDATA[<h2 id="summary">Summary</h2>
 <p>A transformer is a passive electrical component that transfers electrical energy from one circuit to another through electromagnetic induction. In this study, we will learn about the construction and working of a basic transformer, different types of transformers, and their applications. We will also learn about the parts required to make a basic transformer and the instruments and equipment needed to perform this activity.</p>
 <figure><img src="/img/transformer.jpg"><figcaption>
       <h4>Basic Transformer</h4>
@@ -91,26 +125,26 @@ Basic Transformer Parts and Specifications A basic transformer consists of the f
 <h2 id="parts-and-specifications">Parts and Specifications</h2>
 <p>A basic transformer consists of the following parts:</p>
 <table>
-<thead>
-<tr>
-<th>Parts</th>
-<th>Specifications</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Copper Wire</td>
-<td>Number of turns and gauge depends on the desired voltage and current rating</td>
-</tr>
-<tr>
-<td>Iron Core</td>
-<td>Magnetic permeability and cross-sectional area depends on the desired inductance</td>
-</tr>
-<tr>
-<td>Insulating Material</td>
-<td>High voltage insulation to prevent current from leaking from one coil to another</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Parts</th>
+          <th style="text-align: left">Specifications</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Copper Wire</td>
+          <td style="text-align: left">Number of turns and gauge depends on the desired voltage and current rating</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Iron Core</td>
+          <td style="text-align: left">Magnetic permeability and cross-sectional area depends on the desired inductance</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Insulating Material</td>
+          <td style="text-align: left">High voltage insulation to prevent current from leaking from one coil to another</td>
+      </tr>
+  </tbody>
 </table>
 <h2 id="instruments-and-equipment">Instruments and Equipment</h2>
 <p>The following instruments and equipment are required to perform this activity:</p>
@@ -149,10 +183,65 @@ Basic Transformer Parts and Specifications A basic transformer consists of the f
 <p>Transformers are widely used in electrical power distribution systems to step up or step down the voltage of the alternating current, according to the requirements of the load. They are also used in electronic devices such as televisions, radios, and computers, to provide isolation and regulation of the power supply.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>In conclusion, transformers play a crucial role in electrical power distribution and regulation. Understanding the construction, theory, and types of transformers is essential for anyone involved in electrical engineering and design. By performing the procedure described in this study, one can gain practical experience in building a basic transformer and gain a deeper understanding of this fascinating component.</p>
-]]></content></item><item><title>Study of Relay</title><link>https://atharvap8.github.io/posts/2023/01/study-of-relay/</link><pubDate>Sun, 29 Jan 2023 00:27:27 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-relay/</guid><description>Summary This topic aims to provide an in-depth understanding of relays, including their construction, working principle, and various applications.
-Construction of a Basic Relay A basic relay consists of an electromagnet, a set of contacts, and a spring. When the electromagnet is energized, it attracts the armature, which then moves and closes the contacts.
-Diagram:
-Basic Relay Parts and Specifications Parts Specifications Electromagnet Consists of a coil of wire, core, and a switch Contacts Typically made of metal and used to complete or break an electrical circuit Armature A movable piece of metal that is attracted by the electromagnet and responsible for closing the contacts Spring Used to return the armature to its original position when the electromagnet is de-energized Instruments and Tools Needed Multimeter Oscilloscope Soldering iron Wire stripper Pliers Procedure Start by gathering all the necessary parts and tools.</description><content type="html"><![CDATA[<h2 id="summary">Summary</h2>
+]]></content></item><item><title>Study of Relay</title><link>https://atharvap8.github.io/posts/2023/01/study-of-relay/</link><pubDate>Sun, 29 Jan 2023 00:27:27 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-relay/</guid><description>&lt;h2 id="summary">Summary&lt;/h2>
+&lt;p>This topic aims to provide an in-depth understanding of relays, including their construction, working principle, and various applications.&lt;/p>
+&lt;h2 id="construction-of-a-basic-relay">Construction of a Basic Relay&lt;/h2>
+&lt;p>A basic relay consists of an electromagnet, a set of contacts, and a spring. When the electromagnet is energized, it attracts the armature, which then moves and closes the contacts.&lt;/p>
+&lt;p>Diagram:&lt;/p>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/relay.jpg">&lt;figcaption>
+&lt;h4>Basic Relay&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="parts-and-specifications">Parts and Specifications&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Parts&lt;/th>
+&lt;th style="text-align: left">Specifications&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">Electromagnet&lt;/td>
+&lt;td style="text-align: left">Consists of a coil of wire, core, and a switch&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Contacts&lt;/td>
+&lt;td style="text-align: left">Typically made of metal and used to complete or break an electrical circuit&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Armature&lt;/td>
+&lt;td style="text-align: left">A movable piece of metal that is attracted by the electromagnet and responsible for closing the contacts&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Spring&lt;/td>
+&lt;td style="text-align: left">Used to return the armature to its original position when the electromagnet is de-energized&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="instruments-and-tools-needed">Instruments and Tools Needed&lt;/h2>
+&lt;ul>
+&lt;li>Multimeter&lt;/li>
+&lt;li>Oscilloscope&lt;/li>
+&lt;li>Soldering iron&lt;/li>
+&lt;li>Wire stripper&lt;/li>
+&lt;li>Pliers&lt;/li>
+&lt;/ul>
+&lt;h2 id="procedure">Procedure&lt;/h2>
+&lt;ol>
+&lt;li>Start by gathering all the necessary parts and tools.&lt;/li>
+&lt;li>Assemble the electromagnet by winding the coil of wire around the core and soldering the leads to the switch.&lt;/li>
+&lt;li>Mount the armature, contacts, and spring in their respective positions.&lt;/li>
+&lt;li>Test the relay using a multimeter to verify that the contacts are opening and closing correctly when the electromagnet is energized and de-energized.&lt;/li>
+&lt;li>Measure the voltage and current required to operate the relay using an oscilloscope.&lt;/li>
+&lt;li>Finally, connect the relay to a circuit and test it under normal operating conditions.&lt;/li>
+&lt;/ol>
+&lt;h2 id="theory">Theory&lt;/h2>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/relay.gif">&lt;figcaption>
+&lt;h4>Working of Relay&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>Relays are electrical switches that use an electromagnet to operate. When a voltage is applied to the coil of the electromagnet, it creates a magnetic field that attracts the armature, causing it to close the contacts. This closing of contacts completes the electrical circuit and allows current to flow. When the voltage is removed from the coil, the magnetic field collapses, and the spring returns the armature to its original position, opening the contacts and breaking the circuit.&lt;/p></description><content type="html"><![CDATA[<h2 id="summary">Summary</h2>
 <p>This topic aims to provide an in-depth understanding of relays, including their construction, working principle, and various applications.</p>
 <h2 id="construction-of-a-basic-relay">Construction of a Basic Relay</h2>
 <p>A basic relay consists of an electromagnet, a set of contacts, and a spring. When the electromagnet is energized, it attracts the armature, which then moves and closes the contacts.</p>
@@ -164,30 +253,30 @@ Basic Relay Parts and Specifications Parts Specifications Electromagnet Consists
 
 <h2 id="parts-and-specifications">Parts and Specifications</h2>
 <table>
-<thead>
-<tr>
-<th>Parts</th>
-<th>Specifications</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Electromagnet</td>
-<td>Consists of a coil of wire, core, and a switch</td>
-</tr>
-<tr>
-<td>Contacts</td>
-<td>Typically made of metal and used to complete or break an electrical circuit</td>
-</tr>
-<tr>
-<td>Armature</td>
-<td>A movable piece of metal that is attracted by the electromagnet and responsible for closing the contacts</td>
-</tr>
-<tr>
-<td>Spring</td>
-<td>Used to return the armature to its original position when the electromagnet is de-energized</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Parts</th>
+          <th style="text-align: left">Specifications</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Electromagnet</td>
+          <td style="text-align: left">Consists of a coil of wire, core, and a switch</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Contacts</td>
+          <td style="text-align: left">Typically made of metal and used to complete or break an electrical circuit</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Armature</td>
+          <td style="text-align: left">A movable piece of metal that is attracted by the electromagnet and responsible for closing the contacts</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Spring</td>
+          <td style="text-align: left">Used to return the armature to its original position when the electromagnet is de-energized</td>
+      </tr>
+  </tbody>
 </table>
 <h2 id="instruments-and-tools-needed">Instruments and Tools Needed</h2>
 <ul>
@@ -218,9 +307,46 @@ Basic Relay Parts and Specifications Parts Specifications Electromagnet Consists
 <p>Relays find applications in a wide range of fields, including automotive electronics, communication systems, industrial control systems, and home appliances. Some common applications of relays include controlling the operation of motors, switching on and off lights, and providing over-current protection to sensitive electronic circuits.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>In conclusion, relays are an essential component in electrical and electronic circuits. They provide a simple and effective way to control and protect high-power circuits with low-power signals. Understanding the construction, working principle, and applications of relays is essential for anyone working in the field of electrical and electronics engineering.</p>
-]]></content></item><item><title>Study of Switches</title><link>https://atharvap8.github.io/posts/2023/01/study-of-switches/</link><pubDate>Sun, 29 Jan 2023 00:27:19 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-switches/</guid><description>Summary A switch is a crucial component in electrical circuits as it can control the flow of electricity by making or breaking a connection. In this topic, we will study the basic construction, different types of switches, the function and purpose of switches, the tools and equipment required to demonstrate a basic switch, and more.
-Diagram Basic Switch Diagram: A figure showing a Basic Switch &amp;amp; its states
-Parts and Specifications Parts Specifications Switch SPST, SPDT, DPST, DPDT Wires 20-22 gauge Breadboard Half-sized breadboard Tools and Equipment Breadboard Jumper Wires Power Supply Multimeter Procedure To demonstrate a basic switch, follow these steps:</description><content type="html"><![CDATA[<h2 id="summary">Summary</h2>
+]]></content></item><item><title>Study of Switches</title><link>https://atharvap8.github.io/posts/2023/01/study-of-switches/</link><pubDate>Sun, 29 Jan 2023 00:27:19 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-switches/</guid><description>&lt;h2 id="summary">Summary&lt;/h2>
+&lt;p>A switch is a crucial component in electrical circuits as it can control the flow of electricity by making or breaking a connection. In this topic, we will study the basic construction, different types of switches, the function and purpose of switches, the tools and equipment required to demonstrate a basic switch, and more.&lt;/p>
+&lt;h2 id="diagram">Diagram&lt;/h2>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/switch.jpg">&lt;figcaption>
+&lt;h4>Basic Switch&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>&lt;strong>Diagram: A figure showing a Basic Switch &amp;amp; its states&lt;/strong>&lt;/p>
+&lt;h2 id="parts-and-specifications">Parts and Specifications&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Parts&lt;/th>
+&lt;th style="text-align: left">Specifications&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">Switch&lt;/td>
+&lt;td style="text-align: left">SPST, SPDT, DPST, DPDT&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Wires&lt;/td>
+&lt;td style="text-align: left">20-22 gauge&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Breadboard&lt;/td>
+&lt;td style="text-align: left">Half-sized breadboard&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="tools-and-equipment">Tools and Equipment&lt;/h2>
+&lt;ul>
+&lt;li>Breadboard&lt;/li>
+&lt;li>Jumper Wires&lt;/li>
+&lt;li>Power Supply&lt;/li>
+&lt;li>Multimeter&lt;/li>
+&lt;/ul>
+&lt;h2 id="procedure">Procedure&lt;/h2>
+&lt;p>To demonstrate a basic switch, follow these steps:&lt;/p></description><content type="html"><![CDATA[<h2 id="summary">Summary</h2>
 <p>A switch is a crucial component in electrical circuits as it can control the flow of electricity by making or breaking a connection. In this topic, we will study the basic construction, different types of switches, the function and purpose of switches, the tools and equipment required to demonstrate a basic switch, and more.</p>
 <h2 id="diagram">Diagram</h2>
 <figure><img src="/img/switch.jpg"><figcaption>
@@ -231,26 +357,26 @@ Parts and Specifications Parts Specifications Switch SPST, SPDT, DPST, DPDT Wire
 <p><strong>Diagram: A figure showing a Basic Switch &amp; its states</strong></p>
 <h2 id="parts-and-specifications">Parts and Specifications</h2>
 <table>
-<thead>
-<tr>
-<th>Parts</th>
-<th>Specifications</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Switch</td>
-<td>SPST, SPDT, DPST, DPDT</td>
-</tr>
-<tr>
-<td>Wires</td>
-<td>20-22 gauge</td>
-</tr>
-<tr>
-<td>Breadboard</td>
-<td>Half-sized breadboard</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Parts</th>
+          <th style="text-align: left">Specifications</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Switch</td>
+          <td style="text-align: left">SPST, SPDT, DPST, DPDT</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Wires</td>
+          <td style="text-align: left">20-22 gauge</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Breadboard</td>
+          <td style="text-align: left">Half-sized breadboard</td>
+      </tr>
+  </tbody>
 </table>
 <h2 id="tools-and-equipment">Tools and Equipment</h2>
 <ul>
@@ -328,8 +454,9 @@ Parts and Specifications Parts Specifications Switch SPST, SPDT, DPST, DPDT Wire
 <p>Switches play a crucial role in electrical circuits as they are used to control the flow of electricity. They are used in various applications such as turning on/off lights, controlling appliances, and in complex circuit designs such as computer motherboards, digital circuits, and more.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>In conclusion, switches are essential components in electrical circuits as they control the flow of electricity. Understanding the basic construction, different types, functions, and uses of switches is important in electrical engineering. By demonstrating a basic switch, one can have a better</p>
-]]></content></item><item><title>Study of Inductors</title><link>https://atharvap8.github.io/posts/2023/01/study-of-inductors/</link><pubDate>Sun, 29 Jan 2023 00:27:08 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-inductors/</guid><description>An inductor is a passive electrical component that stores energy in a magnetic field when electric current flows through it. Inductors play a crucial role in many electrical circuits, from filtering to energy storage to regulation. In this study, we will delve into the construction, theory, and uses of inductors.
-Construction of a Basic Air-Core Inductor The basic air-core inductor can be constructed by wrapping a wire around a non-conductive core, such as air, plastic, or fiberglass.</description><content type="html"><![CDATA[<p>An inductor is a passive electrical component that stores energy in a magnetic field when electric current flows through it. Inductors play a crucial role in many electrical circuits, from filtering to energy storage to regulation. In this study, we will delve into the construction, theory, and uses of inductors.</p>
+]]></content></item><item><title>Study of Inductors</title><link>https://atharvap8.github.io/posts/2023/01/study-of-inductors/</link><pubDate>Sun, 29 Jan 2023 00:27:08 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-inductors/</guid><description>&lt;p>An inductor is a passive electrical component that stores energy in a magnetic field when electric current flows through it. Inductors play a crucial role in many electrical circuits, from filtering to energy storage to regulation. In this study, we will delve into the construction, theory, and uses of inductors.&lt;/p>
+&lt;h2 id="construction-of-a-basic-air-core-inductor">Construction of a Basic Air-Core Inductor&lt;/h2>
+&lt;p>The basic air-core inductor can be constructed by wrapping a wire around a non-conductive core, such as air, plastic, or fiberglass. The number of turns, or coils, of wire used, along with the diameter and material of the wire, will determine the inductance of the inductor. To calculate the inductance, the formula &lt;code>L = N^2 * Μ_o * A / l&lt;/code> can be used, where &lt;code>N&lt;/code> is the number of turns, &lt;code>Μ_o&lt;/code> is the permeability of free space, &lt;code>A&lt;/code> is the cross-sectional area of the coil, and &lt;code>l&lt;/code> is the length of the coil.&lt;/p></description><content type="html"><![CDATA[<p>An inductor is a passive electrical component that stores energy in a magnetic field when electric current flows through it. Inductors play a crucial role in many electrical circuits, from filtering to energy storage to regulation. In this study, we will delve into the construction, theory, and uses of inductors.</p>
 <h2 id="construction-of-a-basic-air-core-inductor">Construction of a Basic Air-Core Inductor</h2>
 <p>The basic air-core inductor can be constructed by wrapping a wire around a non-conductive core, such as air, plastic, or fiberglass. The number of turns, or coils, of wire used, along with the diameter and material of the wire, will determine the inductance of the inductor. To calculate the inductance, the formula <code>L = N^2 * Μ_o * A / l</code> can be used, where <code>N</code> is the number of turns, <code>Μ_o</code> is the permeability of free space, <code>A</code> is the cross-sectional area of the coil, and <code>l</code> is the length of the coil.</p>
 <figure><img src="/img/inductor.jpg"><figcaption>
@@ -341,26 +468,26 @@ Construction of a Basic Air-Core Inductor The basic air-core inductor can be con
 <h2 id="parts-and-specifications">Parts and Specifications</h2>
 <p>The following table lists the parts and specifications needed to construct a basic air-core inductor:</p>
 <table>
-<thead>
-<tr>
-<th>Parts</th>
-<th>Specifications</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Wire</td>
-<td>Enameled copper wire with a diameter of 0.5 mm</td>
-</tr>
-<tr>
-<td>Core</td>
-<td>Non-conductive material, such as air or plastic</td>
-</tr>
-<tr>
-<td>Insulation tape</td>
-<td>Electrical insulating tape to secure the ends of the wire</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Parts</th>
+          <th style="text-align: left">Specifications</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Wire</td>
+          <td style="text-align: left">Enameled copper wire with a diameter of 0.5 mm</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Core</td>
+          <td style="text-align: left">Non-conductive material, such as air or plastic</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Insulation tape</td>
+          <td style="text-align: left">Electrical insulating tape to secure the ends of the wire</td>
+      </tr>
+  </tbody>
 </table>
 <h2 id="instruments-equipments-and-tools">Instruments, Equipments, and Tools</h2>
 <p>To construct an air-core inductor, you will need the following instruments, equipments, and tools:</p>
@@ -399,9 +526,20 @@ Construction of a Basic Air-Core Inductor The basic air-core inductor can be con
 <p>One of the most common uses of inductors is in filters. Inductors are used in filter circuits to block or pass certain frequencies. A high-pass filter passes high-frequency signals and blocks low-frequency signals, while a low-pass filter passes low-frequency signals and blocks high-frequency signals.</p>
 <h3 id="conclusion">Conclusion</h3>
 <p>In conclusion, Inductors are important components in electrical circuits, and understanding their construction, parts, instruments, procedure, theory, types of cores, and uses is crucial. With this knowledge, one can effectively design and implement inductors in various electrical circuits.</p>
-]]></content></item><item><title>Study of Capacitors</title><link>https://atharvap8.github.io/posts/2023/01/study-of-capacitors/</link><pubDate>Sun, 29 Jan 2023 00:27:01 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-capacitors/</guid><description>Understanding Capacitors: A Study A capacitor is an electronic component that stores electrical energy in an electric field. Capacitors are widely used in electrical circuits for a variety of purposes, including filtering, coupling, and energy storage.
-Diagram Basic Capacitor Diagram: Diagram of a basic capacitor
-Theory Working of Capacitor A capacitor is a two-terminal electronic component that stores electrical energy in an electric field. The theory of working of a capacitor is based on the principle of electrostatics, which states that opposite charges attract and like charges repel.</description><content type="html"><![CDATA[<h1 id="understanding-capacitors-a-study">Understanding Capacitors: A Study</h1>
+]]></content></item><item><title>Study of Capacitors</title><link>https://atharvap8.github.io/posts/2023/01/study-of-capacitors/</link><pubDate>Sun, 29 Jan 2023 00:27:01 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-capacitors/</guid><description>&lt;h1 id="understanding-capacitors-a-study">Understanding Capacitors: A Study&lt;/h1>
+&lt;p>A capacitor is an electronic component that stores electrical energy in an electric field. Capacitors are widely used in electrical circuits for a variety of purposes, including filtering, coupling, and energy storage.&lt;/p>
+&lt;h2 id="diagram">Diagram&lt;/h2>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/capacitor.jpg">&lt;figcaption>
+&lt;h4>Basic Capacitor&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>Diagram: Diagram of a basic capacitor&lt;/p>
+&lt;h2 id="theory">Theory&lt;/h2>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/capacitor.gif">&lt;figcaption>
+&lt;h4>Working of Capacitor&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>A capacitor is a two-terminal electronic component that stores electrical energy in an electric field. The theory of working of a capacitor is based on the principle of electrostatics, which states that opposite charges attract and like charges repel. When a voltage is applied across the terminals of a capacitor, it causes an electric field to develop between two conductive plates, separated by an insulating material known as a dielectric. The strength of the electric field is proportional to the voltage across the capacitor and the capacitance, which is a measure of the amount of electrical charge that can be stored per unit of voltage. When the voltage is removed, the electric field collapses and the energy stored in the electric field is released, making capacitors useful in a variety of applications such as power supplies, filters, and energy storage.&lt;/p></description><content type="html"><![CDATA[<h1 id="understanding-capacitors-a-study">Understanding Capacitors: A Study</h1>
 <p>A capacitor is an electronic component that stores electrical energy in an electric field. Capacitors are widely used in electrical circuits for a variety of purposes, including filtering, coupling, and energy storage.</p>
 <h2 id="diagram">Diagram</h2>
 <figure><img src="/img/capacitor.jpg"><figcaption>
@@ -448,8 +586,65 @@ Theory Working of Capacitor A capacitor is a two-terminal electronic component t
 <p>In this video, we can see how a capacitor behaves when charging and discharging.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>Capacitors are essential components in many electrical circuits, and they play an important role in many applications. Understanding how capacitors work and how they are used can help you to design and build more efficient and reliable circuits.</p>
-]]></content></item><item><title>Study of Dmm</title><link>https://atharvap8.github.io/posts/2023/01/study-of-dmm/</link><pubDate>Sun, 29 Jan 2023 00:26:51 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-dmm/</guid><description>Summary This topic aims to provide an in-depth understanding of digital multimeters, including its construction, components, and various applications.
-Diagram Basic DMM Parts and Specifications Part Specification Display LCD or LED Range Selection Manual or Auto Ranging Input Impedance &amp;gt;10 MΩ Maximum Voltage 600V AC/DC Maximum Current 10A AC/DC Resistance 200Ω to 200MΩ Continuity Test Built-in Buzzer Diode Test Built-in Tools and Instruments Digital multimeter Lead set 9V battery Circuit under test Procedure The procedure for using a digital multimeter is quite straightforward.</description><content type="html"><![CDATA[<h2 id="summary">Summary</h2>
+]]></content></item><item><title>Study of Dmm</title><link>https://atharvap8.github.io/posts/2023/01/study-of-dmm/</link><pubDate>Sun, 29 Jan 2023 00:26:51 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-dmm/</guid><description>&lt;h2 id="summary">Summary&lt;/h2>
+&lt;p>This topic aims to provide an in-depth understanding of digital multimeters, including its construction, components, and various applications.&lt;/p>
+&lt;h2 id="diagram">Diagram&lt;/h2>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/dmm.jpg">&lt;figcaption>
+&lt;h4>Basic DMM&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="parts-and-specifications">Parts and Specifications&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Part&lt;/th>
+&lt;th style="text-align: left">Specification&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">Display&lt;/td>
+&lt;td style="text-align: left">LCD or LED&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Range Selection&lt;/td>
+&lt;td style="text-align: left">Manual or Auto Ranging&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Input Impedance&lt;/td>
+&lt;td style="text-align: left">&amp;gt;10 MΩ&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Maximum Voltage&lt;/td>
+&lt;td style="text-align: left">600V AC/DC&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Maximum Current&lt;/td>
+&lt;td style="text-align: left">10A AC/DC&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Resistance&lt;/td>
+&lt;td style="text-align: left">200Ω to 200MΩ&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Continuity Test&lt;/td>
+&lt;td style="text-align: left">Built-in Buzzer&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Diode Test&lt;/td>
+&lt;td style="text-align: left">Built-in&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="tools-and-instruments">Tools and Instruments&lt;/h2>
+&lt;ul>
+&lt;li>Digital multimeter&lt;/li>
+&lt;li>Lead set&lt;/li>
+&lt;li>9V battery&lt;/li>
+&lt;li>Circuit under test&lt;/li>
+&lt;/ul>
+&lt;h2 id="procedure">Procedure&lt;/h2>
+&lt;p>The procedure for using a digital multimeter is quite straightforward. First, select the appropriate range for the measurement to be taken. Then, connect the leads to the multimeter and to the circuit under test. Finally, observe the reading on the display. It is important to note that the polarity of the leads should be observed, as some measurements require the leads to be connected in a specific way.&lt;/p></description><content type="html"><![CDATA[<h2 id="summary">Summary</h2>
 <p>This topic aims to provide an in-depth understanding of digital multimeters, including its construction, components, and various applications.</p>
 <h2 id="diagram">Diagram</h2>
 <figure><img src="/img/dmm.jpg"><figcaption>
@@ -459,46 +654,46 @@ Diagram Basic DMM Parts and Specifications Part Specification Display LCD or LED
 
 <h2 id="parts-and-specifications">Parts and Specifications</h2>
 <table>
-<thead>
-<tr>
-<th>Part</th>
-<th>Specification</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Display</td>
-<td>LCD or LED</td>
-</tr>
-<tr>
-<td>Range Selection</td>
-<td>Manual or Auto Ranging</td>
-</tr>
-<tr>
-<td>Input Impedance</td>
-<td>&gt;10 MΩ</td>
-</tr>
-<tr>
-<td>Maximum Voltage</td>
-<td>600V AC/DC</td>
-</tr>
-<tr>
-<td>Maximum Current</td>
-<td>10A AC/DC</td>
-</tr>
-<tr>
-<td>Resistance</td>
-<td>200Ω to 200MΩ</td>
-</tr>
-<tr>
-<td>Continuity Test</td>
-<td>Built-in Buzzer</td>
-</tr>
-<tr>
-<td>Diode Test</td>
-<td>Built-in</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Part</th>
+          <th style="text-align: left">Specification</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Display</td>
+          <td style="text-align: left">LCD or LED</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Range Selection</td>
+          <td style="text-align: left">Manual or Auto Ranging</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Input Impedance</td>
+          <td style="text-align: left">&gt;10 MΩ</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Maximum Voltage</td>
+          <td style="text-align: left">600V AC/DC</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Maximum Current</td>
+          <td style="text-align: left">10A AC/DC</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Resistance</td>
+          <td style="text-align: left">200Ω to 200MΩ</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Continuity Test</td>
+          <td style="text-align: left">Built-in Buzzer</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Diode Test</td>
+          <td style="text-align: left">Built-in</td>
+      </tr>
+  </tbody>
 </table>
 <h2 id="tools-and-instruments">Tools and Instruments</h2>
 <ul>
