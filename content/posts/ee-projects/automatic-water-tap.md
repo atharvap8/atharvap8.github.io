@@ -35,6 +35,15 @@ Here's the project's youtube video link:
 
 {{< figure src="/img/automatic_water_tap.jpg" >}}
 
+
+## Project Media 
+
+Click Here:
+
+[![Static Badge](https://img.shields.io/badge/GooglePhotos-Album-greenCl)](https://photos.app.goo.gl/nLhd8z81mfEargJE8)
+
+
+
 ## How It Works
 
 The automatic water tap works based on the principle of Infrared (IR) detection. Here's a concise theory of its operation:
