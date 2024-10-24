@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Atharva Phadke</title><link>https://atharvap8.github.io/</link><description>Recent content on Atharva Phadke</description><generator>Hugo</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Mon, 29 Jul 2024 18:00:32 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Esp32 Washing Machine</title><link>https://atharvap8.github.io/posts/2024/07/esp32-washing-machine/</link><pubDate>Mon, 29 Jul 2024 18:00:32 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/07/esp32-washing-machine/</guid><description>&lt;h1 id="coming-soon">&lt;strong>Coming SOON!&lt;/strong>&lt;/h1></description></item><item><title>Automatic Water Tap V2</title><link>https://atharvap8.github.io/posts/2024/06/automatic-water-tap-v2/</link><pubDate>Sun, 23 Jun 2024 12:57:02 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/06/automatic-water-tap-v2/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Atharva Phadke</title><link>https://atharvap8.github.io/</link><description>Recent content on Atharva Phadke</description><generator>Hugo</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Thu, 24 Oct 2024 00:26:51 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Study of ICs</title><link>https://atharvap8.github.io/posts/2024/10/study-of-ics/</link><pubDate>Thu, 24 Oct 2024 00:26:51 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/10/study-of-ics/</guid><description>&lt;h2 id="introduction-to-integrated-circuits">Introduction to Integrated Circuits&lt;/h2>
+&lt;p>Integrated Circuits (ICs) are miniature electronic devices that contain multiple transistors, diodes, capacitors, and resistors integrated onto a single chip of semiconductor material, usually silicon. They are fundamental building blocks of modern electronics, drastically reducing size and improving the performance of electronic devices.&lt;/p>
+&lt;hr>
+&lt;h2 id="history">History&lt;/h2>
+&lt;p>The invention of the IC can be traced back to &lt;strong>Jack Kilby&lt;/strong> of Texas Instruments and &lt;strong>Robert Noyce&lt;/strong> of Fairchild Semiconductor. Kilby successfully demonstrated the first working IC in &lt;strong>1958&lt;/strong>, and Noyce made significant contributions to its practical development.&lt;br>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/first-ic.jpg">
+&lt;/figure>
+&lt;/p></description></item><item><title>Study of Potentiometers</title><link>https://atharvap8.github.io/posts/2024/10/study-of-potentiometers/</link><pubDate>Tue, 22 Oct 2024 00:26:51 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/10/study-of-potentiometers/</guid><description>&lt;h1 id="potentiometers-study-notes">Potentiometers: Study Notes&lt;/h1>
+&lt;h2 id="1-introduction-to-potentiometers">1. Introduction to Potentiometers&lt;/h2>
+&lt;p>A &lt;strong>potentiometer&lt;/strong> is a three-terminal resistor with a sliding or rotating contact that forms an adjustable voltage divider. The primary use of a potentiometer is to vary the resistance in a circuit without interrupting the flow of current. It is commonly used for adjusting electrical devices like volume controls on audio equipment.&lt;/p>
+&lt;h3 id="types-of-potentiometers">Types of Potentiometers:&lt;/h3>
+&lt;ol>
+&lt;li>&lt;strong>Rotary Potentiometer&lt;/strong>: Has a circular rotation for adjusting resistance.&lt;/li>
+&lt;li>&lt;strong>Linear Potentiometer&lt;/strong>: The slider moves in a straight line.&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="2-potentiometer-structure-and-working-principle">2. Potentiometer Structure and Working Principle&lt;/h2>
+&lt;p>A potentiometer has three main terminals:&lt;/p></description></item><item><title>Esp32 Washing Machine</title><link>https://atharvap8.github.io/posts/2024/07/esp32-washing-machine/</link><pubDate>Mon, 29 Jul 2024 18:00:32 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/07/esp32-washing-machine/</guid><description>&lt;h1 id="coming-soon">&lt;strong>Coming SOON!&lt;/strong>&lt;/h1></description></item><item><title>Automatic Water Tap V2</title><link>https://atharvap8.github.io/posts/2024/06/automatic-water-tap-v2/</link><pubDate>Sun, 23 Jun 2024 12:57:02 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/06/automatic-water-tap-v2/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
 &lt;p>In this project, I have built an IR Sensor-based automatic water tap. This system allows water to flow when it detects an object in front of the sensor, making it a convenient and hygienic solution for home or public restrooms. The IR sensor is mounted on the tap head to detect any objects near the water tap.&lt;/p>
 &lt;h2 id="youtube-video">YouTube Video&lt;/h2>
 &lt;p>Here&amp;rsquo;s the project&amp;rsquo;s youtube video link:
@@ -46,147 +63,4 @@ This project brings IoT functionality to washing machines, offering voice contro
 &lt;li>Variable Resistors&lt;/li>
 &lt;/ol>
 &lt;h3 id="information-about-fixed-resistors">Information about Fixed Resistors&lt;/h3>
-&lt;p>Fixed resistors are electrical components that have a fixed value of resistance, meaning that their resistance does not change. This type of resistor is commonly used to limit the current flow in a circuit and to divide voltage.&lt;/p></description></item><item><title>Testing of Diodes and Transistors</title><link>https://atharvap8.github.io/posts/2023/01/testing-of-diodes-and-transistors/</link><pubDate>Sun, 29 Jan 2023 00:39:28 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/testing-of-diodes-and-transistors/</guid><description>&lt;h2 id="aim">Aim&lt;/h2>
-&lt;p>The aim of this study is to understand the methods of testing diodes and transistors and to identify the working and faulty components.&lt;/p>
-&lt;hr>
-&lt;h2 id="components-required">Components Required&lt;/h2>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th style="text-align: left">Component&lt;/th>
- &lt;th style="text-align: left">Description&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td style="text-align: left">Diodes&lt;/td>
- &lt;td style="text-align: left">Any standard diode&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Transistors&lt;/td>
- &lt;td style="text-align: left">Any NPN or PNP transistor&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Resistor&lt;/td>
- &lt;td style="text-align: left">Any value between 1kΩ to 10kΩ&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Multimeter&lt;/td>
- &lt;td style="text-align: left">Digital multimeter with diode and transistor testing function&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;hr>
-&lt;h2 id="equipments-needed">Equipments Needed&lt;/h2>
-&lt;ul>
-&lt;li>Breadboard&lt;/li>
-&lt;li>Jumper Wires&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h2 id="theory">Theory&lt;/h2>
-&lt;hr>
-&lt;h3 id="diode-testing">Diode Testing&lt;/h3>
-&lt;ul>
-&lt;li>A diode is a two-terminal electronic component that allows current to flow in only one direction.&lt;/li>
-&lt;li>The basic principle behind the functioning of a diode is based on the difference in the concentration of electrons in the p-type and n-type semiconductor material.&lt;/li>
-&lt;li>The p-type material has a shortage of electrons and the n-type material has an excess of electrons.&lt;/li>
-&lt;li>When a voltage is applied to the diode, it creates a potential difference between the p-type and n-type material, resulting in the flow of electrons from the n-type material to the p-type material.&lt;/li>
-&lt;li>In the case of a diode, the multimeter measures the forward and reverse resistance of the diode to determine its working status. The forward resistance of a diode should be low, while the reverse resistance should be infinite.&lt;/li>
-&lt;/ul>
-&lt;h3 id="example-of-diode-test">Example Of Diode Test&lt;/h3>
-&lt;figure class="center">&lt;img src="https://atharvap8.github.io/img/ref-dt.jpg" width="1600px" height="400px">
- &lt;/figure>
-
-&lt;hr>
-&lt;h3 id="transistor-testing">Transistor Testing&lt;/h3>
-&lt;ul>
-&lt;li>A transistor is a three-terminal electronic component that can be used as a switch or amplifier.&lt;/li>
-&lt;li>The most common type of transistor is the bipolar junction transistor (BJT), which has two p-n junctions.&lt;/li>
-&lt;li>The base-emitter junction is forward-biased, and the base-collector junction is reverse-biased.&lt;/li>
-&lt;li>In the switching operation, the base current controls the flow of collector current, allowing the transistor to act as an on-off switch.&lt;/li>
-&lt;li>In the amplification operation, the transistor amplifies the input signal applied to the base and produces a corresponding output signal at the collector.&lt;/li>
-&lt;li>In the case of a transistor, the multimeter measures the current gain of the transistor, which is defined as the ratio of collector current to base current. The current gain of a transistor should be high, typically in the range of 100 to 1000.&lt;/li>
-&lt;/ul>
-&lt;h3 id="example-of-transistor-test">Example Of Transistor Test&lt;/h3>
-&lt;figure class="center">&lt;img src="https://atharvap8.github.io/img/ref-tt.jpg" width="1600px" height="400px">
- &lt;/figure>
-
-&lt;hr>
-&lt;ul>
-&lt;li>The testing of diodes and transistors is important in the design and maintenance of electronic circuits.&lt;/li>
-&lt;li>A digital multimeter is a versatile tool that can be used to test both diodes and transistors.&lt;/li>
-&lt;li>The procedure for testing diodes and transistors involves setting up the circuit on a breadboard, connecting the multimeter, and measuring the forward and reverse resistance of the diode and the current gain of the transistor.&lt;/li>
-&lt;li>It is important to observe proper wiring and connectivity in the circuit and to set the multimeter to the correct testing mode before measuring.&lt;/li>
-&lt;li>Additionally, it is important to use a suitable diode and transistor for testing and to avoid exposing the circuit to high temperature or moisture.&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h3 id="conclusion">Conclusion&lt;/h3>
-&lt;ul>
-&lt;li>In conclusion, the testing of diodes and transistors is an important step in the design and maintenance of electronic circuits. By understanding the basic principles and procedures of testing, we can ensure the proper functioning of the components and improve the reliability of the circuit.&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h2 id="procedure">Procedure&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>Connect the diode to the breadboard as per the circuit diagram.&lt;/p></description></item><item><title>Study of HWR and FWR Using CT Transformer</title><link>https://atharvap8.github.io/posts/2023/01/study-of-hwr-and-fwr-using-ct-transformer/</link><pubDate>Sun, 29 Jan 2023 00:38:33 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-hwr-and-fwr-using-ct-transformer/</guid><description>&lt;h2 id="part-1-study-of-half-wave-rectifier">Part-1: Study of Half-Wave Rectifier&lt;/h2>
-&lt;hr>
-&lt;h3 id="aim">Aim&lt;/h3>
-&lt;p>To study the half-wave rectifier and its input and output waveform.&lt;/p>
-&lt;hr>
-&lt;h3 id="components-required">Components Required&lt;/h3>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th style="text-align: left">Component&lt;/th>
- &lt;th style="text-align: left">Quantity&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td style="text-align: left">Diode&lt;/td>
- &lt;td style="text-align: left">1&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Resistor&lt;/td>
- &lt;td style="text-align: left">1&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Capacitor&lt;/td>
- &lt;td style="text-align: left">1&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Transformer&lt;/td>
- &lt;td style="text-align: left">1&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Power Supply&lt;/td>
- &lt;td style="text-align: left">1&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;hr>
-&lt;h3 id="equipment-required">Equipment Required&lt;/h3>
-&lt;ul>
-&lt;li>Oscilloscope&lt;/li>
-&lt;li>Function Generator&lt;/li>
-&lt;li>Breadboard&lt;/li>
-&lt;li>Connecting Wires&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h3 id="circuit-diagram-">Circuit Diagram 👇🏻&lt;/h3>
-&lt;figure>&lt;img src="https://atharvap8.github.io/img/hwr.jpg">
-&lt;/figure>
-
-&lt;hr>
-&lt;h3 id="theory">Theory&lt;/h3>
-&lt;ul>
-&lt;li>The half-wave rectifier is a simple circuit that converts AC voltage into a pulsating DC voltage. It consists of a diode that is connected in series with the load resistor and an AC source. The diode only allows current to flow in one direction, i.e., from the anode to cathode.&lt;/li>
-&lt;li>During the positive half-cycle of the AC voltage, the diode is forward-biased, and it conducts current. This results in the flow of current through the load resistor and the production of a positive voltage across it.&lt;/li>
-&lt;li>During the negative half-cycle of the AC voltage, the diode is reverse-biased, and it does not conduct current. This results in the absence of current flow through the load resistor and the production of a zero voltage across it.&lt;/li>
-&lt;/ul>
-&lt;figure>&lt;img src="https://atharvap8.github.io/img/hwr.gif">
- &lt;/figure>
-
-&lt;ul>
-&lt;li>
-&lt;p>The output of the half-wave rectifier is a pulsating DC voltage that has a lower DC component compared to the full-wave rectifier. The pulsating DC voltage can be smoothened using a filter circuit, such as a capacitor filter, to obtain a nearly constant DC voltage. The efficiency of the half-wave rectifier is lower compared to the full-wave rectifier due to the absence of current flow during the negative half-cycle of the AC voltage.&lt;/p></description></item></channel></rss>
+&lt;p>Fixed resistors are electrical components that have a fixed value of resistance, meaning that their resistance does not change. This type of resistor is commonly used to limit the current flow in a circuit and to divide voltage.&lt;/p></description></item></channel></rss>

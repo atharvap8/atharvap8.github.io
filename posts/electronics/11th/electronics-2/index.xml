@@ -5,26 +5,26 @@
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align: left">Component&lt;/th>
-&lt;th style="text-align: left">Description&lt;/th>
+&lt;th>Component&lt;/th>
+&lt;th>Description&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align: left">Diodes&lt;/td>
-&lt;td style="text-align: left">Any standard diode&lt;/td>
+&lt;td>Diodes&lt;/td>
+&lt;td>Any standard diode&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Transistors&lt;/td>
-&lt;td style="text-align: left">Any NPN or PNP transistor&lt;/td>
+&lt;td>Transistors&lt;/td>
+&lt;td>Any NPN or PNP transistor&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Resistor&lt;/td>
-&lt;td style="text-align: left">Any value between 1kΩ to 10kΩ&lt;/td>
+&lt;td>Resistor&lt;/td>
+&lt;td>Any value between 1kΩ to 10kΩ&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Multimeter&lt;/td>
-&lt;td style="text-align: left">Digital multimeter with diode and transistor testing function&lt;/td>
+&lt;td>Multimeter&lt;/td>
+&lt;td>Digital multimeter with diode and transistor testing function&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -37,6 +37,10 @@
 &lt;hr>
 &lt;h2 id="theory">Theory&lt;/h2>
 &lt;hr>
+&lt;h3 id="definition-of-diode">Definition of Diode&lt;/h3>
+&lt;h4 id="a-diode-is-a-two-terminal-electronic-component-that-allows-current-to-flow-in-one-direction-only-forward-direction-and-blocks-it-in-the-reverse-direction-it-acts-like-a-one-way-valve-for-current-in-a-circuit">A diode is a two-terminal electronic component that allows current to flow in one direction only (forward direction) and blocks it in the reverse direction. It acts like a one-way valve for current in a circuit.&lt;/h4>
+&lt;h4 id="forward-bias-when-the-anode-of-diode-is-connected-to-positive-of-supply-and-the-cathode-is-connected-to-the-negative-of-the-supple-it-is-said-to-be-in-forward-bias">Forward Bias: When the Anode of diode is connected to positive of supply and the cathode is connected to the negative of the supple, it is said to be in forward bias.&lt;/h4>
+&lt;h4 id="reverse-bias-when-the-anode-is-connected-to-negative-of-supply-and-the-cathode-is-connected-to-positive-of-supply-it-is-said-to-be-in-reverse-bias">Reverse Bias: When the Anode is connected to negative of supply and the cathode is connected to positive of supply it is said to be in reverse bias.&lt;/h4>
 &lt;h3 id="diode-testing">Diode Testing&lt;/h3>
 &lt;ul>
 &lt;li>A diode is a two-terminal electronic component that allows current to flow in only one direction.&lt;/li>
@@ -85,26 +89,26 @@
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Component</th>
-          <th style="text-align: left">Description</th>
+          <th>Component</th>
+          <th>Description</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">Diodes</td>
-          <td style="text-align: left">Any standard diode</td>
+          <td>Diodes</td>
+          <td>Any standard diode</td>
       </tr>
       <tr>
-          <td style="text-align: left">Transistors</td>
-          <td style="text-align: left">Any NPN or PNP transistor</td>
+          <td>Transistors</td>
+          <td>Any NPN or PNP transistor</td>
       </tr>
       <tr>
-          <td style="text-align: left">Resistor</td>
-          <td style="text-align: left">Any value between 1kΩ to 10kΩ</td>
+          <td>Resistor</td>
+          <td>Any value between 1kΩ to 10kΩ</td>
       </tr>
       <tr>
-          <td style="text-align: left">Multimeter</td>
-          <td style="text-align: left">Digital multimeter with diode and transistor testing function</td>
+          <td>Multimeter</td>
+          <td>Digital multimeter with diode and transistor testing function</td>
       </tr>
   </tbody>
 </table>
@@ -117,6 +121,10 @@
 <hr>
 <h2 id="theory">Theory</h2>
 <hr>
+<h3 id="definition-of-diode">Definition of Diode</h3>
+<h4 id="a-diode-is-a-two-terminal-electronic-component-that-allows-current-to-flow-in-one-direction-only-forward-direction-and-blocks-it-in-the-reverse-direction-it-acts-like-a-one-way-valve-for-current-in-a-circuit">A diode is a two-terminal electronic component that allows current to flow in one direction only (forward direction) and blocks it in the reverse direction. It acts like a one-way valve for current in a circuit.</h4>
+<h4 id="forward-bias-when-the-anode-of-diode-is-connected-to-positive-of-supply-and-the-cathode-is-connected-to-the-negative-of-the-supple-it-is-said-to-be-in-forward-bias">Forward Bias: When the Anode of diode is connected to positive of supply and the cathode is connected to the negative of the supple, it is said to be in forward bias.</h4>
+<h4 id="reverse-bias-when-the-anode-is-connected-to-negative-of-supply-and-the-cathode-is-connected-to-positive-of-supply-it-is-said-to-be-in-reverse-bias">Reverse Bias: When the Anode is connected to negative of supply and the cathode is connected to positive of supply it is said to be in reverse bias.</h4>
 <h3 id="diode-testing">Diode Testing</h3>
 <ul>
 <li>A diode is a two-terminal electronic component that allows current to flow in only one direction.</li>
@@ -205,30 +213,30 @@
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align: left">Component&lt;/th>
-&lt;th style="text-align: left">Quantity&lt;/th>
+&lt;th>Component&lt;/th>
+&lt;th>Quantity&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align: left">Diode&lt;/td>
-&lt;td style="text-align: left">1&lt;/td>
+&lt;td>Diode&lt;/td>
+&lt;td>1&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Resistor&lt;/td>
-&lt;td style="text-align: left">1&lt;/td>
+&lt;td>Resistor&lt;/td>
+&lt;td>1&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Capacitor&lt;/td>
-&lt;td style="text-align: left">1&lt;/td>
+&lt;td>Capacitor&lt;/td>
+&lt;td>1&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Transformer&lt;/td>
-&lt;td style="text-align: left">1&lt;/td>
+&lt;td>Transformer&lt;/td>
+&lt;td>1&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Power Supply&lt;/td>
-&lt;td style="text-align: left">1&lt;/td>
+&lt;td>Power Supply&lt;/td>
+&lt;td>1&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -264,30 +272,30 @@
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Component</th>
-          <th style="text-align: left">Quantity</th>
+          <th>Component</th>
+          <th>Quantity</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">Diode</td>
-          <td style="text-align: left">1</td>
+          <td>Diode</td>
+          <td>1</td>
       </tr>
       <tr>
-          <td style="text-align: left">Resistor</td>
-          <td style="text-align: left">1</td>
+          <td>Resistor</td>
+          <td>1</td>
       </tr>
       <tr>
-          <td style="text-align: left">Capacitor</td>
-          <td style="text-align: left">1</td>
+          <td>Capacitor</td>
+          <td>1</td>
       </tr>
       <tr>
-          <td style="text-align: left">Transformer</td>
-          <td style="text-align: left">1</td>
+          <td>Transformer</td>
+          <td>1</td>
       </tr>
       <tr>
-          <td style="text-align: left">Power Supply</td>
-          <td style="text-align: left">1</td>
+          <td>Power Supply</td>
+          <td>1</td>
       </tr>
   </tbody>
 </table>
@@ -421,22 +429,22 @@
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Component</th>
-          <th style="text-align: left">Description</th>
+          <th>Component</th>
+          <th>Description</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">Center-tapped transformer</td>
-          <td style="text-align: left">A center-tapped transformer is used to step-down the incoming AC voltage.</td>
+          <td>Center-tapped transformer</td>
+          <td>A center-tapped transformer is used to step-down the incoming AC voltage.</td>
       </tr>
       <tr>
-          <td style="text-align: left">Diodes</td>
-          <td style="text-align: left">Diodes are used to convert AC voltage into a unidirectional DC voltage.</td>
+          <td>Diodes</td>
+          <td>Diodes are used to convert AC voltage into a unidirectional DC voltage.</td>
       </tr>
       <tr>
-          <td style="text-align: left">Resistor</td>
-          <td style="text-align: left">A resistor is used to load the rectifier circuit.</td>
+          <td>Resistor</td>
+          <td>A resistor is used to load the rectifier circuit.</td>
       </tr>
   </tbody>
 </table>
@@ -559,26 +567,26 @@
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align: left">Component&lt;/th>
-&lt;th style="text-align: left">Description&lt;/th>
+&lt;th>Component&lt;/th>
+&lt;th>Description&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align: left">Transistor&lt;/td>
-&lt;td style="text-align: left">Any NPN or PNP transistor&lt;/td>
+&lt;td>Transistor&lt;/td>
+&lt;td>Any NPN or PNP transistor&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Resistor&lt;/td>
-&lt;td style="text-align: left">Any value between 1kΩ to 10kΩ&lt;/td>
+&lt;td>Resistor&lt;/td>
+&lt;td>Any value between 1kΩ to 10kΩ&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">LED&lt;/td>
-&lt;td style="text-align: left">Any standard LED&lt;/td>
+&lt;td>LED&lt;/td>
+&lt;td>Any standard LED&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Power Supply&lt;/td>
-&lt;td style="text-align: left">Any DC power supply with voltage between 5V to 12V&lt;/td>
+&lt;td>Power Supply&lt;/td>
+&lt;td>Any DC power supply with voltage between 5V to 12V&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -599,26 +607,26 @@
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Component</th>
-          <th style="text-align: left">Description</th>
+          <th>Component</th>
+          <th>Description</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">Transistor</td>
-          <td style="text-align: left">Any NPN or PNP transistor</td>
+          <td>Transistor</td>
+          <td>Any NPN or PNP transistor</td>
       </tr>
       <tr>
-          <td style="text-align: left">Resistor</td>
-          <td style="text-align: left">Any value between 1kΩ to 10kΩ</td>
+          <td>Resistor</td>
+          <td>Any value between 1kΩ to 10kΩ</td>
       </tr>
       <tr>
-          <td style="text-align: left">LED</td>
-          <td style="text-align: left">Any standard LED</td>
+          <td>LED</td>
+          <td>Any standard LED</td>
       </tr>
       <tr>
-          <td style="text-align: left">Power Supply</td>
-          <td style="text-align: left">Any DC power supply with voltage between 5V to 12V</td>
+          <td>Power Supply</td>
+          <td>Any DC power supply with voltage between 5V to 12V</td>
       </tr>
   </tbody>
 </table>
@@ -678,26 +686,26 @@
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align: left">Component&lt;/th>
-&lt;th style="text-align: left">Quantity&lt;/th>
+&lt;th>Component&lt;/th>
+&lt;th>Quantity&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align: left">Diode&lt;/td>
-&lt;td style="text-align: left">4&lt;/td>
+&lt;td>Diode&lt;/td>
+&lt;td>4&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Resistor&lt;/td>
-&lt;td style="text-align: left">4&lt;/td>
+&lt;td>Resistor&lt;/td>
+&lt;td>4&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Capacitor&lt;/td>
-&lt;td style="text-align: left">1&lt;/td>
+&lt;td>Capacitor&lt;/td>
+&lt;td>1&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Transformer&lt;/td>
-&lt;td style="text-align: left">1&lt;/td>
+&lt;td>Transformer&lt;/td>
+&lt;td>1&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -746,26 +754,26 @@
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Component</th>
-          <th style="text-align: left">Quantity</th>
+          <th>Component</th>
+          <th>Quantity</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">Diode</td>
-          <td style="text-align: left">4</td>
+          <td>Diode</td>
+          <td>4</td>
       </tr>
       <tr>
-          <td style="text-align: left">Resistor</td>
-          <td style="text-align: left">4</td>
+          <td>Resistor</td>
+          <td>4</td>
       </tr>
       <tr>
-          <td style="text-align: left">Capacitor</td>
-          <td style="text-align: left">1</td>
+          <td>Capacitor</td>
+          <td>1</td>
       </tr>
       <tr>
-          <td style="text-align: left">Transformer</td>
-          <td style="text-align: left">1</td>
+          <td>Transformer</td>
+          <td>1</td>
       </tr>
   </tbody>
 </table>
@@ -911,30 +919,30 @@
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align: left">Component Name&lt;/th>
-&lt;th style="text-align: left">Quantity&lt;/th>
+&lt;th>Component Name&lt;/th>
+&lt;th>Quantity&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align: left">P-N Junction Diode&lt;/td>
-&lt;td style="text-align: left">1&lt;/td>
+&lt;td>P-N Junction Diode&lt;/td>
+&lt;td>1&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Resistor&lt;/td>
-&lt;td style="text-align: left">1&lt;/td>
+&lt;td>Resistor&lt;/td>
+&lt;td>1&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Power Supply&lt;/td>
-&lt;td style="text-align: left">1&lt;/td>
+&lt;td>Power Supply&lt;/td>
+&lt;td>1&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Multimeter&lt;/td>
-&lt;td style="text-align: left">1&lt;/td>
+&lt;td>Multimeter&lt;/td>
+&lt;td>1&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Crocodile Clips&lt;/td>
-&lt;td style="text-align: left">2&lt;/td>
+&lt;td>Crocodile Clips&lt;/td>
+&lt;td>2&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -991,30 +999,30 @@
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Component Name</th>
-          <th style="text-align: left">Quantity</th>
+          <th>Component Name</th>
+          <th>Quantity</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">P-N Junction Diode</td>
-          <td style="text-align: left">1</td>
+          <td>P-N Junction Diode</td>
+          <td>1</td>
       </tr>
       <tr>
-          <td style="text-align: left">Resistor</td>
-          <td style="text-align: left">1</td>
+          <td>Resistor</td>
+          <td>1</td>
       </tr>
       <tr>
-          <td style="text-align: left">Power Supply</td>
-          <td style="text-align: left">1</td>
+          <td>Power Supply</td>
+          <td>1</td>
       </tr>
       <tr>
-          <td style="text-align: left">Multimeter</td>
-          <td style="text-align: left">1</td>
+          <td>Multimeter</td>
+          <td>1</td>
       </tr>
       <tr>
-          <td style="text-align: left">Crocodile Clips</td>
-          <td style="text-align: left">2</td>
+          <td>Crocodile Clips</td>
+          <td>2</td>
       </tr>
   </tbody>
 </table>

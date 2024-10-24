@@ -1,4 +1,158 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Electronics-1 on Atharva Phadke</title><link>https://atharvap8.github.io/posts/electronics/11th/electronics-1/</link><description>Recent content in Electronics-1 on Atharva Phadke</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Fri, 27 Jan 2023 22:44:41 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/posts/electronics/11th/electronics-1/index.xml" rel="self" type="application/rss+xml"/><item><title>Study of Resistors</title><link>https://atharvap8.github.io/posts/2023/01/study-of-resistors/</link><pubDate>Sun, 29 Jan 2023 05:13:36 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-resistors/</guid><description>&lt;h1 id="study-of-resistors">Study Of Resistors&lt;/h1>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Electronics-1 on Atharva Phadke</title><link>https://atharvap8.github.io/posts/electronics/11th/electronics-1/</link><description>Recent content in Electronics-1 on Atharva Phadke</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Fri, 27 Jan 2023 22:44:41 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/posts/electronics/11th/electronics-1/index.xml" rel="self" type="application/rss+xml"/><item><title>Study of ICs</title><link>https://atharvap8.github.io/posts/2024/10/study-of-ics/</link><pubDate>Thu, 24 Oct 2024 00:26:51 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/10/study-of-ics/</guid><description>&lt;h2 id="introduction-to-integrated-circuits">Introduction to Integrated Circuits&lt;/h2>
+&lt;p>Integrated Circuits (ICs) are miniature electronic devices that contain multiple transistors, diodes, capacitors, and resistors integrated onto a single chip of semiconductor material, usually silicon. They are fundamental building blocks of modern electronics, drastically reducing size and improving the performance of electronic devices.&lt;/p>
+&lt;hr>
+&lt;h2 id="history">History&lt;/h2>
+&lt;p>The invention of the IC can be traced back to &lt;strong>Jack Kilby&lt;/strong> of Texas Instruments and &lt;strong>Robert Noyce&lt;/strong> of Fairchild Semiconductor. Kilby successfully demonstrated the first working IC in &lt;strong>1958&lt;/strong>, and Noyce made significant contributions to its practical development.&lt;br>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/first-ic.jpg">
+&lt;/figure>
+&lt;/p></description><content type="html"><![CDATA[<h2 id="introduction-to-integrated-circuits">Introduction to Integrated Circuits</h2>
+<p>Integrated Circuits (ICs) are miniature electronic devices that contain multiple transistors, diodes, capacitors, and resistors integrated onto a single chip of semiconductor material, usually silicon. They are fundamental building blocks of modern electronics, drastically reducing size and improving the performance of electronic devices.</p>
+<hr>
+<h2 id="history">History</h2>
+<p>The invention of the IC can be traced back to <strong>Jack Kilby</strong> of Texas Instruments and <strong>Robert Noyce</strong> of Fairchild Semiconductor. Kilby successfully demonstrated the first working IC in <strong>1958</strong>, and Noyce made significant contributions to its practical development.<br>
+<figure><img src="/img/first-ic.jpg">
+</figure>
+</p>
+<hr>
+<h2 id="types-of-ics">Types of ICs</h2>
+<p>ICs come in various types based on their functionality. Here are three commonly used types:</p>
+<ol>
+<li><strong>555 Timer IC</strong> – A versatile and widely used IC for timing applications.</li>
+<li><strong>LM317 Voltage Regulator</strong> – Adjustable voltage regulator IC.</li>
+<li><strong>LM741 Operational Amplifier</strong> – A general-purpose op-amp used in analog circuits.</li>
+</ol>
+<hr>
+<h3 id="555-timer-ic">555 Timer IC</h3>
+<figure><img src="/img/555-internal.png">
+</figure>
+
+<p>The <strong>555 Timer</strong> is one of the most popular ICs for generating time delays, oscillation, and pulse generation. It operates in three modes: monostable, astable, and bistable. The IC has <strong>8 pins</strong>:</p>
+<ul>
+<li><strong>Pin 1</strong>: Ground</li>
+<li><strong>Pin 2</strong>: Trigger</li>
+<li><strong>Pin 3</strong>: Output</li>
+<li><strong>Pin 4</strong>: Reset</li>
+<li><strong>Pin 5</strong>: Control Voltage</li>
+<li><strong>Pin 6</strong>: Threshold</li>
+<li><strong>Pin 7</strong>: Discharge</li>
+<li><strong>Pin 8</strong>: VCC (Power supply)</li>
+</ul>
+<hr>
+<h3 id="application-1-blinker-circuit-using-555-timer">Application 1: Blinker Circuit using 555 Timer</h3>
+<h4 id="components-required">Components Required:</h4>
+<ul>
+<li><strong>555 Timer IC</strong></li>
+<li><strong>Resistors</strong>: 470Ω (R1, R2), 4.7kΩ (R3), 68kΩ (R4)</li>
+<li><strong>Capacitor</strong>: 10µF (C1), 100µF (C2)</li>
+<li><strong>LED</strong>: Red (D1), Blue (D2)</li>
+<li><strong>Power Supply</strong>: 5V Battery</li>
+<li><strong>Connecting wires and breadboard</strong></li>
+</ul>
+<h4 id="animated-image">Animated Image:</h4>
+<figure><img src="/img/555-blinker.gif">
+</figure>
+
+<hr>
+<h2 id="advantages-of-ics">Advantages of ICs</h2>
+<ul>
+<li><strong>Miniaturization</strong>: Drastically reduces the size of electronic circuits.</li>
+<li><strong>High Performance</strong>: ICs provide faster operation and increased functionality.</li>
+<li><strong>Cost-Effective</strong>: Mass production lowers costs significantly.</li>
+<li><strong>Reliability</strong>: Fewer soldered connections reduce the chances of failure.</li>
+</ul>
+<hr>
+<h2 id="disadvantages-of-ics">Disadvantages of ICs</h2>
+<ul>
+<li><strong>Limited Power Handling</strong>: ICs cannot handle very high power.</li>
+<li><strong>Heat Sensitivity</strong>: Excessive heat can damage the IC.</li>
+<li><strong>Fixed Configuration</strong>: Limited flexibility for making changes once fabricated.</li>
+</ul>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p>Integrated Circuits have revolutionized the electronics industry, allowing for the creation of more compact, efficient, and affordable devices. From simple timers like the 555 to complex microcontrollers, ICs are vital in nearly every aspect of modern technology. Despite their limitations, their benefits have made them indispensable in the development of electronic systems.</p>
+]]></content></item><item><title>Study of Potentiometers</title><link>https://atharvap8.github.io/posts/2024/10/study-of-potentiometers/</link><pubDate>Tue, 22 Oct 2024 00:26:51 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/10/study-of-potentiometers/</guid><description>&lt;h1 id="potentiometers-study-notes">Potentiometers: Study Notes&lt;/h1>
+&lt;h2 id="1-introduction-to-potentiometers">1. Introduction to Potentiometers&lt;/h2>
+&lt;p>A &lt;strong>potentiometer&lt;/strong> is a three-terminal resistor with a sliding or rotating contact that forms an adjustable voltage divider. The primary use of a potentiometer is to vary the resistance in a circuit without interrupting the flow of current. It is commonly used for adjusting electrical devices like volume controls on audio equipment.&lt;/p>
+&lt;h3 id="types-of-potentiometers">Types of Potentiometers:&lt;/h3>
+&lt;ol>
+&lt;li>&lt;strong>Rotary Potentiometer&lt;/strong>: Has a circular rotation for adjusting resistance.&lt;/li>
+&lt;li>&lt;strong>Linear Potentiometer&lt;/strong>: The slider moves in a straight line.&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="2-potentiometer-structure-and-working-principle">2. Potentiometer Structure and Working Principle&lt;/h2>
+&lt;p>A potentiometer has three main terminals:&lt;/p></description><content type="html"><![CDATA[<h1 id="potentiometers-study-notes">Potentiometers: Study Notes</h1>
+<h2 id="1-introduction-to-potentiometers">1. Introduction to Potentiometers</h2>
+<p>A <strong>potentiometer</strong> is a three-terminal resistor with a sliding or rotating contact that forms an adjustable voltage divider. The primary use of a potentiometer is to vary the resistance in a circuit without interrupting the flow of current. It is commonly used for adjusting electrical devices like volume controls on audio equipment.</p>
+<h3 id="types-of-potentiometers">Types of Potentiometers:</h3>
+<ol>
+<li><strong>Rotary Potentiometer</strong>: Has a circular rotation for adjusting resistance.</li>
+<li><strong>Linear Potentiometer</strong>: The slider moves in a straight line.</li>
+</ol>
+<hr>
+<h2 id="2-potentiometer-structure-and-working-principle">2. Potentiometer Structure and Working Principle</h2>
+<p>A potentiometer has three main terminals:</p>
+<ul>
+<li><strong>Terminal 1 (Fixed End)</strong>: Connected to one end of the resistive track.</li>
+<li><strong>Terminal 2 (Wiper)</strong>: A movable contact sliding over the resistive track.</li>
+<li><strong>Terminal 3 (Fixed End)</strong>: Connected to the other end of the resistive track.</li>
+</ul>
+<p>By rotating or sliding the wiper across the resistive material, the resistance between the wiper and each fixed end changes, effectively creating a variable resistor.</p>
+<h3 id="potentiometer-image">Potentiometer Image</h3>
+<p><img src="https://i.pinimg.com/736x/fa/b5/e0/fab5e0b7a7aa6028ffb29febc00b55d6.jpg" alt="Potentiometer"></p>
+<hr>
+<h2 id="3-basic-calculations">3. Basic Calculations</h2>
+<p>The total resistance of a potentiometer is represented as <strong>R</strong>. The voltage division that occurs across the potentiometer can be calculated using the following formula:</p>
+<p>[
+V_{out} = V_{in} \times \frac{R_2}{R_1 + R_2}
+]</p>
+<p>Where:</p>
+<ul>
+<li>( V_{in} ): Input voltage</li>
+<li>( V_{out} ): Output voltage from the wiper</li>
+<li>( R_1 ): Resistance from the fixed end to the wiper</li>
+<li>( R_2 ): Resistance from the wiper to the other fixed end</li>
+</ul>
+<p>For example, if ( R_1 = 5k\Omega ) and ( R_2 = 10k\Omega ), and the input voltage is ( 12V ), then:</p>
+<p>[
+V_{out} = 12V \times \frac{10k\Omega}{5k\Omega + 10k\Omega} = 8V
+]</p>
+<h3 id="internal-structure">Internal Structure</h3>
+<p>The following image shows the internal structure of a rotary potentiometer:
+<img src="https://www.watelectronics.com/wp-content/uploads/Potentiometer-Construction.jpg" alt="Internal Potentiometer"></p>
+<hr>
+<h2 id="4-practical-applications">4. Practical Applications</h2>
+<h3 id="41-volume-control-in-audio-equipment">4.1 Volume Control in Audio Equipment</h3>
+<p>Potentiometers are widely used in audio devices to adjust the volume. By changing the resistance, the output audio signal is modified, thus increasing or decreasing the volume.</p>
+<h3 id="42-dimmer-switches">4.2 Dimmer Switches</h3>
+<p>They are used in lighting systems to control the brightness of lights by varying the voltage supplied to the bulbs.</p>
+<h3 id="43-sensor-calibration">4.3 Sensor Calibration</h3>
+<p>In sensor circuits, potentiometers can be used for fine-tuning sensitivity or thresholds, making the sensors more accurate in different environmental conditions.</p>
+<hr>
+<h2 id="5-types-of-potentiometers">5. Types of Potentiometers</h2>
+<h3 id="51-linear-potentiometer">5.1 Linear Potentiometer</h3>
+<p>Linear potentiometers provide a resistance change that is directly proportional to the position of the wiper.</p>
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW6tInzHlHNqF53TDHLWVkq2BekbOpcoZbWw&amp;s" alt="Linear Potentiometer"></p>
+<h3 id="52-rotary-potentiometer">5.2 Rotary Potentiometer</h3>
+<p>These potentiometers have a rotary knob that adjusts the resistance.</p>
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMo9jO0PVSB61Wp8Jy0jKeDqe0F-Rh1QCSeg&amp;s" alt="Rotary Potentiometer"></p>
+<hr>
+<h2 id="6-advantages-and-limitations">6. Advantages and Limitations</h2>
+<h3 id="advantages">Advantages:</h3>
+<ul>
+<li>Simple design</li>
+<li>Inexpensive</li>
+<li>Easily adjustable resistance</li>
+</ul>
+<h3 id="limitations">Limitations:</h3>
+<ul>
+<li>Subject to wear and tear</li>
+<li>Limited precision compared to digital systems</li>
+<li>Mechanical movement can cause inaccuracies over time</li>
+</ul>
+<hr>
+<h2 id="7-conclusion">7. Conclusion</h2>
+<p>Potentiometers are versatile and commonly used components in various electronics projects and devices. Understanding their working principle, types, and applications allows for effective implementation in circuits ranging from audio systems to sensor calibration.</p>
+]]></content></item><item><title>Study of Resistors</title><link>https://atharvap8.github.io/posts/2023/01/study-of-resistors/</link><pubDate>Sun, 29 Jan 2023 05:13:36 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-resistors/</guid><description>&lt;h1 id="study-of-resistors">Study Of Resistors&lt;/h1>
 &lt;figure>&lt;img src="https://atharvap8.github.io/img/resistor.jpg">&lt;figcaption>
 &lt;h4>Basic Resistor&lt;/h4>
 &lt;/figcaption>
@@ -127,22 +281,22 @@ Vout = 6.67V</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Parts</th>
-          <th style="text-align: left">Specifications</th>
+          <th>Parts</th>
+          <th>Specifications</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">Copper Wire</td>
-          <td style="text-align: left">Number of turns and gauge depends on the desired voltage and current rating</td>
+          <td>Copper Wire</td>
+          <td>Number of turns and gauge depends on the desired voltage and current rating</td>
       </tr>
       <tr>
-          <td style="text-align: left">Iron Core</td>
-          <td style="text-align: left">Magnetic permeability and cross-sectional area depends on the desired inductance</td>
+          <td>Iron Core</td>
+          <td>Magnetic permeability and cross-sectional area depends on the desired inductance</td>
       </tr>
       <tr>
-          <td style="text-align: left">Insulating Material</td>
-          <td style="text-align: left">High voltage insulation to prevent current from leaking from one coil to another</td>
+          <td>Insulating Material</td>
+          <td>High voltage insulation to prevent current from leaking from one coil to another</td>
       </tr>
   </tbody>
 </table>
@@ -196,26 +350,26 @@ Vout = 6.67V</p>
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align: left">Parts&lt;/th>
-&lt;th style="text-align: left">Specifications&lt;/th>
+&lt;th>Parts&lt;/th>
+&lt;th>Specifications&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align: left">Electromagnet&lt;/td>
-&lt;td style="text-align: left">Consists of a coil of wire, core, and a switch&lt;/td>
+&lt;td>Electromagnet&lt;/td>
+&lt;td>Consists of a coil of wire, core, and a switch&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Contacts&lt;/td>
-&lt;td style="text-align: left">Typically made of metal and used to complete or break an electrical circuit&lt;/td>
+&lt;td>Contacts&lt;/td>
+&lt;td>Typically made of metal and used to complete or break an electrical circuit&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Armature&lt;/td>
-&lt;td style="text-align: left">A movable piece of metal that is attracted by the electromagnet and responsible for closing the contacts&lt;/td>
+&lt;td>Armature&lt;/td>
+&lt;td>A movable piece of metal that is attracted by the electromagnet and responsible for closing the contacts&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Spring&lt;/td>
-&lt;td style="text-align: left">Used to return the armature to its original position when the electromagnet is de-energized&lt;/td>
+&lt;td>Spring&lt;/td>
+&lt;td>Used to return the armature to its original position when the electromagnet is de-energized&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -255,26 +409,26 @@ Vout = 6.67V</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Parts</th>
-          <th style="text-align: left">Specifications</th>
+          <th>Parts</th>
+          <th>Specifications</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">Electromagnet</td>
-          <td style="text-align: left">Consists of a coil of wire, core, and a switch</td>
+          <td>Electromagnet</td>
+          <td>Consists of a coil of wire, core, and a switch</td>
       </tr>
       <tr>
-          <td style="text-align: left">Contacts</td>
-          <td style="text-align: left">Typically made of metal and used to complete or break an electrical circuit</td>
+          <td>Contacts</td>
+          <td>Typically made of metal and used to complete or break an electrical circuit</td>
       </tr>
       <tr>
-          <td style="text-align: left">Armature</td>
-          <td style="text-align: left">A movable piece of metal that is attracted by the electromagnet and responsible for closing the contacts</td>
+          <td>Armature</td>
+          <td>A movable piece of metal that is attracted by the electromagnet and responsible for closing the contacts</td>
       </tr>
       <tr>
-          <td style="text-align: left">Spring</td>
-          <td style="text-align: left">Used to return the armature to its original position when the electromagnet is de-energized</td>
+          <td>Spring</td>
+          <td>Used to return the armature to its original position when the electromagnet is de-energized</td>
       </tr>
   </tbody>
 </table>
@@ -319,22 +473,22 @@ Vout = 6.67V</p>
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align: left">Parts&lt;/th>
-&lt;th style="text-align: left">Specifications&lt;/th>
+&lt;th>Parts&lt;/th>
+&lt;th>Specifications&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align: left">Switch&lt;/td>
-&lt;td style="text-align: left">SPST, SPDT, DPST, DPDT&lt;/td>
+&lt;td>Switch&lt;/td>
+&lt;td>SPST, SPDT, DPST, DPDT&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Wires&lt;/td>
-&lt;td style="text-align: left">20-22 gauge&lt;/td>
+&lt;td>Wires&lt;/td>
+&lt;td>20-22 gauge&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Breadboard&lt;/td>
-&lt;td style="text-align: left">Half-sized breadboard&lt;/td>
+&lt;td>Breadboard&lt;/td>
+&lt;td>Half-sized breadboard&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -359,22 +513,22 @@ Vout = 6.67V</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Parts</th>
-          <th style="text-align: left">Specifications</th>
+          <th>Parts</th>
+          <th>Specifications</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">Switch</td>
-          <td style="text-align: left">SPST, SPDT, DPST, DPDT</td>
+          <td>Switch</td>
+          <td>SPST, SPDT, DPST, DPDT</td>
       </tr>
       <tr>
-          <td style="text-align: left">Wires</td>
-          <td style="text-align: left">20-22 gauge</td>
+          <td>Wires</td>
+          <td>20-22 gauge</td>
       </tr>
       <tr>
-          <td style="text-align: left">Breadboard</td>
-          <td style="text-align: left">Half-sized breadboard</td>
+          <td>Breadboard</td>
+          <td>Half-sized breadboard</td>
       </tr>
   </tbody>
 </table>
@@ -470,22 +624,22 @@ Vout = 6.67V</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Parts</th>
-          <th style="text-align: left">Specifications</th>
+          <th>Parts</th>
+          <th>Specifications</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">Wire</td>
-          <td style="text-align: left">Enameled copper wire with a diameter of 0.5 mm</td>
+          <td>Wire</td>
+          <td>Enameled copper wire with a diameter of 0.5 mm</td>
       </tr>
       <tr>
-          <td style="text-align: left">Core</td>
-          <td style="text-align: left">Non-conductive material, such as air or plastic</td>
+          <td>Core</td>
+          <td>Non-conductive material, such as air or plastic</td>
       </tr>
       <tr>
-          <td style="text-align: left">Insulation tape</td>
-          <td style="text-align: left">Electrical insulating tape to secure the ends of the wire</td>
+          <td>Insulation tape</td>
+          <td>Electrical insulating tape to secure the ends of the wire</td>
       </tr>
   </tbody>
 </table>
@@ -597,42 +751,42 @@ Vout = 6.67V</p>
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align: left">Part&lt;/th>
-&lt;th style="text-align: left">Specification&lt;/th>
+&lt;th>Part&lt;/th>
+&lt;th>Specification&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align: left">Display&lt;/td>
-&lt;td style="text-align: left">LCD or LED&lt;/td>
+&lt;td>Display&lt;/td>
+&lt;td>LCD or LED&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Range Selection&lt;/td>
-&lt;td style="text-align: left">Manual or Auto Ranging&lt;/td>
+&lt;td>Range Selection&lt;/td>
+&lt;td>Manual or Auto Ranging&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Input Impedance&lt;/td>
-&lt;td style="text-align: left">&amp;gt;10 MΩ&lt;/td>
+&lt;td>Input Impedance&lt;/td>
+&lt;td>&amp;gt;10 MΩ&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Maximum Voltage&lt;/td>
-&lt;td style="text-align: left">600V AC/DC&lt;/td>
+&lt;td>Maximum Voltage&lt;/td>
+&lt;td>600V AC/DC&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Maximum Current&lt;/td>
-&lt;td style="text-align: left">10A AC/DC&lt;/td>
+&lt;td>Maximum Current&lt;/td>
+&lt;td>10A AC/DC&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Resistance&lt;/td>
-&lt;td style="text-align: left">200Ω to 200MΩ&lt;/td>
+&lt;td>Resistance&lt;/td>
+&lt;td>200Ω to 200MΩ&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Continuity Test&lt;/td>
-&lt;td style="text-align: left">Built-in Buzzer&lt;/td>
+&lt;td>Continuity Test&lt;/td>
+&lt;td>Built-in Buzzer&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Diode Test&lt;/td>
-&lt;td style="text-align: left">Built-in&lt;/td>
+&lt;td>Diode Test&lt;/td>
+&lt;td>Built-in&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -656,42 +810,42 @@ Vout = 6.67V</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Part</th>
-          <th style="text-align: left">Specification</th>
+          <th>Part</th>
+          <th>Specification</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">Display</td>
-          <td style="text-align: left">LCD or LED</td>
+          <td>Display</td>
+          <td>LCD or LED</td>
       </tr>
       <tr>
-          <td style="text-align: left">Range Selection</td>
-          <td style="text-align: left">Manual or Auto Ranging</td>
+          <td>Range Selection</td>
+          <td>Manual or Auto Ranging</td>
       </tr>
       <tr>
-          <td style="text-align: left">Input Impedance</td>
-          <td style="text-align: left">&gt;10 MΩ</td>
+          <td>Input Impedance</td>
+          <td>&gt;10 MΩ</td>
       </tr>
       <tr>
-          <td style="text-align: left">Maximum Voltage</td>
-          <td style="text-align: left">600V AC/DC</td>
+          <td>Maximum Voltage</td>
+          <td>600V AC/DC</td>
       </tr>
       <tr>
-          <td style="text-align: left">Maximum Current</td>
-          <td style="text-align: left">10A AC/DC</td>
+          <td>Maximum Current</td>
+          <td>10A AC/DC</td>
       </tr>
       <tr>
-          <td style="text-align: left">Resistance</td>
-          <td style="text-align: left">200Ω to 200MΩ</td>
+          <td>Resistance</td>
+          <td>200Ω to 200MΩ</td>
       </tr>
       <tr>
-          <td style="text-align: left">Continuity Test</td>
-          <td style="text-align: left">Built-in Buzzer</td>
+          <td>Continuity Test</td>
+          <td>Built-in Buzzer</td>
       </tr>
       <tr>
-          <td style="text-align: left">Diode Test</td>
-          <td style="text-align: left">Built-in</td>
+          <td>Diode Test</td>
+          <td>Built-in</td>
       </tr>
   </tbody>
 </table>
