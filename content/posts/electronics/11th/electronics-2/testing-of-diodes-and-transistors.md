@@ -22,6 +22,15 @@ The aim of this study is to understand the methods of testing diodes and transis
  ---
 ## Theory
 ---
+### Definition of Diode
+ 
+#### A diode is a two-terminal electronic component that allows current to flow in one direction only (forward direction) and blocks it in the reverse direction. It acts like a one-way valve for current in a circuit. 
+
+#### Forward Bias: When the Anode of diode is connected to positive of supply and the cathode is connected to the negative of the supple, it is said to be in forward bias.
+
+#### Reverse Bias: When the Anode is connected to negative of supply and the cathode is connected to positive of supply it is said to be in reverse bias.
+
+
  ### Diode Testing
  - A diode is a two-terminal electronic component that allows current to flow in only one direction. 
  - The basic principle behind the functioning of a diode is based on the difference in the concentration of electrons in the p-type and n-type semiconductor material. 
