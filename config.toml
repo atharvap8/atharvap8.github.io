@@ -43,9 +43,6 @@ disableHugoGeneratorInject = true
 [permalinks]
   posts = "/posts/:year/:month/:title/"
 
-[author]
-  name = "Atharva Phadke"
-
 [taxonomies]
   tag      = "tags"
   category = "categories"
