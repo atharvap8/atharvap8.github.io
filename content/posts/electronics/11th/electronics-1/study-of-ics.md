@@ -30,14 +30,14 @@ ICs come in various types based on their functionality. Here are three commonly 
 {{< figure src="/img/555-internal.png" title="" >}}
 
 The **555 Timer** is one of the most popular ICs for generating time delays, oscillation, and pulse generation. It operates in three modes: monostable, astable, and bistable. The IC has **8 pins**:
-- **Pin 1**: Ground
-- **Pin 2**: Trigger
-- **Pin 3**: Output
-- **Pin 4**: Reset
-- **Pin 5**: Control Voltage
-- **Pin 6**: Threshold
-- **Pin 7**: Discharge
-- **Pin 8**: VCC (Power supply)
+- **Pin 1 (Ground)**: Connected to the 0V or ground of the power supply.
+- **Pin 2 (Trigger)**: Activates the timer when the voltage drops below 1/3 of the supply voltage.
+- **Pin 3 (Output)**: Provides the output signal, either high or low, depending on the mode of operation.
+- **Pin 4 (Reset)**: Resets the timer when a low signal (0V) is applied to this pin.
+- **Pin 5 (Control Voltage)**: Modifies the threshold voltage; usually connected to ground through a capacitor for noise reduction.
+- **Pin 6 (Threshold)**: Monitors the voltage across the timing capacitor to determine when the output should be turned off.
+- **Pin 7 (Discharge)**: Discharges the timing capacitor when the output is low.
+- **Pin 8 (VCC)**: Connected to the positive power supply, typically between 4.5V and 15V.
 
 ---
 
