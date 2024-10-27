@@ -11,7 +11,7 @@ draft: false
 ## Introduction
 *The MOSFET is a crucial semiconductor device widely used for switching and amplifying electronic signals. Known for its efficiency, speed, and small size, it is a primary building block of modern electronics, forming the foundation for integrated circuits in everything from computers to communication devices.*
 
-{{< figure src="/img/mosfet-kinds.jpg" title="" >}}
+{{< figure src="/img/MOSFET-kinds.jpg" title="" >}}
 
 
 ---
@@ -19,7 +19,7 @@ draft: false
 ## Brief History
 *The first MOSFET was developed in 1959 by engineers **Mohamed Atalla** and **Dawon Kahng** at Bell Labs. This innovation revolutionized the field of electronics, as it allowed for much smaller, faster, and more efficient circuits compared to previous technologies like bipolar junction transistors (BJTs).*
 
-{{< figure src="/img/mosfet-firstprototype.jpg" title="" >}}
+{{< figure src="/img/MOSFET-firstprototype.jpg" title="" >}}
 
 
 ---
