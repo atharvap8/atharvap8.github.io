@@ -22,7 +22,15 @@
 &lt;/ol>
 &lt;hr>
 &lt;h3 id="2-understanding-components">&lt;strong>2: Understanding Components&lt;/strong>&lt;/h3>
-&lt;p>&lt;strong>Description:&lt;/strong>&lt;/p></description></item><item><title>Study of MOSFETs</title><link>https://atharvap8.github.io/posts/2024/10/study-of-mosfets/</link><pubDate>Sun, 27 Oct 2024 09:43:22 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/10/study-of-mosfets/</guid><description>&lt;h2 id="mosfet---metal-oxide-semiconductor-field-effect-transistor">MOSFET - Metal-Oxide-Semiconductor Field-Effect Transistor&lt;/h2>
+&lt;p>&lt;figure>&lt;img src="https://atharvap8.github.io/img/resistor.gif">
+&lt;/figure>
+
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/capacitor.gif">
+&lt;/figure>
+
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/hwr.gif">
+&lt;/figure>
+&lt;/p></description></item><item><title>Study of MOSFETs</title><link>https://atharvap8.github.io/posts/2024/10/study-of-mosfets/</link><pubDate>Sun, 27 Oct 2024 09:43:22 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/10/study-of-mosfets/</guid><description>&lt;h2 id="mosfet---metal-oxide-semiconductor-field-effect-transistor">MOSFET - Metal-Oxide-Semiconductor Field-Effect Transistor&lt;/h2>
 &lt;hr>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>&lt;em>The MOSFET is a crucial semiconductor device widely used for switching and amplifying electronic signals. Known for its efficiency, speed, and small size, it is a primary building block of modern electronics, forming the foundation for integrated circuits in everything from computers to communication devices.&lt;/em>&lt;/p>

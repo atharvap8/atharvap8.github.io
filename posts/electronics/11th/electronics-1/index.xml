@@ -22,7 +22,13 @@
 &lt;/ol>
 &lt;hr>
 &lt;h3 id="2-understanding-components">&lt;strong>2: Understanding Components&lt;/strong>&lt;/h3>
-&lt;p>&lt;strong>Description:&lt;/strong>&lt;/p></description><content type="html"><![CDATA[<h2 id="fundamentals-of-electronics-and-components"><strong>Fundamentals of Electronics and Components</strong></h2>
+&lt;p>&lt;figure>&lt;img src="https://atharvap8.github.io/img/resistor.gif">
+&lt;/figure>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/capacitor.gif">
+&lt;/figure>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/hwr.gif">
+&lt;/figure>
+&lt;/p></description><content type="html"><![CDATA[<h2 id="fundamentals-of-electronics-and-components"><strong>Fundamentals of Electronics and Components</strong></h2>
 <hr>
 <h3 id="1-introduction-to-electronics"><strong>1: Introduction to Electronics</strong></h3>
 <p><strong>Description:</strong></p>
@@ -46,6 +52,15 @@
 </ol>
 <hr>
 <h3 id="2-understanding-components"><strong>2: Understanding Components</strong></h3>
+<p><figure><img src="/img/resistor.gif">
+</figure>
+
+<figure><img src="/img/capacitor.gif">
+</figure>
+
+<figure><img src="/img/hwr.gif">
+</figure>
+</p>
 <p><strong>Description:</strong></p>
 <ul>
 <li>Electronic circuits consist of <strong>resistors</strong>, <strong>capacitors</strong>, <strong>diodes</strong>, and other fundamental components.</li>
@@ -62,18 +77,24 @@
 <ol>
 <li>How do you use a multimeter to measure resistance, capacitance, and diode functionality?</li>
 <li>Describe the significance of resistors in limiting current in circuits.</li>
-<li>What happens when a capacitor is connected to an AC vs. a DC circuit?</li>
-<li>How do diodes contribute to rectification in power supplies?</li>
+<li>What is diode Forward bias and reverse bias?</li>
+<li>What will happen if positive is connected to diode negative, and vice versa?</li>
 </ol>
 <hr>
 <h3 id="3-transistors-and-diodes"><strong>3: Transistors and Diodes</strong></h3>
+<figure><img src="/img/taas.jpg">
+</figure>
+
 <p><strong>Description:</strong></p>
 <ul>
 <li><strong>Transistors</strong>: Semiconductors used for switching and amplification in circuits.</li>
 <li><strong>Diodes</strong>: Used in rectifier circuits to convert AC to DC power.</li>
 <li>Practical applications include building switching circuits and simple rectifiers.</li>
 </ul>
-<p><strong>Key Concepts:</strong></p>
+<p><strong>Key Concepts:</strong>
+<figure><img src="/img/transistor-types.png">
+</figure>
+</p>
 <ul>
 <li><strong>NPN and PNP Transistors</strong>: Types of bipolar junction transistors (BJTs).</li>
 <li><strong>Rectifier Circuits</strong>: Convert AC power into pulsating DC.</li>
@@ -84,10 +105,16 @@
 <li>What is the difference between an NPN and a PNP transistor?</li>
 <li>How does a diode function in a rectifier circuit?</li>
 <li>Explain the concept of transistor amplification.</li>
-<li>What are the practical uses of a switching circuit?</li>
+<li>How to use transistor as a switch?</li>
 </ol>
 <hr>
 <h3 id="4-capacitors-and-inductors"><strong>4: Capacitors and Inductors</strong></h3>
+<p><figure><img src="/img/capacitor.gif">
+</figure>
+
+<figure><img src="/img/inductor.gif">
+</figure>
+</p>
 <p><strong>Description:</strong></p>
 <ul>
 <li>Capacitors and inductors are passive components essential for <strong>filtering</strong> and <strong>timing applications</strong>.</li>
@@ -109,6 +136,7 @@
 </ol>
 <hr>
 <h3 id="5-potentiometers-and-variable-components"><strong>5: Potentiometers and Variable Components</strong></h3>
+<p><img src="https://i.pinimg.com/736x/fa/b5/e0/fab5e0b7a7aa6028ffb29febc00b55d6.jpg" alt="Potentiometer"></p>
 <p><strong>Description:</strong></p>
 <ul>
 <li><strong>Potentiometers</strong>: Variable resistors used to control voltage or current.</li>
@@ -118,7 +146,7 @@
 <p><strong>Key Concepts:</strong></p>
 <ul>
 <li><strong>Voltage Divider</strong>: A circuit that divides input voltage into smaller parts.</li>
-<li><strong>Adjustable Resistance</strong>: Tailors current or voltage levels.</li>
+<li><strong>Adjustable Resistance</strong>: Adjusts current or voltage levels.</li>
 </ul>
 <p><strong>Questions:</strong></p>
 <ol>
@@ -129,6 +157,9 @@
 </ol>
 <hr>
 <h3 id="6-introduction-to-integrated-circuits-ics"><strong>6: Introduction to Integrated Circuits (ICs)</strong></h3>
+<figure><img src="/img/first-ic.jpg">
+</figure>
+
 <p><strong>Description:</strong></p>
 <ul>
 <li>Integrated circuits (ICs) are compact packages containing multiple electronic components such as transistors, resistors, and capacitors.</li>
@@ -147,6 +178,28 @@
 <li>Describe the internal structure of an integrated circuit.</li>
 <li>How are ICs advantageous compared to discrete component circuits?</li>
 <li>Explain how a 555 timer is used to create a square wave oscillator.</li>
+</ol>
+<hr>
+<h3 id="7-mosfets-metal-oxide-semiconductor-field-effect-transistor"><strong>7: MOSFETs (Metal Oxide Semiconductor Field Effect Transistor)</strong></h3>
+<figure><img src="/img/mosfet-structure.jpg">
+</figure>
+
+<p><strong>Description:</strong></p>
+<ul>
+<li><strong>MOSFETs</strong>: Semiconductors devices which are used to control high power devices.</li>
+<li>MOSFETs have different types, as shown in the image.</li>
+</ul>
+<p><strong>Key Concepts:</strong></p>
+<ul>
+<li><strong>Types</strong>: Types of MOSFETs (N channel , P channel)</li>
+<li><strong>Kinds</strong>: Enhancement Mode, Depletion Mode</li>
+</ul>
+<p><strong>Questions:</strong></p>
+<ol>
+<li>What is the difference between an N channel and P channel mosfet?</li>
+<li>How does a mosfet work as a switch?</li>
+<li>Explain mosfet selection.</li>
+<li>How to use mosfet in certain conditions.</li>
 </ol>
 <hr>
 <h1 id="end-of-presentation"><strong>End of Presentation</strong></h1>
