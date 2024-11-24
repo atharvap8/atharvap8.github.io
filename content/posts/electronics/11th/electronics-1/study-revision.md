@@ -141,6 +141,27 @@ draft: false
 
 ---
 
+### **7: MOSFETs (Metal Oxide Semiconductor Field Effect Transistor)**
+
+{{< figure src="/img/mosfet-structure.jpg">}}
+
+**Description:**
+- **MOSFETs**: Semiconductors devices which are used to control high power devices.
+- MOSFETs have different types, as shown in the image.
+
+**Key Concepts:**
+
+- **Types**: Types of MOSFETs (N channel , P channel)
+- **Kinds**: Enhancement Mode, Depletion Mode
+
+**Questions:**
+1. What is the difference between an N channel and P channel mosfet?
+2. How does a mosfet work as a switch?
+3. Explain mosfet selection.
+4. How to use mosfet in certain conditions.
+
+---
+
 # **End of Presentation**
 
 # hehe, thank you guys
