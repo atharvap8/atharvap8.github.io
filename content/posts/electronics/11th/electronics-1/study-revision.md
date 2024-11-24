@@ -29,6 +29,10 @@ draft: false
 ---
 
 ### **2: Understanding Components**
+{{< figure src="/img/resistor.gif" >}}
+{{< figure src="/img/capacitor.gif"  >}}
+{{< figure src="/img/hwr.gif"  >}}
+
 **Description:**
 - Electronic circuits consist of **resistors**, **capacitors**, **diodes**, and other fundamental components.
 - Each component has a specific role: resistors limit current, capacitors store charge, and diodes allow current flow in one direction.
@@ -42,18 +46,23 @@ draft: false
 **Questions:**
 1. How do you use a multimeter to measure resistance, capacitance, and diode functionality?
 2. Describe the significance of resistors in limiting current in circuits.
-3. What happens when a capacitor is connected to an AC vs. a DC circuit?
-4. How do diodes contribute to rectification in power supplies?
+3. What is diode Forward bias and reverse bias?
+4. What will happen if positive is connected to diode negative, and vice versa?
 
 ---
 
 ### **3: Transistors and Diodes**
+
+{{< figure src="/img/taas.jpg">}}
+
 **Description:**
 - **Transistors**: Semiconductors used for switching and amplification in circuits.
 - **Diodes**: Used in rectifier circuits to convert AC to DC power.
 - Practical applications include building switching circuits and simple rectifiers.
 
 **Key Concepts:**
+{{< figure src="/img/transistor-types.png" >}}
+
 - **NPN and PNP Transistors**: Types of bipolar junction transistors (BJTs).
 - **Rectifier Circuits**: Convert AC power into pulsating DC.
 - **Switching Circuits**: Enable or disable parts of a circuit based on input signals.
@@ -62,11 +71,16 @@ draft: false
 1. What is the difference between an NPN and a PNP transistor?
 2. How does a diode function in a rectifier circuit?
 3. Explain the concept of transistor amplification.
-4. What are the practical uses of a switching circuit?
+4. How to use transistor as a switch?
 
 ---
 
 ### **4: Capacitors and Inductors**
+
+{{< figure src="/img/capacitor.gif" >}}
+{{< figure src="/img/inductor.gif" >}}
+
+
 **Description:**
 - Capacitors and inductors are passive components essential for **filtering** and **timing applications**.
 - Capacitors block DC while passing AC, while inductors do the opposite.
@@ -86,6 +100,8 @@ draft: false
 ---
 
 ### **5: Potentiometers and Variable Components**
+![Potentiometer](https://i.pinimg.com/736x/fa/b5/e0/fab5e0b7a7aa6028ffb29febc00b55d6.jpg)
+
 **Description:**
 - **Potentiometers**: Variable resistors used to control voltage or current.
 - Common applications include use in **voltage divider circuits** and adjustable resistance in devices like volume controls.
@@ -93,7 +109,7 @@ draft: false
 
 **Key Concepts:**
 - **Voltage Divider**: A circuit that divides input voltage into smaller parts.
-- **Adjustable Resistance**: Tailors current or voltage levels.
+- **Adjustable Resistance**: Adjusts current or voltage levels.
 
 **Questions:**
 1. How does a potentiometer function in a voltage divider circuit?
@@ -104,6 +120,9 @@ draft: false
 ---
 
 ### **6: Introduction to Integrated Circuits (ICs)**
+
+{{< figure src="/img/first-ic.jpg" >}}
+
 **Description:**
 - Integrated circuits (ICs) are compact packages containing multiple electronic components such as transistors, resistors, and capacitors.
 - Example: **555 timer IC** used in generating signals like pulses and oscillations.
