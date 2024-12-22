@@ -1,6 +1,6 @@
 ---
-title: "Washing Machine Controller (Iot Enabled)"
-date: 2024-04-07T17:57:12+05:30
+title: "Alexa Washing Machine"
+date: 2024-06-07T17:57:12+05:30
 draft: false
 toc: true
 images:
@@ -36,14 +36,13 @@ To build this, the following components are required:
 
 This is where you can find the Code, Schematics, PCB Layout, and all docs related to this project. Click Here:
 
-[![Static Badge](https://img.shields.io/badge/GoogleDrive-Folder-blue?style=flat&logo=Google%20Drive
-)](https://drive.google.com/drive/folders/1Etj-alrxwkvvlf_sTSxS21y2c-spGnvf?usp=sharing)
+
 
 ---
 
 ## Raw Media Files 
 
-These are the raw unedited photos, videos, and prototype tests. These contain Click Here:
+These are the raw unedited photos, videos, and prototype tests. Click Here:
 
 [![Static Badge](https://img.shields.io/badge/GooglePhotos-Album-blue?style=flat&logo=Google%20Photos
 )](https://photos.app.goo.gl/JXmmXoFTdbAtJn859)

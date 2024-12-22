@@ -1,6 +1,6 @@
 ---
 title: "Ble Car Security Controller"
-date: 2024-01-30T17:07:33+05:30
+date: 2024-10-30T17:07:33+05:30
 toc: true
 draft: false
 ---
@@ -15,7 +15,7 @@ This project showcases the development of a central locking and security control
 
 This solution enhances both the convenience and security of your vehicle, offering modern connectivity and control through BLE.
 
-**[Insert YouTube video link]**
+**[Video Tutorial Coming Soon]**
 
 ---
 
@@ -41,7 +41,7 @@ Here is a list of components needed to build the central locking and security sy
 
 ## Circuit Schematic Diagram
 
-[Insert detailed circuit schematic diagram here]  
+[]  
 The diagram will show how the ESP32, sensors, immobilizer, Xiao ESP32C3 transmitter, and other components are connected.
 
 ---
@@ -50,14 +50,17 @@ The diagram will show how the ESP32, sensors, immobilizer, Xiao ESP32C3 transmit
 
 For the final product, you can design a custom PCB that integrates the ESP32 controller, relays, sensors, and communication circuits. This will make the setup more compact and reliable.
 
-[Insert PCB design here]  
-Use software like KiCad or Eagle for PCB design.
+
+I have used EasyEDA software for PCB designing.
 
 ---
 
-## Project Media Folder
+## Raw Media Files 
 
-[Insert a link to downloadable project files, including circuit diagrams, code, PCB files, and other necessary resources.]
+These are the raw unedited photos, videos, and prototype tests. Click Here:
+
+[![Static Badge](https://img.shields.io/badge/GooglePhotos-Album-blue?style=flat&logo=Google%20Photos
+)](https://photos.app.goo.gl/32ChjenSaV4ZbyQp9)
 
 ---
 

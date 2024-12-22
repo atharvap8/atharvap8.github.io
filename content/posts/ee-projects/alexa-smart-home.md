@@ -1,6 +1,6 @@
 ---
-title: "Alexa Smart Home "
-date: 2021-04-02T17:57:12+05:30
+title: "Alexa Smart Home"
+date: 2024-04-02T17:57:12+05:30
 draft: false
 toc: true
 images:
@@ -40,26 +40,13 @@ To build this smart home system, you’ll need the following components:
 
 ---
 
-## Circuit Schematic Diagram
 
-[Insert circuit schematic diagram here]  
-This schematic shows the wiring of the ESP32, relay modules, EEPROM, and other connected devices.
+## Raw Media Files 
 
----
+These are the raw unedited photos, videos, and prototype tests. Click Here:
 
-## PCB Design
-
-For a more permanent installation, it’s recommended to design a custom PCB for the smart home system. The PCB integrates all the connections between the ESP32, relay modules, and additional components for each room.
-
-[Insert PCB design here]  
-Use software like KiCad or Eagle for PCB design.
-
----
-
-## Project Media Folder
-
-[Insert link to downloadable project files, including circuit diagrams, code, PCB files, and other necessary resources.]
-
+[![Static Badge](https://img.shields.io/badge/GooglePhotos-Album-blue?style=flat&logo=Google%20Photos
+)](https://photos.app.goo.gl/MDPgTyUHdiMzcUrm7)
 ---
 
 ## How It Works

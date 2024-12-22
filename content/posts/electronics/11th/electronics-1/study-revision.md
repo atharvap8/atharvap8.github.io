@@ -13,7 +13,8 @@ draft: false
 **Description:**
 - Electronics involves the study and application of electrical components to control the flow of electricity.
 - Fundamental concepts include **voltage (V)**, **current (I)**, and **resistance (R)**, governed by Ohm's Law: \( V = IR \).
-- 
+- Statement: The voltage across a conductor is directly proportional to the current flowing thru it, and inverse the resistance of the conductor itself.
+
 
 **Key Concepts:**
 - **Voltage**: The potential difference driving current in a circuit.
@@ -23,6 +24,8 @@ draft: false
 **Questions:**
 1. What is Ohm's Law, and how is it used in basic circuit analysis?
 2. What is the difference between series and parallel circuits in terms of current and voltage?
+Ans: In parallel circuit, voltage across all components is same, but current is different.
+In Series circuit, voltage across all the components is different, but current is same.
 3. Explain the role of a breadboard in circuit design and testing.
 4. Why does total resistance decrease in parallel circuits?
 
