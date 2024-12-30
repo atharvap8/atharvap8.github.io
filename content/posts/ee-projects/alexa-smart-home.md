@@ -1,6 +1,6 @@
 ---
 title: "Alexa Smart Home"
-date: 2024-04-02T17:57:12+05:30
+date: 2024-06-02T17:57:12+05:30
 draft: false
 toc: true
 images:
