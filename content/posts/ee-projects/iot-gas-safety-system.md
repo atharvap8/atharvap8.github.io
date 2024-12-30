@@ -1,6 +1,6 @@
 ---
 title: "Iot Gas Safety System"
-date: 2024-01-23T17:27:02+05:30
+date: 2024-10-23T17:27:02+05:30
 draft: false
 toc: true
 images:
