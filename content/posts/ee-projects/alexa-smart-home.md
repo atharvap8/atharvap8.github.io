@@ -18,7 +18,7 @@ In this project, we will create a smart home system that allows control over 14 
 
 This project is ideal for automating homes and integrating voice-controlled systems, making life easier and more efficient.
 
-**[Insert YouTube video link]**
+
 
 ---
 
