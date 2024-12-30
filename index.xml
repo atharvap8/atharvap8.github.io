@@ -5,7 +5,7 @@
 &lt;ul>
 &lt;li>Electronics involves the study and application of electrical components to control the flow of electricity.&lt;/li>
 &lt;li>Fundamental concepts include &lt;strong>voltage (V)&lt;/strong>, &lt;strong>current (I)&lt;/strong>, and &lt;strong>resistance (R)&lt;/strong>, governed by Ohm&amp;rsquo;s Law: ( V = IR ).&lt;/li>
-&lt;li>&lt;/li>
+&lt;li>Statement: The voltage across a conductor is directly proportional to the current flowing thru it, and inverse the resistance of the conductor itself.&lt;/li>
 &lt;/ul>
 &lt;p>&lt;strong>Key Concepts:&lt;/strong>&lt;/p>
 &lt;ul>
@@ -13,24 +13,10 @@
 &lt;li>&lt;strong>Current&lt;/strong>: The flow of electric charge.&lt;/li>
 &lt;li>&lt;strong>Resistance&lt;/strong>: Opposition to current flow.&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>Questions:&lt;/strong>&lt;/p>
-&lt;ol>
-&lt;li>What is Ohm&amp;rsquo;s Law, and how is it used in basic circuit analysis?&lt;/li>
-&lt;li>What is the difference between series and parallel circuits in terms of current and voltage?&lt;/li>
-&lt;li>Explain the role of a breadboard in circuit design and testing.&lt;/li>
-&lt;li>Why does total resistance decrease in parallel circuits?&lt;/li>
-&lt;/ol>
+&lt;p>&lt;strong>Questions:&lt;/strong>&lt;/p></description></item><item><title>Ble Car Security Controller</title><link>https://atharvap8.github.io/posts/2024/10/ble-car-security-controller/</link><pubDate>Wed, 30 Oct 2024 17:07:33 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/10/ble-car-security-controller/</guid><description>&lt;h1 id="central-locking-and-security-controller-for-wagon-r-with-esp32-and-ble">Central Locking and Security Controller for Wagon R with ESP32 and BLE&lt;/h1>
 &lt;hr>
-&lt;h3 id="2-understanding-components">&lt;strong>2: Understanding Components&lt;/strong>&lt;/h3>
-&lt;p>&lt;figure>&lt;img src="https://atharvap8.github.io/img/resistor.gif">
-&lt;/figure>
-
-&lt;figure>&lt;img src="https://atharvap8.github.io/img/capacitor.gif">
-&lt;/figure>
-
-&lt;figure>&lt;img src="https://atharvap8.github.io/img/hwr.gif">
-&lt;/figure>
-&lt;/p></description></item><item><title>Study of MOSFETs</title><link>https://atharvap8.github.io/posts/2024/10/study-of-mosfets/</link><pubDate>Sun, 27 Oct 2024 09:43:22 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/10/study-of-mosfets/</guid><description>&lt;h2 id="mosfet---metal-oxide-semiconductor-field-effect-transistor">MOSFET - Metal-Oxide-Semiconductor Field-Effect Transistor&lt;/h2>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>This project showcases the development of a central locking and security controller for the Wagon R car, using Bluetooth Low Energy (BLE) technology. The system is based on an ESP32 microcontroller that handles key functionalities such as door signal control, bonnet status, indicators, and alarm settings. It is designed to work with a smartphone or a dedicated transmitter (built using the Xiao ESP32C3 board). Additionally, the system features an integrated immobilizer that communicates with the car’s ECM (Engine Control Module), preventing vehicle movement during theft attempts. The system also provides real-time alerts to the user&amp;rsquo;s cellphone in case of a security breach.&lt;/p></description></item><item><title>Study of MOSFETs</title><link>https://atharvap8.github.io/posts/2024/10/study-of-mosfets/</link><pubDate>Sun, 27 Oct 2024 09:43:22 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/10/study-of-mosfets/</guid><description>&lt;h2 id="mosfet---metal-oxide-semiconductor-field-effect-transistor">MOSFET - Metal-Oxide-Semiconductor Field-Effect Transistor&lt;/h2>
 &lt;hr>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>&lt;em>The MOSFET is a crucial semiconductor device widely used for switching and amplifying electronic signals. Known for its efficiency, speed, and small size, it is a primary building block of modern electronics, forming the foundation for integrated circuits in everything from computers to communication devices.&lt;/em>&lt;/p>
@@ -46,7 +32,8 @@
 &lt;p>The invention of the IC can be traced back to &lt;strong>Jack Kilby&lt;/strong> of Texas Instruments and &lt;strong>Robert Noyce&lt;/strong> of Fairchild Semiconductor. Kilby successfully demonstrated the first working IC in &lt;strong>1958&lt;/strong>, and Noyce made significant contributions to its practical development.&lt;br>
 &lt;figure>&lt;img src="https://atharvap8.github.io/img/first-ic.jpg">
 &lt;/figure>
-&lt;/p></description></item><item><title>Study of Potentiometers</title><link>https://atharvap8.github.io/posts/2024/10/study-of-potentiometers/</link><pubDate>Tue, 22 Oct 2024 00:26:51 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/10/study-of-potentiometers/</guid><description>&lt;h1 id="potentiometers-study-notes">Potentiometers: Study Notes&lt;/h1>
+&lt;/p></description></item><item><title>Iot Gas Safety System</title><link>https://atharvap8.github.io/posts/2024/10/iot-gas-safety-system/</link><pubDate>Wed, 23 Oct 2024 17:27:02 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/10/iot-gas-safety-system/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>In this project, we will build a comprehensive gas safety system designed to enhance household safety by monitoring gas leaks and taking automatic corrective actions. The system controls an exhaust fan, operates a servo motor to turn off the gas regulator, and sends notifications via email and popup alerts. Designed with robustness, fireproofing, data retention, and false alarm prevention in mind, this device provides reliable and continuous gas monitoring. Perfect for safety-conscious homeowners or DIY enthusiasts, this project helps to prevent potential hazards.&lt;/p></description></item><item><title>Study of Potentiometers</title><link>https://atharvap8.github.io/posts/2024/10/study-of-potentiometers/</link><pubDate>Tue, 22 Oct 2024 00:26:51 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/10/study-of-potentiometers/</guid><description>&lt;h1 id="potentiometers-study-notes">Potentiometers: Study Notes&lt;/h1>
 &lt;h2 id="1-introduction-to-potentiometers">1. Introduction to Potentiometers&lt;/h2>
 &lt;p>A &lt;strong>potentiometer&lt;/strong> is a three-terminal resistor with a sliding or rotating contact that forms an adjustable voltage divider. The primary use of a potentiometer is to vary the resistance in a circuit without interrupting the flow of current. It is commonly used for adjusting electrical devices like volume controls on audio equipment.&lt;/p>
 &lt;h3 id="types-of-potentiometers">Types of Potentiometers:&lt;/h3>
@@ -61,16 +48,12 @@
 &lt;h2 id="youtube-video">YouTube Video&lt;/h2>
 &lt;p>Here&amp;rsquo;s the project&amp;rsquo;s youtube video link:
 
-
- 
  &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/RHL07T6kZwI?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
- >&lt;/iframe>
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/RHL07T6kZwI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div>
-&lt;/p></description></item><item><title>Washing Machine Controller (Iot Enabled)</title><link>https://atharvap8.github.io/posts/2024/04/washing-machine-controller-iot-enabled/</link><pubDate>Sun, 07 Apr 2024 17:57:12 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/04/washing-machine-controller-iot-enabled/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;/p></description></item><item><title>Alexa Washing Machine</title><link>https://atharvap8.github.io/posts/2024/06/alexa-washing-machine/</link><pubDate>Fri, 07 Jun 2024 17:57:12 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/06/alexa-washing-machine/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>In this project, we will build a smart controller for a washing machine. The controller is based on the ESP32 module, which works as the central brain. It manages all the data processing, communication &amp;amp; feedback, and manages I/O in the system. The system includes buck converters, power supply, and relays for actuator control. It utilizes an inverter drive to control the motor speed and direction, with a changeover relay configuration to manage the motor’s rotational direction. Also it includes a 16x2 display, and pushbuttons, for program control, and LEDs for status indication. All wash programs are embedded within the microcontroller, and the system is designed for easy further development, allowing changes to be made according to user requirements.
-This project brings IoT functionality to washing machines, offering voice control, remote monitoring &amp;amp; feedback for convenience and efficiency.&lt;/p></description></item><item><title>chatper-name</title><link>https://atharvap8.github.io/posts/2024/02/chatper-name/</link><pubDate>Sat, 10 Feb 2024 16:30:30 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/02/chatper-name/</guid><description/></item><item><title>Ble Car Security Controller</title><link>https://atharvap8.github.io/posts/2024/01/ble-car-security-controller/</link><pubDate>Tue, 30 Jan 2024 17:07:33 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/01/ble-car-security-controller/</guid><description>&lt;h1 id="central-locking-and-security-controller-for-wagon-r-with-esp32-and-ble">Central Locking and Security Controller for Wagon R with ESP32 and BLE&lt;/h1>
+This project brings IoT functionality to washing machines, offering voice control, remote monitoring &amp;amp; feedback for convenience and efficiency.&lt;/p></description></item><item><title>Alexa Smart Home</title><link>https://atharvap8.github.io/posts/2024/04/alexa-smart-home/</link><pubDate>Tue, 02 Apr 2024 17:57:12 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/04/alexa-smart-home/</guid><description>&lt;h1 id="smart-home-system-with-esp32-alexa-control-and-eeprom-state-retention">Smart Home System with ESP32, Alexa Control, and EEPROM State Retention&lt;/h1>
 &lt;hr>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>This project showcases the development of a central locking and security controller for the Wagon R car, using Bluetooth Low Energy (BLE) technology. The system is based on an ESP32 microcontroller that handles key functionalities such as door signal control, bonnet status, indicators, and alarm settings. It is designed to work with a smartphone or a dedicated transmitter (built using the Xiao ESP32C3 board). Additionally, the system features an integrated immobilizer that communicates with the car’s ECM (Engine Control Module), preventing vehicle movement during theft attempts. The system also provides real-time alerts to the user&amp;rsquo;s cellphone in case of a security breach.&lt;/p></description></item><item><title>Iot Gas Safety System</title><link>https://atharvap8.github.io/posts/2024/01/iot-gas-safety-system/</link><pubDate>Tue, 23 Jan 2024 17:27:02 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/01/iot-gas-safety-system/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
-&lt;p>In this project, we will build a comprehensive gas safety system designed to enhance household safety by monitoring gas leaks and taking automatic corrective actions. The system controls an exhaust fan, operates a servo motor to turn off the gas regulator, and sends notifications via email and popup alerts. Designed with robustness, fireproofing, data retention, and false alarm prevention in mind, this device provides reliable and continuous gas monitoring. Perfect for safety-conscious homeowners or DIY enthusiasts, this project helps to prevent potential hazards.&lt;/p></description></item></channel></rss>
+&lt;p>In this project, we will create a smart home system that allows control over 14 devices and 1 air conditioner (AC) using an ESP32 microcontroller. The system includes EEPROM functionality, which retains the state of all devices even after a sudden power loss. With Alexa integration, users can control lights, fans, tube lights, AC, and more using voice commands and monitor the real-time status through the Alexa app. Each room is equipped with a 4-channel relay module, connected to a central controller that manages all relays.&lt;/p></description></item></channel></rss>

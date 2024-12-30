@@ -5,7 +5,7 @@
 &lt;ul>
 &lt;li>Electronics involves the study and application of electrical components to control the flow of electricity.&lt;/li>
 &lt;li>Fundamental concepts include &lt;strong>voltage (V)&lt;/strong>, &lt;strong>current (I)&lt;/strong>, and &lt;strong>resistance (R)&lt;/strong>, governed by Ohm&amp;rsquo;s Law: ( V = IR ).&lt;/li>
-&lt;li>&lt;/li>
+&lt;li>Statement: The voltage across a conductor is directly proportional to the current flowing thru it, and inverse the resistance of the conductor itself.&lt;/li>
 &lt;/ul>
 &lt;p>&lt;strong>Key Concepts:&lt;/strong>&lt;/p>
 &lt;ul>
@@ -13,29 +13,14 @@
 &lt;li>&lt;strong>Current&lt;/strong>: The flow of electric charge.&lt;/li>
 &lt;li>&lt;strong>Resistance&lt;/strong>: Opposition to current flow.&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>Questions:&lt;/strong>&lt;/p>
-&lt;ol>
-&lt;li>What is Ohm&amp;rsquo;s Law, and how is it used in basic circuit analysis?&lt;/li>
-&lt;li>What is the difference between series and parallel circuits in terms of current and voltage?&lt;/li>
-&lt;li>Explain the role of a breadboard in circuit design and testing.&lt;/li>
-&lt;li>Why does total resistance decrease in parallel circuits?&lt;/li>
-&lt;/ol>
-&lt;hr>
-&lt;h3 id="2-understanding-components">&lt;strong>2: Understanding Components&lt;/strong>&lt;/h3>
-&lt;p>&lt;figure>&lt;img src="https://atharvap8.github.io/img/resistor.gif">
-&lt;/figure>
-&lt;figure>&lt;img src="https://atharvap8.github.io/img/capacitor.gif">
-&lt;/figure>
-&lt;figure>&lt;img src="https://atharvap8.github.io/img/hwr.gif">
-&lt;/figure>
-&lt;/p></description><content type="html"><![CDATA[<h2 id="fundamentals-of-electronics-and-components"><strong>Fundamentals of Electronics and Components</strong></h2>
+&lt;p>&lt;strong>Questions:&lt;/strong>&lt;/p></description><content type="html"><![CDATA[<h2 id="fundamentals-of-electronics-and-components"><strong>Fundamentals of Electronics and Components</strong></h2>
 <hr>
 <h3 id="1-introduction-to-electronics"><strong>1: Introduction to Electronics</strong></h3>
 <p><strong>Description:</strong></p>
 <ul>
 <li>Electronics involves the study and application of electrical components to control the flow of electricity.</li>
 <li>Fundamental concepts include <strong>voltage (V)</strong>, <strong>current (I)</strong>, and <strong>resistance (R)</strong>, governed by Ohm&rsquo;s Law: ( V = IR ).</li>
-<li></li>
+<li>Statement: The voltage across a conductor is directly proportional to the current flowing thru it, and inverse the resistance of the conductor itself.</li>
 </ul>
 <p><strong>Key Concepts:</strong></p>
 <ul>
@@ -46,7 +31,9 @@
 <p><strong>Questions:</strong></p>
 <ol>
 <li>What is Ohm&rsquo;s Law, and how is it used in basic circuit analysis?</li>
-<li>What is the difference between series and parallel circuits in terms of current and voltage?</li>
+<li>What is the difference between series and parallel circuits in terms of current and voltage?
+Ans: In parallel circuit, voltage across all components is same, but current is different.
+In Series circuit, voltage across all the components is different, but current is same.</li>
 <li>Explain the role of a breadboard in circuit design and testing.</li>
 <li>Why does total resistance decrease in parallel circuits?</li>
 </ol>
@@ -1032,11 +1019,8 @@ Vout = 6.67V</p>
 <p>The rate at which a capacitor charges depends on the capacitance and the resistance in the circuit. The capacitance of the capacitor determines how much charge it can store for a given voltage, and the resistance in the circuit determines how quickly the charges can flow to the capacitor.</p>
 <p>When a capacitor is disconnected from a voltage source, the charges on the plates will begin to flow back to the circuit, and the voltage across the capacitor will decrease. This process is known as discharging the capacitor. The rate of discharging also depends on the capacitance and the resistance in the circuit. A capacitor can be charged and discharged many times and it will not lose its capacitance.</p>
 
-
-    
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/UMHSMJmYJdY?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/UMHSMJmYJdY?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
 
 <p>In this video, we can see how a capacitor behaves when charging and discharging.</p>
