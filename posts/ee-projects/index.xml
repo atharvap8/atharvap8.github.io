@@ -394,7 +394,8 @@ all these components in their modular form, and have used Berg Connectors for ea
 <hr>
 <h2 id="raw-media-files">Raw Media Files</h2>
 <p>These are the raw unedited photos, videos, and prototype tests. Click Here:</p>
-<h2 id="httpsphotosappgooglmdpgtyuhdimzcurm7"><a href="https://photos.app.goo.gl/MDPgTyUHdiMzcUrm7"><img src="https://img.shields.io/badge/GooglePhotos-Album-blue?style=flat&amp;logo=Google%20Photos" alt="Static Badge"></a></h2>
+<p><a href="https://photos.app.goo.gl/MDPgTyUHdiMzcUrm7"><img src="https://img.shields.io/badge/GooglePhotos-Album-blue?style=flat&amp;logo=Google%20Photos" alt="Static Badge"></a></p>
+<hr>
 <h2 id="how-it-works">How It Works</h2>
 <p>The ESP32 serves as the main controller for the entire smart home system. Each room has a 4-channel relay module, which controls the devices (e.g., lights, fans, etc.). The ESP32 sends signals to the relay modules based on user commands.</p>
 <p>Key features include:</p>

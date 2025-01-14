@@ -1,4 +1,199 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Atharva Phadke</title><link>https://atharvap8.github.io/</link><description>Recent content on Atharva Phadke</description><generator>Hugo</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Sun, 24 Nov 2024 00:27:35 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Revision</title><link>https://atharvap8.github.io/posts/2024/11/revision/</link><pubDate>Sun, 24 Nov 2024 00:27:35 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/11/revision/</guid><description>&lt;h2 id="fundamentals-of-electronics-and-components">&lt;strong>Fundamentals of Electronics and Components&lt;/strong>&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Atharva Phadke</title><link>https://atharvap8.github.io/</link><description>Recent content on Atharva Phadke</description><generator>Hugo</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Tue, 14 Jan 2025 05:34:36 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Controllers and Operations - 1</title><link>https://atharvap8.github.io/posts/2025/01/controllers-and-operations-1/</link><pubDate>Tue, 14 Jan 2025 05:34:36 +0530</pubDate><guid>https://atharvap8.github.io/posts/2025/01/controllers-and-operations-1/</guid><description>&lt;h2 id="introduction-to-microprocessors-and-microcontrollers">Introduction to Microprocessors and Microcontrollers&lt;/h2>
+&lt;hr>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/uCvsuP.png">
+&lt;/figure>
+
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;strong>Feature&lt;/strong>&lt;/th>
+ &lt;th>&lt;strong>Microprocessor&lt;/strong>&lt;/th>
+ &lt;th>&lt;strong>Microcontroller&lt;/strong>&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Definition&lt;/strong>&lt;/td>
+ &lt;td>General-purpose processor&lt;/td>
+ &lt;td>Dedicated to specific tasks&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Memory&lt;/strong>&lt;/td>
+ &lt;td>External memory required&lt;/td>
+ &lt;td>Includes internal RAM, ROM, and I/O ports&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Application&lt;/strong>&lt;/td>
+ &lt;td>Computers, laptops, high-performance devices&lt;/td>
+ &lt;td>Embedded systems (IoT, appliances, etc.)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Cost&lt;/strong>&lt;/td>
+ &lt;td>More expensive&lt;/td>
+ &lt;td>Cost-effective for specific tasks&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Examples&lt;/strong>&lt;/td>
+ &lt;td>Intel 8086, Pentium, Core i5, i7, AMD Ryzen&lt;/td>
+ &lt;td>8051, AVR, PIC, ARM, ESP8266, ESP32, etc.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;ul>
+&lt;li>&lt;strong>Q: Where are these examples present in day-to-day usage?&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/uC-types.jpg">
+&lt;/figure>
+
+&lt;hr>
+&lt;h3 id="applications-of-microcontrollers">Applications of Microcontrollers&lt;/h3>
+&lt;h3 id="common-applications">Common Applications&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Consumer Electronics&lt;/strong>: TVs, washing machines, microwave ovens&lt;/li>
+&lt;li>&lt;strong>Automotive&lt;/strong>: Engine control units, airbags, ABS&lt;/li>
+&lt;li>&lt;strong>Industrial Automation&lt;/strong>: Process controllers, robotics&lt;/li>
+&lt;li>&lt;strong>IoT Devices&lt;/strong>: Smart home systems, wearables&lt;/li>
+&lt;li>&lt;strong>Medical Devices&lt;/strong>: ECG machines, glucose monitors&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="features-of-8051-microcontroller">Features of 8051 Microcontroller&lt;/h3>
+&lt;ul>
+&lt;li>8-bit microcontroller&lt;/li>
+&lt;li>4 KB ROM (programmable memory)&lt;/li>
+&lt;li>128 bytes RAM&lt;/li>
+&lt;li>32 I/O pins (organized into 4 ports)&lt;/li>
+&lt;li>Two 16-bit timers/counters&lt;/li>
+&lt;li>Full-duplex UART for serial communication
+Q: What is Full-duplex?&lt;/li>
+&lt;li>Interrupt system with 5 sources&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="architecture-of-8051">Architecture of 8051&lt;/h3>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/8051-arch.png">
+&lt;/figure>
+
+&lt;h4 id="key-components">&lt;strong>Key Components&lt;/strong>&lt;/h4>
+&lt;ol>
+&lt;li>&lt;strong>ALU (Arithmetic Logic Unit)&lt;/strong>: Performs arithmetic and logical operations.&lt;/li>
+&lt;li>&lt;strong>Registers&lt;/strong>: Accumulator (A), B register, general-purpose registers.&lt;/li>
+&lt;li>&lt;strong>Memory&lt;/strong>:
+&lt;ul>
+&lt;li>Program memory (ROM)&lt;/li>
+&lt;li>Data memory (RAM)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>I/O Ports&lt;/strong>: 4 bidirectional 8-bit ports.&lt;/li>
+&lt;li>&lt;strong>Timers/Counters&lt;/strong>: Two 16-bit timers.&lt;/li>
+&lt;li>&lt;strong>Serial Communication&lt;/strong>: UART.&lt;/li>
+&lt;li>&lt;strong>Interrupts&lt;/strong>: 5 interrupt sources, including external and timer interrupts.&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h3 id="pin-diagram-of-8051">Pin Diagram of 8051&lt;/h3>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/8051-pd.png">
+&lt;/figure>
+
+&lt;ol>
+&lt;li>&lt;strong>Port P0 (Pins 32-39)&lt;/strong>: Multiplexed as data and address bus.&lt;/li>
+&lt;li>&lt;strong>Port P1 (Pins 1-8)&lt;/strong>: General-purpose I/O.&lt;/li>
+&lt;li>&lt;strong>Port P2 (Pins 21-28)&lt;/strong>: High-order address bus in external memory interfacing.&lt;/li>
+&lt;li>&lt;strong>Port P3 (Pins 10-17)&lt;/strong>: Dual-purpose (I/O + special functions like serial input/output).&lt;/li>
+&lt;li>&lt;strong>Other Pins&lt;/strong>:
+&lt;ul>
+&lt;li>&lt;strong>Vcc (Pin 40)&lt;/strong>: +5V supply&lt;/li>
+&lt;li>&lt;strong>GND (Pin 20)&lt;/strong>: Ground&lt;/li>
+&lt;li>&lt;strong>RST (Pin 9)&lt;/strong>: Reset input&lt;/li>
+&lt;li>&lt;strong>EA (Pin 31)&lt;/strong>: External Access enable&lt;/li>
+&lt;li>&lt;strong>ALE (Pin 30)&lt;/strong>: Address Latch Enable&lt;/li>
+&lt;li>&lt;strong>PSEN (Pin 29)&lt;/strong>: Program Store Enable&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h3 id="memory-organization-of-8051">Memory Organization of 8051&lt;/h3>
+&lt;h4 id="internal-memory">&lt;strong>Internal Memory&lt;/strong>&lt;/h4>
+&lt;ol>
+&lt;li>&lt;strong>RAM&lt;/strong>:
+&lt;ul>
+&lt;li>128 bytes divided into:
+&lt;ul>
+&lt;li>32 bytes: General-purpose registers (R0 to R7 for 4 banks).&lt;/li>
+&lt;li>16 bytes: Bit-addressable memory.&lt;/li>
+&lt;li>80 bytes: General-purpose memory.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>SFRs&lt;/strong>: Control I/O, timers, and serial communication.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>ROM&lt;/strong>:
+&lt;ul>
+&lt;li>4 KB for program storage.&lt;/li>
+&lt;li>Address range: 0000H - 0FFFH.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="external-memory">&lt;strong>External Memory&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>Supports up to 64 KB of program memory and 64 KB of data memory.&lt;/li>
+&lt;li>Uses Port 0 and Port 2 for data and address buses.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="interrupt-structure-of-8051">Interrupt Structure of 8051&lt;/h3>
+&lt;h4 id="features-of-8051-interrupt-system">&lt;strong>Features of 8051 Interrupt System&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>5 interrupt sources:
+&lt;ol>
+&lt;li>&lt;strong>External Interrupt 0 (INT0)&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Timer 0 Overflow&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>External Interrupt 1 (INT1)&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Timer 1 Overflow&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Serial Communication Interrupt&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>&lt;strong>Interrupt Priority Levels&lt;/strong>:
+&lt;ul>
+&lt;li>Low priority&lt;/li>
+&lt;li>High priority (overrides low-priority interrupts)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>IE (Interrupt Enable) Register&lt;/strong>:
+&lt;ul>
+&lt;li>Enables or disables specific interrupts.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>IP (Interrupt Priority) Register&lt;/strong>:
+&lt;ul>
+&lt;li>Sets priority levels for interrupts.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="interrupt-execution">&lt;strong>Interrupt Execution&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>When an interrupt occurs, the microcontroller:
+&lt;ol>
+&lt;li>Suspends the current task.&lt;/li>
+&lt;li>Jumps to the corresponding Interrupt Service Routine (ISR).&lt;/li>
+&lt;li>Resumes the main program after ISR execution.&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="summary">Summary&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Microprocessor vs Microcontroller&lt;/strong>: Microcontrollers are specialized for embedded systems.&lt;/li>
+&lt;li>&lt;strong>8051 Features&lt;/strong>: 8-bit architecture, 4 KB ROM, 128 bytes RAM, and 32 I/O pins.&lt;/li>
+&lt;li>&lt;strong>Applications&lt;/strong>: Widely used in IoT, automation, and consumer electronics.&lt;/li>
+&lt;li>&lt;strong>8051 Architecture&lt;/strong>: Integrated ALU, memory, timers, and serial ports.&lt;/li>
+&lt;li>&lt;strong>Pin Diagram and Memory&lt;/strong>: Essential for hardware interfacing and program execution.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="questions-and-discussion">Questions and Discussion&lt;/h3>
+&lt;ul>
+&lt;li>2 doubts from each (minimum)&lt;/li>
+&lt;li>In 1 line, tell what did you understood from this presentation.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="references">References:&lt;/h3>
+&lt;p>&lt;a href="https://www.tutorialspoint.com/microprocessor/microcontrollers_8051_architecture.htm">https://www.tutorialspoint.com/microprocessor/microcontrollers_8051_architecture.htm&lt;/a>&lt;/p></description></item><item><title>Revision</title><link>https://atharvap8.github.io/posts/2024/11/revision/</link><pubDate>Sun, 24 Nov 2024 00:27:35 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/11/revision/</guid><description>&lt;h2 id="fundamentals-of-electronics-and-components">&lt;strong>Fundamentals of Electronics and Components&lt;/strong>&lt;/h2>
 &lt;hr>
 &lt;h3 id="1-introduction-to-electronics">&lt;strong>1: Introduction to Electronics&lt;/strong>&lt;/h3>
 &lt;p>&lt;strong>Description:&lt;/strong>&lt;/p>
@@ -53,7 +248,4 @@
  &lt;/div>
 &lt;/p></description></item><item><title>Alexa Washing Machine</title><link>https://atharvap8.github.io/posts/2024/06/alexa-washing-machine/</link><pubDate>Fri, 07 Jun 2024 17:57:12 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/06/alexa-washing-machine/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>In this project, we will build a smart controller for a washing machine. The controller is based on the ESP32 module, which works as the central brain. It manages all the data processing, communication &amp;amp; feedback, and manages I/O in the system. The system includes buck converters, power supply, and relays for actuator control. It utilizes an inverter drive to control the motor speed and direction, with a changeover relay configuration to manage the motor’s rotational direction. Also it includes a 16x2 display, and pushbuttons, for program control, and LEDs for status indication. All wash programs are embedded within the microcontroller, and the system is designed for easy further development, allowing changes to be made according to user requirements.
-This project brings IoT functionality to washing machines, offering voice control, remote monitoring &amp;amp; feedback for convenience and efficiency.&lt;/p></description></item><item><title>Alexa Smart Home</title><link>https://atharvap8.github.io/posts/2024/06/alexa-smart-home/</link><pubDate>Sun, 02 Jun 2024 17:57:12 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/06/alexa-smart-home/</guid><description>&lt;h1 id="smart-home-system-with-esp32-alexa-control-and-eeprom-state-retention">Smart Home System with ESP32, Alexa Control, and EEPROM State Retention&lt;/h1>
-&lt;hr>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>In this project, we will create a smart home system that allows control over 14 devices and 1 air conditioner (AC) using an ESP32 microcontroller. The system includes EEPROM functionality, which retains the state of all devices even after a sudden power loss. With Alexa integration, users can control lights, fans, tube lights, AC, and more using voice commands and monitor the real-time status through the Alexa app. Each room is equipped with a 4-channel relay module, connected to a central controller that manages all relays.&lt;/p></description></item></channel></rss>
+This project brings IoT functionality to washing machines, offering voice control, remote monitoring &amp;amp; feedback for convenience and efficiency.&lt;/p></description></item></channel></rss>
