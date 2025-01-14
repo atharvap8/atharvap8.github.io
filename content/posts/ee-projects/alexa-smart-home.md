@@ -47,6 +47,7 @@ These are the raw unedited photos, videos, and prototype tests. Click Here:
 
 [![Static Badge](https://img.shields.io/badge/GooglePhotos-Album-blue?style=flat&logo=Google%20Photos
 )](https://photos.app.goo.gl/MDPgTyUHdiMzcUrm7)
+
 ---
 
 ## How It Works
