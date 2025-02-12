@@ -1018,8 +1018,7 @@ Vout = 6.67V</p>
 <p>When a capacitor is connected to a voltage source, an electric field is established between the plates of the capacitor, which causes charges to accumulate on the plates. The amount of charge that accumulates on the plates is directly proportional to the voltage applied to the capacitor. This process is known as charging the capacitor.</p>
 <p>The rate at which a capacitor charges depends on the capacitance and the resistance in the circuit. The capacitance of the capacitor determines how much charge it can store for a given voltage, and the resistance in the circuit determines how quickly the charges can flow to the capacitor.</p>
 <p>When a capacitor is disconnected from a voltage source, the charges on the plates will begin to flow back to the circuit, and the voltage across the capacitor will decrease. This process is known as discharging the capacitor. The rate of discharging also depends on the capacitance and the resistance in the circuit. A capacitor can be charged and discharged many times and it will not lose its capacitance.</p>
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
       <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/UMHSMJmYJdY?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
 

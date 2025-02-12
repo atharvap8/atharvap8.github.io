@@ -198,8 +198,7 @@ Install the system in a robust, fireproof casing for added protection. Ensure th
 <p>In this project, I have built an IR Sensor-based automatic water tap. This system allows water to flow when it detects an object in front of the sensor, making it a convenient and hygienic solution for home or public restrooms. The IR sensor is mounted on the tap head to detect any objects near the water tap.</p>
 <h2 id="youtube-video">YouTube Video</h2>
 <p>Here&rsquo;s the project&rsquo;s youtube video link:
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
       <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/RHL07T6kZwI?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
 </p>

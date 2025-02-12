@@ -1,4 +1,461 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Electronics-2 on Atharva Phadke</title><link>https://atharvap8.github.io/posts/electronics/11th/electronics-2/</link><description>Recent content in Electronics-2 on Atharva Phadke</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Sat, 28 Jan 2023 22:44:41 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/posts/electronics/11th/electronics-2/index.xml" rel="self" type="application/rss+xml"/><item><title>Controllers and Operations - 1</title><link>https://atharvap8.github.io/posts/2025/01/controllers-and-operations-1/</link><pubDate>Tue, 14 Jan 2025 05:34:36 +0530</pubDate><guid>https://atharvap8.github.io/posts/2025/01/controllers-and-operations-1/</guid><description>&lt;h2 id="introduction-to-microprocessors-and-microcontrollers">Introduction to Microprocessors and Microcontrollers&lt;/h2>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Electronics-2 on Atharva Phadke</title><link>https://atharvap8.github.io/posts/electronics/11th/electronics-2/</link><description>Recent content in Electronics-2 on Atharva Phadke</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Sat, 28 Jan 2023 22:44:41 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/posts/electronics/11th/electronics-2/index.xml" rel="self" type="application/rss+xml"/><item><title>Basics of Electrical &amp; Electronics - Unit 1 &amp; 2</title><link>https://atharvap8.github.io/posts/2025/02/basics-of-electrical-electronics-unit-1-2/</link><pubDate>Wed, 12 Feb 2025 05:34:36 +0530</pubDate><guid>https://atharvap8.github.io/posts/2025/02/basics-of-electrical-electronics-unit-1-2/</guid><description>&lt;h1 id="basics-of-electrical-and-electronics">&lt;strong>Basics of Electrical and Electronics&lt;/strong>&lt;/h1>
+&lt;h2 id="unit-1--unit-2-presentation">&lt;strong>Unit 1 &amp;amp; Unit 2 Presentation&lt;/strong>&lt;/h2>
+&lt;hr>
+&lt;h2 id="unit-1-elementary-concepts">&lt;strong>Unit 1: Elementary Concepts&lt;/strong>&lt;/h2>
+&lt;h3 id="1-concept-of-potential-difference-current-and-resistance">&lt;strong>1. Concept of Potential Difference, Current, and Resistance&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Potential Difference (Voltage, V)&lt;/strong>: Difference in electric potential between two points. Measured in &lt;strong>Volts (V)&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Current (I)&lt;/strong>: Flow of electric charge. Measured in &lt;strong>Amperes (A)&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Resistance (R)&lt;/strong>: Opposition to current flow. Measured in &lt;strong>Ohms (Ω)&lt;/strong>.&lt;/li>
+&lt;li>Power factor is given by $ \cos\theta $.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="2-ohms-law">&lt;strong>2. Ohm’s Law&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Formula&lt;/strong>:&lt;br>
+[
+V = I \times R
+]&lt;/li>
+&lt;li>Voltage is directly proportional to current when resistance is constant.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="3-series-and-parallel-circuits">&lt;strong>3. Series and Parallel Circuits&lt;/strong>&lt;/h3>
+&lt;h4 id="series-circuit">&lt;strong>Series Circuit&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>Single path for current.&lt;/li>
+&lt;li>&lt;strong>Total Resistance&lt;/strong>:&lt;br>
+[
+R_t = R_1 + R_2 + R_3 + &amp;hellip; + R_n
+]&lt;/li>
+&lt;li>&lt;strong>Current remains same&lt;/strong> in all components.&lt;/li>
+&lt;li>&lt;strong>Voltage divides across components&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h4 id="parallel-circuit">&lt;strong>Parallel Circuit&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>Multiple paths for current.&lt;/li>
+&lt;li>&lt;strong>Total Resistance&lt;/strong>:&lt;br>
+[
+\frac{1}{R_t} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + &amp;hellip; + \frac{1}{R_n}
+]&lt;/li>
+&lt;li>&lt;strong>Voltage remains same&lt;/strong> across components.&lt;/li>
+&lt;li>&lt;strong>Current divides&lt;/strong> among branches.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="4-voltage-and-current-dividers">&lt;strong>4. Voltage and Current Dividers&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Voltage Divider Rule&lt;/strong>:&lt;br>
+[
+V_x = V_{total} \times \frac{R_x}{R_{total}}
+]&lt;/li>
+&lt;li>&lt;strong>Current Divider Rule&lt;/strong>:&lt;br>
+[
+I_x = I_{total} \times \frac{R_{total}}{R_x}
+]&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="5-power-and-energy-calculations">&lt;strong>5. Power and Energy Calculations&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Power (P)&lt;/strong>: Rate of energy transfer. Measured in &lt;strong>Watts (W)&lt;/strong>.&lt;br>
+[
+P = V \times I
+]&lt;/li>
+&lt;li>&lt;strong>Energy (E)&lt;/strong>: Total power used over time. Measured in &lt;strong>Joules (J)&lt;/strong>.&lt;br>
+[
+E = P \times t
+]&lt;/li>
+&lt;li>&lt;strong>Electricity Bill Calculation&lt;/strong>:
+&lt;ul>
+&lt;li>Energy is measured in &lt;strong>Kilowatt-hours (kWh)&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Cost = Units Consumed × Rate per kWh&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="6-kirchhoffs-laws">&lt;strong>6. Kirchhoff’s Laws&lt;/strong>&lt;/h3>
+&lt;h4 id="kirchhoffs-current-law-kcl">&lt;strong>Kirchhoff’s Current Law (KCL)&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>Sum of currents entering a junction = Sum of currents leaving the junction&lt;/strong>.&lt;br>
+[
+\sum I_{in} = \sum I_{out}
+]&lt;/li>
+&lt;/ul>
+&lt;h4 id="kirchhoffs-voltage-law-kvl">&lt;strong>Kirchhoff’s Voltage Law (KVL)&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>Sum of all voltages in a closed loop = 0&lt;/strong>.&lt;br>
+[
+\sum V = 0
+]&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="7-si-units-of-work-power-and-energy">&lt;strong>7. SI Units of Work, Power, and Energy&lt;/strong>&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Quantity&lt;/th>
+&lt;th>Symbol&lt;/th>
+&lt;th>Unit Name&lt;/th>
+&lt;th>Unit Symbol&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Work&lt;/td>
+&lt;td>W&lt;/td>
+&lt;td>Joule&lt;/td>
+&lt;td>J&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Power&lt;/td>
+&lt;td>P&lt;/td>
+&lt;td>Watt&lt;/td>
+&lt;td>W&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Energy&lt;/td>
+&lt;td>E&lt;/td>
+&lt;td>Joule&lt;/td>
+&lt;td>J&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Voltage&lt;/td>
+&lt;td>V&lt;/td>
+&lt;td>Volt&lt;/td>
+&lt;td>V&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Current&lt;/td>
+&lt;td>I&lt;/td>
+&lt;td>Ampere&lt;/td>
+&lt;td>A&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Resistance&lt;/td>
+&lt;td>R&lt;/td>
+&lt;td>Ohm&lt;/td>
+&lt;td>Ω&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="unit-2-single-phase-and-polyphase-ac-circuits">&lt;strong>Unit 2: Single Phase and Polyphase A.C. Circuits&lt;/strong>&lt;/h2>
+&lt;h3 id="1-generation-of-single-phase-sinusoidal-ac-voltages">&lt;strong>1. Generation of Single Phase Sinusoidal A.C. Voltages&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Alternating Current (AC)&lt;/strong>: Current that varies sinusoidally over time.&lt;/li>
+&lt;li>&lt;strong>Generated using rotating coils in a magnetic field&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>AC Voltage Equation&lt;/strong>:&lt;br>
+[
+v(t) = V_m \sin(\omega t)
+]
+where:
+&lt;ul>
+&lt;li>( V_m ) = Peak Voltage&lt;/li>
+&lt;li>( \omega ) = Angular Frequency&lt;/li>
+&lt;li>( t ) = Time&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="2-ac-quantities-and-phasor-representation">&lt;strong>2. AC Quantities and Phasor Representation&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Phasor&lt;/strong>: Represents AC quantities as rotating vectors in a complex plane.&lt;/li>
+&lt;li>&lt;strong>Amplitude (Magnitude)&lt;/strong>: Peak value of voltage or current.&lt;/li>
+&lt;li>&lt;strong>Phase Angle&lt;/strong>: Difference in phase between voltage and current.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="3-pure-r-pure-l-and-pure-c-circuits">&lt;strong>3. Pure R, Pure L, and Pure C Circuits&lt;/strong>&lt;/h3>
+&lt;h4 id="pure-resistive-circuit">&lt;strong>Pure Resistive Circuit&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>Voltage and Current are in phase&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Power = ( P = V \times I )&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h4 id="pure-inductive-circuit">&lt;strong>Pure Inductive Circuit&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>Current lags voltage by 90°&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Power = ( P = 0 ) (purely reactive)&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h4 id="pure-capacitive-circuit">&lt;strong>Pure Capacitive Circuit&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>Current leads voltage by 90°&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Power = ( P = 0 ) (purely reactive)&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="4-impedance-and-admittance">&lt;strong>4. Impedance and Admittance&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Impedance (Z)&lt;/strong>: Total opposition in an AC circuit. Measured in &lt;strong>Ohms (Ω)&lt;/strong>.&lt;br>
+[
+Z = R + jX
+]
+where ( X ) is reactance.&lt;/p></description><content type="html"><![CDATA[<h1 id="basics-of-electrical-and-electronics"><strong>Basics of Electrical and Electronics</strong></h1>
+<h2 id="unit-1--unit-2-presentation"><strong>Unit 1 &amp; Unit 2 Presentation</strong></h2>
+<hr>
+<h2 id="unit-1-elementary-concepts"><strong>Unit 1: Elementary Concepts</strong></h2>
+<h3 id="1-concept-of-potential-difference-current-and-resistance"><strong>1. Concept of Potential Difference, Current, and Resistance</strong></h3>
+<ul>
+<li><strong>Potential Difference (Voltage, V)</strong>: Difference in electric potential between two points. Measured in <strong>Volts (V)</strong>.</li>
+<li><strong>Current (I)</strong>: Flow of electric charge. Measured in <strong>Amperes (A)</strong>.</li>
+<li><strong>Resistance (R)</strong>: Opposition to current flow. Measured in <strong>Ohms (Ω)</strong>.</li>
+<li>Power factor is given by $ \cos\theta $.</li>
+</ul>
+<hr>
+<h3 id="2-ohms-law"><strong>2. Ohm’s Law</strong></h3>
+<ul>
+<li><strong>Formula</strong>:<br>
+[
+V = I \times R
+]</li>
+<li>Voltage is directly proportional to current when resistance is constant.</li>
+</ul>
+<hr>
+<h3 id="3-series-and-parallel-circuits"><strong>3. Series and Parallel Circuits</strong></h3>
+<h4 id="series-circuit"><strong>Series Circuit</strong></h4>
+<ul>
+<li>Single path for current.</li>
+<li><strong>Total Resistance</strong>:<br>
+[
+R_t = R_1 + R_2 + R_3 + &hellip; + R_n
+]</li>
+<li><strong>Current remains same</strong> in all components.</li>
+<li><strong>Voltage divides across components</strong>.</li>
+</ul>
+<h4 id="parallel-circuit"><strong>Parallel Circuit</strong></h4>
+<ul>
+<li>Multiple paths for current.</li>
+<li><strong>Total Resistance</strong>:<br>
+[
+\frac{1}{R_t} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + &hellip; + \frac{1}{R_n}
+]</li>
+<li><strong>Voltage remains same</strong> across components.</li>
+<li><strong>Current divides</strong> among branches.</li>
+</ul>
+<hr>
+<h3 id="4-voltage-and-current-dividers"><strong>4. Voltage and Current Dividers</strong></h3>
+<ul>
+<li><strong>Voltage Divider Rule</strong>:<br>
+[
+V_x = V_{total} \times \frac{R_x}{R_{total}}
+]</li>
+<li><strong>Current Divider Rule</strong>:<br>
+[
+I_x = I_{total} \times \frac{R_{total}}{R_x}
+]</li>
+</ul>
+<hr>
+<h3 id="5-power-and-energy-calculations"><strong>5. Power and Energy Calculations</strong></h3>
+<ul>
+<li><strong>Power (P)</strong>: Rate of energy transfer. Measured in <strong>Watts (W)</strong>.<br>
+[
+P = V \times I
+]</li>
+<li><strong>Energy (E)</strong>: Total power used over time. Measured in <strong>Joules (J)</strong>.<br>
+[
+E = P \times t
+]</li>
+<li><strong>Electricity Bill Calculation</strong>:
+<ul>
+<li>Energy is measured in <strong>Kilowatt-hours (kWh)</strong>.</li>
+<li><strong>Cost = Units Consumed × Rate per kWh</strong>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="6-kirchhoffs-laws"><strong>6. Kirchhoff’s Laws</strong></h3>
+<h4 id="kirchhoffs-current-law-kcl"><strong>Kirchhoff’s Current Law (KCL)</strong></h4>
+<ul>
+<li><strong>Sum of currents entering a junction = Sum of currents leaving the junction</strong>.<br>
+[
+\sum I_{in} = \sum I_{out}
+]</li>
+</ul>
+<h4 id="kirchhoffs-voltage-law-kvl"><strong>Kirchhoff’s Voltage Law (KVL)</strong></h4>
+<ul>
+<li><strong>Sum of all voltages in a closed loop = 0</strong>.<br>
+[
+\sum V = 0
+]</li>
+</ul>
+<hr>
+<h3 id="7-si-units-of-work-power-and-energy"><strong>7. SI Units of Work, Power, and Energy</strong></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Quantity</th>
+          <th>Symbol</th>
+          <th>Unit Name</th>
+          <th>Unit Symbol</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Work</td>
+          <td>W</td>
+          <td>Joule</td>
+          <td>J</td>
+      </tr>
+      <tr>
+          <td>Power</td>
+          <td>P</td>
+          <td>Watt</td>
+          <td>W</td>
+      </tr>
+      <tr>
+          <td>Energy</td>
+          <td>E</td>
+          <td>Joule</td>
+          <td>J</td>
+      </tr>
+      <tr>
+          <td>Voltage</td>
+          <td>V</td>
+          <td>Volt</td>
+          <td>V</td>
+      </tr>
+      <tr>
+          <td>Current</td>
+          <td>I</td>
+          <td>Ampere</td>
+          <td>A</td>
+      </tr>
+      <tr>
+          <td>Resistance</td>
+          <td>R</td>
+          <td>Ohm</td>
+          <td>Ω</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="unit-2-single-phase-and-polyphase-ac-circuits"><strong>Unit 2: Single Phase and Polyphase A.C. Circuits</strong></h2>
+<h3 id="1-generation-of-single-phase-sinusoidal-ac-voltages"><strong>1. Generation of Single Phase Sinusoidal A.C. Voltages</strong></h3>
+<ul>
+<li><strong>Alternating Current (AC)</strong>: Current that varies sinusoidally over time.</li>
+<li><strong>Generated using rotating coils in a magnetic field</strong>.</li>
+<li><strong>AC Voltage Equation</strong>:<br>
+[
+v(t) = V_m \sin(\omega t)
+]
+where:
+<ul>
+<li>( V_m ) = Peak Voltage</li>
+<li>( \omega ) = Angular Frequency</li>
+<li>( t ) = Time</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="2-ac-quantities-and-phasor-representation"><strong>2. AC Quantities and Phasor Representation</strong></h3>
+<ul>
+<li><strong>Phasor</strong>: Represents AC quantities as rotating vectors in a complex plane.</li>
+<li><strong>Amplitude (Magnitude)</strong>: Peak value of voltage or current.</li>
+<li><strong>Phase Angle</strong>: Difference in phase between voltage and current.</li>
+</ul>
+<hr>
+<h3 id="3-pure-r-pure-l-and-pure-c-circuits"><strong>3. Pure R, Pure L, and Pure C Circuits</strong></h3>
+<h4 id="pure-resistive-circuit"><strong>Pure Resistive Circuit</strong></h4>
+<ul>
+<li><strong>Voltage and Current are in phase</strong>.</li>
+<li><strong>Power = ( P = V \times I )</strong>.</li>
+</ul>
+<h4 id="pure-inductive-circuit"><strong>Pure Inductive Circuit</strong></h4>
+<ul>
+<li><strong>Current lags voltage by 90°</strong>.</li>
+<li><strong>Power = ( P = 0 ) (purely reactive)</strong>.</li>
+</ul>
+<h4 id="pure-capacitive-circuit"><strong>Pure Capacitive Circuit</strong></h4>
+<ul>
+<li><strong>Current leads voltage by 90°</strong>.</li>
+<li><strong>Power = ( P = 0 ) (purely reactive)</strong>.</li>
+</ul>
+<hr>
+<h3 id="4-impedance-and-admittance"><strong>4. Impedance and Admittance</strong></h3>
+<ul>
+<li>
+<p><strong>Impedance (Z)</strong>: Total opposition in an AC circuit. Measured in <strong>Ohms (Ω)</strong>.<br>
+[
+Z = R + jX
+]
+where ( X ) is reactance.</p>
+</li>
+<li>
+<p><strong>Admittance (Y)</strong>: Reciprocal of impedance. Measured in <strong>Siemens (S)</strong>.<br>
+[
+Y = \frac{1}{Z}
+]</p>
+</li>
+</ul>
+<hr>
+<h3 id="5-active-reactive-apparent-power-and-power-factor"><strong>5. Active, Reactive, Apparent Power and Power Factor</strong></h3>
+<ul>
+<li><strong>Active Power (P)</strong>:<br>
+[
+P = V \times I \times \cos \phi
+]</li>
+<li><strong>Reactive Power (Q)</strong>:<br>
+[
+Q = V \times I \times \sin \phi
+]</li>
+<li><strong>Apparent Power (S)</strong>:<br>
+[
+S = V \times I
+]</li>
+<li><strong>Power Factor (PF)</strong>:<br>
+[
+PF = \cos \phi
+]
+<ul>
+<li><strong>PF close to 1</strong> → Efficient system.</li>
+<li><strong>PF close to 0</strong> → High reactive power, inefficient system.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="6-polyphase-ac-circuits"><strong>6. Polyphase A.C. Circuits</strong></h3>
+<h4 id="introduction-to-three-phase-supply"><strong>Introduction to Three-Phase Supply</strong></h4>
+<ul>
+<li>Three-phase systems are used for <strong>efficient power transmission</strong>.</li>
+<li><strong>More power with less conductor material compared to single-phase</strong>.</li>
+</ul>
+<h4 id="balanced-three-phase-system"><strong>Balanced Three-Phase System</strong></h4>
+<ul>
+<li><strong>Equal phase voltages</strong> and <strong>120° phase difference</strong>.</li>
+</ul>
+<h4 id="relation-between-line-and-phase-quantities"><strong>Relation between Line and Phase Quantities</strong></h4>
+<ul>
+<li>
+<p><strong>For Star Connection</strong>:<br>
+[
+V_{L} = \sqrt{3} V_{ph}, \quad I_L = I_{ph}
+]</p>
+</li>
+<li>
+<p><strong>For Delta Connection</strong>:<br>
+[
+V_L = V_{ph}, \quad I_L = \sqrt{3} I_{ph}
+]</p>
+</li>
+</ul>
+<hr>
+<h3 id="7-power-in-three-phase-circuits"><strong>7. Power in Three-Phase Circuits</strong></h3>
+<h4 id="star-connection"><strong>Star Connection</strong></h4>
+<p>[
+P = \sqrt{3} V_L I_L \cos \phi
+]</p>
+<h4 id="delta-connection"><strong>Delta Connection</strong></h4>
+<p>[
+P = \sqrt{3} V_L I_L \cos \phi
+]</p>
+<ul>
+<li><strong>Power is same for both Star and Delta connections</strong>.</li>
+</ul>
+<hr>
+<h2 id="simulations--verifications"><strong>Simulations &amp; Verifications</strong></h2>
+<ul>
+<li><strong>Verify Power Factor for RL and RC Circuit using Multisim</strong>.</li>
+<li><strong>Verify Line and Phase Values for Star &amp; Delta Connection using Simulation</strong>.</li>
+</ul>
+<hr>
+<h3 id="end-of-presentation"><strong>End of Presentation</strong></h3>
+]]></content></item><item><title>Controllers and Operations - 1</title><link>https://atharvap8.github.io/posts/2025/01/controllers-and-operations-1/</link><pubDate>Tue, 14 Jan 2025 05:34:36 +0530</pubDate><guid>https://atharvap8.github.io/posts/2025/01/controllers-and-operations-1/</guid><description>&lt;h2 id="introduction-to-microprocessors-and-microcontrollers">Introduction to Microprocessors and Microcontrollers&lt;/h2>
 &lt;hr>
 &lt;figure>&lt;img src="https://atharvap8.github.io/img/uCvsuP.png">
 &lt;/figure>

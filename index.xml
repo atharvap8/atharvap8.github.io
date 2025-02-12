@@ -1,4 +1,192 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Atharva Phadke</title><link>https://atharvap8.github.io/</link><description>Recent content on Atharva Phadke</description><generator>Hugo</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Tue, 14 Jan 2025 05:34:36 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Controllers and Operations - 1</title><link>https://atharvap8.github.io/posts/2025/01/controllers-and-operations-1/</link><pubDate>Tue, 14 Jan 2025 05:34:36 +0530</pubDate><guid>https://atharvap8.github.io/posts/2025/01/controllers-and-operations-1/</guid><description>&lt;h2 id="introduction-to-microprocessors-and-microcontrollers">Introduction to Microprocessors and Microcontrollers&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Atharva Phadke</title><link>https://atharvap8.github.io/</link><description>Recent content on Atharva Phadke</description><generator>Hugo</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Wed, 12 Feb 2025 05:34:36 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Basics of Electrical &amp; Electronics - Unit 1 &amp; 2</title><link>https://atharvap8.github.io/posts/2025/02/basics-of-electrical-electronics-unit-1-2/</link><pubDate>Wed, 12 Feb 2025 05:34:36 +0530</pubDate><guid>https://atharvap8.github.io/posts/2025/02/basics-of-electrical-electronics-unit-1-2/</guid><description>&lt;h1 id="basics-of-electrical-and-electronics">&lt;strong>Basics of Electrical and Electronics&lt;/strong>&lt;/h1>
+&lt;h2 id="unit-1--unit-2-presentation">&lt;strong>Unit 1 &amp;amp; Unit 2 Presentation&lt;/strong>&lt;/h2>
+&lt;hr>
+&lt;h2 id="unit-1-elementary-concepts">&lt;strong>Unit 1: Elementary Concepts&lt;/strong>&lt;/h2>
+&lt;h3 id="1-concept-of-potential-difference-current-and-resistance">&lt;strong>1. Concept of Potential Difference, Current, and Resistance&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Potential Difference (Voltage, V)&lt;/strong>: Difference in electric potential between two points. Measured in &lt;strong>Volts (V)&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Current (I)&lt;/strong>: Flow of electric charge. Measured in &lt;strong>Amperes (A)&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Resistance (R)&lt;/strong>: Opposition to current flow. Measured in &lt;strong>Ohms (Ω)&lt;/strong>.&lt;/li>
+&lt;li>Power factor is given by $ \cos\theta $.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="2-ohms-law">&lt;strong>2. Ohm’s Law&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Formula&lt;/strong>:&lt;br>
+[
+V = I \times R
+]&lt;/li>
+&lt;li>Voltage is directly proportional to current when resistance is constant.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="3-series-and-parallel-circuits">&lt;strong>3. Series and Parallel Circuits&lt;/strong>&lt;/h3>
+&lt;h4 id="series-circuit">&lt;strong>Series Circuit&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>Single path for current.&lt;/li>
+&lt;li>&lt;strong>Total Resistance&lt;/strong>:&lt;br>
+[
+R_t = R_1 + R_2 + R_3 + &amp;hellip; + R_n
+]&lt;/li>
+&lt;li>&lt;strong>Current remains same&lt;/strong> in all components.&lt;/li>
+&lt;li>&lt;strong>Voltage divides across components&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h4 id="parallel-circuit">&lt;strong>Parallel Circuit&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>Multiple paths for current.&lt;/li>
+&lt;li>&lt;strong>Total Resistance&lt;/strong>:&lt;br>
+[
+\frac{1}{R_t} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + &amp;hellip; + \frac{1}{R_n}
+]&lt;/li>
+&lt;li>&lt;strong>Voltage remains same&lt;/strong> across components.&lt;/li>
+&lt;li>&lt;strong>Current divides&lt;/strong> among branches.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="4-voltage-and-current-dividers">&lt;strong>4. Voltage and Current Dividers&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Voltage Divider Rule&lt;/strong>:&lt;br>
+[
+V_x = V_{total} \times \frac{R_x}{R_{total}}
+]&lt;/li>
+&lt;li>&lt;strong>Current Divider Rule&lt;/strong>:&lt;br>
+[
+I_x = I_{total} \times \frac{R_{total}}{R_x}
+]&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="5-power-and-energy-calculations">&lt;strong>5. Power and Energy Calculations&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Power (P)&lt;/strong>: Rate of energy transfer. Measured in &lt;strong>Watts (W)&lt;/strong>.&lt;br>
+[
+P = V \times I
+]&lt;/li>
+&lt;li>&lt;strong>Energy (E)&lt;/strong>: Total power used over time. Measured in &lt;strong>Joules (J)&lt;/strong>.&lt;br>
+[
+E = P \times t
+]&lt;/li>
+&lt;li>&lt;strong>Electricity Bill Calculation&lt;/strong>:
+&lt;ul>
+&lt;li>Energy is measured in &lt;strong>Kilowatt-hours (kWh)&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Cost = Units Consumed × Rate per kWh&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="6-kirchhoffs-laws">&lt;strong>6. Kirchhoff’s Laws&lt;/strong>&lt;/h3>
+&lt;h4 id="kirchhoffs-current-law-kcl">&lt;strong>Kirchhoff’s Current Law (KCL)&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>Sum of currents entering a junction = Sum of currents leaving the junction&lt;/strong>.&lt;br>
+[
+\sum I_{in} = \sum I_{out}
+]&lt;/li>
+&lt;/ul>
+&lt;h4 id="kirchhoffs-voltage-law-kvl">&lt;strong>Kirchhoff’s Voltage Law (KVL)&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>Sum of all voltages in a closed loop = 0&lt;/strong>.&lt;br>
+[
+\sum V = 0
+]&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="7-si-units-of-work-power-and-energy">&lt;strong>7. SI Units of Work, Power, and Energy&lt;/strong>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Quantity&lt;/th>
+ &lt;th>Symbol&lt;/th>
+ &lt;th>Unit Name&lt;/th>
+ &lt;th>Unit Symbol&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Work&lt;/td>
+ &lt;td>W&lt;/td>
+ &lt;td>Joule&lt;/td>
+ &lt;td>J&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Power&lt;/td>
+ &lt;td>P&lt;/td>
+ &lt;td>Watt&lt;/td>
+ &lt;td>W&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Energy&lt;/td>
+ &lt;td>E&lt;/td>
+ &lt;td>Joule&lt;/td>
+ &lt;td>J&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Voltage&lt;/td>
+ &lt;td>V&lt;/td>
+ &lt;td>Volt&lt;/td>
+ &lt;td>V&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Current&lt;/td>
+ &lt;td>I&lt;/td>
+ &lt;td>Ampere&lt;/td>
+ &lt;td>A&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Resistance&lt;/td>
+ &lt;td>R&lt;/td>
+ &lt;td>Ohm&lt;/td>
+ &lt;td>Ω&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="unit-2-single-phase-and-polyphase-ac-circuits">&lt;strong>Unit 2: Single Phase and Polyphase A.C. Circuits&lt;/strong>&lt;/h2>
+&lt;h3 id="1-generation-of-single-phase-sinusoidal-ac-voltages">&lt;strong>1. Generation of Single Phase Sinusoidal A.C. Voltages&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Alternating Current (AC)&lt;/strong>: Current that varies sinusoidally over time.&lt;/li>
+&lt;li>&lt;strong>Generated using rotating coils in a magnetic field&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>AC Voltage Equation&lt;/strong>:&lt;br>
+[
+v(t) = V_m \sin(\omega t)
+]
+where:
+&lt;ul>
+&lt;li>( V_m ) = Peak Voltage&lt;/li>
+&lt;li>( \omega ) = Angular Frequency&lt;/li>
+&lt;li>( t ) = Time&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="2-ac-quantities-and-phasor-representation">&lt;strong>2. AC Quantities and Phasor Representation&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Phasor&lt;/strong>: Represents AC quantities as rotating vectors in a complex plane.&lt;/li>
+&lt;li>&lt;strong>Amplitude (Magnitude)&lt;/strong>: Peak value of voltage or current.&lt;/li>
+&lt;li>&lt;strong>Phase Angle&lt;/strong>: Difference in phase between voltage and current.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="3-pure-r-pure-l-and-pure-c-circuits">&lt;strong>3. Pure R, Pure L, and Pure C Circuits&lt;/strong>&lt;/h3>
+&lt;h4 id="pure-resistive-circuit">&lt;strong>Pure Resistive Circuit&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>Voltage and Current are in phase&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Power = ( P = V \times I )&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h4 id="pure-inductive-circuit">&lt;strong>Pure Inductive Circuit&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>Current lags voltage by 90°&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Power = ( P = 0 ) (purely reactive)&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h4 id="pure-capacitive-circuit">&lt;strong>Pure Capacitive Circuit&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>Current leads voltage by 90°&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Power = ( P = 0 ) (purely reactive)&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="4-impedance-and-admittance">&lt;strong>4. Impedance and Admittance&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Impedance (Z)&lt;/strong>: Total opposition in an AC circuit. Measured in &lt;strong>Ohms (Ω)&lt;/strong>.&lt;br>
+[
+Z = R + jX
+]
+where ( X ) is reactance.&lt;/p></description></item><item><title>Controllers and Operations - 1</title><link>https://atharvap8.github.io/posts/2025/01/controllers-and-operations-1/</link><pubDate>Tue, 14 Jan 2025 05:34:36 +0530</pubDate><guid>https://atharvap8.github.io/posts/2025/01/controllers-and-operations-1/</guid><description>&lt;h2 id="introduction-to-microprocessors-and-microcontrollers">Introduction to Microprocessors and Microcontrollers&lt;/h2>
 &lt;hr>
 &lt;figure>&lt;img src="https://atharvap8.github.io/img/uCvsuP.png">
 &lt;/figure>
@@ -242,10 +430,7 @@ Q: What is Full-duplex?&lt;/li>
 &lt;p>In this project, I have built an IR Sensor-based automatic water tap. This system allows water to flow when it detects an object in front of the sensor, making it a convenient and hygienic solution for home or public restrooms. The IR sensor is mounted on the tap head to detect any objects near the water tap.&lt;/p>
 &lt;h2 id="youtube-video">YouTube Video&lt;/h2>
 &lt;p>Here&amp;rsquo;s the project&amp;rsquo;s youtube video link:
-
- &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/RHL07T6kZwI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div>
-&lt;/p></description></item><item><title>Alexa Washing Machine</title><link>https://atharvap8.github.io/posts/2024/06/alexa-washing-machine/</link><pubDate>Fri, 07 Jun 2024 17:57:12 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/06/alexa-washing-machine/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>In this project, we will build a smart controller for a washing machine. The controller is based on the ESP32 module, which works as the central brain. It manages all the data processing, communication &amp;amp; feedback, and manages I/O in the system. The system includes buck converters, power supply, and relays for actuator control. It utilizes an inverter drive to control the motor speed and direction, with a changeover relay configuration to manage the motor’s rotational direction. Also it includes a 16x2 display, and pushbuttons, for program control, and LEDs for status indication. All wash programs are embedded within the microcontroller, and the system is designed for easy further development, allowing changes to be made according to user requirements.
-This project brings IoT functionality to washing machines, offering voice control, remote monitoring &amp;amp; feedback for convenience and efficiency.&lt;/p></description></item></channel></rss>
+&lt;/p></description></item></channel></rss>
