@@ -1,3 +1,3154 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Electronics(Practicals) on Atharva Phadke</title><link>https://atharvap8.github.io/posts/electronics/</link><description>Recent content in Electronics(Practicals) on Atharva Phadke</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Sun, 29 Jan 2023 01:04:31 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/posts/electronics/index.xml" rel="self" type="application/rss+xml"/><item><title>12th Practicals</title><link>https://atharvap8.github.io/posts/electronics/12th/</link><pubDate>Sun, 29 Jan 2023 01:07:11 +0530</pubDate><guid>https://atharvap8.github.io/posts/electronics/12th/</guid><description>&lt;p>This directory contains the practicals performed by me for the subject 12th Bifocal Electronics (HSC) (SYJC)&lt;/p></description><content type="html">&lt;p>This directory contains the practicals performed by me for the subject 12th Bifocal Electronics (HSC) (SYJC)&lt;/p>
-</content></item><item><title>11th Practicals</title><link>https://atharvap8.github.io/posts/electronics/11th/</link><pubDate>Sat, 28 Jan 2023 22:44:41 +0530</pubDate><guid>https://atharvap8.github.io/posts/electronics/11th/</guid><description>&lt;p>This directory contains the practicals performed by me for the subject 11th Bifocal Electronics (HSC) (FYJC)&lt;/p></description><content type="html">&lt;p>This directory contains the practicals performed by me for the subject 11th Bifocal Electronics (HSC) (FYJC)&lt;/p>
-</content></item></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Electronics(Practicals) on Atharva Phadke</title><link>https://atharvap8.github.io/posts/electronics/</link><description>Recent content in Electronics(Practicals) on Atharva Phadke</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Sun, 29 Jan 2023 01:04:31 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/posts/electronics/index.xml" rel="self" type="application/rss+xml"/><item><title>Basics of Electrical &amp; Electronics - Unit 1 &amp; 2</title><link>https://atharvap8.github.io/posts/2025/02/basics-of-electrical-electronics-unit-1-2/</link><pubDate>Wed, 12 Feb 2025 05:34:36 +0530</pubDate><guid>https://atharvap8.github.io/posts/2025/02/basics-of-electrical-electronics-unit-1-2/</guid><description>&lt;h1 id="basics-of-electrical-and-electronics">&lt;strong>Basics of Electrical and Electronics&lt;/strong>&lt;/h1>
+&lt;h2 id="unit-1--unit-2-presentation">&lt;strong>Unit 1 &amp;amp; Unit 2 Presentation&lt;/strong>&lt;/h2>
+&lt;hr>
+&lt;h2 id="unit-1-elementary-concepts">&lt;strong>Unit 1: Elementary Concepts&lt;/strong>&lt;/h2>
+&lt;h3 id="1-concept-of-potential-difference-current-and-resistance">&lt;strong>1. Concept of Potential Difference, Current, and Resistance&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Potential Difference (Voltage, V)&lt;/strong>: Difference in electric potential between two points. Measured in &lt;strong>Volts (V)&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Current (I)&lt;/strong>: Flow of electric charge. Measured in &lt;strong>Amperes (A)&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Resistance (R)&lt;/strong>: Opposition to current flow. Measured in &lt;strong>Ohms (Ω)&lt;/strong>.&lt;/li>
+&lt;li>Power factor is given by $ \cos\theta $.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="2-ohms-law">&lt;strong>2. Ohm’s Law&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Formula&lt;/strong>:&lt;br>
+[
+V = I \times R
+]&lt;/li>
+&lt;li>Voltage is directly proportional to current when resistance is constant.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="3-series-and-parallel-circuits">&lt;strong>3. Series and Parallel Circuits&lt;/strong>&lt;/h3>
+&lt;h4 id="series-circuit">&lt;strong>Series Circuit&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>Single path for current.&lt;/li>
+&lt;li>&lt;strong>Total Resistance&lt;/strong>:&lt;br>
+[
+R_t = R_1 + R_2 + R_3 + &amp;hellip; + R_n
+]&lt;/li>
+&lt;li>&lt;strong>Current remains same&lt;/strong> in all components.&lt;/li>
+&lt;li>&lt;strong>Voltage divides across components&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h4 id="parallel-circuit">&lt;strong>Parallel Circuit&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>Multiple paths for current.&lt;/li>
+&lt;li>&lt;strong>Total Resistance&lt;/strong>:&lt;br>
+[
+\frac{1}{R_t} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + &amp;hellip; + \frac{1}{R_n}
+]&lt;/li>
+&lt;li>&lt;strong>Voltage remains same&lt;/strong> across components.&lt;/li>
+&lt;li>&lt;strong>Current divides&lt;/strong> among branches.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="4-voltage-and-current-dividers">&lt;strong>4. Voltage and Current Dividers&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Voltage Divider Rule&lt;/strong>:&lt;br>
+[
+V_x = V_{total} \times \frac{R_x}{R_{total}}
+]&lt;/li>
+&lt;li>&lt;strong>Current Divider Rule&lt;/strong>:&lt;br>
+[
+I_x = I_{total} \times \frac{R_{total}}{R_x}
+]&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="5-power-and-energy-calculations">&lt;strong>5. Power and Energy Calculations&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Power (P)&lt;/strong>: Rate of energy transfer. Measured in &lt;strong>Watts (W)&lt;/strong>.&lt;br>
+[
+P = V \times I
+]&lt;/li>
+&lt;li>&lt;strong>Energy (E)&lt;/strong>: Total power used over time. Measured in &lt;strong>Joules (J)&lt;/strong>.&lt;br>
+[
+E = P \times t
+]&lt;/li>
+&lt;li>&lt;strong>Electricity Bill Calculation&lt;/strong>:
+&lt;ul>
+&lt;li>Energy is measured in &lt;strong>Kilowatt-hours (kWh)&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Cost = Units Consumed × Rate per kWh&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="6-kirchhoffs-laws">&lt;strong>6. Kirchhoff’s Laws&lt;/strong>&lt;/h3>
+&lt;h4 id="kirchhoffs-current-law-kcl">&lt;strong>Kirchhoff’s Current Law (KCL)&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>Sum of currents entering a junction = Sum of currents leaving the junction&lt;/strong>.&lt;br>
+[
+\sum I_{in} = \sum I_{out}
+]&lt;/li>
+&lt;/ul>
+&lt;h4 id="kirchhoffs-voltage-law-kvl">&lt;strong>Kirchhoff’s Voltage Law (KVL)&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>Sum of all voltages in a closed loop = 0&lt;/strong>.&lt;br>
+[
+\sum V = 0
+]&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="7-si-units-of-work-power-and-energy">&lt;strong>7. SI Units of Work, Power, and Energy&lt;/strong>&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Quantity&lt;/th>
+&lt;th>Symbol&lt;/th>
+&lt;th>Unit Name&lt;/th>
+&lt;th>Unit Symbol&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Work&lt;/td>
+&lt;td>W&lt;/td>
+&lt;td>Joule&lt;/td>
+&lt;td>J&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Power&lt;/td>
+&lt;td>P&lt;/td>
+&lt;td>Watt&lt;/td>
+&lt;td>W&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Energy&lt;/td>
+&lt;td>E&lt;/td>
+&lt;td>Joule&lt;/td>
+&lt;td>J&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Voltage&lt;/td>
+&lt;td>V&lt;/td>
+&lt;td>Volt&lt;/td>
+&lt;td>V&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Current&lt;/td>
+&lt;td>I&lt;/td>
+&lt;td>Ampere&lt;/td>
+&lt;td>A&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Resistance&lt;/td>
+&lt;td>R&lt;/td>
+&lt;td>Ohm&lt;/td>
+&lt;td>Ω&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="unit-2-single-phase-and-polyphase-ac-circuits">&lt;strong>Unit 2: Single Phase and Polyphase A.C. Circuits&lt;/strong>&lt;/h2>
+&lt;h3 id="1-generation-of-single-phase-sinusoidal-ac-voltages">&lt;strong>1. Generation of Single Phase Sinusoidal A.C. Voltages&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Alternating Current (AC)&lt;/strong>: Current that varies sinusoidally over time.&lt;/li>
+&lt;li>&lt;strong>Generated using rotating coils in a magnetic field&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>AC Voltage Equation&lt;/strong>:&lt;br>
+[
+v(t) = V_m \sin(\omega t)
+]
+where:
+&lt;ul>
+&lt;li>( V_m ) = Peak Voltage&lt;/li>
+&lt;li>( \omega ) = Angular Frequency&lt;/li>
+&lt;li>( t ) = Time&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="2-ac-quantities-and-phasor-representation">&lt;strong>2. AC Quantities and Phasor Representation&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Phasor&lt;/strong>: Represents AC quantities as rotating vectors in a complex plane.&lt;/li>
+&lt;li>&lt;strong>Amplitude (Magnitude)&lt;/strong>: Peak value of voltage or current.&lt;/li>
+&lt;li>&lt;strong>Phase Angle&lt;/strong>: Difference in phase between voltage and current.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="3-pure-r-pure-l-and-pure-c-circuits">&lt;strong>3. Pure R, Pure L, and Pure C Circuits&lt;/strong>&lt;/h3>
+&lt;h4 id="pure-resistive-circuit">&lt;strong>Pure Resistive Circuit&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>Voltage and Current are in phase&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Power = ( P = V \times I )&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h4 id="pure-inductive-circuit">&lt;strong>Pure Inductive Circuit&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>Current lags voltage by 90°&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Power = ( P = 0 ) (purely reactive)&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h4 id="pure-capacitive-circuit">&lt;strong>Pure Capacitive Circuit&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>Current leads voltage by 90°&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Power = ( P = 0 ) (purely reactive)&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="4-impedance-and-admittance">&lt;strong>4. Impedance and Admittance&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Impedance (Z)&lt;/strong>: Total opposition in an AC circuit. Measured in &lt;strong>Ohms (Ω)&lt;/strong>.&lt;br>
+[
+Z = R + jX
+]
+where ( X ) is reactance.&lt;/p></description><content type="html"><![CDATA[<h1 id="basics-of-electrical-and-electronics"><strong>Basics of Electrical and Electronics</strong></h1>
+<h2 id="unit-1--unit-2-presentation"><strong>Unit 1 &amp; Unit 2 Presentation</strong></h2>
+<hr>
+<h2 id="unit-1-elementary-concepts"><strong>Unit 1: Elementary Concepts</strong></h2>
+<h3 id="1-concept-of-potential-difference-current-and-resistance"><strong>1. Concept of Potential Difference, Current, and Resistance</strong></h3>
+<ul>
+<li><strong>Potential Difference (Voltage, V)</strong>: Difference in electric potential between two points. Measured in <strong>Volts (V)</strong>.</li>
+<li><strong>Current (I)</strong>: Flow of electric charge. Measured in <strong>Amperes (A)</strong>.</li>
+<li><strong>Resistance (R)</strong>: Opposition to current flow. Measured in <strong>Ohms (Ω)</strong>.</li>
+<li>Power factor is given by $ \cos\theta $.</li>
+</ul>
+<hr>
+<h3 id="2-ohms-law"><strong>2. Ohm’s Law</strong></h3>
+<ul>
+<li><strong>Formula</strong>:<br>
+[
+V = I \times R
+]</li>
+<li>Voltage is directly proportional to current when resistance is constant.</li>
+</ul>
+<hr>
+<h3 id="3-series-and-parallel-circuits"><strong>3. Series and Parallel Circuits</strong></h3>
+<h4 id="series-circuit"><strong>Series Circuit</strong></h4>
+<ul>
+<li>Single path for current.</li>
+<li><strong>Total Resistance</strong>:<br>
+[
+R_t = R_1 + R_2 + R_3 + &hellip; + R_n
+]</li>
+<li><strong>Current remains same</strong> in all components.</li>
+<li><strong>Voltage divides across components</strong>.</li>
+</ul>
+<h4 id="parallel-circuit"><strong>Parallel Circuit</strong></h4>
+<ul>
+<li>Multiple paths for current.</li>
+<li><strong>Total Resistance</strong>:<br>
+[
+\frac{1}{R_t} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + &hellip; + \frac{1}{R_n}
+]</li>
+<li><strong>Voltage remains same</strong> across components.</li>
+<li><strong>Current divides</strong> among branches.</li>
+</ul>
+<hr>
+<h3 id="4-voltage-and-current-dividers"><strong>4. Voltage and Current Dividers</strong></h3>
+<ul>
+<li><strong>Voltage Divider Rule</strong>:<br>
+[
+V_x = V_{total} \times \frac{R_x}{R_{total}}
+]</li>
+<li><strong>Current Divider Rule</strong>:<br>
+[
+I_x = I_{total} \times \frac{R_{total}}{R_x}
+]</li>
+</ul>
+<hr>
+<h3 id="5-power-and-energy-calculations"><strong>5. Power and Energy Calculations</strong></h3>
+<ul>
+<li><strong>Power (P)</strong>: Rate of energy transfer. Measured in <strong>Watts (W)</strong>.<br>
+[
+P = V \times I
+]</li>
+<li><strong>Energy (E)</strong>: Total power used over time. Measured in <strong>Joules (J)</strong>.<br>
+[
+E = P \times t
+]</li>
+<li><strong>Electricity Bill Calculation</strong>:
+<ul>
+<li>Energy is measured in <strong>Kilowatt-hours (kWh)</strong>.</li>
+<li><strong>Cost = Units Consumed × Rate per kWh</strong>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="6-kirchhoffs-laws"><strong>6. Kirchhoff’s Laws</strong></h3>
+<h4 id="kirchhoffs-current-law-kcl"><strong>Kirchhoff’s Current Law (KCL)</strong></h4>
+<ul>
+<li><strong>Sum of currents entering a junction = Sum of currents leaving the junction</strong>.<br>
+[
+\sum I_{in} = \sum I_{out}
+]</li>
+</ul>
+<h4 id="kirchhoffs-voltage-law-kvl"><strong>Kirchhoff’s Voltage Law (KVL)</strong></h4>
+<ul>
+<li><strong>Sum of all voltages in a closed loop = 0</strong>.<br>
+[
+\sum V = 0
+]</li>
+</ul>
+<hr>
+<h3 id="7-si-units-of-work-power-and-energy"><strong>7. SI Units of Work, Power, and Energy</strong></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Quantity</th>
+          <th>Symbol</th>
+          <th>Unit Name</th>
+          <th>Unit Symbol</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Work</td>
+          <td>W</td>
+          <td>Joule</td>
+          <td>J</td>
+      </tr>
+      <tr>
+          <td>Power</td>
+          <td>P</td>
+          <td>Watt</td>
+          <td>W</td>
+      </tr>
+      <tr>
+          <td>Energy</td>
+          <td>E</td>
+          <td>Joule</td>
+          <td>J</td>
+      </tr>
+      <tr>
+          <td>Voltage</td>
+          <td>V</td>
+          <td>Volt</td>
+          <td>V</td>
+      </tr>
+      <tr>
+          <td>Current</td>
+          <td>I</td>
+          <td>Ampere</td>
+          <td>A</td>
+      </tr>
+      <tr>
+          <td>Resistance</td>
+          <td>R</td>
+          <td>Ohm</td>
+          <td>Ω</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="unit-2-single-phase-and-polyphase-ac-circuits"><strong>Unit 2: Single Phase and Polyphase A.C. Circuits</strong></h2>
+<h3 id="1-generation-of-single-phase-sinusoidal-ac-voltages"><strong>1. Generation of Single Phase Sinusoidal A.C. Voltages</strong></h3>
+<ul>
+<li><strong>Alternating Current (AC)</strong>: Current that varies sinusoidally over time.</li>
+<li><strong>Generated using rotating coils in a magnetic field</strong>.</li>
+<li><strong>AC Voltage Equation</strong>:<br>
+[
+v(t) = V_m \sin(\omega t)
+]
+where:
+<ul>
+<li>( V_m ) = Peak Voltage</li>
+<li>( \omega ) = Angular Frequency</li>
+<li>( t ) = Time</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="2-ac-quantities-and-phasor-representation"><strong>2. AC Quantities and Phasor Representation</strong></h3>
+<ul>
+<li><strong>Phasor</strong>: Represents AC quantities as rotating vectors in a complex plane.</li>
+<li><strong>Amplitude (Magnitude)</strong>: Peak value of voltage or current.</li>
+<li><strong>Phase Angle</strong>: Difference in phase between voltage and current.</li>
+</ul>
+<hr>
+<h3 id="3-pure-r-pure-l-and-pure-c-circuits"><strong>3. Pure R, Pure L, and Pure C Circuits</strong></h3>
+<h4 id="pure-resistive-circuit"><strong>Pure Resistive Circuit</strong></h4>
+<ul>
+<li><strong>Voltage and Current are in phase</strong>.</li>
+<li><strong>Power = ( P = V \times I )</strong>.</li>
+</ul>
+<h4 id="pure-inductive-circuit"><strong>Pure Inductive Circuit</strong></h4>
+<ul>
+<li><strong>Current lags voltage by 90°</strong>.</li>
+<li><strong>Power = ( P = 0 ) (purely reactive)</strong>.</li>
+</ul>
+<h4 id="pure-capacitive-circuit"><strong>Pure Capacitive Circuit</strong></h4>
+<ul>
+<li><strong>Current leads voltage by 90°</strong>.</li>
+<li><strong>Power = ( P = 0 ) (purely reactive)</strong>.</li>
+</ul>
+<hr>
+<h3 id="4-impedance-and-admittance"><strong>4. Impedance and Admittance</strong></h3>
+<ul>
+<li>
+<p><strong>Impedance (Z)</strong>: Total opposition in an AC circuit. Measured in <strong>Ohms (Ω)</strong>.<br>
+[
+Z = R + jX
+]
+where ( X ) is reactance.</p>
+</li>
+<li>
+<p><strong>Admittance (Y)</strong>: Reciprocal of impedance. Measured in <strong>Siemens (S)</strong>.<br>
+[
+Y = \frac{1}{Z}
+]</p>
+</li>
+</ul>
+<hr>
+<h3 id="5-active-reactive-apparent-power-and-power-factor"><strong>5. Active, Reactive, Apparent Power and Power Factor</strong></h3>
+<ul>
+<li><strong>Active Power (P)</strong>:<br>
+[
+P = V \times I \times \cos \phi
+]</li>
+<li><strong>Reactive Power (Q)</strong>:<br>
+[
+Q = V \times I \times \sin \phi
+]</li>
+<li><strong>Apparent Power (S)</strong>:<br>
+[
+S = V \times I
+]</li>
+<li><strong>Power Factor (PF)</strong>:<br>
+[
+PF = \cos \phi
+]
+<ul>
+<li><strong>PF close to 1</strong> → Efficient system.</li>
+<li><strong>PF close to 0</strong> → High reactive power, inefficient system.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="6-polyphase-ac-circuits"><strong>6. Polyphase A.C. Circuits</strong></h3>
+<h4 id="introduction-to-three-phase-supply"><strong>Introduction to Three-Phase Supply</strong></h4>
+<ul>
+<li>Three-phase systems are used for <strong>efficient power transmission</strong>.</li>
+<li><strong>More power with less conductor material compared to single-phase</strong>.</li>
+</ul>
+<h4 id="balanced-three-phase-system"><strong>Balanced Three-Phase System</strong></h4>
+<ul>
+<li><strong>Equal phase voltages</strong> and <strong>120° phase difference</strong>.</li>
+</ul>
+<h4 id="relation-between-line-and-phase-quantities"><strong>Relation between Line and Phase Quantities</strong></h4>
+<ul>
+<li>
+<p><strong>For Star Connection</strong>:<br>
+[
+V_{L} = \sqrt{3} V_{ph}, \quad I_L = I_{ph}
+]</p>
+</li>
+<li>
+<p><strong>For Delta Connection</strong>:<br>
+[
+V_L = V_{ph}, \quad I_L = \sqrt{3} I_{ph}
+]</p>
+</li>
+</ul>
+<hr>
+<h3 id="7-power-in-three-phase-circuits"><strong>7. Power in Three-Phase Circuits</strong></h3>
+<h4 id="star-connection"><strong>Star Connection</strong></h4>
+<p>[
+P = \sqrt{3} V_L I_L \cos \phi
+]</p>
+<h4 id="delta-connection"><strong>Delta Connection</strong></h4>
+<p>[
+P = \sqrt{3} V_L I_L \cos \phi
+]</p>
+<ul>
+<li><strong>Power is same for both Star and Delta connections</strong>.</li>
+</ul>
+<hr>
+<h2 id="simulations--verifications"><strong>Simulations &amp; Verifications</strong></h2>
+<ul>
+<li><strong>Verify Power Factor for RL and RC Circuit using Multisim</strong>.</li>
+<li><strong>Verify Line and Phase Values for Star &amp; Delta Connection using Simulation</strong>.</li>
+</ul>
+<hr>
+<h3 id="end-of-presentation"><strong>End of Presentation</strong></h3>
+]]></content></item><item><title>Controllers and Operations - 1</title><link>https://atharvap8.github.io/posts/2025/01/controllers-and-operations-1/</link><pubDate>Tue, 14 Jan 2025 05:34:36 +0530</pubDate><guid>https://atharvap8.github.io/posts/2025/01/controllers-and-operations-1/</guid><description>&lt;h2 id="introduction-to-microprocessors-and-microcontrollers">Introduction to Microprocessors and Microcontrollers&lt;/h2>
+&lt;hr>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/uCvsuP.png">
+&lt;/figure>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;strong>Feature&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>Microprocessor&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>Microcontroller&lt;/strong>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;strong>Definition&lt;/strong>&lt;/td>
+&lt;td>General-purpose processor&lt;/td>
+&lt;td>Dedicated to specific tasks&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Memory&lt;/strong>&lt;/td>
+&lt;td>External memory required&lt;/td>
+&lt;td>Includes internal RAM, ROM, and I/O ports&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Application&lt;/strong>&lt;/td>
+&lt;td>Computers, laptops, high-performance devices&lt;/td>
+&lt;td>Embedded systems (IoT, appliances, etc.)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Cost&lt;/strong>&lt;/td>
+&lt;td>More expensive&lt;/td>
+&lt;td>Cost-effective for specific tasks&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Examples&lt;/strong>&lt;/td>
+&lt;td>Intel 8086, Pentium, Core i5, i7, AMD Ryzen&lt;/td>
+&lt;td>8051, AVR, PIC, ARM, ESP8266, ESP32, etc.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;ul>
+&lt;li>&lt;strong>Q: Where are these examples present in day-to-day usage?&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/uC-types.jpg">
+&lt;/figure>
+&lt;hr>
+&lt;h3 id="applications-of-microcontrollers">Applications of Microcontrollers&lt;/h3>
+&lt;h3 id="common-applications">Common Applications&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Consumer Electronics&lt;/strong>: TVs, washing machines, microwave ovens&lt;/li>
+&lt;li>&lt;strong>Automotive&lt;/strong>: Engine control units, airbags, ABS&lt;/li>
+&lt;li>&lt;strong>Industrial Automation&lt;/strong>: Process controllers, robotics&lt;/li>
+&lt;li>&lt;strong>IoT Devices&lt;/strong>: Smart home systems, wearables&lt;/li>
+&lt;li>&lt;strong>Medical Devices&lt;/strong>: ECG machines, glucose monitors&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="features-of-8051-microcontroller">Features of 8051 Microcontroller&lt;/h3>
+&lt;ul>
+&lt;li>8-bit microcontroller&lt;/li>
+&lt;li>4 KB ROM (programmable memory)&lt;/li>
+&lt;li>128 bytes RAM&lt;/li>
+&lt;li>32 I/O pins (organized into 4 ports)&lt;/li>
+&lt;li>Two 16-bit timers/counters&lt;/li>
+&lt;li>Full-duplex UART for serial communication
+Q: What is Full-duplex?&lt;/li>
+&lt;li>Interrupt system with 5 sources&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="architecture-of-8051">Architecture of 8051&lt;/h3>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/8051-arch.png">
+&lt;/figure>
+&lt;h4 id="key-components">&lt;strong>Key Components&lt;/strong>&lt;/h4>
+&lt;ol>
+&lt;li>&lt;strong>ALU (Arithmetic Logic Unit)&lt;/strong>: Performs arithmetic and logical operations.&lt;/li>
+&lt;li>&lt;strong>Registers&lt;/strong>: Accumulator (A), B register, general-purpose registers.&lt;/li>
+&lt;li>&lt;strong>Memory&lt;/strong>:
+&lt;ul>
+&lt;li>Program memory (ROM)&lt;/li>
+&lt;li>Data memory (RAM)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>I/O Ports&lt;/strong>: 4 bidirectional 8-bit ports.&lt;/li>
+&lt;li>&lt;strong>Timers/Counters&lt;/strong>: Two 16-bit timers.&lt;/li>
+&lt;li>&lt;strong>Serial Communication&lt;/strong>: UART.&lt;/li>
+&lt;li>&lt;strong>Interrupts&lt;/strong>: 5 interrupt sources, including external and timer interrupts.&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h3 id="pin-diagram-of-8051">Pin Diagram of 8051&lt;/h3>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/8051-pd.png">
+&lt;/figure>
+&lt;ol>
+&lt;li>&lt;strong>Port P0 (Pins 32-39)&lt;/strong>: Multiplexed as data and address bus.&lt;/li>
+&lt;li>&lt;strong>Port P1 (Pins 1-8)&lt;/strong>: General-purpose I/O.&lt;/li>
+&lt;li>&lt;strong>Port P2 (Pins 21-28)&lt;/strong>: High-order address bus in external memory interfacing.&lt;/li>
+&lt;li>&lt;strong>Port P3 (Pins 10-17)&lt;/strong>: Dual-purpose (I/O + special functions like serial input/output).&lt;/li>
+&lt;li>&lt;strong>Other Pins&lt;/strong>:
+&lt;ul>
+&lt;li>&lt;strong>Vcc (Pin 40)&lt;/strong>: +5V supply&lt;/li>
+&lt;li>&lt;strong>GND (Pin 20)&lt;/strong>: Ground&lt;/li>
+&lt;li>&lt;strong>RST (Pin 9)&lt;/strong>: Reset input&lt;/li>
+&lt;li>&lt;strong>EA (Pin 31)&lt;/strong>: External Access enable&lt;/li>
+&lt;li>&lt;strong>ALE (Pin 30)&lt;/strong>: Address Latch Enable&lt;/li>
+&lt;li>&lt;strong>PSEN (Pin 29)&lt;/strong>: Program Store Enable&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h3 id="memory-organization-of-8051">Memory Organization of 8051&lt;/h3>
+&lt;h4 id="internal-memory">&lt;strong>Internal Memory&lt;/strong>&lt;/h4>
+&lt;ol>
+&lt;li>&lt;strong>RAM&lt;/strong>:
+&lt;ul>
+&lt;li>128 bytes divided into:
+&lt;ul>
+&lt;li>32 bytes: General-purpose registers (R0 to R7 for 4 banks).&lt;/li>
+&lt;li>16 bytes: Bit-addressable memory.&lt;/li>
+&lt;li>80 bytes: General-purpose memory.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>SFRs&lt;/strong>: Control I/O, timers, and serial communication.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>ROM&lt;/strong>:
+&lt;ul>
+&lt;li>4 KB for program storage.&lt;/li>
+&lt;li>Address range: 0000H - 0FFFH.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="external-memory">&lt;strong>External Memory&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>Supports up to 64 KB of program memory and 64 KB of data memory.&lt;/li>
+&lt;li>Uses Port 0 and Port 2 for data and address buses.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="interrupt-structure-of-8051">Interrupt Structure of 8051&lt;/h3>
+&lt;h4 id="features-of-8051-interrupt-system">&lt;strong>Features of 8051 Interrupt System&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>5 interrupt sources:
+&lt;ol>
+&lt;li>&lt;strong>External Interrupt 0 (INT0)&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Timer 0 Overflow&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>External Interrupt 1 (INT1)&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Timer 1 Overflow&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Serial Communication Interrupt&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>&lt;strong>Interrupt Priority Levels&lt;/strong>:
+&lt;ul>
+&lt;li>Low priority&lt;/li>
+&lt;li>High priority (overrides low-priority interrupts)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>IE (Interrupt Enable) Register&lt;/strong>:
+&lt;ul>
+&lt;li>Enables or disables specific interrupts.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>IP (Interrupt Priority) Register&lt;/strong>:
+&lt;ul>
+&lt;li>Sets priority levels for interrupts.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="interrupt-execution">&lt;strong>Interrupt Execution&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>When an interrupt occurs, the microcontroller:
+&lt;ol>
+&lt;li>Suspends the current task.&lt;/li>
+&lt;li>Jumps to the corresponding Interrupt Service Routine (ISR).&lt;/li>
+&lt;li>Resumes the main program after ISR execution.&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="summary">Summary&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Microprocessor vs Microcontroller&lt;/strong>: Microcontrollers are specialized for embedded systems.&lt;/li>
+&lt;li>&lt;strong>8051 Features&lt;/strong>: 8-bit architecture, 4 KB ROM, 128 bytes RAM, and 32 I/O pins.&lt;/li>
+&lt;li>&lt;strong>Applications&lt;/strong>: Widely used in IoT, automation, and consumer electronics.&lt;/li>
+&lt;li>&lt;strong>8051 Architecture&lt;/strong>: Integrated ALU, memory, timers, and serial ports.&lt;/li>
+&lt;li>&lt;strong>Pin Diagram and Memory&lt;/strong>: Essential for hardware interfacing and program execution.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="questions-and-discussion">Questions and Discussion&lt;/h3>
+&lt;ul>
+&lt;li>2 doubts from each (minimum)&lt;/li>
+&lt;li>In 1 line, tell what did you understood from this presentation.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="references">References:&lt;/h3>
+&lt;p>&lt;a href="https://www.tutorialspoint.com/microprocessor/microcontrollers_8051_architecture.htm">https://www.tutorialspoint.com/microprocessor/microcontrollers_8051_architecture.htm&lt;/a>&lt;/p></description><content type="html"><![CDATA[<h2 id="introduction-to-microprocessors-and-microcontrollers">Introduction to Microprocessors and Microcontrollers</h2>
+<hr>
+<figure><img src="/img/uCvsuP.png">
+</figure>
+
+<table>
+  <thead>
+      <tr>
+          <th><strong>Feature</strong></th>
+          <th><strong>Microprocessor</strong></th>
+          <th><strong>Microcontroller</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Definition</strong></td>
+          <td>General-purpose processor</td>
+          <td>Dedicated to specific tasks</td>
+      </tr>
+      <tr>
+          <td><strong>Memory</strong></td>
+          <td>External memory required</td>
+          <td>Includes internal RAM, ROM, and I/O ports</td>
+      </tr>
+      <tr>
+          <td><strong>Application</strong></td>
+          <td>Computers, laptops, high-performance devices</td>
+          <td>Embedded systems (IoT, appliances, etc.)</td>
+      </tr>
+      <tr>
+          <td><strong>Cost</strong></td>
+          <td>More expensive</td>
+          <td>Cost-effective for specific tasks</td>
+      </tr>
+      <tr>
+          <td><strong>Examples</strong></td>
+          <td>Intel 8086, Pentium, Core i5, i7, AMD Ryzen</td>
+          <td>8051, AVR, PIC, ARM, ESP8266, ESP32, etc.</td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li><strong>Q: Where are these examples present in day-to-day usage?</strong></li>
+</ul>
+<figure><img src="/img/uC-types.jpg">
+</figure>
+
+<hr>
+<h3 id="applications-of-microcontrollers">Applications of Microcontrollers</h3>
+<h3 id="common-applications">Common Applications</h3>
+<ul>
+<li><strong>Consumer Electronics</strong>: TVs, washing machines, microwave ovens</li>
+<li><strong>Automotive</strong>: Engine control units, airbags, ABS</li>
+<li><strong>Industrial Automation</strong>: Process controllers, robotics</li>
+<li><strong>IoT Devices</strong>: Smart home systems, wearables</li>
+<li><strong>Medical Devices</strong>: ECG machines, glucose monitors</li>
+</ul>
+<hr>
+<h3 id="features-of-8051-microcontroller">Features of 8051 Microcontroller</h3>
+<ul>
+<li>8-bit microcontroller</li>
+<li>4 KB ROM (programmable memory)</li>
+<li>128 bytes RAM</li>
+<li>32 I/O pins (organized into 4 ports)</li>
+<li>Two 16-bit timers/counters</li>
+<li>Full-duplex UART for serial communication
+Q: What is Full-duplex?</li>
+<li>Interrupt system with 5 sources</li>
+</ul>
+<hr>
+<h3 id="architecture-of-8051">Architecture of 8051</h3>
+<figure><img src="/img/8051-arch.png">
+</figure>
+
+<h4 id="key-components"><strong>Key Components</strong></h4>
+<ol>
+<li><strong>ALU (Arithmetic Logic Unit)</strong>: Performs arithmetic and logical operations.</li>
+<li><strong>Registers</strong>: Accumulator (A), B register, general-purpose registers.</li>
+<li><strong>Memory</strong>:
+<ul>
+<li>Program memory (ROM)</li>
+<li>Data memory (RAM)</li>
+</ul>
+</li>
+<li><strong>I/O Ports</strong>: 4 bidirectional 8-bit ports.</li>
+<li><strong>Timers/Counters</strong>: Two 16-bit timers.</li>
+<li><strong>Serial Communication</strong>: UART.</li>
+<li><strong>Interrupts</strong>: 5 interrupt sources, including external and timer interrupts.</li>
+</ol>
+<hr>
+<h3 id="pin-diagram-of-8051">Pin Diagram of 8051</h3>
+<figure><img src="/img/8051-pd.png">
+</figure>
+
+<ol>
+<li><strong>Port P0 (Pins 32-39)</strong>: Multiplexed as data and address bus.</li>
+<li><strong>Port P1 (Pins 1-8)</strong>: General-purpose I/O.</li>
+<li><strong>Port P2 (Pins 21-28)</strong>: High-order address bus in external memory interfacing.</li>
+<li><strong>Port P3 (Pins 10-17)</strong>: Dual-purpose (I/O + special functions like serial input/output).</li>
+<li><strong>Other Pins</strong>:
+<ul>
+<li><strong>Vcc (Pin 40)</strong>: +5V supply</li>
+<li><strong>GND (Pin 20)</strong>: Ground</li>
+<li><strong>RST (Pin 9)</strong>: Reset input</li>
+<li><strong>EA (Pin 31)</strong>: External Access enable</li>
+<li><strong>ALE (Pin 30)</strong>: Address Latch Enable</li>
+<li><strong>PSEN (Pin 29)</strong>: Program Store Enable</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="memory-organization-of-8051">Memory Organization of 8051</h3>
+<h4 id="internal-memory"><strong>Internal Memory</strong></h4>
+<ol>
+<li><strong>RAM</strong>:
+<ul>
+<li>128 bytes divided into:
+<ul>
+<li>32 bytes: General-purpose registers (R0 to R7 for 4 banks).</li>
+<li>16 bytes: Bit-addressable memory.</li>
+<li>80 bytes: General-purpose memory.</li>
+</ul>
+</li>
+<li><strong>SFRs</strong>: Control I/O, timers, and serial communication.</li>
+</ul>
+</li>
+<li><strong>ROM</strong>:
+<ul>
+<li>4 KB for program storage.</li>
+<li>Address range: 0000H - 0FFFH.</li>
+</ul>
+</li>
+</ol>
+<h4 id="external-memory"><strong>External Memory</strong></h4>
+<ul>
+<li>Supports up to 64 KB of program memory and 64 KB of data memory.</li>
+<li>Uses Port 0 and Port 2 for data and address buses.</li>
+</ul>
+<hr>
+<h3 id="interrupt-structure-of-8051">Interrupt Structure of 8051</h3>
+<h4 id="features-of-8051-interrupt-system"><strong>Features of 8051 Interrupt System</strong></h4>
+<ul>
+<li>5 interrupt sources:
+<ol>
+<li><strong>External Interrupt 0 (INT0)</strong></li>
+<li><strong>Timer 0 Overflow</strong></li>
+<li><strong>External Interrupt 1 (INT1)</strong></li>
+<li><strong>Timer 1 Overflow</strong></li>
+<li><strong>Serial Communication Interrupt</strong></li>
+</ol>
+</li>
+<li><strong>Interrupt Priority Levels</strong>:
+<ul>
+<li>Low priority</li>
+<li>High priority (overrides low-priority interrupts)</li>
+</ul>
+</li>
+<li><strong>IE (Interrupt Enable) Register</strong>:
+<ul>
+<li>Enables or disables specific interrupts.</li>
+</ul>
+</li>
+<li><strong>IP (Interrupt Priority) Register</strong>:
+<ul>
+<li>Sets priority levels for interrupts.</li>
+</ul>
+</li>
+</ul>
+<h4 id="interrupt-execution"><strong>Interrupt Execution</strong></h4>
+<ul>
+<li>When an interrupt occurs, the microcontroller:
+<ol>
+<li>Suspends the current task.</li>
+<li>Jumps to the corresponding Interrupt Service Routine (ISR).</li>
+<li>Resumes the main program after ISR execution.</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h3 id="summary">Summary</h3>
+<ul>
+<li><strong>Microprocessor vs Microcontroller</strong>: Microcontrollers are specialized for embedded systems.</li>
+<li><strong>8051 Features</strong>: 8-bit architecture, 4 KB ROM, 128 bytes RAM, and 32 I/O pins.</li>
+<li><strong>Applications</strong>: Widely used in IoT, automation, and consumer electronics.</li>
+<li><strong>8051 Architecture</strong>: Integrated ALU, memory, timers, and serial ports.</li>
+<li><strong>Pin Diagram and Memory</strong>: Essential for hardware interfacing and program execution.</li>
+</ul>
+<hr>
+<h3 id="questions-and-discussion">Questions and Discussion</h3>
+<ul>
+<li>2 doubts from each (minimum)</li>
+<li>In 1 line, tell what did you understood from this presentation.</li>
+</ul>
+<hr>
+<h3 id="references">References:</h3>
+<p><a href="https://www.tutorialspoint.com/microprocessor/microcontrollers_8051_architecture.htm">https://www.tutorialspoint.com/microprocessor/microcontrollers_8051_architecture.htm</a></p>
+<p><a href="https://www.geeksforgeeks.org/whats-difference-between-microcontoller-%C2%B5c-and-microprocessor-%C2%B5p/">https://www.geeksforgeeks.org/whats-difference-between-microcontoller-%C2%B5c-and-microprocessor-%C2%B5p/</a></p>
+<p><a href="https://www.geeksforgeeks.org/microprocessor-tutorials/">https://www.geeksforgeeks.org/microprocessor-tutorials/</a></p>
+]]></content></item><item><title>Revision</title><link>https://atharvap8.github.io/posts/2024/11/revision/</link><pubDate>Sun, 24 Nov 2024 00:27:35 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/11/revision/</guid><description>&lt;h2 id="fundamentals-of-electronics-and-components">&lt;strong>Fundamentals of Electronics and Components&lt;/strong>&lt;/h2>
+&lt;hr>
+&lt;h3 id="1-introduction-to-electronics">&lt;strong>1: Introduction to Electronics&lt;/strong>&lt;/h3>
+&lt;p>&lt;strong>Description:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Electronics involves the study and application of electrical components to control the flow of electricity.&lt;/li>
+&lt;li>Fundamental concepts include &lt;strong>voltage (V)&lt;/strong>, &lt;strong>current (I)&lt;/strong>, and &lt;strong>resistance (R)&lt;/strong>, governed by Ohm&amp;rsquo;s Law: ( V = IR ).&lt;/li>
+&lt;li>Statement: The voltage across a conductor is directly proportional to the current flowing thru it, and inverse the resistance of the conductor itself.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Key Concepts:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Voltage&lt;/strong>: The potential difference driving current in a circuit.&lt;/li>
+&lt;li>&lt;strong>Current&lt;/strong>: The flow of electric charge.&lt;/li>
+&lt;li>&lt;strong>Resistance&lt;/strong>: Opposition to current flow.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Questions:&lt;/strong>&lt;/p></description><content type="html"><![CDATA[<h2 id="fundamentals-of-electronics-and-components"><strong>Fundamentals of Electronics and Components</strong></h2>
+<hr>
+<h3 id="1-introduction-to-electronics"><strong>1: Introduction to Electronics</strong></h3>
+<p><strong>Description:</strong></p>
+<ul>
+<li>Electronics involves the study and application of electrical components to control the flow of electricity.</li>
+<li>Fundamental concepts include <strong>voltage (V)</strong>, <strong>current (I)</strong>, and <strong>resistance (R)</strong>, governed by Ohm&rsquo;s Law: ( V = IR ).</li>
+<li>Statement: The voltage across a conductor is directly proportional to the current flowing thru it, and inverse the resistance of the conductor itself.</li>
+</ul>
+<p><strong>Key Concepts:</strong></p>
+<ul>
+<li><strong>Voltage</strong>: The potential difference driving current in a circuit.</li>
+<li><strong>Current</strong>: The flow of electric charge.</li>
+<li><strong>Resistance</strong>: Opposition to current flow.</li>
+</ul>
+<p><strong>Questions:</strong></p>
+<ol>
+<li>What is Ohm&rsquo;s Law, and how is it used in basic circuit analysis?</li>
+<li>What is the difference between series and parallel circuits in terms of current and voltage?
+Ans: In parallel circuit, voltage across all components is same, but current is different.
+In Series circuit, voltage across all the components is different, but current is same.</li>
+<li>Explain the role of a breadboard in circuit design and testing.</li>
+<li>Why does total resistance decrease in parallel circuits?</li>
+</ol>
+<hr>
+<h3 id="2-understanding-components"><strong>2: Understanding Components</strong></h3>
+<p><figure><img src="/img/resistor.gif">
+</figure>
+
+<figure><img src="/img/capacitor.gif">
+</figure>
+
+<figure><img src="/img/hwr.gif">
+</figure>
+</p>
+<p><strong>Description:</strong></p>
+<ul>
+<li>Electronic circuits consist of <strong>resistors</strong>, <strong>capacitors</strong>, <strong>diodes</strong>, and other fundamental components.</li>
+<li>Each component has a specific role: resistors limit current, capacitors store charge, and diodes allow current flow in one direction.</li>
+<li>Multimeters are essential for testing these components&rsquo; values and verifying their functionality.</li>
+</ul>
+<p><strong>Key Concepts:</strong></p>
+<ul>
+<li><strong>Resistor</strong>: Controls the flow of current.</li>
+<li><strong>Capacitor</strong>: Stores energy in an electric field.</li>
+<li><strong>Diode</strong>: Acts as a one-way valve for current.</li>
+</ul>
+<p><strong>Questions:</strong></p>
+<ol>
+<li>How do you use a multimeter to measure resistance, capacitance, and diode functionality?</li>
+<li>Describe the significance of resistors in limiting current in circuits.</li>
+<li>What is diode Forward bias and reverse bias?</li>
+<li>What will happen if positive is connected to diode negative, and vice versa?</li>
+</ol>
+<hr>
+<h3 id="3-transistors-and-diodes"><strong>3: Transistors and Diodes</strong></h3>
+<figure><img src="/img/taas.jpg">
+</figure>
+
+<p><strong>Description:</strong></p>
+<ul>
+<li><strong>Transistors</strong>: Semiconductors used for switching and amplification in circuits.</li>
+<li><strong>Diodes</strong>: Used in rectifier circuits to convert AC to DC power.</li>
+<li>Practical applications include building switching circuits and simple rectifiers.</li>
+</ul>
+<p><strong>Key Concepts:</strong>
+<figure><img src="/img/transistor-types.png">
+</figure>
+</p>
+<ul>
+<li><strong>NPN and PNP Transistors</strong>: Types of bipolar junction transistors (BJTs).</li>
+<li><strong>Rectifier Circuits</strong>: Convert AC power into pulsating DC.</li>
+<li><strong>Switching Circuits</strong>: Enable or disable parts of a circuit based on input signals.</li>
+</ul>
+<p><strong>Questions:</strong></p>
+<ol>
+<li>What is the difference between an NPN and a PNP transistor?</li>
+<li>How does a diode function in a rectifier circuit?</li>
+<li>Explain the concept of transistor amplification.</li>
+<li>How to use transistor as a switch?</li>
+</ol>
+<hr>
+<h3 id="4-capacitors-and-inductors"><strong>4: Capacitors and Inductors</strong></h3>
+<p><figure><img src="/img/capacitor.gif">
+</figure>
+
+<figure><img src="/img/inductor.gif">
+</figure>
+</p>
+<p><strong>Description:</strong></p>
+<ul>
+<li>Capacitors and inductors are passive components essential for <strong>filtering</strong> and <strong>timing applications</strong>.</li>
+<li>Capacitors block DC while passing AC, while inductors do the opposite.</li>
+<li>Practical tasks involve building RC (resistor-capacitor) and LC (inductor-capacitor) circuits to analyze their effects.</li>
+</ul>
+<p><strong>Key Concepts:</strong></p>
+<ul>
+<li><strong>RC Circuits</strong>: Used for filtering and timing applications.</li>
+<li><strong>LC Circuits</strong>: Produce oscillations in resonant circuits.</li>
+<li><strong>Filtering</strong>: Removing unwanted frequencies from signals.</li>
+</ul>
+<p><strong>Questions:</strong></p>
+<ol>
+<li>What is the role of capacitors in filtering applications?</li>
+<li>How do RC circuits create time delays in circuits?</li>
+<li>Explain how inductors behave differently in DC and AC circuits.</li>
+<li>What is resonance in an LC circuit, and where is it applied?</li>
+</ol>
+<hr>
+<h3 id="5-potentiometers-and-variable-components"><strong>5: Potentiometers and Variable Components</strong></h3>
+<p><img src="https://i.pinimg.com/736x/fa/b5/e0/fab5e0b7a7aa6028ffb29febc00b55d6.jpg" alt="Potentiometer"></p>
+<p><strong>Description:</strong></p>
+<ul>
+<li><strong>Potentiometers</strong>: Variable resistors used to control voltage or current.</li>
+<li>Common applications include use in <strong>voltage divider circuits</strong> and adjustable resistance in devices like volume controls.</li>
+<li>Practical work focuses on adjusting circuit parameters by changing resistance.</li>
+</ul>
+<p><strong>Key Concepts:</strong></p>
+<ul>
+<li><strong>Voltage Divider</strong>: A circuit that divides input voltage into smaller parts.</li>
+<li><strong>Adjustable Resistance</strong>: Adjusts current or voltage levels.</li>
+</ul>
+<p><strong>Questions:</strong></p>
+<ol>
+<li>How does a potentiometer function in a voltage divider circuit?</li>
+<li>What are the practical uses of variable resistors in electronics?</li>
+<li>Explain the impact of increasing the resistance in a potentiometer on circuit behavior.</li>
+<li>How does a potentiometer differ from a rheostat?</li>
+</ol>
+<hr>
+<h3 id="6-introduction-to-integrated-circuits-ics"><strong>6: Introduction to Integrated Circuits (ICs)</strong></h3>
+<figure><img src="/img/first-ic.jpg">
+</figure>
+
+<p><strong>Description:</strong></p>
+<ul>
+<li>Integrated circuits (ICs) are compact packages containing multiple electronic components such as transistors, resistors, and capacitors.</li>
+<li>Example: <strong>555 timer IC</strong> used in generating signals like pulses and oscillations.</li>
+<li>Practical applications include using ICs for blinkers, tone generators, and other basic tasks.</li>
+</ul>
+<p><strong>Key Concepts:</strong></p>
+<ul>
+<li><strong>555 Timer IC</strong>: A versatile chip used for timing, pulse generation, and oscillation.</li>
+<li><strong>Oscillation Circuits</strong>: Generate periodic signals.</li>
+<li><strong>Signal Generation</strong>: Producing waveforms like square waves.</li>
+</ul>
+<p><strong>Questions:</strong></p>
+<ol>
+<li>What are the primary functions of the 555 timer IC in electronics?</li>
+<li>Describe the internal structure of an integrated circuit.</li>
+<li>How are ICs advantageous compared to discrete component circuits?</li>
+<li>Explain how a 555 timer is used to create a square wave oscillator.</li>
+</ol>
+<hr>
+<h3 id="7-mosfets-metal-oxide-semiconductor-field-effect-transistor"><strong>7: MOSFETs (Metal Oxide Semiconductor Field Effect Transistor)</strong></h3>
+<figure><img src="/img/mosfet-structure.jpg">
+</figure>
+
+<p><strong>Description:</strong></p>
+<ul>
+<li><strong>MOSFETs</strong>: Semiconductors devices which are used to control high power devices.</li>
+<li>MOSFETs have different types, as shown in the image.</li>
+</ul>
+<p><strong>Key Concepts:</strong></p>
+<ul>
+<li><strong>Types</strong>: Types of MOSFETs (N channel , P channel)</li>
+<li><strong>Kinds</strong>: Enhancement Mode, Depletion Mode</li>
+</ul>
+<p><strong>Questions:</strong></p>
+<ol>
+<li>What is the difference between an N channel and P channel mosfet?</li>
+<li>How does a mosfet work as a switch?</li>
+<li>Explain mosfet selection.</li>
+<li>How to use mosfet in certain conditions.</li>
+</ol>
+<hr>
+<h1 id="end-of-presentation"><strong>End of Presentation</strong></h1>
+<h1 id="hehe-thank-you-guys">hehe, thank you guys</h1>
+]]></content></item><item><title>Study of MOSFETs</title><link>https://atharvap8.github.io/posts/2024/10/study-of-mosfets/</link><pubDate>Sun, 27 Oct 2024 09:43:22 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/10/study-of-mosfets/</guid><description>&lt;h2 id="mosfet---metal-oxide-semiconductor-field-effect-transistor">MOSFET - Metal-Oxide-Semiconductor Field-Effect Transistor&lt;/h2>
+&lt;hr>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>&lt;em>The MOSFET is a crucial semiconductor device widely used for switching and amplifying electronic signals. Known for its efficiency, speed, and small size, it is a primary building block of modern electronics, forming the foundation for integrated circuits in everything from computers to communication devices.&lt;/em>&lt;/p>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/MOSFET-kinds.jpg">
+&lt;/figure>
+&lt;hr>
+&lt;h2 id="brief-history">Brief History&lt;/h2>
+&lt;p>&lt;em>The first MOSFET was developed in 1959 by engineers &lt;strong>Mohamed Atalla&lt;/strong> and &lt;strong>Dawon Kahng&lt;/strong> at Bell Labs. This innovation revolutionized the field of electronics, as it allowed for much smaller, faster, and more efficient circuits compared to previous technologies like bipolar junction transistors (BJTs).&lt;/em>&lt;/p></description><content type="html"><![CDATA[<h2 id="mosfet---metal-oxide-semiconductor-field-effect-transistor">MOSFET - Metal-Oxide-Semiconductor Field-Effect Transistor</h2>
+<hr>
+<h2 id="introduction">Introduction</h2>
+<p><em>The MOSFET is a crucial semiconductor device widely used for switching and amplifying electronic signals. Known for its efficiency, speed, and small size, it is a primary building block of modern electronics, forming the foundation for integrated circuits in everything from computers to communication devices.</em></p>
+<figure><img src="/img/MOSFET-kinds.jpg">
+</figure>
+
+<hr>
+<h2 id="brief-history">Brief History</h2>
+<p><em>The first MOSFET was developed in 1959 by engineers <strong>Mohamed Atalla</strong> and <strong>Dawon Kahng</strong> at Bell Labs. This innovation revolutionized the field of electronics, as it allowed for much smaller, faster, and more efficient circuits compared to previous technologies like bipolar junction transistors (BJTs).</em></p>
+<figure><img src="/img/MOSFET-firstprototype.jpg">
+</figure>
+
+<hr>
+<h2 id="types-of-mosfets">Types of MOSFETs</h2>
+<p><em>MOSFETs are broadly categorized into different types based on their structure and operation mode:</em></p>
+<ol>
+<li><strong>Depletion-mode MOSFET</strong>:
+<ul>
+<li><strong>N-channel</strong>: <em>Operates with a negative gate voltage.</em></li>
+<li><strong>P-channel</strong>: <em>Operates with a positive gate voltage.</em></li>
+</ul>
+</li>
+<li><strong>Enhancement-mode MOSFET</strong> (more common):
+<ul>
+<li><strong>N-channel</strong>: <em>Requires a positive gate voltage for conduction.</em></li>
+<li><strong>P-channel</strong>: <em>Requires a negative gate voltage for conduction.</em></li>
+</ul>
+</li>
+</ol>
+<figure><img src="/img/mosfet-types.png">
+</figure>
+
+<p><em>Each type has unique characteristics that make it suitable for specific applications, from digital circuits to power electronics.</em></p>
+<p><em>The symbol of MOSFET used in circuits:</em>
+<figure><img src="/img/mosfet-symbols.png">
+</figure>
+</p>
+<hr>
+<h2 id="theory-of-mosfet-working">Theory of MOSFET Working</h2>
+<p><em>The working of a MOSFET relies on the voltage applied to its gate terminal, which controls the conductivity between the drain and source terminals. Here’s a simplified breakdown:</em></p>
+<ul>
+<li><strong>Gate Terminal (G)</strong>: <em>The control input. A voltage applied here creates an electric field.</em></li>
+<li><strong>Drain Terminal (D)</strong>: <em>The output end where current exits.</em></li>
+<li><strong>Source Terminal (S)</strong>: <em>The input end where current enters.</em></li>
+<li><strong>Body Terminal (SS)</strong>: <em>Often connected to the source in most applications.</em></li>
+</ul>
+<figure><img src="/img/mosfet-structure.jpg">
+</figure>
+
+<p><em>When a voltage is applied to the gate, it creates an electric field that modulates the channel&rsquo;s conductivity between the drain and source, thus controlling the flow of electrons (in N-channel) or holes (in P-channel). In enhancement-mode MOSFETs, the channel is normally off until the gate voltage is applied, while depletion-mode MOSFETs allow current flow without any gate voltage.</em></p>
+<hr>
+<h2 id="example-circuit-of-mosfet-as-a-switch">Example Circuit of MOSFET as a Switch</h2>
+<p><em>Below is an example circuit where a MOSFET is used as a switch:</em>
+<em>In this circuit, when a positive voltage is applied to the gate, the MOSFET channel is activated, allowing current to flow from drain to source, allowing the motor to spin.</em></p>
+<figure><img src="/img/mosfet-as-switch.gif">
+</figure>
+
+<hr>
+<h2 id="real-life-applications-of-mosfets">Real-life Applications of MOSFETs</h2>
+<p><em>MOSFETs are used in numerous applications due to their versatility and efficiency:</em></p>
+<ul>
+<li><strong>Power Supplies</strong>: <em>MOSFETs are essential in power supply circuits for switching and regulation.</em></li>
+<li><strong>Audio Amplifiers</strong>: <em>MOSFETs are preferred in amplifiers due to their high input impedance and linearity.</em></li>
+<li><strong>Computing Devices</strong>: <em>Billions of MOSFETs are used in processors and memory circuits to perform logic operations.</em></li>
+<li><strong>Automotive Electronics</strong>: <em>MOSFETs control various functions such as ABS braking systems and fuel injectors in cars.</em></li>
+</ul>
+<figure><img src="/img/mosfet-real-app.jpg">
+</figure>
+
+<hr>
+<h2 id="advantages-vs-disadvantages-of-mosfets">Advantages vs. Disadvantages of MOSFETs</h2>
+<h3 id="advantages">Advantages</h3>
+<ul>
+<li><strong>High switching speed and efficiency.</strong></li>
+<li><strong>Low power consumption.</strong></li>
+<li><strong>High input impedance.</strong></li>
+<li><strong>Scalability for miniaturization.</strong></li>
+</ul>
+<h3 id="disadvantages">Disadvantages</h3>
+<ul>
+<li><strong>Susceptible to electrostatic discharge (ESD).</strong></li>
+<li><strong>Limited voltage ratings in smaller MOSFETs.</strong></li>
+<li><strong>Heat generation in high-power applications.</strong></li>
+</ul>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p><em>MOSFETs have become the backbone of modern electronics, from digital circuits to power management systems. Their efficiency, scalability, and versatility make them invaluable in both consumer electronics and industrial applications. As technology advances, MOSFETs continue to evolve, playing a crucial role in making devices more efficient and compact.</em></p>
+]]></content></item><item><title>Study of ICs</title><link>https://atharvap8.github.io/posts/2024/10/study-of-ics/</link><pubDate>Thu, 24 Oct 2024 00:26:51 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/10/study-of-ics/</guid><description>&lt;h2 id="introduction-to-integrated-circuits">Introduction to Integrated Circuits&lt;/h2>
+&lt;p>Integrated Circuits (ICs) are miniature electronic devices that contain multiple transistors, diodes, capacitors, and resistors integrated onto a single chip of semiconductor material, usually silicon. They are fundamental building blocks of modern electronics, drastically reducing size and improving the performance of electronic devices.&lt;/p>
+&lt;hr>
+&lt;h2 id="history">History&lt;/h2>
+&lt;p>The invention of the IC can be traced back to &lt;strong>Jack Kilby&lt;/strong> of Texas Instruments and &lt;strong>Robert Noyce&lt;/strong> of Fairchild Semiconductor. Kilby successfully demonstrated the first working IC in &lt;strong>1958&lt;/strong>, and Noyce made significant contributions to its practical development.&lt;br>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/first-ic.jpg">
+&lt;/figure>
+&lt;/p></description><content type="html"><![CDATA[<h2 id="introduction-to-integrated-circuits">Introduction to Integrated Circuits</h2>
+<p>Integrated Circuits (ICs) are miniature electronic devices that contain multiple transistors, diodes, capacitors, and resistors integrated onto a single chip of semiconductor material, usually silicon. They are fundamental building blocks of modern electronics, drastically reducing size and improving the performance of electronic devices.</p>
+<hr>
+<h2 id="history">History</h2>
+<p>The invention of the IC can be traced back to <strong>Jack Kilby</strong> of Texas Instruments and <strong>Robert Noyce</strong> of Fairchild Semiconductor. Kilby successfully demonstrated the first working IC in <strong>1958</strong>, and Noyce made significant contributions to its practical development.<br>
+<figure><img src="/img/first-ic.jpg">
+</figure>
+</p>
+<hr>
+<h2 id="types-of-ics">Types of ICs</h2>
+<p>ICs come in various types based on their functionality. Here are three commonly used types:</p>
+<ol>
+<li><strong>555 Timer IC</strong> – A versatile and widely used IC for timing applications.</li>
+<li><strong>LM317 Voltage Regulator</strong> – Adjustable voltage regulator IC.</li>
+<li><strong>LM741 Operational Amplifier</strong> – A general-purpose op-amp used in analog circuits.</li>
+</ol>
+<hr>
+<h3 id="555-timer-ic">555 Timer IC</h3>
+<figure><img src="/img/555-internal.png">
+</figure>
+
+<p>The <strong>555 Timer</strong> is one of the most popular ICs for generating time delays, oscillation, and pulse generation. It operates in three modes: monostable, astable, and bistable. The IC has <strong>8 pins</strong>:</p>
+<ul>
+<li><strong>Pin 1 (Ground)</strong>: Connected to the 0V or ground of the power supply.</li>
+<li><strong>Pin 2 (Trigger)</strong>: Activates the timer when the voltage drops below 1/3 of the supply voltage.</li>
+<li><strong>Pin 3 (Output)</strong>: Provides the output signal, either high or low, depending on the mode of operation.</li>
+<li><strong>Pin 4 (Reset)</strong>: Resets the timer when a low signal (0V) is applied to this pin.</li>
+<li><strong>Pin 5 (Control Voltage)</strong>: Modifies the threshold voltage; usually connected to ground through a capacitor for noise reduction.</li>
+<li><strong>Pin 6 (Threshold)</strong>: Monitors the voltage across the timing capacitor to determine when the output should be turned off.</li>
+<li><strong>Pin 7 (Discharge)</strong>: Discharges the timing capacitor when the output is low.</li>
+<li><strong>Pin 8 (VCC)</strong>: Connected to the positive power supply, typically between 4.5V and 15V.</li>
+</ul>
+<hr>
+<h3 id="application-1-blinker-circuit-using-555-timer">Application 1: Blinker Circuit using 555 Timer</h3>
+<h4 id="components-required">Components Required:</h4>
+<ul>
+<li><strong>555 Timer IC</strong></li>
+<li><strong>Resistors</strong>: 470Ω (R1, R2), 4.7kΩ (R3), 68kΩ (R4)</li>
+<li><strong>Capacitor</strong>: 10µF (C1), 100µF (C2)</li>
+<li><strong>LED</strong>: Red (D1), Blue (D2)</li>
+<li><strong>Power Supply</strong>: 5V Battery</li>
+<li><strong>Connecting wires and breadboard</strong></li>
+</ul>
+<h4 id="animated-image">Animated Image:</h4>
+<figure><img src="/img/555-blinker.gif">
+</figure>
+
+<hr>
+<h2 id="advantages-of-ics">Advantages of ICs</h2>
+<ul>
+<li><strong>Miniaturization</strong>: Drastically reduces the size of electronic circuits.</li>
+<li><strong>High Performance</strong>: ICs provide faster operation and increased functionality.</li>
+<li><strong>Cost-Effective</strong>: Mass production lowers costs significantly.</li>
+<li><strong>Reliability</strong>: Fewer soldered connections reduce the chances of failure.</li>
+</ul>
+<hr>
+<h2 id="disadvantages-of-ics">Disadvantages of ICs</h2>
+<ul>
+<li><strong>Limited Power Handling</strong>: ICs cannot handle very high power.</li>
+<li><strong>Heat Sensitivity</strong>: Excessive heat can damage the IC.</li>
+<li><strong>Fixed Configuration</strong>: Limited flexibility for making changes once fabricated.</li>
+</ul>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p>Integrated Circuits have revolutionized the electronics industry, allowing for the creation of more compact, efficient, and affordable devices. From simple timers like the 555 to complex microcontrollers, ICs are vital in nearly every aspect of modern technology. Despite their limitations, their benefits have made them indispensable in the development of electronic systems.</p>
+]]></content></item><item><title>Study of Potentiometers</title><link>https://atharvap8.github.io/posts/2024/10/study-of-potentiometers/</link><pubDate>Tue, 22 Oct 2024 00:26:51 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/10/study-of-potentiometers/</guid><description>&lt;h1 id="potentiometers-study-notes">Potentiometers: Study Notes&lt;/h1>
+&lt;h2 id="1-introduction-to-potentiometers">1. Introduction to Potentiometers&lt;/h2>
+&lt;p>A &lt;strong>potentiometer&lt;/strong> is a three-terminal resistor with a sliding or rotating contact that forms an adjustable voltage divider. The primary use of a potentiometer is to vary the resistance in a circuit without interrupting the flow of current. It is commonly used for adjusting electrical devices like volume controls on audio equipment.&lt;/p>
+&lt;h3 id="types-of-potentiometers">Types of Potentiometers:&lt;/h3>
+&lt;ol>
+&lt;li>&lt;strong>Rotary Potentiometer&lt;/strong>: Has a circular rotation for adjusting resistance.&lt;/li>
+&lt;li>&lt;strong>Linear Potentiometer&lt;/strong>: The slider moves in a straight line.&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="2-potentiometer-structure-and-working-principle">2. Potentiometer Structure and Working Principle&lt;/h2>
+&lt;p>A potentiometer has three main terminals:&lt;/p></description><content type="html"><![CDATA[<h1 id="potentiometers-study-notes">Potentiometers: Study Notes</h1>
+<h2 id="1-introduction-to-potentiometers">1. Introduction to Potentiometers</h2>
+<p>A <strong>potentiometer</strong> is a three-terminal resistor with a sliding or rotating contact that forms an adjustable voltage divider. The primary use of a potentiometer is to vary the resistance in a circuit without interrupting the flow of current. It is commonly used for adjusting electrical devices like volume controls on audio equipment.</p>
+<h3 id="types-of-potentiometers">Types of Potentiometers:</h3>
+<ol>
+<li><strong>Rotary Potentiometer</strong>: Has a circular rotation for adjusting resistance.</li>
+<li><strong>Linear Potentiometer</strong>: The slider moves in a straight line.</li>
+</ol>
+<hr>
+<h2 id="2-potentiometer-structure-and-working-principle">2. Potentiometer Structure and Working Principle</h2>
+<p>A potentiometer has three main terminals:</p>
+<ul>
+<li><strong>Terminal 1 (Fixed End)</strong>: Connected to one end of the resistive track.</li>
+<li><strong>Terminal 2 (Wiper)</strong>: A movable contact sliding over the resistive track.</li>
+<li><strong>Terminal 3 (Fixed End)</strong>: Connected to the other end of the resistive track.</li>
+</ul>
+<p>By rotating or sliding the wiper across the resistive material, the resistance between the wiper and each fixed end changes, effectively creating a variable resistor.</p>
+<h3 id="potentiometer-image">Potentiometer Image</h3>
+<p><img src="https://i.pinimg.com/736x/fa/b5/e0/fab5e0b7a7aa6028ffb29febc00b55d6.jpg" alt="Potentiometer"></p>
+<hr>
+<h2 id="3-basic-calculations">3. Basic Calculations</h2>
+<p>The total resistance of a potentiometer is represented as <strong>R</strong>. The voltage division that occurs across the potentiometer can be calculated using the following formula:</p>
+<p>[
+V_{out} = V_{in} \times \frac{R_2}{R_1 + R_2}
+]</p>
+<p>Where:</p>
+<ul>
+<li>( V_{in} ): Input voltage</li>
+<li>( V_{out} ): Output voltage from the wiper</li>
+<li>( R_1 ): Resistance from the fixed end to the wiper</li>
+<li>( R_2 ): Resistance from the wiper to the other fixed end</li>
+</ul>
+<p>For example, if ( R_1 = 5k\Omega ) and ( R_2 = 10k\Omega ), and the input voltage is ( 12V ), then:</p>
+<p>[
+V_{out} = 12V \times \frac{10k\Omega}{5k\Omega + 10k\Omega} = 8V
+]</p>
+<h3 id="internal-structure">Internal Structure</h3>
+<p>The following image shows the internal structure of a rotary potentiometer:
+<img src="https://www.watelectronics.com/wp-content/uploads/Potentiometer-Construction.jpg" alt="Internal Potentiometer"></p>
+<hr>
+<h2 id="4-practical-applications">4. Practical Applications</h2>
+<h3 id="41-volume-control-in-audio-equipment">4.1 Volume Control in Audio Equipment</h3>
+<p>Potentiometers are widely used in audio devices to adjust the volume. By changing the resistance, the output audio signal is modified, thus increasing or decreasing the volume.</p>
+<h3 id="42-dimmer-switches">4.2 Dimmer Switches</h3>
+<p>They are used in lighting systems to control the brightness of lights by varying the voltage supplied to the bulbs.</p>
+<h3 id="43-sensor-calibration">4.3 Sensor Calibration</h3>
+<p>In sensor circuits, potentiometers can be used for fine-tuning sensitivity or thresholds, making the sensors more accurate in different environmental conditions.</p>
+<hr>
+<h2 id="5-types-of-potentiometers">5. Types of Potentiometers</h2>
+<h3 id="51-linear-potentiometer">5.1 Linear Potentiometer</h3>
+<p>Linear potentiometers provide a resistance change that is directly proportional to the position of the wiper.</p>
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW6tInzHlHNqF53TDHLWVkq2BekbOpcoZbWw&amp;s" alt="Linear Potentiometer"></p>
+<h3 id="52-rotary-potentiometer">5.2 Rotary Potentiometer</h3>
+<p>These potentiometers have a rotary knob that adjusts the resistance.</p>
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMo9jO0PVSB61Wp8Jy0jKeDqe0F-Rh1QCSeg&amp;s" alt="Rotary Potentiometer"></p>
+<hr>
+<h2 id="6-advantages-and-limitations">6. Advantages and Limitations</h2>
+<h3 id="advantages">Advantages:</h3>
+<ul>
+<li>Simple design</li>
+<li>Inexpensive</li>
+<li>Easily adjustable resistance</li>
+</ul>
+<h3 id="limitations">Limitations:</h3>
+<ul>
+<li>Subject to wear and tear</li>
+<li>Limited precision compared to digital systems</li>
+<li>Mechanical movement can cause inaccuracies over time</li>
+</ul>
+<hr>
+<h2 id="7-conclusion">7. Conclusion</h2>
+<p>Potentiometers are versatile and commonly used components in various electronics projects and devices. Understanding their working principle, types, and applications allows for effective implementation in circuits ranging from audio systems to sensor calibration.</p>
+]]></content></item><item><title>Study of Resistors</title><link>https://atharvap8.github.io/posts/2023/01/study-of-resistors/</link><pubDate>Sun, 29 Jan 2023 05:13:36 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-resistors/</guid><description>&lt;h1 id="study-of-resistors">Study Of Resistors&lt;/h1>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/resistor.jpg">&lt;figcaption>
+&lt;h4>Basic Resistor&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h3 id="diagram-a-basic-resistor">Diagram: A basic resistor.&lt;/h3>
+&lt;h2 id="part-1-study-of-resistors">Part 1: Study of Resistors&lt;/h2>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/resistor.gif">&lt;figcaption>
+&lt;h4>Working of Resistor&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h3 id="aim">Aim&lt;/h3>
+&lt;p>The aim of this section is to provide a comprehensive understanding of resistors, their components, equipments, and types.&lt;/p>
+&lt;h3 id="components-list">Components List&lt;/h3>
+&lt;ol>
+&lt;li>Resistor&lt;/li>
+&lt;li>Multimeter&lt;/li>
+&lt;/ol>
+&lt;h3 id="equipments">Equipments&lt;/h3>
+&lt;ol>
+&lt;li>Power Supply&lt;/li>
+&lt;li>Breadboard&lt;/li>
+&lt;/ol>
+&lt;h3 id="types-of-resistors">Types Of Resistors&lt;/h3>
+&lt;ol>
+&lt;li>Fixed Resistors&lt;/li>
+&lt;li>Variable Resistors&lt;/li>
+&lt;/ol>
+&lt;h3 id="information-about-fixed-resistors">Information about Fixed Resistors&lt;/h3>
+&lt;p>Fixed resistors are electrical components that have a fixed value of resistance, meaning that their resistance does not change. This type of resistor is commonly used to limit the current flow in a circuit and to divide voltage.&lt;/p></description><content type="html"><![CDATA[<h1 id="study-of-resistors">Study Of Resistors</h1>
+<figure><img src="/img/resistor.jpg"><figcaption>
+      <h4>Basic Resistor</h4>
+    </figcaption>
+</figure>
+
+<h3 id="diagram-a-basic-resistor">Diagram: A basic resistor.</h3>
+<h2 id="part-1-study-of-resistors">Part 1: Study of Resistors</h2>
+<figure><img src="/img/resistor.gif"><figcaption>
+      <h4>Working of Resistor</h4>
+    </figcaption>
+</figure>
+
+<h3 id="aim">Aim</h3>
+<p>The aim of this section is to provide a comprehensive understanding of resistors, their components, equipments, and types.</p>
+<h3 id="components-list">Components List</h3>
+<ol>
+<li>Resistor</li>
+<li>Multimeter</li>
+</ol>
+<h3 id="equipments">Equipments</h3>
+<ol>
+<li>Power Supply</li>
+<li>Breadboard</li>
+</ol>
+<h3 id="types-of-resistors">Types Of Resistors</h3>
+<ol>
+<li>Fixed Resistors</li>
+<li>Variable Resistors</li>
+</ol>
+<h3 id="information-about-fixed-resistors">Information about Fixed Resistors</h3>
+<p>Fixed resistors are electrical components that have a fixed value of resistance, meaning that their resistance does not change. This type of resistor is commonly used to limit the current flow in a circuit and to divide voltage.</p>
+<h3 id="information-about-different-types-of-fixed-resistors">Information about different types of Fixed Resistors</h3>
+<ol>
+<li>Carbon Film Resistor: These resistors are made by depositing a thin layer of carbon on a cylindrical ceramic or plastic form. They are the most common type of fixed resistor and offer a low cost solution with a relatively high resistance tolerance.</li>
+<li>Metal Film Resistor: These resistors are made by depositing a thin layer of metal on a cylindrical ceramic or plastic form. They offer improved resistance tolerance compared to carbon film resistors and are more stable.</li>
+<li>Wire Wound Resistor: These resistors are made by winding a wire, typically made of nickel-chromium alloy, around a cylindrical form. They offer high power handling capabilities and precise resistance values, making them suitable for use in high-power applications.</li>
+</ol>
+<h3 id="resistor-colour-coding">Resistor Colour Coding</h3>
+<figure><img src="/img/rcc.jpg"><figcaption>
+      <h4>Resistor Colour Coding</h4>
+    </figcaption>
+</figure>
+
+<h3 id="information-about-variable-resistors">Information about Variable Resistors</h3>
+<p>Variable resistors, also known as potentiometers, allow the resistance value to be adjusted. They are commonly used in applications where the resistance value needs to be changed, such as volume control in a stereo system.</p>
+<h3 id="information-about-different-types-of-variable-resistors">Information about different types of Variable Resistors</h3>
+<ol>
+<li>Potentiometer: A potentiometer is a three-terminal resistor where the resistance between two terminals can be adjusted using a sliding contact known as a wiper.</li>
+<li>Rheostat: A rheostat is a two-terminal resistor where the resistance can be adjusted using a sliding contact. Rheostats are typically used to control the current flow in a circuit.</li>
+</ol>
+<h2 id="part-2-potential-divider-arrangement">Part 2: Potential divider arrangement</h2>
+<h3 id="aim-1">Aim</h3>
+<p>The aim of this section is to study the potential divider arrangement in detail and understand its applications in electronics.</p>
+<h3 id="components-list-1">Components List</h3>
+<ol>
+<li>Resistor</li>
+<li>Voltage Source</li>
+</ol>
+<h3 id="equipments-1">Equipments</h3>
+<ol>
+<li>Breadboard</li>
+<li>Multimeter</li>
+</ol>
+<h3 id="theory">Theory</h3>
+<p>In a potential divider arrangement, two resistors are connected in series to a voltage source. The voltage across each resistor is proportional to its resistance, with the voltage across the first resistor (R1) being Vout and the voltage across the second resistor (R2) being (Vin - Vout). By knowing the voltage across the resistors, the resistance values can be calculated using Ohm&rsquo;s law, which states that the current in a circuit is equal to the voltage divided by the resistance.</p>
+<h3 id="diagram">Diagram</h3>
+<p><img src="https://qph.cf2.quoracdn.net/main-qimg-3ada7a203f51881e291de1e7d67daa99" alt="Potential divider arrangement diagram"></p>
+<h3 id="formula-for-potential-divider-arrangement">Formula for potential divider arrangement</h3>
+<p>Vout = (R2/(R1 + R2)) * Vin</p>
+<h3 id="example">Example</h3>
+<p>Given Vin = 10V and R1 = 2kΩ and R2 = 4kΩ, find Vout.</p>
+<p>Vout = (R2/(R1 + R2)) * Vin
+Vout = (4kΩ/(2kΩ + 4kΩ)) * 10V
+Vout = (4kΩ/6kΩ) * 10V
+Vout = (2/3) * 10V
+Vout = 6.67V</p>
+<p>For Notes, and practical images, refer this:
+<a href="https://drive.google.com/drive/folders/11ARyTZphPKpo9fPhy97rB0HLTRN2Exp5?usp=sharing"><img src="https://img.shields.io/badge/Drive-Folder-green" alt="GDrive Folder"></a></p>
+<h3 id="conclusion">Conclusion</h3>
+<p>In this study, we have covered the basics of resistors, including their components, types, and the potential divider arrangement. Understanding resistors and their behavior is crucial in many electrical and electronics applications.</p>
+]]></content></item><item><title>Testing of Diodes and Transistors</title><link>https://atharvap8.github.io/posts/2023/01/testing-of-diodes-and-transistors/</link><pubDate>Sun, 29 Jan 2023 00:39:28 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/testing-of-diodes-and-transistors/</guid><description>&lt;h2 id="aim">Aim&lt;/h2>
+&lt;p>The aim of this study is to understand the methods of testing diodes and transistors and to identify the working and faulty components.&lt;/p>
+&lt;hr>
+&lt;h2 id="components-required">Components Required&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Component&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Diodes&lt;/td>
+&lt;td>Any standard diode&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Transistors&lt;/td>
+&lt;td>Any NPN or PNP transistor&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Resistor&lt;/td>
+&lt;td>Any value between 1kΩ to 10kΩ&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Multimeter&lt;/td>
+&lt;td>Digital multimeter with diode and transistor testing function&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="equipments-needed">Equipments Needed&lt;/h2>
+&lt;ul>
+&lt;li>Breadboard&lt;/li>
+&lt;li>Jumper Wires&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="theory">Theory&lt;/h2>
+&lt;hr>
+&lt;h3 id="definition-of-diode">Definition of Diode&lt;/h3>
+&lt;h4 id="a-diode-is-a-two-terminal-electronic-component-that-allows-current-to-flow-in-one-direction-only-forward-direction-and-blocks-it-in-the-reverse-direction-it-acts-like-a-one-way-valve-for-current-in-a-circuit">A diode is a two-terminal electronic component that allows current to flow in one direction only (forward direction) and blocks it in the reverse direction. It acts like a one-way valve for current in a circuit.&lt;/h4>
+&lt;h4 id="forward-bias-when-the-anode-of-diode-is-connected-to-positive-of-supply-and-the-cathode-is-connected-to-the-negative-of-the-supple-it-is-said-to-be-in-forward-bias">Forward Bias: When the Anode of diode is connected to positive of supply and the cathode is connected to the negative of the supple, it is said to be in forward bias.&lt;/h4>
+&lt;h4 id="reverse-bias-when-the-anode-is-connected-to-negative-of-supply-and-the-cathode-is-connected-to-positive-of-supply-it-is-said-to-be-in-reverse-bias">Reverse Bias: When the Anode is connected to negative of supply and the cathode is connected to positive of supply it is said to be in reverse bias.&lt;/h4>
+&lt;h3 id="diode-testing">Diode Testing&lt;/h3>
+&lt;ul>
+&lt;li>A diode is a two-terminal electronic component that allows current to flow in only one direction.&lt;/li>
+&lt;li>The basic principle behind the functioning of a diode is based on the difference in the concentration of electrons in the p-type and n-type semiconductor material.&lt;/li>
+&lt;li>The p-type material has a shortage of electrons and the n-type material has an excess of electrons.&lt;/li>
+&lt;li>When a voltage is applied to the diode, it creates a potential difference between the p-type and n-type material, resulting in the flow of electrons from the n-type material to the p-type material.&lt;/li>
+&lt;li>In the case of a diode, the multimeter measures the forward and reverse resistance of the diode to determine its working status. The forward resistance of a diode should be low, while the reverse resistance should be infinite.&lt;/li>
+&lt;/ul>
+&lt;h3 id="example-of-diode-test">Example Of Diode Test&lt;/h3>
+&lt;figure class="center">&lt;img src="https://atharvap8.github.io/img/ref-dt.jpg" width="1600px" height="400px">
+&lt;/figure>
+&lt;hr>
+&lt;h3 id="transistor-testing">Transistor Testing&lt;/h3>
+&lt;ul>
+&lt;li>A transistor is a three-terminal electronic component that can be used as a switch or amplifier.&lt;/li>
+&lt;li>The most common type of transistor is the bipolar junction transistor (BJT), which has two p-n junctions.&lt;/li>
+&lt;li>The base-emitter junction is forward-biased, and the base-collector junction is reverse-biased.&lt;/li>
+&lt;li>In the switching operation, the base current controls the flow of collector current, allowing the transistor to act as an on-off switch.&lt;/li>
+&lt;li>In the amplification operation, the transistor amplifies the input signal applied to the base and produces a corresponding output signal at the collector.&lt;/li>
+&lt;li>In the case of a transistor, the multimeter measures the current gain of the transistor, which is defined as the ratio of collector current to base current. The current gain of a transistor should be high, typically in the range of 100 to 1000.&lt;/li>
+&lt;/ul>
+&lt;h3 id="example-of-transistor-test">Example Of Transistor Test&lt;/h3>
+&lt;figure class="center">&lt;img src="https://atharvap8.github.io/img/ref-tt.jpg" width="1600px" height="400px">
+&lt;/figure>
+&lt;hr>
+&lt;ul>
+&lt;li>The testing of diodes and transistors is important in the design and maintenance of electronic circuits.&lt;/li>
+&lt;li>A digital multimeter is a versatile tool that can be used to test both diodes and transistors.&lt;/li>
+&lt;li>The procedure for testing diodes and transistors involves setting up the circuit on a breadboard, connecting the multimeter, and measuring the forward and reverse resistance of the diode and the current gain of the transistor.&lt;/li>
+&lt;li>It is important to observe proper wiring and connectivity in the circuit and to set the multimeter to the correct testing mode before measuring.&lt;/li>
+&lt;li>Additionally, it is important to use a suitable diode and transistor for testing and to avoid exposing the circuit to high temperature or moisture.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="conclusion">Conclusion&lt;/h3>
+&lt;ul>
+&lt;li>In conclusion, the testing of diodes and transistors is an important step in the design and maintenance of electronic circuits. By understanding the basic principles and procedures of testing, we can ensure the proper functioning of the components and improve the reliability of the circuit.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="procedure">Procedure&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Connect the diode to the breadboard as per the circuit diagram.&lt;/p></description><content type="html"><![CDATA[<h2 id="aim">Aim</h2>
+<p>The aim of this study is to understand the methods of testing diodes and transistors and to identify the working and faulty components.</p>
+<hr>
+<h2 id="components-required">Components Required</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Component</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Diodes</td>
+          <td>Any standard diode</td>
+      </tr>
+      <tr>
+          <td>Transistors</td>
+          <td>Any NPN or PNP transistor</td>
+      </tr>
+      <tr>
+          <td>Resistor</td>
+          <td>Any value between 1kΩ to 10kΩ</td>
+      </tr>
+      <tr>
+          <td>Multimeter</td>
+          <td>Digital multimeter with diode and transistor testing function</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="equipments-needed">Equipments Needed</h2>
+<ul>
+<li>Breadboard</li>
+<li>Jumper Wires</li>
+</ul>
+<hr>
+<h2 id="theory">Theory</h2>
+<hr>
+<h3 id="definition-of-diode">Definition of Diode</h3>
+<h4 id="a-diode-is-a-two-terminal-electronic-component-that-allows-current-to-flow-in-one-direction-only-forward-direction-and-blocks-it-in-the-reverse-direction-it-acts-like-a-one-way-valve-for-current-in-a-circuit">A diode is a two-terminal electronic component that allows current to flow in one direction only (forward direction) and blocks it in the reverse direction. It acts like a one-way valve for current in a circuit.</h4>
+<h4 id="forward-bias-when-the-anode-of-diode-is-connected-to-positive-of-supply-and-the-cathode-is-connected-to-the-negative-of-the-supple-it-is-said-to-be-in-forward-bias">Forward Bias: When the Anode of diode is connected to positive of supply and the cathode is connected to the negative of the supple, it is said to be in forward bias.</h4>
+<h4 id="reverse-bias-when-the-anode-is-connected-to-negative-of-supply-and-the-cathode-is-connected-to-positive-of-supply-it-is-said-to-be-in-reverse-bias">Reverse Bias: When the Anode is connected to negative of supply and the cathode is connected to positive of supply it is said to be in reverse bias.</h4>
+<h3 id="diode-testing">Diode Testing</h3>
+<ul>
+<li>A diode is a two-terminal electronic component that allows current to flow in only one direction.</li>
+<li>The basic principle behind the functioning of a diode is based on the difference in the concentration of electrons in the p-type and n-type semiconductor material.</li>
+<li>The p-type material has a shortage of electrons and the n-type material has an excess of electrons.</li>
+<li>When a voltage is applied to the diode, it creates a potential difference between the p-type and n-type material, resulting in the flow of electrons from the n-type material to the p-type material.</li>
+<li>In the case of a diode, the multimeter measures the forward and reverse resistance of the diode to determine its working status. The forward resistance of a diode should be low, while the reverse resistance should be infinite.</li>
+</ul>
+<h3 id="example-of-diode-test">Example Of Diode Test</h3>
+<figure class="center"><img src="/img/ref-dt.jpg" width="1600px" height="400px">
+  </figure>
+
+<hr>
+<h3 id="transistor-testing">Transistor Testing</h3>
+<ul>
+<li>A transistor is a three-terminal electronic component that can be used as a switch or amplifier.</li>
+<li>The most common type of transistor is the bipolar junction transistor (BJT), which has two p-n junctions.</li>
+<li>The base-emitter junction is forward-biased, and the base-collector junction is reverse-biased.</li>
+<li>In the switching operation, the base current controls the flow of collector current, allowing the transistor to act as an on-off switch.</li>
+<li>In the amplification operation, the transistor amplifies the input signal applied to the base and produces a corresponding output signal at the collector.</li>
+<li>In the case of a transistor, the multimeter measures the current gain of the transistor, which is defined as the ratio of collector current to base current. The current gain of a transistor should be high, typically in the range of 100 to 1000.</li>
+</ul>
+<h3 id="example-of-transistor-test">Example Of Transistor Test</h3>
+<figure class="center"><img src="/img/ref-tt.jpg" width="1600px" height="400px">
+  </figure>
+
+<hr>
+<ul>
+<li>The testing of diodes and transistors is important in the design and maintenance of electronic circuits.</li>
+<li>A digital multimeter is a versatile tool that can be used to test both diodes and transistors.</li>
+<li>The procedure for testing diodes and transistors involves setting up the circuit on a breadboard, connecting the multimeter, and measuring the forward and reverse resistance of the diode and the current gain of the transistor.</li>
+<li>It is important to observe proper wiring and connectivity in the circuit and to set the multimeter to the correct testing mode before measuring.</li>
+<li>Additionally, it is important to use a suitable diode and transistor for testing and to avoid exposing the circuit to high temperature or moisture.</li>
+</ul>
+<hr>
+<h3 id="conclusion">Conclusion</h3>
+<ul>
+<li>In conclusion, the testing of diodes and transistors is an important step in the design and maintenance of electronic circuits. By understanding the basic principles and procedures of testing, we can ensure the proper functioning of the components and improve the reliability of the circuit.</li>
+</ul>
+<hr>
+<h2 id="procedure">Procedure</h2>
+<ol>
+<li>
+<p>Connect the diode to the breadboard as per the circuit diagram.</p>
+</li>
+<li>
+<p>Set the multimeter to diode testing mode.</p>
+</li>
+<li>
+<p>Measure the forward and reverse resistance of the diode.</p>
+</li>
+<li>
+<p>Compare the measured values with the standard values to determine the working status of the diode.</p>
+</li>
+<li>
+<p>Repeat the same steps for the transistor, but set the multimeter to transistor testing mode.</p>
+</li>
+<li>
+<p>Measure the current gain of the transistor.</p>
+</li>
+<li>
+<p>Compare the measured values with the standard values to determine the working status of the transistor.</p>
+</li>
+</ol>
+<hr>
+<h2 id="precautions">Precautions</h2>
+<ul>
+<li>Use a suitable diode and transistor for testing.</li>
+<li>Observe proper wiring and connectivity in the circuit.</li>
+<li>Set the multimeter to the correct testing mode before measuring.</li>
+<li>Avoid exposing the circuit to high temperature or moisture.</li>
+<li>Use appropriate protective gear while handling the circuit.</li>
+</ul>
+<hr>
+<h2 id="summary">Summary</h2>
+<p>In this study, we learned about the methods of testing diodes and transistors using a digital multimeter. By measuring the forward and reverse resistance of a diode and the current gain of a transistor, we can determine their working status and identify faulty components.</p>
+<hr>
+<h2 id="conclusion-1">Conclusion</h2>
+<p>Testing diodes and transistors is an important step in the design and maintenance of electronic circuits. By understanding the basic principles and procedures of testing, we can ensure the proper functioning of the components and improve the reliability of the circuit.</p>
+]]></content></item><item><title>Study of HWR and FWR Using CT Transformer</title><link>https://atharvap8.github.io/posts/2023/01/study-of-hwr-and-fwr-using-ct-transformer/</link><pubDate>Sun, 29 Jan 2023 00:38:33 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-hwr-and-fwr-using-ct-transformer/</guid><description>&lt;h2 id="part-1-study-of-half-wave-rectifier">Part-1: Study of Half-Wave Rectifier&lt;/h2>
+&lt;hr>
+&lt;h3 id="aim">Aim&lt;/h3>
+&lt;p>To study the half-wave rectifier and its input and output waveform.&lt;/p>
+&lt;hr>
+&lt;h3 id="components-required">Components Required&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Component&lt;/th>
+&lt;th>Quantity&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Diode&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Resistor&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Capacitor&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Transformer&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Power Supply&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="equipment-required">Equipment Required&lt;/h3>
+&lt;ul>
+&lt;li>Oscilloscope&lt;/li>
+&lt;li>Function Generator&lt;/li>
+&lt;li>Breadboard&lt;/li>
+&lt;li>Connecting Wires&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="circuit-diagram-">Circuit Diagram 👇🏻&lt;/h3>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/hwr.jpg">
+&lt;/figure>
+&lt;hr>
+&lt;h3 id="theory">Theory&lt;/h3>
+&lt;ul>
+&lt;li>The half-wave rectifier is a simple circuit that converts AC voltage into a pulsating DC voltage. It consists of a diode that is connected in series with the load resistor and an AC source. The diode only allows current to flow in one direction, i.e., from the anode to cathode.&lt;/li>
+&lt;li>During the positive half-cycle of the AC voltage, the diode is forward-biased, and it conducts current. This results in the flow of current through the load resistor and the production of a positive voltage across it.&lt;/li>
+&lt;li>During the negative half-cycle of the AC voltage, the diode is reverse-biased, and it does not conduct current. This results in the absence of current flow through the load resistor and the production of a zero voltage across it.&lt;/li>
+&lt;/ul>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/hwr.gif">
+&lt;/figure>
+&lt;ul>
+&lt;li>
+&lt;p>The output of the half-wave rectifier is a pulsating DC voltage that has a lower DC component compared to the full-wave rectifier. The pulsating DC voltage can be smoothened using a filter circuit, such as a capacitor filter, to obtain a nearly constant DC voltage. The efficiency of the half-wave rectifier is lower compared to the full-wave rectifier due to the absence of current flow during the negative half-cycle of the AC voltage.&lt;/p></description><content type="html"><![CDATA[<h2 id="part-1-study-of-half-wave-rectifier">Part-1: Study of Half-Wave Rectifier</h2>
+<hr>
+<h3 id="aim">Aim</h3>
+<p>To study the half-wave rectifier and its input and output waveform.</p>
+<hr>
+<h3 id="components-required">Components Required</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Component</th>
+          <th>Quantity</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Diode</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>Resistor</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>Capacitor</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>Transformer</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>Power Supply</td>
+          <td>1</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="equipment-required">Equipment Required</h3>
+<ul>
+<li>Oscilloscope</li>
+<li>Function Generator</li>
+<li>Breadboard</li>
+<li>Connecting Wires</li>
+</ul>
+<hr>
+<h3 id="circuit-diagram-">Circuit Diagram 👇🏻</h3>
+<figure><img src="/img/hwr.jpg">
+</figure>
+
+<hr>
+<h3 id="theory">Theory</h3>
+<ul>
+<li>The half-wave rectifier is a simple circuit that converts AC voltage into a pulsating DC voltage. It consists of a diode that is connected in series with the load resistor and an AC source. The diode only allows current to flow in one direction, i.e., from the anode to cathode.</li>
+<li>During the positive half-cycle of the AC voltage, the diode is forward-biased, and it conducts current. This results in the flow of current through the load resistor and the production of a positive voltage across it.</li>
+<li>During the negative half-cycle of the AC voltage, the diode is reverse-biased, and it does not conduct current. This results in the absence of current flow through the load resistor and the production of a zero voltage across it.</li>
+</ul>
+<figure><img src="/img/hwr.gif">
+ </figure>
+
+<ul>
+<li>
+<p>The output of the half-wave rectifier is a pulsating DC voltage that has a lower DC component compared to the full-wave rectifier. The pulsating DC voltage can be smoothened using a filter circuit, such as a capacitor filter, to obtain a nearly constant DC voltage. The efficiency of the half-wave rectifier is lower compared to the full-wave rectifier due to the absence of current flow during the negative half-cycle of the AC voltage.</p>
+</li>
+<li>
+<p>In practical applications, the half-wave rectifier is used in low-power applications where the requirement of DC voltage is low, and the efficiency is not a major concern. For example, it can be used in battery chargers, small power supplies, and voltage regulators.</p>
+</li>
+</ul>
+<h4 id="advantages">Advantages</h4>
+<ul>
+<li>
+<p>In addition, the half-wave rectifier is easy to construct, and it requires fewer components compared to the full-wave rectifier. This makes it a cost-effective solution for low-power applications. Moreover, the output voltage waveform of the half-wave rectifier is easier to analyze compared to the full-wave rectifier, making it a good choice for educational purposes.</p>
+</li>
+<li>
+<p>The major disadvantage of the half-wave rectifier is its low efficiency. As only half of the AC cycle is utilized to produce DC voltage, the power loss is significant. The output voltage waveform also contains a large amount of ripples, which makes it unsuitable for high-precision applications.</p>
+</li>
+<li>
+<p>Another limitation of the half-wave rectifier is its output voltage waveform. The output voltage waveform contains a large number of ripples, which can cause noise in sensitive circuits. Additionally, the output voltage is not constant, and it changes with the variations in the AC input voltage. This makes it unsuitable for applications where a constant DC voltage is required.</p>
+</li>
+</ul>
+<h4 id="conclusion">Conclusion</h4>
+<ul>
+<li>In conclusion, the half-wave rectifier is a simple and cost-effective solution for low-power applications. However, it is not suitable for applications where high efficiency, constant DC voltage, and low ripple are required.</li>
+</ul>
+<hr>
+<h3 id="procedure">Procedure</h3>
+<ol>
+<li>
+<p>Assemble the circuit components as per the circuit diagram.</p>
+</li>
+<li>
+<p>Connect the AC input voltage to the primary winding of the transformer.</p>
+</li>
+<li>
+<p>Connect the secondary winding of the transformer to the diode.</p>
+</li>
+<li>
+<p>Connect the load resistor to the cathode of the diode.</p>
+</li>
+<li>
+<p>Connect the positive terminal of the power supply to the anode of the diode and the negative terminal to the cathode of the diode.</p>
+</li>
+<li>
+<p>Turn on the power supply and set the voltage to the required level.</p>
+</li>
+<li>
+<p>Observe the waveform at the output of the diode using an oscilloscope.</p>
+</li>
+<li>
+<p>Record the DC component and the ripple voltage in the output waveform.</p>
+</li>
+<li>
+<p>Repeat the steps for different input AC voltages and load resistances.</p>
+</li>
+<li>
+<p>Plot the waveforms and analyze the output for different conditions.</p>
+</li>
+<li>
+<p>Observe the change in output voltage and ripple voltage for different input AC voltages and load resistances.</p>
+</li>
+<li>
+<p>Repeat the steps for different values of load resistors and capacitors.</p>
+</li>
+<li>
+<p>Observe the effect of adding a smoothing capacitor on the output waveform.</p>
+</li>
+<li>
+<p>Verify the results with the theoretical values and conclude the experiment.</p>
+</li>
+</ol>
+<hr>
+<h3 id="input-and-output-waveforms-">Input and Output Waveforms 👇🏻</h3>
+<figure><img src="/img/hwr-waveforms.jpg">
+</figure>
+
+<hr>
+<h3 id="precautions">Precautions</h3>
+<ul>
+<li>Handle circuit components with care.</li>
+<li>Ensure that the power supply voltage is <strong><code>WITHIN</code></strong> the rated range.</li>
+<li>Connect the wires and components properly to avoid short circuits.</li>
+<li>Take care of the <strong><code>POLARITY</code></strong> while connecting the diode.</li>
+<li>Use a suitable fuse to protect the circuit from damage due to overloading.</li>
+<li>Be cautious while making adjustments to the circuit to avoid any damage.</li>
+<li>Always use insulated tools while working with the circuit.</li>
+<li>Wear protective gear, such as gloves and safety glasses, while handling the circuit components.</li>
+<li>Use a multimeter to verify the circuit connections and waveform outputs.</li>
+<li>Take proper precautions while handling the high voltage AC input.</li>
+</ul>
+<hr>
+<h3 id="summary">Summary</h3>
+<p>The study of half-wave rectifier and full-wave rectifier using a center-tapped transformer is an important topic in the field of electronics. These rectifiers convert the AC input voltage into a pulsating DC output voltage. The half-wave rectifier produces a unidirectional voltage output with a lower DC component compared to the full-wave rectifier. On the other hand, the full-wave rectifier produces a higher DC component in the output voltage and is more efficient than the half-wave rectifier.</p>
+<hr>
+<h3 id="conclusion-1">Conclusion</h3>
+<p>In conclusion, the half-wave and full-wave rectifiers are important components in power electronics. They are widely used in applications such as power supplies, battery chargers, and inverters. Understanding their working principle and practical implementation is crucial for engineers and students in the field of electronics. The study of rectifiers provides a foundation for exploring advanced topics such as power electronics, AC-DC conversion, and voltage regulation.</p>
+<hr>
+<hr>
+<h2 id="part-2-study-of-full-wave-rectifier-using-center-tapped-transformer">Part-2: Study of Full Wave Rectifier Using Center Tapped Transformer</h2>
+<hr>
+<h3 id="aim-1">Aim</h3>
+<p>The aim of this experiment is to study the working of a full-wave rectifier using a center-tapped transformer and to observe the output waveform.</p>
+<hr>
+<h3 id="components-required-1">Components Required</h3>
+<p>The following components are required to perform this experiment:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Component</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Center-tapped transformer</td>
+          <td>A center-tapped transformer is used to step-down the incoming AC voltage.</td>
+      </tr>
+      <tr>
+          <td>Diodes</td>
+          <td>Diodes are used to convert AC voltage into a unidirectional DC voltage.</td>
+      </tr>
+      <tr>
+          <td>Resistor</td>
+          <td>A resistor is used to load the rectifier circuit.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="equipments-required">Equipments Required</h3>
+<p>The following equipments are required to perform this experiment:</p>
+<ul>
+<li>Oscilloscope</li>
+<li>Power supply</li>
+<li>Connecting wires</li>
+</ul>
+<hr>
+<h3 id="circuit-diagram--1">Circuit Diagram 👇🏻</h3>
+<figure><img src="/img/fwr.jpg">
+</figure>
+
+<hr>
+<h3 id="theory-1">Theory</h3>
+<ul>
+<li>
+<p>A full-wave rectifier is an electronic circuit that converts an AC input voltage into a unidirectional DC voltage. It is composed of diodes that allow the current to flow in only one direction, which is from the anode to the cathode. The center-tapped transformer is used to derive two equal and opposite polarities from the AC source. The two half-cycles of the AC voltage are fed to the diodes and the resulting output is a continuous DC voltage.</p>
+</li>
+<li>
+<p>In a full-wave rectifier, both positive and negative half-cycles of the AC voltage are utilized. During the positive half-cycle of the AC voltage, the diode connected to the positive half of the secondary winding of the transformer conducts and the diode connected to the negative half remains non-conducting. During the negative half-cycle, the situation is reversed. This results in a continuous DC voltage output, which is the average value of the AC voltage.</p>
+</li>
+</ul>
+<hr>
+<h4 id="during-positive-half-cycle-">During Positive Half-Cycle 👇🏻</h4>
+<figure><img src="/img/fwr&#43;.gif">
+</figure>
+
+<hr>
+<h4 id="during-negative-half-cycle-">During Negative Half-Cycle 👇🏻</h4>
+<figure><img src="/img/fwr-.gif">
+</figure>
+
+<hr>
+<h4 id="advantages-1">Advantages</h4>
+<ul>
+<li>The full-wave rectifier provides several advantages over the half-wave rectifier. The first advantage is that the output waveform is much smoother and more constant compared to the half-wave rectifier. This makes the full-wave rectifier more suitable for applications where a steady DC voltage is required, such as charging batteries, powering DC motors, and regulating voltage.</li>
+<li>Another advantage of the full-wave rectifier is that it has a higher efficiency compared to the half-wave rectifier. The full-wave rectifier utilizes both the positive and negative half-cycles of the AC voltage, whereas the half-wave rectifier only uses one half-cycle. This results in a higher average output voltage, which leads to a higher efficiency.</li>
+<li>Additionally, the full-wave rectifier has a lower ripple voltage compared to the half-wave rectifier. The ripple voltage is the alternating voltage that is present in the DC output voltage. A lower ripple voltage means that the output voltage is smoother and more stable, which is important in applications where a steady voltage is required.</li>
+</ul>
+<hr>
+<h4 id="conclusion-2">Conclusion</h4>
+<p>In conclusion, the full-wave rectifier provides a more stable, efficient, and steady DC voltage compared to the half-wave rectifier. It is the preferred choice for applications where a constant DC voltage is required.</p>
+<hr>
+<h3 id="procedure-1">Procedure</h3>
+<ol>
+<li>
+<p>Connect the input AC voltage source to the center tapped transformer.</p>
+</li>
+<li>
+<p>Connect the output of the center tapped transformer to the diode bridge rectifier circuit.</p>
+</li>
+<li>
+<p>Connect the output of the diode bridge to the load resistance.</p>
+</li>
+<li>
+<p>Connect the oscilloscope to the output of the load resistance and to the input AC voltage source.</p>
+</li>
+<li>
+<p>Switch on the input AC voltage source.</p>
+</li>
+<li>
+<p>Adjust the oscilloscope to observe the input AC voltage and the output rectified voltage.</p>
+</li>
+<li>
+<p>Note down the voltage readings for different values of load resistance.</p>
+</li>
+<li>
+<p>Repeat the above steps for different values of input AC voltage.</p>
+</li>
+<li>
+<p>Plot the input AC voltage and output rectified voltage waveform for each load resistance.</p>
+</li>
+<li>
+<p>Analyze the effect of changing load resistance on the rectified output voltage.</p>
+</li>
+<li>
+<p>Analyze the effect of changing input AC voltage on the rectified output voltage.</p>
+</li>
+<li>
+<p>Study the ripple factor and peak inverse voltage of the full wave rectifier circuit.</p>
+</li>
+<li>
+<p>Draw the conclusion based on the observed results.</p>
+</li>
+</ol>
+<hr>
+<h3 id="input-and-output-waveforms">Input and Output Waveforms</h3>
+<figure><img src="/img/fwr-waveform.jpg">
+</figure>
+
+<hr>
+<h3 id="precautions-1">Precautions</h3>
+<ul>
+<li>Handle circuit components with care.</li>
+<li>Ensure that the power supply voltage is within the rated range.</li>
+<li>Connect the wires and components properly to avoid short circuits.</li>
+<li>Take care of the polarity while connecting the diodes.</li>
+<li>Use a suitable fuse to protect the circuit from damage due to overloading.</li>
+<li>Be cautious while making adjustments to the circuit to avoid any damage.</li>
+<li>Ensure that the transformer is properly grounded.</li>
+<li>Always use insulated tools while working with the circuit.</li>
+<li>Wear protective gear, such as gloves and safety glasses, while handling the circuit components.</li>
+<li>Use a multimeter to verify the circuit connections and waveform outputs.</li>
+</ul>
+<hr>
+<h3 id="summary-1">Summary</h3>
+<p>In this experiment, the full wave rectifier using center tapped transformer was studied. The input AC voltage was applied to the center tapped transformer, and the output of the center tapped transformer was fed to the diode bridge rectifier circuit. The effect of changing load resistance and input AC voltage on the rectified output voltage was analyzed. The ripple factor and peak inverse voltage of the full wave rectifier circuit were also studied.</p>
+<hr>
+<h3 id="conclusion-3">Conclusion</h3>
+<p>The full wave rectifier using center tapped transformer is an important circuit used in power supplies. The experiment was performed to study the effect of changing load resistance and input AC voltage on the rectified output voltage. The ripple factor and peak inverse voltage of the full wave rectifier circuit were also studied. The results obtained in this experiment provide a clear understanding of the full wave rectifier circuit and its behavior under different conditions.</p>
+]]></content></item><item><title>Transistor as a Switch</title><link>https://atharvap8.github.io/posts/2023/01/transistor-as-a-switch/</link><pubDate>Sun, 29 Jan 2023 00:35:08 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/transistor-as-a-switch/</guid><description>&lt;hr>
+&lt;h2 id="aim">Aim&lt;/h2>
+&lt;p>The aim of this study is to understand the working of a transistor as a switch and how it can be used to control the flow of current in a circuit.&lt;/p>
+&lt;hr>
+&lt;h2 id="components-required">Components Required&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Component&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Transistor&lt;/td>
+&lt;td>Any NPN or PNP transistor&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Resistor&lt;/td>
+&lt;td>Any value between 1kΩ to 10kΩ&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>LED&lt;/td>
+&lt;td>Any standard LED&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Power Supply&lt;/td>
+&lt;td>Any DC power supply with voltage between 5V to 12V&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="equipments-needed">Equipments Needed&lt;/h2>
+&lt;ol>
+&lt;li>Breadboard&lt;/li>
+&lt;li>Jumper Wires&lt;/li>
+&lt;li>Multimeter&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="theory">Theory&lt;/h2>
+&lt;p>A transistor can be used as a switch to control the flow of current in a circuit. The transistor operates in two modes: cut-off and saturation. In the cut-off mode, the transistor acts as an open switch, and no current flows through the circuit. In saturation, the transistor acts as a closed switch, and maximum current flows through the circuit. By adjusting the current applied to the base terminal of the transistor, we can control the flow of current in the circuit.&lt;/p></description><content type="html"><![CDATA[<hr>
+<h2 id="aim">Aim</h2>
+<p>The aim of this study is to understand the working of a transistor as a switch and how it can be used to control the flow of current in a circuit.</p>
+<hr>
+<h2 id="components-required">Components Required</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Component</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Transistor</td>
+          <td>Any NPN or PNP transistor</td>
+      </tr>
+      <tr>
+          <td>Resistor</td>
+          <td>Any value between 1kΩ to 10kΩ</td>
+      </tr>
+      <tr>
+          <td>LED</td>
+          <td>Any standard LED</td>
+      </tr>
+      <tr>
+          <td>Power Supply</td>
+          <td>Any DC power supply with voltage between 5V to 12V</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="equipments-needed">Equipments Needed</h2>
+<ol>
+<li>Breadboard</li>
+<li>Jumper Wires</li>
+<li>Multimeter</li>
+</ol>
+<hr>
+<h2 id="theory">Theory</h2>
+<p>A transistor can be used as a switch to control the flow of current in a circuit. The transistor operates in two modes: cut-off and saturation. In the cut-off mode, the transistor acts as an open switch, and no current flows through the circuit. In saturation, the transistor acts as a closed switch, and maximum current flows through the circuit. By adjusting the current applied to the base terminal of the transistor, we can control the flow of current in the circuit.</p>
+<hr>
+<h2 id="procedure">Procedure</h2>
+<ol>
+<li>
+<p>Connect the transistor to the breadboard as per the circuit diagram.</p>
+</li>
+<li>
+<p>Connect the power supply to the circuit.</p>
+</li>
+<li>
+<p>Apply a small current to the base terminal of the transistor to observe the flow of current through the circuit.</p>
+</li>
+<li>
+<p>Increase the current applied to the base terminal and observe the effect on the flow of current through the circuit.</p>
+</li>
+<li>
+<p>Observe the effect of the resistance value on the flow of current through the circuit.</p>
+</li>
+</ol>
+<hr>
+<h2 id="circuit-diagram">Circuit Diagram</h2>
+<figure><img src="/img/taas.jpg">
+</figure>
+
+<hr>
+<h2 id="precautions">Precautions</h2>
+<ul>
+<li>Use a transistor with a suitable voltage and current rating for the circuit.</li>
+<li>Avoid applying excessive current to the base terminal of the transistor to prevent damage.</li>
+<li>Observe proper wiring and connectivity in the circuit.</li>
+<li>Use a suitable power supply with proper grounding to avoid any electrical shock.</li>
+<li>Avoid exposing the circuit to high temperature or moisture.</li>
+</ul>
+<hr>
+<h2 id="summary">Summary</h2>
+<p>In this study, we learned about the working of a transistor as a switch and how it can be used to control the flow of current in a circuit. By adjusting the base current, we can control the flow of current through the circuit.</p>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p>The transistor is a versatile device that can be used as a switch in various electronic circuits. By understanding the basic principles of its operation, we can use it to design efficient and effective electronic circuits.</p>
+]]></content></item><item><title>Study of Bridge Rectifier</title><link>https://atharvap8.github.io/posts/2023/01/study-of-bridge-rectifier/</link><pubDate>Sun, 29 Jan 2023 00:33:03 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-bridge-rectifier/</guid><description>&lt;h2 id="aim">Aim&lt;/h2>
+&lt;p>The aim of this study is to understand the working of a bridge rectifier and to observe its input and output waveforms.&lt;/p>
+&lt;hr>
+&lt;h2 id="components-required">Components Required&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Component&lt;/th>
+&lt;th>Quantity&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Diode&lt;/td>
+&lt;td>4&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Resistor&lt;/td>
+&lt;td>4&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Capacitor&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Transformer&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="equipments-needed">Equipments Needed&lt;/h2>
+&lt;ul>
+&lt;li>Digital multimeter&lt;/li>
+&lt;li>Function generator&lt;/li>
+&lt;li>Oscilloscope&lt;/li>
+&lt;li>Connecting wires&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="theory">Theory&lt;/h2>
+&lt;ul>
+&lt;li>A bridge rectifier is an electronic circuit that converts an alternating current (AC) input into a direct current (DC) output.&lt;/li>
+&lt;li>The rectifier circuit consists of four diodes arranged in a bridge configuration. The AC input is applied to the diagonals of the bridge, and the DC output is taken from the center of the bridge.&lt;/li>
+&lt;li>During the positive half cycle of the AC input, diodes D1 and D2 conduct and provide a positive output.&lt;/li>
+&lt;li>During the negative half cycle of the AC input, diodes D3 and D4 conduct and provide a negative output.&lt;/li>
+&lt;li>The DC output is a pulsed signal, which can be smoothed using a filter capacitor to obtain a pure DC signal.&lt;/li>
+&lt;li>The bridge rectifier is a simple, efficient, and cost-effective solution for converting AC to DC.&lt;/li>
+&lt;li>The bridge rectifier circuit is commonly used in power supplies, chargers, and other applications where a DC output is required. T The bridge rectifier is a versatile circuit that can be used in many applications, making it an important component in the field of electronics.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="advantages">Advantages&lt;/h3>
+&lt;ul>
+&lt;li>The main advantage of a bridge rectifier over a half-wave rectifier is that it utilizes both positive and negative cycles of the AC input, resulting in a higher efficiency and a more regulated DC output.&lt;/li>
+&lt;li>The use of four diodes provides full-wave rectification, which results in a higher DC output compared to a half-wave rectifier.&lt;/li>
+&lt;li>The bridge rectifier circuit can also be used to isolate the DC output from the AC input, providing electrical isolation and protection to the load.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="during-positive-half-cycle-">During Positive Half-Cycle 👇🏻&lt;/h3>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/fbr&amp;#43;.gif">
+&lt;/figure>
+&lt;hr>
+&lt;h3 id="during-negative-half-cycle-">During Negative Half-Cycle 👇🏻&lt;/h3>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/fbr-.gif">
+&lt;/figure>
+&lt;hr>
+&lt;h2 id="procedure">Procedure&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Assemble the circuit of a bridge rectifier using the components listed above.&lt;/p></description><content type="html"><![CDATA[<h2 id="aim">Aim</h2>
+<p>The aim of this study is to understand the working of a bridge rectifier and to observe its input and output waveforms.</p>
+<hr>
+<h2 id="components-required">Components Required</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Component</th>
+          <th>Quantity</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Diode</td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td>Resistor</td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td>Capacitor</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>Transformer</td>
+          <td>1</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="equipments-needed">Equipments Needed</h2>
+<ul>
+<li>Digital multimeter</li>
+<li>Function generator</li>
+<li>Oscilloscope</li>
+<li>Connecting wires</li>
+</ul>
+<hr>
+<h2 id="theory">Theory</h2>
+<ul>
+<li>A bridge rectifier is an electronic circuit that converts an alternating current (AC) input into a direct current (DC) output.</li>
+<li>The rectifier circuit consists of four diodes arranged in a bridge configuration. The AC input is applied to the diagonals of the bridge, and the DC output is taken from the center of the bridge.</li>
+<li>During the positive half cycle of the AC input, diodes D1 and D2 conduct and provide a positive output.</li>
+<li>During the negative half cycle of the AC input, diodes D3 and D4 conduct and provide a negative output.</li>
+<li>The DC output is a pulsed signal, which can be smoothed using a filter capacitor to obtain a pure DC signal.</li>
+<li>The bridge rectifier is a simple, efficient, and cost-effective solution for converting AC to DC.</li>
+<li>The bridge rectifier circuit is commonly used in power supplies, chargers, and other applications where a DC output is required. T The bridge rectifier is a versatile circuit that can be used in many applications, making it an important component in the field of electronics.</li>
+</ul>
+<hr>
+<h3 id="advantages">Advantages</h3>
+<ul>
+<li>The main advantage of a bridge rectifier over a half-wave rectifier is that it utilizes both positive and negative cycles of the AC input, resulting in a higher efficiency and a more regulated DC output.</li>
+<li>The use of four diodes provides full-wave rectification, which results in a higher DC output compared to a half-wave rectifier.</li>
+<li>The bridge rectifier circuit can also be used to isolate the DC output from the AC input, providing electrical isolation and protection to the load.</li>
+</ul>
+<hr>
+<h3 id="during-positive-half-cycle-">During Positive Half-Cycle 👇🏻</h3>
+<figure><img src="/img/fbr&#43;.gif">
+ </figure>
+
+<hr>
+<h3 id="during-negative-half-cycle-">During Negative Half-Cycle 👇🏻</h3>
+<figure><img src="/img/fbr-.gif">
+ </figure>
+
+<hr>
+<h2 id="procedure">Procedure</h2>
+<ol>
+<li>
+<p>Assemble the circuit of a bridge rectifier using the components listed above.</p>
+</li>
+<li>
+<p>Connect the digital multimeter to measure the voltage and current levels.</p>
+</li>
+<li>
+<p>Connect the function generator to the AC input of the rectifier and the oscilloscope to the DC output.</p>
+</li>
+<li>
+<p>Set the function generator to produce a sinusoidal waveform of desired frequency and amplitude.</p>
+</li>
+<li>
+<p>Turn on the oscilloscope and adjust its settings to observe the input and output waveforms.</p>
+</li>
+<li>
+<p>Observe the voltage and current levels using the digital multimeter.</p>
+</li>
+<li>
+<p>Vary the frequency and amplitude of the input waveform and observe the changes in the output waveform.</p>
+</li>
+<li>
+<p>Repeat the above steps for different values of load resistance.</p>
+</li>
+<li>
+<p>Plot the input and output waveforms on a graph paper.</p>
+</li>
+<li>
+<p>Calculate the rectification efficiency of the circuit.</p>
+</li>
+<li>
+<p>Observe the effect of adding a filter capacitor on the output waveform.</p>
+</li>
+<li>
+<p>Vary the value of the filter capacitor and observe the changes in the output waveform.</p>
+</li>
+<li>
+<p>Plot the effect of the filter capacitor on the output waveform.</p>
+</li>
+<li>
+<p>Study the effect of load resistance on the output waveform.</p>
+</li>
+<li>
+<p>Calculate the peak inverse voltage (PIV) of the circuit.</p>
+</li>
+<li>
+<p>Study the effect of PIV on the diodes.</p>
+</li>
+<li>
+<p>Observe the effect of reverse biasing the diodes.</p>
+</li>
+<li>
+<p>Study the effect of using different types of diodes on the output waveform.</p>
+</li>
+<li>
+<p>Observe the effect of using different values of resistors on the output waveform.</p>
+</li>
+<li>
+<p>Plot the effect of all the above parameters on the output waveform.</p>
+</li>
+</ol>
+<hr>
+<h2 id="circuit-diagram">Circuit Diagram</h2>
+<figure><img src="/img/fbr.jpg">
+</figure>
+
+<hr>
+<h2 id="input-and-output-waveforms">Input and Output Waveforms</h2>
+<figure><img src="/img/fbr-waveform.jpg">
+</figure>
+
+<hr>
+<h2 id="precautions">Precautions</h2>
+<ul>
+<li>Use diodes with a high PIV rating to prevent damage.</li>
+<li>Use a filter capacitor with a suitable value to reduce the ripples in the output waveform.</li>
+<li>Use a transformer with a high voltage rating to prevent damage.</li>
+<li>Connect the diodes in the correct polarity to avoid damage.</li>
+<li>Use a load resistance with a suitable value to avoid overloading the circuit.</li>
+<li>Observe proper safety measures when working with high voltage and current levels.</li>
+<li>Avoid short circuits in the circuit.</li>
+<li>Avoid reverse biasing the diodes.</li>
+<li>Use a function generator with a stable output to obtain accurate results.</li>
+<li>Use an oscilloscope with a high input impedance to avoid loading the circuit.</li>
+<li>Observe proper grounding techniques to avoid any electrical shock.</li>
+<li>Avoid touching the circuit components when power is applied.</li>
+<li>Avoid exposing the circuit to moisture or high temperature.</li>
+<li>Regularly check the circuit components for any signs of damage.</li>
+<li>Store the circuit components in a safe and dry place when not in use.</li>
+</ul>
+<hr>
+<h2 id="summary">Summary</h2>
+<p>In this study, we learned about the working of a bridge rectifier and observed its input and output waveforms. We also studied the effect of various parameters such as frequency, amplitude, load resistance, filter capacitor, PIV, and diodes on the output waveform.</p>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p>The bridge rectifier is a useful device for converting AC input into a DC output. With proper design and use of components, it can provide a regulated DC output with reduced ripples. The study of a bridge rectifier helps in understanding the principles of rectification and filtering in electronics.</p>
+]]></content></item><item><title>Study of Transformer</title><link>https://atharvap8.github.io/posts/2023/01/study-of-transformer/</link><pubDate>Sun, 29 Jan 2023 00:27:35 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-transformer/</guid><description>&lt;h2 id="summary">Summary&lt;/h2>
+&lt;p>A transformer is a passive electrical component that transfers electrical energy from one circuit to another through electromagnetic induction. In this study, we will learn about the construction and working of a basic transformer, different types of transformers, and their applications. We will also learn about the parts required to make a basic transformer and the instruments and equipment needed to perform this activity.&lt;/p>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/transformer.jpg">&lt;figcaption>
+&lt;h4>Basic Transformer&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="parts-and-specifications">Parts and Specifications&lt;/h2>
+&lt;p>A basic transformer consists of the following parts:&lt;/p></description><content type="html"><![CDATA[<h2 id="summary">Summary</h2>
+<p>A transformer is a passive electrical component that transfers electrical energy from one circuit to another through electromagnetic induction. In this study, we will learn about the construction and working of a basic transformer, different types of transformers, and their applications. We will also learn about the parts required to make a basic transformer and the instruments and equipment needed to perform this activity.</p>
+<figure><img src="/img/transformer.jpg"><figcaption>
+      <h4>Basic Transformer</h4>
+    </figcaption>
+</figure>
+
+<h2 id="parts-and-specifications">Parts and Specifications</h2>
+<p>A basic transformer consists of the following parts:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Parts</th>
+          <th>Specifications</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Copper Wire</td>
+          <td>Number of turns and gauge depends on the desired voltage and current rating</td>
+      </tr>
+      <tr>
+          <td>Iron Core</td>
+          <td>Magnetic permeability and cross-sectional area depends on the desired inductance</td>
+      </tr>
+      <tr>
+          <td>Insulating Material</td>
+          <td>High voltage insulation to prevent current from leaking from one coil to another</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="instruments-and-equipment">Instruments and Equipment</h2>
+<p>The following instruments and equipment are required to perform this activity:</p>
+<ul>
+<li>Soldering iron</li>
+<li>Wire cutter</li>
+<li>Insulating tape</li>
+<li>Multimeter</li>
+<li>Power supply</li>
+</ul>
+<h2 id="procedure">Procedure</h2>
+<p>The procedure to make a simple transformer is as follows:</p>
+<ol>
+<li>Cut two pieces of copper wire to the desired length, with the number of turns and gauge depending on the desired voltage and current rating.</li>
+<li>Wrap the two pieces of wire around an iron core, with the magnetic permeability and cross-sectional area depending on the desired inductance.</li>
+<li>Insulate the two coils from each other using insulating material to prevent current from leaking from one coil to another.</li>
+<li>Solder the two ends of each coil to its own terminal.</li>
+<li>Test the transformer using a multimeter to measure the voltage and current ratings.</li>
+</ol>
+<h2 id="theory">Theory</h2>
+<p>The basic theory behind a transformer is electromagnetic induction. When an alternating current flows through one coil, it generates a magnetic field that induces a voltage in the other coil. The voltage is proportional to the number of turns in each coil, the frequency of the alternating current, and the magnetic permeability of the core.
+<figure><img src="/img/transformer.gif"><figcaption>
+      <h4>Working of Transformer</h4>
+    </figcaption>
+</figure>
+</p>
+<h2 id="types-of-transformers">Types of Transformers</h2>
+<p>There are several types of transformers, including:</p>
+<ul>
+<li>Step-Up Transformer: Increases the voltage of the alternating current</li>
+<li>Step-Down Transformer: Decreases the voltage of the alternating current</li>
+<li>Isolation Transformer: Electrically isolates the two coils from each other, while still allowing energy transfer</li>
+<li>Auto Transformer: A type of transformer that uses a single winding instead of two separate windings</li>
+</ul>
+<h2 id="uses-of-transformers">Uses of Transformers</h2>
+<p>Transformers are widely used in electrical power distribution systems to step up or step down the voltage of the alternating current, according to the requirements of the load. They are also used in electronic devices such as televisions, radios, and computers, to provide isolation and regulation of the power supply.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>In conclusion, transformers play a crucial role in electrical power distribution and regulation. Understanding the construction, theory, and types of transformers is essential for anyone involved in electrical engineering and design. By performing the procedure described in this study, one can gain practical experience in building a basic transformer and gain a deeper understanding of this fascinating component.</p>
+]]></content></item><item><title>Study of Relay</title><link>https://atharvap8.github.io/posts/2023/01/study-of-relay/</link><pubDate>Sun, 29 Jan 2023 00:27:27 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-relay/</guid><description>&lt;h2 id="summary">Summary&lt;/h2>
+&lt;p>This topic aims to provide an in-depth understanding of relays, including their construction, working principle, and various applications.&lt;/p>
+&lt;h2 id="construction-of-a-basic-relay">Construction of a Basic Relay&lt;/h2>
+&lt;p>A basic relay consists of an electromagnet, a set of contacts, and a spring. When the electromagnet is energized, it attracts the armature, which then moves and closes the contacts.&lt;/p>
+&lt;p>Diagram:&lt;/p>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/relay.jpg">&lt;figcaption>
+&lt;h4>Basic Relay&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="parts-and-specifications">Parts and Specifications&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Parts&lt;/th>
+&lt;th>Specifications&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Electromagnet&lt;/td>
+&lt;td>Consists of a coil of wire, core, and a switch&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Contacts&lt;/td>
+&lt;td>Typically made of metal and used to complete or break an electrical circuit&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Armature&lt;/td>
+&lt;td>A movable piece of metal that is attracted by the electromagnet and responsible for closing the contacts&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Spring&lt;/td>
+&lt;td>Used to return the armature to its original position when the electromagnet is de-energized&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="instruments-and-tools-needed">Instruments and Tools Needed&lt;/h2>
+&lt;ul>
+&lt;li>Multimeter&lt;/li>
+&lt;li>Oscilloscope&lt;/li>
+&lt;li>Soldering iron&lt;/li>
+&lt;li>Wire stripper&lt;/li>
+&lt;li>Pliers&lt;/li>
+&lt;/ul>
+&lt;h2 id="procedure">Procedure&lt;/h2>
+&lt;ol>
+&lt;li>Start by gathering all the necessary parts and tools.&lt;/li>
+&lt;li>Assemble the electromagnet by winding the coil of wire around the core and soldering the leads to the switch.&lt;/li>
+&lt;li>Mount the armature, contacts, and spring in their respective positions.&lt;/li>
+&lt;li>Test the relay using a multimeter to verify that the contacts are opening and closing correctly when the electromagnet is energized and de-energized.&lt;/li>
+&lt;li>Measure the voltage and current required to operate the relay using an oscilloscope.&lt;/li>
+&lt;li>Finally, connect the relay to a circuit and test it under normal operating conditions.&lt;/li>
+&lt;/ol>
+&lt;h2 id="theory">Theory&lt;/h2>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/relay.gif">&lt;figcaption>
+&lt;h4>Working of Relay&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>Relays are electrical switches that use an electromagnet to operate. When a voltage is applied to the coil of the electromagnet, it creates a magnetic field that attracts the armature, causing it to close the contacts. This closing of contacts completes the electrical circuit and allows current to flow. When the voltage is removed from the coil, the magnetic field collapses, and the spring returns the armature to its original position, opening the contacts and breaking the circuit.&lt;/p></description><content type="html"><![CDATA[<h2 id="summary">Summary</h2>
+<p>This topic aims to provide an in-depth understanding of relays, including their construction, working principle, and various applications.</p>
+<h2 id="construction-of-a-basic-relay">Construction of a Basic Relay</h2>
+<p>A basic relay consists of an electromagnet, a set of contacts, and a spring. When the electromagnet is energized, it attracts the armature, which then moves and closes the contacts.</p>
+<p>Diagram:</p>
+<figure><img src="/img/relay.jpg"><figcaption>
+      <h4>Basic Relay</h4>
+    </figcaption>
+</figure>
+
+<h2 id="parts-and-specifications">Parts and Specifications</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Parts</th>
+          <th>Specifications</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Electromagnet</td>
+          <td>Consists of a coil of wire, core, and a switch</td>
+      </tr>
+      <tr>
+          <td>Contacts</td>
+          <td>Typically made of metal and used to complete or break an electrical circuit</td>
+      </tr>
+      <tr>
+          <td>Armature</td>
+          <td>A movable piece of metal that is attracted by the electromagnet and responsible for closing the contacts</td>
+      </tr>
+      <tr>
+          <td>Spring</td>
+          <td>Used to return the armature to its original position when the electromagnet is de-energized</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="instruments-and-tools-needed">Instruments and Tools Needed</h2>
+<ul>
+<li>Multimeter</li>
+<li>Oscilloscope</li>
+<li>Soldering iron</li>
+<li>Wire stripper</li>
+<li>Pliers</li>
+</ul>
+<h2 id="procedure">Procedure</h2>
+<ol>
+<li>Start by gathering all the necessary parts and tools.</li>
+<li>Assemble the electromagnet by winding the coil of wire around the core and soldering the leads to the switch.</li>
+<li>Mount the armature, contacts, and spring in their respective positions.</li>
+<li>Test the relay using a multimeter to verify that the contacts are opening and closing correctly when the electromagnet is energized and de-energized.</li>
+<li>Measure the voltage and current required to operate the relay using an oscilloscope.</li>
+<li>Finally, connect the relay to a circuit and test it under normal operating conditions.</li>
+</ol>
+<h2 id="theory">Theory</h2>
+<figure><img src="/img/relay.gif"><figcaption>
+      <h4>Working of Relay</h4>
+    </figcaption>
+</figure>
+
+<p>Relays are electrical switches that use an electromagnet to operate. When a voltage is applied to the coil of the electromagnet, it creates a magnetic field that attracts the armature, causing it to close the contacts. This closing of contacts completes the electrical circuit and allows current to flow. When the voltage is removed from the coil, the magnetic field collapses, and the spring returns the armature to its original position, opening the contacts and breaking the circuit.</p>
+<p>Relays are useful in controlling high-power circuits with low-power signals, as well as in protecting sensitive electronic circuits from damage due to overloading.</p>
+<h2 id="applications">Applications</h2>
+<p>Relays find applications in a wide range of fields, including automotive electronics, communication systems, industrial control systems, and home appliances. Some common applications of relays include controlling the operation of motors, switching on and off lights, and providing over-current protection to sensitive electronic circuits.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>In conclusion, relays are an essential component in electrical and electronic circuits. They provide a simple and effective way to control and protect high-power circuits with low-power signals. Understanding the construction, working principle, and applications of relays is essential for anyone working in the field of electrical and electronics engineering.</p>
+]]></content></item><item><title>Study of Switches</title><link>https://atharvap8.github.io/posts/2023/01/study-of-switches/</link><pubDate>Sun, 29 Jan 2023 00:27:19 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-switches/</guid><description>&lt;h2 id="summary">Summary&lt;/h2>
+&lt;p>A switch is a crucial component in electrical circuits as it can control the flow of electricity by making or breaking a connection. In this topic, we will study the basic construction, different types of switches, the function and purpose of switches, the tools and equipment required to demonstrate a basic switch, and more.&lt;/p>
+&lt;h2 id="diagram">Diagram&lt;/h2>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/switch.jpg">&lt;figcaption>
+&lt;h4>Basic Switch&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>&lt;strong>Diagram: A figure showing a Basic Switch &amp;amp; its states&lt;/strong>&lt;/p>
+&lt;h2 id="parts-and-specifications">Parts and Specifications&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Parts&lt;/th>
+&lt;th>Specifications&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Switch&lt;/td>
+&lt;td>SPST, SPDT, DPST, DPDT&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Wires&lt;/td>
+&lt;td>20-22 gauge&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Breadboard&lt;/td>
+&lt;td>Half-sized breadboard&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="tools-and-equipment">Tools and Equipment&lt;/h2>
+&lt;ul>
+&lt;li>Breadboard&lt;/li>
+&lt;li>Jumper Wires&lt;/li>
+&lt;li>Power Supply&lt;/li>
+&lt;li>Multimeter&lt;/li>
+&lt;/ul>
+&lt;h2 id="procedure">Procedure&lt;/h2>
+&lt;p>To demonstrate a basic switch, follow these steps:&lt;/p></description><content type="html"><![CDATA[<h2 id="summary">Summary</h2>
+<p>A switch is a crucial component in electrical circuits as it can control the flow of electricity by making or breaking a connection. In this topic, we will study the basic construction, different types of switches, the function and purpose of switches, the tools and equipment required to demonstrate a basic switch, and more.</p>
+<h2 id="diagram">Diagram</h2>
+<figure><img src="/img/switch.jpg"><figcaption>
+      <h4>Basic Switch</h4>
+    </figcaption>
+</figure>
+
+<p><strong>Diagram: A figure showing a Basic Switch &amp; its states</strong></p>
+<h2 id="parts-and-specifications">Parts and Specifications</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Parts</th>
+          <th>Specifications</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Switch</td>
+          <td>SPST, SPDT, DPST, DPDT</td>
+      </tr>
+      <tr>
+          <td>Wires</td>
+          <td>20-22 gauge</td>
+      </tr>
+      <tr>
+          <td>Breadboard</td>
+          <td>Half-sized breadboard</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="tools-and-equipment">Tools and Equipment</h2>
+<ul>
+<li>Breadboard</li>
+<li>Jumper Wires</li>
+<li>Power Supply</li>
+<li>Multimeter</li>
+</ul>
+<h2 id="procedure">Procedure</h2>
+<p>To demonstrate a basic switch, follow these steps:</p>
+<ol>
+<li>Gather all the required parts and tools mentioned above.</li>
+<li>Connect the power supply to the breadboard.</li>
+<li>Connect one end of the switch to the power supply on the breadboard and the other end to the load (e.g., LED or buzzer).</li>
+<li>Use the multimeter to measure the resistance and verify that the switch is open.</li>
+<li>Close the switch by pressing the button and verify that the resistance is zero.</li>
+<li>Observe that the load is now powered on, indicating that the switch has made a connection.</li>
+</ol>
+<h2 id="theory">Theory</h2>
+<p>A switch is an electrical component that can make or break an electrical connection. It is designed to control the flow of electricity in a circuit. There are several types of switches, including SPST (Single Pole Single Throw), SPDT (Single Pole Double Throw), DPST (Double Pole Single Throw), and DPDT (Double Pole Double Throw).</p>
+<h2 id="types-of-switches">Types of Switches:</h2>
+<figure><img src="/img/spst.jpg"><figcaption>
+      <h4>SPST Switch</h4>
+    </figcaption>
+</figure>
+
+<h3 id="spst-single-pole-single-throw">SPST (Single Pole Single Throw):</h3>
+<p>These switches have a single contact that can either be connected or disconnected. It is the simplest type of switch.
+<figure><img src="/img/spst.gif"><figcaption>
+      <h4>Working of SPST</h4>
+    </figcaption>
+</figure>
+</p>
+<hr>
+<figure><img src="/img/spdt.jpg"><figcaption>
+      <h4>SPDT Switch</h4>
+    </figcaption>
+</figure>
+
+<h3 id="spdt-single-pole-double-throw">SPDT (Single Pole Double Throw):</h3>
+<p>These switches have two contacts and can switch between two separate circuits. It is commonly used for switch-selector applications.
+<figure><img src="/img/spdt.gif"><figcaption>
+      <h4>Working of SPDT</h4>
+    </figcaption>
+</figure>
+</p>
+<hr>
+<figure><img src="/img/dpst.jpg"><figcaption>
+      <h4>DPST Switch</h4>
+    </figcaption>
+</figure>
+
+<h3 id="dpst-double-pole-single-throw">DPST (Double Pole Single Throw):</h3>
+<p>These switches have two separate contacts that can either be connected or disconnected simultaneously. This type of switch is used for applications where two separate circuits need to be controlled by a single switch.
+<figure><img src="/img/dpst.gif"><figcaption>
+      <h4>Working of DPST</h4>
+    </figcaption>
+</figure>
+</p>
+<hr>
+<figure><img src="/img/dpdt.jpg"><figcaption>
+      <h4>DPDT Switch</h4>
+    </figcaption>
+</figure>
+
+<h3 id="dpdt-double-pole-double-throw">DPDT (Double Pole Double Throw):</h3>
+<p>These switches have two separate sets of contacts that can switch between two separate circuits. It is commonly used for reversing switch applications.
+<figure><img src="/img/dpdt.gif"><figcaption>
+      <h4>Working of DPDT</h4>
+    </figcaption>
+</figure>
+</p>
+<hr>
+<h2 id="uses-of-switches">Uses of Switches</h2>
+<p>Switches play a crucial role in electrical circuits as they are used to control the flow of electricity. They are used in various applications such as turning on/off lights, controlling appliances, and in complex circuit designs such as computer motherboards, digital circuits, and more.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>In conclusion, switches are essential components in electrical circuits as they control the flow of electricity. Understanding the basic construction, different types, functions, and uses of switches is important in electrical engineering. By demonstrating a basic switch, one can have a better</p>
+]]></content></item><item><title>Study of Inductors</title><link>https://atharvap8.github.io/posts/2023/01/study-of-inductors/</link><pubDate>Sun, 29 Jan 2023 00:27:08 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-inductors/</guid><description>&lt;p>An inductor is a passive electrical component that stores energy in a magnetic field when electric current flows through it. Inductors play a crucial role in many electrical circuits, from filtering to energy storage to regulation. In this study, we will delve into the construction, theory, and uses of inductors.&lt;/p>
+&lt;h2 id="construction-of-a-basic-air-core-inductor">Construction of a Basic Air-Core Inductor&lt;/h2>
+&lt;p>The basic air-core inductor can be constructed by wrapping a wire around a non-conductive core, such as air, plastic, or fiberglass. The number of turns, or coils, of wire used, along with the diameter and material of the wire, will determine the inductance of the inductor. To calculate the inductance, the formula &lt;code>L = N^2 * Μ_o * A / l&lt;/code> can be used, where &lt;code>N&lt;/code> is the number of turns, &lt;code>Μ_o&lt;/code> is the permeability of free space, &lt;code>A&lt;/code> is the cross-sectional area of the coil, and &lt;code>l&lt;/code> is the length of the coil.&lt;/p></description><content type="html"><![CDATA[<p>An inductor is a passive electrical component that stores energy in a magnetic field when electric current flows through it. Inductors play a crucial role in many electrical circuits, from filtering to energy storage to regulation. In this study, we will delve into the construction, theory, and uses of inductors.</p>
+<h2 id="construction-of-a-basic-air-core-inductor">Construction of a Basic Air-Core Inductor</h2>
+<p>The basic air-core inductor can be constructed by wrapping a wire around a non-conductive core, such as air, plastic, or fiberglass. The number of turns, or coils, of wire used, along with the diameter and material of the wire, will determine the inductance of the inductor. To calculate the inductance, the formula <code>L = N^2 * Μ_o * A / l</code> can be used, where <code>N</code> is the number of turns, <code>Μ_o</code> is the permeability of free space, <code>A</code> is the cross-sectional area of the coil, and <code>l</code> is the length of the coil.</p>
+<figure><img src="/img/inductor.jpg"><figcaption>
+      <h4>Basic Inductor</h4>
+    </figcaption>
+</figure>
+
+<p>Diagram: A simple representation of an air-core inductor</p>
+<h2 id="parts-and-specifications">Parts and Specifications</h2>
+<p>The following table lists the parts and specifications needed to construct a basic air-core inductor:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Parts</th>
+          <th>Specifications</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Wire</td>
+          <td>Enameled copper wire with a diameter of 0.5 mm</td>
+      </tr>
+      <tr>
+          <td>Core</td>
+          <td>Non-conductive material, such as air or plastic</td>
+      </tr>
+      <tr>
+          <td>Insulation tape</td>
+          <td>Electrical insulating tape to secure the ends of the wire</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="instruments-equipments-and-tools">Instruments, Equipments, and Tools</h2>
+<p>To construct an air-core inductor, you will need the following instruments, equipments, and tools:</p>
+<ul>
+<li>A wire stripper</li>
+<li>A spool of enameled copper wire</li>
+<li>A non-conductive core, such as air or plastic</li>
+<li>Electrical insulating tape</li>
+<li>A ruler or measuring tape</li>
+<li>A calculator</li>
+</ul>
+<h2 id="procedure">Procedure</h2>
+<p>The procedure for constructing a basic air-core inductor involves wrapping a wire around a non-conductive core and securing the ends of the wire. The steps for this procedure are explained in detail below:</p>
+<ol>
+<li>Determine the desired inductance and calculate the number of turns required.</li>
+<li>Cut a length of enameled copper wire to the desired length, plus an extra 10 cm for securing the ends.</li>
+<li>Strip the insulation from the ends of the wire.</li>
+<li>Wrap the wire around the non-conductive core to the desired number of turns.</li>
+<li>Secure the ends of the wire with electrical insulating tape.</li>
+<li>Test the inductance using a multimeter.</li>
+</ol>
+<h2 id="theory">Theory</h2>
+<figure><img src="/img/inductor.gif"><figcaption>
+      <h4>Working of Inductor</h4>
+    </figcaption>
+</figure>
+
+<p>An inductor is a passive electrical component that stores energy in a magnetic field when electric current flows through it. The basic principle behind an inductor is Faraday&rsquo;s Law of Electromagnetic Induction, which states that a changing magnetic field induces an electromotive force (EMF) in a conductor. The amount of energy stored in an inductor is proportional to the number of turns in the wire and the current flowing through it.</p>
+<h2 id="types-of-cores">Types of Cores</h2>
+<p>There are several different types of cores that can be used in inductors, including air cores, iron cores, ferrite cores, and more. Each type of core has its own unique properties and advantages, making it ideal for specific applications.</p>
+<p>Air cores are the simplest and most basic type of inductor core, and are ideal for applications that require a large inductance. They are also the most economical and easiest to manufacture.</p>
+<p>Iron cores are used for high-frequency applications and provide a higher magnetic permeability than air cores. They also allow for a more compact design, as the magnetic field is concentrated in the core.</p>
+<p>Ferrite cores are made of a magnetic ceramic material and are often used in high-frequency applications where a high impedance is required. They are also immune to temperature changes, making them ideal for use in temperature-sensitive applications.</p>
+<h3 id="uses-of-inductor">Uses of Inductor</h3>
+<p>Inductors are widely used in electrical circuits for various purposes, including power supplies, filters, transformers, and resonant circuits.</p>
+<p>One of the most common uses of inductors is in filters. Inductors are used in filter circuits to block or pass certain frequencies. A high-pass filter passes high-frequency signals and blocks low-frequency signals, while a low-pass filter passes low-frequency signals and blocks high-frequency signals.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>In conclusion, Inductors are important components in electrical circuits, and understanding their construction, parts, instruments, procedure, theory, types of cores, and uses is crucial. With this knowledge, one can effectively design and implement inductors in various electrical circuits.</p>
+]]></content></item><item><title>Study of Capacitors</title><link>https://atharvap8.github.io/posts/2023/01/study-of-capacitors/</link><pubDate>Sun, 29 Jan 2023 00:27:01 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-capacitors/</guid><description>&lt;h1 id="understanding-capacitors-a-study">Understanding Capacitors: A Study&lt;/h1>
+&lt;p>A capacitor is an electronic component that stores electrical energy in an electric field. Capacitors are widely used in electrical circuits for a variety of purposes, including filtering, coupling, and energy storage.&lt;/p>
+&lt;h2 id="diagram">Diagram&lt;/h2>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/capacitor.jpg">&lt;figcaption>
+&lt;h4>Basic Capacitor&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>Diagram: Diagram of a basic capacitor&lt;/p>
+&lt;h2 id="theory">Theory&lt;/h2>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/capacitor.gif">&lt;figcaption>
+&lt;h4>Working of Capacitor&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>A capacitor is a two-terminal electronic component that stores electrical energy in an electric field. The theory of working of a capacitor is based on the principle of electrostatics, which states that opposite charges attract and like charges repel. When a voltage is applied across the terminals of a capacitor, it causes an electric field to develop between two conductive plates, separated by an insulating material known as a dielectric. The strength of the electric field is proportional to the voltage across the capacitor and the capacitance, which is a measure of the amount of electrical charge that can be stored per unit of voltage. When the voltage is removed, the electric field collapses and the energy stored in the electric field is released, making capacitors useful in a variety of applications such as power supplies, filters, and energy storage.&lt;/p></description><content type="html"><![CDATA[<h1 id="understanding-capacitors-a-study">Understanding Capacitors: A Study</h1>
+<p>A capacitor is an electronic component that stores electrical energy in an electric field. Capacitors are widely used in electrical circuits for a variety of purposes, including filtering, coupling, and energy storage.</p>
+<h2 id="diagram">Diagram</h2>
+<figure><img src="/img/capacitor.jpg"><figcaption>
+      <h4>Basic Capacitor</h4>
+    </figcaption>
+</figure>
+
+<p>Diagram: Diagram of a basic capacitor</p>
+<h2 id="theory">Theory</h2>
+<figure><img src="/img/capacitor.gif"><figcaption>
+      <h4>Working of Capacitor</h4>
+    </figcaption>
+</figure>
+
+<p>A capacitor is a two-terminal electronic component that stores electrical energy in an electric field. The theory of working of a capacitor is based on the principle of electrostatics, which states that opposite charges attract and like charges repel. When a voltage is applied across the terminals of a capacitor, it causes an electric field to develop between two conductive plates, separated by an insulating material known as a dielectric. The strength of the electric field is proportional to the voltage across the capacitor and the capacitance, which is a measure of the amount of electrical charge that can be stored per unit of voltage. When the voltage is removed, the electric field collapses and the energy stored in the electric field is released, making capacitors useful in a variety of applications such as power supplies, filters, and energy storage.</p>
+<h2 id="types-of-capacitors">Types of Capacitors</h2>
+<p>There are many different types of capacitors available, each with its own unique characteristics. Some common types include:</p>
+<ul>
+<li>Aluminum electrolytic capacitors: These capacitors have a high capacitance and are commonly used in power supplies and audio equipment.</li>
+<li>Ceramic capacitors: These capacitors have a low cost and are commonly used in circuits where a small value of capacitance is needed.</li>
+<li>Film capacitors: These capacitors have a high dielectric strength and are commonly used in high voltage and high frequency applications.</li>
+<li>Supercapacitors: These capacitors have a very high capacitance and can store a large amount of energy. They are commonly used in applications such as energy storage and backup power.</li>
+</ul>
+<h2 id="uses-of-capacitors">Uses of Capacitors</h2>
+<p>Capacitors are used in a wide variety of applications, including:</p>
+<ul>
+<li>Power supplies: Capacitors are used to smooth out the output of power supplies and to filter out unwanted noise.</li>
+<li>Audio equipment: Capacitors are used in audio equipment to block DC signals and to allow AC signals to pass through.</li>
+<li>Motor controls: Capacitors are used in motor controls to provide a &ldquo;boost&rdquo; of energy to start the motor.</li>
+<li>Signal processing: Capacitors are used in signal processing circuits to filter out unwanted signals and to adjust the phase of signals.</li>
+</ul>
+<h2 id="charging-and-discharging-a-capacitor">Charging and Discharging a Capacitor</h2>
+<p>When a capacitor is connected to a voltage source, an electric field is established between the plates of the capacitor, which causes charges to accumulate on the plates. The amount of charge that accumulates on the plates is directly proportional to the voltage applied to the capacitor. This process is known as charging the capacitor.</p>
+<p>The rate at which a capacitor charges depends on the capacitance and the resistance in the circuit. The capacitance of the capacitor determines how much charge it can store for a given voltage, and the resistance in the circuit determines how quickly the charges can flow to the capacitor.</p>
+<p>When a capacitor is disconnected from a voltage source, the charges on the plates will begin to flow back to the circuit, and the voltage across the capacitor will decrease. This process is known as discharging the capacitor. The rate of discharging also depends on the capacitance and the resistance in the circuit. A capacitor can be charged and discharged many times and it will not lose its capacitance.</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/UMHSMJmYJdY?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<p>In this video, we can see how a capacitor behaves when charging and discharging.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Capacitors are essential components in many electrical circuits, and they play an important role in many applications. Understanding how capacitors work and how they are used can help you to design and build more efficient and reliable circuits.</p>
+]]></content></item><item><title>Study of Dmm</title><link>https://atharvap8.github.io/posts/2023/01/study-of-dmm/</link><pubDate>Sun, 29 Jan 2023 00:26:51 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/study-of-dmm/</guid><description>&lt;h2 id="summary">Summary&lt;/h2>
+&lt;p>This topic aims to provide an in-depth understanding of digital multimeters, including its construction, components, and various applications.&lt;/p>
+&lt;h2 id="diagram">Diagram&lt;/h2>
+&lt;figure>&lt;img src="https://atharvap8.github.io/img/dmm.jpg">&lt;figcaption>
+&lt;h4>Basic DMM&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="parts-and-specifications">Parts and Specifications&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Part&lt;/th>
+&lt;th>Specification&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Display&lt;/td>
+&lt;td>LCD or LED&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Range Selection&lt;/td>
+&lt;td>Manual or Auto Ranging&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Input Impedance&lt;/td>
+&lt;td>&amp;gt;10 MΩ&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Maximum Voltage&lt;/td>
+&lt;td>600V AC/DC&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Maximum Current&lt;/td>
+&lt;td>10A AC/DC&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Resistance&lt;/td>
+&lt;td>200Ω to 200MΩ&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Continuity Test&lt;/td>
+&lt;td>Built-in Buzzer&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Diode Test&lt;/td>
+&lt;td>Built-in&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="tools-and-instruments">Tools and Instruments&lt;/h2>
+&lt;ul>
+&lt;li>Digital multimeter&lt;/li>
+&lt;li>Lead set&lt;/li>
+&lt;li>9V battery&lt;/li>
+&lt;li>Circuit under test&lt;/li>
+&lt;/ul>
+&lt;h2 id="procedure">Procedure&lt;/h2>
+&lt;p>The procedure for using a digital multimeter is quite straightforward. First, select the appropriate range for the measurement to be taken. Then, connect the leads to the multimeter and to the circuit under test. Finally, observe the reading on the display. It is important to note that the polarity of the leads should be observed, as some measurements require the leads to be connected in a specific way.&lt;/p></description><content type="html"><![CDATA[<h2 id="summary">Summary</h2>
+<p>This topic aims to provide an in-depth understanding of digital multimeters, including its construction, components, and various applications.</p>
+<h2 id="diagram">Diagram</h2>
+<figure><img src="/img/dmm.jpg"><figcaption>
+      <h4>Basic DMM</h4>
+    </figcaption>
+</figure>
+
+<h2 id="parts-and-specifications">Parts and Specifications</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Part</th>
+          <th>Specification</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Display</td>
+          <td>LCD or LED</td>
+      </tr>
+      <tr>
+          <td>Range Selection</td>
+          <td>Manual or Auto Ranging</td>
+      </tr>
+      <tr>
+          <td>Input Impedance</td>
+          <td>&gt;10 MΩ</td>
+      </tr>
+      <tr>
+          <td>Maximum Voltage</td>
+          <td>600V AC/DC</td>
+      </tr>
+      <tr>
+          <td>Maximum Current</td>
+          <td>10A AC/DC</td>
+      </tr>
+      <tr>
+          <td>Resistance</td>
+          <td>200Ω to 200MΩ</td>
+      </tr>
+      <tr>
+          <td>Continuity Test</td>
+          <td>Built-in Buzzer</td>
+      </tr>
+      <tr>
+          <td>Diode Test</td>
+          <td>Built-in</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="tools-and-instruments">Tools and Instruments</h2>
+<ul>
+<li>Digital multimeter</li>
+<li>Lead set</li>
+<li>9V battery</li>
+<li>Circuit under test</li>
+</ul>
+<h2 id="procedure">Procedure</h2>
+<p>The procedure for using a digital multimeter is quite straightforward. First, select the appropriate range for the measurement to be taken. Then, connect the leads to the multimeter and to the circuit under test. Finally, observe the reading on the display. It is important to note that the polarity of the leads should be observed, as some measurements require the leads to be connected in a specific way.</p>
+<h2 id="theory">Theory</h2>
+<figure><img src="/img/dmm.gif"><figcaption>
+      <h4>Working of DMM</h4>
+    </figcaption>
+</figure>
+
+<p>A digital multimeter is an electronic measuring instrument that can measure several electrical parameters such as voltage, current, resistance, and continuity. Digital multimeters use an ADC (Analog-to-Digital Converter) to convert the analog signals into digital signals for display on a screen.</p>
+<p>The input impedance of a digital multimeter is high, typically above 10 MΩ, which means that it has very little effect on the circuit being measured. This is important because it allows accurate measurements to be taken without disturbing the circuit under test.</p>
+<h2 id="types-of-digital-multimeters">Types of Digital Multimeters</h2>
+<p>There are two main types of digital multimeters: manual ranging and auto ranging. Manual ranging multimeters require the user to select the appropriate range for the measurement, while auto-ranging multimeters automatically select the correct range.</p>
+<p>Another type of digital multimeter is handheld multimeters, which are compact and portable, and can be easily carried to the work site. Benchtop multimeters, on the other hand, are larger in size and are designed to be used in a laboratory or workshop setting.</p>
+<h2 id="applications">Applications</h2>
+<p>Digital multimeters are widely used in a variety of industries, including electronics, electrical, and automotive. They can be used for troubleshooting and repairing electronic circuits, as well as for testing and measuring various electrical parameters in a circuit. Digital multimeters are also commonly used in educational settings for teaching electronics and electrical principles.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>In conclusion, digital multimeters are an essential tool for anyone involved in the field of electronics and electrical work. They are versatile, accurate, and provide quick and reliable measurements, making them an indispensable tool for professionals and hobbyists alike.</p>
+]]></content></item><item><title>P-N Junction Diode Characteristics(Forward &amp; Reverse)</title><link>https://atharvap8.github.io/posts/2023/01/p-n-junction-diode-characteristicsforward-reverse/</link><pubDate>Sat, 28 Jan 2023 21:34:36 +0530</pubDate><guid>https://atharvap8.github.io/posts/2023/01/p-n-junction-diode-characteristicsforward-reverse/</guid><description>&lt;h2 id="aim">Aim&lt;/h2>
+&lt;p>The aim of this experiment is to study the forward and reverse characteristics of a P-N junction diode and to determine its cut-in voltage and resistance.&lt;/p>
+&lt;hr>
+&lt;h2 id="components-required">Components Required&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Component Name&lt;/th>
+&lt;th>Quantity&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>P-N Junction Diode&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Resistor&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Power Supply&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Multimeter&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Crocodile Clips&lt;/td>
+&lt;td>2&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="equipments-required">Equipments Required&lt;/h2>
+&lt;ul>
+&lt;li>Oscilloscope&lt;/li>
+&lt;li>Connecting wires&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="theory">Theory&lt;/h2>
+&lt;h3 id="p-n-junction-diode">P-N Junction Diode&lt;/h3>
+&lt;ul>
+&lt;li>A P-N junction diode is a two-terminal device made of a p-type semiconductor material and an n-type semiconductor material joined together. The p-type material has a surplus of holes (positive charge carriers) and the n-type material has a surplus of electrons (negative charge carriers).&lt;/li>
+&lt;li>The P-N junction diode is made up of a semiconductor material, such as silicon, that is doped with impurities to create the P and N regions.&lt;/li>
+&lt;li>The P region is doped with a material that has an excess of holes, while the N region is doped with a material that has an excess of electrons. This creates a depletion region called as &lt;strong>&lt;code>Barrier Potential&lt;/code>&lt;/strong> in the middle of the P-N junction, where there is a lack of charge carriers.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="forward-bias">Forward Bias&lt;/h3>
+&lt;ul>
+&lt;li>When a positive voltage is applied to the p-type material, and a negative voltage to the n-type material, the diode is said to be in a forward-biased state.&lt;/li>
+&lt;li>In this state, the electric field generated by the applied voltage pushes the holes towards the n-type material and the electrons towards the p-type material. This creates a neutral region at the junction, known as the depletion region, where the concentration of charge carriers is very low. The depletion region acts as a barrier to the flow of current, but the electric field generated by the applied voltage overcomes this barrier and allows current to flow.&lt;/li>
+&lt;li>The &lt;strong>&lt;code>cut-in voltage&lt;/code>&lt;/strong> of a diode is the minimum voltage required to forward-bias the diode and make it conduct.&lt;/li>
+&lt;li>The forward voltage required to bring the P-N junction diode into the forward-biased state is called the forward voltage drop or the forward voltage threshold.&lt;/li>
+&lt;li>This value is around &lt;strong>&lt;code>0.7 V&lt;/code>&lt;/strong> for &lt;em>&lt;code>Si(Silicon)&lt;/code>&lt;/em> diodes and &lt;strong>&lt;code>0.3 V&lt;/code>&lt;/strong> for &lt;em>&lt;code>Ge(Germanium)&lt;/code>&lt;/em> diodes.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="reverse-bias">Reverse Bias&lt;/h3>
+&lt;ul>
+&lt;li>On the other hand, when a negative voltage is applied to the p-type material, and a positive voltage to the n-type material, the diode is said to be in a reverse-biased state.&lt;/li>
+&lt;li>In this state, the electric field generated by the applied voltage pushes the holes away from the n-type material and the electrons away from the p-type material. This increases the width of the depletion region and makes it more difficult for current to flow. The reverse-biased voltage must be high enough to overcome the built-in potential of the junction and push the majority carriers to the other side of the depletion region.&lt;/li>
+&lt;li>The reverse &lt;strong>&lt;code>breakdown voltage&lt;/code>&lt;/strong> is the minimum reverse voltage required to cause breakdown of the diode.&lt;/li>
+&lt;li>The reverse saturation current is the minimum current that flows through the diode when it is reverse-biased. It is due to the thermal generation of carriers within the depletion region.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="ideality-factor">Ideality Factor&lt;/h3>
+&lt;ul>
+&lt;li>The ideality factor, also known as the quality factor, is a parameter that describes the non-ideal behavior of a P-N junction diode. It is the ratio of the actual voltage across the diode to the thermal voltage.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="conclusion">Conclusion&lt;/h3>
+&lt;ul>
+&lt;li>In conclusion, the forward and reverse characteristics of a P-N junction diode are dependent on the doping levels and the voltage applied across it.&lt;/li>
+&lt;li>By understanding these characteristics, we can use P-N junction diodes to build electronic circuits that perform a variety of functions, such as &lt;strong>&lt;code>rectification&lt;/code>&lt;/strong>, &lt;strong>&lt;code>voltage regulation&lt;/code>&lt;/strong>, and &lt;strong>&lt;code>overvoltage protection&lt;/code>&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="procedure">Procedure&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Set up the circuit as shown in the circuit diagram, connecting the P-N junction diode, resistor, power supply, and multimeter as indicated.&lt;/p></description><content type="html"><![CDATA[<h2 id="aim">Aim</h2>
+<p>The aim of this experiment is to study the forward and reverse characteristics of a P-N junction diode and to determine its cut-in voltage and resistance.</p>
+<hr>
+<h2 id="components-required">Components Required</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Component Name</th>
+          <th>Quantity</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>P-N Junction Diode</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>Resistor</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>Power Supply</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>Multimeter</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>Crocodile Clips</td>
+          <td>2</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="equipments-required">Equipments Required</h2>
+<ul>
+<li>Oscilloscope</li>
+<li>Connecting wires</li>
+</ul>
+<hr>
+<h2 id="theory">Theory</h2>
+<h3 id="p-n-junction-diode">P-N Junction Diode</h3>
+<ul>
+<li>A P-N junction diode is a two-terminal device made of a p-type semiconductor material and an n-type semiconductor material joined together. The p-type material has a surplus of holes (positive charge carriers) and the n-type material has a surplus of electrons (negative charge carriers).</li>
+<li>The P-N junction diode is made up of a semiconductor material, such as silicon, that is doped with impurities to create the P and N regions.</li>
+<li>The P region is doped with a material that has an excess of holes, while the N region is doped with a material that has an excess of electrons. This creates a depletion region called as <strong><code>Barrier Potential</code></strong> in the middle of the P-N junction, where there is a lack of charge carriers.</li>
+</ul>
+<hr>
+<h3 id="forward-bias">Forward Bias</h3>
+<ul>
+<li>When a positive voltage is applied to the p-type material, and a negative voltage to the n-type material, the diode is said to be in a forward-biased state.</li>
+<li>In this state, the electric field generated by the applied voltage pushes the holes towards the n-type material and the electrons towards the p-type material. This creates a neutral region at the junction, known as the depletion region, where the concentration of charge carriers is very low. The depletion region acts as a barrier to the flow of current, but the electric field generated by the applied voltage overcomes this barrier and allows current to flow.</li>
+<li>The <strong><code>cut-in voltage</code></strong> of a diode is the minimum voltage required to forward-bias the diode and make it conduct.</li>
+<li>The forward voltage required to bring the P-N junction diode into the forward-biased state is called the forward voltage drop or the forward voltage threshold.</li>
+<li>This value is around <strong><code>0.7 V</code></strong> for <em><code>Si(Silicon)</code></em> diodes and <strong><code>0.3 V</code></strong> for <em><code>Ge(Germanium)</code></em> diodes.</li>
+</ul>
+<hr>
+<h3 id="reverse-bias">Reverse Bias</h3>
+<ul>
+<li>On the other hand, when a negative voltage is applied to the p-type material, and a positive voltage to the n-type material, the diode is said to be in a reverse-biased state.</li>
+<li>In this state, the electric field generated by the applied voltage pushes the holes away from the n-type material and the electrons away from the p-type material. This increases the width of the depletion region and makes it more difficult for current to flow. The reverse-biased voltage must be high enough to overcome the built-in potential of the junction and push the majority carriers to the other side of the depletion region.</li>
+<li>The reverse <strong><code>breakdown voltage</code></strong> is the minimum reverse voltage required to cause breakdown of the diode.</li>
+<li>The reverse saturation current is the minimum current that flows through the diode when it is reverse-biased. It is due to the thermal generation of carriers within the depletion region.</li>
+</ul>
+<hr>
+<h3 id="ideality-factor">Ideality Factor</h3>
+<ul>
+<li>The ideality factor, also known as the quality factor, is a parameter that describes the non-ideal behavior of a P-N junction diode. It is the ratio of the actual voltage across the diode to the thermal voltage.</li>
+</ul>
+<hr>
+<h3 id="conclusion">Conclusion</h3>
+<ul>
+<li>In conclusion, the forward and reverse characteristics of a P-N junction diode are dependent on the doping levels and the voltage applied across it.</li>
+<li>By understanding these characteristics, we can use P-N junction diodes to build electronic circuits that perform a variety of functions, such as <strong><code>rectification</code></strong>, <strong><code>voltage regulation</code></strong>, and <strong><code>overvoltage protection</code></strong>.</li>
+</ul>
+<hr>
+<h2 id="procedure">Procedure</h2>
+<ol>
+<li>
+<p>Set up the circuit as shown in the circuit diagram, connecting the P-N junction diode, resistor, power supply, and multimeter as indicated.</p>
+</li>
+<li>
+<p>Start by applying a small voltage to the diode, gradually increasing it until the diode begins to conduct.</p>
+</li>
+<li>
+<p>Note down the voltage at which the diode begins to conduct and the current flowing through the diode.</p>
+</li>
+<li>
+<p>Repeat the above steps for different values of applied voltage, and plot a graph of voltage versus current.</p>
+</li>
+<li>
+<p>Reverse-bias the diode by reversing the polarity of the applied voltage, and measure the reverse current flowing through the diode.</p>
+</li>
+<li>
+<p>Repeat the above steps for different values of reverse-biased voltage, and plot a graph of voltage versus reverse current.</p>
+</li>
+<li>
+<p>Repeat the entire procedure at least two more times to obtain more accurate results.</p>
+</li>
+<li>
+<p>Calculate the cut-in voltage and resistance of the diode from the plots obtained.</p>
+</li>
+<li>
+<p>Compare the calculated values with the expected values for the diode.</p>
+</li>
+<li>
+<p>Observe the waveform of the voltage and current on the oscilloscope.</p>
+</li>
+<li>
+<p>Record the observations and the results of the experiment in a report.</p>
+</li>
+<li>
+<p>Clean up the circuit and return all components to their proper storage location.</p>
+</li>
+<li>
+<p>Repeat the experiment with different diodes and compare the results.</p>
+</li>
+<li>
+<p>Analyze the effect of temperature on the forward and reverse characteristics of the diode.</p>
+</li>
+<li>
+<p>Investigate the effect of reverse-biased voltage on the breakdown voltage of the diode.</p>
+</li>
+<li>
+<p>Determine the effect of diode capacitance on the waveform of voltage and current in the circuit.</p>
+</li>
+</ol>
+<hr>
+<h2 id="circuit-diagram-">Circuit Diagram 👇🏻</h2>
+<figure><img src="/img/fw-rv-char.jpg">
+</figure>
+
+<hr>
+<h2 id="forward--reverse-characteristics-graph-">Forward &amp; Reverse Characteristics Graph 👇🏻</h2>
+<figure><img src="/img/fwd-rvs-graph.jpg">
+</figure>
+
+<hr>
+<h2 id="precautions">Precautions</h2>
+<ul>
+<li>Ensure that the circuit connections are secure and tight to avoid any loose connections.</li>
+<li>Use a <strong><code>LOW</code></strong> voltage power supply to avoid damaging the diode.</li>
+<li>Use protective equipment, such as safety glasses, when working with high voltage.</li>
+<li><strong><code>AVOID</code></strong> touching any live wires or components in the circuit.</li>
+<li>Make sure to <strong><code>DISCHARGE</code></strong> any stored charge in the circuit before touching it.</li>
+</ul>
+<hr>
+<h2 id="summary">Summary</h2>
+<p>In this experiment, the forward and reverse characteristics of a P-N junction diode were studied by measuring the current flowing through the diode for different values of applied voltage. The cut-in voltage and resistance of the diode were calculated from the obtained results and compared with the expected values.</p>
+<hr>
+<h2 id="conclusion-1">Conclusion</h2>
+<p>The forward and reverse characteristics of a P-N junction diode were experimentally determined and analyzed. The results showed the behavior of the diode in both forward and reverse bias conditions, and demonstrated the importance of the P-N junction in rectifying AC signals. The experiment also emphasized the importance of following proper precautions and safety measures when working with electrical circuits.</p>
+]]></content></item></channel></rss>

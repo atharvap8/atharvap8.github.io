@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects Index on Atharva Phadke</title><link>https://atharvap8.github.io/posts/ee-projects/</link><description>Recent content in Projects Index on Atharva Phadke</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Fri, 28 Jan 2022 22:44:41 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/posts/ee-projects/index.xml" rel="self" type="application/rss+xml"/><item><title>Ble Car Security Controller</title><link>https://atharvap8.github.io/posts/2024/10/ble-car-security-controller/</link><pubDate>Wed, 30 Oct 2024 17:07:33 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/10/ble-car-security-controller/</guid><description>&lt;h1 id="central-locking-and-security-controller-for-wagon-r-with-esp32-and-ble">Central Locking and Security Controller for Wagon R with ESP32 and BLE&lt;/h1>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on Atharva Phadke</title><link>https://atharvap8.github.io/posts/ee-projects/</link><description>Recent content in Projects on Atharva Phadke</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Fri, 28 Jan 2022 22:44:41 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/posts/ee-projects/index.xml" rel="self" type="application/rss+xml"/><item><title>Ble Car Security Controller</title><link>https://atharvap8.github.io/posts/2024/10/ble-car-security-controller/</link><pubDate>Wed, 30 Oct 2024 17:07:33 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/10/ble-car-security-controller/</guid><description>&lt;h1 id="central-locking-and-security-controller-for-wagon-r-with-esp32-and-ble">Central Locking and Security Controller for Wagon R with ESP32 and BLE&lt;/h1>
 &lt;hr>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>This project showcases the development of a central locking and security controller for the Wagon R car, using Bluetooth Low Energy (BLE) technology. The system is based on an ESP32 microcontroller that handles key functionalities such as door signal control, bonnet status, indicators, and alarm settings. It is designed to work with a smartphone or a dedicated transmitter (built using the Xiao ESP32C3 board). Additionally, the system features an integrated immobilizer that communicates with the car’s ECM (Engine Control Module), preventing vehicle movement during theft attempts. The system also provides real-time alerts to the user&amp;rsquo;s cellphone in case of a security breach.&lt;/p></description><content type="html"><![CDATA[<h1 id="central-locking-and-security-controller-for-wagon-r-with-esp32-and-ble">Central Locking and Security Controller for Wagon R with ESP32 and BLE</h1>
@@ -192,14 +192,14 @@ Install the system in a robust, fireproof casing for added protection. Ensure th
 &lt;h2 id="youtube-video">YouTube Video&lt;/h2>
 &lt;p>Here&amp;rsquo;s the project&amp;rsquo;s youtube video link:
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/RHL07T6kZwI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/RHL07T6kZwI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
 &lt;/div>
 &lt;/p></description><content type="html"><![CDATA[<h1 id="introduction">Introduction</h1>
 <p>In this project, I have built an IR Sensor-based automatic water tap. This system allows water to flow when it detects an object in front of the sensor, making it a convenient and hygienic solution for home or public restrooms. The IR sensor is mounted on the tap head to detect any objects near the water tap.</p>
 <h2 id="youtube-video">YouTube Video</h2>
 <p>Here&rsquo;s the project&rsquo;s youtube video link:
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/RHL07T6kZwI?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/RHL07T6kZwI?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
 </p>
 <h2 id="components-required">Components Required</h2>
@@ -291,81 +291,338 @@ Install the system in a robust, fireproof casing for added protection. Ensure th
 </ol>
 <h2 id="conclusion">Conclusion</h2>
 <p>This IR sensor-based automatic water tap project is an excellent way to enhance hygiene and convenience in both home and public restrooms. By automating the water flow, you can minimize water wastage and prevent the spread of germs through touch. Being cost effective, and easy to build, anyone interested, can make it.</p>
-]]></content></item><item><title>Alexa Washing Machine</title><link>https://atharvap8.github.io/posts/2024/06/alexa-washing-machine/</link><pubDate>Fri, 07 Jun 2024 17:57:12 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/06/alexa-washing-machine/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>In this project, we will build a smart controller for a washing machine. The controller is based on the ESP32 module, which works as the central brain. It manages all the data processing, communication &amp;amp; feedback, and manages I/O in the system. The system includes buck converters, power supply, and relays for actuator control. It utilizes an inverter drive to control the motor speed and direction, with a changeover relay configuration to manage the motor’s rotational direction. Also it includes a 16x2 display, and pushbuttons, for program control, and LEDs for status indication. All wash programs are embedded within the microcontroller, and the system is designed for easy further development, allowing changes to be made according to user requirements.
-This project brings IoT functionality to washing machines, offering voice control, remote monitoring &amp;amp; feedback for convenience and efficiency.&lt;/p></description><content type="html"><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>In this project, we will build a smart controller for a washing machine. The controller is based on the ESP32 module, which works as the central brain. It manages all the data processing, communication &amp; feedback, and manages I/O in the system. The system includes buck converters, power supply, and relays for actuator control. It utilizes an inverter drive to control the motor speed and direction, with a changeover relay configuration to manage the motor’s rotational direction. Also it includes a 16x2 display, and pushbuttons, for program control, and LEDs for status indication. All wash programs are embedded within the microcontroller, and the system is designed for easy further development, allowing changes to be made according to user requirements.
-This project brings IoT functionality to washing machines, offering voice control, remote monitoring &amp; feedback for convenience and efficiency.</p>
+]]></content></item><item><title>Advanced IoT Washing Machine</title><link>https://atharvap8.github.io/posts/2024/06/advanced-iot-washing-machine/</link><pubDate>Fri, 07 Jun 2024 17:57:12 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/06/advanced-iot-washing-machine/</guid><description>&lt;p>&lt;strong>⚠️ Warning: Extreme High Voltage Risk!&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>This project involved working with mains, and rectified 325V DC, such voltage levels are more than lethal.&lt;/strong>&lt;br>
+&lt;strong>Appropriate safety measures were taken, and proper safety gear was used, including the use of current-limiting lamps, isolation circuits, and staged testing procedures.&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Readers attempting similar projects MUST have a strong understanding of electrical safety and always work under supervision if inexperienced.&lt;/strong>&lt;/p>
+&lt;h2 id="-introduction">📘 Introduction&lt;/h2>
+&lt;p>This project chronicles the transformation of a non-functional &lt;em>LG fully automatic washing machine&lt;/em> into a modern, intelligent, and voice-controlled appliance using &lt;strong>ESP32 microcontroller, relays, sensors, and Alexa integration.&lt;/strong> The machine’s &lt;strong>original controller PCB had failed&lt;/strong>, providing an opportunity to take full control of the machine’s sophisticated components and create a customisable system from the ground up.&lt;/p></description><content type="html"><![CDATA[<p><strong>⚠️ Warning: Extreme High Voltage Risk!</strong></p>
+<p><strong>This project involved working with mains, and rectified 325V DC, such voltage levels are more than lethal.</strong><br>
+<strong>Appropriate safety measures were taken, and proper safety gear was used, including the use of current-limiting lamps, isolation circuits, and staged testing procedures.</strong></p>
+<p><strong>Readers attempting similar projects MUST have a strong understanding of electrical safety and always work under supervision if inexperienced.</strong></p>
+<h2 id="-introduction">📘 Introduction</h2>
+<p>This project chronicles the transformation of a non-functional <em>LG fully automatic washing machine</em> into a modern, intelligent, and voice-controlled appliance using <strong>ESP32 microcontroller, relays, sensors, and Alexa integration.</strong> The machine’s <strong>original controller PCB had failed</strong>, providing an opportunity to take full control of the machine’s sophisticated components and create a customisable system from the ground up.</p>
 <hr>
-<h2 id="components-required">Components Required</h2>
-<p>To build this, the following components are required:</p>
+<h2 id="-background--motivation">🎯 Background &amp; Motivation</h2>
+<p>After the machine&rsquo;s original controller board went haywire, instead of discarding it, I saw the opportunity to understand and reengineer the device. With full access to all internal components (motor, valves, sensors), this project became an intensive 1-year journey through reverse engineering, signal probing, embedded firmware design, IoT integration, mechanical testing, and finally full automation.</p>
+<hr>
+<h2 id="-complete-disassembly--mechanical-understanding">🔧 Complete Disassembly &amp; Mechanical Understanding</h2>
 <ul>
-<li>ESP32 module</li>
-<li>Buck Converters</li>
-<li>Relay module</li>
-<li>Power Supply Unit</li>
-<li>Inverter Drive</li>
-<li>Push Buttons and Switches</li>
-<li>LEDs</li>
-<li>Connectors and Wires</li>
-<li>PCB</li>
-<li>Misc. (screws, tools, equipments, electrical box, etc.)</li>
+<li>
+<p>First I started by taking the entire drum and motor assembly apart. I literally removed every component and part, such as the suspension arms, The Drain Motor assembly, the gearbox transmission system, The motor assembly.</p>
+</li>
+<li>
+<p>The top cover was removed, and the required wiring connectors were disconnected, so as to completely separate the top housing cover. Then the drum assembly was taken out.</p>
+</li>
+<li>
+<p>What I did afterwards is, I had a 3 phase VFD (Variable Frequency Drive). Using it, I started to test the motor with various frequecies, and observed the RPM of the motor at different frequency.</p>
+</li>
+<li>
+<p>Next test was to properly test if the drum brake disengage mechanism was working or not. To test it, I had to apply 12 V to the drain Motor. There i realized, it had 3 pins, 1 is GND (Ground), 2 is Wash Mode, 3 is Spin Mode.</p>
+</li>
+<li>
+<p>By applying 12V DC to specified terminal, i tested the drain motor. And confirmed that the drum also starts to spin.</p>
+</li>
+</ul>
+<figure><img src="/img/aiotwm/drainmotor.jpeg"
+    alt="Drain Motor" width="800px" height="400px"><figcaption>
+      <p>Drain Motor</p>
+    </figcaption>
+</figure>
+
+<hr>
+<h2 id="-reverse-engineering-the-inverter-drive-module">🧠 Reverse Engineering the Inverter Drive Module</h2>
+<figure><img src="/img/aiotwm/module.jpg"
+    alt="Inverter Drive Module (Model: ISB-LC4-3050_V2)" width="900px" height="500px"><figcaption>
+      <p><strong><em>Inverter Drive Module (Model: ISB-LC4-3050_V2)</em></strong></p>
+    </figcaption>
+</figure>
+
+<ul>
+<li>
+<p>Before connecting the module to anything, I conducted a thorough short-circuit and continuity test on the IPM board to ensure that it hadn’t suffered damage or latent failures. Only after verifying its integrity did I proceed with functional testing.</p>
+</li>
+<li>
+<p>The inverter module contains an Infineon IGCM04G60HA Intelligent Power Module (<a href="https://eepower.com/technical-articles/intelligent-power-modules-ipms-concepts-features-and-applications" title="Detailed Info"><strong>IPM</strong></a>) along with a Renesas UPD78F1201 16-bit microcontroller, originally used in Samsung dual-door refrigerators to control the BLDC compressor motor.</p>
+</li>
+<li>
+<p>I began reverse engineering the control logic by tracing the input terminals and signal paths on the board. It was quickly evident that this module was far more sophisticated than a basic relay driver — it had full embedded PWM-based motor control logic built into the microcontroller.</p>
+</li>
+<li>
+<p>The IPM requires an external 325V DC power rail, typically obtained by rectifying and filtering the 230V AC mains using a high-voltage bridge rectifier and bulk electrolytic capacitors. This high-voltage rail is then switched across the motor windings using high-side and low-side IGBTs inside the IPM, forming a standard three-phase inverter topology.</p>
+</li>
+<li>
+<p>One of the unique behaviors I discovered during testing was the module’s built-in soft-start delay: it waits for nearly 10 minutes after power is applied before automatically enabling motor output. This likely replicates the refrigeration compressor’s anti-short-cycling feature. After the wait, the board autonomously initialized and began spinning the motor, confirming that it was operational.</p>
+</li>
+<li>
+<p>During this process, I connected the motor externally and used a series filament lamp to limit inrush current and provide a visual cue for abnormal current draw — a tried-and-tested method in electronics repair. This prevented catastrophic failure in case of internal shorts or miswiring.</p>
+</li>
+<li>
+<p>The motor began spinning smoothly with considerable torque — to the extent that I could not stop it by hand. The board was operating as expected, safely handling the start-up, speed regulation, and directional switching.</p>
+</li>
+</ul>
+<h2 id="-understanding-motor-drive-logic-3-phase-inverter-motor">⚙️ Understanding Motor Drive Logic (3-Phase Inverter Motor)</h2>
+<ul>
+<li>The motor was a typical 3-Phase UVW Motor, with a rated Voltage of 310V DC. Also it was specially designed for LG.</li>
+</ul>
+<figure><img src="/img/aiotwm/uvwmotor.jpg"
+    alt="BLDC Motor - (Part No. WDC0150Y1M)" width="400px" height="250px"><figcaption>
+      <p><strong>BLDC Motor - (Part No. WDC0150Y1M)</strong></p>
+    </figcaption>
+</figure>
+
+<ul>
+<li>
+<p>Once the motor was verified to run standalone, I mounted it inside the washing machine drum and connected it to the mechanical assembly responsible for spin and wash motion. This allowed me to test realistic load behavior.</p>
+</li>
+<li>
+<p>I loaded the drum with wet clothes and triggered a spin sequence. The motor was powerful enough to sustain the load without stalling — demonstrating that the Samsung IPM board’s output stage was capable of delivering commercial-level torque, even under load conditions typical for a full spin cycle.</p>
+</li>
+<li>
+<p>I studied the motor’s feedback and control wiring in more detail. It used a 4-pin connector, <strong>responsible for:</strong></p>
+<ul>
+<li><em>Providing Motor RPM (Speed) Values (using Feedback)</em></li>
+<li><em>Providing PWM Speed Control to the IPM board</em></li>
+<li><em>Sending Fault Status and Response Codes</em></li>
+</ul>
+</li>
+<li>
+<p>The core of the operation lies in the alternating high-voltage switching of the three-phase windings, based on precise rotor position sensing. This allows the motor to operate in synchronous mode, with smooth startup, speed variation, and directional control.</p>
+</li>
+</ul>
+<figure><img src="/img/aiotwm/modblkdia.png"
+    alt="Inverter Drive Module (Model: ISB-LC4-3050_V2) Block Diagram" width="900px" height="500px"><figcaption>
+      <p><strong><em>Inverter Drive Module (Model: ISB-LC4-3050_V2) Block Diagram</em></strong></p>
+    </figcaption>
+</figure>
+
+<hr>
+<h2 id="-prototyping-with-arduino-uno">🧪 Prototyping with Arduino UNO</h2>
+<ul>
+<li>To test manual control over the IPM board, I designed a basic PWM signal generator using an Arduino UNO. The idea was to simulate the kind of PWM signals the original fridge controller might have sent to the IPM board.</li>
+</ul>
+<p><strong>Video Link:</strong> <a href="https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipNVxxiq89uGjgkWxa-xYKltjGWV_kP-2nztHGkK?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B"><strong>Click Here</strong></a></p>
+<ul>
+<li>
+<p>The PWM signal was routed through an optocoupler to safely interface the 5V Arduino with the IPM’s control logic. This allowed me to control motor start/stop by sending short PWM bursts after the initial soft-start period.</p>
+</li>
+<li>
+<p>Next, I experimented with variable PWM duty cycles and frequency modulation. This helped test the motor speed control behavior — I could observe changes in spin RPM as I adjusted the duty cycle from ~20% to ~90%.</p>
+</li>
+<li>
+<p>This step confirmed that the motor’s speed could be externally controlled via software-generated PWM, laying the groundwork for future integration with the ESP32, which would replace the Arduino in the final system.</p>
+</li>
+<li>
+<p>The prototype circuit also included simple time delay routines to prevent sudden starts, giving the inverter enough time to safely initialize before sending control signals.</p>
+</li>
 </ul>
 <hr>
-<h2 id="project-files">Project Files</h2>
-<p>This is where you can find the Code, Schematics, PCB Layout, and all docs related to this project. Click Here:</p>
-<hr>
-<h2 id="raw-media-files">Raw Media Files</h2>
-<p>These are the raw unedited photos, videos, and prototype tests. Click Here:</p>
-<p><a href="https://photos.app.goo.gl/JXmmXoFTdbAtJn859"><img src="https://img.shields.io/badge/GooglePhotos-Album-blue?style=flat&amp;logo=Google%20Photos" alt="Static Badge"></a></p>
-<hr>
-<h2 id="how-it-works">How It Works</h2>
-<p>The smart washing machine controller has a ESP32 module, at its core, which manages all the functionality. It receives all inputs, manages outputs, manages timing, and signal control, output control, and Serial Communication. The main PCB houses the ESP32, some voltage converters, power supply, and connectors for each discrete sensor / device.
-There is also a secondary PCB, which is called Inverter Drive Board. As the name suggests, its a inverter drive used to control the motor, and manage its parameters. The ESP32 provides speed &amp; direction signals to the board. For changover action, and to control some actuators, relays are present, which are direct driven by ESP32. I have used
-all these components in their modular form, and have used Berg Connectors for easy part replacement and repair.</p>
-<hr>
-<h2 id="step-by-step-making-guide">Step-by-Step Making Guide</h2>
-<h3 id="step-1-documentation-and-design">Step 1: Documentation, and design</h3>
-<p>Starting with schematic diagram, and component selection, we move forward to making the design, of the whole assembly.</p>
-<h3 id="step-2-assembly">Step 2: Assembly</h3>
-<p>Start by connecting every part on the PCB / perfboard, then connect the pin headers for the specific sensors / devices, actuators, power supply, etc.</p>
-<h3 id="step-3-program-the-esp32">Step 3: Program the ESP32</h3>
-<p>Edit the credentials in the given code, and then upload it to ESP32, and verify every connection atleast 2 times before first powerup.</p>
-<h3 id="step-4-calibration--adjustments">Step 4: Calibration &amp; Adjustments</h3>
-<p>After initial powerup, manual calibration needs to be done, for the water level sensor to work properly. adjusting the float parameter of water sensor with the actual 0 reference, confirms that it is calibrated successfully.</p>
-<h3 id="step-5-final-installation-and-testing">Step 5: Final Installation and Testing</h3>
-<p>After assembling the PCB and programming the ESP32, install the controller in the washing machine. Connect the motor, sensors, and other peripherals to the system and run tests to ensure the washing programs work correctly, including voice commands and Telegram updates. It is beneficial to use modular connectors (but with proper connection strength) to ensure no loose connects, and a hassle free replacement process.</p>
-<hr>
-<h2 id="conclusion">Conclusion</h2>
-<p>The smart washing machine controller brings modern technology into home appliances by integrating voice control and remote monitoring. With the ESP32 at the core, the system can control the motor, manage wash programs, and provide real-time feedback via Telegram. The solution is easily customizable for different washing machine models, making it a versatile IoT upgrade for home appliances.</p>
-<hr>
-<h2 id="advantages">Advantages</h2>
+<h2 id="-actuator-testing--verification">🔌 Actuator Testing &amp; Verification</h2>
 <ul>
-<li>Alexa voice control for convenient operation.</li>
-<li>Real-time updates via Telegram for remote monitoring.</li>
-<li>Inverter drive control for precise washing &amp; enhanced efficiency.</li>
-<li>Changeover relays to control motor direction.</li>
-<li>Customizable wash programs.</li>
-<li>Modular PCB design for easy assembly and repair.</li>
+<li>
+<p>To ensure that each electromechanical component of the washing machine functioned independently and predictably, I began by testing the actuators one by one using a bench power supply set to 12V DC. This direct testing allowed me to characterize their behavior under controlled conditions.</p>
+</li>
+<li>
+<p><strong>Inlet Valve Solenoid:</strong>
+Applying 12V to the inlet valve triggered the internal solenoid, allowing water to flow through the valve — confirming its normal operation. This validated that the solenoid did not have internal clogs or sticking.
+Test Video: <a href="https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipNyLZyQe0GKYjuD5GXr5bdJehANY0eZp5mWon2a?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B"><strong>Cick Here</strong></a></p>
+</li>
+<li>
+<p><strong>Drain Motor – Stage 1 (Power Wash Mode):</strong>
+In this stage, a partial stroke of the drain motor disengages the half-drum brake, enabling gentle rotation for washing. On applying power, the actuator moved correctly to this intermediate position.</p>
+</li>
+<li>
+<p><strong>Drain Motor – Stage 2 (Spin Mode):</strong><br>
+A longer actuation engaged the drain motor fully, which completely disengaged the drum brake, allowing high-speed rotation for spin cycles. This also worked reliably and repeatedly.</p>
+</li>
+</ul>
+<p>These tests formed the foundation for mapping the mechanical behavior of the machine&rsquo;s internal mechanisms with external electrical control, enabling fully customized programming of future washing sequences.</p>
+<hr>
+<h2 id="-closed-loop-water-level-regulation">🔄 Closed-Loop Water Level Regulation</h2>
+<p>To automate water level management, I initially explored both analog and digital pressure sensing techniques. While analog sensors lacked precision and required additional ADC circuitry, most commercial digital pressure sensors were expensive and difficult to source.</p>
+<ul>
+<li>After some research, I discovered the <strong>HX710B</strong>, a pressure sensor IC derived from the popular HX711 load cell amplifier family. Though not originally intended for environmental sensing, the HX710B has a differential ADC interface capable of measuring small voltage differences with high resolution — making it suitable for repurposing as a water-level pressure sensor.</li>
+</ul>
+<figure><img src="/img/aiotwm/aps.jpg"
+    alt="HX710B Air Pressure Sensor" width="300px" height="300px"><figcaption>
+      <p>HX710B Air Pressure Sensor</p>
+    </figcaption>
+</figure>
+
+<p><strong>Test Setup:</strong></p>
+<ul>
+<li>
+<p>I connected the HX710B to a small air trap chamber — this chamber is connected to the bottom of the drum via a sealed air tube.</p>
+</li>
+<li>
+<p>As the water fills the drum, the air inside the trap compresses, increasing the internal pressure, which is detected by the HX710B module.</p>
+</li>
+<li>
+<p>A simple Arduino sketch continuously read the digital values from the HX710B and compared them against predefined setpoints.</p>
+</li>
+<li>
+<p>Calibration was performed manually using graduated containers to add specific volumes of water. I logged corresponding sensor readings to correlate digital values with actual water levels (e.g., 6L, 12L, 18L).</p>
+</li>
 </ul>
 <hr>
-<h2 id="disadvantages">Disadvantages</h2>
+<h2 id="-transitioning-to-esp32-platform">🔁 Transitioning to ESP32 Platform</h2>
 <ul>
-<li>Requires Wi-Fi connection for full functionality (Alexa and Telegram).</li>
-<li>Complex assembly procedure.</li>
-<li>Programming knowledge is required for making custom changes.</li>
-<li>May need advanced electrical skills for installation and modification.</li>
+<li>Once the core testing of motor control and actuator behavior was completed, I shifted focus to building a more intelligent, fully programmable controller. This began with selecting the appropriate microcontroller platform.</li>
+</ul>
+<p><strong>Microcontroller Selection:</strong></p>
+<ul>
+<li>After estimating the number of GPIOs required for relay modules, sensors, communication interfaces, and feedback mechanisms, I finalized the ESP32 as the brain of the system.</li>
+</ul>
+<p><strong>The ESP32 provided:</strong></p>
+<ul>
+<li>Dual-core processing for multitasking wash logic and communications.</li>
+<li>Sufficient digital I/O and ADC inputs.</li>
+<li>Built-in Wi-Fi and Bluetooth, enabling smart integration features.</li>
+</ul>
+<p><strong>Platform Setup and Firmware Development:</strong></p>
+<ul>
+<li>I opted for the ESP-IDF (Espressif IoT Development Framework) to build the firmware, ensuring full control and lower-level access compared to Arduino Core.</li>
+</ul>
+<p><strong>Initial libraries integrated:</strong></p>
+<ul>
+<li>
+<p><strong>HX711/HX710B</strong> for water level sensing.</p>
+</li>
+<li>
+<p><strong>Telegram Bot</strong> Library to push real-time updates to my personal Telegram bot.</p>
+</li>
+<li>
+<p><strong>Wire / I2C / GPIO</strong> drivers for low-level control of peripherals.</p>
+</li>
+<li>
+<p><strong>WebServer</strong> Library for Endpoint control, and OTA Update Framework.</p>
+</li>
+<li>
+<p><strong>ElegantOTA</strong> Library for Backend OTA Handling.</p>
+</li>
+<li>
+<p><strong>LiquidCrystalI2C</strong> Library for Displaying text on 16x2 LCD.</p>
+</li>
+<li>
+<p><strong>Espalexa Library</strong> for Remote Device Control.</p>
+</li>
+<li>
+<p>All control logic — including PWM generation, relay sequencing, safety interlocks, and mode switching — was implemented as tasks within the ESP32’s FreeRTOS framework.</p>
+</li>
 </ul>
 <hr>
-<h2 id="future-scope-for-improvement">Future Scope for Improvement</h2>
+<h2 id="-mechanical-load-testing">🧱 Mechanical Load Testing</h2>
 <ul>
-<li>Add support for Google Assistant or other voice assistants.</li>
-<li>Implement a mobile app for more detailed remote control and feedback.</li>
-<li>Integrate additional sensors for more advanced monitoring (e.g., clothes weight, soil level, temperature, etc.).</li>
-<li>Enhance energy efficiency with optimized motor control algorithms.</li>
-<li>Changeover mechanical relays can be replaced by Solid State relays.</li>
+<li>With firmware ready and control logic functional, I moved on to real-world mechanical stress testing to validate the full load capabilities of the inverter drive and the motor.</li>
+</ul>
+<p><strong>⚙️ Full Drum Load Testing:</strong></p>
+<ul>
+<li>I mounted the motor inside the washing drum, reassembled the mechanical linkage, and filled the drum with clothes and water to simulate real conditions.</li>
+<li>Using different PWM duty cycles, I controlled the motor through wash, rinse, and spin modes.</li>
+<li>Peak power output observed was approximately 350W sustained, with startup torque high enough that manual interruption was impossible — indicating the IPM was operating optimally.</li>
+</ul>
+<p><strong>🚨 Error Handling Observations:</strong></p>
+<ul>
+<li>During testing, unexpected shutdowns occurred. After careful diagnosis, I discovered a protection feature in the inverter module:</li>
+<li>If a single changeover relay (used for phase reversal) was left ON while the inverter supply was active, the UVW outputs got shorted.</li>
+<li>This triggered the IPM’s internal short-circuit protection (OCP), causing the module to shut down.</li>
+<li>I updated the code logic to ensure relays disengage cleanly before power-down, preventing inadvertent fault conditions.</li>
 </ul>
 <hr>
+<h2 id="-custom-pcb-design--wiring-integration">🧯 Custom PCB Design &amp; Wiring Integration</h2>
+<p>Once the electronics and code were verified on breadboards and modules, I moved to permanent installation inside the washing machine.</p>
+<p><strong>Hardware Design and Assembly:</strong></p>
+<p>Created a detailed schematic, including:</p>
+<ul>
+<li>
+<p>Relay driver modules</p>
+</li>
+<li>
+<p>Isolated optocoupler inputs for IPM signals</p>
+</li>
+<li>
+<p>Buck converters for powering logic</p>
+</li>
+<li>
+<p>Sensor headers for HX710B, inlet valve, and drain motor</p>
+</li>
+<li>
+<p>Due to unavailability of quick-turn PCB fabrication services, I hand-built the board on a general-purpose zero PCB, following the schematic.</p>
+</li>
+</ul>
+<p><strong>Testing &amp; Installation:</strong></p>
+<ul>
+<li>All components were tested during assembly to ensure there were no solder bridges or open circuits.</li>
+<li>I labeled each wire and crimped all terminal ends to ensure proper fit inside screw terminals.</li>
+<li>Cutouts and holes were drilled into the top cover panel and a side-mounted junction box was added to house the control PCB safely.</li>
+</ul>
+<p><strong>Wiring Scheme:</strong></p>
+<ul>
+<li>
+<p><strong>3 motor wires:</strong></p>
+<ul>
+<li>1 directly connected to the motor</li>
+<li>2 routed through changeover relays to switch phases</li>
+<li>2 wires to inverter drive:</li>
+<li>Live (through relay NO + COM terminals)</li>
+<li>Neutral (direct to inverter drive)</li>
+</ul>
+</li>
+<li>
+<p><strong>Remaining relay channels controlled:</strong></p>
+<ul>
+<li>Drain Motor Stage 1</li>
+<li>Drain Motor Stage 2</li>
+<li>Inlet Valve</li>
+<li>Changeover Relays</li>
+</ul>
+</li>
+<li>
+<p>For detailed wiring and notes, refer the schematic circuit diagram, and stock wiring diagram of the machine.</p>
+</li>
+</ul>
+<hr>
+<h2 id="-implemented-features">✅ Implemented Features</h2>
+<ul>
+<li>Basic Washing Programs</li>
+<li>Water Level Sensing</li>
+<li>Wi-Fi Enabled Control</li>
+<li>Live Status Indication</li>
+<li>Voice Assistant Integration</li>
+<li>Web Dashboard Control</li>
+<li>OTA Firmware Update</li>
+<li>Partial Error Handling</li>
+<li>Manual Control Panel</li>
+<li>Status LEDs</li>
+<li>Telegram Notification Bot</li>
+<li>LCD Display Feedback</li>
+</ul>
+<hr>
+<h2 id="-features-under-development">🛠️ Features Under Development</h2>
+<ul>
+<li>Countdown Timer Display</li>
+<li>Emergency Inverter Stop</li>
+<li>Custom IC-Based PCB Design</li>
+<li>Custom Inverter Drive Design</li>
+<li>Wash Cycle Memory Function</li>
+<li>Auto Resume After Power Loss</li>
+<li>Door Safety Interrupt</li>
+<li>Load Sensing &amp; Auto Balancing</li>
+<li>Smart Error Diagnosis &amp; Suggestions</li>
+<li>AI Self-Diagnostic System</li>
+<li>Test Mode (Self-Run)</li>
+<li>AI-Based Laundry Type Detection</li>
+<li>Dynamic Water Level by Load</li>
+<li>Water Heater &amp; Temperature Sensing</li>
+</ul>
+<hr>
+<h2 id="-challenges--failures">⚠️ Challenges &amp; Failures</h2>
+<hr>
+<h2 id="-final-system-behavior">🧼 Final System Behavior</h2>
+<hr>
+<h2 id="-gallery--media">🖼️ Gallery &amp; Media</h2>
+<hr>
+<h2 id="-appendix--source-code">💾 Appendix &amp; Source Code</h2>
 ]]></content></item><item><title>Alexa Smart Home</title><link>https://atharvap8.github.io/posts/2024/06/alexa-smart-home/</link><pubDate>Sun, 02 Jun 2024 17:57:12 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/06/alexa-smart-home/</guid><description>&lt;h1 id="smart-home-system-with-esp32-alexa-control-and-eeprom-state-retention">Smart Home System with ESP32, Alexa Control, and EEPROM State Retention&lt;/h1>
 &lt;hr>
 &lt;h2 id="introduction">Introduction&lt;/h2>
