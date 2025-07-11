@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on Atharva Phadke</title><link>https://atharvap8.github.io/posts/ee-projects/</link><description>Recent content in Projects on Atharva Phadke</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Fri, 28 Jan 2022 22:44:41 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/posts/ee-projects/index.xml" rel="self" type="application/rss+xml"/><item><title>Ble Car Security Controller</title><link>https://atharvap8.github.io/posts/2024/10/ble-car-security-controller/</link><pubDate>Wed, 30 Oct 2024 17:07:33 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/10/ble-car-security-controller/</guid><description>&lt;h1 id="central-locking-and-security-controller-for-wagon-r-with-esp32-and-ble">Central Locking and Security Controller for Wagon R with ESP32 and BLE&lt;/h1>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on Atharva Phadke</title><link>https://atharvap8.github.io/posts/ee-projects/</link><description>Recent content in Projects on Atharva Phadke</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>CC BY-NC 4.0</copyright><lastBuildDate>Fri, 28 Jan 2022 22:44:41 +0530</lastBuildDate><atom:link href="https://atharvap8.github.io/posts/ee-projects/index.xml" rel="self" type="application/rss+xml"/><item><title>BLE Based Car Security Controller</title><link>https://atharvap8.github.io/posts/2024/10/ble-based-car-security-controller/</link><pubDate>Wed, 30 Oct 2024 17:07:33 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/10/ble-based-car-security-controller/</guid><description>&lt;h1 id="central-locking-and-security-controller-for-wagon-r-with-esp32-and-ble">Central Locking and Security Controller for Wagon R with ESP32 and BLE&lt;/h1>
 &lt;hr>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>This project showcases the development of a central locking and security controller for the Wagon R car, using Bluetooth Low Energy (BLE) technology. The system is based on an ESP32 microcontroller that handles key functionalities such as door signal control, bonnet status, indicators, and alarm settings. It is designed to work with a smartphone or a dedicated transmitter (built using the Xiao ESP32C3 board). Additionally, the system features an integrated immobilizer that communicates with the car’s ECM (Engine Control Module), preventing vehicle movement during theft attempts. The system also provides real-time alerts to the user&amp;rsquo;s cellphone in case of a security breach.&lt;/p></description><content type="html"><![CDATA[<h1 id="central-locking-and-security-controller-for-wagon-r-with-esp32-and-ble">Central Locking and Security Controller for Wagon R with ESP32 and BLE</h1>
@@ -100,7 +100,7 @@ The diagram will show how the ESP32, sensors, immobilizer, Xiao ESP32C3 transmit
 <li>Add a battery backup to keep the system running even when the car&rsquo;s battery is disconnected.</li>
 </ul>
 <hr>
-]]></content></item><item><title>Iot Gas Safety System</title><link>https://atharvap8.github.io/posts/2024/10/iot-gas-safety-system/</link><pubDate>Wed, 23 Oct 2024 17:27:02 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/10/iot-gas-safety-system/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+]]></content></item><item><title>IoT Based Gas Safety System</title><link>https://atharvap8.github.io/posts/2024/10/iot-based-gas-safety-system/</link><pubDate>Wed, 23 Oct 2024 17:27:02 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/10/iot-based-gas-safety-system/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
 &lt;p>In this project, we will build a comprehensive gas safety system designed to enhance household safety by monitoring gas leaks and taking automatic corrective actions. The system controls an exhaust fan, operates a servo motor to turn off the gas regulator, and sends notifications via email and popup alerts. Designed with robustness, fireproofing, data retention, and false alarm prevention in mind, this device provides reliable and continuous gas monitoring. Perfect for safety-conscious homeowners or DIY enthusiasts, this project helps to prevent potential hazards.&lt;/p></description><content type="html"><![CDATA[<h1 id="introduction">Introduction</h1>
 <p>In this project, we will build a comprehensive gas safety system designed to enhance household safety by monitoring gas leaks and taking automatic corrective actions. The system controls an exhaust fan, operates a servo motor to turn off the gas regulator, and sends notifications via email and popup alerts. Designed with robustness, fireproofing, data retention, and false alarm prevention in mind, this device provides reliable and continuous gas monitoring. Perfect for safety-conscious homeowners or DIY enthusiasts, this project helps to prevent potential hazards.</p>
 <hr>
@@ -127,13 +127,10 @@ The diagram will show how the ESP32, sensors, immobilizer, Xiao ESP32C3 transmit
 This schematic shows how the ESP32, gas sensor, servo motor, exhaust fan, and other components are connected.</p>
 <hr>
 <h2 id="pcb-design">PCB Design</h2>
-<p>Once your prototype is working well, you can create a more permanent solution by designing a custom PCB. Here&rsquo;s the design I used:</p>
-<p>[Insert PCB design here]<br>
-You can use software like KiCad or Eagle to design your own.</p>
+<p>Once the prototype is working well, you can create a more permanent solution by designing a custom PCB. Here&rsquo;s the design I used:</p>
 <hr>
 <h2 id="project-media-folder">Project Media Folder</h2>
-<p>[Insert link to downloadable project files including circuit diagrams, code, PCB files, and documentation.]</p>
-<hr>
+<h2 id="static-badge"><a href="https://photos.app.goo.gl/XcDekKXhq9hmfnH59"><img src="https://img.shields.io/badge/GooglePhotos-Album-blue?style=flat&amp;logo=Google%20Photos" alt="Static Badge"></a></h2>
 <h2 id="how-it-works">How It Works</h2>
 <p>The gas safety system continuously monitors gas levels using the MQ-2 gas sensor. If a gas leak is detected, the system immediately performs the following actions:</p>
 <ol>
@@ -186,7 +183,7 @@ Install the system in a robust, fireproof casing for added protection. Ensure th
 <li>Further optimization of false alarm filtering algorithms.</li>
 </ul>
 <hr>
-]]></content></item><item><title>Esp32 Washing Machine</title><link>https://atharvap8.github.io/posts/2024/07/esp32-washing-machine/</link><pubDate>Mon, 29 Jul 2024 18:00:32 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/07/esp32-washing-machine/</guid><description>&lt;h1 id="coming-soon">&lt;strong>Coming SOON!&lt;/strong>&lt;/h1></description><content type="html">&lt;h1 id="coming-soon">&lt;strong>Coming SOON!&lt;/strong>&lt;/h1>
+]]></content></item><item><title>ESP32 Based Washing Machine</title><link>https://atharvap8.github.io/posts/2024/07/esp32-based-washing-machine/</link><pubDate>Mon, 29 Jul 2024 18:00:32 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/07/esp32-based-washing-machine/</guid><description>&lt;h1 id="coming-soon">&lt;strong>Coming SOON!&lt;/strong>&lt;/h1></description><content type="html">&lt;h1 id="coming-soon">&lt;strong>Coming SOON!&lt;/strong>&lt;/h1>
 </content></item><item><title>Automatic Water Tap V2</title><link>https://atharvap8.github.io/posts/2024/06/automatic-water-tap-v2/</link><pubDate>Sun, 23 Jun 2024 12:57:02 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/06/automatic-water-tap-v2/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
 &lt;p>In this project, I have built an IR Sensor-based automatic water tap. This system allows water to flow when it detects an object in front of the sensor, making it a convenient and hygienic solution for home or public restrooms. The IR sensor is mounted on the tap head to detect any objects near the water tap.&lt;/p>
 &lt;h2 id="youtube-video">YouTube Video&lt;/h2>
@@ -303,8 +300,10 @@ Install the system in a robust, fireproof casing for added protection. Ensure th
 <h2 id="-introduction">📘 Introduction</h2>
 <p>This project chronicles the transformation of a non-functional <em>LG fully automatic washing machine</em> into a modern, intelligent, and voice-controlled appliance using <strong>ESP32 microcontroller, relays, sensors, and Alexa integration.</strong> The machine’s <strong>original controller PCB had failed</strong>, providing an opportunity to take full control of the machine’s sophisticated components and create a customisable system from the ground up.</p>
 <hr>
+<hr>
 <h2 id="-background--motivation">🎯 Background &amp; Motivation</h2>
 <p>After the machine&rsquo;s original controller board went haywire, instead of discarding it, I saw the opportunity to understand and reengineer the device. With full access to all internal components (motor, valves, sensors), this project became an intensive 1-year journey through reverse engineering, signal probing, embedded firmware design, IoT integration, mechanical testing, and finally full automation.</p>
+<hr>
 <hr>
 <h2 id="-complete-disassembly--mechanical-understanding">🔧 Complete Disassembly &amp; Mechanical Understanding</h2>
 <ul>
@@ -330,6 +329,7 @@ Install the system in a robust, fireproof casing for added protection. Ensure th
     </figcaption>
 </figure>
 
+<hr>
 <hr>
 <h2 id="-reverse-engineering-the-inverter-drive-module">🧠 Reverse Engineering the Inverter Drive Module</h2>
 <figure><img src="/img/aiotwm/module.jpg"
@@ -397,6 +397,7 @@ Install the system in a robust, fireproof casing for added protection. Ensure th
 </figure>
 
 <hr>
+<hr>
 <h2 id="-prototyping-with-arduino-uno">🧪 Prototyping with Arduino UNO</h2>
 <ul>
 <li>To test manual control over the IPM board, I designed a basic PWM signal generator using an Arduino UNO. The idea was to simulate the kind of PWM signals the original fridge controller might have sent to the IPM board.</li>
@@ -416,6 +417,7 @@ Install the system in a robust, fireproof casing for added protection. Ensure th
 <p>The prototype circuit also included simple time delay routines to prevent sudden starts, giving the inverter enough time to safely initialize before sending control signals.</p>
 </li>
 </ul>
+<hr>
 <hr>
 <h2 id="-actuator-testing--verification">🔌 Actuator Testing &amp; Verification</h2>
 <ul>
@@ -437,6 +439,7 @@ A longer actuation engaged the drain motor fully, which completely disengaged th
 </li>
 </ul>
 <p>These tests formed the foundation for mapping the mechanical behavior of the machine&rsquo;s internal mechanisms with external electrical control, enabling fully customized programming of future washing sequences.</p>
+<hr>
 <hr>
 <h2 id="-closed-loop-water-level-regulation">🔄 Closed-Loop Water Level Regulation</h2>
 <p>To automate water level management, I initially explored both analog and digital pressure sensing techniques. While analog sensors lacked precision and required additional ADC circuitry, most commercial digital pressure sensors were expensive and difficult to source.</p>
@@ -464,6 +467,7 @@ A longer actuation engaged the drain motor fully, which completely disengaged th
 <p>Calibration was performed manually using graduated containers to add specific volumes of water. I logged corresponding sensor readings to correlate digital values with actual water levels (e.g., 6L, 12L, 18L).</p>
 </li>
 </ul>
+<hr>
 <hr>
 <h2 id="-transitioning-to-esp32-platform">🔁 Transitioning to ESP32 Platform</h2>
 <ul>
@@ -511,6 +515,7 @@ A longer actuation engaged the drain motor fully, which completely disengaged th
 </li>
 </ul>
 <hr>
+<hr>
 <h2 id="-mechanical-load-testing">🧱 Mechanical Load Testing</h2>
 <ul>
 <li>With firmware ready and control logic functional, I moved on to real-world mechanical stress testing to validate the full load capabilities of the inverter drive and the motor.</li>
@@ -528,6 +533,7 @@ A longer actuation engaged the drain motor fully, which completely disengaged th
 <li>This triggered the IPM’s internal short-circuit protection (OCP), causing the module to shut down.</li>
 <li>I updated the code logic to ensure relays disengage cleanly before power-down, preventing inadvertent fault conditions.</li>
 </ul>
+<hr>
 <hr>
 <h2 id="-custom-pcb-design--wiring-integration">🧯 Custom PCB Design &amp; Wiring Integration</h2>
 <p>Once the electronics and code were verified on breadboards and modules, I moved to permanent installation inside the washing machine.</p>
@@ -582,6 +588,75 @@ A longer actuation engaged the drain motor fully, which completely disengaged th
 </li>
 </ul>
 <hr>
+<hr>
+<h2 id="-front-panel-design--development">🎛️ Front Panel Design &amp; Development</h2>
+<p>Designing the front panel was not just an aesthetic decision — it was a critical component in delivering a functional, reliable, and user-friendly interface for the retrofitted washing machine. With no original UI board functioning (due to the faulty LG controller), the entire interface had to be redesigned from scratch, keeping in mind ergonomics, electrical isolation, display clarity, and accessibility.</p>
+<p><strong>🧱 1. Layout Planning</strong></p>
+<p>The design process started with a rough sketch of all the <strong>necessary</strong> interface elements:</p>
+<ul>
+<li>Main display (LCD 16x2 or OLED).</li>
+<li>Tactile input buttons (Mode, Start, Reset).</li>
+<li>LED indicators for system states.</li>
+<li>Emergency stop provision.</li>
+<li>Access ports for OTA/Debug (e.g., USB/FTDI header)</li>
+<li>Cutouts for ventilation and labeling.</li>
+</ul>
+<p>The goal was to <strong>ensure:</strong></p>
+<ul>
+<li>Minimum clutter.</li>
+<li>Maximum information at a glance.</li>
+<li>Separation between low-voltage ESP32 logic and high-voltage relay controls.</li>
+</ul>
+<hr>
+<p><strong>🧩 2. Component Selection &amp; Positioning</strong></p>
+<p>Each panel component was chosen based on usability and reliability:</p>
+<ul>
+<li>Element	Reason.</li>
+<li>Tactile Push Buttons	Easy to mount, long life, ideal for mode switching.</li>
+<li>16x2 LCD Display	Cost-effective, clear status updates.</li>
+<li>Status LEDs	For real-time visual feedback: power, mode, error, operation.</li>
+<li>Panel-Mount Connectors	For 5V DC input, USB debug, and potential serial interfaces.</li>
+</ul>
+<p>All components were mounted on a common plastic/acrylic sheet, which was cut and drilled manually to fit each device precisely.</p>
+<hr>
+<p><strong>🧷 3. Wiring &amp; Assembly</strong></p>
+<p>Behind the front panel:</p>
+<ul>
+<li>All button presses were connected via pull-down resistors to GPIOs.</li>
+<li>LEDs were driven using current-limiting resistors and GPIOs.</li>
+<li>Display was connected via I2C (SCL/SDA), allowing minimal pin usage.</li>
+<li>Proper strain reliefs and wire harnessing were added to avoid accidental disconnections.</li>
+</ul>
+<p>Each wire was labeled and color-coded. Terminal blocks or screw connectors were used where possible, ensuring modularity during maintenance or updates.</p>
+<p><strong>🧰 4. Enclosure Integration</strong></p>
+<p>The final panel was:</p>
+<p>Mounted on the side wall of the washing machine (junction box style).
+Designed for easy access even while machine was running.
+Provided with ventilation slots to prevent overheating of onboard electronics.
+Screwed and sealed to prevent accidental contact with internal high-voltage parts.</p>
+<hr>
+<p><strong>📟 5. Display Logic</strong></p>
+<p>The UI logic was written in ESP32 firmware:</p>
+<p>Idle screen shows “Please Select A Program”</p>
+<p>Active screen scrolls between:</p>
+<ul>
+<li>Current mode.</li>
+<li>Water level.</li>
+<li>Time remaining.</li>
+<li>Error/warning messages.</li>
+<li>Error conditions trigger blinking patterns and special alerts.</li>
+</ul>
+<hr>
+<p><strong>🧪 6. Testing &amp; Feedback</strong></p>
+<p>After panel assembly:</p>
+<ul>
+<li>Every button and LED was tested individually for debounce behavior.</li>
+<li>Display visibility was checked under different lighting conditions.</li>
+<li>Labels were added using sticker paper or engraved plate to show functions clearly.</li>
+<li>Final touch: Added support for firmware OTA updates through a physical button combo.</li>
+</ul>
+<hr>
+<hr>
 <h2 id="-implemented-features">✅ Implemented Features</h2>
 <ul>
 <li>Basic Washing Programs</li>
@@ -597,6 +672,7 @@ A longer actuation engaged the drain motor fully, which completely disengaged th
 <li>Telegram Notification Bot</li>
 <li>LCD Display Feedback</li>
 </ul>
+<hr>
 <hr>
 <h2 id="-features-under-development">🛠️ Features Under Development</h2>
 <ul>
@@ -616,14 +692,308 @@ A longer actuation engaged the drain motor fully, which completely disengaged th
 <li>Water Heater &amp; Temperature Sensing</li>
 </ul>
 <hr>
+<hr>
 <h2 id="-challenges--failures">⚠️ Challenges &amp; Failures</h2>
+<p><strong>1. 🧠 Understanding the Inverter Drive — Blind Reverse Engineering</strong></p>
+<p>At the start, the inverter module (Samsung ISB-LC4-3050_V2) was a black box. No schematics, no documentation, no datasheets. Just a 325V input and a four-pin connector to a washing machine motor. Through painstaking trial and error, I reverse-engineered:</p>
+<ul>
+<li><strong>The function of feedback pins.</strong></li>
+<li><strong>How the module self-starts after a 10-minute delay.</strong></li>
+<li><strong>How it interprets PWM signals for speed control.</strong></li>
+</ul>
+<p>This eventually led to block diagrams, signal maps, and logic sequences that were key to system integration.</p>
+<hr>
+<p><strong>2. 🔄Motor Direction and Speed Control</strong></p>
+<p>Getting the motor to spin wasn’t enough. Controlling its direction and speed was the next major challenge.</p>
+<ul>
+<li><strong>Direction control required safe relay-based phase inversion.</strong></li>
+<li><strong>Speed control required precise PWM signal timing.</strong></li>
+</ul>
+<p>I went through dozens of PWM timing experiments, finally landing on a sweet spot that gave the motor smooth acceleration without tripping inverter protections.</p>
+<hr>
+<p><strong>3. 🌊 Water Level Control Loop Failures</strong></p>
+<p>The HX710B sensor used for measuring drum pressure occasionally gave erratic or drifting values, which caused:</p>
+<ul>
+<li><strong>Preemptive termination of water fill.</strong></li>
+<li><strong>Overfilling with no cutoff.</strong></li>
+</ul>
+<p>I solved this <strong>by</strong>:</p>
+<ul>
+<li><strong>Stabilizing digital readings.</strong></li>
+<li><strong>Averaging the values across multiple samples.</strong></li>
+<li><strong>Introducing double-threshold hysteresis logic to avoid rapid toggling.</strong></li>
+</ul>
+<hr>
+<p><strong>4. 🕒 Relay Changeover Interference with IPM</strong></p>
+<p>The changeover relays used to reverse motor direction were affecting the IPM drive. During relay switching, the IPM would falsely detect a short circuit or open-load fault, triggering shutdown.</p>
+<p>The <strong>solution</strong> involved:</p>
+<ul>
+<li><strong>Temporarily disabling PWM output just before switching the relay.</strong></li>
+<li><strong>Adding short time delays (ms scale) to prevent logic conflicts.</strong></li>
+</ul>
+<hr>
+<p><strong>5. ⏱️ Watchdog Timer Interrupts</strong></p>
+<p>A mysterious reboot issue plagued the early firmware. The ESP32 would randomly reset, often during display status updates or Wi-Fi activity.
+The culprit was the Watchdog Timer (WDT) triggered by a non-responsive LED status task.</p>
+<p>I fixed <strong>this</strong> by:</p>
+<ul>
+<li><strong>Restructuring the task into non-blocking logic.</strong></li>
+<li><strong>Feeding the watchdog manually at safe checkpoints.</strong></li>
+</ul>
+<hr>
+<p><strong>6. 🚫 Spin Cycle Motor Lock Detection</strong></p>
+<p>When the tub was filled with wet, heavy clothes, the motor would often fail to spin up. The IPM interpreted this as a motor lockup condition and shut off power immediately.</p>
+<p>I <strong>resolved</strong> this by:</p>
+<ul>
+<li><strong>Altering the shunt resistor scaling.</strong></li>
+<li><strong>Filtering out sudden current spikes that falsely triggered the OCP logic.</strong></li>
+</ul>
+<hr>
+<p><strong>7. 🧺 Unbalanced Load During Spin Start</strong></p>
+<p>After the rinse or wash cycle, once water drained and spin was initiated, the initial jerk caused imbalanced clothes to bang against the drum. The system lacked a low-speed balance detection mechanism <strong>because:</strong></p>
+<ul>
+<li><strong>The IPM Drive offered no 1 RPM-level fine control.</strong></li>
+<li><strong>There was no gyroscope or vibration feedback loop.</strong></li>
+</ul>
+<p>The only permanent solution would be to design a custom inverter drive with full low-speed control and dynamic load balancing.</p>
+<hr>
+<p><strong>8. ⚡ Unexpected Inverter Shutdowns &amp; Self-Power-On Events</strong></p>
+<p>Intermittently, the IPM module <strong>would:</strong></p>
+<ul>
+<li><strong>Shut down during phase changeovers.</strong></li>
+<li><strong>Restart automatically after long delays, even when not commanded.</strong></li>
+</ul>
+<p>This erratic behavior was difficult to reproduce and remains partially unexplained — likely caused by internal auto-restart logic or control pin float issues. Proper pull-down resistors and debounce delays are planned for future fixes.</p>
+<hr>
+<p><strong>9. 🔄 Real-Time Water Level Monitoring Integration</strong></p>
+<p>Developing a unified function that <strong>simultaneously:</strong></p>
+<ul>
+<li><strong>Monitored water level.</strong></li>
+<li><strong>Triggered inlet control.</strong></li>
+<li><strong>Prevented overflow.</strong></li>
+<li><strong>Integrated manual override.</strong></li>
+</ul>
+<p>…was a huge design effort. It required nested conditions, multiple interrupt scenarios, and continual calibration.</p>
+<hr>
+<p><strong>10. 🖥️ User Interface Design &amp; Display Formatting</strong></p>
+<p>Displaying system state on a 16x2 LCD (or I2C variant) turned out to be unexpectedly complex.
+Challenges <strong>included:</strong></p>
+<ul>
+<li><strong>Fitting multiline prompts within 16 characters.</strong></li>
+<li><strong>Preventing display flicker during rapid updates.</strong></li>
+<li><strong>Designing a readable and intuitive menu/UI flow.</strong></li>
+</ul>
+<p>Each parameter shown — from current mode, to water level, to spin state — had to be dynamically refreshed without blocking the control loop.</p>
+<hr>
 <hr>
 <h2 id="-final-system-behavior">🧼 Final System Behavior</h2>
+<p>The final system, after extensive R&amp;D, testing, and integration, behaves as a fully self-regulating, smart IoT-based appliance. Designed with both manual and smart capabilities, the washing machine now performs autonomously — while also offering granular user feedback via physical indicators, LCD, and remote messaging.</p>
+<p>Here’s a detailed description of how the system behaves from the moment it powers on to the completion of a wash program:</p>
+<p><strong>🔌 1. Power-On Initialization</strong></p>
+<p>Upon supplying power to the system, the green ring LED surrounding the main power button lights up steadily.
+Simultaneously, the 16x2 LCD displays a welcome screen:</p>
+<pre tabindex="0"><code>    Advanced IoT 
+  Washing Machine
+</code></pre><p>Four dedicated LEDs labeled Soak, Wash, Rinse, Spin illuminate briefly in a sweeping pattern to indicate boot sequence.
+The ESP32 begins initializing all core modules — GPIOs, sensors, relays, display, and Wi-Fi stack.</p>
+<hr>
+<p><strong>📶 2. Wi-Fi Connectivity &amp; Smart Mode Check</strong></p>
+<p>During Wi-Fi connection attempt, the green ring LED blinks at 1-second intervals, visually indicating that the system is attempting to go online.</p>
+<p>If Wi-Fi is connected successfully:</p>
+<ul>
+<li>The ring LED turns solid green.</li>
+<li>A boot success message is pushed via Telegram Bot API.</li>
+<li>Smart features such as remote control, OTA, and voice assistant integration are enabled.</li>
+</ul>
+<p>If Wi-Fi fails:</p>
+<p>The ring LED turns off.
+The machine enters offline fallback mode where only manual control is available.</p>
+<hr>
+<p><strong>🧺 3. Program Selection Logic</strong></p>
+<p>The user can press any of the physical buttons to select a program: Wash, Rinse, or Spin</p>
+<p>Once a program is selected:</p>
+<ul>
+<li>The corresponding LED stays lit.</li>
+</ul>
+<p>A 10-second grace period is activated, during which:</p>
+<ul>
+<li>The user can cancel the operation or select a different mode.</li>
+<li>If interrupted, all LEDs are reset, and system returns to idle.</li>
+<li>After 10 seconds of no change, the selected program is locked in and begins execution.</li>
+</ul>
+<hr>
+<p><strong>🚿 4. Water Filling &amp; Level Monitoring</strong></p>
+<ul>
+<li>Most programs begin with water intake via the solenoid inlet valve.</li>
+<li>The HX710B pressure sensor reads real-time air pressure from the drum&rsquo;s air trap system.</li>
+<li>The current water level (in liters) is displayed on the LCD.</li>
+<li>Once the target level is reached, the inlet valve is turned off.</li>
+</ul>
+<p>✅ If Wi-Fi is active, a message is sent to the Telegram bot such as:</p>
+<pre tabindex="0"><code>&#34;Program: Wash Started | Target Water: 12.0L&#34;
+&#34;Filling... Current Level: 7.5L&#34;
+</code></pre><hr>
+<p><strong>🌀 5. Agitation, Rinse, and Spin Execution</strong></p>
+<p>Based on selected mode, the drum is driven through timed sequences using:</p>
+<ul>
+<li>Directional control via changeover relays</li>
+<li>Speed control via PWM signal to the inverter drive</li>
+</ul>
+<p>Modes:</p>
+<ul>
+<li>Soak: Fill Water and light movement of clothes over a long period of time.</li>
+<li>Wash: Clockwise and counter-clockwise cycles with staggered delays.</li>
+<li>Rinse: Refill water, agitate lightly, drain.</li>
+<li>Spin: Full-speed single direction motor run with drain valve open.</li>
+</ul>
+<p>The LCD displays:</p>
+<ul>
+<li>Current stage (e.g., Washing: Stage 2 of 3).</li>
+<li>Elapsed time.</li>
+<li>System status or error if any.</li>
+</ul>
+<hr>
+<p><strong>💬 6. Real-Time Remote Feedback</strong></p>
+<p>During each stage transition or sensor threshold trigger, a status update is sent to Telegram:</p>
+<pre tabindex="0"><code>&#34;Spin Cycle Started | RPM: 950 | Load: Balanced ✅&#34;
+&#34;Rinse Completed | Drain: Successful&#34;
+</code></pre><p>All telemetry is also recorded for later data analytics and visualization (future scope).</p>
+<hr>
+<p><strong>🧘 7. Post-Cycle &amp; Idle Mode</strong></p>
+<p>Once the selected cycle is completed:</p>
+<ul>
+<li>All relays are turned off.</li>
+<li>Inverter drive is disabled.</li>
+<li>The final water level, wash duration, and energy usage are logged.</li>
+</ul>
+<p>A Telegram message confirms completion:</p>
+<pre tabindex="0"><code>✅ Wash Cycle Completed
+Total Water Used: 18.0L
+Duration: 00:24:32
+Power: 350W
+</code></pre><ul>
+<li>The machine then returns to idle mode, ready for the next input.</li>
+<li>If left untouched, the system maintains low-power state and periodically checks for OTA updates or new commands.</li>
+</ul>
+<hr>
 <hr>
 <h2 id="-gallery--media">🖼️ Gallery &amp; Media</h2>
+<p>Below are some photos and media captured during the 1-year long development and testing process of the smart washing machine retrofit project.</p>
+<p>Click on the text, and it will lead to indivisual photos and videos inside the google Photos Album.
+PS. These Links are <strong>completely</strong> SAFE!</p>
 <hr>
-<h2 id="-appendix--source-code">💾 Appendix &amp; Source Code</h2>
-]]></content></item><item><title>Alexa Smart Home</title><link>https://atharvap8.github.io/posts/2024/06/alexa-smart-home/</link><pubDate>Sun, 02 Jun 2024 17:57:12 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/06/alexa-smart-home/</guid><description>&lt;h1 id="smart-home-system-with-esp32-alexa-control-and-eeprom-state-retention">Smart Home System with ESP32, Alexa Control, and EEPROM State Retention&lt;/h1>
+<p><strong>1. 🧠 Reverse Engineering Process</strong></p>
+<ul>
+<li>
+<p><a href="https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipNVxxiq89uGjgkWxa-xYKltjGWV_kP-2nztHGkK?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B">IPM Drive Testing (Test 1)</a></p>
+</li>
+<li>
+<p><a href="https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipOIaje6bVMC1V6RkXsUcQZVmSZkGwG7BSXOfMsF?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B">IPM Drive Testing (Test2 )</a></p>
+</li>
+<li>
+<p><a href="https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipPu-ZJu5S38M4Kw0cIc7J9eAKHDdguFzxUn6J73?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B">IPM Drive Assembly Image 1</a></p>
+</li>
+<li>
+<p><a href="https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipOtSMJzY3PqHMc3hq3MuFuZ1_jsQ_B-2PM2y5cD?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B">IPM Drive Assembly Image 2</a></p>
+</li>
+<li>
+<p><a href="https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipOttMqX2rKagrsjaFgf-D7oYPz6J4DbcodiPMrN?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B">IPM Drive Assembly Image 3</a></p>
+</li>
+</ul>
+<hr>
+<p><strong>2. 🔌 Wiring &amp; Control Unit Assembly</strong></p>
+<ul>
+<li>
+<p><a href="https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipPgxhnKn9E3zUT-M9a8fnucJ8l8pAPLddA-W4Z_?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B">Custom Zero PCB Based Circuit</a></p>
+</li>
+<li>
+<p><a href="https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipP3Pys3-RKjSYWpHMEyqI5ZrcNhQ54i70lSnye4?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B">Custom Zero PCB Based Circuit (Image 2)</a></p>
+</li>
+<li>
+<p><a href="https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipMZ5tE8bI7WuJttj-N1EQ8UQHf_NgoKKCd8Q22i?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B">Custom Zero PCB (Soldering and Traces)</a></p>
+</li>
+<li>
+<p><a href="https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipMZ5tE8bI7WuJttj-N1EQ8UQHf_NgoKKCd8Q22i?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B">Custom Zero PCB (Soldering and Traces 2)</a></p>
+</li>
+<li>
+<p><a href="https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipPnbMUKjz5iKp1NFaPk81gNh_66vLAZB7_8QVWX?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B">Custom Zero PCB (Final Soldering Done)</a></p>
+</li>
+<li>
+<p><a href="https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipNHd1usFwYlTc6EfW2EbeeGgLNA1Vyr7TrSQdnu?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B">Custom Zero PCB Based Circuit (Test Run)</a></p>
+</li>
+</ul>
+<hr>
+<p><strong>3. 📟 Display &amp; UI</strong></p>
+<ul>
+<li>
+<p><a href="https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipPRDzTbBiRYZB3S6eAQc1LLgfklFBrtY4y0V2xW?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B">Front Panel ZERO PCB Design</a></p>
+</li>
+<li>
+<p><a href="https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipMNQk_vXrH9MxTog7xU1b5WL2NTypNCzGVLaq9m?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B">Front Panel Working Video)</a></p>
+</li>
+<li>
+<p><a href="https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipMa1f6072fTf-P5mK3TROiZc0dYj_0-kzBQliSJ?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B">Front Panel Zero PCB (Soldering and Traces 2)</a></p>
+</li>
+<li>
+<p><a href="https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipMa1f6072fTf-P5mK3TROiZc0dYj_0-kzBQliSJ?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B">Front Panel Zero PCB Based Circuit</a></p>
+</li>
+</ul>
+<hr>
+<p><strong>4. 🌀 Mechanical Testing</strong></p>
+<ul>
+<li><a href="https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipOLuU6hPTdLg9m6AT2BRDVsX4j-P8UZuohC88_P?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B">Load Testing</a></li>
+</ul>
+<hr>
+<p><strong>5. 📹 Video Demonstration</strong></p>
+<ul>
+<li>
+<p><a href="https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipMSRp5zz-8cOHieEaOTm9mBGuAuogwmykCte0QY?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B">Final Working Demo (Internals Shown)</a></p>
+</li>
+<li>
+<p><a href="https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipPZ5GAmqaRBAopp11-z1agipSMxAAhcM-O3ojQL?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B">Final Working Demo (Spin Mode Via Voice Assistant)</a></p>
+</li>
+<li>
+<p><a href="https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipPZ5GAmqaRBAopp11-z1agipSMxAAhcM-O3ojQL?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B">Final Working Demo (Spin Mode Via Voice Assistant)</a></p>
+</li>
+<li>
+<p><a href="https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipMhjJPm_ThSKVRP6Tn-dtEaeav-43ltuXjk5MuQ?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B">Internal Construction</a></p>
+</li>
+</ul>
+<p>Refer to this Google Photos Album for more Behind The Scenes Footage:</p>
+<ul>
+<li><a href="https://photos.app.goo.gl/JXmmXoFTdbAtJn859">Google Photos</a></li>
+</ul>
+<hr>
+<hr>
+<h2 id="-source-code--documents-folder">💾 Source Code &amp; Documents Folder</h2>
+<ol>
+<li>The full source code is available on GitHub and includes:</li>
+</ol>
+<ul>
+<li>ESP32 firmware (ESP-IDF/Arduino)</li>
+<li>WiFi + OTA + Telegram setup</li>
+<li>HX710B sensor calibration logic</li>
+<li>PWM timing sequence for IPM drive</li>
+</ul>
+<blockquote>
+<p>🔗 <strong><a href="https://github.com/atharvap8/Advanced-IoT-Washing-Machine">GitHub Repository: github.com/atharvap8/Advanced-IoT-Washing-Machine</a></strong></p></blockquote>
+<ol start="2">
+<li>Full Documentation Archive (Schematics, PCB, Code)</li>
+</ol>
+<p>Includes all schematic files, PCB layouts, firmware source code, block diagrams, wiring charts, and reference images.</p>
+<blockquote>
+<p>🔗 <strong><a href="https://drive.google.com/drive/folders/1uPgTiL8me0PxTM-ofMAjB7GyhWTrKcd5?usp=sharing">Google Drive Folder: drive.google.com/drive/folders/1uPgTiL8me0PxTM-ofMAjB7GyhWTrKcd5?usp=sharing</a></strong></p></blockquote>
+<p>Contents of the folder:</p>
+<ul>
+<li>📄 Schematics/ — All connections (ESP32, relays, IPM drive, sensors)</li>
+<li>🧩 PCB Designs/ — KiCAD or EasyEDA layouts + Gerbers</li>
+<li>⚙️ ESP32_Firmware/ — Main firmware source (OTA, Telegram, HX710B)</li>
+<li>🖼️ Diagrams/ — High-level architecture of the machine</li>
+<li>🧠 Partition Layout — ESP32 Partition Layout file</li>
+<li>🧪 Research - All the research on IPM Drives, and 3-Phase Motor Control</li>
+</ul>
+<hr>
+]]></content></item><item><title>Home Automation 15 Devices</title><link>https://atharvap8.github.io/posts/2024/06/home-automation-15-devices/</link><pubDate>Sun, 02 Jun 2024 17:57:12 +0530</pubDate><guid>https://atharvap8.github.io/posts/2024/06/home-automation-15-devices/</guid><description>&lt;h1 id="smart-home-system-with-esp32-alexa-control-and-eeprom-state-retention">Smart Home System with ESP32, Alexa Control, and EEPROM State Retention&lt;/h1>
 &lt;hr>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>In this project, we will create a smart home system that allows control over 14 devices and 1 air conditioner (AC) using an ESP32 microcontroller. The system includes EEPROM functionality, which retains the state of all devices even after a sudden power loss. With Alexa integration, users can control lights, fans, tube lights, AC, and more using voice commands and monitor the real-time status through the Alexa app. Each room is equipped with a 4-channel relay module, connected to a central controller that manages all relays.&lt;/p></description><content type="html"><![CDATA[<h1 id="smart-home-system-with-esp32-alexa-control-and-eeprom-state-retention">Smart Home System with ESP32, Alexa Control, and EEPROM State Retention</h1>
