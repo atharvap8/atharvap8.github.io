@@ -1,0 +1,16 @@
+---
+title: "ESP32-C3 Based Room Automation"
+date: 2025-07-11T10:53:44+05:30
+draft: false
+toc: true
+images: 
+tags:
+  - untagged
+---
+
+
+This project involves creating a room automation system using the ESP32-C3 microcontroller. 
+The ESP32-C3 is a low-power, Wi-Fi and Bluetooth-enabled microcontroller that is ideal for IoT applications.
+
+The room automation system can control various devices such as lights, fans, and sensors through a web interface or mobile app.
+The system is also integrated with voice assistants like Alexa or Google Assistant for hands-free control.

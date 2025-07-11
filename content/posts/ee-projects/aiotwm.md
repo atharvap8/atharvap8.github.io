@@ -19,11 +19,13 @@ tags:
  This project chronicles the transformation of a non-functional _LG fully automatic washing machine_ into a modern, intelligent, and voice-controlled appliance using **ESP32 microcontroller, relays, sensors, and Alexa integration.** The machine’s **original controller PCB had failed**, providing an opportunity to take full control of the machine’s sophisticated components and create a customisable system from the ground up.
 
 ---
+---
 
 ## 🎯 Background & Motivation
 
 After the machine's original controller board went haywire, instead of discarding it, I saw the opportunity to understand and reengineer the device. With full access to all internal components (motor, valves, sensors), this project became an intensive 1-year journey through reverse engineering, signal probing, embedded firmware design, IoT integration, mechanical testing, and finally full automation.
 
+---
 ---
 
 ## 🔧 Complete Disassembly & Mechanical Understanding
@@ -40,6 +42,7 @@ After the machine's original controller board went haywire, instead of discardin
 
 {{< figure src="/img/aiotwm/drainmotor.jpeg" width=800px height=400px caption="Drain Motor" >}}
 
+---
 ---
 
 ## 🧠 Reverse Engineering the Inverter Drive Module
@@ -82,6 +85,7 @@ After the machine's original controller board went haywire, instead of discardin
 {{< figure src="/img/aiotwm/modblkdia.png" width=900px height=500px caption="**_Inverter Drive Module (Model: ISB-LC4-3050_V2) Block Diagram_**" >}}
 
 ---
+---
 
 ## 	🧪 Prototyping with Arduino UNO
 
@@ -97,6 +101,7 @@ After the machine's original controller board went haywire, instead of discardin
 
 - The prototype circuit also included simple time delay routines to prevent sudden starts, giving the inverter enough time to safely initialize before sending control signals.
 
+---
 ---
 
 ## 🔌 Actuator Testing & Verification
@@ -116,6 +121,7 @@ A longer actuation engaged the drain motor fully, which completely disengaged th
 These tests formed the foundation for mapping the mechanical behavior of the machine's internal mechanisms with external electrical control, enabling fully customized programming of future washing sequences.
 
 --- 
+---
 
 ## 🔄 Closed-Loop Water Level Regulation
 
@@ -135,6 +141,7 @@ To automate water level management, I initially explored both analog and digital
 
   - Calibration was performed manually using graduated containers to add specific volumes of water. I logged corresponding sensor readings to correlate digital values with actual water levels (e.g., 6L, 12L, 18L).
 
+---
 ---
 
 ## 🔁 Transitioning to ESP32 Platform
@@ -168,6 +175,7 @@ To automate water level management, I initially explored both analog and digital
 - All control logic — including PWM generation, relay sequencing, safety interlocks, and mode switching — was implemented as tasks within the ESP32’s FreeRTOS framework.
 
 ---
+---
 
 ## 🧱 Mechanical Load Testing
 
@@ -186,6 +194,7 @@ To automate water level management, I initially explored both analog and digital
   - This triggered the IPM’s internal short-circuit protection (OCP), causing the module to shut down.
   - I updated the code logic to ensure relays disengage cleanly before power-down, preventing inadvertent fault conditions.
 
+---
 ---
 
 ## 🧯 Custom PCB Design & Wiring Integration
@@ -226,6 +235,93 @@ Created a detailed schematic, including:
 - For detailed wiring and notes, refer the schematic circuit diagram, and stock wiring diagram of the machine.
 
 ---
+---
+
+## 🎛️ Front Panel Design & Development
+
+ Designing the front panel was not just an aesthetic decision — it was a critical component in delivering a functional, reliable, and user-friendly interface for the retrofitted washing machine. With no original UI board functioning (due to the faulty LG controller), the entire interface had to be redesigned from scratch, keeping in mind ergonomics, electrical isolation, display clarity, and accessibility.
+
+**🧱 1. Layout Planning**
+
+The design process started with a rough sketch of all the **necessary** interface elements:
+
+- Main display (LCD 16x2 or OLED).
+- Tactile input buttons (Mode, Start, Reset).
+- LED indicators for system states.
+- Emergency stop provision.
+- Access ports for OTA/Debug (e.g., USB/FTDI header)
+- Cutouts for ventilation and labeling.
+
+The goal was to **ensure:**
+
+- Minimum clutter.
+- Maximum information at a glance.
+- Separation between low-voltage ESP32 logic and high-voltage relay controls.
+
+---
+
+**🧩 2. Component Selection & Positioning**
+
+Each panel component was chosen based on usability and reliability:
+
+- Element	Reason.
+- Tactile Push Buttons	Easy to mount, long life, ideal for mode switching.
+- 16x2 LCD Display	Cost-effective, clear status updates.
+- Status LEDs	For real-time visual feedback: power, mode, error, operation.
+- Panel-Mount Connectors	For 5V DC input, USB debug, and potential serial interfaces.
+
+All components were mounted on a common plastic/acrylic sheet, which was cut and drilled manually to fit each device precisely.
+
+---
+
+**🧷 3. Wiring & Assembly**
+
+Behind the front panel:
+
+- All button presses were connected via pull-down resistors to GPIOs.
+- LEDs were driven using current-limiting resistors and GPIOs.
+- Display was connected via I2C (SCL/SDA), allowing minimal pin usage.
+- Proper strain reliefs and wire harnessing were added to avoid accidental disconnections.
+
+Each wire was labeled and color-coded. Terminal blocks or screw connectors were used where possible, ensuring modularity during maintenance or updates.
+
+**🧰 4. Enclosure Integration**
+
+The final panel was:
+
+Mounted on the side wall of the washing machine (junction box style).
+Designed for easy access even while machine was running.
+Provided with ventilation slots to prevent overheating of onboard electronics.
+Screwed and sealed to prevent accidental contact with internal high-voltage parts.
+
+---
+
+**📟 5. Display Logic**
+
+The UI logic was written in ESP32 firmware:
+
+Idle screen shows “Please Select A Program”
+
+Active screen scrolls between:
+- Current mode.
+- Water level.
+- Time remaining.
+- Error/warning messages.
+- Error conditions trigger blinking patterns and special alerts.
+
+---
+
+**🧪 6. Testing & Feedback**
+
+After panel assembly:
+
+- Every button and LED was tested individually for debounce behavior.
+- Display visibility was checked under different lighting conditions.
+- Labels were added using sticker paper or engraved plate to show functions clearly.
+- Final touch: Added support for firmware OTA updates through a physical button combo.
+
+---
+---
 
 ## ✅ Implemented Features
 
@@ -242,6 +338,7 @@ Created a detailed schematic, including:
   - Telegram Notification Bot
   - LCD Display Feedback
 
+---
 ---
 
 ## 🛠️ Features Under Development
@@ -262,18 +359,356 @@ Created a detailed schematic, including:
   - Water Heater & Temperature Sensing
 
 ---
+---
 
 ## ⚠️ Challenges & Failures
 
+**1. 🧠 Understanding the Inverter Drive — Blind Reverse Engineering**
+
+ At the start, the inverter module (Samsung ISB-LC4-3050_V2) was a black box. No schematics, no documentation, no datasheets. Just a 325V input and a four-pin connector to a washing machine motor. Through painstaking trial and error, I reverse-engineered:
+
+  - **The function of feedback pins.**
+  - **How the module self-starts after a 10-minute delay.**
+  - **How it interprets PWM signals for speed control.**
+
+  This eventually led to block diagrams, signal maps, and logic sequences that were key to system integration.
+
+---
+
+**2. 🔄Motor Direction and Speed Control**
+
+Getting the motor to spin wasn’t enough. Controlling its direction and speed was the next major challenge.
+
+- **Direction control required safe relay-based phase inversion.**
+- **Speed control required precise PWM signal timing.**
+
+I went through dozens of PWM timing experiments, finally landing on a sweet spot that gave the motor smooth acceleration without tripping inverter protections.
+
+---
+
+**3. 🌊 Water Level Control Loop Failures**
+
+The HX710B sensor used for measuring drum pressure occasionally gave erratic or drifting values, which caused:
+
+- **Preemptive termination of water fill.**
+- **Overfilling with no cutoff.**
+
+I solved this **by**:
+
+- **Stabilizing digital readings.**
+- **Averaging the values across multiple samples.**
+- **Introducing double-threshold hysteresis logic to avoid rapid toggling.**
+
+---
+
+**4. 🕒 Relay Changeover Interference with IPM**
+
+The changeover relays used to reverse motor direction were affecting the IPM drive. During relay switching, the IPM would falsely detect a short circuit or open-load fault, triggering shutdown.
+
+The **solution** involved:
+
+- **Temporarily disabling PWM output just before switching the relay.**
+- **Adding short time delays (ms scale) to prevent logic conflicts.**
+
+---
+
+**5. ⏱️ Watchdog Timer Interrupts**
+
+A mysterious reboot issue plagued the early firmware. The ESP32 would randomly reset, often during display status updates or Wi-Fi activity.
+The culprit was the Watchdog Timer (WDT) triggered by a non-responsive LED status task. 
+
+I fixed **this** by:
+
+- **Restructuring the task into non-blocking logic.**
+- **Feeding the watchdog manually at safe checkpoints.**
+
+---
+
+**6. 🚫 Spin Cycle Motor Lock Detection**
+
+When the tub was filled with wet, heavy clothes, the motor would often fail to spin up. The IPM interpreted this as a motor lockup condition and shut off power immediately.
+
+I **resolved** this by:
+
+- **Altering the shunt resistor scaling.**
+- **Filtering out sudden current spikes that falsely triggered the OCP logic.**
+
+---
+
+**7. 🧺 Unbalanced Load During Spin Start**
+
+After the rinse or wash cycle, once water drained and spin was initiated, the initial jerk caused imbalanced clothes to bang against the drum. The system lacked a low-speed balance detection mechanism **because:**
+
+- **The IPM Drive offered no 1 RPM-level fine control.**
+- **There was no gyroscope or vibration feedback loop.**
+
+The only permanent solution would be to design a custom inverter drive with full low-speed control and dynamic load balancing.
+
+---
+
+**8. ⚡ Unexpected Inverter Shutdowns & Self-Power-On Events**
+
+Intermittently, the IPM module **would:**
+
+- **Shut down during phase changeovers.**
+- **Restart automatically after long delays, even when not commanded.**
+
+This erratic behavior was difficult to reproduce and remains partially unexplained — likely caused by internal auto-restart logic or control pin float issues. Proper pull-down resistors and debounce delays are planned for future fixes.
+
+---
+
+**9. 🔄 Real-Time Water Level Monitoring Integration**
+
+Developing a unified function that **simultaneously:**
+
+- **Monitored water level.**
+- **Triggered inlet control.**
+- **Prevented overflow.**
+- **Integrated manual override.**
+
+…was a huge design effort. It required nested conditions, multiple interrupt scenarios, and continual calibration.
+
+---
+
+**10. 🖥️ User Interface Design & Display Formatting**
+
+Displaying system state on a 16x2 LCD (or I2C variant) turned out to be unexpectedly complex.
+Challenges **included:**
+
+- **Fitting multiline prompts within 16 characters.**
+- **Preventing display flicker during rapid updates.**
+- **Designing a readable and intuitive menu/UI flow.**
+
+Each parameter shown — from current mode, to water level, to spin state — had to be dynamically refreshed without blocking the control loop.
+
+---
 ---
 
 ## 🧼 Final System Behavior
 
+The final system, after extensive R&D, testing, and integration, behaves as a fully self-regulating, smart IoT-based appliance. Designed with both manual and smart capabilities, the washing machine now performs autonomously — while also offering granular user feedback via physical indicators, LCD, and remote messaging.
+
+Here’s a detailed description of how the system behaves from the moment it powers on to the completion of a wash program:
+
+**🔌 1. Power-On Initialization**
+
+Upon supplying power to the system, the green ring LED surrounding the main power button lights up steadily.
+Simultaneously, the 16x2 LCD displays a welcome screen:
+
+```
+    Advanced IoT 
+  Washing Machine
+
+```
+Four dedicated LEDs labeled Soak, Wash, Rinse, Spin illuminate briefly in a sweeping pattern to indicate boot sequence.
+The ESP32 begins initializing all core modules — GPIOs, sensors, relays, display, and Wi-Fi stack.
+
+---
+
+**📶 2. Wi-Fi Connectivity & Smart Mode Check**
+
+During Wi-Fi connection attempt, the green ring LED blinks at 1-second intervals, visually indicating that the system is attempting to go online.
+
+If Wi-Fi is connected successfully:
+- The ring LED turns solid green.
+- A boot success message is pushed via Telegram Bot API.
+- Smart features such as remote control, OTA, and voice assistant integration are enabled.
+
+If Wi-Fi fails:
+
+The ring LED turns off.
+The machine enters offline fallback mode where only manual control is available.
+
+---
+
+**🧺 3. Program Selection Logic**
+
+The user can press any of the physical buttons to select a program: Wash, Rinse, or Spin
+
+Once a program is selected:
+
+- The corresponding LED stays lit.
+
+A 10-second grace period is activated, during which:
+- The user can cancel the operation or select a different mode.
+- If interrupted, all LEDs are reset, and system returns to idle.
+- After 10 seconds of no change, the selected program is locked in and begins execution.
+
+---
+
+**🚿 4. Water Filling & Level Monitoring**
+
+- Most programs begin with water intake via the solenoid inlet valve.
+- The HX710B pressure sensor reads real-time air pressure from the drum's air trap system.
+- The current water level (in liters) is displayed on the LCD.
+- Once the target level is reached, the inlet valve is turned off.
+
+✅ If Wi-Fi is active, a message is sent to the Telegram bot such as:
+
+```
+"Program: Wash Started | Target Water: 12.0L"
+"Filling... Current Level: 7.5L"
+
+```
+
+---
+
+**🌀 5. Agitation, Rinse, and Spin Execution**
+
+Based on selected mode, the drum is driven through timed sequences using:
+- Directional control via changeover relays
+- Speed control via PWM signal to the inverter drive
+
+Modes:
+
+- Soak: Fill Water and light movement of clothes over a long period of time.
+- Wash: Clockwise and counter-clockwise cycles with staggered delays.
+- Rinse: Refill water, agitate lightly, drain.
+- Spin: Full-speed single direction motor run with drain valve open.
+
+The LCD displays:
+- Current stage (e.g., Washing: Stage 2 of 3).
+- Elapsed time.
+- System status or error if any.
+
+---
+
+**💬 6. Real-Time Remote Feedback**
+
+During each stage transition or sensor threshold trigger, a status update is sent to Telegram:
+
+```
+"Spin Cycle Started | RPM: 950 | Load: Balanced ✅"
+"Rinse Completed | Drain: Successful"
+```
+
+All telemetry is also recorded for later data analytics and visualization (future scope).
+
+---
+
+**🧘 7. Post-Cycle & Idle Mode**
+
+Once the selected cycle is completed:
+
+- All relays are turned off.
+- Inverter drive is disabled.
+- The final water level, wash duration, and energy usage are logged.
+
+A Telegram message confirms completion:
+
+```
+✅ Wash Cycle Completed
+Total Water Used: 18.0L
+Duration: 00:24:32
+Power: 350W
+
+```
+- The machine then returns to idle mode, ready for the next input.
+- If left untouched, the system maintains low-power state and periodically checks for OTA updates or new commands.
+
+---
 ---
 
 ## 🖼️ Gallery & Media
 
+Below are some photos and media captured during the 1-year long development and testing process of the smart washing machine retrofit project.
+
+Click on the text, and it will lead to indivisual photos and videos inside the google Photos Album.
+PS. These Links are **completely** SAFE!
+
 ---
 
-## 💾 Appendix & Source Code
+**1. 🧠 Reverse Engineering Process**
+
+- [IPM Drive Testing (Test 1)](https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipNVxxiq89uGjgkWxa-xYKltjGWV_kP-2nztHGkK?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B)
+
+- [IPM Drive Testing (Test2 )](https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipOIaje6bVMC1V6RkXsUcQZVmSZkGwG7BSXOfMsF?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B)
+
+- [IPM Drive Assembly Image 1](https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipPu-ZJu5S38M4Kw0cIc7J9eAKHDdguFzxUn6J73?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B)
+
+- [IPM Drive Assembly Image 2](https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipOtSMJzY3PqHMc3hq3MuFuZ1_jsQ_B-2PM2y5cD?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B)
+
+- [IPM Drive Assembly Image 3](https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipOttMqX2rKagrsjaFgf-D7oYPz6J4DbcodiPMrN?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B)
+
+
+---
+
+**2. 🔌 Wiring & Control Unit Assembly**
+
+- [Custom Zero PCB Based Circuit](https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipPgxhnKn9E3zUT-M9a8fnucJ8l8pAPLddA-W4Z_?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B)
+
+- [Custom Zero PCB Based Circuit (Image 2)](https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipP3Pys3-RKjSYWpHMEyqI5ZrcNhQ54i70lSnye4?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B)
+
+- [Custom Zero PCB (Soldering and Traces)](https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipMZ5tE8bI7WuJttj-N1EQ8UQHf_NgoKKCd8Q22i?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B)
+
+- [Custom Zero PCB (Soldering and Traces 2)](https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipMZ5tE8bI7WuJttj-N1EQ8UQHf_NgoKKCd8Q22i?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B)
+
+- [Custom Zero PCB (Final Soldering Done)](https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipPnbMUKjz5iKp1NFaPk81gNh_66vLAZB7_8QVWX?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B)
+
+- [Custom Zero PCB Based Circuit (Test Run)](https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipNHd1usFwYlTc6EfW2EbeeGgLNA1Vyr7TrSQdnu?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B)
+
+---
+
+**3. 📟 Display & UI**
+
+- [Front Panel ZERO PCB Design](https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipPRDzTbBiRYZB3S6eAQc1LLgfklFBrtY4y0V2xW?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B)
+
+- [Front Panel Working Video)](https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipMNQk_vXrH9MxTog7xU1b5WL2NTypNCzGVLaq9m?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B)
+
+- [Front Panel Zero PCB (Soldering and Traces 2)](https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipMa1f6072fTf-P5mK3TROiZc0dYj_0-kzBQliSJ?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B)
+
+- [Front Panel Zero PCB Based Circuit](https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipMa1f6072fTf-P5mK3TROiZc0dYj_0-kzBQliSJ?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B)
+
+---
+
+**4. 🌀 Mechanical Testing**
+
+- [Load Testing](https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipOLuU6hPTdLg9m6AT2BRDVsX4j-P8UZuohC88_P?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B)
+
+---
+
+**5. 📹 Video Demonstration** 
+
+- [Final Working Demo (Internals Shown)](https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipMSRp5zz-8cOHieEaOTm9mBGuAuogwmykCte0QY?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B)
+
+- [Final Working Demo (Spin Mode Via Voice Assistant)](https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipPZ5GAmqaRBAopp11-z1agipSMxAAhcM-O3ojQL?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B)
+
+- [Final Working Demo (Spin Mode Via Voice Assistant)](https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipPZ5GAmqaRBAopp11-z1agipSMxAAhcM-O3ojQL?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B)
+
+- [Internal Construction](https://photos.google.com/share/AF1QipPNWp27gQstlgL91O9z6UTNsfqDp0jNiJFLL1oh2fxKv0CKhDPo4cSU1hQcb7W5Ug/photo/AF1QipMhjJPm_ThSKVRP6Tn-dtEaeav-43ltuXjk5MuQ?key=WE9fbWNub0hjMVVGcDI5YVAwNG5lRzgwblA3Qm1B)
+
+
+Refer to this Google Photos Album for more Behind The Scenes Footage:
+
+- [Google Photos](https://photos.app.goo.gl/JXmmXoFTdbAtJn859)
+
+---
+---
+
+## 💾 Source Code & Documents Folder
+
+1. The full source code is available on GitHub and includes:
+- ESP32 firmware (ESP-IDF/Arduino)
+- WiFi + OTA + Telegram setup
+- HX710B sensor calibration logic
+- PWM timing sequence for IPM drive
+
+> 🔗 **[GitHub Repository: github.com/atharvap8/Advanced-IoT-Washing-Machine](https://github.com/atharvap8/Advanced-IoT-Washing-Machine)**
+
+2. Full Documentation Archive (Schematics, PCB, Code)
+
+Includes all schematic files, PCB layouts, firmware source code, block diagrams, wiring charts, and reference images.
+
+> 🔗 **[Google Drive Folder: drive.google.com/drive/folders/1uPgTiL8me0PxTM-ofMAjB7GyhWTrKcd5?usp=sharing](https://drive.google.com/drive/folders/1uPgTiL8me0PxTM-ofMAjB7GyhWTrKcd5?usp=sharing)**
+
+Contents of the folder:
+
+- 📄 Schematics/ — All connections (ESP32, relays, IPM drive, sensors)
+- 🧩 PCB Designs/ — KiCAD or EasyEDA layouts + Gerbers
+- ⚙️ ESP32_Firmware/ — Main firmware source (OTA, Telegram, HX710B)
+- 🖼️ Diagrams/ — High-level architecture of the machine
+- 🧠 Partition Layout — ESP32 Partition Layout file
+- 🧪 Research - All the research on IPM Drives, and 3-Phase Motor Control
+
+---
 

@@ -1,5 +1,5 @@
 ---
-title: "Iot Gas Safety System"
+title: "IoT Based Gas Safety System"
 date: 2024-10-23T17:27:02+05:30
 draft: false
 toc: true
@@ -44,17 +44,16 @@ This schematic shows how the ESP32, gas sensor, servo motor, exhaust fan, and ot
 
 ## PCB Design
 
-Once your prototype is working well, you can create a more permanent solution by designing a custom PCB. Here's the design I used:
+Once the prototype is working well, you can create a more permanent solution by designing a custom PCB. Here's the design I used:
 
-[Insert PCB design here]  
-You can use software like KiCad or Eagle to design your own.
+
 
 ---
 
 ## Project Media Folder
 
-[Insert link to downloadable project files including circuit diagrams, code, PCB files, and documentation.]
-
+[![Static Badge](https://img.shields.io/badge/GooglePhotos-Album-blue?style=flat&logo=Google%20Photos
+)](https://photos.app.goo.gl/XcDekKXhq9hmfnH59)
 ---
 
 ## How It Works

@@ -1,5 +1,5 @@
 ---
-title: "Ble Car Security Controller"
+title: "BLE Based Car Security Controller"
 date: 2024-10-30T17:07:33+05:30
 toc: true
 draft: false

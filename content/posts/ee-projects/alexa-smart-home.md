@@ -1,5 +1,5 @@
 ---
-title: "Alexa Smart Home"
+title: "Home Automation 15 Devices"
 date: 2024-06-02T17:57:12+05:30
 draft: false
 toc: true
