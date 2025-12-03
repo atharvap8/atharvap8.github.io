@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Automation 15 Devices - Atharva Phadke</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">atharvap8</span>
+                <span class="logo-dot"></span>
+            </div>
+            <nav class="nav-menu">
+                <a href="../../index.html" class="nav-btn">Home</a>
+                <a href="../../index.html#about" class="nav-btn">About</a>
+                <a href="index.html" class="nav-btn active">Projects</a>
+                <a href="../blog/index.html" class="nav-btn">Blog</a>
+                <a href="../../index.html#resume" class="nav-btn">Resume</a>
+                <a href="../../index.html#contact" class="nav-btn">Contact</a>
+            </nav>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <article class="section">
+            <div class="container">
+                <div class="project-header">
+                    <a href="index.html" class="back-link">← Back to Projects</a>
+                    <h1 class="project-title">Home Automation 15 Devices</h1>
+                    <div class="project-meta">
+                        <span class="status status--success">Completed</span>
+                        <div class="project-tags">
+                            <span class="tag">ESP32</span>
+                            <span class="tag">Alexa</span>
+                            <span class="tag">Home Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-content">
+                    <div class="project-gallery">
+                        <div class="project-image-placeholder">🏠</div>
+                    </div>
+
+                    <div class="project-description">
+                        <h2>Introduction</h2>
+                        <p>In this project, we will create a smart home system that allows control over 14 devices and 1
+                            air conditioner (AC) using an ESP32 microcontroller. The system includes EEPROM
+                            functionality, which retains the state of all devices even after a sudden power loss. With
+                            Alexa integration, users can control lights, fans, tube lights, AC, and more using voice
+                            commands and monitor the real-time status through the Alexa app.</p>
+
+                        <h2>How It Works</h2>
+                        <p>The ESP32 serves as the main controller for the entire smart home system. Each room has a
+                            4-channel relay module, which controls the devices (e.g., lights, fans, etc.). The ESP32
+                            sends signals to the relay modules based on user commands.</p>
+                        <ol>
+                            <li><strong>Voice Control:</strong> Integrated with Alexa, users can control devices using
+                                voice commands.</li>
+                            <li><strong>Real-time Monitoring:</strong> The status of each device is displayed and
+                                controlled through the Alexa app.</li>
+                            <li><strong>EEPROM Functionality:</strong> In case of a power failure, the system retains
+                                the state of each device, ensuring continuity once power is restored.</li>
+                            <li><strong>Centralized Control:</strong> A central controller manages all room relays,
+                                reducing wiring complexity.</li>
+                        </ol>
+
+                        <h2>Components Required</h2>
+                        <ul>
+                            <li>ESP32 (central controller with Wi-Fi functionality)</li>
+                            <li>4-Channel Relay Modules (one per room)</li>
+                            <li>EEPROM (to store device states)</li>
+                            <li>Alexa-compatible devices</li>
+                            <li>AC Module</li>
+                            <li>Power Supply (5V and 12V)</li>
+                        </ul>
+
+                        <h2>Step-by-Step Guide</h2>
+                        <h3>Step 1: Gather Components</h3>
+                        <p>Collect all the components listed above, ensuring you have an ESP32, relay modules, EEPROM,
+                            and Alexa-compatible devices.</p>
+
+                        <h3>Step 2: Build the Circuit Prototype</h3>
+                        <p>Start by connecting the ESP32 to the 4-channel relay modules. Wire each room’s module to the
+                            central ESP32 controller.</p>
+
+                        <h3>Step 3: Program the ESP32</h3>
+                        <p>Upload the code to the ESP32. The code should include the logic for relay control, Alexa
+                            voice integration, and EEPROM state retention.</p>
+
+                        <h3>Step 4: Connect to Alexa</h3>
+                        <p>Set up the ESP32 to communicate with Alexa. Ensure that each device is properly recognized in
+                            the Alexa app.</p>
+
+                        <h3>Step 5: Test the System</h3>
+                        <p>Test each room by controlling devices with voice commands and the Alexa app. Ensure that the
+                            EEPROM correctly restores the device states after a power cut.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Atharva. Built with passion for embedded systems and IoT.</p>
+            <div class="footer-links">
+                <a href="https://github.com/atharvap8">GitHub</a>
+                <a href="https://linkedin.com">LinkedIn</a>
+                <a href="mailto:atharva@example.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+
+</html>

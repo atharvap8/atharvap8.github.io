@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Water Tap V2 - Atharva Phadke</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">atharvap8</span>
+                <span class="logo-dot"></span>
+            </div>
+            <nav class="nav-menu">
+                <a href="../../index.html" class="nav-btn">Home</a>
+                <a href="../../index.html#about" class="nav-btn">About</a>
+                <a href="index.html" class="nav-btn active">Projects</a>
+                <a href="../blog/index.html" class="nav-btn">Blog</a>
+                <a href="../../index.html#resume" class="nav-btn">Resume</a>
+                <a href="../../index.html#contact" class="nav-btn">Contact</a>
+            </nav>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <article class="section">
+            <div class="container">
+                <div class="project-header">
+                    <a href="index.html" class="back-link">← Back to Projects</a>
+                    <h1 class="project-title">Automatic Water Tap V2</h1>
+                    <div class="project-meta">
+                        <span class="status status--success">Completed</span>
+                        <div class="project-tags">
+                            <span class="tag">Automation</span>
+                            <span class="tag">IR Sensor</span>
+                            <span class="tag">DIY</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-content">
+                    <div class="project-gallery">
+                        <div class="project-image-placeholder">🚰</div>
+                    </div>
+
+                    <div class="project-description">
+                        <h2>Introduction</h2>
+                        <p>The automatic water tap works based on the principle of Infrared (IR) detection. It provides
+                            a hygienic, touch-free way to use water, reducing wastage and preventing the spread of
+                            germs.</p>
+
+                        <h2>How It Works</h2>
+                        <ol>
+                            <li><strong>IR Sensor Module:</strong> The IR sensor emits infrared light. When an object
+                                comes within the sensor’s range, the emitted light reflects back to the sensor.</li>
+                            <li><strong>Signal Processing:</strong> The sensor detects the reflected IR light and sends
+                                a signal to the connected circuit.</li>
+                            <li><strong>MOSFET Control:</strong> The received signal is used to activate a MOSFET. It
+                                acts as a switch to control the solenoid valve.</li>
+                            <li><strong>Solenoid Valve Operation:</strong> When the MOSFET is activated, it allows
+                                current to flow through the solenoid valve, opening it and letting water flow.</li>
+                            <li><strong>Water Flow:</strong> The water flows as long as the object is detected by the IR
+                                sensor. Once the object is removed, the sensor stops detecting the reflection, and the
+                                solenoid valve closes, stopping the water flow.</li>
+                        </ol>
+
+                        <h2>Components Required</h2>
+                        <ul>
+                            <li>IR Sensor Module</li>
+                            <li>12V Solenoid Valve</li>
+                            <li>PNP Transistor: BD140</li>
+                            <li>Resistor: 10kΩ, 1/4Watt, ±5%</li>
+                            <li>Diode: 1N4007 General Purpose Diode</li>
+                            <li>Power Supply (230V AC to 12V DC)</li>
+                            <li>Mini 360 Buck Converter</li>
+                            <li>D4184 Mosfet Control Module</li>
+                        </ul>
+
+                        <h2>Step-by-Step Guide</h2>
+                        <h3>1. Prepare the enclosure</h3>
+                        <p>Drill holes into the plastic enclosure to mount it to a wall and for components/wires.</p>
+
+                        <h3>2. Circuit Connections</h3>
+                        <p>Connect the components according to the wiring diagram. Use heat shrink tubing to avoid short
+                            circuits.</p>
+
+                        <h3>3. Connect the Solenoid Valve</h3>
+                        <p>Connect the solenoid valve wires to its terminals. Ensure correct direction; otherwise, it
+                            won't work.</p>
+
+                        <h3>4. Tap Connections</h3>
+                        <p>Attach the sensor module to the underside of the tap using double-sided tape. Align the
+                            transmitter and receiver LEDs properly.</p>
+
+                        <h3>5. Test the Operation</h3>
+                        <p>Power up the circuit. Place your hand in front of the tap; the water should flow. Remove your
+                            hand to stop it.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Atharva. Built with passion for embedded systems and IoT.</p>
+            <div class="footer-links">
+                <a href="https://github.com/atharvap8">GitHub</a>
+                <a href="https://linkedin.com">LinkedIn</a>
+                <a href="mailto:atharva@example.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+
+</html>

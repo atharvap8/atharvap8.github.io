@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing of Diodes and Transistors - Atharva Phadke</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">atharvap8</span>
+                <span class="logo-dot"></span>
+            </div>
+            <nav class="nav-menu">
+                <a href="../../index.html" class="nav-btn">Home</a>
+                <a href="../../index.html#about" class="nav-btn">About</a>
+                <a href="../projects/index.html" class="nav-btn">Projects</a>
+                <a href="index.html" class="nav-btn active">Blog</a>
+                <a href="../../index.html#resume" class="nav-btn">Resume</a>
+                <a href="../../index.html#contact" class="nav-btn">Contact</a>
+            </nav>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <article class="section">
+            <div class="container">
+                <div class="blog-header">
+                    <a href="index.html" class="back-link">← Back to Blog</a>
+                    <h1 class="article-title">Testing of Diodes and Transistors</h1>
+                    <div class="article-meta">
+                        <span class="date">Jan 29, 2023</span>
+                        <span class="read-time">10 min read</span>
+                    </div>
+                </div>
+
+                <div class="article-content">
+                    <h2>Theory</h2>
+                    <h3>Diode Testing</h3>
+                    <p>A diode is a two-terminal electronic component that allows current to flow in one direction only.
+                        It acts like a one-way valve for current in a circuit.</p>
+                    <ul>
+                        <li><strong>Forward Bias:</strong> Anode connected to positive, cathode to negative.</li>
+                        <li><strong>Reverse Bias:</strong> Anode connected to negative, cathode to positive.</li>
+                    </ul>
+                    <p>To test a diode, use a multimeter to measure forward and reverse resistance. Forward resistance
+                        should be low; reverse resistance should be infinite.</p>
+
+                    <h3>Transistor Testing</h3>
+                    <p>A transistor is a three-terminal component used as a switch or amplifier. The most common type is
+                        the BJT.</p>
+                    <p>To test a transistor, measure the current gain (hFE) using a multimeter. The gain should
+                        typically be in the range of 100 to 1000.</p>
+
+                    <h2>Procedure</h2>
+                    <ol>
+                        <li>Connect the diode/transistor to the breadboard.</li>
+                        <li>Set the multimeter to the appropriate testing mode (diode or transistor).</li>
+                        <li>Measure forward/reverse resistance for diodes or current gain for transistors.</li>
+                        <li>Compare with standard values to determine working status.</li>
+                    </ol>
+
+                    <h2>Conclusion</h2>
+                    <p>Testing diodes and transistors is an important step in the design and maintenance of electronic
+                        circuits. By understanding the basic principles and procedures of testing, we can ensure the
+                        proper functioning of the components.</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Atharva. Built with passion for embedded systems and IoT.</p>
+            <div class="footer-links">
+                <a href="https://github.com/atharvap8">GitHub</a>
+                <a href="https://linkedin.com">LinkedIn</a>
+                <a href="mailto:atharva@example.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+
+</html>

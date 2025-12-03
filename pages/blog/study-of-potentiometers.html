@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study of Potentiometers - Atharva Phadke</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">atharvap8</span>
+                <span class="logo-dot"></span>
+            </div>
+            <nav class="nav-menu">
+                <a href="../../index.html" class="nav-btn">Home</a>
+                <a href="../../index.html#about" class="nav-btn">About</a>
+                <a href="../projects/index.html" class="nav-btn">Projects</a>
+                <a href="index.html" class="nav-btn active">Blog</a>
+                <a href="../../index.html#resume" class="nav-btn">Resume</a>
+                <a href="../../index.html#contact" class="nav-btn">Contact</a>
+            </nav>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <article class="section">
+            <div class="container">
+                <div class="blog-header">
+                    <a href="index.html" class="back-link">← Back to Blog</a>
+                    <h1 class="article-title">Study of Potentiometers</h1>
+                    <div class="article-meta">
+                        <span class="date">Oct 22, 2024</span>
+                        <span class="read-time">6 min read</span>
+                    </div>
+                </div>
+
+                <div class="article-content">
+                    <h2>Introduction to Potentiometers</h2>
+                    <p>A potentiometer is a three-terminal resistor with a sliding or rotating contact that forms an
+                        adjustable voltage divider. The primary use of a potentiometer is to vary the resistance in a
+                        circuit without interrupting the flow of current. It is commonly used for adjusting electrical
+                        devices like volume controls on audio equipment.</p>
+
+                    <h3>Types of Potentiometers:</h3>
+                    <ol>
+                        <li><strong>Rotary Potentiometer:</strong> Has a circular rotation for adjusting resistance.
+                        </li>
+                        <li><strong>Linear Potentiometer:</strong> The slider moves in a straight line.</li>
+                    </ol>
+
+                    <h2>Potentiometer Structure and Working Principle</h2>
+                    <p>A potentiometer has three main terminals:</p>
+                    <ul>
+                        <li><strong>Terminal 1 (Fixed End):</strong> Connected to one end of the resistive track.</li>
+                        <li><strong>Terminal 2 (Wiper):</strong> A movable contact sliding over the resistive track.
+                        </li>
+                        <li><strong>Terminal 3 (Fixed End):</strong> Connected to the other end of the resistive track.
+                        </li>
+                    </ul>
+                    <p>By rotating or sliding the wiper across the resistive material, the resistance between the wiper
+                        and each fixed end changes, effectively creating a variable resistor.</p>
+
+                    <h2>Basic Calculations</h2>
+                    <p>The total resistance of a potentiometer is represented as R. The voltage division that occurs
+                        across the potentiometer can be calculated using the following formula:</p>
+                    <pre><code>V_out = V_in * (R2 / (R1 + R2))</code></pre>
+                    <p>Where:</p>
+                    <ul>
+                        <li>V_in: Input voltage</li>
+                        <li>V_out: Output voltage from the wiper</li>
+                        <li>R1: Resistance from the fixed end to the wiper</li>
+                        <li>R2: Resistance from the wiper to the other fixed end</li>
+                    </ul>
+                    <p>For example, if R1 = 5kΩ and R2 = 10kΩ, and the input voltage is 12V, then:</p>
+                    <pre><code>V_out = 12V * (10kΩ / (5kΩ + 10kΩ)) = 8V</code></pre>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Atharva. Built with passion for embedded systems and IoT.</p>
+            <div class="footer-links">
+                <a href="https://github.com/atharvap8">GitHub</a>
+                <a href="https://linkedin.com">LinkedIn</a>
+                <a href="mailto:atharva@example.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Based Gas Safety System - Atharva Phadke</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">atharvap8</span>
+                <span class="logo-dot"></span>
+            </div>
+            <nav class="nav-menu">
+                <a href="../../index.html" class="nav-btn">Home</a>
+                <a href="../../index.html#about" class="nav-btn">About</a>
+                <a href="index.html" class="nav-btn active">Projects</a>
+                <a href="../blog/index.html" class="nav-btn">Blog</a>
+                <a href="../../index.html#resume" class="nav-btn">Resume</a>
+                <a href="../../index.html#contact" class="nav-btn">Contact</a>
+            </nav>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <article class="section">
+            <div class="container">
+                <div class="project-header">
+                    <a href="index.html" class="back-link">← Back to Projects</a>
+                    <h1 class="project-title">IoT Based Gas Safety System</h1>
+                    <div class="project-meta">
+                        <span class="status status--success">Completed</span>
+                        <div class="project-tags">
+                            <span class="tag">ESP32</span>
+                            <span class="tag">IoT</span>
+                            <span class="tag">Safety</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-content">
+                    <div class="project-gallery">
+                        <div class="project-image-placeholder">🔥</div>
+                    </div>
+
+                    <div class="project-description">
+                        <h2>Introduction</h2>
+                        <p>This project showcases an IoT-based gas safety system designed to detect gas leaks and take
+                            immediate preventive actions. It uses an ESP32 microcontroller, MQ-2 gas sensor, and servo
+                            motors to control the gas regulator, along with an exhaust fan to ventilate the area.</p>
+
+                        <h2>How It Works</h2>
+                        <p>The gas safety system continuously monitors gas levels using the MQ-2 gas sensor. If a gas
+                            leak is detected, the system immediately performs the following actions:</p>
+                        <ol>
+                            <li>The exhaust fan is triggered to remove gas from the environment.</li>
+                            <li>The servo motor rotates to turn off the regulator on the gas cylinder.</li>
+                            <li>Simultaneously, the ESP32 sends an email alert and a popup notification to the user’s
+                                mobile device via Wi-Fi.</li>
+                            <li>A buzzer will sound to alert individuals in proximity.</li>
+                            <li>Data retention and anti-false alarm measures ensure reliable operation.</li>
+                        </ol>
+
+                        <h2>Components Required</h2>
+                        <ul>
+                            <li>ESP32 (for Wi-Fi connectivity and control)</li>
+                            <li>MQ-2 Gas Sensor (for gas leak detection)</li>
+                            <li>Servo Motor (for controlling the gas regulator)</li>
+                            <li>Exhaust Fan (to ventilate the gas leak)</li>
+                            <li>Relay Module (to control the exhaust fan)</li>
+                            <li>Buzzer (for audible alerts)</li>
+                            <li>Fireproof Casing</li>
+                            <li>5V Power Supply</li>
+                        </ul>
+
+                        <h2>Step-by-Step Guide</h2>
+                        <h3>Step 1: Gather All Components</h3>
+                        <p>Ensure you have all the components listed above, and prepare your workspace.</p>
+
+                        <h3>Step 2: Build the Prototype Circuit</h3>
+                        <p>Start by connecting the MQ-2 gas sensor to the ESP32. Wire the servo motor, relay module, and
+                            buzzer to the appropriate pins on the ESP32. Use a breadboard for prototyping.</p>
+
+                        <h3>Step 3: Program the ESP32</h3>
+                        <p>Using Arduino IDE, upload the code to the ESP32. The code includes functionality for
+                            controlling the servo motor, triggering the exhaust fan, and sending notifications.</p>
+
+                        <h3>Step 4: Test the System</h3>
+                        <p>Simulate a gas leak by introducing a small amount of gas near the MQ-2 sensor. The exhaust
+                            fan should turn on, and the servo motor should rotate to turn off the gas regulator. Ensure
+                            notifications are received via email and popup.</p>
+
+                        <h3>Step 5: Design and Assemble the PCB</h3>
+                        <p>Once the prototype works correctly, design the PCB. After soldering the components onto the
+                            PCB, test the final circuit to ensure everything functions as expected.</p>
+
+                        <h3>Step 6: Enclose in a Fireproof Casing</h3>
+                        <p>Install the system in a robust, fireproof casing for added protection. Ensure that the gas
+                            sensor is exposed to the environment while keeping other components shielded.</p>
+
+                        <h2>Conclusion</h2>
+                        <p>This gas safety system offers a robust, automated solution for gas leak detection and
+                            prevention. By using easily accessible components, this project provides peace of mind with
+                            its reliable, responsive actions in hazardous conditions.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Atharva. Built with passion for embedded systems and IoT.</p>
+            <div class="footer-links">
+                <a href="https://github.com/atharvap8">GitHub</a>
+                <a href="https://linkedin.com">LinkedIn</a>
+                <a href="mailto:atharva@example.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLE Based Car Security Controller - Atharva Phadke</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">atharvap8</span>
+                <span class="logo-dot"></span>
+            </div>
+            <nav class="nav-menu">
+                <a href="../../index.html" class="nav-btn">Home</a>
+                <a href="../../index.html#about" class="nav-btn">About</a>
+                <a href="index.html" class="nav-btn active">Projects</a>
+                <a href="../blog/index.html" class="nav-btn">Blog</a>
+                <a href="../../index.html#resume" class="nav-btn">Resume</a>
+                <a href="../../index.html#contact" class="nav-btn">Contact</a>
+            </nav>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <article class="section">
+            <div class="container">
+                <div class="project-header">
+                    <a href="index.html" class="back-link">← Back to Projects</a>
+                    <h1 class="project-title">BLE Based Car Security Controller</h1>
+                    <div class="project-meta">
+                        <span class="status status--success">Completed</span>
+                        <div class="project-tags">
+                            <span class="tag">ESP32</span>
+                            <span class="tag">BLE</span>
+                            <span class="tag">Security</span>
+                            <span class="tag">Automotive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-content">
+                    <div class="project-gallery">
+                        <div class="project-image-placeholder">🚗</div>
+                    </div>
+
+                    <div class="project-description">
+                        <h2>Introduction</h2>
+                        <p>This project showcases the development of a central locking and security controller for the
+                            Wagon R car, using Bluetooth Low Energy (BLE) technology. The system is based on an ESP32
+                            microcontroller that handles key functionalities such as door signal control, bonnet status,
+                            indicators, and alarm settings. It is designed to work with a smartphone or a dedicated
+                            transmitter (built using the Xiao ESP32C3 board). Additionally, the system features an
+                            integrated immobilizer that communicates with the car’s ECM (Engine Control Module),
+                            preventing vehicle movement during theft attempts. The system also provides real-time alerts
+                            to the user’s cellphone in case of a security breach.</p>
+
+                        <h2>How It Works</h2>
+                        <ol>
+                            <li><strong>Bluetooth Communication:</strong> The ESP32 serves as the main controller, using
+                                BLE to communicate with either the user’s smartphone or the dedicated transmitter built
+                                with the Xiao ESP32C3. It manages lock/unlock signals, bonnet status, and alarm
+                                settings.</li>
+                            <li><strong>Immobilizer Functionality:</strong> The system features an integrated
+                                immobilizer that communicates with the car’s ECM. In the event of a theft attempt, the
+                                immobilizer prevents the car from moving by cutting off ignition or other crucial
+                                systems.</li>
+                            <li><strong>Real-time Alerts:</strong> In case of unauthorized access or forced entry, the
+                                system sends real-time notifications to the user’s cellphone via BLE. The user is
+                                alerted about the specific event, such as door status or bonnet being opened.</li>
+                            <li><strong>Keyless Entry:</strong> The transmitter (Xiao ESP32C3) can be used as a physical
+                                keyless entry device, which allows the driver to unlock/lock the car without needing a
+                                physical key.</li>
+                            <li><strong>Alarm System:</strong> When a security breach is detected, the alarm system is
+                                triggered, sounding an audible alert and notifying the user via phone.</li>
+                        </ol>
+
+                        <h2>Components Required</h2>
+                        <ul>
+                            <li>ESP32 (Main controller for BLE and vehicle communication)</li>
+                            <li>Xiao ESP32C3 (Transmitter for keyless entry)</li>
+                            <li>Relays (for controlling door locks and indicators)</li>
+                            <li>Immobilizer Circuit (connected to the car’s ECM)</li>
+                            <li>Door and Bonnet Sensors</li>
+                            <li>Alarm Module</li>
+                            <li>12V Power Supply</li>
+                            <li>LEDs, Jumper Wires, Connectors, PCB, Breadboard, etc.</li>
+                        </ul>
+
+                        <h2>Step-by-Step Guide</h2>
+                        <h3>Step 1: Gather Components</h3>
+                        <p>Collect all the components listed above, ensuring you have the ESP32, Xiao ESP32C3, relays,
+                            and sensors.</p>
+
+                        <h3>Step 2: Build the Circuit Prototype</h3>
+                        <p>Start by connecting the ESP32 to the door sensors, relays, and the immobilizer circuit. Wire
+                            the transmitter using the Xiao ESP32C3. Test each connection using a breadboard.</p>
+
+                        <h3>Step 3: Program the ESP32 and Transmitter</h3>
+                        <p>Using the Arduino IDE, program the ESP32 to manage door locking, bonnet status, BLE
+                            communication, and immobilizer functionality. Program the Xiao ESP32C3 transmitter to send
+                            lock/unlock signals to the ESP32.</p>
+
+                        <h3>Step 4: Install in the Car</h3>
+                        <p>Once the prototype is tested and functional, install the system in your car. Mount the ESP32
+                            and relays securely, and wire them to the car’s door lock actuators, bonnet sensors, and the
+                            ECM for immobilizer communication.</p>
+
+                        <h3>Step 5: Test the System</h3>
+                        <p>Test all functions: lock/unlock via smartphone and transmitter, immobilizer activation, alarm
+                            triggering, and real-time alerts. Ensure the system responds quickly to BLE commands and
+                            correctly handles door and bonnet status.</p>
+
+                        <h3>Step 6: Design and Assemble the PCB</h3>
+                        <p>For a cleaner installation, design a custom PCB to house the ESP32, relays, and related
+                            circuitry. Assemble and solder all components onto the PCB and reinstall it in the vehicle.
+                        </p>
+
+                        <h2>Conclusion</h2>
+                        <p>This central locking and security controller project adds an advanced layer of security to
+                            the Wagon R using BLE technology. The system allows for seamless keyless entry, enhanced
+                            vehicle immobilization during theft attempts, and real-time notifications to the user’s
+                            cellphone.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Atharva. Built with passion for embedded systems and IoT.</p>
+            <div class="footer-links">
+                <a href="https://github.com/atharvap8">GitHub</a>
+                <a href="https://linkedin.com">LinkedIn</a>
+                <a href="mailto:atharva@example.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+
+</html>

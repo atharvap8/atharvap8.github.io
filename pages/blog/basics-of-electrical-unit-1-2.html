@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of Electrical & Electronics - Unit 1 & 2 - Atharva Phadke</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">atharvap8</span>
+                <span class="logo-dot"></span>
+            </div>
+            <nav class="nav-menu">
+                <a href="../../index.html" class="nav-btn">Home</a>
+                <a href="../../index.html#about" class="nav-btn">About</a>
+                <a href="../projects/index.html" class="nav-btn">Projects</a>
+                <a href="index.html" class="nav-btn active">Blog</a>
+                <a href="../../index.html#resume" class="nav-btn">Resume</a>
+                <a href="../../index.html#contact" class="nav-btn">Contact</a>
+            </nav>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <article class="section">
+            <div class="container">
+                <div class="blog-header">
+                    <a href="index.html" class="back-link">← Back to Blog</a>
+                    <h1 class="article-title">Basics of Electrical & Electronics - Unit 1 & 2</h1>
+                    <div class="article-meta">
+                        <span class="date">February 12, 2025</span>
+                        <span class="tags">
+                            <span class="tag">Electronics</span>
+                            <span class="tag">Basics</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="article-content">
+                    <h2>Unit 1: Elementary Concepts</h2>
+
+                    <h3>1. Concept of Potential Difference, Current, and Resistance</h3>
+                    <ul>
+                        <li><strong>Potential Difference (Voltage, V):</strong> Difference in electric potential between
+                            two points. Measured in Volts (V).</li>
+                        <li><strong>Current (I):</strong> Flow of electric charge. Measured in Amperes (A).</li>
+                        <li><strong>Resistance (R):</strong> Opposition to current flow. Measured in Ohms (Ω).</li>
+                    </ul>
+
+                    <h3>2. Ohm’s Law</h3>
+                    <p>Voltage is directly proportional to current when resistance is constant.</p>
+                    <pre><code>V = I × R</code></pre>
+
+                    <h3>3. Series and Parallel Circuits</h3>
+                    <h4>Series Circuit</h4>
+                    <ul>
+                        <li>Single path for current.</li>
+                        <li>Total Resistance: <code>R_t = R_1 + R_2 + ... + R_n</code></li>
+                        <li>Current remains same in all components.</li>
+                        <li>Voltage divides across components.</li>
+                    </ul>
+
+                    <h4>Parallel Circuit</h4>
+                    <ul>
+                        <li>Multiple paths for current.</li>
+                        <li>Total Resistance: <code>1/R_t = 1/R_1 + 1/R_2 + ... + 1/R_n</code></li>
+                        <li>Voltage remains same across components.</li>
+                        <li>Current divides among branches.</li>
+                    </ul>
+
+                    <h3>4. Voltage and Current Dividers</h3>
+                    <p><strong>Voltage Divider Rule:</strong> <code>V_x = V_total × (R_x / R_total)</code></p>
+                    <p><strong>Current Divider Rule:</strong> <code>I_x = I_total × (R_total / R_x)</code></p>
+
+                    <h3>5. Power and Energy Calculations</h3>
+                    <ul>
+                        <li><strong>Power (P):</strong> Rate of energy transfer. Measured in Watts (W).
+                            <code>P = V × I</code></li>
+                        <li><strong>Energy (E):</strong> Total power used over time. Measured in Joules (J).
+                            <code>E = P × t</code></li>
+                        <li><strong>Electricity Bill Calculation:</strong> Energy is measured in Kilowatt-hours (kWh).
+                            Cost = Units Consumed × Rate per kWh.</li>
+                    </ul>
+
+                    <h3>6. Kirchhoff’s Laws</h3>
+                    <h4>Kirchhoff’s Current Law (KCL)</h4>
+                    <p>Sum of currents entering a junction = Sum of currents leaving the junction.</p>
+                    <pre><code>Σ I_in = Σ I_out</code></pre>
+
+                    <h4>Kirchhoff’s Voltage Law (KVL)</h4>
+                    <p>Sum of all voltages in a closed loop = 0.</p>
+                    <pre><code>Σ V = 0</code></pre>
+
+                    <hr>
+
+                    <h2>Unit 2: Single Phase and Polyphase A.C. Circuits</h2>
+
+                    <h3>1. Generation of Single Phase Sinusoidal A.C. Voltages</h3>
+                    <p>Alternating Current (AC) varies sinusoidally over time and is generated using rotating coils in a
+                        magnetic field.</p>
+                    <p><strong>AC Voltage Equation:</strong> <code>v(t) = V_m sin(ωt)</code></p>
+                    <ul>
+                        <li>V_m = Peak Voltage</li>
+                        <li>ω = Angular Frequency</li>
+                        <li>t = Time</li>
+                    </ul>
+
+                    <h3>2. AC Quantities and Phasor Representation</h3>
+                    <ul>
+                        <li><strong>Phasor:</strong> Represents AC quantities as rotating vectors in a complex plane.
+                        </li>
+                        <li><strong>Amplitude (Magnitude):</strong> Peak value of voltage or current.</li>
+                        <li><strong>Phase Angle:</strong> Difference in phase between voltage and current.</li>
+                    </ul>
+
+                    <h3>3. Pure R, Pure L, and Pure C Circuits</h3>
+                    <ul>
+                        <li><strong>Pure Resistive Circuit:</strong> Voltage and Current are in phase. Power P = V × I.
+                        </li>
+                        <li><strong>Pure Inductive Circuit:</strong> Current lags voltage by 90°. Power P = 0 (purely
+                            reactive).</li>
+                        <li><strong>Pure Capacitive Circuit:</strong> Current leads voltage by 90°. Power P = 0 (purely
+                            reactive).</li>
+                    </ul>
+
+                    <h3>4. Impedance and Admittance</h3>
+                    <p><strong>Impedance (Z):</strong> Total opposition in an AC circuit. Measured in Ohms (Ω).
+                        <code>Z = R + jX</code> where X is reactance.</p>
+                    <p><strong>Admittance (Y):</strong> Reciprocal of impedance. Measured in Siemens (S).
+                        <code>Y = 1/Z</code></p>
+
+                    <h3>5. Active, Reactive, Apparent Power and Power Factor</h3>
+                    <ul>
+                        <li><strong>Active Power (P):</strong> <code>P = V × I × cos φ</code></li>
+                        <li><strong>Reactive Power (Q):</strong> <code>Q = V × I × sin φ</code></li>
+                        <li><strong>Apparent Power (S):</strong> <code>S = V × I</code></li>
+                        <li><strong>Power Factor (PF):</strong> <code>PF = cos φ</code></li>
+                    </ul>
+                    <p>PF close to 1 → Efficient system. PF close to 0 → High reactive power, inefficient system.</p>
+
+                    <h3>6. Polyphase A.C. Circuits</h3>
+                    <p>Three-phase systems are used for efficient power transmission, providing more power with less
+                        conductor material compared to single-phase.</p>
+                    <p><strong>Balanced Three-Phase System:</strong> Equal phase voltages and 120° phase difference.</p>
+
+                    <h4>Relation between Line and Phase Quantities</h4>
+                    <ul>
+                        <li><strong>Star Connection:</strong> <code>V_L = √3 V_ph</code>, <code>I_L = I_ph</code></li>
+                        <li><strong>Delta Connection:</strong> <code>V_L = V_ph</code>, <code>I_L = √3 I_ph</code></li>
+                    </ul>
+
+                    <h3>7. Power in Three-Phase Circuits</h3>
+                    <p>Power is same for both Star and Delta connections:</p>
+                    <pre><code>P = √3 V_L I_L cos φ</code></pre>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Atharva. Built with passion for embedded systems and IoT.</p>
+            <div class="footer-links">
+                <a href="https://github.com/atharvap8">GitHub</a>
+                <a href="https://linkedin.com">LinkedIn</a>
+                <a href="mailto:atharva@example.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced IoT Washing Machine - Atharva Phadke</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">atharvap8</span>
+                <span class="logo-dot"></span>
+            </div>
+            <nav class="nav-menu">
+                <a href="../../index.html" class="nav-btn">Home</a>
+                <a href="../../index.html#about" class="nav-btn">About</a>
+                <a href="index.html" class="nav-btn active">Projects</a>
+                <a href="../blog/index.html" class="nav-btn">Blog</a>
+                <a href="../../index.html#resume" class="nav-btn">Resume</a>
+                <a href="../../index.html#contact" class="nav-btn">Contact</a>
+            </nav>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <article class="section">
+            <div class="container">
+                <div class="project-header">
+                    <a href="index.html" class="back-link">← Back to Projects</a>
+                    <h1 class="project-title">Advanced IoT Washing Machine</h1>
+                    <div class="project-meta">
+                        <span class="status status--success">Completed</span>
+                        <div class="project-tags">
+                            <span class="tag">ESP32</span>
+                            <span class="tag">IoT</span>
+                            <span class="tag">Reverse Engineering</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-content">
+                    <div class="project-gallery">
+                        <div class="project-image-placeholder">🤖</div>
+                    </div>
+
+                    <div class="project-description">
+                        <h2>Introduction</h2>
+                        <p>This project chronicles the transformation of a non-functional LG fully automatic washing
+                            machine into a modern, intelligent, and voice-controlled appliance using ESP32
+                            microcontroller, relays, sensors, and Alexa integration. The machine’s original controller
+                            PCB had failed, providing an opportunity to take full control of the machine’s sophisticated
+                            components and create a customisable system from the ground up.</p>
+
+                        <h2>Background & Motivation</h2>
+                        <p>After the machine’s original controller board went haywire, instead of discarding it, I saw
+                            the opportunity to understand and reengineer the device. With full access to all internal
+                            components (motor, valves, sensors), this project became an intensive 1-year journey through
+                            reverse engineering, signal probing, embedded firmware design, IoT integration, mechanical
+                            testing, and finally full automation.</p>
+
+                        <h2>Implemented Features</h2>
+                        <ul>
+                            <li>Basic Washing Programs</li>
+                            <li>Water Level Sensing</li>
+                            <li>Wi-Fi Enabled Control</li>
+                            <li>Live Status Indication</li>
+                            <li>Voice Assistant Integration</li>
+                            <li>Web Dashboard Control</li>
+                            <li>OTA Firmware Update</li>
+                            <li>Status LEDs & LCD Display Feedback</li>
+                        </ul>
+
+                        <h2>Front Panel Design</h2>
+                        <p>Designing the front panel was a critical component in delivering a functional, reliable, and
+                            user-friendly interface. The entire interface was redesigned from scratch, keeping in mind
+                            ergonomics, electrical isolation, display clarity, and accessibility.</p>
+                        <ul>
+                            <li><strong>Layout Planning:</strong> Main display (LCD 16x2), tactile input buttons, LED
+                                indicators, and emergency stop provision.</li>
+                            <li><strong>Component Selection:</strong> Tactile push buttons for mode switching, status
+                                LEDs for real-time feedback.</li>
+                            <li><strong>Wiring & Assembly:</strong> All button presses connected via pull-down resistors
+                                to GPIOs. Display connected via I2C.</li>
+                        </ul>
+
+                        <h2>Features Under Development</h2>
+                        <ul>
+                            <li>Countdown Timer Display</li>
+                            <li>Emergency Inverter Stop</li>
+                            <li>Custom Inverter Drive Design</li>
+                            <li>AI-Based Laundry Type Detection</li>
+                            <li>Dynamic Water Level by Load</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Atharva. Built with passion for embedded systems and IoT.</p>
+            <div class="footer-links">
+                <a href="https://github.com/atharvap8">GitHub</a>
+                <a href="https://linkedin.com">LinkedIn</a>
+                <a href="mailto:atharva@example.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+
+</html>
