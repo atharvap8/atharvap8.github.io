@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharva Phadke</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">atharvap8</span>
+                <span class="logo-dot"></span>
+            </div>
+            <nav class="nav-menu">
+                <button class="nav-btn" data-section="home">Home</button>
+                <button class="nav-btn" data-section="about">About</button>
+                <button class="nav-btn" data-section="projects">Projects</button>
+                <button class="nav-btn" data-section="blog">Blog</button>
+                <button class="nav-btn" data-section="resume">Resume</button>
+                <button class="nav-btn" data-section="contact">Contact</button>
+            </nav>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section section-home active">
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="gradient-text">Building</span>
+                            <span class="word-rotate">
+                                <span>Future</span>
+                                <span>Code</span>
+                                <span>Innovation</span>
+                            </span>
+                        </h1>
+                        <p class="hero-subtitle">• Embedded Systems</p>
+                        <p class="hero-subtitle">• IoT</p>
+                        <p class="hero-subtitle">• Firmware Developer</p>
+                        <p class="hero-description">
+                            Crafting intelligent embedded solutions and IoT systems that bridge hardware and software
+                            realms.
+                        </p>
+                        <div class="hero-cta">
+                            <button class="btn btn-primary" onclick="scrollToSection('projects')">View My Work</button>
+                            <button class="btn btn-secondary" onclick="scrollToSection('contact')">Get In Touch</button>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="floating-card card-1">
+                            <div class="card-inner">
+                                <span class="card-icon">⚙️</span>
+                                <p>Embedded</p>
+                            </div>
+                        </div>
+                        <div class="floating-card card-2">
+                            <div class="card-inner">
+                                <span class="card-icon">🔌</span>
+                                <p>IoT</p>
+                            </div>
+                        </div>
+                        <div class="floating-card card-3">
+                            <div class="card-inner">
+                                <span class="card-icon">💻</span>
+                                <p>Firmware</p>
+                            </div>
+                        </div>
+                        <div class="animated-background">
+                            <div class="glow-sphere"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <span>Scroll to explore</span>
+                    <svg class="scroll-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section section-about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm a passionate embedded systems engineer and IoT developer from India, with expertise in
+                            microcontroller programming, hardware design, and firmware development. Currently pursuing
+                            formal education while working on advanced IoT projects and seeking growth opportunities.
+                        </p>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <h3>Microcontrollers</h3>
+                                <p>ESP32, Arduino, STM32</p>
+                            </div>
+                            <div class="skill-card">
+                                <h3>Languages</h3>
+                                <p>C/C++, Python, JavaScript</p>
+                            </div>
+                            <div class="skill-card">
+                                <h3>Hardware</h3>
+                                <p>PCB Design, Power Electronics</p>
+                            </div>
+                            <div class="skill-card">
+                                <h3>Tools</h3>
+                                <p>KiCad, VS Code, Git</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Dedication</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label">Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section section-projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">🤖</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Smart Washing Machine Controller</h3>
+                            <p>IoT-enabled washer with real-time monitoring and remote control via web dashboard.</p>
+                            <div class="project-tags">
+                                <span class="tag">ESP32</span>
+                                <span class="tag">IoT</span>
+                                <span class="tag">Web</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">⚡</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Power Inverter System</h3>
+                            <p>Advanced SPWM-based 3-phase power inverter with grid-tie capabilities.</p>
+                            <div class="project-tags">
+                                <span class="tag">Hardware</span>
+                                <span class="tag">Power Electronics</span>
+                                <span class="tag">STM32</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">🔌</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>PCB Design Suite</h3>
+                            <p>Comprehensive KiCad hierarchical designs for multi-layer industrial projects.</p>
+                            <div class="project-tags">
+                                <span class="tag">KiCad</span>
+                                <span class="tag">PCB</span>
+                                <span class="tag">Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">📡</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Remote Gateway Firmware</h3>
+                            <p>Scalable firmware for multi-protocol IoT gateway with MQTT support.</p>
+                            <div class="project-tags">
+                                <span class="tag">C++</span>
+                                <span class="tag">MQTT</span>
+                                <span class="tag">Gateway</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">🎮</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Real-time Sensor Dashboard</h3>
+                            <p>Live visualization of sensor data with FFT analysis and signal processing.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">WebSocket</span>
+                                <span class="tag">DSP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">🛠️</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Appliance Repair Suite</h3>
+                            <p>Diagnostic tool for troubleshooting and reverse engineering appliance PCBs.</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Diagnostics</span>
+                                <span class="tag">Tools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="section section-blog">
+            <div class="container">
+                <h2 class="section-title">Latest Articles</h2>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-date">Dec 02, 2025</div>
+                        <h3>Getting Started with ESP32-WROOM: Daughter Board Design</h3>
+                        <p>A comprehensive guide to designing efficient daughter boards for ESP32 projects with proper
+                            power management and I/O expansion.</p>
+                        <div class="blog-footer">
+                            <span class="read-time">5 min read</span>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-date">Nov 28, 2025</div>
+                        <h3>Power Electronics 101: Designing Efficient Buck Converters</h3>
+                        <p>Deep dive into buck converter design, component selection, and layout considerations for
+                            reliable power supplies.</p>
+                        <div class="blog-footer">
+                            <span class="read-time">7 min read</span>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-date">Nov 20, 2025</div>
+                        <h3>Washing Machine PCB Troubleshooting: TRIAC Control Issues</h3>
+                        <p>Practical techniques for diagnosing and repairing TRIAC-based motor controllers in household
+                            appliances.</p>
+                        <div class="blog-footer">
+                            <span class="read-time">6 min read</span>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-date">Nov 15, 2025</div>
+                        <h3>FreeRTOS Multi-Tasking on ESP32: Best Practices</h3>
+                        <p>Master real-time task scheduling, inter-task communication, and resource management with
+                            FreeRTOS.</p>
+                        <div class="blog-footer">
+                            <span class="read-time">8 min read</span>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-date">Nov 10, 2025</div>
+                        <h3>IoT Security: Implementing Secure MQTT with ESP32</h3>
+                        <p>Secure your IoT projects with TLS/SSL certificates, authentication, and encrypted
+                            communication protocols.</p>
+                        <div class="blog-footer">
+                            <span class="read-time">7 min read</span>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-date">Nov 05, 2025</div>
+                        <h3>Advanced PCB Routing: High-Speed Signal Integrity</h3>
+                        <p>Learn impedance matching, via stitching, and layer stack-up design for high-speed PCB
+                            layouts.</p>
+                        <div class="blog-footer">
+                            <span class="read-time">9 min read</span>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="section section-resume">
+            <div class="container">
+                <h2 class="section-title">Resume</h2>
+                <div class="resume-content">
+                    <div class="resume-section">
+                        <h3 class="resume-heading">Experience</h3>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Junior IoT Developer</h4>
+                                <p class="timeline-meta">June 2024 - November 2024</p>
+                                <p>Developed smart appliance controllers and IoT washing machine systems with real-time
+                                    monitoring capabilities.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Hardware Design Intern</h4>
+                                <p class="timeline-meta">2023 - 2024</p>
+                                <p>Designed PCBs for power electronics projects and participated in TRIAC-based motor
+                                    control systems.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3 class="resume-heading">Education</h3>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Electronics Engineering</h4>
+                                <p class="timeline-meta">Currently Pursuing</p>
+                                <p>Formal education in embedded systems and electronics with focus on practical
+                                    applications.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Self-Taught Development</h4>
+                                <p class="timeline-meta">Ongoing</p>
+                                <p>Continuous learning through hands-on projects, open-source contributions, and
+                                    technical documentation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3 class="resume-heading">Skills</h3>
+                        <div class="skills-matrix">
+                            <div class="skill-row">
+                                <span class="skill-name">ESP32 & Arduino</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <span class="skill-name">C/C++ Programming</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <span class="skill-name">PCB Design (KiCad)</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <span class="skill-name">Power Electronics</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <span class="skill-name">IoT Systems</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <span class="skill-name">Web Development</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resume-actions">
+                        <button class="btn btn-primary">Download Resume</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section section-contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p>Have a project in mind? Let's collaborate and bring your ideas to life.</p>
+                        <div class="contact-links">
+                            <a href="mailto:atharva@example.com" class="contact-link">
+                                <span class="link-icon">✉️</span>
+                                <span>atharva@example.com</span>
+                            </a>
+                            <a href="https://github.com/atharvap8" class="contact-link">
+                                <span class="link-icon">🐙</span>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://linkedin.com" class="contact-link">
+                                <span class="link-icon">💼</span>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Atharva. Built with passion for embedded systems and IoT.</p>
+            <div class="footer-links">
+                <a href="https://github.com/atharvap8">GitHub</a>
+                <a href="https://linkedin.com">LinkedIn</a>
+                <a href="mailto:atharva@example.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
