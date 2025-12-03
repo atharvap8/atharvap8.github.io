@@ -114,36 +114,13 @@ window.addEventListener('load', () => {
 // ==================== Form Submission ====================
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
+    // Formspree handles the submission, so we don't need to prevent default
+    // We can add simple client-side validation if needed, but for now let's rely on HTML5 validation
     contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        // Simple form validation and submission feedback
-        const inputs = contactForm.querySelectorAll('input, textarea');
-        let isValid = true;
-
-        inputs.forEach(input => {
-            if (!input.value.trim()) {
-                isValid = false;
-                input.style.borderColor = 'var(--secondary-color)';
-            } else {
-                input.style.borderColor = 'var(--border-color)';
-            }
-        });
-
-        if (isValid) {
-            // Show success message
-            const submitBtn = contactForm.querySelector('button[type="submit"]');
-            const originalText = submitBtn.textContent;
-            submitBtn.textContent = 'Message Sent! ✓';
-            submitBtn.style.background = 'linear-gradient(135deg, #00d9ff, #00ff00)';
-
-            // Reset form after 2 seconds
-            setTimeout(() => {
-                contactForm.reset();
-                submitBtn.textContent = originalText;
-                submitBtn.style.background = '';
-            }, 2000);
-        }
+        // Optional: Add loading state to button
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
     });
 }
 
