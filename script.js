@@ -482,4 +482,48 @@ document.addEventListener('DOMContentLoaded', () => {
             tocLinks[0].classList.add('active');
         }
     }
+
+
+// --- Image Lightbox / Zoom Functionality ---
+const articleImages = document.querySelectorAll('.article-content img');
+if (articleImages.length > 0) {
+    // Create Lightbox Elements
+    const lightbox = document.createElement('div');
+    lightbox.className = 'image-lightbox';
+    lightbox.innerHTML = `
+            <img src="" alt="Zoomed Image" class="lightbox-img">
+            <div class="lightbox-caption"></div>
+        `;
+    document.body.appendChild(lightbox);
+
+    const lightboxImg = lightbox.querySelector('.lightbox-img');
+    const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+
+    articleImages.forEach(img => {
+        img.addEventListener('click', () => {
+            const src = img.getAttribute('src');
+            const figure = img.closest('figure');
+            const captionElement = figure ? figure.querySelector('figcaption') : null;
+            const captionText = captionElement ? captionElement.textContent : (img.getAttribute('alt') || '');
+
+            lightboxImg.src = src;
+            lightboxCaption.textContent = captionText;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        });
+    });
+
+    lightbox.addEventListener('click', () => {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = ''; // Re-enable scrolling
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+}
 });

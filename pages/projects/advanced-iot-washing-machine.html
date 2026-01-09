@@ -133,11 +133,23 @@
                             <li>By applying 12V DC to specified terminal, i tested the drain motor. And confirmed that
                                 the drum also starts to spin.</li>
                         </ul>
+                        <figure class="article-figure">
+                            <img src="../../assets/projects/aiotwm/drainmotor.jpeg" alt="LG Washing Machine Drain Motor"
+                                class="article-img">
+                            <figcaption class="article-caption">The original 12V DC Drain Motor used to disengage the
+                                drum brake and engage the clutch system.</figcaption>
+                        </figure>
                     </section>
 
                     <section id="reverse-engineering">
                         <h2>🧠 Reverse Engineering the Inverter Drive Module</h2>
                         <p>Inverter Drive Module (Model: ISB-LC4-3050_V2)</p>
+                        <figure class="article-figure">
+                            <img src="../../assets/projects/aiotwm/module.jpg" alt="Samsung Inverter Drive Module"
+                                class="article-img">
+                            <figcaption class="article-caption">The Samsung ISB-LC4-3050_V2 Inverter Drive Module
+                                salvaged for high-voltage motor control.</figcaption>
+                        </figure>
                         <ul>
                             <li>Before connecting the module to anything, I conducted a thorough short-circuit and
                                 continuity test on the IPM board to ensure that it hadn’t suffered damage or latent
@@ -190,6 +202,18 @@
                                 operate in synchronous mode, with smooth startup, speed variation, and directional
                                 control.</li>
                         </ul>
+                        <figure class="article-figure">
+                            <img src="../../assets/projects/aiotwm/uvwmotor.jpg" alt="3-Phase UVW Motor"
+                                class="article-img">
+                            <figcaption class="article-caption">LG Direct Drive 3-Phase UVW Motor (310V DC).
+                            </figcaption>
+                        </figure>
+                        <figure class="article-figure">
+                            <img src="../../assets/projects/aiotwm/modblkdia.png" alt="Inverter Module Block Diagram"
+                                class="article-img">
+                            <figcaption class="article-caption">Block diagram of the reverse-engineered Inverter Module
+                                logic.</figcaption>
+                        </figure>
                     </section>
 
                     <section id="prototyping">
@@ -266,6 +290,12 @@
                                 water. I logged corresponding sensor readings to correlate digital values with actual
                                 water levels (e.g., 6L, 12L, 18L).</li>
                         </ul>
+                        <figure class="article-figure">
+                            <img src="../../assets/projects/aiotwm/aps.jpg" alt="HX710B Pressure Sensor"
+                                class="article-img">
+                            <figcaption class="article-caption">The HX710B pressure sensor module calibrated for
+                                high-precision water level measurement.</figcaption>
+                        </figure>
                     </section>
 
                     <section id="esp32">
