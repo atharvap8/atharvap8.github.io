@@ -415,4 +415,71 @@ document.addEventListener('DOMContentLoaded', () => {
     if (homeBtn) {
         homeBtn.style.borderBottomColor = 'var(--primary-color)';
     }
+
+    // ==================== Global TOC Scrollspy ====================
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const articleSections = document.querySelectorAll('article section[id]');
+
+    if (tocLinks.length > 0 && articleSections.length > 0) {
+        const activeSections = new Set();
+
+        const tocObserverOptions = {
+            root: null,
+            rootMargin: '-10% 0px -80% 0px', // Focus window near the top
+            threshold: 0
+        };
+
+        const tocObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const id = entry.target.getAttribute('id');
+                if (entry.isIntersecting) {
+                    activeSections.add(id);
+                } else {
+                    activeSections.delete(id);
+                }
+            });
+
+            // Update TOC highlight based on the FIRST (top-most) visible section
+            if (activeSections.size > 0) {
+                let firstActiveId = null;
+                // We iterate over articleSections to maintain DOM order
+                for (const section of articleSections) {
+                    const id = section.getAttribute('id');
+                    if (activeSections.has(id)) {
+                        firstActiveId = id;
+                        break;
+                    }
+                }
+
+                if (firstActiveId) {
+                    tocLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${firstActiveId}`) {
+                            link.classList.add('active');
+
+                            // Auto-scroll TOC sidebar to keep active link in view
+                            const sidebar = link.closest('.article-sidebar');
+                            if (sidebar) {
+                                link.scrollIntoView({
+                                    behavior: 'smooth',
+                                    block: 'nearest'
+                                });
+                            }
+                        }
+                    });
+                }
+            } else if (window.scrollY < 200) {
+                // At the very top, highlight the first link
+                tocLinks.forEach(l => l.classList.remove('active'));
+                tocLinks[0].classList.add('active');
+            }
+        }, tocObserverOptions);
+
+        articleSections.forEach(section => tocObserver.observe(section));
+
+        // Sync initial state
+        if (window.scrollY < 200) {
+            tocLinks[0].classList.add('active');
+        }
+    }
 });

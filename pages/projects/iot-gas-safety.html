@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IoT Based Gas Safety System - Atharva Phadke</title>
+    <title>IoT Based Gas Safety System :: Atharva Phadke</title>
     <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../article.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;850&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -24,7 +29,7 @@
                 <a href="../../index.html#resume" class="nav-btn">Resume</a>
                 <a href="../../index.html#contact" class="nav-btn">Contact</a>
             </nav>
-            <button class="menu-toggle">
+            <button class="menu-toggle" aria-label="Toggle Menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -33,33 +38,59 @@
     </header>
 
     <main class="main-content">
-        <article class="section">
-            <div class="container">
-                <div class="project-header">
-                    <a href="index.html" class="back-link">← Back to Projects</a>
-                    <h1 class="project-title">IoT Based Gas Safety System</h1>
-                    <div class="project-meta">
-                        <span class="status status--success">Completed</span>
-                        <div class="project-tags">
-                            <span class="tag">ESP32</span>
-                            <span class="tag">IoT</span>
-                            <span class="tag">Safety</span>
-                        </div>
+        <div class="article-container">
+            <!-- Breadcrumb Navigation -->
+            <div class="back-link-container">
+                <a href="index.html" class="btn-back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                    Back to Projects
+                </a>
+            </div>
+
+            <!-- Hero Section -->
+            <header class="article-header">
+                <h1 class="article-title">IoT Based Gas Safety System</h1>
+                <div class="article-meta">
+                    <div class="article-meta-item">
+                        <span>Status:</span>
+                        <span style="color: var(--color-teal-500)">Completed</span>
+                    </div>
+                    <div class="article-meta-item">
+                        <span>Tech:</span>
+                        <span>ESP32, MQ-2, Servo, Fan</span>
                     </div>
                 </div>
+                <p class="article-summary">An automated hazard mitigation system that detects gas leaks, Shuts off the
+                    regulator, and ventilates the area while notifying the user.</p>
+            </header>
 
-                <div class="project-content">
-                    <div class="project-gallery">
-                        <div class="project-image-placeholder">🔥</div>
-                    </div>
+            <div class="article-grid">
+                <!-- Table of Contents Sidebar -->
+                <aside class="article-sidebar">
+                    <div class="sidebar-project-title">IoT Gas Safety</div>
+                    <div class="toc-title">On This Page</div>
+                    <ul class="toc-list">
+                        <li><a href="#introduction" class="toc-link active">Introduction</a></li>
+                        <li><a href="#how-it-works" class="toc-link">How It Works</a></li>
+                        <li><a href="#components" class="toc-link">Components Required</a></li>
+                        <li><a href="#guide" class="toc-link">Step-by-Step Guide</a></li>
+                        <li><a href="#conclusion" class="toc-link">Conclusion</a></li>
+                    </ul>
+                </aside>
 
-                    <div class="project-description">
-                        <h2>Introduction</h2>
+                <!-- Main Content -->
+                <article class="article-content">
+                    <section id="introduction">
+                        <h2>📘 Introduction</h2>
                         <p>This project showcases an IoT-based gas safety system designed to detect gas leaks and take
                             immediate preventive actions. It uses an ESP32 microcontroller, MQ-2 gas sensor, and servo
                             motors to control the gas regulator, along with an exhaust fan to ventilate the area.</p>
+                    </section>
 
-                        <h2>How It Works</h2>
+                    <section id="how-it-works">
+                        <h2>⚙️ How It Works</h2>
                         <p>The gas safety system continuously monitors gas levels using the MQ-2 gas sensor. If a gas
                             leak is detected, the system immediately performs the following actions:</p>
                         <ol>
@@ -70,8 +101,10 @@
                             <li>A buzzer will sound to alert individuals in proximity.</li>
                             <li>Data retention and anti-false alarm measures ensure reliable operation.</li>
                         </ol>
+                    </section>
 
-                        <h2>Components Required</h2>
+                    <section id="components">
+                        <h2>🔌 Components Required</h2>
                         <ul>
                             <li>ESP32 (for Wi-Fi connectivity and control)</li>
                             <li>MQ-2 Gas Sensor (for gas leak detection)</li>
@@ -82,8 +115,10 @@
                             <li>Fireproof Casing</li>
                             <li>5V Power Supply</li>
                         </ul>
+                    </section>
 
-                        <h2>Step-by-Step Guide</h2>
+                    <section id="guide">
+                        <h2>🛠️ Step-by-Step Guide</h2>
                         <h3>Step 1: Gather All Components</h3>
                         <p>Ensure you have all the components listed above, and prepare your workspace.</p>
 
@@ -107,15 +142,17 @@
                         <h3>Step 6: Enclose in a Fireproof Casing</h3>
                         <p>Install the system in a robust, fireproof casing for added protection. Ensure that the gas
                             sensor is exposed to the environment while keeping other components shielded.</p>
+                    </section>
 
-                        <h2>Conclusion</h2>
+                    <section id="conclusion">
+                        <h2>✅ Conclusion</h2>
                         <p>This gas safety system offers a robust, automated solution for gas leak detection and
                             prevention. By using easily accessible components, this project provides peace of mind with
                             its reliable, responsive actions in hazardous conditions.</p>
-                    </div>
-                </div>
+                    </section>
+                </article>
             </div>
-        </article>
+        </div>
     </main>
 
     <footer class="footer">

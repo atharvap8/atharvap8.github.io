@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLE Based Car Security Controller - Atharva Phadke</title>
+    <title>BLE Based Car Security Controller :: Atharva Phadke</title>
     <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../article.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;850&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -24,7 +29,7 @@
                 <a href="../../index.html#resume" class="nav-btn">Resume</a>
                 <a href="../../index.html#contact" class="nav-btn">Contact</a>
             </nav>
-            <button class="menu-toggle">
+            <button class="menu-toggle" aria-label="Toggle Menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -33,29 +38,52 @@
     </header>
 
     <main class="main-content">
-        <article class="section">
-            <div class="container">
-                <div class="project-header">
-                    <a href="index.html" class="back-link">← Back to Projects</a>
-                    <h1 class="project-title">BLE Based Car Security Controller</h1>
-                    <div class="project-meta">
-                        <span class="status status--success">Completed</span>
-                        <div class="project-tags">
-                            <span class="tag">ESP32</span>
-                            <span class="tag">BLE</span>
-                            <span class="tag">Security</span>
-                            <span class="tag">Automotive</span>
-                        </div>
+        <div class="article-container">
+            <!-- Breadcrumb Navigation -->
+            <div class="back-link-container">
+                <a href="index.html" class="btn-back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                    Back to Projects
+                </a>
+            </div>
+
+            <!-- Hero Section -->
+            <header class="article-header">
+                <h1 class="article-title">BLE Based Car Security Controller</h1>
+                <div class="article-meta">
+                    <div class="article-meta-item">
+                        <span>Status:</span>
+                        <span style="color: var(--color-teal-500)">Completed</span>
+                    </div>
+                    <div class="article-meta-item">
+                        <span>Electronics:</span>
+                        <span>ESP32, BLE, Automotive</span>
                     </div>
                 </div>
+                <p class="article-summary">Developing a smartphone-controlled central locking and security system for
+                    cars with integrated immobilizer and real-time alerts.</p>
+            </header>
 
-                <div class="project-content">
-                    <div class="project-gallery">
-                        <div class="project-image-placeholder">🚗</div>
-                    </div>
+            <div class="article-grid">
+                <!-- Table of Contents Sidebar -->
+                <aside class="article-sidebar">
+                    <div class="sidebar-project-title">BLE Car Security</div>
+                    <div class="toc-title">On This Page</div>
+                    <ul class="toc-list">
+                        <li><a href="#introduction" class="toc-link active">Introduction</a></li>
+                        <li><a href="#how-it-works" class="toc-link">How It Works</a></li>
+                        <li><a href="#components" class="toc-link">Components Required</a></li>
+                        <li><a href="#guide" class="toc-link">Step-by-Step Guide</a></li>
+                        <li><a href="#conclusion" class="toc-link">Conclusion</a></li>
+                    </ul>
+                </aside>
 
-                    <div class="project-description">
-                        <h2>Introduction</h2>
+                <!-- Main Content -->
+                <article class="article-content">
+                    <section id="introduction">
+                        <h2>📘 Introduction</h2>
                         <p>This project showcases the development of a central locking and security controller for the
                             Wagon R car, using Bluetooth Low Energy (BLE) technology. The system is based on an ESP32
                             microcontroller that handles key functionalities such as door signal control, bonnet status,
@@ -64,8 +92,10 @@
                             integrated immobilizer that communicates with the car’s ECM (Engine Control Module),
                             preventing vehicle movement during theft attempts. The system also provides real-time alerts
                             to the user’s cellphone in case of a security breach.</p>
+                    </section>
 
-                        <h2>How It Works</h2>
+                    <section id="how-it-works">
+                        <h2>⚙️ How It Works</h2>
                         <ol>
                             <li><strong>Bluetooth Communication:</strong> The ESP32 serves as the main controller, using
                                 BLE to communicate with either the user’s smartphone or the dedicated transmitter built
@@ -84,8 +114,10 @@
                             <li><strong>Alarm System:</strong> When a security breach is detected, the alarm system is
                                 triggered, sounding an audible alert and notifying the user via phone.</li>
                         </ol>
+                    </section>
 
-                        <h2>Components Required</h2>
+                    <section id="components">
+                        <h2>🔌 Components Required</h2>
                         <ul>
                             <li>ESP32 (Main controller for BLE and vehicle communication)</li>
                             <li>Xiao ESP32C3 (Transmitter for keyless entry)</li>
@@ -96,8 +128,10 @@
                             <li>12V Power Supply</li>
                             <li>LEDs, Jumper Wires, Connectors, PCB, Breadboard, etc.</li>
                         </ul>
+                    </section>
 
-                        <h2>Step-by-Step Guide</h2>
+                    <section id="guide">
+                        <h2>🛠️ Step-by-Step Guide</h2>
                         <h3>Step 1: Gather Components</h3>
                         <p>Collect all the components listed above, ensuring you have the ESP32, Xiao ESP32C3, relays,
                             and sensors.</p>
@@ -125,16 +159,18 @@
                         <p>For a cleaner installation, design a custom PCB to house the ESP32, relays, and related
                             circuitry. Assemble and solder all components onto the PCB and reinstall it in the vehicle.
                         </p>
+                    </section>
 
-                        <h2>Conclusion</h2>
+                    <section id="conclusion">
+                        <h2>✅ Conclusion</h2>
                         <p>This central locking and security controller project adds an advanced layer of security to
                             the Wagon R using BLE technology. The system allows for seamless keyless entry, enhanced
                             vehicle immobilization during theft attempts, and real-time notifications to the user’s
                             cellphone.</p>
-                    </div>
-                </div>
+                    </section>
+                </article>
             </div>
-        </article>
+        </div>
     </main>
 
     <footer class="footer">

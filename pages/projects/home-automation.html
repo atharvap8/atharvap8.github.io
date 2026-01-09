@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Automation 15 Devices - Atharva Phadke</title>
+    <title>Home Automation 15 Devices :: Atharva Phadke</title>
     <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../article.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;850&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -24,7 +29,7 @@
                 <a href="../../index.html#resume" class="nav-btn">Resume</a>
                 <a href="../../index.html#contact" class="nav-btn">Contact</a>
             </nav>
-            <button class="menu-toggle">
+            <button class="menu-toggle" aria-label="Toggle Menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -33,35 +38,60 @@
     </header>
 
     <main class="main-content">
-        <article class="section">
-            <div class="container">
-                <div class="project-header">
-                    <a href="index.html" class="back-link">← Back to Projects</a>
-                    <h1 class="project-title">Home Automation 15 Devices</h1>
-                    <div class="project-meta">
-                        <span class="status status--success">Completed</span>
-                        <div class="project-tags">
-                            <span class="tag">ESP32</span>
-                            <span class="tag">Alexa</span>
-                            <span class="tag">Home Automation</span>
-                        </div>
+        <div class="article-container">
+            <!-- Breadcrumb Navigation -->
+            <div class="back-link-container">
+                <a href="index.html" class="btn-back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                    Back to Projects
+                </a>
+            </div>
+
+            <!-- Hero Section -->
+            <header class="article-header">
+                <h1 class="article-title">Home Automation 15 Devices</h1>
+                <div class="article-meta">
+                    <div class="article-meta-item">
+                        <span>Status:</span>
+                        <span style="color: var(--color-teal-500)">Completed</span>
+                    </div>
+                    <div class="article-meta-item">
+                        <span>Tech:</span>
+                        <span>ESP32, Alexa, EEPROM</span>
                     </div>
                 </div>
+                <p class="article-summary">A large-scale smart home system controlling 14 devices and 1 AC with voice
+                    integration, real-time monitoring, and persistent state memory.</p>
+            </header>
 
-                <div class="project-content">
-                    <div class="project-gallery">
-                        <div class="project-image-placeholder">🏠</div>
-                    </div>
+            <div class="article-grid">
+                <!-- Table of Contents Sidebar -->
+                <aside class="article-sidebar">
+                    <div class="sidebar-project-title">Home Automation</div>
+                    <div class="toc-title">On This Page</div>
+                    <ul class="toc-list">
+                        <li><a href="#introduction" class="toc-link active">Introduction</a></li>
+                        <li><a href="#how-it-works" class="toc-link">How It Works</a></li>
+                        <li><a href="#components" class="toc-link">Components Required</a></li>
+                        <li><a href="#guide" class="toc-link">Step-by-Step Guide</a></li>
+                    </ul>
+                </aside>
 
-                    <div class="project-description">
-                        <h2>Introduction</h2>
-                        <p>In this project, we will create a smart home system that allows control over 14 devices and 1
-                            air conditioner (AC) using an ESP32 microcontroller. The system includes EEPROM
-                            functionality, which retains the state of all devices even after a sudden power loss. With
-                            Alexa integration, users can control lights, fans, tube lights, AC, and more using voice
-                            commands and monitor the real-time status through the Alexa app.</p>
+                <!-- Main Content -->
+                <article class="article-content">
+                    <section id="introduction">
+                        <h2>📘 Introduction</h2>
+                        <p>In this project, we created a smart home system that allows control over 14 devices and 1 air
+                            conditioner (AC) using an ESP32 microcontroller. The system includes EEPROM functionality,
+                            which retains the state of all devices even after a sudden power loss. With Alexa
+                            integration, users can control lights, fans, tube lights, AC, and more using voice commands
+                            and monitor the real-time status through the Alexa app.</p>
+                    </section>
 
-                        <h2>How It Works</h2>
+                    <section id="how-it-works">
+                        <h2>⚙️ How It Works</h2>
                         <p>The ESP32 serves as the main controller for the entire smart home system. Each room has a
                             4-channel relay module, which controls the devices (e.g., lights, fans, etc.). The ESP32
                             sends signals to the relay modules based on user commands.</p>
@@ -75,8 +105,10 @@
                             <li><strong>Centralized Control:</strong> A central controller manages all room relays,
                                 reducing wiring complexity.</li>
                         </ol>
+                    </section>
 
-                        <h2>Components Required</h2>
+                    <section id="components">
+                        <h2>🔌 Components Required</h2>
                         <ul>
                             <li>ESP32 (central controller with Wi-Fi functionality)</li>
                             <li>4-Channel Relay Modules (one per room)</li>
@@ -85,8 +117,10 @@
                             <li>AC Module</li>
                             <li>Power Supply (5V and 12V)</li>
                         </ul>
+                    </section>
 
-                        <h2>Step-by-Step Guide</h2>
+                    <section id="guide">
+                        <h2>🛠️ Step-by-Step Guide</h2>
                         <h3>Step 1: Gather Components</h3>
                         <p>Collect all the components listed above, ensuring you have an ESP32, relay modules, EEPROM,
                             and Alexa-compatible devices.</p>
@@ -106,10 +140,10 @@
                         <h3>Step 5: Test the System</h3>
                         <p>Test each room by controlling devices with voice commands and the Alexa app. Ensure that the
                             EEPROM correctly restores the device states after a power cut.</p>
-                    </div>
-                </div>
+                    </section>
+                </article>
             </div>
-        </article>
+        </div>
     </main>
 
     <footer class="footer">

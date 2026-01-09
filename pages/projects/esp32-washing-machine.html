@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESP32 Based Washing Machine - Atharva Phadke</title>
+    <title>ESP32 Based Washing Machine :: Atharva Phadke</title>
     <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../article.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;850&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -24,7 +29,7 @@
                 <a href="../../index.html#resume" class="nav-btn">Resume</a>
                 <a href="../../index.html#contact" class="nav-btn">Contact</a>
             </nav>
-            <button class="menu-toggle">
+            <button class="menu-toggle" aria-label="Toggle Menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -33,35 +38,58 @@
     </header>
 
     <main class="main-content">
-        <article class="section">
-            <div class="container">
-                <div class="project-header">
-                    <a href="index.html" class="back-link">← Back to Projects</a>
-                    <h1 class="project-title">ESP32 Based Washing Machine</h1>
-                    <div class="project-meta">
-                        <span class="status status--warning">Coming Soon</span>
-                        <div class="project-tags">
-                            <span class="tag">ESP32</span>
-                            <span class="tag">IoT</span>
-                            <span class="tag">Automation</span>
-                        </div>
+        <div class="article-container">
+            <!-- Breadcrumb Navigation -->
+            <div class="back-link-container">
+                <a href="index.html" class="btn-back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                    Back to Projects
+                </a>
+            </div>
+
+            <!-- Hero Section -->
+            <header class="article-header">
+                <h1 class="article-title">ESP32 Based Washing Machine</h1>
+                <div class="article-meta">
+                    <div class="article-meta-item">
+                        <span>Status:</span>
+                        <span style="color: var(--color-warning)">Coming Soon</span>
+                    </div>
+                    <div class="article-meta-item">
+                        <span>Electronics:</span>
+                        <span>ESP32, IoT, Automation</span>
                     </div>
                 </div>
+                <p class="article-summary">A high-performance IoT controller for washing machines, enabling advanced
+                    cycle customization and remote telemetry.</p>
+            </header>
 
-                <div class="project-content">
-                    <div class="project-gallery">
-                        <div class="project-image-placeholder">🧺</div>
-                    </div>
+            <div class="article-grid">
+                <!-- Table of Contents Sidebar -->
+                <aside class="article-sidebar">
+                    <div class="sidebar-project-title">ESP32 Washing Machine</div>
+                    <div class="toc-title">On This Page</div>
+                    <ul class="toc-list">
+                        <li><a href="#overview" class="toc-link active">Overview</a></li>
+                    </ul>
+                </aside>
 
-                    <div class="project-description">
-                        <h2>Overview</h2>
+                <!-- Main Content -->
+                <article class="article-content">
+                    <section id="overview">
+                        <h2>📘 Overview</h2>
                         <p>This project is currently under development. Stay tuned for updates!</p>
                         <p>The goal is to create a fully functional washing machine controller using the ESP32
-                            microcontroller, enabling remote monitoring and control via a mobile app.</p>
-                    </div>
-                </div>
+                            microcontroller, enabling remote monitoring and control via a mobile app. This project
+                            builds upon the research done in the <a href="advanced-washing-machine.html">Advanced IoT
+                                Washing Machine</a> project, focusing on a more compact and production-ready PCB design.
+                        </p>
+                    </section>
+                </article>
             </div>
-        </article>
+        </div>
     </main>
 
     <footer class="footer">

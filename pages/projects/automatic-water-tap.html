@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Automatic Water Tap V2 - Atharva Phadke</title>
+    <title>Automatic Water Tap V2 :: Atharva Phadke</title>
     <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../article.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;850&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -24,7 +29,7 @@
                 <a href="../../index.html#resume" class="nav-btn">Resume</a>
                 <a href="../../index.html#contact" class="nav-btn">Contact</a>
             </nav>
-            <button class="menu-toggle">
+            <button class="menu-toggle" aria-label="Toggle Menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -33,33 +38,59 @@
     </header>
 
     <main class="main-content">
-        <article class="section">
-            <div class="container">
-                <div class="project-header">
-                    <a href="index.html" class="back-link">← Back to Projects</a>
-                    <h1 class="project-title">Automatic Water Tap V2</h1>
-                    <div class="project-meta">
-                        <span class="status status--success">Completed</span>
-                        <div class="project-tags">
-                            <span class="tag">Automation</span>
-                            <span class="tag">IR Sensor</span>
-                            <span class="tag">DIY</span>
-                        </div>
+        <div class="article-container">
+            <!-- Breadcrumb Navigation -->
+            <div class="back-link-container">
+                <a href="index.html" class="btn-back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                    Back to Projects
+                </a>
+            </div>
+
+            <!-- Hero Section -->
+            <header class="article-header">
+                <h1 class="article-title">Automatic Water Tap V2</h1>
+                <div class="article-meta">
+                    <div class="article-meta-item">
+                        <span>Status:</span>
+                        <span style="color: var(--color-teal-500)">Completed</span>
+                    </div>
+                    <div class="article-meta-item">
+                        <span>Tech:</span>
+                        <span>IR Sensor, MOSFET, Solenoid</span>
                     </div>
                 </div>
+                <p class="article-summary">A hygienic, touch-free water tap system using Infrared detection to reduce
+                    water wastage and prevent germ spread.</p>
+            </header>
 
-                <div class="project-content">
-                    <div class="project-gallery">
-                        <div class="project-image-placeholder">🚰</div>
-                    </div>
+            <div class="article-grid">
+                <!-- Table of Contents Sidebar -->
+                <aside class="article-sidebar">
+                    <div class="sidebar-project-title">Automatic Water Tap</div>
+                    <div class="toc-title">On This Page</div>
+                    <ul class="toc-list">
+                        <li><a href="#introduction" class="toc-link active">Introduction</a></li>
+                        <li><a href="#how-it-works" class="toc-link">How It Works</a></li>
+                        <li><a href="#components" class="toc-link">Components Required</a></li>
+                        <li><a href="#guide" class="toc-link">Step-by-Step Guide</a></li>
+                    </ul>
+                </aside>
 
-                    <div class="project-description">
-                        <h2>Introduction</h2>
+                <!-- Main Content -->
+                <article class="article-content">
+                    <section id="introduction">
+                        <h2>📘 Introduction</h2>
                         <p>The automatic water tap works based on the principle of Infrared (IR) detection. It provides
                             a hygienic, touch-free way to use water, reducing wastage and preventing the spread of
-                            germs.</p>
+                            germs. This the version 2 of my original design, with improved reliability and smaller
+                            footprint.</p>
+                    </section>
 
-                        <h2>How It Works</h2>
+                    <section id="how-it-works">
+                        <h2>⚙️ How It Works</h2>
                         <ol>
                             <li><strong>IR Sensor Module:</strong> The IR sensor emits infrared light. When an object
                                 comes within the sensor’s range, the emitted light reflects back to the sensor.</li>
@@ -73,8 +104,10 @@
                                 sensor. Once the object is removed, the sensor stops detecting the reflection, and the
                                 solenoid valve closes, stopping the water flow.</li>
                         </ol>
+                    </section>
 
-                        <h2>Components Required</h2>
+                    <section id="components">
+                        <h2>🔌 Components Required</h2>
                         <ul>
                             <li>IR Sensor Module</li>
                             <li>12V Solenoid Valve</li>
@@ -85,8 +118,10 @@
                             <li>Mini 360 Buck Converter</li>
                             <li>D4184 Mosfet Control Module</li>
                         </ul>
+                    </section>
 
-                        <h2>Step-by-Step Guide</h2>
+                    <section id="guide">
+                        <h2>🛠️ Step-by-Step Guide</h2>
                         <h3>1. Prepare the enclosure</h3>
                         <p>Drill holes into the plastic enclosure to mount it to a wall and for components/wires.</p>
 
@@ -105,10 +140,10 @@
                         <h3>5. Test the Operation</h3>
                         <p>Power up the circuit. Place your hand in front of the tap; the water should flow. Remove your
                             hand to stop it.</p>
-                    </div>
-                </div>
+                    </section>
+                </article>
             </div>
-        </article>
+        </div>
     </main>
 
     <footer class="footer">

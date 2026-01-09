@@ -781,7 +781,6 @@ select.form-control {
 }
 
 :root {
-    /* Use design system colors */
     --primary-color: var(--color-primary);
     --secondary-color: var(--color-primary-hover);
     --accent-color: var(--color-primary-active);
