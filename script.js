@@ -13,7 +13,7 @@ function scrollToSection(sectionId) {
 
         // Scroll to section smoothly
         setTimeout(() => {
-            section.scrollIntoView({ behavior: 'smooth' });
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }, 50);
     }
 }
@@ -36,122 +36,99 @@ menuToggle.addEventListener('click', () => {
     navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
 });
 
-// ==================== Intersection Observer for Section Switching ====================
-const observerOptions = {
-    threshold: 0.3
-};
+// ==================== Robust Scrollspy ====================
+function updateScrollspy() {
+    let currentSectionId = "home";
+    const scrollPosition = window.scrollY + 200; // Increased offset for better section detection
 
-const sectionObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            // Update active section
-            sections.forEach(s => s.classList.remove('active'));
-            entry.target.classList.add('active');
-
-            // Update nav button highlight
-            const sectionId = entry.target.id;
-            navButtons.forEach(btn => {
-                if (btn.getAttribute('data-section') === sectionId) {
-                    btn.style.borderBottomColor = 'var(--primary-color)';
-                } else {
-                    btn.style.borderBottomColor = 'transparent';
-                }
-            });
-        }
-    });
-}, observerOptions);
-
-sections.forEach(section => {
-    sectionObserver.observe(section);
-});
-
-// ==================== Header Scroll Effects ====================
-const header = document.querySelector('.header');
-let lastScrollY = 0;
-
-window.addEventListener('scroll', () => {
-    const currentScrollY = window.scrollY;
-
-    // Add shadow on scroll
-    if (currentScrollY > 50) {
-        header.style.boxShadow = '0 4px 20px rgba(0, 217, 255, 0.1)';
+    // Special case for top of page
+    if (window.scrollY < 50) {
+        currentSectionId = "home";
     } else {
-        header.style.boxShadow = 'none';
-    }
-
-    lastScrollY = currentScrollY;
-});
-
-// ==================== Scroll Animation for Elements ====================
-const observerAnimOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
-};
-
-const elementObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.animation = 'slideInLeft 0.6s ease-out forwards';
-            elementObserver.unobserve(entry.target);
-        }
-    });
-}, observerAnimOptions);
-
-// Observe all cards and items for animation
-document.querySelectorAll('.project-card, .blog-card, .skill-card, .stat-item').forEach(el => {
-    el.style.opacity = '0';
-    elementObserver.observe(el);
-});
-
-// ==================== Active Section on Load ====================
-window.addEventListener('load', () => {
-    const homeSection = document.getElementById('home');
-    if (homeSection) {
-        homeSection.classList.add('active');
-    }
-});
-
-// ==================== Form Submission ====================
-const contactForm = document.querySelector('.contact-form');
-if (contactForm) {
-    // Formspree handles the submission, so we don't need to prevent default
-    // We can add simple client-side validation if needed, but for now let's rely on HTML5 validation
-    contactForm.addEventListener('submit', (e) => {
-        // Optional: Add loading state to button
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
-        submitBtn.textContent = 'Sending...';
-        submitBtn.disabled = true;
-    });
-}
-
-// ==================== Cursor Follow Effect ====================
-const cursorFollowElements = document.querySelectorAll('.floating-card');
-
-if (window.innerWidth > 768) {
-    document.addEventListener('mousemove', (e) => {
-        const mouseX = e.clientX;
-        const mouseY = e.clientY;
-
-        cursorFollowElements.forEach((el, index) => {
-            const rect = el.getBoundingClientRect();
-            const elX = rect.left + rect.width / 2;
-            const elY = rect.top + rect.height / 2;
-
-            const distance = Math.sqrt((mouseX - elX) ** 2 + (mouseY - elY) ** 2);
-            const angle = Math.atan2(mouseY - elY, mouseX - elX);
-
-            // Only apply effect when cursor is reasonably close
-            if (distance < 200) {
-                const moveX = Math.cos(angle) * (200 - distance) * 0.15;
-                const moveY = Math.sin(angle) * (200 - distance) * 0.15;
-
-                el.style.transform = `translate(${moveX}px, ${moveY}px)`;
-            } else {
-                el.style.transform = 'translate(0, 0)';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                currentSectionId = section.id;
             }
         });
+
+        // Handle bottom of page
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
+            currentSectionId = sections[sections.length - 1].id;
+        }
+    }
+
+    // Update nav links with specific class
+    navButtons.forEach(btn => {
+        if (btn.getAttribute('data-section') === currentSectionId) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
     });
 }
+
+// Initial call and event listener
+window.addEventListener('scroll', updateScrollspy);
+document.addEventListener('DOMContentLoaded', updateScrollspy);
+
+// Header scroll depth tracking
+let lastScrollY = 0;
+window.addEventListener('scroll', () => {
+    lastScrollY = window.scrollY;
+});
+
+// ==================== Premium Scroll Animations ====================
+const revealObserverOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+// ==================== Interactions ====================
+// Performance optimization: Using CSS-driven animations for premium feel
+
+// ==================== Ambient Background Parallax ====================
+const glowElements = document.querySelectorAll('.ambient-glow');
+document.addEventListener('mousemove', (e) => {
+    const x = (e.clientX / window.innerWidth - 0.5) * 40;
+    const y = (e.clientY / window.innerHeight - 0.5) * 40;
+
+    glowElements.forEach((glow, index) => {
+        const factor = (index + 1) * 0.5;
+        glow.style.transform = `translate(${x * factor}px, ${y * factor}px)`;
+    });
+});
+
+// ==================== Header Sophistication ====================
+const headerElement = document.querySelector('.header');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+        headerElement.classList.add('scrolled');
+    } else {
+        headerElement.classList.remove('scrolled');
+    }
+});
+
+// ==================== Natural Section Reveals ====================
+const fluidObserverOptions = {
+    threshold: 0.15, // Higher threshold for slower, more deliberate reveal
+    rootMargin: '0px 0px -150px 0px'
+};
+
+const fluidRevealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+        }
+    });
+}, fluidObserverOptions);
+
+document.querySelectorAll('.section, .project-card, .blog-card, .stat-item, .timeline-item, .about-text, .hero-content > *').forEach(el => {
+    el.classList.add('reveal-on-scroll');
+    fluidRevealObserver.observe(el);
+});
 
 // ==================== Typing Animation for Hero Text ====================
 const heroTitle = document.querySelector('.hero-title');
@@ -484,46 +461,46 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-// --- Image Lightbox / Zoom Functionality ---
-const articleImages = document.querySelectorAll('.article-content img');
-if (articleImages.length > 0) {
-    // Create Lightbox Elements
-    const lightbox = document.createElement('div');
-    lightbox.className = 'image-lightbox';
-    lightbox.innerHTML = `
+    // --- Image Lightbox / Zoom Functionality ---
+    const articleImages = document.querySelectorAll('.article-content img');
+    if (articleImages.length > 0) {
+        // Create Lightbox Elements
+        const lightbox = document.createElement('div');
+        lightbox.className = 'image-lightbox';
+        lightbox.innerHTML = `
             <img src="" alt="Zoomed Image" class="lightbox-img">
             <div class="lightbox-caption"></div>
         `;
-    document.body.appendChild(lightbox);
+        document.body.appendChild(lightbox);
 
-    const lightboxImg = lightbox.querySelector('.lightbox-img');
-    const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+        const lightboxImg = lightbox.querySelector('.lightbox-img');
+        const lightboxCaption = lightbox.querySelector('.lightbox-caption');
 
-    articleImages.forEach(img => {
-        img.addEventListener('click', () => {
-            const src = img.getAttribute('src');
-            const figure = img.closest('figure');
-            const captionElement = figure ? figure.querySelector('figcaption') : null;
-            const captionText = captionElement ? captionElement.textContent : (img.getAttribute('alt') || '');
+        articleImages.forEach(img => {
+            img.addEventListener('click', () => {
+                const src = img.getAttribute('src');
+                const figure = img.closest('figure');
+                const captionElement = figure ? figure.querySelector('figcaption') : null;
+                const captionText = captionElement ? captionElement.textContent : (img.getAttribute('alt') || '');
 
-            lightboxImg.src = src;
-            lightboxCaption.textContent = captionText;
-            lightbox.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent scrolling
+                lightboxImg.src = src;
+                lightboxCaption.textContent = captionText;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
         });
-    });
 
-    lightbox.addEventListener('click', () => {
-        lightbox.classList.remove('active');
-        document.body.style.overflow = ''; // Re-enable scrolling
-    });
-
-    // Close on Escape key
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+        lightbox.addEventListener('click', () => {
             lightbox.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-    });
-}
+            document.body.style.overflow = ''; // Re-enable scrolling
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    }
 });

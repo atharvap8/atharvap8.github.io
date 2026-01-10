@@ -4,23 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atharva Phadke</title>
+    <title>Atharva Phadke | Embedded & IoT Engineer</title>
     <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Orbitron:wght@600;800&family=Space+Mono&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <!-- Ambient Background -->
+    <div class="ambient-bg">
+        <div class="ambient-glow" style="top: -10%; left: -10%;"></div>
+        <div class="ambient-glow"
+            style="bottom: -10%; right: -10%; opacity: 0.15; background: radial-gradient(circle, #818cf8, transparent);">
+        </div>
+    </div>
     <!-- Navigation Header -->
     <header class="header">
         <div class="header-container">
-            <div class="logo">
-                <span class="logo-text">atharvap8</span>
-                <span class="logo-dot"></span>
-            </div>
             <nav class="nav-menu">
                 <button class="nav-btn" data-section="home">Home</button>
                 <button class="nav-btn" data-section="about">About</button>
-                <a href="pages/projects/index.html" class="nav-btn">Projects</a>
-                <a href="pages/blog/index.html" class="nav-btn">Blog</a>
+                <button class="nav-btn" data-section="projects">Projects</button>
+                <button class="nav-btn" data-section="blog">Blog</button>
                 <button class="nav-btn" data-section="resume">Resume</button>
                 <button class="nav-btn" data-section="contact">Contact</button>
             </nav>
@@ -39,48 +45,36 @@
             <div class="hero">
                 <div class="hero-content">
                     <div class="hero-text">
+                        <div class="hero-badge">Hardware Prototyping & Validation</div>
                         <h1 class="hero-title">
-                            <span class="gradient-text">Building</span>
-                            <span class="word-rotate">
-                                <span>Future</span>
-                                <span>Code</span>
-                                <span>Innovation</span>
-                            </span>
+                            <span class="gradient-text">Hardware Artistry:</span> Developing <span
+                                class="highlight-text">Embedded Excellence</span>
                         </h1>
-                        <p class="hero-subtitle">• Embedded Systems</p>
-                        <p class="hero-subtitle">• IoT</p>
-                        <p class="hero-subtitle">• Firmware Developer</p>
                         <p class="hero-description">
-                            Crafting intelligent embedded solutions and IoT systems that bridge hardware and software
-                            realms.
+                            An all-rounder in electronics design—mastering the journey from breadboard prototyping and
+                            schematic architectural design to production-ready PCB validation.
                         </p>
                         <div class="hero-cta">
-                            <button class="btn btn-primary" onclick="scrollToSection('projects')">View My Work</button>
-                            <button class="btn btn-secondary" onclick="scrollToSection('contact')">Get In Touch</button>
+                            <button class="btn btn-primary" onclick="scrollToSection('projects')">View
+                                Architecture</button>
+                            <button class="btn btn-secondary" onclick="scrollToSection('contact')">Blueprint a
+                                Project</button>
                         </div>
                     </div>
                     <div class="hero-visual">
-                        <div class="floating-card card-1">
-                            <div class="card-inner">
-                                <span class="card-icon">⚙️</span>
-                                <p>Embedded</p>
+                        <div class="hero-slider">
+                            <div class="slider-track">
+                                <img src="assets/pcb_3d_render_1768071179072.png" alt="3D PCB Render" class="slide">
+                                <img src="assets/breadboard_hardware_test_1768071157728.png"
+                                    alt="Breadboard Prototyping" class="slide">
+                                <img src="assets/pcb_layout_design_1768071140655.png" alt="PCB Layout Design"
+                                    class="slide">
+                                <img src="assets/hardware_schematic_test_1768071194930.png" alt="Hardware Schematic"
+                                    class="slide">
                             </div>
+                            <div class="slider-overlay"></div>
                         </div>
-                        <div class="floating-card card-2">
-                            <div class="card-inner">
-                                <span class="card-icon">🔌</span>
-                                <p>IoT</p>
-                            </div>
-                        </div>
-                        <div class="floating-card card-3">
-                            <div class="card-inner">
-                                <span class="card-icon">💻</span>
-                                <p>Firmware</p>
-                            </div>
-                        </div>
-                        <div class="animated-background">
-                            <div class="glow-sphere"></div>
-                        </div>
+                        <div class="visual-glow"></div>
                     </div>
                 </div>
                 <div class="scroll-indicator">
@@ -159,7 +153,8 @@
             <div class="container">
                 <h2 class="section-title">Featured Projects</h2>
                 <div class="projects-grid">
-                    <div class="project-card">
+                    <div class="project-card" onclick="location.href='pages/projects/advanced-iot-washing-machine.html'"
+                        style="cursor: pointer;">
                         <div class="project-image">
                             <div class="project-placeholder">🤖</div>
                         </div>
@@ -171,81 +166,98 @@
                                 <span class="tag">IoT</span>
                                 <span class="tag">Web</span>
                             </div>
+                            <a href="pages/projects/advanced-iot-washing-machine.html" class="read-more"
+                                style="margin-top: auto; display: block; padding-top: 1rem;">View Details →</a>
                         </div>
                     </div>
 
-                    <div class="project-card">
+                    <div class="project-card" onclick="location.href='pages/projects/automatic-water-tap.html'"
+                        style="cursor: pointer;">
                         <div class="project-image">
                             <div class="project-placeholder">⚡</div>
                         </div>
                         <div class="project-info">
-                            <h3>Power Inverter System</h3>
-                            <p>Advanced SPWM-based 3-phase power inverter with grid-tie capabilities.</p>
+                            <h3>Automatic Water Tap System</h3>
+                            <p>Sustainable water management using infrared sensing and solenoid control.</p>
                             <div class="project-tags">
                                 <span class="tag">Hardware</span>
-                                <span class="tag">Power Electronics</span>
-                                <span class="tag">STM32</span>
+                                <span class="tag">Sensors</span>
+                                <span class="tag">Energy</span>
                             </div>
+                            <a href="pages/projects/automatic-water-tap.html" class="read-more"
+                                style="margin-top: auto; display: block; padding-top: 1rem;">View Details →</a>
                         </div>
                     </div>
 
-                    <div class="project-card">
+                    <div class="project-card" onclick="location.href='pages/projects/iot-gas-safety.html'"
+                        style="cursor: pointer;">
                         <div class="project-image">
                             <div class="project-placeholder">🔌</div>
                         </div>
                         <div class="project-info">
-                            <h3>PCB Design Suite</h3>
-                            <p>Comprehensive KiCad hierarchical designs for multi-layer industrial projects.</p>
+                            <h3>IoT Gas Safety System</h3>
+                            <p>Real-time gas leak detection and automatic shutoff with cloud notifications.</p>
                             <div class="project-tags">
-                                <span class="tag">KiCad</span>
-                                <span class="tag">PCB</span>
-                                <span class="tag">Design</span>
+                                <span class="tag">IoT</span>
+                                <span class="tag">Safety</span>
+                                <span class="tag">Cloud</span>
                             </div>
+                            <a href="pages/projects/iot-gas-safety.html" class="read-more"
+                                style="margin-top: auto; display: block; padding-top: 1rem;">View Details →</a>
                         </div>
                     </div>
 
-                    <div class="project-card">
+                    <div class="project-card" onclick="location.href='pages/projects/ble-car-security.html'"
+                        style="cursor: pointer;">
                         <div class="project-image">
                             <div class="project-placeholder">📡</div>
                         </div>
                         <div class="project-info">
-                            <h3>Remote Gateway Firmware</h3>
-                            <p>Scalable firmware for multi-protocol IoT gateway with MQTT support.</p>
+                            <h3>BLE Car Security Controller</h3>
+                            <p>Secure Bluetooth Low Energy authentication for vehicle access and protection.</p>
                             <div class="project-tags">
-                                <span class="tag">C++</span>
-                                <span class="tag">MQTT</span>
-                                <span class="tag">Gateway</span>
+                                <span class="tag">BLE</span>
+                                <span class="tag">Security</span>
+                                <span class="tag">Mobile</span>
                             </div>
+                            <a href="pages/projects/ble-car-security.html" class="read-more"
+                                style="margin-top: auto; display: block; padding-top: 1rem;">View Details →</a>
                         </div>
                     </div>
 
-                    <div class="project-card">
+                    <div class="project-card" onclick="location.href='pages/projects/home-automation.html'"
+                        style="cursor: pointer;">
                         <div class="project-image">
                             <div class="project-placeholder">🎮</div>
                         </div>
                         <div class="project-info">
-                            <h3>Real-time Sensor Dashboard</h3>
-                            <p>Live visualization of sensor data with FFT analysis and signal processing.</p>
+                            <h3>Smart Home Automation</h3>
+                            <p>Multi-device control system with voice integration and energy tracking.</p>
                             <div class="project-tags">
-                                <span class="tag">React</span>
-                                <span class="tag">WebSocket</span>
-                                <span class="tag">DSP</span>
+                                <span class="tag">Home</span>
+                                <span class="tag">Automation</span>
+                                <span class="tag">Voice</span>
                             </div>
+                            <a href="pages/projects/home-automation.html" class="read-more"
+                                style="margin-top: auto; display: block; padding-top: 1rem;">View Details →</a>
                         </div>
                     </div>
 
-                    <div class="project-card">
+                    <div class="project-card" onclick="location.href='pages/projects/esp32-washing-machine.html'"
+                        style="cursor: pointer;">
                         <div class="project-image">
                             <div class="project-placeholder">🛠️</div>
                         </div>
                         <div class="project-info">
-                            <h3>Appliance Repair Suite</h3>
-                            <p>Diagnostic tool for troubleshooting and reverse engineering appliance PCBs.</p>
+                            <h3>ESP32 Washing Machine Refit</h3>
+                            <p>Upgrading analog washing machines with modern IoT capabilities and smart cycles.</p>
                             <div class="project-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">Diagnostics</span>
-                                <span class="tag">Tools</span>
+                                <span class="tag">Retrofit</span>
+                                <span class="tag">ESP32</span>
+                                <span class="tag">Efficiency</span>
                             </div>
+                            <a href="pages/projects/esp32-washing-machine.html" class="read-more"
+                                style="margin-top: auto; display: block; padding-top: 1rem;">View Details →</a>
                         </div>
                     </div>
                 </div>
@@ -258,68 +270,69 @@
                 <h2 class="section-title">Latest Articles</h2>
                 <div class="blog-grid">
                     <article class="blog-card">
-                        <div class="blog-date">Dec 02, 2025</div>
-                        <h3>Getting Started with ESP32-WROOM: Daughter Board Design</h3>
-                        <p>A comprehensive guide to designing efficient daughter boards for ESP32 projects with proper
-                            power management and I/O expansion.</p>
+                        <div class="blog-date">Dec 10, 2025</div>
+                        <h3>Basics of Electrical & Electronics - Unit 1 & 2</h3>
+                        <p>Essential fundamentals covering charge, current, voltage, and the core laws of electronics
+                            for beginners.</p>
                         <div class="blog-footer">
-                            <span class="read-time">5 min read</span>
-                            <a href="#" class="read-more">Read More →</a>
+                            <span class="read-time">10 min read</span>
+                            <a href="pages/blog/basics-of-electrical-unit-1-2.html" class="read-more">Read More →</a>
                         </div>
                     </article>
 
                     <article class="blog-card">
-                        <div class="blog-date">Nov 28, 2025</div>
-                        <h3>Power Electronics 101: Designing Efficient Buck Converters</h3>
-                        <p>Deep dive into buck converter design, component selection, and layout considerations for
-                            reliable power supplies.</p>
+                        <div class="blog-date">Dec 05, 2025</div>
+                        <h3>Controllers and Operations - Part 1</h3>
+                        <p>Exploring the architecture and operational logic of modern microcontrollers in embedded
+                            systems.</p>
                         <div class="blog-footer">
                             <span class="read-time">7 min read</span>
-                            <a href="#" class="read-more">Read More →</a>
+                            <a href="pages/blog/controllers-and-operations-1.html" class="read-more">Read More →</a>
                         </div>
                     </article>
 
                     <article class="blog-card">
-                        <div class="blog-date">Nov 20, 2025</div>
-                        <h3>Washing Machine PCB Troubleshooting: TRIAC Control Issues</h3>
-                        <p>Practical techniques for diagnosing and repairing TRIAC-based motor controllers in household
-                            appliances.</p>
-                        <div class="blog-footer">
-                            <span class="read-time">6 min read</span>
-                            <a href="#" class="read-more">Read More →</a>
-                        </div>
-                    </article>
-
-                    <article class="blog-card">
-                        <div class="blog-date">Nov 15, 2025</div>
-                        <h3>FreeRTOS Multi-Tasking on ESP32: Best Practices</h3>
-                        <p>Master real-time task scheduling, inter-task communication, and resource management with
-                            FreeRTOS.</p>
+                        <div class="blog-date">Nov 25, 2025</div>
+                        <h3>Study of MOSFETs: Switching & Amplification</h3>
+                        <p>A detailed look at MOSFET characteristics, biasing, and their role in high-efficiency power
+                            switching.</p>
                         <div class="blog-footer">
                             <span class="read-time">8 min read</span>
-                            <a href="#" class="read-more">Read More →</a>
+                            <a href="pages/blog/study-of-mosfets.html" class="read-more">Read More →</a>
                         </div>
                     </article>
 
-                    <article class="blog-card">
+                    <article class="blog-card" onclick="location.href='pages/blog/hwr-fwr-rectifier.html'"
+                        style="cursor: pointer;">
+                        <div class="blog-date">Nov 15, 2025</div>
+                        <h3>Half-Wave and Full-Wave Rectifiers</h3>
+                        <p>Detailed analysis of power rectification circuits, ripples, and capacitor filter design.</p>
+                        <div class="blog-footer">
+                            <span class="read-time">8 min read</span>
+                            <a href="pages/blog/hwr-fwr-rectifier.html" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" onclick="location.href='pages/blog/transistor-as-switch.html'"
+                        style="cursor: pointer;">
                         <div class="blog-date">Nov 10, 2025</div>
-                        <h3>IoT Security: Implementing Secure MQTT with ESP32</h3>
-                        <p>Secure your IoT projects with TLS/SSL certificates, authentication, and encrypted
-                            communication protocols.</p>
+                        <h3>Transistor as a Switch: Operational Regions</h3>
+                        <p>Understanding saturation and cutoff regions for reliable digital logic and load switching.
+                        </p>
                         <div class="blog-footer">
                             <span class="read-time">7 min read</span>
-                            <a href="#" class="read-more">Read More →</a>
+                            <a href="pages/blog/transistor-as-switch.html" class="read-more">Read More →</a>
                         </div>
                     </article>
 
-                    <article class="blog-card">
+                    <article class="blog-card" onclick="location.href='pages/blog/revision.html'"
+                        style="cursor: pointer;">
                         <div class="blog-date">Nov 05, 2025</div>
-                        <h3>Advanced PCB Routing: High-Speed Signal Integrity</h3>
-                        <p>Learn impedance matching, via stitching, and layer stack-up design for high-speed PCB
-                            layouts.</p>
+                        <h3>Comprehensive Electronics Revision Guide</h3>
+                        <p>A structured quick-reference guide for key formulas, component specs, and circuit laws.</p>
                         <div class="blog-footer">
                             <span class="read-time">9 min read</span>
-                            <a href="#" class="read-more">Read More →</a>
+                            <a href="pages/blog/revision.html" class="read-more">Read More →</a>
                         </div>
                     </article>
                 </div>
