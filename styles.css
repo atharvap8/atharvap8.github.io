@@ -190,28 +190,34 @@ a {
 }
 
 .nav-btn {
-  overflow: hidden;
-  padding-bottom: 5px; /* Add gap between text and underline */
+    overflow: hidden;
+    padding-bottom: 5px;
+    /* Add gap between text and underline */
 }
 
 .nav-btn::after {
-  content: '';
-  position: absolute;
-  bottom: 0; /* Moved down from top due to padding */
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: var(--color-primary);
-  opacity: 0; /* Start invisible */
-  transform: translate3d(-100%, 0, 0);
-  transition: opacity 0.1s ease, transform 0.3s ease-out;
-  transition-delay: 0.2s; /* Wait 0.5s before animation starts */
+    content: '';
+    position: absolute;
+    bottom: 0;
+    /* Moved down from top due to padding */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--color-primary);
+    opacity: 0;
+    /* Start invisible */
+    transform: translate3d(-100%, 0, 0);
+    transition: opacity 0.1s ease, transform 0.3s ease-out;
+    transition-delay: 0.2s;
+    /* Wait 0.5s before animation starts */
 }
 
 .nav-btn:hover::after,
 .nav-btn.active::after {
-  opacity: 1; /* Fade in after 0.5s delay */
-  transform: translate3d(0, 0, 0); /* Slide in from left */
+    opacity: 1;
+    /* Fade in after 0.5s delay */
+    transform: translate3d(0, 0, 0);
+    /* Slide in from left */
 }
 
 
@@ -827,7 +833,7 @@ body {
 
 .btn:hover,
 .back-link:hover,
-.read-more:hover,
+/* .read-more:hover, */
 .btn-primary:hover,
 .btn-secondary:hover,
 .btn-outline:hover,
@@ -845,6 +851,12 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     z-index: 10;
     border-color: var(--primary-color) !important;
+}
+
+
+.read-more:hover {
+    color: var(--color-primary-hover);
+    /* Color change only, no transform */
 }
 
 /* Specific overrides for primary buttons to maintain visibility */
@@ -2493,10 +2505,12 @@ body {
 
 /* ==================== Footer ==================== */
 .footer {
-    padding: var(--space-64) 0;
+    padding: var(--space-24) 0;
+    /* Shrank from 64px */
     text-align: center;
     border-top: 1px solid var(--premium-border);
-    margin-top: 120px;
+    margin-top: 60px;
+    /* Shrank from 120px */
 }
 
 .footer-links {
