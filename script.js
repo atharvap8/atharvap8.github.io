@@ -148,21 +148,17 @@ if (heroTitle) {
 // ==================== Smooth Number Counter for Stats ====================
 const statNumbers = document.querySelectorAll('.stat-number');
 
-function animateCounter(element, target, duration = 2000) {
+function animateCounter(element, target, suffix, duration = 2000) {
     let start = 0;
     const increment = target / (duration / 16);
 
     const counter = setInterval(() => {
         start += increment;
         if (start >= target) {
-            element.textContent = element.textContent;
+            element.textContent = target + suffix;
             clearInterval(counter);
         } else {
-            if (target > 100) {
-                element.textContent = Math.floor(start) + '+';
-            } else {
-                element.textContent = Math.floor(start) + '%';
-            }
+            element.textContent = Math.floor(start) + suffix;
         }
     }, 16);
 }
@@ -171,17 +167,18 @@ function animateCounter(element, target, duration = 2000) {
 const statsObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting && !entry.target.dataset.animated) {
-            const text = entry.target.textContent;
+            const originalText = entry.target.textContent.trim();
 
-            // Extract number from text
-            if (text.includes('+')) {
-                animateCounter(entry.target, 15);
-            } else if (text.includes('%')) {
-                animateCounter(entry.target, 100);
-            } else if (text.includes('∞')) {
-                // Keep infinity symbol
-            } else if (!isNaN(text)) {
-                animateCounter(entry.target, parseInt(text));
+            if (originalText === '∞') {
+                // Keep infinity symbol as is
+            } else {
+                // Extract number and suffix (+ or %)
+                const match = originalText.match(/^(\d+)(.*)$/);
+                if (match) {
+                    const targetValue = parseInt(match[1]);
+                    const suffix = match[2] || '';
+                    animateCounter(entry.target, targetValue, suffix);
+                }
             }
 
             entry.target.dataset.animated = 'true';
@@ -198,127 +195,14 @@ statNumbers.forEach(stat => {
 const downloadBtn = document.querySelector('.resume-actions .btn');
 if (downloadBtn) {
     downloadBtn.addEventListener('click', () => {
-        // Create a simple resume document
-        const resumeContent = `
-ATHARVA - EMBEDDED SYSTEMS ENGINEER & IoT DEVELOPER
-================================================================================
-
-CONTACT INFORMATION
-Email: atharva@example.com
-GitHub: github.com/atharvap8
-LinkedIn: linkedin.com/in/atharva
-
-PROFESSIONAL SUMMARY
-Passionate embedded systems engineer and IoT developer with expertise in 
-microcontroller programming, hardware design, and firmware development. 
-Strong background in power electronics and smart appliance systems.
-
-CORE COMPETENCIES
-- Microcontroller Programming: ESP32, Arduino, STM32
-- Languages: C/C++, Python, JavaScript, HTML/CSS
-- Hardware Design: PCB Design (KiCad), Power Electronics, Signal Processing
-- IoT Systems: MQTT, Web Servers, Real-time Monitoring
-- Tools & Technologies: VS Code, Git, KiCad, Linux, JTAG
-
-PROFESSIONAL EXPERIENCE
-
-Junior IoT Developer | June 2024 - November 2024
-- Developed smart washing machine controller with real-time monitoring
-- Implemented IoT gateway firmware with MQTT support
-- Created web-based dashboards for device control and analytics
-- Troubleshot and repaired appliance PCBs with TRIAC motor controllers
-
-Hardware Design Intern | 2023 - 2024
-- Designed multi-layer PCBs for power electronics projects
-- Implemented SPWM-based 3-phase power inverter systems
-- Conducted PCB routing and signal integrity analysis
-- Contributed to production-ready hardware designs
-
-EDUCATION
-
-Electronics Engineering | Currently Pursuing
-- Formal studies in embedded systems and electronics
-- Focus on practical applications and project-based learning
-
-Self-Taught Development | Ongoing
-- Continuous learning through hands-on projects
-- Active open-source contributions
-- Technical documentation and blogging
-
-FEATURED PROJECTS
-
-Smart Washing Machine Controller (2024)
-- IoT-enabled appliance with remote control capability
-- Technologies: ESP32, Python, Web Dashboard
-- Impact: Real-time monitoring and predictive maintenance
-
-Power Inverter System (2023-2024)
-- 3-phase SPWM-based grid-tie inverter design
-- Technologies: STM32, Hardware Design, Power Electronics
-- Impact: Efficient renewable energy integration
-
-PCB Design Suite (2023)
-- Hierarchical multi-layer board designs for industrial applications
-- Technologies: KiCad, Signal Integrity, Layer Stack-up
-- Impact: 15+ projects completed with zero manufacturing errors
-
-TECHNICAL SKILLS
-
-Embedded Systems: 95%
-Power Electronics: 85%
-PCB Design: 85%
-IoT Systems: 88%
-Web Development: 75%
-Hardware Debugging: 90%
-
-PUBLICATIONS & CONTRIBUTIONS
-- Technical blog with 20+ articles on embedded systems
-- Open-source projects on GitHub (github.com/atharvap8)
-- Active contributor to IoT and embedded systems communities
-
-CERTIFICATIONS & AWARDS
-- Self-certified in advanced microcontroller programming
-- Recognized for innovation in IoT applications
-- Strong track record of successful project delivery
-
-LANGUAGES
-- English: Fluent
-- Hindi: Native
-        `;
-
-        // Create blob and download
-        const blob = new Blob([resumeContent], { type: 'text/plain' });
-        const url = window.URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'Atharva_Resume.txt';
-        document.body.appendChild(a);
-        a.click();
-        window.URL.revokeObjectURL(url);
-        document.body.removeChild(a);
+        const link = document.createElement('a');
+        link.href = 'assets/resume/resume1.pdf';
+        link.download = 'AP_Resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     });
 }
-
-// ==================== Keyboard Navigation ====================
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
-        const activeIndex = Array.from(sections).findIndex(s => s.classList.contains('active'));
-        if (activeIndex < sections.length - 1) {
-            const nextSection = sections[activeIndex + 1];
-            if (nextSection) {
-                scrollToSection(nextSection.id);
-            }
-        }
-    } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
-        const activeIndex = Array.from(sections).findIndex(s => s.classList.contains('active'));
-        if (activeIndex > 0) {
-            const prevSection = sections[activeIndex - 1];
-            if (prevSection) {
-                scrollToSection(prevSection.id);
-            }
-        }
-    }
-});
 
 // ==================== Mobile Responsiveness ====================
 window.addEventListener('resize', () => {
@@ -383,7 +267,6 @@ function debounce(func, delay) {
 
 // ==================== Initialize ====================
 console.log('Portfolio website loaded successfully! 🚀');
-console.log('Use arrow keys to navigate between sections');
 console.log('Scroll to explore all content');
 
 // Set initial active state on DOM ready
@@ -462,6 +345,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // --- Image Lightbox / Zoom Functionality ---
+    const projectThumbs = document.querySelectorAll('.project-thumb');
+    projectThumbs.forEach(img => {
+        img.addEventListener('error', () => {
+            img.style.display = 'none';
+        });
+    });
+
     const articleImages = document.querySelectorAll('.article-content img');
     if (articleImages.length > 0) {
         // Create Lightbox Elements
