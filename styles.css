@@ -939,9 +939,9 @@ body {
 
 .section {
     width: 100%;
-    min-height: 100vh;
-    padding: 2rem 32px 100px;
-    /* Aligned with Header top: 2rem */
+    min-height: auto;
+    padding: 60px 32px 40px;
+    /* Aligned for better content density while keeping header clearance */
     position: relative;
     display: flex;
     flex-direction: column;
