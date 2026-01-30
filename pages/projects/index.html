@@ -33,78 +33,8 @@
         <section class="section">
             <div class="container">
                 <h2 class="section-title">My Projects</h2>
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="../../assets/projects/ble-car-security/thumbnail.jpg" alt="BLE Car Security"
-                                class="project-thumb">
-                        </div>
-                        <div class="project-info">
-                            <h3><a href="ble-car-security.html">BLE Based Car Security Controller</a></h3>
-                            <p>A secure car control system using Bluetooth Low Energy technology.</p>
-                            <a href="ble-car-security.html" class="project-link">View Project →</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="../../assets/projects/iot-gas-safety/thumbnail.jpg" alt="IoT Gas Safety"
-                                class="project-thumb">
-                        </div>
-                        <div class="project-info">
-                            <h3><a href="iot-gas-safety.html">IoT Based Gas Safety System</a></h3>
-                            <p>Smart gas leakage detection and safety system with IoT connectivity.</p>
-                            <a href="iot-gas-safety.html" class="project-link">View Project →</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="../../assets/projects/esp32-washing-machine/thumbnail.jpg"
-                                alt="ESP32 Washing Machine" class="project-thumb">
-                        </div>
-                        <div class="project-info">
-                            <h3><a href="esp32-washing-machine.html">ESP32 Based Washing Machine</a></h3>
-                            <p>Modernizing washing machines with ESP32 for smart control.</p>
-                            <a href="esp32-washing-machine.html" class="project-link">View Project →</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="../../assets/projects/automatic-water-tap/thumbnail.jpg" alt="Automatic Water Tap"
-                                class="project-thumb">
-                        </div>
-                        <div class="project-info">
-                            <h3><a href="automatic-water-tap.html">Automatic Water Tap V2</a></h3>
-                            <p>Touchless water tap system for hygiene and water conservation.</p>
-                            <a href="automatic-water-tap.html" class="project-link">View Project →</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="../../assets/projects/advanced-iot-washing-machine/thumbnail.jpg"
-                                alt="Advanced IoT Washing Machine" class="project-thumb">
-                        </div>
-                        <div class="project-info">
-                            <h3><a href="advanced-iot-washing-machine.html">Advanced IoT Washing Machine</a></h3>
-                            <p>Next-gen washing machine with advanced IoT features and remote monitoring.</p>
-                            <a href="advanced-iot-washing-machine.html" class="project-link">View Project →</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="../../assets/projects/home-automation/thumbnail.jpg" alt="Home Automation"
-                                class="project-thumb">
-                        </div>
-                        <div class="project-info">
-                            <h3><a href="home-automation.html">Home Automation 15 Devices</a></h3>
-                            <p>Comprehensive home automation system controlling 15 different devices.</p>
-                            <a href="home-automation.html" class="project-link">View Project →</a>
-                        </div>
-                    </article>
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Cards injected via JS -->
                 </div>
             </div>
         </section>
@@ -121,7 +51,40 @@
         </div>
     </footer>
 
+    <script src="../../projects-data.js"></script>
     <script src="../../script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const projectsGrid = document.getElementById('projectsGrid');
+            if (!projectsGrid || typeof projectsData === 'undefined') return;
+
+            Object.keys(projectsData).forEach(id => {
+                const project = projectsData[id];
+                const cardLink = document.createElement('a');
+                cardLink.href = `view.html?id=${id}`;
+                cardLink.className = 'project-card-link';
+
+                let thumbSrc = project.banner || project.thumbnail || '../../assets/placeholder.jpg';
+                // If banner is used as thumbnail, ensure it fits well
+                // For now, simple img tag
+
+                cardLink.innerHTML = `
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="${thumbSrc}" alt="${project.title}" class="project-thumb">
+                        </div>
+                        <div class="project-info">
+                            <h3>${project.title}</h3>
+                            <p>${project.summary}</p>
+                            <span class="project-link">View Project →</span>
+                        </div>
+                    </article>
+                `;
+                projectsGrid.appendChild(cardLink);
+            });
+        });
+    </script>
+
 </body>
 
 </html>

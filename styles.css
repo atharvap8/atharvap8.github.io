@@ -47,18 +47,40 @@
     --font-size-4xl: 48px;
 
     /* Spacing & Layout */
+    --space-1: 2px;
+    --space-4: 4px;
+    --space-6: 6px;
     --space-8: 8px;
+    --space-10: 10px;
     --space-12: 12px;
+    --space-14: 14px;
     --space-16: 16px;
+    --space-20: 20px;
     --space-24: 24px;
     --space-32: 32px;
+    --space-40: 40px;
     --space-48: 48px;
     --space-64: 64px;
 
+    --radius-sm: 6px;
+    --radius-md: 16px;
     --radius-base: 12px;
     --radius-lg: 24px;
     --radius-2xl: 32px;
     --radius-full: 9999px;
+
+    /* Semantic Typography */
+    --line-height-tight: 1.25;
+    --line-height-normal: 1.6;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --letter-spacing-tight: -0.025em;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+    --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 
     /* Container Dimensions */
     --container-sm: 640px;
@@ -68,7 +90,9 @@
     /* Increased for wider profile match */
 
     /* Sophisticated Animation */
+    --duration-fast: 0.2s;
     --duration-normal: 0.6s;
+    --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
     --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
     --transition: all var(--duration-normal) var(--ease-premium);
 }
@@ -191,9 +215,19 @@ a {
 }
 
 .nav-btn {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-medium);
+    position: relative;
     overflow: hidden;
+    padding: 0;
     padding-bottom: 5px;
     /* Add gap between text and underline */
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s ease;
+    font-family: var(--font-family-base);
 }
 
 .nav-btn::after {
@@ -211,6 +245,10 @@ a {
     transition: opacity 0.1s ease, transform 0.3s ease-out;
     transition-delay: 0.2s;
     /* Wait 0.5s before animation starts */
+}
+
+.nav-btn:hover {
+    color: var(--primary-color);
 }
 
 .nav-btn:hover::after,
@@ -401,7 +439,7 @@ pre {
     font-family: var(--font-family-mono);
     font-size: calc(var(--font-size-base) * 0.95);
     background-color: var(--color-secondary);
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-lg);
 }
 
 code {
@@ -899,22 +937,7 @@ body {
     gap: var(--space-32);
 }
 
-.nav-btn {
-    background: none;
-    border: none;
-    color: var(--text-primary);
-    cursor: pointer;
-    font-size: var(--font-size-md);
-    font-weight: var(--font-weight-medium);
-    position: relative;
-    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s ease;
-    font-family: var(--font-family-base);
-}
-
-
-.nav-btn:hover {
-    color: var(--primary-color);
-}
+/* Duplicate .nav-btn styles removed - now consolidated in header section above */
 
 .menu-toggle {
     display: none;
@@ -2284,9 +2307,9 @@ body {
         margin-bottom: var(--space-32);
     }
 
-    .header-container {
+    /* .header-container {
         padding: var(--space-16) var(--space-24);
-    }
+    } */
 
     .hero-cta {
         flex-direction: column;
@@ -2310,9 +2333,9 @@ body {
 }
 
 @media (max-width: 480px) {
-    .header-container {
+    /* .header-container {
         padding: var(--space-12) var(--space-16);
-    }
+    } */
 
     .logo {
         font-size: var(--font-size-xl);
@@ -2693,4 +2716,119 @@ body {
     font-size: var(--font-size-lg);
     max-width: 400px;
     margin-bottom: var(--space-16);
+}
+
+/* ==================== 404 Page Styling ==================== */
+.error-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Use transparent background to show ambient-bg if present, or fallback to theme bg */
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    padding: var(--space-48) var(--space-16);
+    box-sizing: border-box;
+}
+
+.error-section::before {
+    content: '';
+    position: absolute;
+    width: 200vw;
+    height: 200vw;
+    background: repeating-linear-gradient(transparent 0, transparent 48px,
+            rgba(56, 189, 248, 0.03) 50px);
+    animation: scanline 20s linear infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes scanline {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+.error-container {
+    text-align: center;
+    z-index: 2;
+    max-width: 600px;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(20px);
+    padding: var(--space-64) var(--space-32);
+    border-radius: var(--radius-2xl);
+    border: 1px solid rgba(56, 189, 248, 0.1);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    position: relative;
+    transform: scale(0.8);
+}
+
+/* Glowing border effect */
+.error-container::after {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    z-index: -1;
+    border-radius: inherit;
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), transparent 40%, transparent 60%, rgba(56, 189, 248, 0.2));
+}
+
+.error-code {
+    font-family: 'Space Mono', monospace;
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 1;
+    background: linear-gradient(135deg, #f8fafc 0%, #94a3b8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: var(--space-24);
+    opacity: 0.9;
+    text-shadow: 0 0 40px rgba(56, 189, 248, 0.2);
+    position: relative;
+}
+
+.error-message {
+    font-family: 'Space Mono', monospace;
+    color: var(--color-primary);
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-24);
+    padding: var(--space-12) var(--space-24);
+    background: rgba(56, 189, 248, 0.05);
+    border-radius: var(--radius-base);
+    display: inline-block;
+}
+
+.prompt {
+    color: var(--color-text-secondary);
+    margin-right: var(--space-8);
+}
+
+.typing-text {
+    border-right: 2px solid var(--color-primary);
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--color-primary)
+    }
+}
+
+.error-description {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-48);
+    line-height: 1.6;
 }

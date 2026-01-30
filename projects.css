@@ -3,7 +3,8 @@
 :root {
     --article-max-width: 1100px;
     --content-max-width: 720px;
-    --sidebar-width: 240px;
+    --sidebar-width: 200px;
+    /* Reduced from 240px */
 }
 
 .article-container {
@@ -12,7 +13,8 @@
     padding-bottom: var(--space-64);
     max-width: var(--article-max-width);
     margin: 0 auto;
-    padding-left: clamp(var(--space-16), 5vw, var(--space-40));
+    padding-left: var(--space-4);
+    /* Drastically reduced to move TOC left */
     padding-right: clamp(var(--space-16), 5vw, var(--space-40));
 }
 
@@ -99,7 +101,8 @@
 .article-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--space-48);
+    gap: var(--space-16);
+    /* Drastically reduced from 48px */
 }
 
 @media (min-width: 769px) {
@@ -158,10 +161,19 @@
     font-weight: 850;
     color: var(--color-text);
     margin-bottom: var(--space-8);
-    opacity: 0.95;
+    opacity: 0;
+    /* Hidden initially */
+    transform: translateY(20px);
+    /* Pushed down */
+    transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     flex-shrink: 0;
+}
+
+.sidebar-project-title.visible {
+    opacity: 0.95;
+    transform: translateY(0);
 }
 
 .toc-title {
@@ -206,31 +218,40 @@
 
 .toc-link {
     display: block;
-    font-size: 18px;
-    /* One size less than 24px */
+    font-family: var(--font-family-mono);
+    /* Techy Mono Font */
+    font-size: 14px;
+    /* Slightly smaller for tech look */
     color: var(--color-text-secondary);
     text-decoration: none;
-    padding: 8px 0 8px 16px;
-    border-left: 4px solid transparent;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    line-height: 1.1;
+    padding: 6px 0 6px 12px;
+    /* Reduced from 16px */
+    border-left: 1px solid var(--color-border);
+    /* Thinner border */
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    line-height: 1.4;
     position: relative;
-    opacity: 0.6;
+    opacity: 0.7;
+    letter-spacing: -0.02em;
 }
 
 .toc-link:hover {
     color: var(--color-primary);
-    transform: translateX(6px);
+    transform: translateX(4px);
     opacity: 1;
+    border-left-color: var(--color-primary);
+    background: linear-gradient(90deg, rgba(var(--color-primary-rgb), 0.05), transparent);
 }
 
 .toc-link.active {
-    color: var(--color-primary);
-    border-left-color: var(--color-primary);
-    font-weight: 700;
+    color: var(--color-primary-active);
+    /* Brighter active color */
+    border-left: 2px solid var(--color-primary);
+    /* Tech style border */
+    font-weight: 600;
     opacity: 1;
-    background: linear-gradient(to right, rgba(var(--color-primary-rgb), 0.1), transparent);
-    box-shadow: inset 10px 0 20px -10px rgba(var(--color-primary-rgb), 0.2);
+    background: linear-gradient(90deg, rgba(var(--color-primary-rgb), 0.1), transparent);
+    /* Removed box-shadow for cleaner look */
 }
 
 /* Removed redundant pseudo-element bar */
@@ -246,39 +267,133 @@
     /* For better jump navigation */
 }
 
+/* Revamped Article Headers */
 .article-content h2 {
     font-size: var(--font-size-2xl);
+    font-weight: 800;
+    margin-top: var(--space-48);
+    margin-bottom: var(--space-24);
+    color: var(--color-text);
+    position: relative;
+    display: inline-block;
+    padding-bottom: var(--space-8);
+    background: linear-gradient(to right, var(--color-primary), #fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 15px rgba(var(--color-primary-rgb), 0.3));
+}
+
+.article-content h3 {
+    font-size: var(--font-size-xl);
     font-weight: 700;
-    margin-top: 0;
+    margin-top: var(--space-32);
     margin-bottom: var(--space-16);
     color: var(--color-text);
+    border-left: 3px solid var(--color-primary);
+    padding-left: var(--space-12);
+}
+
+.article-content strong {
+    color: var(--color-primary);
+    font-weight: 700;
+    background: linear-gradient(120deg, rgba(var(--color-primary-rgb), 0.15), transparent);
+    padding: 0 var(--space-4);
+    border-radius: var(--radius-sm);
+    text-shadow: 0 0 10px rgba(var(--color-primary-rgb), 0.4);
+}
+
+.article-content em {
+    font-family: var(--font-family-serif);
+    color: var(--color-text-secondary);
+    font-style: italic;
+    border-bottom: 1px dotted var(--color-primary);
+}
+
+.article-content mark {
+    background: rgba(var(--color-warning-rgb), 0.15);
+    color: var(--color-warning);
+    padding: 0 var(--space-4);
+    border-radius: var(--radius-sm);
+    box-shadow: 0 0 10px rgba(var(--color-warning-rgb), 0.2);
 }
 
 .article-content p {
     font-size: clamp(1.15rem, 1.8vw, 1.3rem);
-    line-height: 1.8;
+    line-height: 1.9;
     margin-bottom: var(--space-32);
     color: var(--color-text);
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    /* Subtle pop */
 }
 
+/* Futuristic Lists */
 .article-content ul {
-    margin-bottom: var(--space-24);
+    margin-bottom: var(--space-32);
+    padding-left: var(--space-16);
 }
 
 .article-content li {
-    margin-bottom: var(--space-12);
+    margin-bottom: var(--space-16);
+    padding-left: var(--space-24);
     position: relative;
-    padding-left: var(--space-4);
+    list-style: none;
 }
 
+.article-content li::before {
+    content: '➔';
+    /* Or use a pseudo-element shape */
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: bold;
+    filter: drop-shadow(0 0 5px var(--color-primary));
+}
+
+/* Glassmorphism Blockquote */
 .article-content blockquote {
-    border-left: 4px solid var(--color-primary);
-    padding: var(--space-20) var(--space-24);
-    margin: var(--space-32) 0;
-    background: var(--color-secondary);
+    position: relative;
+    border-left: 2px solid var(--color-primary);
+    padding: var(--space-24) var(--space-32);
+    margin: var(--space-40) 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
     border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
     font-style: italic;
-    font-size: 1.15rem;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    /* Top/Right/Bottom subtle border */
+    border-left-width: 4px;
+    /* Strong left accent */
+}
+
+.article-content blockquote::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 4rem;
+    color: var(--color-primary);
+    opacity: 0.2;
+    font-family: serif;
+    line-height: 1;
+}
+
+/* Links with Glow */
+.article-content a {
+    color: var(--color-primary);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px rgba(var(--color-primary-rgb), 0.3);
+}
+
+.article-content a:hover {
+    color: var(--color-primary-hover);
+    border-bottom-color: var(--color-primary);
+    text-shadow: 0 0 15px rgba(var(--color-primary-rgb), 0.6);
 }
 
 /* Image styling */
@@ -303,7 +418,7 @@ code {
 pre {
     background: var(--color-surface);
     padding: var(--space-20);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-lg);
     overflow-x: auto;
     border: 1px solid var(--color-border);
     margin-bottom: var(--space-24);
@@ -419,9 +534,9 @@ pre code {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+    background: transparent;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -429,13 +544,23 @@ pre code {
     z-index: 9999;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.4s;
+    transition: opacity 0.3s ease, visibility 0.3s, background 0.3s, backdrop-filter 0.3s;
     cursor: zoom-out;
 }
 
 .image-lightbox.active {
     opacity: 1;
     visibility: visible;
+    background: rgba(0, 0, 0, 0.7);
+    /* Deep dim */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* Delay background and blur until after zoom (0.5s) */
+    transition:
+        opacity 0.1s ease,
+        visibility 0s,
+        background 0.6s ease 0.5s,
+        backdrop-filter 0.6s ease 0.5s;
 }
 
 .lightbox-img {
@@ -443,13 +568,18 @@ pre code {
     max-height: 85vh;
     border-radius: var(--radius-lg);
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
-    transform: scale(0.9);
-    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform: scale(0.4);
+    /* Start small/far */
+    opacity: 0;
+    transition: transform 0.4s ease-in, opacity 0.3s;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .image-lightbox.active .lightbox-img {
     transform: scale(1);
+    /* Zoom to user */
+    opacity: 1;
+    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.3s;
 }
 
 .lightbox-caption {
@@ -460,28 +590,38 @@ pre code {
     text-align: center;
     max-width: 80%;
     opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.4s 0.2s, transform 0.4s 0.2s;
+    transform: translateY(20px);
+    transition: opacity 0.4s, transform 0.4s;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Parallax Hero Styles */
+.image-lightbox.active .lightbox-caption {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease 0.6s, transform 0.5s ease 0.6s;
+    /* Appear after bg starts */
+}
+
+/* Parallax Hero Styles - Jesko Style */
 .parallax-hero {
     position: relative;
     width: 100vw;
     margin-left: calc(50% - 50vw);
-    height: 40vh;
-    /* Initial Banner Mode */
-    min-height: 350px;
+    height: 90vh;
+    /* Taller hero */
+    min-height: 500px;
     overflow: hidden;
     display: flex;
-    align-items: flex-end;
-    /* Text at bottom like a banner */
-    padding-bottom: var(--space-48);
+    align-items: center;
+    /* Centered vertically */
+    padding-bottom: 0;
     margin-bottom: var(--space-48);
+    /* Initial State */
     border-radius: 0 0 var(--radius-lg) var(--radius-lg);
     box-shadow: var(--shadow-xl);
-    will-change: height;
+    transform-origin: center top;
+    /* Scale from top */
+    will-change: transform, border-radius, width;
 }
 
 .parallax-bg {
@@ -489,14 +629,16 @@ pre code {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 120%;
+    /* visual bleed for parallax */
+    top: -10%;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    /* The Parallax Effect */
+    /* background-attachment: fixed; Removed for smoother JS parallax */
     z-index: 1;
     filter: brightness(0.6) blur(0px);
     transition: filter 0.5s ease;
+    will-change: transform;
 }
 
 .parallax-overlay {
@@ -524,7 +666,9 @@ pre code {
     color: #ffffff;
     margin-bottom: var(--space-16);
     opacity: 0.95;
-    font-size: clamp(3rem, 6vw, 5rem);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    /* Reduced size */
+    text-wrap: balance;
 }
 
 .parallax-hero .article-meta-item {
@@ -575,3 +719,26 @@ pre code {
    but since Hero is fixed-like or growing, standard flow is fine.
    We just need to make sure the hero doesn't cover content abruptly.
 */
+
+/* Project Card Link Wrapper */
+.project-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+    /* Ensure it fills height if needed */
+}
+
+/* Style the "View Project" text which is now a span */
+.project-info .project-link {
+    color: var(--color-primary);
+    font-weight: 500;
+    margin-top: var(--space-8);
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.project-card-link:hover .project-link {
+    color: var(--color-primary-hover);
+    transform: translateX(4px);
+}

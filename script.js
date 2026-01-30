@@ -103,13 +103,16 @@ document.addEventListener('mousemove', (e) => {
 // ==================== Header Sophistication ====================
 const headerElement = document.querySelector('.header');
 
+// Header scroll effect logic removed to keep header constant
+/* 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
         headerElement.classList.add('scrolled');
     } else {
         headerElement.classList.remove('scrolled');
     }
-});
+}); 
+*/
 
 // ==================== Natural Section Reveals ====================
 const fluidObserverOptions = {
@@ -276,97 +279,44 @@ document.addEventListener('DOMContentLoaded', () => {
         homeBtn.style.borderBottomColor = 'var(--primary-color)';
     }
 
-    // ==================== Global TOC Scrollspy ====================
-    const tocLinks = document.querySelectorAll('.toc-link');
-    const articleSections = document.querySelectorAll('article section[id]');
+    // --- Image Lightbox / Zoom Functionality ---
+    window.initLightbox = function () {
+        const articleImages = document.querySelectorAll('.article-content img');
+        if (articleImages.length === 0) return;
 
-    if (tocLinks.length > 0 && articleSections.length > 0) {
-        const activeSections = new Set();
+        // Check if lightbox already exists
+        let lightbox = document.querySelector('.image-lightbox');
+        if (!lightbox) {
+            lightbox = document.createElement('div');
+            lightbox.className = 'image-lightbox';
+            lightbox.innerHTML = `
+                <img src="" alt="Zoomed Image" class="lightbox-img">
+                <div class="lightbox-caption"></div>
+            `;
+            document.body.appendChild(lightbox);
 
-        const tocObserverOptions = {
-            root: null,
-            rootMargin: '-10% 0px -80% 0px', // Focus window near the top
-            threshold: 0
-        };
-
-        const tocObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                const id = entry.target.getAttribute('id');
-                if (entry.isIntersecting) {
-                    activeSections.add(id);
-                } else {
-                    activeSections.delete(id);
+            // Close listeners
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                    lightbox.classList.remove('active');
+                    document.body.style.overflow = '';
                 }
             });
-
-            // Update TOC highlight based on the FIRST (top-most) visible section
-            if (activeSections.size > 0) {
-                let firstActiveId = null;
-                // We iterate over articleSections to maintain DOM order
-                for (const section of articleSections) {
-                    const id = section.getAttribute('id');
-                    if (activeSections.has(id)) {
-                        firstActiveId = id;
-                        break;
-                    }
-                }
-
-                if (firstActiveId) {
-                    tocLinks.forEach(link => {
-                        link.classList.remove('active');
-                        if (link.getAttribute('href') === `#${firstActiveId}`) {
-                            link.classList.add('active');
-
-                            // Auto-scroll TOC sidebar to keep active link in view
-                            const sidebar = link.closest('.article-sidebar');
-                            if (sidebar) {
-                                link.scrollIntoView({
-                                    behavior: 'smooth',
-                                    block: 'nearest'
-                                });
-                            }
-                        }
-                    });
-                }
-            } else if (window.scrollY < 200) {
-                // At the very top, highlight the first link
-                tocLinks.forEach(l => l.classList.remove('active'));
-                tocLinks[0].classList.add('active');
-            }
-        }, tocObserverOptions);
-
-        articleSections.forEach(section => tocObserver.observe(section));
-
-        // Sync initial state
-        if (window.scrollY < 200) {
-            tocLinks[0].classList.add('active');
         }
-    }
-
-
-    // --- Image Lightbox / Zoom Functionality ---
-    const projectThumbs = document.querySelectorAll('.project-thumb');
-    projectThumbs.forEach(img => {
-        img.addEventListener('error', () => {
-            img.style.display = 'none';
-        });
-    });
-
-    const articleImages = document.querySelectorAll('.article-content img');
-    if (articleImages.length > 0) {
-        // Create Lightbox Elements
-        const lightbox = document.createElement('div');
-        lightbox.className = 'image-lightbox';
-        lightbox.innerHTML = `
-            <img src="" alt="Zoomed Image" class="lightbox-img">
-            <div class="lightbox-caption"></div>
-        `;
-        document.body.appendChild(lightbox);
 
         const lightboxImg = lightbox.querySelector('.lightbox-img');
         const lightboxCaption = lightbox.querySelector('.lightbox-caption');
 
         articleImages.forEach(img => {
+            // Avoid double-binding
+            if (img.dataset.lightboxBound) return;
+            img.dataset.lightboxBound = 'true';
+
+            img.style.cursor = 'zoom-in';
             img.addEventListener('click', () => {
                 const src = img.getAttribute('src');
                 const figure = img.closest('figure');
@@ -376,21 +326,81 @@ document.addEventListener('DOMContentLoaded', () => {
                 lightboxImg.src = src;
                 lightboxCaption.textContent = captionText;
                 lightbox.classList.add('active');
-                document.body.style.overflow = 'hidden'; // Prevent scrolling
+                document.body.style.overflow = 'hidden';
             });
         });
+    };
 
-        lightbox.addEventListener('click', () => {
-            lightbox.classList.remove('active');
-            document.body.style.overflow = ''; // Re-enable scrolling
-        });
+    // --- TOC ScrollSpy (Refactored for Sections) ---
+    window.initTOCScrollSpy = function () {
+        const tocLinks = document.querySelectorAll('.toc-link');
+        // Target both sections (new structure) and specific headers (legacy/fallback)
+        const targets = document.querySelectorAll('.article-content section[id], .article-content h2[id], .article-content h3[id]');
 
-        // Close on Escape key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-                lightbox.classList.remove('active');
-                document.body.style.overflow = '';
+        if (tocLinks.length === 0 || targets.length === 0) return;
+
+        const onScroll = () => {
+            let currentId = '';
+
+            // Highlight the last target that has passed the top threshold
+            targets.forEach(target => {
+                const sectionTop = target.offsetTop;
+                // Offset of 120px to account for sticky header + breathing room
+                if (window.scrollY >= sectionTop - 120) {
+                    currentId = target.getAttribute('id');
+                }
+            });
+
+            // Handle bottom of page case
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
+                if (targets.length > 0) {
+                    currentId = targets[targets.length - 1].getAttribute('id');
+                }
             }
-        });
-    }
+
+            // If we are at the very top, highlight the first one or logic's default
+            if (window.scrollY < 100 && targets.length > 0) {
+                // Option: currentId = targets[0].getAttribute('id'); 
+                // We let the loop logic decide, or force the first one if preferred.
+            }
+
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                // Check direct match
+                if (link.getAttribute('href') === `#${currentId}`) {
+                    link.classList.add('active');
+
+                    // Auto-scroll sidebar to keep active link in view
+                    // IMPORTANT: The scrolling container is often .toc-list, NOT .article-sidebar (which is just the sticky wrapper)
+                    // We try to find the actual scrolling element.
+                    const sidebar = link.closest('.toc-list') || link.closest('.article-sidebar');
+
+                    if (sidebar) {
+                        const linkTop = link.offsetTop;
+                        const sidebarScroll = sidebar.scrollTop;
+                        const sidebarHeight = sidebar.clientHeight;
+                        const linkHeight = link.clientHeight;
+
+                        // Simple bounds check: is link out of the visible scroll area?
+                        // Note: offsetTop is relative to the offsetParent (the list).
+
+                        if (linkTop < sidebarScroll + 20 || linkTop > sidebarScroll + sidebarHeight - 40) {
+                            sidebar.scrollTo({
+                                top: linkTop - sidebarHeight / 2 + linkHeight / 2,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                }
+            });
+        };
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+        // Initial check
+        onScroll();
+    };
+
+    // Initialize these if content is static (fallback)
+    window.initLightbox();
+    window.initTOCScrollSpy();
 });
