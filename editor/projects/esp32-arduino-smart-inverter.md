@@ -1,11 +1,9 @@
-
-
 ### Project Overview
 I’ve always found it frustrating when power outages happen and I have no idea how much battery life is left in my inverter. To solve this, I designed an IoT-enabled control system using the ESP32 platform. This system lets me monitor and control my power inverter remotely via WiFi, giving me real-time updates on battery status and power usage right on my phone.
 
 The main goal was to take a standard, "dumb" inverter and give it a smart upgrade. Now, I don't have to walk down to the basement or check the utility room to see if I’m running low on power—I can just check the app.
 
-![Smart Inverter System Overview](../../assets/projects/esp32-arduino-smart-inverter/overview.jpg)
+![Smart Inverter System Overview](../../assets/projects/esp32-arduino-smart-inverter/banner.jpg)
 
 ### Background & Motivation
 Power cuts are a reality in many places, and inverters are our lifeline. But traditional inverters are black boxes; they sit in a corner, humming away, until they suddenly die because the battery ran out. I wanted to change that.

@@ -8,7 +8,7 @@ const projectsData = {
     "esp32-arduino-smart-inverter": {
         title: "ESP32 Arduino Smart Inverter",
         summary: "Smart Inverter using ESP32 and Arduino to control AC voltage and current.",
-        banner: "../../assets/projects/esp32-arduino-smart-inverter/thumbnail.png",
+        banner: "../../assets/projects/esp32-arduino-smart-inverter/banner.jpg",
         contentUrl: "../../editor/projects/esp32-arduino-smart-inverter.md"
     },
     "automatic-water-tap-v2": {
