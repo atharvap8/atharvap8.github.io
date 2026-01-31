@@ -33,7 +33,7 @@ navButtons.forEach(btn => {
 // Mobile menu toggle
 menuToggle.addEventListener('click', () => {
     const navMenu = document.querySelector('.nav-menu');
-    navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+    navMenu.classList.toggle('active');
 });
 
 // ==================== Robust Scrollspy ====================
