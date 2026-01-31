@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const sidebarTitle = document.getElementById('sidebarTitle');
         if (sidebarTitle) {
             if (progress > 0.75) {
+                sidebarTitle.style.transitionDelay = '0.5s';
                 sidebarTitle.classList.add('visible');
             } else {
                 sidebarTitle.classList.remove('visible');

@@ -344,9 +344,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Highlight the last target that has passed the top threshold
             targets.forEach(target => {
-                const sectionTop = target.offsetTop;
-                // Offset of 120px to account for sticky header + breathing room
-                if (window.scrollY >= sectionTop - 120) {
+                const rect = target.getBoundingClientRect();
+                // If top of section is above 150px (header + buffer)
+                if (rect.top <= 150) {
                     currentId = target.getAttribute('id');
                 }
             });

@@ -1,41 +1,37 @@
-# IoT-Based Smart Inverter Control System
 
-## Introduction
 
 ### Project Overview
+I’ve always found it frustrating when power outages happen and I have no idea how much battery life is left in my inverter. To solve this, I designed an IoT-enabled control system using the ESP32 platform. This system lets me monitor and control my power inverter remotely via WiFi, giving me real-time updates on battery status and power usage right on my phone.
 
-This project presents the design and implementation of an IoT-enabled inverter control system using the ESP32 microcontroller platform. The system enables remote monitoring and control of a power inverter through WiFi connectivity, providing users with real-time status updates, battery management, and intelligent load control through a mobile application interface.
+The main goal was to take a standard, "dumb" inverter and give it a smart upgrade. Now, I don't have to walk down to the basement or check the utility room to see if I’m running low on power—I can just check the app.
 
-The primary objective was to retrofit a conventional power inverter with smart capabilities, allowing users to monitor power consumption, battery status, and control the inverter remotely without physical interaction. This eliminates the need for manual switching and provides crucial information about the inverter's operational state at any given moment.
+![Smart Inverter System Overview](../../assets/projects/esp32-arduino-smart-inverter/overview.jpg)
 
 ### Background & Motivation
+Power cuts are a reality in many places, and inverters are our lifeline. But traditional inverters are black boxes; they sit in a corner, humming away, until they suddenly die because the battery ran out. I wanted to change that.
 
-Power outages remain a common occurrence in many regions, making inverters essential for maintaining continuous power supply to critical appliances. However, traditional inverters lack remote monitoring capabilities, forcing users to physically check the device status or operate it manually. This limitation becomes particularly inconvenient when the inverter is installed in basements, storage rooms, or other less accessible locations.
+My motivation came from a few practical needs:
+- **Remote Monitoring:** I wanted to know the system status without physically inspecting it.
+- **Battery Anxiety:** I needed to know exactly how much juice was left so I wouldn't be caught off guard.
+- **Control:** Being able to turn it ON/OFF remotely is a huge convenience.
+- **Safety:** I wanted to add software safeguards to protect the hardware.
 
-The motivation behind this project stemmed from the need to:
+### The Problem with Old Inverters
+Traditional inverters are sturdy but stupid. Dealing with them brought up several annoyances:
 
-- Enable remote monitoring of inverter status without physical access
-- Provide real-time battery level information to prevent unexpected shutdowns
-- Allow remote ON/OFF control for power management
-- Track power consumption patterns for better energy management
-- Implement safety features through software-based protection mechanisms
-- Create a cost-effective solution using readily available components
+### Lack of Visibility
+There is simply no way to check the battery status or inverter state without walking up to the device. If it's in a hard-to-reach spot, you're out of luck.
 
-### Problem Statement
+### Manual Operation Guidelines
+Switching the inverter ON or OFF requires physical access. In an emergency, or just when you're lazy, this is a pain point.
 
-Conventional inverters operate as standalone devices with limited user interaction capabilities. Users face several challenges:
+### No Power Insights
+You have no clue how much power you're drawing. Is the gaming PC draining the battery too fast? You wouldn't know until the lights go out.
 
-**Lack of Visibility**: No way to check battery status or inverter state remotely, requiring physical inspection of the device.
+### Limited Safety Features
+While they have basic fuses, they lack intelligent monitoring. I wanted a system that could predict overheating or overload before it caused damage.
 
-**Manual Operation**: Switching the inverter ON or OFF requires physical access to the device, which may not be convenient in emergency situations.
-
-**No Power Monitoring**: Users cannot track power consumption patterns or identify power-hungry devices connected to the inverter.
-
-**Limited Safety Features**: Traditional inverters have basic protection mechanisms but lack intelligent monitoring that could prevent damage due to overload or battery depletion.
-
-**Inefficient Power Management**: Without real-time data, users cannot make informed decisions about load management during power outages.
-
-This project addresses these limitations by developing an IoT-based control system that integrates seamlessly with existing inverter hardware while adding smart monitoring and control capabilities.
+This project was my answer to these limitations—a smart, connected controller that breathes new life into existing hardware.
 
 ---
 
@@ -45,44 +41,44 @@ This project addresses these limitations by developing an IoT-based control syst
 
 The system comprises several key hardware components working together to enable smart inverter functionality:
 
-**ESP32 Development Board**
+### ESP32 Development Board
 - Dual-core Tensilica LX6 microprocessor operating at 240 MHz
 - Built-in WiFi (802.11 b/g/n) and Bluetooth capabilities
 - 34 programmable GPIO pins
 - 12-bit ADC for analog sensor reading
 - Operating voltage: 3.3V with onboard voltage regulator supporting 5V input
 
-**Relay Module**
+### Relay Module
 - Multi-channel relay board (typically 2-4 channels)
 - Operating voltage: 5V DC
 - Contact rating: 10A at 250V AC / 30V DC
 - Optocoupler isolation for protection against voltage spikes
 - LED indicators for visual status confirmation
 
-**Voltage Sensor Module**
+### Voltage Sensor Module
 - Voltage divider circuit or dedicated voltage sensor module
 - Input range: 0-25V DC (for battery monitoring)
 - Output: 0-3.3V analog signal compatible with ESP32 ADC
 - Provides real-time battery voltage monitoring
 
-**Current Sensor (Optional)**
+### Current Sensor (Optional)
 - ACS712 or similar Hall-effect current sensor
 - Measurement range: 5A/20A/30A variants
 - Linear output proportional to current flow
 - Enables power consumption tracking
 
-**Temperature Sensor**
+### Temperature Sensor
 - DHT11/DHT22 or DS18B20 digital temperature sensor
 - Monitors inverter heat dissipation
 - Triggers alerts on overheating conditions
 
-**Buck Converter Module**
+### Buck Converter Module
 - LM2596 or similar DC-DC step-down converter
 - Input: 12V DC (from inverter battery)
 - Output: 5V DC regulated (for powering ESP32 and relay module)
 - Current capability: 2-3A
 
-**Additional Components**
+### Additional Components
 - Breadboard or custom PCB for permanent installation
 - Jumper wires and connectors
 - Power supply terminals
@@ -277,7 +273,8 @@ A 100Ah battery could theoretically power the system for 870 hours (36 days) if 
 
 The complete circuit integrates all components with proper connections:
 
-**Power Distribution:**
+### Power Distribution Diagram
+![Power Distribution Schematic](../../assets/projects/esp32-arduino-smart-inverter/schematic_power.png)
 ```
 12V Battery (+) ──→ Buck Converter VIN
                     Buck Converter VOUT (5V) ──┬─→ ESP32 VIN
@@ -297,7 +294,8 @@ ESP32 GND ──→ Common GND
 ESP32 VIN ──→ 5V Rail
 ```
 
-**Relay to Inverter:**
+### Relay Wiring Diagram
+![Relay Wiring](../../assets/projects/esp32-arduino-smart-inverter/schematic_relay.png)
 ```
 Inverter Input ──→ Relay COM
 Inverter Output ──→ Relay NO
@@ -678,7 +676,8 @@ void logError(String errorType, String message) {
 
 The system provides comprehensive remote control through the Blynk mobile application, accessible from anywhere with internet connectivity.
 
-**Mobile App Interface:**
+### Mobile App Interface
+![Blynk Dashboard Screenshot](../../assets/projects/esp32-arduino-smart-inverter/blynk_dashboard.jpg)
 
 The Blynk app dashboard displays:
 

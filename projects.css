@@ -11,10 +11,12 @@
     padding-top: 40px;
     /* Dynamic Clearance */
     padding-bottom: var(--space-64);
-    max-width: var(--article-max-width);
-    margin: 0 auto;
-    padding-left: var(--space-4);
-    /* Drastically reduced to move TOC left */
+    max-width: 100%;
+    /* Full width */
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    /* Zero margin as requested */
     padding-right: clamp(var(--space-16), 5vw, var(--space-40));
 }
 
@@ -218,10 +220,10 @@
 
 .toc-link {
     display: block;
-    font-family: var(--font-family-mono);
-    /* Techy Mono Font */
-    font-size: 14px;
-    /* Slightly smaller for tech look */
+    font-family: var(--font-family-base);
+    /* Comfortaa */
+    font-size: 15px;
+    /* Increased */
     color: var(--color-text-secondary);
     text-decoration: none;
     padding: 6px 0 6px 12px;
@@ -244,14 +246,13 @@
 }
 
 .toc-link.active {
-    color: var(--color-primary-active);
-    /* Brighter active color */
-    border-left: 2px solid var(--color-primary);
-    /* Tech style border */
-    font-weight: 600;
+    color: var(--color-primary);
+    border-left: 3px solid var(--color-primary);
+    font-weight: 700;
     opacity: 1;
-    background: linear-gradient(90deg, rgba(var(--color-primary-rgb), 0.1), transparent);
-    /* Removed box-shadow for cleaner look */
+    background: linear-gradient(90deg, rgba(var(--color-primary-rgb), 0.15), transparent);
+    padding-left: 12px;
+    /* Add visual spacing */
 }
 
 /* Removed redundant pseudo-element bar */
@@ -270,14 +271,15 @@
 /* Revamped Article Headers */
 .article-content h2 {
     font-size: var(--font-size-2xl);
-    font-weight: 800;
+    font-weight: 700;
     margin-top: var(--space-48);
     margin-bottom: var(--space-24);
     color: var(--color-text);
     position: relative;
     display: inline-block;
     padding-bottom: var(--space-8);
-    background: linear-gradient(to right, var(--color-primary), #fff);
+    background: linear-gradient(to right, #22d3ee, #2dd4bf);
+    /* Cyan to Teal */
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -341,13 +343,15 @@
 }
 
 .article-content li::before {
-    content: '➔';
-    /* Or use a pseudo-element shape */
+    content: '•';
+    /* Bullet point */
     position: absolute;
     left: 0;
     color: var(--color-primary);
     font-weight: bold;
-    filter: drop-shadow(0 0 5px var(--color-primary));
+    font-size: 1.5em;
+    line-height: 1.1;
+    top: -2px;
 }
 
 /* Glassmorphism Blockquote */
