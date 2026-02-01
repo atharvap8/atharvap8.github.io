@@ -6,56 +6,59 @@ I wanted to turn my basic, "dumb" inverter into something much smarter. Instead 
 ![Smart Inverter System Overview](../../assets/projects/esp32-arduino-smart-inverter/banner.jpg)
 
 ### Background 
-Power cuts are a reality in many places, and inverters are our lifeline. But traditional inverters are black boxes; they sit in a corner, humming away, until they suddenly die because the battery ran out. I wanted to change that.
+Power cuts are a reality in many places, and inverters are our lifeline. But traditional inverters are dumb black boxes; they sit in a corner, humming away, until they suddenly die because the battery ran out. I wanted to change that.
 
 My motivation came from a few practical needs:
-- **Remote Monitoring:** I wanted to know the system status without physically inspecting it.
-- **Battery Anxiety:** I needed to know exactly how much juice was left so I wouldn't be caught off guard.
+- **Remote Monitoring:** I want to know the system status without physically inspecting it.
+- **Battery Anxiety:** I want to know exactly how much juice is left so I wouldn't be waiting on the edge and counting it will die now... and now... and now.....
 - **Control:** Being able to turn it ON/OFF remotely is a huge convenience.
-- **Safety:** I wanted to add software safeguards to protect the hardware.
+- **Safety:** I want to add software limits. to protect the hardware. Which 
 
 ### The Problem with Old Inverters
 Traditional inverters are sturdy but stupid. Dealing with them brought up several annoyances:
 
-### Lack of Visibility
-There is simply no way to check the battery status or inverter state without walking up to the device. If it's in a hard-to-reach spot, you're out of luck.
+- **Lack of Visibility**:
+There's simply no way to check the battery status or inverter state without walking up to the device. If it's in a hard-to-reach spot or, on top of shelf, you're doomed.
 
-### Manual Operation Guidelines
+- **Manual Operation Guidelines**:
 Switching the inverter ON or OFF requires physical access. In an emergency, or just when you're lazy, this is a pain point.
 
-### No Power Insights
-You have no clue how much power you're drawing. Is the gaming PC draining the battery too fast? You wouldn't know until the lights go out.
+- **No Power Insights**:
+You don't get to see  or know how much energy you are consuming. I intended to fix that.
 
-### Limited Safety Features
-While they have basic fuses, they lack intelligent monitoring. I wanted a system that could predict overheating or overload before it caused damage.
+- **Limited Safety Features**:
+While they have basic fuses, they lack intelligence. I wanted a system that could preemptively predict battery life wear and act accordingly, not just worsen it up.
 
-This project was my answer to these limitations—a smart, connected controller that breathes new life into existing hardware.
+This project is my answer to these limitations. A smart, connected controller that takes existing hardware and gives it a smart brain.
 
 ---
 
-## The Setup
-To give this "dumb" machine a brain, I needed a few key components to handle the logic, eyes to see the status, and hands to flip the switch.
+## Disassembling the Beast
+I started by completely stripping down the inverter, carefully disassembling every single component and wire. It was messy, so the first order of business was clearing off the layers of dust.
 
-### Key Hardware
-*   **The Brain (ESP32):** I chose the ESP32 because it has built-in WiFi and Bluetooth. It's affordable, powerful, and perfect for handling real-time data monitoring.
-*   **The Switch (5V Relay Module):** This is the bridge between the microcontroller and the inverter. It sits in parallel with the physical power switch, allowing the ESP32 to electronically "press" the button.
-*   **Monitoring Power (Voltage Divider):** The inverter runs on a massive 12V lead-acid battery. To measure this safely with the ESP32 (which only tolerates 3.3V), I built a simple voltage divider circuit.
-*   **Safety (DS18B20 Temp Sensor):** I strapped a digital temperature sensor to the inverter's heatsink. If things get too hot, the system knows to shut down before damage occurs.
-*   **Power Supply (Buck Converter):** You can't just plug a robust 12V battery into a delicate microcontroller. I used an LM2596 buck converter to step the voltage down to a clean, stable 5V for the ESP32 and relays.
+## Documentation Habits
+Since my previous project, I've built a strong habit of maintaining proper documentation. I took a ton of photos and videos of the internals for history and tracking. Trust me, you don't want to forget where that one red wire went.
 
-### The Logic (Software)
-Hardware is only half the battle. To make it smart, I need code that can talk to the internet.
-*   **Platform:** I used the Arduino IDE because it has great library support for the ESP32.
-*   **Blynk IoT:** Instead of building a custom mobile app from scratch (which takes weeks), I used Blynk. It handles the secure connection between my phone and the ESP32, giving me a drag-and-drop dashboard in minutes.
-*   **The Code:** The firmware works in a simple loop: it wakes up, checks the sensors, updates the cloud, and listens for any commands from my phone.
+## Reverse Engineering the Brain
+Then came the deep dive. I identified the original controller as a **Texas Instruments TMS320 F280x** DSP microcontroller, which single-handedly managed everything.
 
-### How It All Connects
-At a high level, the flow is simple:
-1.  **Sensors** read the battery and temperature.
-2.  **ESP32** processes this data and checks for safety.
-3.  **WiFi** sends the data to the **Blynk Cloud**.
-4.  **Blynk App** displays it on my phone.
-5.  If I press "OFF" on the app, the signal goes back down the chain to the **Relay**, killing the inverter.
+![Original Controller](../../assets/projects/esp32-arduino-smart-inverter/original_controller.jpg)
+
+It was a "dumb" inverter indeed, and the design felt like a lesson in planned obsolescence. Every calibration and error parameter was hardcoded into the design, with zero potentiometers or headers for customization.
+
+I also found the H-bridge controller, an **S72295** full-bridge driver IC, which worked in conjunction with the DSP.
+
+![H-bridge controller](../../assets/projects/esp32-arduino-smart-inverter/hbridge_controller.jpg)
+
+## Tracing the Lines
+To figure out how it all connected, I grabbed a pen, paper, multimeter, and a flashlight. By shining the flashlight distinctively under (or above) the PCB, I could see the traces clearly through the board. This made reverse engineering the schematic significantly easier.
+
+I am still working on completing the full schematic, but I have fully mapped out the header pinout.
+
+![Header Pinout and PCB Traces](../../assets/projects/esp32-arduino-smart-inverter/traces_header.jpg)
+
+## Initial Testing
+Before modifying anything, I powered it up and probed the board to map out where the key voltages were present. I logged every reading and observation into Google Keep—my second brain for these projects.
 
 ---
 
