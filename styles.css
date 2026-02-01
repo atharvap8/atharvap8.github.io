@@ -1377,7 +1377,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: calc(var(--space-32) * 2);
-    align-items: start;
+    align-items: center;
+    /* Center vertically if needed, or start */
     width: 100%;
 }
 
@@ -1390,7 +1391,7 @@ body {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--space-24);
 }
 
@@ -1402,6 +1403,8 @@ body {
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border-color 0.4s ease;
     cursor: pointer;
     box-shadow: var(--shadow-xs);
+    height: 100%;
+    /* Ensure equal height */
 }
 
 
@@ -1418,22 +1421,31 @@ body {
 }
 
 .about-stats {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-16);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2x2 Grid */
+    gap: var(--space-24);
     justify-content: center;
+    width: 100%;
 }
 
 .stat-item {
     text-align: center;
-    padding: var(--space-16) var(--space-24);
-    background: var(--color-surface);
+    padding: var(--space-32);
+    /* Increase padding for consistent box size */
+    background: var(--card-bg);
+    /* Use card bg for consistency */
     border: 1px solid var(--premium-border);
     border-radius: var(--radius-lg);
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border-color 0.4s ease;
     box-shadow: var(--shadow-sm);
-    min-width: 140px;
-    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1.2;
+    /* Enforce consistent shape, e.g. slightly rectangular or square */
+    height: 100%;
 }
 
 
@@ -1649,76 +1661,37 @@ body {
     border-color: var(--color-primary);
 }
 
-/* ==================== Hero Slider ==================== */
+/* ==================== Circuit Matrix Animation ==================== */
 .hero-visual {
     position: relative;
     z-index: 10;
 }
 
-.hero-slider {
+.circuit-container {
     width: 100%;
     max-width: 500px;
     height: 380px;
-    background: rgba(15, 23, 42, 0.3);
-    border: 1px solid var(--premium-border);
-    border-radius: 20px;
-    overflow: hidden;
+    background: #0f172a;
+    /* Slate 900 */
+    border: 1px solid rgba(56, 189, 248, 0.4);
     position: relative;
-    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(56, 189, 248, 0.1), inset 0 0 20px rgba(56, 189, 248, 0.05);
     backdrop-filter: blur(10px);
 }
 
-.slider-track {
-    display: flex;
-    width: 400%;
+#hero-canvas {
+    width: 100%;
     height: 100%;
-    animation: slide 20s infinite cubic-bezier(0.45, 0, 0.55, 1);
+    display: block;
 }
 
-.slider-track img {
-    width: 25%;
+.hero-video {
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.8;
-    filter: saturate(0.8) contrast(1.1);
-}
-
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-
-    20% {
-        transform: translateX(0);
-    }
-
-    25% {
-        transform: translateX(-25%);
-    }
-
-    45% {
-        transform: translateX(-25%);
-    }
-
-    50% {
-        transform: translateX(-50%);
-    }
-
-    70% {
-        transform: translateX(-50%);
-    }
-
-    75% {
-        transform: translateX(-75%);
-    }
-
-    95% {
-        transform: translateX(-75%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
+    display: block;
 }
 
 .slider-overlay {
@@ -2517,8 +2490,7 @@ body {
     .about-content,
     .contact-content {
         grid-template-columns: 1fr;
-        padding: var(--space-24);
-        /* Slightly reduced padding */
+        padding: var(--space-24) var(--space-16);
         width: 100%;
         margin: 0 auto;
         max-width: 100%;
@@ -2688,8 +2660,9 @@ body {
     }
 
     .footer-links {
-        flex-direction: column;
+        flex-direction: row;
         gap: var(--space-16);
+        justify-content: center;
     }
 }
 
@@ -3244,5 +3217,49 @@ body {
         text-align: left;
         line-height: 1.6;
         font-size: var(--font-size-sm);
+    }
+
+    /* Stats 2x2 grid with left-aligned content */
+    .about-stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-12);
+        width: 100%;
+        margin-top: var(--space-24);
+    }
+
+    .stat-item {
+        text-align: left;
+        padding: var(--space-12) var(--space-16);
+        min-width: unset;
+    }
+
+    .stat-number {
+        font-size: 1.25rem;
+    }
+
+    .stat-label {
+        font-size: var(--font-size-xs);
+        white-space: normal;
+    }
+
+    /* Resume cards - left align all content on mobile */
+    .resume-card-body,
+    .resume-skills .resume-card-body,
+    .resume-cert .resume-card-body {
+        text-align: left;
+    }
+
+    .resume-skills .resume-card-header,
+    .resume-cert .resume-card-header {
+        justify-content: flex-start;
+    }
+
+    .skills-tags {
+        justify-content: flex-start;
+    }
+
+    .highlight-list {
+        align-items: flex-start;
     }
 }

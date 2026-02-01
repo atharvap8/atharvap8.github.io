@@ -201,7 +201,7 @@ statNumbers.forEach(stat => {
 });
 
 // ==================== Download Resume Function ====================
-const downloadBtn = document.querySelector('.resume-actions .btn');
+const downloadBtn = document.querySelector('.resume-header .btn');
 if (downloadBtn) {
     downloadBtn.addEventListener('click', () => {
         const link = document.createElement('a');
@@ -231,10 +231,11 @@ scrollToTopBtn.style.cssText = `
     right: 2rem;
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-    border: none;
+    background: rgba(3, 7, 18, 0.8);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--premium-border);
     border-radius: 50%;
-    color: var(--dark-bg);
+    color: var(--color-primary);
     font-size: 1.5rem;
     cursor: pointer;
     opacity: 0;
@@ -245,6 +246,7 @@ scrollToTopBtn.style.cssText = `
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 `;
 
 document.body.appendChild(scrollToTopBtn);
@@ -296,9 +298,9 @@ document.addEventListener('DOMContentLoaded', () => {
             lightbox = document.createElement('div');
             lightbox.className = 'image-lightbox';
             lightbox.innerHTML = `
-                <img src="" alt="Zoomed Image" class="lightbox-img">
-                <div class="lightbox-caption"></div>
-            `;
+    < img src = "" alt = "Zoomed Image" class="lightbox-img" >
+        <div class="lightbox-caption"></div>
+`;
             document.body.appendChild(lightbox);
 
             // Close listeners
@@ -373,7 +375,7 @@ document.addEventListener('DOMContentLoaded', () => {
             tocLinks.forEach(link => {
                 link.classList.remove('active');
                 // Check direct match
-                if (link.getAttribute('href') === `#${currentId}`) {
+                if (link.getAttribute('href') === `#${currentId} `) {
                     link.classList.add('active');
 
                     // Auto-scroll sidebar to keep active link in view
@@ -409,4 +411,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize these if content is static (fallback)
     window.initLightbox();
     window.initTOCScrollSpy();
+});
+
+// ==================== Hero Video Lazy Play ====================
+window.addEventListener('load', () => {
+    const heroVideo = document.getElementById('heroVideo');
+    if (heroVideo) {
+        // Play video after everything is loaded
+        heroVideo.play().catch(e => {
+            console.log('Autoplay prevented or video error:', e);
+        });
+    }
 });

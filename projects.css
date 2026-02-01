@@ -112,6 +112,27 @@
     .article-grid {
         grid-template-columns: var(--sidebar-width) 1fr;
         align-items: start;
+        gap: var(--space-32);
+    }
+
+    .article-sidebar {
+        padding-right: var(--space-24);
+    }
+
+    .article-sidebar::after {
+        content: '';
+        position: absolute;
+        top: 5vh;
+        /* Start slightly down */
+        height: 70vh;
+        /* Fixed height relative to viewport for the sticky container */
+        right: 0;
+        width: 1px;
+        background: linear-gradient(to bottom,
+                transparent,
+                var(--color-primary),
+                transparent);
+        opacity: 0.3;
     }
 }
 

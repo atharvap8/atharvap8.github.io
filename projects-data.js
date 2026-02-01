@@ -11,6 +11,12 @@ const projectsData = {
         banner: "../../assets/projects/esp32-arduino-smart-inverter/banner.jpg",
         contentUrl: "../../editor/projects/esp32-arduino-smart-inverter.md"
     },
+    "esp32c3-room-automation": {
+        title: "ESP32C3 Room Automation",
+        summary: "DIY smart room controller with Alexa voice control, IR remote, and manual switches on custom PCB.",
+        // banner: "../../assets/projects/esp32c3-room-automation/banner.jpg",
+        contentUrl: "../../editor/projects/esp32c3-room-automation.md"
+    },
     "automatic-water-tap-v2": {
         title: "Automatic Water Tap V2",
         summary: "IR sensor-based automatic water tap to enhance hygiene and convenience.",
