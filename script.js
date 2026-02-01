@@ -375,7 +375,7 @@ document.addEventListener('DOMContentLoaded', () => {
             tocLinks.forEach(link => {
                 link.classList.remove('active');
                 // Check direct match
-                if (link.getAttribute('href') === `#${currentId} `) {
+                if (link.getAttribute('href') === `#${currentId}`) {
                     link.classList.add('active');
 
                     // Auto-scroll sidebar to keep active link in view
