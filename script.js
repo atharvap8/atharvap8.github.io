@@ -27,6 +27,12 @@ navButtons.forEach(btn => {
         // Update nav button highlight
         navButtons.forEach(b => b.style.borderBottomColor = 'transparent');
         btn.style.borderBottomColor = 'var(--primary-color)';
+
+        // Close mobile menu after clicking a nav button
+        const navMenu = document.querySelector('.nav-menu');
+        if (navMenu && navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+        }
     });
 });
 
