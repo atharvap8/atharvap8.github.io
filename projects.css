@@ -535,9 +535,11 @@ pre code {
     margin: var(--space-32) auto;
 }
 
-.article-content img:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+@media (hover: hover) {
+    .article-content img:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+    }
 }
 
 .article-caption {

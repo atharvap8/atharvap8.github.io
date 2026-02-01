@@ -205,7 +205,7 @@ const downloadBtn = document.querySelector('.resume-header .btn');
 if (downloadBtn) {
     downloadBtn.addEventListener('click', () => {
         const link = document.createElement('a');
-        link.href = 'assets/resume/resume1.pdf';
+        link.href = 'assets/resume/AP_resume.pdf';
         link.download = 'AP_Resume.pdf';
         document.body.appendChild(link);
         link.click();
@@ -298,9 +298,9 @@ document.addEventListener('DOMContentLoaded', () => {
             lightbox = document.createElement('div');
             lightbox.className = 'image-lightbox';
             lightbox.innerHTML = `
-    < img src = "" alt = "Zoomed Image" class="lightbox-img" >
-        <div class="lightbox-caption"></div>
-`;
+                <img src="" alt="Zoomed Image" class="lightbox-img">
+                <div class="lightbox-caption"></div>
+            `;
             document.body.appendChild(lightbox);
 
             // Close listeners
