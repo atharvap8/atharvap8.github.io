@@ -536,6 +536,14 @@ pre code {
     margin: var(--space-32) auto;
 }
 
+.article-content video {
+    border-radius: var(--radius-lg);
+    margin: var(--space-32) auto;
+    display: block;
+    box-shadow: var(--shadow-lg);
+    max-width: 100%;
+}
+
 @media (hover: hover) {
     .article-content img:hover {
         transform: translateY(-5px);
@@ -800,6 +808,7 @@ pre code {
     color: var(--color-primary-hover);
     transform: translateX(4px);
 }
+
 
 /* ==================== Mobile Responsive Styles for Project Pages ==================== */
 @media (max-width: 768px) {

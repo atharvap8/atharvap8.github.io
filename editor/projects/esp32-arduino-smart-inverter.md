@@ -17,8 +17,6 @@ My motivation came from a few practical needs:
 ## Documentation Habits
 Since my previous project, I have developed a habit of maintaining proper documentation. I took a ton of photos and videos of the internals for history and tracking. Trust me, you don't want to forget where that one red wire went.
 
----
-
 ## System Anatomy: What's Inside?
 The original system was consisting of two main circuit boards. First, there's the **Core Baseboard**, which had power stage (MOSFETs), driver circuitry, transformers, and the peripheral interfaces. Then, attached vertically perpendicular, was the **Controller PCB**, which housed the DSP microcontroller & few other components.
 
@@ -55,9 +53,9 @@ I started by completely tearing down the inverter, carefully disassembling every
 </div>
 
 ## Tracing the Lines
-To figure out how it all connected, I grabbed a pen, paper, multimeter, and a flashlight. By shining the flashlight distinctively under (or above) the PCB, I could see the traces clearly through the board. This made reverse engineering the schematic significantly easier.
+To figure out how it all connected, I took a pen, paper, multimeter, and a flashlight. By shining the flashlight directly under (or above) the PCB, I could see the traces clearly through the board. This made reverse engineering the board significantly easier.
 
-I am still working on completing the full schematic, but I have fully mapped out the header pinout.
+I am still working on completing the full schematic, but I have fully mapped out and understood the header pinout for the peripheral circuitry.
 
 <div class="image-row">
   <img src="../../assets/projects/esp32-arduino-smart-inverter/traces_header.jpg" alt="PCB Traces" />
@@ -67,28 +65,34 @@ I am still working on completing the full schematic, but I have fully mapped out
 ## Initial Testing
 Before modifying anything, I powered it up. I then traced the PCB and noted down, at which pins what voltages are present. This led me to get an idea of how the inverter works.
 
----
 
 ## Design Phase 1: Charging Control (The Scary Part)
 This was the first technical topic I took charge of, because it was the most crucial. While being the case, it was also the easiest to mess up.
 
-This phase was genuinely dangerous because it involved messing with direct **230V AC**. I was connecting a lead-acid battery directly to the mains via my circuit. If I messed something up in the code—or accidentally set the duty cycle to 100%, it wouldn't just be an "oops." It would be catastrophic. It could either short the MOSFETs due to overcurrent or overcharge the battery, completely destroying it (and potentially my desk).
+This phase was genuinely dangerous because it involved messing with direct **230V AC**. I connected a lead-acid battery directly to the mains via my circuit. If I messed something up in the code, or accidentally set the duty cycle to 100%, or due to loose wires or potentiometer fluctuations the duty fluctuated, it wouldn't just be an "oops." It would be <strong>catastrophic</strong>. It could either short the MOSFETs due to overcurrent or overcharge the battery, completely destroying it (and potentially me who was standing 1cm nearby 😆).
 
 ## How it Works: Buck-Shunting 
 The inverter utilizes a topology known as the **Buck-Shunting Charge Method**. It sounds complex, but here's the technicalities:
 
 In this setup, the transformer's primary winding (which has fewer turns) is actually used as an inductor. The secondary winding is connected to the Main AC input supply. Power is transferred from the secondary to the primary, using the transformer's **leakage inductance flux**. This energy is rectified through the H-bridge and then is used to charge the battery.
 
-video
+<video width="100%" controls>
+  <source src="../../assets/projects/esp32-arduino-smart-inverter/stm_charging_test.mp4" type="video/mp4">
+</video>
 
-## The "Don't Blow It Up" Rules
-The key to getting this right is precise control. By controlling the **gate pulses**—specifically their frequency and duty cycle—we can regulate the charging voltage.
+### Charging Control
+The key to getting this right is precise control. By controlling the **gate pulses**, more specifically their frequency and duty cycle, we can regulate the charging voltage.
 
-We need a proper frequency matrix to ensure the transformer core does **not saturate**. If the core saturates, the inductance drops to near zero, causing a dead short and blowing up the power stage instantly. Not fun.
+We need to set a proper frequency to ensure the transformer core does **not saturate**. If the core saturates, the inductance drops to near zero, causing a dead short and blowing up the power stage instantly. Not fun.
 
 ## Prototyping with STM32
 To safely develop and test this charging logic, I utilized an **STM32's timer peripheral**. 
 I used it to create identical gate pulses for 2 outputs, giving me fine-grained control over variable frequency and duty cycle.
+The video below demonstrates the working of the charging circuit.
+
+<video width="100%" controls>
+  <source src="../../assets/projects/esp32-arduino-smart-inverter/stm-charging-test.mp4" type="video/mp4">
+</video>
 
 *Fun fact: This was actually a sub-project from my internship work that was going on side-by-side. I implemented that logic here for my convenience!*
 
