@@ -285,7 +285,7 @@
 }
 
 .article-content section {
-    margin-bottom: var(--space-48);
+    margin-bottom: var(--space-32);
     scroll-margin-top: 100px;
     /* For better jump navigation */
 }
@@ -294,8 +294,8 @@
 .article-content h2 {
     font-size: var(--font-size-2xl);
     font-weight: 700;
-    margin-top: var(--space-48);
-    margin-bottom: var(--space-24);
+    margin-top: var(--space-32);
+    margin-bottom: var(--space-16);
     color: var(--color-text);
     position: relative;
     display: inline-block;
@@ -306,13 +306,14 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 0 15px rgba(var(--color-primary-rgb), 0.3));
+    border-bottom: 2px solid rgba(var(--color-primary-rgb), 0.3);
 }
 
 .article-content h3 {
     font-size: var(--font-size-xl);
     font-weight: 700;
-    margin-top: var(--space-32);
-    margin-bottom: var(--space-16);
+    margin-top: var(--space-24);
+    margin-bottom: var(--space-12);
     color: var(--color-text);
     border-left: 3px solid var(--color-primary);
     padding-left: var(--space-12);
@@ -344,8 +345,8 @@
 
 .article-content p {
     font-size: clamp(1.15rem, 1.8vw, 1.3rem);
-    line-height: 1.6;
-    margin-bottom: var(--space-32);
+    line-height: 1.5;
+    margin-bottom: var(--space-20);
     color: var(--color-text);
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
     /* Subtle pop */
@@ -353,12 +354,12 @@
 
 /* Futuristic Lists */
 .article-content ul {
-    margin-bottom: var(--space-32);
+    margin-bottom: var(--space-20);
     padding-left: var(--space-16);
 }
 
 .article-content li {
-    margin-bottom: var(--space-16);
+    margin-bottom: var(--space-8);
     padding-left: var(--space-24);
     position: relative;
     list-style: none;
@@ -549,6 +550,7 @@ pre code {
     text-align: center;
     max-width: 80%;
     line-height: 1.6;
+    display: none;
 }
 
 /* Lightbox / Zoom Functionality */
@@ -1040,5 +1042,90 @@ pre code {
     .toc-link {
         padding: var(--space-4) var(--space-12) !important;
         font-size: 12px;
+    }
+}
+
+/* Side-by-side Image Layout */
+.article-content .image-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-16);
+    margin: var(--space-16) 0;
+    width: 100%;
+}
+
+.article-content .image-row img {
+    margin: 0;
+    max-width: 100%;
+    /* Override the global 400px limit */
+    flex: 1;
+    /* Distribute space evenly */
+    object-fit: cover;
+    /* Fill the box, crop if necessary to remove black bars */
+    height: 200px;
+    /* Fixed height for consistent row */
+    width: 100%;
+    /* Force fill width */
+    box-shadow: var(--shadow-lg);
+}
+
+@media (max-width: 768px) {
+    .article-content .image-row {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .article-content .image-row img {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+/* Text and Media Side-by-Side Layout */
+.article-content .text-media-row {
+    display: flex;
+    align-items: center;
+    /* Vertically center */
+    gap: var(--space-48);
+    margin: var(--space-48) 0;
+    width: 100%;
+}
+
+.article-content .text-media-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.article-content .text-media-row img {
+    margin: 0;
+    max-width: 350px;
+    width: 40%;
+    flex-shrink: 0;
+}
+
+.article-content .text-media-row .text-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.article-content .text-media-row .text-content h2:first-child,
+.article-content .text-media-row .text-content h3:first-child {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+
+    .article-content .text-media-row,
+    .article-content .text-media-row.reverse {
+        flex-direction: column;
+        gap: var(--space-24);
+    }
+
+    .article-content .text-media-row img {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
     }
 }

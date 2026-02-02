@@ -1,132 +1,114 @@
-### Overview
-I have noticed, that when power outages happen, I have no idea how much battery life is left in my inverter. To solve this, I completely redesigned the brain of the inverter using the ESP32 platform. This system lets me monitor and control my power inverter remotely via WiFi, giving me real-time updates on battery status and power usage right on my phone, and some other metrics.
+## Overview
+I have noticed, that when power outages happen, I have no idea how much battery life is left in my inverter. To solve this, I completely redesigned the brain of the inverter using ESP32 platform. This system lets me monitor and control my power inverter remotely via WiFi, giving me real-time updates on battery status and power usage right on my phone, and some other metrics.
 
-I wanted to turn my basic, "dumb" inverter into something much smarter. Instead of taking a walk down to the basement just to check the battery, I can now see everything I need right from my phone.
+<p>Truth be told, I wanted to turn my basic, "dumb" inverter into something much smarter. Instead of taking a walk down to the basement just to check the battery, I can now see everything I need right from my phone.</p>
 
-![Smart Inverter System Overview](../../assets/projects/esp32-arduino-smart-inverter/banner.jpg)
 
-### Background 
+## Background 
 Power cuts are a reality in many places, and inverters are our lifeline. But traditional inverters are dumb black boxes; they sit in a corner, humming away, until they suddenly die because the battery ran out. I wanted to change that.
 
 My motivation came from a few practical needs:
-- **Remote Monitoring:** I want to know the system status without physically inspecting it.
-- **Battery Anxiety:** I want to know exactly how much juice is left so I wouldn't be waiting on the edge and counting it will die now... and now... and now.....
+- **Remote Monitoring:** I want to know the status without walking to it.
+- **Battery Anxiety:** I want to know exactly how much juice is left so I wouldn't be waiting on the edge and counting it will die now... and now....
 - **Control:** Being able to turn it ON/OFF remotely is a huge convenience.
-- **Safety:** I want to add software limits. to protect the hardware. Which 
+- **Safety:** I want to add software limits, to protect the hardware. Which traditional inverters lack.
 
-### The Problem with Old Inverters
-Traditional inverters are sturdy but stupid. Dealing with them brought up several annoyances:
 
-- **Lack of Visibility**:
-There's simply no way to check the battery status or inverter state without walking up to the device. If it's in a hard-to-reach spot or, on top of shelf, you're doomed.
-
-- **Manual Operation Guidelines**:
-Switching the inverter ON or OFF requires physical access. In an emergency, or just when you're lazy, this is a pain point.
-
-- **No Power Insights**:
-You don't get to see  or know how much energy you are consuming. I intended to fix that.
-
-- **Limited Safety Features**:
-While they have basic fuses, they lack intelligence. I wanted a system that could preemptively predict battery life wear and act accordingly, not just worsen it up.
-
-This project is my answer to these limitations. A smart, connected controller that takes existing hardware and gives it a smart brain.
+## Documentation Habits
+Since my previous project, I have developed a habit of maintaining proper documentation. I took a ton of photos and videos of the internals for history and tracking. Trust me, you don't want to forget where that one red wire went.
 
 ---
 
-## Disassembling the Beast
-I started by completely stripping down the inverter, carefully disassembling every single component and wire. It was messy, so the first order of business was clearing off the layers of dust.
+## System Anatomy: What's Inside?
+The original system was consisting of two main circuit boards. First, there's the **Core Baseboard**, which had power stage (MOSFETs), driver circuitry, transformers, and the peripheral interfaces. Then, attached vertically perpendicular, was the **Controller PCB**, which housed the DSP microcontroller & few other components.
 
-## Documentation Habits
-Since my previous project, I've built a strong habit of maintaining proper documentation. I took a ton of photos and videos of the internals for history and tracking. Trust me, you don't want to forget where that one red wire went.
+<div class="image-row">
+  <img src="../../assets/projects/esp32-arduino-smart-inverter/original_controller.jpg" alt="Controller PCB" />
+  <img src="../../assets/projects/esp32-arduino-smart-inverter/inverter_internals_2.jpg" alt="Core Baseboard" />
+</div>
 
-## Reverse Engineering the Brain
-Then came the deep dive. I identified the original controller as a **Texas Instruments TMS320 F280x** DSP microcontroller, which single-handedly managed everything.
+## Strategy
+I decided to keep the Baseboard **exactly as it is** and not modify it. My goal was to only redesign and replace the **Controller PCB**. 
 
-![Original Controller](../../assets/projects/esp32-arduino-smart-inverter/original_controller.jpg)
+By doing this, I would be able to universalize the design. Since most inverters in the Luminous series follow a nearly identical schematic for the baseboard (with only minor changes), my new smart controller could theoretically be plugged into almost any of their models, and it would work with no surprises.
 
-It was a "dumb" inverter indeed, and the design felt like a lesson in planned obsolescence. Every calibration and error parameter was hardcoded into the design, with zero potentiometers or headers for customization.
+## Disassembly
+I started by completely tearing down the inverter, carefully disassembling every single part and removing every single connector. There was a 1cm thick layer of dust accumulated over years due to non-maintanance (typical of old inverters), so the first step was cleaning it up.
 
-I also found the H-bridge controller, an **S72295** full-bridge driver IC, which worked in conjunction with the DSP.
 
-![H-bridge controller](../../assets/projects/esp32-arduino-smart-inverter/hbridge_controller.jpg)
+## Original Components
+
+<div class="text-media-row">
+    <div class="text-content">
+        <p>As i told before, the original controller is a <strong>Texas Instruments TMS320 F280x</strong> DSP microcontroller, which manages everything.</p>
+        <p>It was a "dumb" inverter indeed, and the design felt like a lesson in planned obsolescence. Every calibration and error parameter was hardcoded into the design, with zero potentiometers or headers for customization.</p>
+    </div>
+    <img src="../../assets/projects/esp32-arduino-smart-inverter/original_controller.jpg" alt="Original Controller" />
+</div>
+
+<div class="text-media-row">
+    <div class="text-content">
+        <p>I also found the high-voltage driver section. The H-bridge controller, an <strong>S72295</strong> full-bridge driver IC, worked in tight conjunction with the DSP to manage the power switching.
+        It directly takes 4 signals for the H bridge, and drives the mosfets in a bootstrap configuration.</p>
+    </div>
+    <img src="../../assets/projects/esp32-arduino-smart-inverter/hbridge_controller.jpg" alt="H-bridge controller" />
+</div>
 
 ## Tracing the Lines
 To figure out how it all connected, I grabbed a pen, paper, multimeter, and a flashlight. By shining the flashlight distinctively under (or above) the PCB, I could see the traces clearly through the board. This made reverse engineering the schematic significantly easier.
 
 I am still working on completing the full schematic, but I have fully mapped out the header pinout.
 
-![Header Pinout and PCB Traces](../../assets/projects/esp32-arduino-smart-inverter/traces_header.jpg)
+<div class="image-row">
+  <img src="../../assets/projects/esp32-arduino-smart-inverter/traces_header.jpg" alt="PCB Traces" />
+  <img src="../../assets/projects/esp32-arduino-smart-inverter/pinout.png" alt="Header Pinout" />
+</div>
 
 ## Initial Testing
-Before modifying anything, I powered it up and probed the board to map out where the key voltages were present. I logged every reading and observation into Google Keep—my second brain for these projects.
+Before modifying anything, I powered it up. I then traced the PCB and noted down, at which pins what voltages are present. This led me to get an idea of how the inverter works.
 
 ---
 
-## Building the Hardware
-Connecting the ESP32 was mostly straightforward, but I had to be careful with the voltage levels. The ESP32 is a 3.3V device, but the inverter runs on a car battery (12V).
+## Design Phase 1: Charging Control (The Scary Part)
+This was the first technical topic I took charge of, because it was the most crucial. While being the case, it was also the easiest to mess up.
 
-### Wiring the Brain
-I used specific GPIO pins to avoid conflicts with the boot process.
-*   **Relays on GPIO 4 & 5:** These control the main power.
-*   **Sensors on GPIO 34 & 35:** These are input-only pins, perfect for analog sensors.
+This phase was genuinely dangerous because it involved messing with direct **230V AC**. I was connecting a lead-acid battery directly to the mains via my circuit. If I messed something up in the code—or accidentally set the duty cycle to 100%, it wouldn't just be an "oops." It would be catastrophic. It could either short the MOSFETs due to overcurrent or overcharge the battery, completely destroying it (and potentially my desk).
 
-### The Power Challenge
-Since the battery can go up to 14.4V while charging, and the ESP32 can only handle 3.3V, I built a voltage divider.
-`Vout = Vin * (R2 / (R1 + R2))`
-Using a 47kΩ and 12kΩ resistor gave me a safe measurement range up to 15V. For powering the board itself, the buck converter steps the 12V down to a stable 5V.
+## How it Works: Buck-Shunting 
+The inverter utilizes a topology known as the **Buck-Shunting Charge Method**. It sounds complex, but here's the technicalities:
 
-### Wired for Safety
-I didn't want to fry anything, so I added:
-*   **Optocouplers** on the relay module to isolate the high-voltage switching from the microcontroller.
-*   **Fuses** on the main input line.
-*   **Decoupling capacitors** to filter out electrical noise.
+In this setup, the transformer's primary winding (which has fewer turns) is actually used as an inductor. The secondary winding is connected to the Main AC input supply. Power is transferred from the secondary to the primary, using the transformer's **leakage inductance flux**. This energy is rectified through the H-bridge and then is used to charge the battery.
 
----
+video
 
-## Writing the Firmware
-I wrote the firmware using the **Arduino IDE**. Instead of a single monolithic file, I structured the code into specific tasks:
-1.  **Keep Connected:** The ESP32 constantly checks WiFi. If it drops, it reconnects automatically.
-2.  **Read & Report:** Every 2 seconds, it reads the voltage, current, and temperature, then pushes that data to Blynk.
-3.  **Listen:** It listens for command packets from the app (like "Turn OFF") and triggers the relays immediately.
+## The "Don't Blow It Up" Rules
+The key to getting this right is precise control. By controlling the **gate pulses**—specifically their frequency and duty cycle—we can regulate the charging voltage.
 
-### Key Logic Snippets
-The core logic revolves around specific tasks. For example, here is how the system checks the battery level and decides if it needs to shut down:
+We need a proper frequency matrix to ensure the transformer core does **not saturate**. If the core saturates, the inductance drops to near zero, causing a dead short and blowing up the power stage instantly. Not fun.
 
-```cpp
-void checkBatteryLevel() {
-  float voltage = readBatteryVoltage();
-  
-  // Auto-shutdown if critical
-  if (voltage < 10.8 && inverterStatus) {
-    setInverterState(false);
-    Blynk.logEvent("low_battery", "Critical Battery: Inverter Shutdown");
-  } 
-}
-```
-This simple check runs every few seconds and has already saved my battery from deep discharge twice!
+## Prototyping with STM32
+To safely develop and test this charging logic, I utilized an **STM32's timer peripheral**. 
+I used it to create identical gate pulses for 2 outputs, giving me fine-grained control over variable frequency and duty cycle.
 
-## The Dashboard
-I didn't want to spend weeks building a custom app, so I used the **Blynk IoT platform**. It gave me a professional-looking dashboard where I can:
-*   See the battery voltage in real-time.
-*   Get push notifications if the system overheats.
-*   Turn the inverter ON/OFF from anywhere in the world.
+*Fun fact: This was actually a sub-project from my internship work that was going on side-by-side. I implemented that logic here for my convenience!*
 
-![Blynk Dashboard](../../assets/projects/esp32-arduino-smart-inverter/blynk_dashboard.jpg)
+## [Placeholder] Design Phase 2: The Controller PCB
+(Content to be added)
 
-## Challenges & Solutions
+## [Placeholder] Component Selection
+(Content to be added)
 
-### 1. The Voltage Divider Headache
-Getting accurate voltage readings was harder than I expected. My first voltage divider circuit was affecting the measurements because of high impedance. I had to lower the resistor values and add a capacitor to smooth out the noise.
+## [Placeholder] Power Regulation
+(Content to be added)
 
-### 2. Noisy Current Readings
-The inverter creates a lot of electrical noise when it switches. My current sensor was picking up all this interference, showing ghost currents even when nothing was running. I solved this by moving the sensor further away and adding a software filter to average out the spikes.
+## [Placeholder] Firmware Architecture
+(Content to be added)
 
-## What's Next?
-Right now, the system works great for monitoring. In the future, I want to add:
-*   **Solar Integration:** To see how much power my solar panels are generating.
-*   **Voice Control:** "Alexa, turn on the inverter" would be pretty cool.
-*   **Data Logging:** Saving long-term data to SD card to track battery health over months.
+## [Placeholder] Inverter Mode Logic
+(Content to be added)
 
-This project took my dumb inverter and made it a smart member of my home. Its reliability has been a game changer for my daily life.
+## [Placeholder] Integration & Enclosure
+(Content to be added)
 
-
+## [Placeholder] Conclusion
+(Content to be added)
