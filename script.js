@@ -347,7 +347,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (tocLinks.length === 0 || targets.length === 0) return;
 
+        let isClickScrolling = false;
+        let clickScrollTimeout;
+
+        // Add click listeners to handle manual clicks gracefully
+        tocLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                // 1. Set clicked link as active immediately
+                tocLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+
+                // 2. set Lock
+                isClickScrolling = true;
+                if (clickScrollTimeout) clearTimeout(clickScrollTimeout);
+
+                // 3. Release lock after animation (approx 1000ms)
+                clickScrollTimeout = setTimeout(() => {
+                    isClickScrolling = false;
+                    // Optional: force one check to sync up
+                    onScroll();
+                }, 1000);
+            });
+        });
+
         const onScroll = () => {
+            if (isClickScrolling) return; // Skip update if we are scrolling via click
+
             let currentId = '';
 
             // Highlight the last target that has passed the top threshold
@@ -368,8 +393,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // If we are at the very top, highlight the first one or logic's default
             if (window.scrollY < 100 && targets.length > 0) {
-                // Option: currentId = targets[0].getAttribute('id'); 
-                // We let the loop logic decide, or force the first one if preferred.
+                // currentId = targets[0].getAttribute('id');
             }
 
             tocLinks.forEach(link => {
@@ -384,6 +408,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     const sidebar = link.closest('.toc-list') || link.closest('.article-sidebar');
 
                     if (sidebar) {
+                        // Don't auto-scroll the sidebar if the user is currently interacting with it (hovering)
+                        if (sidebar.matches(':hover')) return;
+
                         const linkTop = link.offsetTop;
                         const sidebarScroll = sidebar.scrollTop;
                         const sidebarHeight = sidebar.clientHeight;

@@ -222,6 +222,8 @@
     padding-right: var(--space-12);
     flex: 1;
     min-height: 0;
+    overscroll-behavior: contain;
+    /* Prevent parent scroll chaining */
 }
 
 @media (max-width: 768px) {
@@ -294,7 +296,7 @@
 .article-content h2 {
     font-size: var(--font-size-2xl);
     font-weight: 700;
-    margin-top: var(--space-32);
+    margin-top: var(--space-8);
     margin-bottom: var(--space-16);
     color: var(--color-text);
     position: relative;
