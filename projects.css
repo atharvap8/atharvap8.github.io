@@ -1131,9 +1131,12 @@ pre code {
         margin-right: 0;
     }
 
-    .article-content .image-row img {
+    .article-content .image-row img,
+    .article-content .image-row video {
         width: 100%;
-        max-width: 400px;
+        max-width: 100%;
+        height: auto;
+        min-height: 250px;
     }
 }
 
