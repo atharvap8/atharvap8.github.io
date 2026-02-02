@@ -241,9 +241,10 @@ With this, the first final stable version of the project was completed. It's cur
 </video>
 
 ## Documentation & Resources
-The whole code is pushed onto [github](https://github.com/atharvap8/ESP32-Arduino-Smart-Inverter).
+The whole code is pushed onto [GitHub](https://github.com/atharvap8/ESP32-Arduino-Smart-Inverter).
+Also, check out the [Google Photos Album](https://photos.google.com/share/AF1QipOBTHJAe6zSrLyciP8L-e7AwJjdcvRkaBmderQ8hpyzRjePU28LkhxMb19h4JBkMg?key=OThYb3ZLT3pZOE9HVUZGb2wyRlFuZUZReEJoYlRn) for more behind-the-scenes shots.
 
-In the github Repo, you'll find a folder called docs, where there are 5 files:
+In the GitHub Repo, you'll find a folder called docs, where there are 5 files:
 
 - **css-structure.txt**: Explains the stylesheet architecture and class naming conventions for the web dashboard.
 - **dataflow-structure.txt**: Details the complete data path from hardware sensors through the ESP32 to the web interface.
