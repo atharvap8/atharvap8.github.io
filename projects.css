@@ -639,7 +639,49 @@ pre code {
     opacity: 1;
     transform: translateY(0);
     transition: opacity 0.5s ease 0.6s, transform 0.5s ease 0.6s;
+    transition: opacity 0.5s ease 0.6s, transform 0.5s ease 0.6s;
     /* Appear after bg starts */
+}
+
+/* Markdown Table Styling */
+.article-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--space-32) 0;
+    font-size: 15px;
+    background: rgba(var(--color-surface-rgb), 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    /* For border-radius */
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+}
+
+.article-content th,
+.article-content td {
+    padding: var(--space-12) var(--space-16);
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: middle;
+}
+
+.article-content th {
+    background: rgba(var(--color-primary-rgb), 0.1);
+    color: var(--color-primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid rgba(var(--color-primary-rgb), 0.2);
+}
+
+.article-content tr:last-child td {
+    border-bottom: none;
+}
+
+.article-content tr:hover td {
+    background: rgba(var(--color-primary-rgb), 0.05);
 }
 
 /* Parallax Hero Styles - Jesko Style */
