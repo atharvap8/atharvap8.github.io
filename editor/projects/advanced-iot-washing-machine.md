@@ -1,6 +1,6 @@
 
 ## 📘 Introduction
-This project chronicles the transformation of a non-functional LG fully automatic washing machine into a modern, intelligent, and voice-controlled appliance using ESP32 microcontroller, relays, sensors, and Alexa integration. The machine’s original controller PCB had failed, providing an opportunity to take full control of the machine’s sophisticated components and create a customisable system from the ground up.
+This project documents the transformation of a non-functional LG fully automatic washing machine into a modern, intelligent, and voice-controlled appliance using ESP32 microcontroller, relays, sensors, and Alexa integration. The machine’s original controller PCB had failed, providing an opportunity to take full control of the machine’s sophisticated components and create a customisable system from the ground up.
 
 ## 🎯 Background & Motivation
 After the machine’s original controller board went haywire, instead of discarding it, I saw the opportunity to understand and reengineer the device. With full access to all internal components (motor, valves, sensors), this project became an intensive 1-year journey through reverse engineering, signal probing, embedded firmware design, IoT integration, mechanical testing, and finally full automation.
