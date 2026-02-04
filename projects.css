@@ -1,25 +1,22 @@
-/* Article / Project Detail Layout Refinements */
-
+/* Layout Variables */
 :root {
     --article-max-width: 1100px;
     --content-max-width: 720px;
     --sidebar-width: 240px;
-    /* Reduced from 240px */
 }
 
+/* Article Container */
 .article-container {
     padding-top: 0;
-    /* Dynamic Clearance */
     padding-bottom: var(--space-64);
     max-width: 100%;
-    /* Full width */
     width: 100%;
     margin: 0;
     padding-left: clamp(var(--space-16), 5vw, var(--space-40));
     padding-right: clamp(var(--space-16), 5vw, var(--space-40));
 }
 
-/* Back Link Styling */
+/* Back Link */
 .back-link-container {
     margin-bottom: var(--space-24);
 }
@@ -37,12 +34,10 @@
     color: var(--color-primary);
 }
 
-/* Article Hero / Header */
+/* Article Header */
 .article-header {
     margin-top: var(--space-32);
-    /* Extra space after back-link */
     margin-bottom: var(--space-48);
-    /* Reduced for more direct feel, but increasing gap below title */
     text-align: left;
 }
 
@@ -51,7 +46,6 @@
     font-weight: 850;
     line-height: 0.95;
     margin-bottom: var(--space-64);
-    /* Increased from var(--space-40) */
     color: var(--color-text);
     letter-spacing: -0.05em;
     text-wrap: balance;
@@ -61,11 +55,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-16);
-    /* Increased from var(--space-12) */
     justify-content: flex-start;
-    /* Explicit Left Align */
     margin-bottom: var(--space-48);
-    /* Increased from var(--space-32) */
 }
 
 .article-meta-item {
@@ -103,12 +94,9 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--space-16);
-    /* Drastically reduced from 48px */
 }
 
 @media (min-width: 769px) {
-
-    /* Synchronized with global breakpoint + 1px */
     .article-grid {
         grid-template-columns: var(--sidebar-width) 1fr;
         align-items: start;
@@ -123,24 +111,18 @@
         content: '';
         position: absolute;
         top: 5vh;
-        /* Start slightly down */
         height: 70vh;
-        /* Fixed height relative to viewport for the sticky container */
         right: 0;
         width: 1px;
-        background: linear-gradient(to bottom,
-                transparent,
-                var(--color-primary),
-                transparent);
+        background: linear-gradient(to bottom, transparent, var(--color-primary), transparent);
         opacity: 0.3;
     }
 }
 
-/* Sidebar / TOC */
+/* Sidebar */
 .article-sidebar {
     position: sticky;
     top: 100px;
-    /* Increased to clear the fixed Back button */
     max-height: calc(100vh - 120px);
     z-index: 10;
     display: flex;
@@ -185,9 +167,7 @@
     color: var(--color-text);
     margin-bottom: var(--space-16);
     opacity: 0;
-    /* Hidden initially */
     transform: translateY(20px);
-    /* Pushed down */
     transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -223,7 +203,6 @@
     flex: 1;
     min-height: 0;
     overscroll-behavior: contain;
-    /* Prevent parent scroll chaining */
 }
 
 @media (max-width: 768px) {
@@ -237,7 +216,6 @@
         padding: var(--space-6) var(--space-14) !important;
         border: 1px solid var(--border-color) !important;
         border-radius: var(--radius-full) !important;
-        /* Pills look better */
         background: var(--color-surface);
     }
 }
@@ -245,15 +223,11 @@
 .toc-link {
     display: block;
     font-family: var(--font-family-base);
-    /* Comfortaa */
     font-size: 15px;
-    /* Increased */
     color: var(--color-text-secondary);
     text-decoration: none;
     padding: 6px 0 6px 12px;
-    /* Reduced from 16px */
     border-left: 1px solid var(--color-border);
-    /* Thinner border */
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 1.4;
     position: relative;
@@ -276,10 +250,7 @@
     opacity: 1;
     background: linear-gradient(90deg, rgba(var(--color-primary-rgb), 0.15), transparent);
     padding-left: 12px;
-    /* Add visual spacing */
 }
-
-/* Removed redundant pseudo-element bar */
 
 /* Content Typography */
 .article-content {
@@ -289,10 +260,9 @@
 .article-content section {
     margin-bottom: var(--space-32);
     scroll-margin-top: 100px;
-    /* For better jump navigation */
 }
 
-/* Revamped Article Headers */
+/* Article Headers */
 .article-content h2 {
     font-size: var(--font-size-2xl);
     font-weight: 700;
@@ -303,7 +273,6 @@
     display: inline-block;
     padding-bottom: var(--space-8);
     background: linear-gradient(to right, #22d3ee, #2dd4bf);
-    /* Cyan to Teal */
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -351,10 +320,9 @@
     margin-bottom: var(--space-20);
     color: var(--color-text);
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
-    /* Subtle pop */
 }
 
-/* Futuristic Lists */
+/* Lists */
 .article-content ul {
     margin-bottom: var(--space-20);
     padding-left: var(--space-16);
@@ -369,7 +337,6 @@
 
 .article-content li::before {
     content: '•';
-    /* Bullet point */
     position: absolute;
     left: 0;
     color: var(--color-primary);
@@ -379,7 +346,7 @@
     top: -2px;
 }
 
-/* Glassmorphism Blockquote */
+/* Blockquote */
 .article-content blockquote {
     position: relative;
     border-left: 2px solid var(--color-primary);
@@ -393,9 +360,7 @@
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.05);
-    /* Top/Right/Bottom subtle border */
     border-left-width: 4px;
-    /* Strong left accent */
 }
 
 .article-content blockquote::before {
@@ -592,10 +557,8 @@ pre code {
     opacity: 1;
     visibility: visible;
     background: rgba(0, 0, 0, 0.7);
-    /* Deep dim */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    /* Delay background and blur until after zoom (0.5s) */
     transition:
         opacity 0.1s ease,
         visibility 0s,
@@ -609,7 +572,6 @@ pre code {
     border-radius: var(--radius-lg);
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
     transform: scale(0.4);
-    /* Start small/far */
     opacity: 0;
     transition: transform 0.4s ease-in, opacity 0.3s;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -617,7 +579,6 @@ pre code {
 
 .image-lightbox.active .lightbox-img {
     transform: scale(1);
-    /* Zoom to user */
     opacity: 1;
     transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.3s;
 }
@@ -639,8 +600,6 @@ pre code {
     opacity: 1;
     transform: translateY(0);
     transition: opacity 0.5s ease 0.6s, transform 0.5s ease 0.6s;
-    transition: opacity 0.5s ease 0.6s, transform 0.5s ease 0.6s;
-    /* Appear after bg starts */
 }
 
 /* Markdown Table Styling */
@@ -684,25 +643,21 @@ pre code {
     background: rgba(var(--color-primary-rgb), 0.05);
 }
 
-/* Parallax Hero Styles - Jesko Style */
+/* Parallax Hero */
 .parallax-hero {
     position: relative;
     width: 100vw;
     margin-left: calc(50% - 50vw);
     height: 90vh;
-    /* Taller hero */
     min-height: 500px;
     overflow: hidden;
     display: flex;
     align-items: flex-end;
-    /* Position content toward bottom */
     padding-bottom: 15vh;
     margin-bottom: var(--space-48);
-    /* Initial State */
     border-radius: 0 0 var(--radius-lg) var(--radius-lg);
     box-shadow: var(--shadow-xl);
     transform-origin: center top;
-    /* Scale from top */
     will-change: transform, border-radius, width;
 }
 
@@ -712,11 +667,9 @@ pre code {
     left: 0;
     width: 100%;
     height: 120%;
-    /* visual bleed for parallax */
     top: -10%;
     background-size: cover;
     background-position: center;
-    /* background-attachment: fixed; Removed for smoother JS parallax */
     z-index: 1;
     filter: brightness(0.6) blur(0px);
     transition: filter 0.5s ease;
@@ -749,7 +702,6 @@ pre code {
     margin-bottom: var(--space-16);
     opacity: 0.95;
     font-size: clamp(2.5rem, 5vw, 4rem);
-    /* Reduced size */
     text-wrap: balance;
     animation: fadeIn 0.8s ease-out forwards;
 }
@@ -765,14 +717,12 @@ pre code {
     animation: slideInFromLeft 0.8s ease-out 0.2s forwards;
     opacity: 0;
     transform: translateX(-3em);
-    /* Start from under the first letter of title, not extreme edge */
 }
 
 @keyframes slideInFromLeft {
     from {
         opacity: 0;
         transform: translateX(-3em);
-        /* Relative offset, aligning with title's first letter */
     }
 
     to {
@@ -789,13 +739,12 @@ pre code {
 }
 
 
-/* Fixed Back Button Styling */
+/* Fixed Back Button */
 .back-link-container {
     position: fixed;
     top: 2rem;
     left: 2rem;
     z-index: 1002;
-    /* Above Hero (1000) and Nav (1000) */
     margin: 0;
     padding: 0;
 }

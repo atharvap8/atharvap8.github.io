@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <!-- Navigation Header -->
+    <!-- Header -->
     <header class="header">
         <div class="header-container">
             <nav class="nav-menu">
@@ -70,7 +70,7 @@
                     <div class="sidebar-project-title" id="sidebarTitle">...</div>
                     <div class="toc-title">On This Page</div>
                     <ul class="toc-list" id="tocList">
-                        <!-- TOC Items will be injected here -->
+                        <!-- TOC injected here -->
                     </ul>
                 </aside>
 
@@ -84,11 +84,11 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2025 Atharva. Built with passion for embedded systems and IoT.</p>
+            <p>&copy; 2025 Atharva Phadke. All rights reserved.</p>
             <div class="footer-links">
                 <a href="https://github.com/atharvap8">GitHub</a>
-                <a href="https://linkedin.com">LinkedIn</a>
-                <a href="mailto:atharva@example.com">Email</a>
+                <a href="https://linkedin.com/in/atharvap8">LinkedIn</a>
+                <a href="mailto:atharvaphadke8@gmail.com">Email</a>
             </div>
         </div>
     </footer>
@@ -100,10 +100,10 @@
     <script src="../../script.js"></script>
     <script src="../../parallax.js"></script>
 
-    <!-- Page Specific Logic -->
+    <!-- Page Logic -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // 1. Get Blog ID from URL (e.g., view.html?id=study-of-resistors)
+            // 1. Get Blog ID
             const urlParams = new URLSearchParams(window.location.search);
             const blogId = urlParams.get('id');
 

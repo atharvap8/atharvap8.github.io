@@ -1,5 +1,5 @@
 :root {
-    /* Premium Futuristic Palette */
+    /* Color Palette */
     --premium-bg: #030712;
     --premium-surface: #0f172a;
     --premium-card: #1e293b;
@@ -10,7 +10,7 @@
     --premium-text-muted: #94a3b8;
     --premium-border: rgba(226, 232, 240, 0.1);
 
-    /* Semantic Color Mapping - Dark Mode Default */
+    /* Semantic Colors - Dark Default */
     --color-background: var(--premium-bg);
     --color-surface: var(--premium-surface);
     --color-text: var(--premium-text);
@@ -24,14 +24,14 @@
     --color-card-border: var(--premium-border);
     --color-card-border-inner: rgba(255, 255, 255, 0.05);
 
-    /* Preserving variables for article.css compatibility */
+    /* Article Compatibility */
     --color-slate-500-rgb: 148, 163, 184;
     --color-teal-500-rgb: 56, 189, 248;
     --color-teal-300-rgb: 125, 211, 252;
     --color-red-500-rgb: 239, 68, 68;
     --color-orange-500-rgb: 249, 115, 22;
 
-    /* Typography - Premium Stack */
+    /* Typography */
     --font-family-base: "Comfortaa", "Outfit", "Segoe UI", sans-serif;
     --font-family-mono: "Space Mono", monospace;
     --font-heading: "Comfortaa", var(--font-family-base);
@@ -49,7 +49,7 @@
     --font-size-6xl: 96px;
     --font-size-7xl: 128px;
 
-    /* Spacing & Layout */
+    /* Spacing */
     --space-1: 2px;
     --space-4: 4px;
     --space-6: 6px;
@@ -65,6 +65,7 @@
     --space-48: 48px;
     --space-64: 64px;
 
+    /* Border Radius */
     --radius-sm: 6px;
     --radius-md: 16px;
     --radius-base: 12px;
@@ -72,7 +73,7 @@
     --radius-2xl: 32px;
     --radius-full: 9999px;
 
-    /* Semantic Typography */
+    /* Font Weights & Heights */
     --line-height-tight: 1.25;
     --line-height-normal: 1.6;
     --font-weight-medium: 500;
@@ -85,14 +86,13 @@
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
     --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 
-    /* Container Dimensions */
+    /* Containers */
     --container-sm: 640px;
     --container-md: 768px;
     --container-lg: 1024px;
     --container-xl: 1400px;
-    /* Increased for wider profile match */
 
-    /* Sophisticated Animation */
+    /* Animations */
     --duration-fast: 0.2s;
     --duration-normal: 0.6s;
     --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
@@ -101,7 +101,7 @@
 }
 
 
-/* ==================== Global Reset & Typography ==================== */
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
@@ -138,7 +138,7 @@ a {
     transition: var(--transition);
 }
 
-/* ==================== Ambient Background ==================== */
+/* Ambient Background */
 .ambient-bg {
     position: fixed;
     top: 0;
@@ -160,7 +160,7 @@ a {
     pointer-events: none;
 }
 
-/* ==================== Header & Navigation ==================== */
+/* Header & Navigation */
 .header {
     font-family: 'Outfit', sans-serif;
     position: fixed;
@@ -177,11 +177,9 @@ a {
     backdrop-filter: blur(40px);
     border: 1px solid var(--premium-border);
     border-right: none;
-    /* Open end mouth look */
     border-radius: 40px 0 0 40px;
     transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: -20px 20px 60px rgba(0, 0, 0, 0.7);
-    /* Slide-in animation on page load */
     animation: headerSlideIn 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
@@ -197,17 +195,10 @@ a {
     }
 }
 
-/* .header.scrolled {
-    top: 1.5rem;
-    background: rgba(3, 7, 18, 0.95);
-    padding: 8px 0 8px 32px;
-} */
-
 .header-container {
     display: flex;
     align-items: center;
     padding-right: 24px;
-    /* Some padding for the last link */
 }
 
 
@@ -242,9 +233,7 @@ a {
     font-weight: var(--font-weight-medium);
     position: relative;
     overflow: hidden;
-    padding: 0;
-    padding-bottom: 8px;
-    /* Add gap between text and underline */
+    padding: 0 0 8px 0;
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s ease;
     font-family: 'Outfit', sans-serif;
     line-height: 1.2;
@@ -257,7 +246,7 @@ a {
     outline: none;
 }
 
-/* Prevent rendering artifacts */
+/* Rendering Optimizations */
 .nav-btn,
 .btn,
 .btn-primary {
@@ -270,17 +259,14 @@ a {
     content: '';
     position: absolute;
     bottom: 0;
-    /* Moved down from top due to padding */
     left: 0;
     width: 100%;
     height: 2px;
     background: var(--color-primary);
     opacity: 0;
-    /* Start invisible */
     transform: translate3d(-100%, 0, 0);
     transition: opacity 0.1s ease, transform 0.3s ease-out;
     transition-delay: 0.2s;
-    /* Wait 0.5s before animation starts */
 }
 
 .nav-btn:hover {
@@ -290,39 +276,29 @@ a {
 .nav-btn:hover::after,
 .nav-btn.active::after {
     opacity: 1;
-    /* Fade in after 0.5s delay */
     transform: translate3d(0, 0, 0);
-    /* Slide in from left */
 }
 
 
 /* Data attribute for manual theme switching */
+/* Dark Mode Theme */
 [data-color-scheme="dark"] {
-    /* RGB versions for opacity control (dark mode) */
     --color-gray-400-rgb: 119, 124, 124;
     --color-teal-300-rgb: 50, 184, 198;
     --color-gray-300-rgb: 167, 169, 169;
     --color-gray-200-rgb: 245, 245, 245;
 
-    /* Colorful background palette - Dark Mode */
+    /* Background Palette */
     --color-bg-1: rgba(29, 78, 216, 0.15);
-    /* Dark blue */
     --color-bg-2: rgba(180, 83, 9, 0.15);
-    /* Dark yellow */
     --color-bg-3: rgba(21, 128, 61, 0.15);
-    /* Dark green */
     --color-bg-4: rgba(185, 28, 28, 0.15);
-    /* Dark red */
     --color-bg-5: rgba(107, 33, 168, 0.15);
-    /* Dark purple */
     --color-bg-6: rgba(194, 65, 12, 0.15);
-    /* Dark orange */
     --color-bg-7: rgba(190, 24, 93, 0.15);
-    /* Dark pink */
     --color-bg-8: rgba(8, 145, 178, 0.15);
-    /* Dark cyan */
 
-    /* Semantic Color Tokens (Dark Mode) */
+    /* Semantic Tokens */
     --color-background: var(--color-charcoal-700);
     --color-surface: var(--color-charcoal-800);
     --color-text: var(--color-gray-200);
@@ -347,7 +323,7 @@ a {
     --color-border-secondary: rgba(var(--color-gray-400-rgb), 0.2);
     --color-select-caret: rgba(var(--color-gray-200-rgb), 0.8);
 
-    /* Common style patterns - updated for dark mode */
+    /* UI Patterns */
     --focus-ring: 0 0 0 3px var(--color-focus-ring);
     --focus-outline: 2px solid var(--color-primary);
     --status-bg-opacity: 0.15;
@@ -355,20 +331,20 @@ a {
     --select-caret-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23134252' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
     --select-caret-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23f5f5f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
 
-    /* RGB versions for dark mode */
+    /* Status Colors (RGB) */
     --color-success-rgb: var(--color-teal-300-rgb);
     --color-error-rgb: var(--color-red-400-rgb);
     --color-warning-rgb: var(--color-orange-400-rgb);
     --color-info-rgb: var(--color-gray-300-rgb);
 }
 
+/* Light Mode Theme */
 [data-color-scheme="light"] {
-    /* RGB versions for opacity control (light mode) */
     --color-brown-600-rgb: 94, 82, 64;
     --color-teal-500-rgb: 33, 128, 141;
     --color-slate-900-rgb: 19, 52, 59;
 
-    /* Semantic Color Tokens (Light Mode) */
+    /* Semantic Tokens */
     --color-background: var(--color-cream-50);
     --color-surface: var(--color-cream-100);
     --color-text: var(--color-slate-900);
@@ -389,14 +365,14 @@ a {
     --color-info: var(--color-slate-500);
     --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
 
-    /* RGB versions for light mode */
+    /* Status Colors (RGB) */
     --color-success-rgb: var(--color-teal-500-rgb);
     --color-error-rgb: var(--color-red-500-rgb);
     --color-warning-rgb: var(--color-orange-500-rgb);
     --color-info-rgb: var(--color-slate-500-rgb);
 }
 
-/* Base styles */
+/* Base Styles (Legacy Overrides) */
 html {
     font-size: var(--font-size-base);
     font-family: var(--font-family-base);
@@ -418,7 +394,7 @@ body {
     box-sizing: inherit;
 }
 
-/* Typography */
+/* Typography Utilities */
 h1,
 h2,
 h3,
@@ -469,6 +445,7 @@ a {
 a:hover {
     color: var(--color-primary-hover);
 }
+
 
 code,
 pre {
@@ -573,7 +550,7 @@ pre code {
     cursor: not-allowed;
 }
 
-/* Form elements */
+/* Forms */
 .form-control {
     display: block;
     width: 100%;
@@ -605,14 +582,14 @@ select.form-control {
     padding-right: var(--space-32);
 }
 
-/* Add a dark mode specific caret */
+/* Dark Mode Form Accents */
 @media (prefers-color-scheme: dark) {
     select.form-control {
         background-image: var(--select-caret-dark);
     }
 }
 
-/* Also handle data-color-scheme */
+/* Manual Theme Overrides */
 [data-color-scheme="dark"] select.form-control {
     background-image: var(--select-caret-dark);
 }
@@ -637,7 +614,7 @@ select.form-control {
     margin-bottom: var(--space-16);
 }
 
-/* Card component */
+/* Cards */
 .card {
     background-color: var(--color-surface);
     border-radius: var(--radius-lg);
@@ -661,7 +638,7 @@ select.form-control {
     border-bottom: 1px solid var(--color-card-border-inner);
 }
 
-/* Status indicators - simplified with CSS variables */
+/* Status Indicators */
 .status {
     display: inline-flex;
     align-items: center;
@@ -732,7 +709,7 @@ select.form-control {
     }
 }
 
-/* Utility classes */
+/* Layout Utilities */
 .flex {
     display: flex;
 }
@@ -753,6 +730,7 @@ select.form-control {
     justify-content: space-between;
 }
 
+/* Spacing Utilities */
 .gap-4 {
     gap: var(--space-4);
 }
@@ -811,6 +789,7 @@ select.form-control {
     padding-right: var(--space-16);
 }
 
+/* Display Utilities */
 .block {
     display: block;
 }
@@ -819,7 +798,7 @@ select.form-control {
     display: none;
 }
 
-/* Accessibility */
+/* Accessibility Helpers */
 .sr-only {
     position: absolute;
     width: 1px;
@@ -837,7 +816,7 @@ select.form-control {
     outline-offset: 2px;
 }
 
-/* Dark mode specifics */
+/* Dark Mode Utilities */
 [data-color-scheme="dark"] .btn--outline {
     border: 1px solid var(--color-border-secondary);
 }
@@ -848,7 +827,7 @@ select.form-control {
 }
 
 
-/* ==================== Global Styles ==================== */
+/* Global Overrides & Variables */
 * {
     margin: 0;
     padding: 0;
@@ -885,7 +864,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ==================== Centralized Button Animations ==================== */
+/* Shared Animations */
 .btn,
 .back-link,
 .read-more,
@@ -916,7 +895,6 @@ body {
 .floating-card:hover {
     transform: scale(1.05) !important;
     background: rgba(255, 255, 255, 0.05);
-    /* Glass effect base */
     backdrop-filter: blur(4px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     z-index: 10;
@@ -925,17 +903,14 @@ body {
 
 .read-more:hover {
     color: var(--color-primary-hover);
-    /* Color change only, no transform */
 }
 
-/* Specific overrides for primary buttons to maintain visibility */
+/* Primary Button Overrides */
 .btn-primary:hover,
 .btn--primary:hover {
     background: var(--color-primary) !important;
-    /* Keep primary color but add scale/shadow */
     opacity: 0.9;
     box-shadow: 0 10px 20px rgba(56, 189, 248, 0.3);
-    /* Coloured shadow for primary */
 }
 
 /* ==================== Header Navigation ==================== */
@@ -986,16 +961,11 @@ body {
     transition: all var(--duration-normal) var(--ease-standard);
 }
 
-/* ==================== Main Content - FIXED VISIBILITY ==================== */
-.main-content {
-    width: 100%;
-}
-
+/* Section Layout */
 .section {
     width: 100%;
     min-height: auto;
     padding: 60px 32px 40px;
-    /* Aligned for better content density while keeping header clearance */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -1025,23 +995,21 @@ body {
     margin: 0 auto;
 }
 
+/* Section Headings */
 .section-title {
     font-size: var(--font-size-4xl);
     font-weight: var(--font-weight-bold);
     margin-bottom: calc(var(--space-16) * 3);
     text-align: left;
-    /* Left align */
     color: var(--color-primary);
     letter-spacing: var(--letter-spacing-tight);
     margin-right: 0;
-    /* Remove offset */
     padding-left: 0;
-    /* Align with container edge */
     width: 100%;
 }
 
 
-/* ==================== Hero Section ==================== */
+/* Hero Section */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -1121,6 +1089,7 @@ body {
     display: inline-block;
 }
 
+/* Rotating Words Animation */
 .word-rotate {
     display: inline-block;
     position: relative;
@@ -1220,7 +1189,7 @@ body {
     background: rgba(56, 189, 248, 0.1);
 }
 
-/* ==================== Hero Visual ==================== */
+/* Hero Visuals */
 .hero-visual {
     position: relative;
     height: 400px;
@@ -1301,7 +1270,6 @@ body {
     z-index: 10;
 }
 
-
 .card-inner {
     text-align: center;
     display: flex;
@@ -1340,7 +1308,7 @@ body {
     animation-delay: 2s;
 }
 
-/* ==================== Scroll Indicator ==================== */
+/* Scroll Components */
 .scroll-indicator {
     position: absolute;
     bottom: var(--space-32);
@@ -1372,13 +1340,13 @@ body {
     }
 }
 
-/* ==================== About Section ==================== */
+/* About Section */
+/* About Section */
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: calc(var(--space-32) * 2);
     align-items: center;
-    /* Center vertically if needed, or start */
     width: 100%;
 }
 
@@ -1404,9 +1372,7 @@ body {
     cursor: pointer;
     box-shadow: var(--shadow-xs);
     height: 100%;
-    /* Ensure equal height */
 }
-
 
 .skill-card h3 {
     color: var(--primary-color);
@@ -1420,10 +1386,10 @@ body {
     font-size: var(--font-size-sm);
 }
 
+/* Stats Block */
 .about-stats {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* 2x2 Grid */
     gap: var(--space-24);
     justify-content: center;
     width: 100%;
@@ -1432,9 +1398,7 @@ body {
 .stat-item {
     text-align: center;
     padding: var(--space-32);
-    /* Increase padding for consistent box size */
     background: var(--card-bg);
-    /* Use card bg for consistency */
     border: 1px solid var(--premium-border);
     border-radius: var(--radius-lg);
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border-color 0.4s ease;
@@ -1444,10 +1408,8 @@ body {
     justify-content: center;
     align-items: center;
     aspect-ratio: 1.2;
-    /* Enforce consistent shape, e.g. slightly rectangular or square */
     height: 100%;
 }
-
 
 .stat-number {
     display: block;
@@ -1464,9 +1426,7 @@ body {
     white-space: nowrap;
 }
 
-/* ==================== Hero Section ==================== */
-/* Consolidated Hero with Section above */
-
+/* Hero Refinements (Secondary Layout) */
 .hero-content {
     max-width: var(--container-xl);
     width: 100%;
@@ -1474,9 +1434,7 @@ body {
     grid-template-columns: 1.2fr 0.8fr;
     gap: var(--space-64);
     align-items: flex-start;
-    /* Start from the new 2rem baseline */
     padding-top: 2rem;
-    /* Additional breathing room for hero specific typography */
     z-index: 10;
 }
 
@@ -1503,7 +1461,7 @@ body {
     line-height: 1.7;
 }
 
-/* ==================== Hero Refinements ==================== */
+/* Visual Panel & Code styling */
 .hero-badge {
     display: inline-block;
     padding: var(--space-8) var(--space-16);
@@ -1598,6 +1556,7 @@ body {
     color: #34d399;
 }
 
+/* Glow Effects */
 .visual-glow {
     position: absolute;
     top: 50%;
@@ -1610,6 +1569,7 @@ body {
     pointer-events: none;
 }
 
+/* Secondary Button Styles */
 .hero-cta {
     display: flex;
     gap: var(--space-24);
@@ -1661,7 +1621,7 @@ body {
     border-color: var(--color-primary);
 }
 
-/* ==================== Circuit Matrix Animation ==================== */
+/* Circuit Matrix Animation */
 .hero-visual {
     position: relative;
     z-index: 10;
@@ -1672,7 +1632,6 @@ body {
     max-width: 500px;
     height: 380px;
     background: #0f172a;
-    /* Slate 900 */
     border: 1px solid rgba(56, 189, 248, 0.4);
     position: relative;
     overflow: hidden;
@@ -1713,9 +1672,7 @@ body {
     pointer-events: none;
 }
 
-/* ==================== Sections & Titles ==================== */
-/* Standardized padding handled above */
-
+/* Section Title Styles */
 .section-title {
     font-size: var(--font-size-3xl);
     text-align: left;
@@ -1723,7 +1680,6 @@ body {
     color: var(--color-text);
     position: relative;
     width: fit-content;
-    /* Sizing to content for dynamic underline */
 }
 
 .section-title::after {
@@ -1731,16 +1687,12 @@ body {
     position: absolute;
     bottom: -16px;
     left: 0;
-    /* Align left */
-    transform: none;
-    /* Remove center transform */
     width: 100%;
-    /* Dynamic full width */
     height: 2px;
     background: var(--color-primary);
 }
 
-/* ==================== Project & Blog Cards ==================== */
+/* Project & Blog Grids */
 .projects-grid,
 .blog-grid {
     display: grid;
@@ -1771,7 +1723,7 @@ body {
 }
 
 
-/* ==================== Premium Reveal Animations ==================== */
+/* Scroll Reveal Animations */
 .reveal-on-scroll {
     opacity: 0;
     transform: translateY(30px);
@@ -1784,7 +1736,6 @@ body {
     transform: translateY(0);
 }
 
-/* Specific delays for hero content */
 .hero-content>*:nth-child(1) {
     transition-delay: 0.1s;
 }
@@ -1802,6 +1753,7 @@ body {
 
 
 
+/* Project Item Details */
 .project-image {
     width: 100%;
     height: 140px;
@@ -1873,6 +1825,7 @@ body {
 
 /* Duplicates removed - using primary definition in layout section */
 
+/* Blog Card Styles */
 .blog-card {
     background: var(--premium-surface);
     border: 1px solid var(--premium-border);
@@ -1940,7 +1893,7 @@ body {
     color: var(--color-primary-hover);
 }
 
-/* ==================== Resume Section - Mosaic Layout ==================== */
+/* Resume Section - Mosaic Layout */
 .section-resume {
     background: linear-gradient(180deg, transparent 0%, rgba(56, 189, 248, 0.02) 50%, transparent 100%);
 }
@@ -1962,14 +1915,13 @@ body {
     display: none;
 }
 
-/* Mosaic Grid - True Asymmetric Bento */
+/* Mosaic Grid */
 .resume-mosaic {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: var(--space-20);
 }
 
-/* Row 1: Education (small 2/5) | Skills (large 3/5) */
 .resume-edu {
     grid-column: 1 / 3;
     grid-row: 1;
@@ -1980,7 +1932,6 @@ body {
     grid-row: 1;
 }
 
-/* Row 2: Experience (large 3/5) | Highlights (small 2/5) */
 .resume-exp {
     grid-column: 1 / 4;
     grid-row: 2;
@@ -2003,15 +1954,14 @@ body {
         grid-column: 1;
         grid-row: auto;
     }
+
+    .resume-skills .resume-card-header,
+    .resume-cert .resume-card-header {
+        justify-content: flex-end;
+    }
 }
 
-/* Right-align Skills and Highlights headers */
-.resume-skills .resume-card-header,
-.resume-cert .resume-card-header {
-    justify-content: flex-end;
-}
-
-/* Card Base - Compact */
+/* Resume Cards */
 .resume-card {
     background: rgba(15, 23, 42, 0.5);
     backdrop-filter: blur(16px);
@@ -2052,13 +2002,12 @@ body {
     text-align: left;
 }
 
-/* Right-align Skills and Highlights cards */
 .resume-skills .resume-card-body,
 .resume-cert .resume-card-body {
     text-align: right;
 }
 
-/* Compact Timeline - Default horizontal */
+/* Resume Timeline */
 .resume-card .timeline-item {
     display: flex;
     flex-direction: row;
@@ -2116,7 +2065,7 @@ body {
     margin: 0;
 }
 
-/* Skills Tags */
+/* Resume Skills & Highlights */
 .skills-tags {
     display: flex;
     flex-wrap: wrap;
@@ -2140,7 +2089,6 @@ body {
     border-color: rgba(56, 189, 248, 0.3);
 }
 
-/* Highlights */
 .highlight-list {
     display: flex;
     flex-direction: column;
@@ -2165,7 +2113,7 @@ body {
     font-weight: 700;
 }
 
-/* Keep old styles for backward compatibility */
+/* Resume Legacy Styles */
 .resume-content {
     max-width: 100%;
     margin: 0;
@@ -2189,23 +2137,19 @@ body {
     margin-top: calc(var(--space-16) * 3);
 }
 
-/* ==================== Contact Section ==================== */
+/* Contact Section */
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
-    /* Left side slightly smaller, Right side for form */
     gap: var(--space-64);
     width: 100%;
     max-width: 100%;
-    /* Full width to align with header */
     background: rgba(255, 255, 255, 0.03);
-    /* More transparent for glassmorphism */
     padding: var(--space-48);
     border-radius: var(--radius-2xl);
     border: 1px solid var(--premium-border);
     backdrop-filter: blur(40px);
     margin: 0;
-    /* Align left */
 }
 
 .contact-info p {
@@ -2214,13 +2158,11 @@ body {
     margin-bottom: var(--space-32);
     line-height: var(--line-height-normal);
     text-align: left;
-    /* Align text left as requested */
 }
 
 .contact-links {
     display: grid;
     grid-template-columns: 1fr;
-    /* Stack vertically */
     gap: var(--space-16);
     width: 100%;
     margin-bottom: 0;
@@ -2229,22 +2171,17 @@ body {
 .contact-link {
     display: flex;
     flex-direction: row;
-    /* Horizontal layout for rectangular button */
     align-items: center;
     justify-content: flex-start;
-    /* Left align content */
     gap: var(--space-24);
     color: var(--text-primary);
     text-decoration: none;
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border-color 0.4s ease;
     padding: var(--space-16) var(--space-32);
-    /* Rectangular padding */
     border-radius: var(--radius-lg);
-    /* Slightly less rounded */
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--premium-border);
     min-height: 80px;
-    /* Standard button height */
     text-align: left;
     width: 100%;
 }
@@ -2255,7 +2192,6 @@ body {
     align-items: center;
     justify-content: center;
     width: 32px;
-    /* Smaller icon */
     height: 32px;
     color: var(--primary-color);
     transition: transform var(--duration-normal) var(--ease-standard);
@@ -2265,7 +2201,6 @@ body {
 .contact-link span:not(.link-icon) {
     font-size: var(--font-size-sm);
     word-break: break-all;
-    /* Prevent overflow */
     font-weight: 500;
     line-height: 1.4;
 }
@@ -2287,26 +2222,22 @@ body {
     gap: var(--space-24);
 }
 
+/* Responsive Contact */
 @media (max-width: 900px) {
-
-    /* Breakpoint for 2-column layout */
     .contact-content {
         grid-template-columns: 1fr;
-        /* Stack on tablet/mobile */
         gap: var(--space-32);
         padding: var(--space-24);
     }
 
     .contact-links {
         grid-template-columns: 1fr;
-        /* Force stack on tablet/mobile too */
     }
 }
 
 @media (max-width: 768px) {
     .contact-links {
         grid-template-columns: 1fr;
-        /* Stack buttons on mobile */
     }
 
     .form-row {
@@ -2318,7 +2249,6 @@ body {
 .form-group {
     display: flex;
     width: 100%;
-    /* Ensure form groups take full width */
 }
 
 .contact-form input,
@@ -2347,7 +2277,7 @@ body {
     box-shadow: var(--focus-ring);
 }
 
-/* ==================== Footer ==================== */
+/* Footer */
 .footer {
     background: var(--color-surface);
     border-top: 1px solid var(--border-color);
@@ -2378,7 +2308,7 @@ body {
     color: var(--color-primary-hover);
 }
 
-/* ==================== Animations ==================== */
+/* Footer Animations */
 @keyframes glow {
 
     0%,
@@ -2403,7 +2333,7 @@ body {
     }
 }
 
-/* ==================== Responsive Design ==================== */
+/* Responsive Design */
 @media (max-width: 768px) {
     .header {
         top: 3rem;
@@ -2415,7 +2345,6 @@ body {
         animation: none;
         opacity: 1;
         background: rgba(3, 7, 18, 0.9);
-        /* Remove properties that create containing block for fixed children */
         backdrop-filter: none;
         transform: none;
         filter: none;
@@ -2440,7 +2369,6 @@ body {
         border-bottom: 1px solid var(--premium-border);
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
         z-index: 1001;
-        /* Hidden state */
         opacity: 0;
         transform: translateY(-20px);
         pointer-events: none;
@@ -2518,7 +2446,6 @@ body {
     .section-title {
         font-size: var(--font-size-3xl);
         margin-right: 0;
-        /* Center title on tablet as well */
         margin-bottom: var(--space-32);
     }
 
@@ -2546,7 +2473,6 @@ body {
 
     .skills-matrix {
         grid-template-columns: repeat(2, 1fr);
-        /* 2 columns on tablet */
         gap: var(--space-16);
     }
 }
@@ -2568,7 +2494,6 @@ body {
         font-size: var(--font-size-2xl);
         margin-bottom: var(--space-32);
         margin-right: 0;
-        /* No offset on mobile */
     }
 
     .hero {
@@ -2666,7 +2591,7 @@ body {
     }
 }
 
-/* ==================== Mobile Hero Layout Enhancements ==================== */
+/* Mobile Hero Layout */
 @media (max-width: 768px) {
     .hero {
         min-height: auto;
@@ -2787,7 +2712,7 @@ body {
 }
 
 
-/* ==================== About & Stats ==================== */
+/* About & Stats Overrides */
 .stat-item {
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid var(--premium-border);
@@ -2814,7 +2739,7 @@ body {
     font-variant-numeric: tabular-nums;
 }
 
-/* ==================== Resume Timeline ==================== */
+/* Resume Timeline Marker */
 .timeline-item {
     position: relative;
     padding-left: var(--space-48);
@@ -2841,9 +2766,7 @@ body {
     letter-spacing: 1px;
 }
 
-/* ==================== Contact Section ==================== */
-/* Merged with primary definition above */
-
+/* Contact Form Inputs */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -2856,7 +2779,6 @@ body {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--premium-border);
     padding: var(--space-12);
-    /* Reduced from 16 */
     border-radius: var(--radius-base);
     color: var(--color-text);
     font-family: var(--font-family-base);
@@ -2871,14 +2793,12 @@ body {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.1);
 }
 
-/* ==================== Footer ==================== */
+/* Footer Refined */
 .footer {
     padding: var(--space-24) 0;
-    /* Shrank from 64px */
     text-align: center;
     border-top: 1px solid var(--premium-border);
     margin-top: 60px;
-    /* Shrank from 120px */
 }
 
 .footer-links {
@@ -2896,7 +2816,7 @@ body {
 }
 
 
-/* ==================== Article & Project Detail Styles ==================== */
+/* Article & Project Detail Views */
 .blog-header {
     margin-bottom: var(--space-32);
     text-align: center;
@@ -2983,7 +2903,7 @@ body {
     font-size: var(--font-size-sm);
 }
 
-/* ==================== Project Specific Styles ==================== */
+/* Project Specific Placeholders */
 .project-image-placeholder {
     width: 100%;
     height: 160px;
@@ -3014,7 +2934,7 @@ body {
     font-weight: var(--font-weight-medium);
 }
 
-/* ==================== 404 Error Page Styles ==================== */
+/* 404 Error Page */
 .error-section {
     display: flex;
     align-items: center;
@@ -3062,13 +2982,12 @@ body {
     margin-bottom: var(--space-16);
 }
 
-/* ==================== 404 Page Styling ==================== */
+/* 404 Layout & Animation */
 .error-section {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Use transparent background to show ambient-bg if present, or fallback to theme bg */
     background: transparent;
     position: relative;
     overflow: hidden;
@@ -3112,7 +3031,7 @@ body {
     transform: scale(0.8);
 }
 
-/* Glowing border effect */
+/* Glowing Border Effect */
 .error-container::after {
     content: '';
     position: absolute;
@@ -3177,7 +3096,7 @@ body {
     line-height: 1.6;
 }
 
-/* Profile Image with Text Wrap */
+/* Profile Image circular */
 .profile-container {
     float: left;
     margin-right: 20px;
@@ -3219,7 +3138,7 @@ body {
         font-size: var(--font-size-sm);
     }
 
-    /* Stats 2x2 grid with left-aligned content */
+    /* Stats Grid Left Aligned */
     .about-stats {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -3243,7 +3162,7 @@ body {
         white-space: normal;
     }
 
-    /* Resume cards - left align all content on mobile */
+    /* Resume Layout Mobile */
     .resume-card-body,
     .resume-skills .resume-card-body,
     .resume-cert .resume-card-body {

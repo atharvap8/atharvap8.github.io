@@ -1,34 +1,30 @@
-// ==================== Navigation & Smooth Scrolling ====================
+// Navigation Logic
 const navButtons = document.querySelectorAll('.nav-btn');
 const sections = document.querySelectorAll('.section');
 const menuToggle = document.querySelector('.menu-toggle');
 
-// Smooth scroll to section
+// Smooth Scroll
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
     if (section) {
-        // Update active section
         sections.forEach(s => s.classList.remove('active'));
         section.classList.add('active');
 
-        // Scroll to section smoothly
         setTimeout(() => {
             section.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }, 50);
     }
 }
 
-// Nav button click handlers
+// Click Handlers
 navButtons.forEach(btn => {
     btn.addEventListener('click', () => {
         const sectionId = btn.getAttribute('data-section');
         scrollToSection(sectionId);
 
-        // Update nav button highlight
         navButtons.forEach(b => b.style.borderBottomColor = 'transparent');
         btn.style.borderBottomColor = 'var(--primary-color)';
 
-        // Close mobile menu after clicking a nav button
         const navMenu = document.querySelector('.nav-menu');
         if (navMenu && navMenu.classList.contains('active')) {
             navMenu.classList.remove('active');
@@ -36,18 +32,17 @@ navButtons.forEach(btn => {
     });
 });
 
-// Mobile menu toggle
+// Mobile Menu
 menuToggle.addEventListener('click', () => {
     const navMenu = document.querySelector('.nav-menu');
     navMenu.classList.toggle('active');
 });
 
-// ==================== Robust Scrollspy ====================
+// Scrollspy Logic
 function updateScrollspy() {
     let currentSectionId = "home";
-    const scrollPosition = window.scrollY + 200; // Increased offset for better section detection
+    const scrollPosition = window.scrollY + 200;
 
-    // Special case for top of page
     if (window.scrollY < 50) {
         currentSectionId = "home";
     } else {
@@ -59,13 +54,11 @@ function updateScrollspy() {
             }
         });
 
-        // Handle bottom of page
         if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
             currentSectionId = sections[sections.length - 1].id;
         }
     }
 
-    // Update nav links with specific class
     navButtons.forEach(btn => {
         if (btn.getAttribute('data-section') === currentSectionId) {
             btn.classList.add('active');
@@ -94,7 +87,7 @@ const revealObserverOptions = {
 // ==================== Interactions ====================
 // Performance optimization: Using CSS-driven animations for premium feel
 
-// ==================== Ambient Background Parallax ====================
+// Ambient Parallax
 const glowElements = document.querySelectorAll('.ambient-glow');
 document.addEventListener('mousemove', (e) => {
     const x = (e.clientX / window.innerWidth - 0.5) * 40;
@@ -120,9 +113,9 @@ window.addEventListener('scroll', () => {
 }); 
 */
 
-// ==================== Natural Section Reveals ====================
+// Intersection Observer for Reveals
 const fluidObserverOptions = {
-    threshold: 0.15, // Higher threshold for slower, more deliberate reveal
+    threshold: 0.15,
     rootMargin: '0px 0px -150px 0px'
 };
 
@@ -139,7 +132,7 @@ document.querySelectorAll('.section, .project-card, .blog-card, .stat-item, .tim
     fluidRevealObserver.observe(el);
 });
 
-// ==================== Typing Animation for Hero Text ====================
+// Hero Interaction
 const heroTitle = document.querySelector('.hero-title');
 if (heroTitle) {
     const originalText = heroTitle.innerHTML;
@@ -154,7 +147,7 @@ if (heroTitle) {
     });
 }
 
-// ==================== Smooth Number Counter for Stats ====================
+// Animated Counters
 const statNumbers = document.querySelectorAll('.stat-number');
 
 function animateCounter(element, target, suffix, duration = 2000) {
@@ -200,7 +193,7 @@ statNumbers.forEach(stat => {
     statsObserver.observe(stat);
 });
 
-// ==================== Download Resume Function ====================
+// Resume Download
 const downloadBtn = document.querySelector('.resume-header .btn');
 if (downloadBtn) {
     downloadBtn.addEventListener('click', () => {
@@ -221,7 +214,7 @@ window.addEventListener('resize', () => {
     }
 });
 
-// ==================== Scroll to Top Button ====================
+// Scroll to Top
 const scrollToTopBtn = document.createElement('button');
 scrollToTopBtn.innerHTML = '↑';
 scrollToTopBtn.className = 'scroll-to-top-btn';
@@ -276,18 +269,14 @@ function debounce(func, delay) {
     };
 }
 
-// ==================== Initialize ====================
-console.log('Portfolio website loaded successfully! 🚀');
-console.log('Scroll to explore all content');
-
-// Set initial active state on DOM ready
+// Initialization
 document.addEventListener('DOMContentLoaded', () => {
     const homeBtn = document.querySelector('[data-section="home"]');
     if (homeBtn) {
         homeBtn.style.borderBottomColor = 'var(--primary-color)';
     }
 
-    // --- Image Lightbox / Zoom Functionality ---
+    // Lightbox
     window.initLightbox = function () {
         const articleImages = document.querySelectorAll('.article-content img');
         if (articleImages.length === 0) return;
@@ -339,10 +328,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // --- TOC ScrollSpy (Refactored for Sections) ---
+    // TOC Sync
     window.initTOCScrollSpy = function () {
         const tocLinks = document.querySelectorAll('.toc-link');
-        // Target both sections (new structure) and specific headers (legacy/fallback)
         const targets = document.querySelectorAll('.article-content section[id], .article-content h2[id], .article-content h3[id]');
 
         if (tocLinks.length === 0 || targets.length === 0) return;
@@ -440,7 +428,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.initTOCScrollSpy();
 });
 
-// ==================== Hero Video Lazy Play ====================
+// Hero Video Autoplay
 window.addEventListener('load', () => {
     const heroVideo = document.getElementById('heroVideo');
     if (heroVideo) {

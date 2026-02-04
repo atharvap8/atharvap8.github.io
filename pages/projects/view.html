@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <!-- Navigation Header -->
+    <!-- Header -->
     <header class="header">
         <div class="header-container">
             <nav class="nav-menu">
@@ -73,7 +73,7 @@
 
                 <!-- Main Content -->
                 <article class="article-content" id="mainContent">
-                    <!-- Content sections will be injected here -->
+                    <!-- Content injected here -->
                 </article>
             </div>
         </div>
@@ -81,11 +81,11 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2025 Atharva. Built with passion for embedded systems and IoT.</p>
+            <p>&copy; 2025 Atharva Phadke. All rights reserved.</p>
             <div class="footer-links">
                 <a href="https://github.com/atharvap8">GitHub</a>
-                <a href="https://linkedin.com">LinkedIn</a>
-                <a href="mailto:atharva@example.com">Email</a>
+                <a href="https://linkedin.com/in/atharvap8">LinkedIn</a>
+                <a href="mailto:atharvaphadke8@gmail.com">Email</a>
             </div>
         </div>
     </footer>
@@ -97,10 +97,10 @@
     <script src="../../script.js"></script>
     <script src="../../parallax.js"></script>
 
-    <!-- Page Specific Logic -->
+    <!-- Page Logic -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // 1. Get Project ID from URL (e.g., view.html?id=advanced-iot-washing-machine)
+            // 1. Get Project ID
             const urlParams = new URLSearchParams(window.location.search);
             const projectId = urlParams.get('id');
 
@@ -261,9 +261,8 @@
                 });
             }
 
-            // Manually re-attach Lightbox listeners since standard script run before content injection
-            // A simple way is to dispatch an event or just copy the lightbox logic here if it's not exposed.
-            // For this output, we'll assume the basic content renders fine. 
+            // Lightbox Hook
+            // Manually re-attach listeners as content is dynamic
         });
     </script>
 </body>

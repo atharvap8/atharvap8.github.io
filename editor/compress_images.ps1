@@ -19,7 +19,7 @@ foreach ($file in $files) {
     try {
         $img = [System.Drawing.Image]::FromFile($file.FullName)
         
-        # Calculate new dimensions (Max width 1600)
+        # Resize Logic (Max 1600px)
         $maxWidth = 1600
         $newWidth = $img.Width
         $newHeight = $img.Height
@@ -30,7 +30,7 @@ foreach ($file in $files) {
             $newHeight = [int]($img.Height * $ratio)
         }
 
-        # Create new resized bitmap
+        # Create Bitmap
         $newImg = new-object System.Drawing.Bitmap $newWidth, $newHeight
         $graph = [System.Drawing.Graphics]::FromImage($newImg)
         $graph.CompositingQuality = [System.Drawing.Drawing2D.CompositingQuality]::HighQuality
@@ -38,12 +38,12 @@ foreach ($file in $files) {
         $graph.SmoothingMode = [System.Drawing.Drawing2D.SmoothingMode]::HighQuality
         $graph.DrawImage($img, 0, 0, $newWidth, $newHeight)
 
-        # Setup JPEG quality encoder
+        # JPEG Encoder
         $codec = [System.Drawing.Imaging.ImageCodecInfo]::GetImageEncoders() | Where-Object { $_.MimeType -eq "image/jpeg" }
         $encParams = New-Object System.Drawing.Imaging.EncoderParameters(1)
         $encParams.Param[0] = New-Object System.Drawing.Imaging.EncoderParameter([System.Drawing.Imaging.Encoder]::Quality, 75) # Quality 75
 
-        # Save to temp file
+        # Save Temp
         $tempFile = $file.FullName + ".tmp"
         $newImg.Save($tempFile, $codec, $encParams)
 
@@ -52,7 +52,7 @@ foreach ($file in $files) {
         $newImg.Dispose()
         $img.Dispose()
 
-        # Compare and Overwrite
+        # Compare & Overwrite
         $newSize = (Get-Item $tempFile).Length
         if ($newSize -lt $originalSize) {
             Remove-Item $file.FullName -Force

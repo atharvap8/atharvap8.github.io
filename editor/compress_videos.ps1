@@ -3,7 +3,7 @@ param (
     [string]$TargetFolder
 )
 
-# Refresh Path
+# Refresh Env
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 
 if (-not (Get-Command ffmpeg -ErrorAction SilentlyContinue)) {
@@ -29,7 +29,7 @@ foreach ($file in $files) {
 
     $tempFile = $file.FullName + "_temp.mp4"
 
-    # Compress to H.264 MP4, Max width 1280px, CRF 28 (Web Quality)
+    # Compress (H.264, 1280px, CRF 28)
     $args = "-i `"$($file.FullName)`" -c:v libx264 -crf 28 -preset medium -vf `"scale='min(1280,iw)':-2`" -c:a aac -b:a 128k -movflags +faststart -y `"$tempFile`""
     
     $process = Start-Process -FilePath "ffmpeg" -ArgumentList $args -NoNewWindow -PassThru -Wait

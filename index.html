@@ -22,7 +22,7 @@
             style="bottom: -10%; right: -10%; opacity: 0.15; background: radial-gradient(circle, #818cf8, transparent);">
         </div>
     </div>
-    <!-- Navigation Header -->
+    <!-- Header -->
     <header class="header">
         <div class="header-container">
             <nav class="nav-menu">
@@ -41,9 +41,9 @@
         </div>
     </header>
 
-    <!-- Main Content -->
+    <!-- Main -->
     <main class="main-content">
-        <!-- Home Section -->
+        <!-- Home -->
         <section id="home" class="section section-home active">
             <div class="hero">
                 <div class="hero-content">
@@ -79,7 +79,7 @@
             </div>
         </section>
 
-        <!-- About Section -->
+        <!-- About -->
         <section id="about" class="section section-about">
             <div class="container">
                 <h2 class="section-title">About Me</h2>
@@ -125,7 +125,7 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
+        <!-- Projects -->
         <section id="projects" class="section section-projects">
             <div class="container">
                 <h2 class="section-title">Featured Projects</h2>
@@ -138,7 +138,7 @@
             </div>
         </section>
 
-        <!-- Blog Section -->
+        <!-- Blog -->
         <section id="blog" class="section section-blog">
             <div class="container">
                 <h2 class="section-title">Latest Articles</h2>
@@ -166,7 +166,7 @@
                 </div>
 
                 <div class="resume-mosaic">
-                    <!-- Row 1: Education (small) + Skills (tall, spans 2 rows) -->
+                    <!-- Education & Skills -->
                     <div class="resume-card resume-edu">
                         <div class="resume-card-header">
                             <span class="resume-card-icon">🎓</span>
@@ -205,7 +205,7 @@
                         </div>
                     </div>
 
-                    <!-- Row 2: Experience (tall, spans 2 rows) + Certifications (small) -->
+                    <!-- Experience & Certifications -->
                     <div class="resume-card resume-exp">
                         <div class="resume-card-header">
                             <span class="resume-card-icon">💼</span>
@@ -277,7 +277,7 @@
         </section>
 
 
-        <!-- Contact Section -->
+        <!-- Contact -->
         <section id="contact" class="section section-contact">
             <div class="container">
                 <h2 class="section-title">Get In Touch</h2>
@@ -349,7 +349,7 @@
     <script src="blogs-data.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Populate Featured Projects
+            // Load Featured Projects
             const featuredProjectsGrid = document.getElementById('featuredProjectsGrid');
             if (featuredProjectsGrid && typeof projectsData !== 'undefined') {
                 const projectIds = Object.keys(projectsData).slice(0, 3);
@@ -382,7 +382,7 @@
                 });
             }
 
-            // Populate Latest Articles
+            // Load Latest Articles
             const featuredBlogGrid = document.getElementById('featuredBlogGrid');
             if (featuredBlogGrid && typeof blogsData !== 'undefined') {
                 const blogIds = Object.keys(blogsData).sort((a, b) => {

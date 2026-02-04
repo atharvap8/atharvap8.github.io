@@ -1,3 +1,4 @@
+// Projects Database
 const projectsData = {
     "advanced-iot-washing-machine": {
         title: "Advanced IoT Washing Machine",
@@ -14,7 +15,7 @@ const projectsData = {
     "esp32c3-room-automation": {
         title: "ESP32C3 Room Automation",
         summary: "DIY smart room controller with Alexa voice control, IR remote, and manual switches on custom PCB.",
-        // banner: "../../assets/projects/esp32c3-room-automation/banner.jpg",
+        banner: "../../assets/projects/esp32c3-room-automation/banner.jpg",
         contentUrl: "../../editor/projects/esp32c3-room-automation.md"
     },
     "automatic-water-tap-v2": {

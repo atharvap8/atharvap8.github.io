@@ -1,4 +1,4 @@
-
+// Blogs Database
 const blogsData = {
     "basics-of-electrical-unit-1-2": {
         title: "Basics of Electrical & Electronics - Unit 1 & 2",
