@@ -262,13 +262,22 @@
                         </div>
                         <div class="resume-card-body">
                             <div class="highlight-list">
-                                <div class="highlight-item">2nd Runner-Up - Technovate 2025</div>
-                                <div class="highlight-item">2nd Runner-Up - INNOVISION 2025</div>
-                                <div class="highlight-item"
-                                    style="margin-top: 8px; font-weight: 500; font-size: 0.9em; opacity: 0.9;">
-                                    Certifications:</div>
-                                <div class="highlight-item" style="font-size: 0.85em;">Linux Cmds (IBM) • Git
-                                    (Atlassian)</div>
+                                <div class="highlight-item">
+                                    <strong>2nd Runner-Up - Technovate 2025 (Electrothon)</strong>
+                                    <span class="highlight-sub">PCET's PCCoE&R, Ravet</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <strong>2nd Runner-Up - INNOVISION 2025</strong>
+                                    <span class="highlight-sub">JSPM's RSCOE, Tathawade</span>
+                                </div>
+                                <div class="highlight-divider"></div>
+                                <h4 class="resume-subsection-title">Certifications</h4>
+                                <ul class="cert-list">
+                                    <li>Linux Commands & Scripting <span class="cert-issuer">- IBM</span></li>
+                                    <li>Version Control with Git <span class="cert-issuer">- Atlassian</span></li>
+                                    <li>Hands-on IoT <span class="cert-issuer">- University of Illinois</span></li>
+                                    <li>Automotive Embedded Systems <span class="cert-issuer">- Starweaver</span></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -387,7 +396,7 @@
             if (featuredBlogGrid && typeof blogsData !== 'undefined') {
                 const blogIds = Object.keys(blogsData).sort((a, b) => {
                     return new Date(blogsData[b].date) - new Date(blogsData[a].date);
-                }).slice(0, 3);
+                }).slice(0, 6);
 
                 blogIds.forEach(id => {
                     const blog = blogsData[id];
