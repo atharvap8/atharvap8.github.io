@@ -193,18 +193,6 @@ statNumbers.forEach(stat => {
     statsObserver.observe(stat);
 });
 
-// Resume Download
-const downloadBtn = document.querySelector('.resume-header .btn');
-if (downloadBtn) {
-    downloadBtn.addEventListener('click', () => {
-        const link = document.createElement('a');
-        link.href = 'assets/resume/AP_resume.pdf';
-        link.download = 'AP_Resume.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    });
-}
 
 // ==================== Mobile Responsiveness ====================
 window.addEventListener('resize', () => {
