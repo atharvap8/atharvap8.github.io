@@ -414,6 +414,33 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize these if content is static (fallback)
     window.initLightbox();
     window.initTOCScrollSpy();
+
+    // Resume Download Fix
+    const initResumeDownload = () => {
+        const resumeBtn = document.getElementById('resumeDownloadBtn');
+        if (resumeBtn) {
+            resumeBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+
+                // Prevent multiple clicks
+                if (resumeBtn.dataset.downloading === 'true') return;
+                resumeBtn.dataset.downloading = 'true';
+
+                const link = document.createElement('a');
+                link.href = resumeBtn.getAttribute('href');
+                link.download = resumeBtn.getAttribute('download');
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+
+                setTimeout(() => {
+                    resumeBtn.dataset.downloading = 'false';
+                }, 1500);
+            });
+        }
+    };
+    initResumeDownload();
 });
 
 // Hero Video Autoplay
