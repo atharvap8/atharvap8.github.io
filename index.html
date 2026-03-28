@@ -5,423 +5,363 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atharva Phadke | Embedded & IoT Engineer</title>
+    <meta name="description" content="Atharva Phadke — Embedded & IoT Engineer. 20+ projects spanning STM32, ESP32, PCB design, RTOS, and industrial IoT.">
     <link rel="icon" type="image/png" href="assets/main/logo.png">
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonts: Syne (display) + Space Mono (mono) + Inter (body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Orbitron:wght@600;800&family=Space+Mono&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="src/style.css">
+
+    <!-- Import map for ES module CDN imports -->
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js",
+        "gsap": "https://cdn.jsdelivr.net/npm/gsap@3.12.5/index.js",
+        "gsap/ScrollTrigger": "https://cdn.jsdelivr.net/npm/gsap@3.12.5/ScrollTrigger.js",
+        "lenis": "https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.mjs"
+      }
+    }
+    </script>
 </head>
 
 <body>
-    <!-- Ambient Background -->
-    <div class="ambient-bg">
-        <div class="ambient-glow" style="top: -10%; left: -10%;"></div>
-        <div class="ambient-glow"
-            style="bottom: -10%; right: -10%; opacity: 0.15; background: radial-gradient(circle, #818cf8, transparent);">
-        </div>
-    </div>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-container">
-            <nav class="nav-menu">
-                <button class="nav-btn" data-section="home">Home</button>
-                <button class="nav-btn" data-section="about">About</button>
-                <button class="nav-btn" data-section="projects">Projects</button>
-                <button class="nav-btn" data-section="blog">Blog</button>
-                <button class="nav-btn" data-section="resume">Resume</button>
-                <button class="nav-btn" data-section="contact">Contact</button>
-            </nav>
-            <button class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+    <!-- Grain overlay (rendered by CSS) -->
+    <div class="grain-layer" aria-hidden="true"></div>
+
+    <!-- ==================== NAV ==================== -->
+    <nav class="site-nav" id="siteNav">
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo" data-scroll>
+                <span class="logo-mark">AP</span>
+                <span class="logo-sub">Portfolio</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" data-scroll class="nav-link">About</a></li>
+                <li><a href="#projects" data-scroll class="nav-link">Projects</a></li>
+                <li><a href="#blog" data-scroll class="nav-link">Blog</a></li>
+                <li><a href="#resume" data-scroll class="nav-link">Resume</a></li>
+                <li><a href="#contact" data-scroll class="nav-link">Contact</a></li>
+            </ul>
+            <a href="https://github.com/atharvap8" target="_blank" class="nav-github" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21.1C9.5,20.94 9.5,20.4 9.47,19.79C6.69,20.39 6.1,18.44 6.1,18.44C5.65,17.29 5,17 5,17C4.09,16.38 5.07,16.4 5.07,16.4C6.08,16.47 6.61,17.44 6.61,17.44C7.5,18.97 8.95,18.53 9.5,18.28C9.6,17.63 9.85,17.18 10.13,16.93C7.91,16.68 5.58,15.82 5.58,11.97C5.58,10.87 5.97,9.97 6.61,9.26C6.5,9.01 6.15,7.97 6.71,6.59C6.71,6.59 7.55,6.32 9.47,7.62C10.27,7.4 11.12,7.3 11.97,7.3C12.82,7.3 13.67,7.4 14.47,7.62C16.39,6.32 17.22,6.59 17.22,6.59C17.78,7.97 17.43,9.01 17.33,9.26C17.97,9.97 18.36,10.87 18.36,11.97C18.36,15.83 16.02,16.68 13.79,16.92C14.16,17.24 14.48,17.87 14.48,18.83C14.48,20.21 14.47,21.31 14.47,21.65C14.47,21.92 14.65,22.24 15.15,22.14C19.12,20.81 22,17.06 22,12A10,10 0 0,0 12,2Z"/></svg>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
             </button>
         </div>
-    </header>
+    </nav>
 
-    <!-- Main -->
-    <main class="main-content">
-        <!-- Home -->
-        <section id="home" class="section section-home active">
-            <div class="hero">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1 class="hero-title">
-                            <span class="gradient-text">Explore.</span> <span class="highlight-text">Experiment.</span>
-                            <span class="highlight-text">Experience.</span>
-                        </h1>
-                        <p class="hero-description">
-                            An Indivisual with mad passion for everything electronics.
-                        </p>
-                        <div class="hero-cta">
-                            <a href="https://www.youtube.com/@atharvap8" target="_blank"
-                                class="btn btn-primary">YouTube</a>
-                            <a href="https://www.instagram.com/atharva.p8/" target="_blank"
-                                class="btn btn-primary">Instagram</a>
-                        </div>
-                    </div>
-                    <div class="hero-visual">
-                        <div class="circuit-container">
-                            <video muted playsinline class="hero-video" id="heroVideo">
-                                <source src="assets/main/animation.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                    </div>
-                </div>
-                <div class="scroll-indicator">
-                    <span>Scroll to explore</span>
-                    <svg class="scroll-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
-                </div>
+    <!-- ==================== HERO ==================== -->
+    <section id="home" class="hero-section">
+        <canvas id="bg-canvas" aria-hidden="true"></canvas>
+        <div class="hero-vignette" aria-hidden="true"></div>
+        <div class="hero-content">
+            <div class="hero-label">
+                <span class="label-dot"></span>
+                <span>Embedded &amp; IoT Engineer</span>
             </div>
-        </section>
+            <h1 class="hero-title">
+                <span class="hero-line" data-text="Explore.">Explore.</span>
+                <span class="hero-line" data-text="Experiment.">Experiment.</span>
+                <span class="hero-line" data-text="Experience.">Experience.</span>
+            </h1>
+            <p class="hero-sub">An individual with mad passion for everything electronics.</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn-primary" data-scroll>
+                    <span>See My Work</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="https://www.youtube.com/@atharvap8" target="_blank" class="btn-outline">YouTube</a>
+                <a href="https://www.instagram.com/atharva.p8/" target="_blank" class="btn-outline">Instagram</a>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <div class="scroll-line-wrap">
+                <div class="scroll-line-inner"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
 
-        <!-- About -->
-        <section id="about" class="section section-about">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <div class="profile-container">
-                            <img src="assets/main/profile.jpg" alt="Atharva Phadke" class="profile-image">
-                        </div>
-                        <p>
-                            I’m Atharva Phadke, a passionate IoT Engineering student with a strong foundation in
-                            electronics, developed from hands-on experience starting at a young age. I have completed
-                            several projects in IoT, embedded systems, and electronics.
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about" class="content-section about-section">
+        <div class="section-container">
+            <div class="section-label reveal-label">
+                <span class="label-dot"></span><span>001 — About</span>
+            </div>
+            <h2 class="section-title split-title">About Me</h2>
 
-                            With over 3 years of practical experience working in an electronics shop from an early age,
-                            and continuous
-                            self-driven learning, I bring a deep interest in innovation and problem-solving in the field
-                            of electronics and IoT.</p>
-                        <p> Currently, I am on the verge of understanding how basic and
-                            complicated systems/machines/objects work in real life. I always like to take everything
-                            apart and learn practically how each component works in coordination with each other to
-                            fulfill a specific task or function.
-                        </p>
+            <div class="about-grid">
+                <div class="about-profile reveal-block">
+                    <div class="profile-frame">
+                        <img src="assets/main/profile.jpg" alt="Atharva Phadke" class="profile-img">
+                        <div class="profile-glow" aria-hidden="true"></div>
                     </div>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">20+</span>
-                            <span class="stat-label">Major Projects</span>
+                </div>
+                <div class="about-body">
+                    <p class="about-text reveal-block">
+                        I'm Atharva Phadke, a passionate IoT Engineering student with a strong foundation in
+                        electronics — built from hands-on experience starting at a young age. I've completed
+                        projects spanning IoT, embedded systems, PCB design, and motor control.
+                    </p>
+                    <p class="about-text reveal-block">
+                        Currently, I'm exploring how base and complex systems work in real life.
+                        I take everything apart — literally — to understand how each component coordinates
+                        to fulfill a function. From RTOS scheduling to sub-micron PCB routing.
+                    </p>
+                    <div class="stats-row">
+                        <div class="stat-card reveal-stat">
+                            <span class="stat-num" data-target="20" data-suffix="+">0+</span>
+                            <span class="stat-lbl">Major Projects</span>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number">10+</span>
-                            <span class="stat-label">PCB Designs</span>
+                        <div class="stat-card reveal-stat">
+                            <span class="stat-num" data-target="10" data-suffix="+">0+</span>
+                            <span class="stat-lbl">PCB Designs</span>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number">5+ Yrs</span>
-                            <span class="stat-label">Field Experience</span>
+                        <div class="stat-card reveal-stat">
+                            <span class="stat-num" data-target="5" data-suffix="+ Yrs">0+ Yrs</span>
+                            <span class="stat-lbl">Field Experience</span>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Dedication</span>
+                        <div class="stat-card reveal-stat">
+                            <span class="stat-num" data-target="100" data-suffix="%">0%</span>
+                            <span class="stat-lbl">Dedication</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Projects -->
-        <section id="projects" class="section section-projects">
-            <div class="container">
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="projects-grid" id="featuredProjectsGrid">
-                    <!-- Projects will be injected here dynamically -->
+    <!-- ==================== PROJECTS ==================== -->
+    <section id="projects" class="content-section projects-section">
+        <div class="section-container">
+            <div class="section-label reveal-label">
+                <span class="label-dot"></span><span>002 — Projects</span>
+            </div>
+            <h2 class="section-title split-title">Featured Projects</h2>
+            <div class="projects-grid" id="featuredProjectsGrid">
+                <!-- Injected by JS -->
+            </div>
+            <div class="section-cta reveal-block">
+                <a href="pages/projects/index.html" class="btn-primary">
+                    <span>All Projects</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== BLOG ==================== -->
+    <section id="blog" class="content-section blog-section">
+        <div class="section-container">
+            <div class="section-label reveal-label">
+                <span class="label-dot"></span><span>003 — Blog</span>
+            </div>
+            <h2 class="section-title split-title">Latest Articles</h2>
+            <div class="blog-grid" id="featuredBlogGrid">
+                <!-- Injected by JS -->
+            </div>
+            <div class="section-cta reveal-block">
+                <a href="pages/blog/index.html" class="btn-primary">
+                    <span>All Articles</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== RESUME ==================== -->
+    <section id="resume" class="content-section resume-section">
+        <div class="section-container">
+            <div class="section-label reveal-label">
+                <span class="label-dot"></span><span>004 — Resume</span>
+            </div>
+            <div class="resume-header">
+                <h2 class="section-title split-title">Resume</h2>
+                <a href="assets/resume/AP_resume.pdf" download="AP_resume.pdf" class="btn-primary reveal-block" id="resumeDownloadBtn">
+                    <span>Download PDF</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                </a>
+            </div>
+
+            <div class="resume-mosaic">
+                <!-- Education -->
+                <div class="resume-card reveal-block">
+                    <div class="rcard-header">
+                        <span class="rcard-icon">🎓</span>
+                        <h3>Education</h3>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="tl-dot"></div>
+                        <div class="tl-body">
+                            <h4>B.Voc. in Internet of Things (IoT)</h4>
+                            <span class="tl-date">Sep 2024 – Aug 2027</span>
+                            <p>PCET's Pimpri Chinchwad College of Engineering, Nigdi</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="show-more-container" style="text-align: center; margin-top: 2rem;">
-                    <a href="pages/projects/index.html" class="btn btn-primary">Show More Projects</a>
+
+                <!-- Skills -->
+                <div class="resume-card reveal-block">
+                    <div class="rcard-header">
+                        <span class="rcard-icon">⚡</span>
+                        <h3>Skills</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Embedded C/C++</span>
+                        <span class="skill-tag">STM32 / ESP32 / Arduino</span>
+                        <span class="skill-tag">RTOS (FreeRTOS)</span>
+                        <span class="skill-tag">UART / SPI / I2C</span>
+                        <span class="skill-tag">RS232 / RS485</span>
+                        <span class="skill-tag">MQTT / WiFi</span>
+                        <span class="skill-tag">KiCAD / PCB Design</span>
+                        <span class="skill-tag">Git / Version Control</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">IoT Development</span>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="resume-card resume-card--wide reveal-block">
+                    <div class="rcard-header">
+                        <span class="rcard-icon">💼</span>
+                        <h3>Experience</h3>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="tl-dot"></div>
+                        <div class="tl-body">
+                            <h4>Embedded Systems Intern</h4>
+                            <span class="tl-date">Dec 2025 – Present · Anedya Systems Pvt. Ltd.</span>
+                            <p>IoT device integration &amp; cloud monitoring.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="tl-dot"></div>
+                        <div class="tl-body">
+                            <h4>Electronics Engineer</h4>
+                            <span class="tl-date">Dec 2025 – Present · Team Automatons, PCCoE</span>
+                            <p>Robotics R&amp;D for ABU-ROBOCON 2026.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="tl-dot"></div>
+                        <div class="tl-body">
+                            <h4>Embedded Intern</h4>
+                            <span class="tl-date">Jun 2025 – Nov 2025 · Velous Tech Solutions Pvt. Ltd.</span>
+                            <p>STM32 dev, RTOS, Industrial IoT.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="tl-dot"></div>
+                        <div class="tl-body">
+                            <h4>Embedded System Designer</h4>
+                            <span class="tl-date">Mar 2024 – May 2024 · Upwork (Freelance)</span>
+                            <p>Smart LED controller with ESP32.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Awards / Certs -->
+                <div class="resume-card reveal-block">
+                    <div class="rcard-header">
+                        <span class="rcard-icon">🏆</span>
+                        <h3>Honors &amp; Awards</h3>
+                    </div>
+                    <div class="honor-item">
+                        <strong>2nd Runner-Up — Technovate 2025 (Electrothon)</strong>
+                        <span>PCET's PCCoE&amp;R, Ravet</span>
+                    </div>
+                    <div class="honor-item">
+                        <strong>2nd Runner-Up — INNOVISION 2025</strong>
+                        <span>JSPM's RSCOE, Tathawade</span>
+                    </div>
+                    <div class="cert-divider"></div>
+                    <h4 class="cert-heading">Certifications</h4>
+                    <ul class="cert-list">
+                        <li>Linux Commands &amp; Scripting <span class="cert-by">IBM</span></li>
+                        <li>Version Control with Git <span class="cert-by">Atlassian</span></li>
+                        <li>Hands-on IoT <span class="cert-by">Univ. of Illinois</span></li>
+                        <li>Automotive Embedded Systems <span class="cert-by">Starweaver</span></li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Blog -->
-        <section id="blog" class="section section-blog">
-            <div class="container">
-                <h2 class="section-title">Latest Articles</h2>
-                <div class="blog-grid" id="featuredBlogGrid">
-                    <!-- Blogs will be injected here dynamically -->
-                </div>
-                <div class="show-more-container" style="text-align: center; margin-top: 2rem;">
-                    <a href="pages/blog/index.html" class="btn btn-primary">Show More Articles</a>
-                </div>
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="content-section contact-section">
+        <div class="section-container">
+            <div class="section-label reveal-label">
+                <span class="label-dot"></span><span>005 — Contact</span>
             </div>
-        </section>
-
-        <!-- Resume Section -->
-        <section id="resume" class="section section-resume">
-            <div class="container">
-                <div class="resume-header">
-                    <h2 class="section-title">Resume</h2>
-                    <a href="assets/resume/AP_resume.pdf" download="AP_resume.pdf" class="btn btn-primary"
-                        id="resumeDownloadBtn">Download
-                        Resume
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                            <polyline points="7 10 12 15 17 10"></polyline>
-                            <line x1="12" y1="15" x2="12" y2="3"></line>
-                        </svg></a>
-                </div>
-
-                <div class="resume-mosaic">
-                    <!-- Education & Skills -->
-                    <div class="resume-card resume-edu">
-                        <div class="resume-card-header">
-                            <span class="resume-card-icon">🎓</span>
-                            <h3 class="resume-card-title">Education</h3>
-                        </div>
-                        <div class="resume-card-body">
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <h4>B.Voc. in Internet of Things (IoT)</h4>
-                                    <span class="timeline-date">Sep 2024 - Aug 2027</span>
-                                    <p>PCET's Pimpri Chinchwad College of Engineering, Nigdi</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="resume-card resume-skills">
-                        <div class="resume-card-header">
-                            <span class="resume-card-icon">⚡</span>
-                            <h3 class="resume-card-title">Skills</h3>
-                        </div>
-                        <div class="resume-card-body">
-                            <div class="skills-tags">
-                                <span class="skill-tag">Embedded C/C++</span>
-                                <span class="skill-tag">STM32 / ESP32 / Arduino</span>
-                                <span class="skill-tag">RTOS (FreeRTOS)</span>
-                                <span class="skill-tag">UART / SPI / I2C</span>
-                                <span class="skill-tag">RS232 / RS485</span>
-                                <span class="skill-tag">MQTT / WiFi</span>
-                                <span class="skill-tag">KiCAD / PCB Design</span>
-                                <span class="skill-tag">Git / Version Control</span>
-                                <span class="skill-tag">Linux</span>
-                                <span class="skill-tag">IoT Development</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Experience & Certifications -->
-                    <div class="resume-card resume-exp">
-                        <div class="resume-card-header">
-                            <span class="resume-card-icon">💼</span>
-                            <h3 class="resume-card-title">Experience</h3>
-                        </div>
-                        <div class="resume-card-body">
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <h4>Embedded Systems Intern</h4>
-                                    <span class="timeline-date">Dec 2025 - Present</span>
-                                    <p>Anedya Systems Pvt. Ltd.<br><span
-                                            style="font-size: 0.85em; opacity: 0.8; margin-top: 4px; display: block;">IoT
-                                            device integration & cloud monitoring.</span></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <h4>Electronics Engineer</h4>
-                                    <span class="timeline-date">Dec 2025 - Present</span>
-                                    <p>Team Automatons, PCCoE<br><span
-                                            style="font-size: 0.85em; opacity: 0.8; margin-top: 4px; display: block;">Robotics
-                                            R&D for ABU-ROBOCON 2026.</span></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <h4>Embedded Intern</h4>
-                                    <span class="timeline-date">June 2025 - Nov 2025</span>
-                                    <p>Velous Tech Solutions Pvt. Ltd.<br><span
-                                            style="font-size: 0.85em; opacity: 0.8; margin-top: 4px; display: block;">STM32
-                                            dev, RTOS, Industrial IoT.</span></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <h4>Embedded System Designer</h4>
-                                    <span class="timeline-date">Mar 2024 - May 2024</span>
-                                    <p>Upwork (Freelance)<br><span
-                                            style="font-size: 0.85em; opacity: 0.8; margin-top: 4px; display: block;">Smart
-                                            LED controller with ESP32.</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="resume-card resume-cert">
-                        <div class="resume-card-header">
-                            <span class="resume-card-icon">🏆</span>
-                            <h3 class="resume-card-title">Honors & Awards</h3>
-                        </div>
-                        <div class="resume-card-body">
-                            <div class="highlight-list">
-                                <div class="highlight-item">
-                                    <strong>2nd Runner-Up - Technovate 2025 (Electrothon)</strong>
-                                    <span class="highlight-sub">PCET's PCCoE&R, Ravet</span>
-                                </div>
-                                <div class="highlight-item">
-                                    <strong>2nd Runner-Up - INNOVISION 2025</strong>
-                                    <span class="highlight-sub">JSPM's RSCOE, Tathawade</span>
-                                </div>
-                                <div class="highlight-divider"></div>
-                                <h4 class="resume-subsection-title">Certifications</h4>
-                                <ul class="cert-list">
-                                    <li>Linux Commands & Scripting <span class="cert-issuer">- IBM</span></li>
-                                    <li>Version Control with Git <span class="cert-issuer">- Atlassian</span></li>
-                                    <li>Hands-on IoT <span class="cert-issuer">- University of Illinois</span></li>
-                                    <li>Automotive Embedded Systems <span class="cert-issuer">- Starweaver</span></li>
-                                </ul>
-                            </div>
-                        </div>
+            <h2 class="section-title split-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-left reveal-block">
+                    <p class="contact-copy">Have a project in mind? Let's collaborate and bring your ideas to life.</p>
+                    <div class="contact-socials">
+                        <a href="mailto:atharvaphadke8@gmail.com" class="social-link">
+                            <span class="social-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4M20,18H4V8L12,13L20,8V18M20,6L12,11L4,6V6H20V6Z"/></svg>
+                            </span>
+                            <span>atharvaphadke8@gmail.com</span>
+                        </a>
+                        <a href="https://linkedin.com/in/atharvap8" target="_blank" class="social-link">
+                            <span class="social-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C13.93,9.94 13,10.63 12.6,11.47V10.1H9.5V18.5H12.6V13.06C12.6,12.33 13.2,11.75 13.93,11.75C14.67,11.75 15.27,12.33 15.27,13.06V18.5H18.5M7,10.1H3.9V18.5H7V10.1M5.45,5.57A1.5,1.5 0 0,0 3.95,7.07A1.5,1.5 0 0,0 5.45,8.57A1.5,1.5 0 0,0 6.95,7.07A1.5,1.5 0 0,0 5.45,5.57Z"/></svg>
+                            </span>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/atharvap8" target="_blank" class="social-link">
+                            <span class="social-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21.1C9.5,20.94 9.5,20.4 9.47,19.79C6.69,20.39 6.1,18.44 6.1,18.44C5.65,17.29 5,17 5,17C4.09,16.38 5.07,16.4 5.07,16.4C6.08,16.47 6.61,17.44 6.61,17.44C7.5,18.97 8.95,18.53 9.5,18.28C9.6,17.63 9.85,17.18 10.13,16.93C7.91,16.68 5.58,15.82 5.58,11.97C5.58,10.87 5.97,9.97 6.61,9.26C6.5,9.01 6.15,7.97 6.71,6.59C6.71,6.59 7.55,6.32 9.47,7.62C10.27,7.4 11.12,7.3 11.97,7.3C12.82,7.3 13.67,7.4 14.47,7.62C16.39,6.32 17.22,6.59 17.22,6.59C17.78,7.97 17.43,9.01 17.33,9.26C17.97,9.97 18.36,10.87 18.36,11.97C18.36,15.83 16.02,16.68 13.79,16.92C14.16,17.24 14.48,17.87 14.48,18.83C14.48,20.21 14.47,21.31 14.47,21.65C14.47,21.92 14.65,22.24 15.15,22.14C19.12,20.81 22,17.06 22,12A10,10 0 0,0 12,2Z"/></svg>
+                            </span>
+                            <span>GitHub</span>
+                        </a>
                     </div>
                 </div>
+                <form class="contact-form reveal-block" action="https://formspree.io/f/mrbnkdow" method="POST">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <input type="text" name="name" id="contactName" placeholder="Your Name" required autocomplete="name">
+                        </div>
+                        <div class="form-field">
+                            <input type="email" name="email" id="contactEmail" placeholder="Your Email" required autocomplete="email">
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <textarea name="message" id="contactMessage" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" id="contactSubmit">
+                        <span>Send Message</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    </button>
+                </form>
             </div>
-        </section>
+        </div>
+    </section>
 
-
-        <!-- Contact -->
-        <section id="contact" class="section section-contact">
-            <div class="container">
-                <h2 class="section-title">Get In Touch</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <p>Have a project in mind? Let's collaborate and bring your ideas to life.</p>
-                        <div class="contact-links">
-                            <a href="mailto:atharvaphadke8@gmail.com" class="contact-link">
-                                <span class="link-icon">
-                                    <svg viewBox="0 0 24 24" width="75%" height="75%" fill="currentColor">
-                                        <path
-                                            d="M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4M20,18H4V8L12,13L20,8V18M20,6L12,11L4,6V6H20V6Z" />
-                                    </svg>
-                                </span>
-                                <span>atharvaphadke8@gmail.com</span>
-                            </a>
-                            <a href="https://github.com/atharvap8" class="contact-link">
-                                <span class="link-icon">
-                                    <svg viewBox="0 0 24 24" width="75%" height="75%" fill="currentColor">
-                                        <path
-                                            d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21.1C9.5,20.94 9.5,20.4 9.47,19.79C6.69,20.39 6.1,18.44 6.1,18.44C5.65,17.29 5,17 5,17C4.09,16.38 5.07,16.4 5.07,16.4C6.08,16.47 6.61,17.44 6.61,17.44C7.5,18.97 8.95,18.53 9.5,18.28C9.6,17.63 9.85,17.18 10.13,16.93C7.91,16.68 5.58,15.82 5.58,11.97C5.58,10.87 5.97,9.97 6.61,9.26C6.5,9.01 6.15,7.97 6.71,6.59C6.71,6.59 7.55,6.32 9.47,7.62C10.27,7.4 11.12,7.3 11.97,7.3C12.82,7.3 13.67,7.4 14.47,7.62C16.39,6.32 17.22,6.59 17.22,6.59C17.78,7.97 17.43,9.01 17.33,9.26C17.97,9.97 18.36,10.87 18.36,11.97C18.36,15.83 16.02,16.68 13.79,16.92C14.16,17.24 14.48,17.87 14.48,18.83C14.48,20.21 14.47,21.31 14.47,21.65C14.47,21.92 14.65,22.24 15.15,22.14C19.12,20.81 22,17.06 22,12A10,10 0 0,0 12,2Z" />
-                                    </svg>
-                                </span>
-                                <span>GitHub</span>
-                            </a>
-                            <a href="https://linkedin.com/in/atharvap8" class="contact-link">
-                                <span class="link-icon">
-                                    <svg viewBox="0 0 24 24" width="75%" height="75%" fill="currentColor">
-                                        <path
-                                            d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C13.93,9.94 13,10.63 12.6,11.47V10.1H9.5V18.5H12.6V13.06C12.6,12.33 13.2,11.75 13.93,11.75C14.67,11.75 15.27,12.33 15.27,13.06V18.5H18.5M7,10.1H3.9V18.5H7V10.1M5.45,5.57A1.5,1.5 0 0,0 3.95,7.07A1.5,1.5 0 0,0 5.45,8.57A1.5,1.5 0 0,0 6.95,7.07A1.5,1.5 0 0,0 5.45,5.57Z" />
-                                    </svg>
-                                </span>
-                                <span>LinkedIn</span>
-                            </a>
-                        </div>
-                    </div>
-                    <form class="contact-form" action="https://formspree.io/f/mrbnkdow" method="POST">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" name="name" placeholder="Your Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Your Email" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2025 Atharva Phadke. All rights reserved.</p>
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <span class="footer-copy">&copy; 2025 Atharva Phadke</span>
             <div class="footer-links">
-                <a href="https://github.com/atharvap8">GitHub</a>
-                <a href="https://linkedin.com/in/atharvap8">LinkedIn</a>
+                <a href="https://github.com/atharvap8" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/atharvap8" target="_blank">LinkedIn</a>
                 <a href="mailto:atharvaphadke8@gmail.com">Email</a>
             </div>
         </div>
     </footer>
 
+    <!-- Data scripts (non-module globals) -->
     <script src="projects-data.js"></script>
     <script src="blogs-data.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Load Featured Projects
-            const featuredProjectsGrid = document.getElementById('featuredProjectsGrid');
-            if (featuredProjectsGrid && typeof projectsData !== 'undefined') {
-                const projectIds = Object.keys(projectsData).slice(0, 3);
 
-                projectIds.forEach(id => {
-                    const project = projectsData[id];
-                    // Fix path: ../../assets -> assets
-                    let thumbSrc = project.banner || 'assets/placeholder.jpg';
-                    if (thumbSrc.startsWith('../../')) {
-                        thumbSrc = thumbSrc.replace('../../', '');
-                    }
-
-                    const card = document.createElement('div');
-                    card.className = 'project-card';
-                    card.style.cursor = 'pointer';
-                    card.onclick = () => location.href = `pages/projects/view.html?id=${id}`;
-
-                    card.innerHTML = `
-                        <div class="project-image">
-                            <img src="${thumbSrc}" alt="${project.title}" class="project-thumb">
-                        </div>
-                        <div class="project-info">
-                            <h3>${project.title}</h3>
-                            <p>${project.summary}</p>
-                            <a href="pages/projects/view.html?id=${id}" class="read-more"
-                                style="margin-top: auto; display: block; padding-top: 1rem;">View Details →</a>
-                        </div>
-                    `;
-                    featuredProjectsGrid.appendChild(card);
-                });
-            }
-
-            // Load Latest Articles
-            const featuredBlogGrid = document.getElementById('featuredBlogGrid');
-            if (featuredBlogGrid && typeof blogsData !== 'undefined') {
-                const blogIds = Object.keys(blogsData).sort((a, b) => {
-                    return new Date(blogsData[b].date) - new Date(blogsData[a].date);
-                }).slice(0, 6);
-
-                blogIds.forEach(id => {
-                    const blog = blogsData[id];
-                    const card = document.createElement('article');
-                    card.className = 'blog-card';
-                    card.style.cursor = 'pointer';
-                    card.onclick = () => location.href = `pages/blog/view.html?id=${id}`;
-
-                    card.innerHTML = `
-                        <div class="blog-date">${new Date(blog.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</div>
-                        <h3>${blog.title}</h3>
-                        <p>${blog.summary}</p>
-                        <div class="blog-footer">
-                            <span class="read-time">Read</span>
-                            <a href="pages/blog/view.html?id=${id}" class="read-more">Read More →</a>
-                        </div>
-                    `;
-                    featuredBlogGrid.appendChild(card);
-                });
-            }
-        });
-    </script>
-    <script src="script.js"></script>
+    <!-- Main ES module -->
+    <script type="module" src="src/main.js"></script>
 </body>
-
 </html>

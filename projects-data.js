@@ -1,5 +1,11 @@
 // Projects Database
 const projectsData = {
+    "imu-sensor-board": {
+        title: "IMU Sensor Board — DIY PCB Fabrication",
+        summary: "Designed and hand-fabricated a custom PCB for the ISM330DHCX IMU sensor by STMicroelectronics — from schematic to toner transfer etching to working sensor output.",
+        featured: true,
+        contentUrl: "../../editor/projects/imu-sensor-board.md"
+    },
     "advanced-iot-washing-machine": {
         title: "Advanced IoT Washing Machine",
         banner: "../../assets/projects/advanced-iot-washing-machine/thumbnail.png",
