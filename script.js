@@ -443,13 +443,4 @@ document.addEventListener('DOMContentLoaded', () => {
     initResumeDownload();
 });
 
-// Hero Video Autoplay
-window.addEventListener('load', () => {
-    const heroVideo = document.getElementById('heroVideo');
-    if (heroVideo) {
-        // Play video after everything is loaded
-        heroVideo.play().catch(e => {
-            console.log('Autoplay prevented or video error:', e);
-        });
-    }
-});
+

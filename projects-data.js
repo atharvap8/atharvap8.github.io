@@ -1,5 +1,11 @@
 // Projects Database
 const projectsData = {
+    "obhai-bldc-controller-v2": {
+        title: "OBhai BLDC Controller V2 — STSPIN32G4 Motor Drive",
+        summary: "Custom 3-phase BLDC motor controller built on the STSPIN32G4 SiP — 30V/130A peak, FOC-ready, with USB, CAN, UART, and a WebSerial GUI. Designed from schematic to fabrication in KiCad.",
+        featured: true,
+        contentUrl: "../../editor/projects/obhai-bldc-controller-v2.md"
+    },
     "imu-sensor-board": {
         title: "IMU Sensor Board — DIY PCB Fabrication",
         summary: "Designed and hand-fabricated a custom PCB for the ISM330DHCX IMU sensor by STMicroelectronics — from schematic to toner transfer etching to working sensor output.",
