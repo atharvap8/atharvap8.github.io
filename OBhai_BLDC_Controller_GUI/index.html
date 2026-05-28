@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBhai BLDC Controller GUI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Ambient Background (matches portfolio) -->
+<div class="ambient-bg">
+    <div class="ambient-glow" style="top:-10%;left:-10%;"></div>
+    <div class="ambient-glow" style="bottom:-10%;right:-10%;background:radial-gradient(circle,rgba(56,189,248,0.03) 0%,transparent 70%);"></div>
+</div>
+
+<!-- Browser Warning -->
+<div id="browser-warning">
+    ⚠️ WebSerial requires Chrome or Edge — this page will not function in Firefox or Safari.
+</div>
+
+<!-- ═══════════════════════ HEADER ═══════════════════════ -->
+<header class="app-header">
+    <div class="header-left">
+        <div class="header-logo"><span class="logo-accent">OBhai</span> BLDC Controller</div>
+        <div class="device-badge" id="device-badge">
+            <span class="badge-dot"></span>
+            <span id="device-text">Not connected</span>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="conn-status" id="conn-status" data-state="disconnected">
+            <span class="status-dot"></span>
+            <span id="conn-status-text">Disconnected</span>
+        </div>
+        <button class="btn-connect" id="connect-btn">Connect</button>
+    </div>
+</header>
+
+<!-- ═══════════════════════ TAB NAV ═══════════════════════ -->
+<nav class="tab-nav">
+    <button class="tab-btn active" data-tab="dashboard">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="7" height="9" rx="1"/><rect x="15" y="3" width="7" height="5" rx="1"/><rect x="15" y="12" width="7" height="9" rx="1"/><rect x="2" y="16" width="7" height="5" rx="1"/></svg>
+        Dashboard
+    </button>
+    <button class="tab-btn" data-tab="control">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        Control
+    </button>
+    <button class="tab-btn" data-tab="config">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        Config
+    </button>
+    <button class="tab-btn" data-tab="terminal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+        Terminal
+    </button>
+</nav>
+
+<!-- ═══════════════════════ MAIN ═══════════════════════ -->
+<main class="main-content">
+
+<!-- ─────────────── DASHBOARD ─────────────── -->
+<div id="tab-dashboard" class="tab-content">
+    <div class="fault-banner hidden" id="fault-banner">
+        <span>⚡</span>
+        <span id="fault-text">FAULT</span>
+        <button id="clear-fault-btn">Clear</button>
+    </div>
+
+    <div class="gauges-grid">
+        <!-- RPM (large) -->
+        <div class="gauge-card large" id="card-rpm">
+            <div class="gauge-label">Motor Speed</div>
+            <div class="gauge-value" id="val-rpm">—</div>
+            <div class="gauge-unit">RPM</div>
+            <div class="gauge-bar-wrap"><div class="gauge-bar" id="bar-rpm"></div></div>
+        </div>
+
+        <!-- Vbus -->
+        <div class="gauge-card" id="card-vbus">
+            <div class="gauge-label">Bus Voltage</div>
+            <div class="gauge-value" id="val-vbus">—</div>
+            <div class="gauge-unit">V</div>
+        </div>
+
+        <!-- Temperature -->
+        <div class="gauge-card" id="card-temp">
+            <div class="gauge-label">Board Temp</div>
+            <div class="gauge-value" id="val-temp">—</div>
+            <div class="gauge-unit">°C</div>
+        </div>
+
+        <!-- Bus Current -->
+        <div class="gauge-card" id="card-ibus">
+            <div class="gauge-label">Bus Current</div>
+            <div class="gauge-value" id="val-ibus">—</div>
+            <div class="gauge-unit">A</div>
+        </div>
+
+        <!-- Phase Currents -->
+        <div class="gauge-card" id="card-phase">
+            <div class="gauge-label">Phase Currents</div>
+            <div class="gauge-dual">
+                <div>
+                    <div class="gauge-value sm" id="val-ia">—</div>
+                    <div class="gauge-unit">Iₐ (A)</div>
+                </div>
+                <div>
+                    <div class="gauge-value sm" id="val-ib">—</div>
+                    <div class="gauge-unit">I_b (A)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- D-Q Currents -->
+        <div class="gauge-card" id="card-dq">
+            <div class="gauge-label">D-Q Currents (FOC)</div>
+            <div class="gauge-dual">
+                <div>
+                    <div class="gauge-value sm" id="val-id">—</div>
+                    <div class="gauge-unit">Id (A)</div>
+                </div>
+                <div>
+                    <div class="gauge-value sm" id="val-iq">—</div>
+                    <div class="gauge-unit">Iq (A)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Encoder -->
+        <div class="gauge-card" id="card-enc">
+            <div class="gauge-label">Encoder</div>
+            <div class="gauge-dual">
+                <div>
+                    <div class="gauge-value sm" id="val-enc-pos">—</div>
+                    <div class="gauge-unit">Position (rad)</div>
+                </div>
+                <div>
+                    <div class="gauge-value sm" id="val-enc-vel">—</div>
+                    <div class="gauge-unit">Velocity (rad/s)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- State -->
+        <div class="gauge-card" id="card-state">
+            <div class="gauge-label">Controller State</div>
+            <div class="mode-display" id="dash-mode">IDLE</div>
+            <div class="enable-pill" id="dash-enable">DISABLED</div>
+        </div>
+    </div>
+
+    <div class="charts-row">
+        <div class="chart-card">
+            <div class="chart-header">
+                <span class="chart-title">Motor Speed</span>
+                <span class="chart-timerange">30 s</span>
+            </div>
+            <canvas id="chart-rpm" height="110"></canvas>
+        </div>
+        <div class="chart-card">
+            <div class="chart-header">
+                <span class="chart-title">Bus Voltage</span>
+                <span class="chart-timerange">30 s</span>
+            </div>
+            <canvas id="chart-vbus" height="110"></canvas>
+        </div>
+        <div class="chart-card">
+            <div class="chart-header">
+                <span class="chart-title">D-Q Currents (Id · Iq)</span>
+                <span class="chart-timerange">30 s</span>
+            </div>
+            <canvas id="chart-dq" height="110"></canvas>
+        </div>
+    </div>
+</div><!-- /dashboard -->
+
+<!-- ─────────────── CONTROL ─────────────── -->
+<div id="tab-control" class="tab-content hidden">
+    <div class="control-grid">
+
+        <!-- Enable -->
+        <div class="control-card span2">
+            <div class="ctrl-title">Motor Enable</div>
+            <button class="enable-big-btn" id="enable-btn">
+                <span id="enable-icon">⏸</span>
+                <span id="enable-text">DISABLED</span>
+            </button>
+            <div class="enable-hint">Click to toggle — ensure setpoints are safe before enabling.</div>
+        </div>
+
+        <!-- Mode -->
+        <div class="control-card span2">
+            <div class="ctrl-title">Control Mode</div>
+            <div class="mode-btns">
+                <button class="mode-select-btn active" data-mode="0">⏹ Idle</button>
+                <button class="mode-select-btn" data-mode="1">🔄 Velocity</button>
+                <button class="mode-select-btn" data-mode="2">⚡ Torque</button>
+                <button class="mode-select-btn" data-mode="3">🔓 Open Loop</button>
+            </div>
+        </div>
+
+        <!-- Velocity Setpoint -->
+        <div class="control-card" id="card-vel">
+            <div class="ctrl-title">Velocity Setpoint</div>
+            <div class="setpoint-display" id="vel-display">0 <span>RPM</span></div>
+            <input type="range" id="vel-slider" class="range-slider" min="-5000" max="5000" value="0" step="10">
+            <div class="input-row">
+                <input type="number" id="vel-num" class="num-input" value="0" min="-5000" max="5000">
+                <span class="input-unit">RPM</span>
+                <button class="btn-set" id="vel-set-btn">Set</button>
+            </div>
+        </div>
+
+        <!-- Torque Setpoint -->
+        <div class="control-card" id="card-torque">
+            <div class="ctrl-title">Torque Setpoint</div>
+            <div class="setpoint-display" id="torque-display">0.00 <span>A</span></div>
+            <input type="range" id="torque-slider" class="range-slider" min="-20" max="20" value="0" step="0.1">
+            <div class="input-row">
+                <input type="number" id="torque-num" class="num-input" value="0" min="-20" max="20" step="0.1">
+                <span class="input-unit">A</span>
+                <button class="btn-set" id="torque-set-btn">Set</button>
+            </div>
+        </div>
+
+        <!-- Ramp Rate -->
+        <div class="control-card">
+            <div class="ctrl-title">Velocity Ramp Rate</div>
+            <div class="input-row">
+                <input type="number" id="ramp-num" class="num-input" value="1000" min="0" max="50000">
+                <span class="input-unit">RPM/s</span>
+                <button class="btn-set" id="ramp-set-btn">Set</button>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="control-card">
+            <div class="ctrl-title">Quick Actions</div>
+            <div class="quick-btns">
+                <button class="btn-quick" id="estop-btn">⏹ E-Stop</button>
+                <button class="btn-quick secondary" id="zero-btn">⟲ Zero Encoder</button>
+            </div>
+        </div>
+
+    </div>
+</div><!-- /control -->
+
+<!-- ─────────────── CONFIG ─────────────── -->
+<div id="tab-config" class="tab-content hidden">
+    <div class="config-top-bar">
+        <button class="btn-cfg" id="cfg-read-all-btn">↓ Read All</button>
+        <button class="btn-cfg primary" id="cfg-write-all-btn">↑ Write All</button>
+    </div>
+    <div class="config-grid">
+
+        <!-- Velocity PID -->
+        <div class="config-section">
+            <div class="cfg-section-title">Velocity PID</div>
+            <div class="param-list">
+                <div class="param-row">
+                    <label class="param-label">Kp <span class="param-key">(kp_vel)</span></label>
+                    <input type="number" id="cfg-kp-vel" class="param-input" step="0.001" placeholder="—">
+                    <button class="btn-rw" data-action="read"  data-key="kp_vel" data-target="cfg-kp-vel">↓</button>
+                    <button class="btn-rw" data-action="write" data-key="kp_vel" data-target="cfg-kp-vel">↑</button>
+                </div>
+                <div class="param-row">
+                    <label class="param-label">Ki <span class="param-key">(ki_vel)</span></label>
+                    <input type="number" id="cfg-ki-vel" class="param-input" step="0.001" placeholder="—">
+                    <button class="btn-rw" data-action="read"  data-key="ki_vel" data-target="cfg-ki-vel">↓</button>
+                    <button class="btn-rw" data-action="write" data-key="ki_vel" data-target="cfg-ki-vel">↑</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- D-Axis PID -->
+        <div class="config-section">
+            <div class="cfg-section-title">D-Axis Current PID</div>
+            <div class="param-list">
+                <div class="param-row">
+                    <label class="param-label">Kp <span class="param-key">(kp_curr_d)</span></label>
+                    <input type="number" id="cfg-kp-curr-d" class="param-input" step="0.001" placeholder="—">
+                    <button class="btn-rw" data-action="read"  data-key="kp_curr_d" data-target="cfg-kp-curr-d">↓</button>
+                    <button class="btn-rw" data-action="write" data-key="kp_curr_d" data-target="cfg-kp-curr-d">↑</button>
+                </div>
+                <div class="param-row">
+                    <label class="param-label">Ki <span class="param-key">(ki_curr_d)</span></label>
+                    <input type="number" id="cfg-ki-curr-d" class="param-input" step="0.001" placeholder="—">
+                    <button class="btn-rw" data-action="read"  data-key="ki_curr_d" data-target="cfg-ki-curr-d">↓</button>
+                    <button class="btn-rw" data-action="write" data-key="ki_curr_d" data-target="cfg-ki-curr-d">↑</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Q-Axis PID -->
+        <div class="config-section">
+            <div class="cfg-section-title">Q-Axis Current PID</div>
+            <div class="param-list">
+                <div class="param-row">
+                    <label class="param-label">Kp <span class="param-key">(kp_curr_q)</span></label>
+                    <input type="number" id="cfg-kp-curr-q" class="param-input" step="0.001" placeholder="—">
+                    <button class="btn-rw" data-action="read"  data-key="kp_curr_q" data-target="cfg-kp-curr-q">↓</button>
+                    <button class="btn-rw" data-action="write" data-key="kp_curr_q" data-target="cfg-kp-curr-q">↑</button>
+                </div>
+                <div class="param-row">
+                    <label class="param-label">Ki <span class="param-key">(ki_curr_q)</span></label>
+                    <input type="number" id="cfg-ki-curr-q" class="param-input" step="0.001" placeholder="—">
+                    <button class="btn-rw" data-action="read"  data-key="ki_curr_q" data-target="cfg-ki-curr-q">↓</button>
+                    <button class="btn-rw" data-action="write" data-key="ki_curr_q" data-target="cfg-ki-curr-q">↑</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Motor Parameters -->
+        <div class="config-section">
+            <div class="cfg-section-title">Motor Parameters</div>
+            <div class="param-list">
+                <div class="param-row">
+                    <label class="param-label">Pole Pairs <span class="param-key">(pole_pairs)</span></label>
+                    <input type="number" id="cfg-pole-pairs" class="param-input" placeholder="—" min="1">
+                    <button class="btn-rw" data-action="read"  data-key="pole_pairs"  data-target="cfg-pole-pairs">↓</button>
+                    <button class="btn-rw" data-action="write" data-key="pole_pairs"  data-target="cfg-pole-pairs">↑</button>
+                </div>
+                <div class="param-row">
+                    <label class="param-label">Flux Linkage λ <span class="param-key">(flux_linkage)</span></label>
+                    <input type="number" id="cfg-flux-linkage" class="param-input" step="0.0001" placeholder="— Wb">
+                    <button class="btn-rw" data-action="read"  data-key="flux_linkage" data-target="cfg-flux-linkage">↓</button>
+                    <button class="btn-rw" data-action="write" data-key="flux_linkage" data-target="cfg-flux-linkage">↑</button>
+                </div>
+                <div class="param-row">
+                    <label class="param-label">Dead Time <span class="param-key">(deadtime_ns)</span></label>
+                    <input type="number" id="cfg-deadtime" class="param-input" placeholder="— ns" min="0">
+                    <button class="btn-rw" data-action="read"  data-key="deadtime_ns" data-target="cfg-deadtime">↓</button>
+                    <button class="btn-rw" data-action="write" data-key="deadtime_ns" data-target="cfg-deadtime">↑</button>
+                </div>
+                <div class="param-row">
+                    <label class="param-label">Encoder CPR <span class="param-key">(encoder_cpr)</span></label>
+                    <input type="number" id="cfg-encoder-cpr" class="param-input" placeholder="—" min="1">
+                    <button class="btn-rw" data-action="read"  data-key="encoder_cpr" data-target="cfg-encoder-cpr">↓</button>
+                    <button class="btn-rw" data-action="write" data-key="encoder_cpr" data-target="cfg-encoder-cpr">↑</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Control Limits -->
+        <div class="config-section">
+            <div class="cfg-section-title">Control Limits</div>
+            <div class="param-list">
+                <div class="param-row">
+                    <label class="param-label">Max RPM <span class="param-key">(max_rpm)</span></label>
+                    <input type="number" id="cfg-max-rpm" class="param-input" placeholder="—">
+                    <button class="btn-rw" data-action="read"  data-key="max_rpm"    data-target="cfg-max-rpm">↓</button>
+                    <button class="btn-rw" data-action="write" data-key="max_rpm"    data-target="cfg-max-rpm">↑</button>
+                </div>
+                <div class="param-row">
+                    <label class="param-label">Max Current <span class="param-key">(max_current)</span></label>
+                    <input type="number" id="cfg-max-current" class="param-input" step="0.1" placeholder="— A">
+                    <button class="btn-rw" data-action="read"  data-key="max_current" data-target="cfg-max-current">↓</button>
+                    <button class="btn-rw" data-action="write" data-key="max_current" data-target="cfg-max-current">↑</button>
+                </div>
+                <div class="param-row">
+                    <label class="param-label">Vel Ramp Rate <span class="param-key">(vel_ramp_rate)</span></label>
+                    <input type="number" id="cfg-ramp-rate" class="param-input" placeholder="— RPM/s">
+                    <button class="btn-rw" data-action="read"  data-key="vel_ramp_rate" data-target="cfg-ramp-rate">↓</button>
+                    <button class="btn-rw" data-action="write" data-key="vel_ramp_rate" data-target="cfg-ramp-rate">↑</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div><!-- /config -->
+
+<!-- ─────────────── TERMINAL ─────────────── -->
+<div id="tab-terminal" class="tab-content hidden">
+    <div class="terminal-wrap">
+        <div class="terminal-topbar">
+            <span class="terminal-label">Serial Terminal</span>
+            <button class="btn-term-clear" id="term-clear-btn">Clear</button>
+        </div>
+        <div class="terminal-output" id="terminal-output"></div>
+        <div class="terminal-input-bar">
+            <span class="terminal-prompt">&gt;&gt;</span>
+            <input type="text" id="terminal-input" class="terminal-input" placeholder="Type command and press Enter…" autocomplete="off" spellcheck="false">
+            <button class="btn-term-send" id="term-send-btn">Send</button>
+        </div>
+    </div>
+</div><!-- /terminal -->
+
+</main><!-- /main-content -->
+
+<script src="serial.js"></script>
+<script src="protocol.js"></script>
+<script src="charts.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
