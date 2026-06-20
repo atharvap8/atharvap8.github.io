@@ -1,5 +1,12 @@
 // Blogs Database
 const blogsData = {
+    "csi-interface": {
+        title: "CSI Interface",
+        summary: "A deep dive into the Camera Serial Interface (CSI) — how it works, the protocol layers, and practical usage in embedded and IoT systems.",
+        contentUrl: "../../assets/blogs/csi/csi-interface.md",
+        banner: "../../assets/blogs/csi/csi-banner.jpg",
+        date: "2026-06-20"
+    },
     "basics-of-electrical-unit-1-2": {
         title: "Basics of Electrical & Electronics - Unit 1 & 2",
         summary: "Fundamental concepts of voltage, current, resistance, Ohm's Law, and AC circuits.",

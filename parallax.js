@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Background Parallax
         if (heroBg) {
             heroBg.style.transform = `translateY(${scrollY * 0.4}px)`;
+            heroBg.style.filter = `brightness(0.6) blur(${progress * 10}px)`;
         }
 
         // Title Effects

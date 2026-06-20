@@ -64,7 +64,17 @@
                     </div>
                     <div class="hero-visual">
                         <div class="circuit-container">
-                            <canvas id="hero-canvas"></canvas>
+                            <video
+                                id="hero-video"
+                                class="hero-video"
+                                src="assets/main/animation.mp4"
+                                autoplay
+                                loop
+                                muted
+                                playsinline
+                                preload="auto"
+                                aria-label="Hero animation"
+                            ></video>
                         </div>
                     </div>
                 </div>
@@ -420,15 +430,6 @@
         });
     </script>
     <script src="script.js"></script>
-    <script type="importmap">
-    {
-        "imports": {
-            "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
-            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
-        }
-    }
-    </script>
-    <script type="module" src="hero-animation.js"></script>
 </body>
 
 </html>
