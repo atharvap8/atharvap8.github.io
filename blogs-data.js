@@ -1,5 +1,12 @@
 // Blogs Database
 const blogsData = {
+    "unitree-battery-teardown": {
+        title: "Reverse Engineering the Unitree Go2 Battery (BT02-6)",
+        summary: "Full teardown and reverse engineering of the Unitree BT02-6 battery pack — tracing RS485 comms, decoding FE FF framed packets, defeating isolated enable logic with a 10k resistor, and building a custom interface PCB.",
+        contentUrl: "../../assets/blogs/unitree-battery/batt-teardown.md",
+        banner: "../../assets/blogs/unitree-battery/banner.jpg",
+        date: "2026-06-26"
+    },
     "csi-interface": {
         title: "CSI Interface",
         summary: "A deep dive into the Camera Serial Interface (CSI) — how it works, the protocol layers, and practical usage in embedded and IoT systems.",

@@ -148,7 +148,20 @@
                         return response.text();
                     })
                     .then(markdown => {
-                        contentContainer.innerHTML = marked.parse(markdown);
+                        // Custom renderer: convert ![alt](video.mp4) to <video> tags
+                        const renderer = new marked.Renderer();
+                        const defaultImageRenderer = renderer.image.bind(renderer);
+                        renderer.image = function({ href, title, text }) {
+                            const videoExts = ['.mp4', '.mov', '.webm', '.mkv', '.avi'];
+                            const ext = href ? href.substring(href.lastIndexOf('.')).toLowerCase().split('?')[0] : '';
+                            if (videoExts.includes(ext)) {
+                                const titleAttr = title ? ` title="${title}"` : '';
+                                return `<video src="${href}" controls autoplay loop muted playsinline${titleAttr} alt="${text || ''}">Your browser does not support the video tag.</video>`;
+                            }
+                            return defaultImageRenderer({ href, title, text });
+                        };
+
+                        contentContainer.innerHTML = marked.parse(markdown, { renderer });
 
                         // Generate TOC from H2 headers
                         const headers = contentContainer.querySelectorAll('h2');
